@@ -13,3 +13,17 @@ sites/*/private
 .ftpquota
 error_log
 
+# Ignore specific Drupal files
+CHANGELOG.txt 
+COPYRIGHT.txt 
+INSTALL.mysql.txt 
+INSTALL.pgsql.txt 
+INSTALL.sqlite.txt 
+INSTALL.txt 
+LICENSE.txt 
+MAINTAINERS.txt 
+README.txt 
+UPGRADE.txt
+!robots.txt
+.htaccess
+

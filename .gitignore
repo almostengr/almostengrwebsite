@@ -12,6 +12,7 @@ sites/*/private
 # Add paths that are specific to webhost
 .ftpquota
 error_log
+cache
 
 # Ignore specific Drupal files
 CHANGELOG.txt 

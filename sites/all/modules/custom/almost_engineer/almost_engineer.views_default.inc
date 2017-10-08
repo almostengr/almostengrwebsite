@@ -86,28 +86,31 @@ function almost_engineer_views_default_views() {
       'empty_column' => 0,
     ),
   );
-  /* Field: Broken/missing handler */
+  /* Field: Order: Order ID */
   $handler->display->display_options['fields']['order_id']['id'] = 'order_id';
   $handler->display->display_options['fields']['order_id']['table'] = 'uc_orders';
   $handler->display->display_options['fields']['order_id']['field'] = 'order_id';
   $handler->display->display_options['fields']['order_id']['label'] = 'Order #';
   $handler->display->display_options['fields']['order_id']['element_label_colon'] = FALSE;
-  /* Field: Broken/missing handler */
+  $handler->display->display_options['fields']['order_id']['link_to_order'] = 1;
+  /* Field: Order: Creation date */
   $handler->display->display_options['fields']['created']['id'] = 'created';
   $handler->display->display_options['fields']['created']['table'] = 'uc_orders';
   $handler->display->display_options['fields']['created']['field'] = 'created';
   $handler->display->display_options['fields']['created']['label'] = 'Date';
-  /* Field: Broken/missing handler */
+  $handler->display->display_options['fields']['created']['date_format'] = 'uc_store';
+  /* Field: Order: Order status */
   $handler->display->display_options['fields']['order_status']['id'] = 'order_status';
   $handler->display->display_options['fields']['order_status']['table'] = 'uc_orders';
   $handler->display->display_options['fields']['order_status']['field'] = 'order_status';
   $handler->display->display_options['fields']['order_status']['label'] = 'Status';
-  /* Field: Broken/missing handler */
+  /* Field: Order: Order total */
   $handler->display->display_options['fields']['order_total']['id'] = 'order_total';
   $handler->display->display_options['fields']['order_total']['table'] = 'uc_orders';
   $handler->display->display_options['fields']['order_total']['field'] = 'order_total';
   $handler->display->display_options['fields']['order_total']['label'] = 'Total';
-  /* Field: Broken/missing handler */
+  $handler->display->display_options['fields']['order_total']['precision'] = '0';
+  /* Field: Order: Actions */
   $handler->display->display_options['fields']['actions']['id'] = 'actions';
   $handler->display->display_options['fields']['actions']['table'] = 'uc_orders';
   $handler->display->display_options['fields']['actions']['field'] = 'actions';
@@ -122,7 +125,8 @@ function almost_engineer_views_default_views() {
   $handler->display->display_options['arguments']['uid']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['uid']['summary_options']['items_per_page'] = '25';
   $handler->display->display_options['arguments']['uid']['specify_validation'] = TRUE;
-  /* Filter criterion: Broken/missing handler */
+  $handler->display->display_options['arguments']['uid']['validate']['type'] = 'user_or_permission';
+  /* Filter criterion: Order: Order status */
   $handler->display->display_options['filters']['order_status']['id'] = 'order_status';
   $handler->display->display_options['filters']['order_status']['table'] = 'uc_orders';
   $handler->display->display_options['filters']['order_status']['field'] = 'order_status';

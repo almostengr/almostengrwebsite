@@ -30,4 +30,13 @@ function almost_engineer_update_7004() {
 
 }
 
+function almost_engineer_update_7005() {
+  // modules to enable
+  $to_enable = array('termstatus');
+  module_enable($to_enable, TRUE);
 
+  // modules to disable
+
+  // variables to set
+
+}

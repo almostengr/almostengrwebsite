@@ -8,9 +8,9 @@ files[] = includes/schedules.inc
 
 configure = admin/config/system/backup_migrate
 
-; Information added by Drupal.org packaging script on 2017-09-27
-version = "7.x-3.2"
+; Information added by Drupal.org packaging script on 2017-10-18
+version = "7.x-3.3"
 core = "7.x"
 project = "backup_migrate"
-datestamp = "1506541146"
+datestamp = "1508339653"
 

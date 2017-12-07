@@ -20,6 +20,9 @@ regions[footer]         = Footer
 regions[footer_first]   = First Bottom
 regions[footer_second]  = Second Bottom
 regions[footer_third]   = Third Bottom
+regions[page_top] 		 = Page top
+regions[page_bottom] 	 = Page bottom
+
 features[] = logo
 features[] = name
 features[] = slogan
@@ -35,9 +38,9 @@ settings[twitter_username] = "zymphonies"
 settings[facebook_username] = "zymphonies"
 
 
-; Information added by Drupal.org packaging script on 2015-03-19
-version = "7.x-2.1"
+; Information added by Drupal.org packaging script on 2017-11-28
+version = "7.x-2.3"
 core = "7.x"
 project = "business_responsive_theme"
-datestamp = "1426789899"
+datestamp = "1511890398"
 

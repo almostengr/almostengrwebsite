@@ -91,24 +91,12 @@ body {
 }
 
 a {
-  /* color: rgb(251, 90, 2); */
-<<<<<<< HEAD
-  color: #088A85;
-=======
-  /* color: #94c6a1; */
-  color: #1EE145;
->>>>>>> ae05b3760a1dd87e1765a962292acc766270bdbd
+  color: rgb(251, 90, 2);
   text-decoration:none;
 }
 
 a:hover {
-<<<<<<< HEAD
   color: rgb(230, 80, 0);
-=======
-  /* color: rgb(230, 80, 0); */
-  /* color: #23ae46; */
-  color: #94c6a1;
->>>>>>> ae05b3760a1dd87e1765a962292acc766270bdbd
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -831,12 +819,7 @@ body.sidebar-second #sidebar-second {
 }
 
 #footer-area ul.menu li a.active{
-<<<<<<< HEAD
   color:#ddd;
-=======
-  /* color:#ddd; */
-  color: #1EE145;
->>>>>>> ae05b3760a1dd87e1765a962292acc766270bdbd
 }
 
 .region-front-welcome{
@@ -956,12 +939,7 @@ ul.inline li {
 /* Admin Tabs
 /*-------------------------------------------*/
 .tabs-wrapper {
-<<<<<<< HEAD
   border-bottom: 1px solid #b7b7b7;
-=======
-  /* border-bottom: 1px solid #b7b7b7; */
-  border-botoom: 1px solid #1EE145;
->>>>>>> ae05b3760a1dd87e1765a962292acc766270bdbd
   margin: 0 0 5px 0;
 }
 
@@ -1500,12 +1478,7 @@ ol.search-results { padding-left: 0; }
 }
 
 #footer a{
-  /* color: rgb(251, 90, 2); */
-<<<<<<< HEAD
-  color: #088A85;
-=======
-  color: #1EE145;
->>>>>>> ae05b3760a1dd87e1765a962292acc766270bdbd
+  color: rgb(251, 90, 2);
 }
 
 #footer_wrapper{
@@ -1591,7 +1564,7 @@ ol.search-results { padding-left: 0; }
 }
 
 .contextual-links-region {
-  position: inherit;
+  position: relative;
 }
 
 /*Admin*/

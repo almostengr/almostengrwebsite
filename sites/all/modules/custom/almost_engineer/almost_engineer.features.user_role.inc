@@ -13,13 +13,13 @@ function almost_engineer_user_default_roles() {
   // Exported role: administrator.
   $roles['administrator'] = array(
     'name' => 'administrator',
-    'weight' => 4,
+    'weight' => 5,
   );
 
   // Exported role: not verified.
   $roles['not verified'] = array(
     'name' => 'not verified',
-    'weight' => 5,
+    'weight' => 2,
   );
 
   // Exported role: verified.

@@ -4,6 +4,8 @@ sites/*/test*settings*.php
 sites/*/devl*settings*.php
 sites/*/settings*.php
 sites/*/civicrm.settings.php
+sites/all/modules/admin_menu
+sites/all/modules/devel
 
 # Ignore paths that contain user-generated content.
 sites/*/files

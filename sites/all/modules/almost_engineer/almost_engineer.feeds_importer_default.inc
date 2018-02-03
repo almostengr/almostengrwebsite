@@ -70,7 +70,7 @@ function almost_engineer_feeds_importer_default() {
   $export['bit_second_tech_youtube_rss'] = $feeds_importer;
 
   $feeds_importer = new stdClass();
-  $feeds_importer->disabled = FALSE; /* Edit this to true to make a default feeds_importer disabled initially */
+  $feeds_importer->disabled = TRUE; /* Edit this to true to make a default feeds_importer disabled initially */
   $feeds_importer->api_version = 1;
   $feeds_importer->id = 'bit_second_youtube';
   $feeds_importer->config = array(

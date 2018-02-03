@@ -20,7 +20,7 @@ function almost_engineer_menu_default_menu_custom() {
   $menus['menu-bit-second-social'] = array(
     'menu_name' => 'menu-bit-second-social',
     'title' => 'Social Media',
-    'description' => 'Our social media pages',
+    'description' => 'Connect with Almost Engineer on social media platforms.',
   );
   // Exported menu: user-menu.
   $menus['user-menu'] = array(
@@ -30,8 +30,8 @@ function almost_engineer_menu_default_menu_custom() {
   );
   // Translatables
   // Included for use with string extractors like potx.
+  t('Connect with Almost Engineer on social media platforms.');
   t('Main menu');
-  t('Our social media pages');
   t('Social Media');
   t('The <em>Main</em> menu is used on many sites to show the major sections of the site, often in a top navigation bar.');
   t('The <em>User</em> menu contains links related to the user\'s account, as well as the \'Log out\' link.');

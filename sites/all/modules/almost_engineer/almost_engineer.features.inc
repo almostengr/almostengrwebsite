@@ -14,6 +14,9 @@ function almost_engineer_ctools_plugin_api($module = NULL, $api = NULL) {
   if ($module == "feeds" && $api == "feeds_importer_default") {
     return array("version" => "1");
   }
+  if ($module == "mailhandler" && $api == "mailhandler_mailbox") {
+    return array("version" => "2");
+  }
   if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => "1");
   }
@@ -58,7 +61,7 @@ function almost_engineer_node_info() {
     'service_request' => array(
       'name' => t('Service Request'),
       'base' => 'node_content',
-      'description' => t('This request is to be used for any type of updates or changes to be completed on a website.'),
+      'description' => t('Use for requesting work that needs to be done to a website or other action item.'),
       'has_title' => '1',
       'title_label' => t('Summary'),
       'help' => '',

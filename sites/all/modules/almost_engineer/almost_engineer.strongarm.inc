@@ -120,25 +120,25 @@ function almost_engineer_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'color_pixture_reloaded_files';
   $strongarm->value = array(
-    0 => 'public://color/pixture_reloaded-8dd33ac0/bullet-round.png',
-    1 => 'public://color/pixture_reloaded-8dd33ac0/bullet-sm-arrow-right.png',
-    2 => 'public://color/pixture_reloaded-8dd33ac0/bullet-sm-arrow-down.png',
-    3 => 'public://color/pixture_reloaded-8dd33ac0/button.gif',
-    4 => 'public://color/pixture_reloaded-8dd33ac0/button-o.gif',
-    5 => '/var/www/dev.bitsecondtech.com/sites/default/files/color/pixture_reloaded-8dd33ac0/header.png',
-    6 => '/var/www/dev.bitsecondtech.com/sites/default/files/color/pixture_reloaded-8dd33ac0/header-tile.png',
-    7 => '/var/www/dev.bitsecondtech.com/sites/default/files/color/pixture_reloaded-8dd33ac0/menu-tile.png',
-    8 => '/var/www/dev.bitsecondtech.com/sites/default/files/color/pixture_reloaded-8dd33ac0/bg-footer.png',
-    9 => '/var/www/dev.bitsecondtech.com/sites/default/files/color/pixture_reloaded-8dd33ac0/bg-footer-tile.png',
-    10 => '/var/www/dev.bitsecondtech.com/sites/default/files/color/pixture_reloaded-8dd33ac0/bg-menu.png',
-    11 => '/var/www/dev.bitsecondtech.com/sites/default/files/color/pixture_reloaded-8dd33ac0/bg-title.png',
-    12 => '/var/www/dev.bitsecondtech.com/sites/default/files/color/pixture_reloaded-8dd33ac0/bg-wall.png',
-    13 => '/var/www/dev.bitsecondtech.com/sites/default/files/color/pixture_reloaded-8dd33ac0/bg-bar-lite.png',
-    14 => '/var/www/dev.bitsecondtech.com/sites/default/files/color/pixture_reloaded-8dd33ac0/bg-bar.png',
-    15 => '/var/www/dev.bitsecondtech.com/sites/default/files/color/pixture_reloaded-8dd33ac0/bg-lbar-lite.png',
-    16 => '/var/www/dev.bitsecondtech.com/sites/default/files/color/pixture_reloaded-8dd33ac0/bg-lbar.png',
-    17 => '/var/www/dev.bitsecondtech.com/sites/default/files/color/pixture_reloaded-8dd33ac0/sf-hover-tile.png',
-    18 => 'public://color/pixture_reloaded-8dd33ac0/colors.css',
+    0 => 'public://color/pixture_reloaded-630088a5/bullet-round.png',
+    1 => 'public://color/pixture_reloaded-630088a5/bullet-sm-arrow-right.png',
+    2 => 'public://color/pixture_reloaded-630088a5/bullet-sm-arrow-down.png',
+    3 => 'public://color/pixture_reloaded-630088a5/button.gif',
+    4 => 'public://color/pixture_reloaded-630088a5/button-o.gif',
+    5 => '/var/www/dev.bitsecondtech.com/sites/default/files/color/pixture_reloaded-630088a5/header.png',
+    6 => '/var/www/dev.bitsecondtech.com/sites/default/files/color/pixture_reloaded-630088a5/header-tile.png',
+    7 => '/var/www/dev.bitsecondtech.com/sites/default/files/color/pixture_reloaded-630088a5/menu-tile.png',
+    8 => '/var/www/dev.bitsecondtech.com/sites/default/files/color/pixture_reloaded-630088a5/bg-footer.png',
+    9 => '/var/www/dev.bitsecondtech.com/sites/default/files/color/pixture_reloaded-630088a5/bg-footer-tile.png',
+    10 => '/var/www/dev.bitsecondtech.com/sites/default/files/color/pixture_reloaded-630088a5/bg-menu.png',
+    11 => '/var/www/dev.bitsecondtech.com/sites/default/files/color/pixture_reloaded-630088a5/bg-title.png',
+    12 => '/var/www/dev.bitsecondtech.com/sites/default/files/color/pixture_reloaded-630088a5/bg-wall.png',
+    13 => '/var/www/dev.bitsecondtech.com/sites/default/files/color/pixture_reloaded-630088a5/bg-bar-lite.png',
+    14 => '/var/www/dev.bitsecondtech.com/sites/default/files/color/pixture_reloaded-630088a5/bg-bar.png',
+    15 => '/var/www/dev.bitsecondtech.com/sites/default/files/color/pixture_reloaded-630088a5/bg-lbar-lite.png',
+    16 => '/var/www/dev.bitsecondtech.com/sites/default/files/color/pixture_reloaded-630088a5/bg-lbar.png',
+    17 => '/var/www/dev.bitsecondtech.com/sites/default/files/color/pixture_reloaded-630088a5/sf-hover-tile.png',
+    18 => 'public://color/pixture_reloaded-630088a5/colors.css',
   );
   $export['color_pixture_reloaded_files'] = $strongarm;
 
@@ -146,7 +146,7 @@ function almost_engineer_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'color_pixture_reloaded_logo';
-  $strongarm->value = 'public://color/pixture_reloaded-8dd33ac0/logo.png';
+  $strongarm->value = 'public://color/pixture_reloaded-630088a5/logo.png';
   $export['color_pixture_reloaded_logo'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -179,7 +179,7 @@ function almost_engineer_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'color_pixture_reloaded_stylesheets';
   $strongarm->value = array(
-    0 => 'public://color/pixture_reloaded-8dd33ac0/colors.css',
+    0 => 'public://color/pixture_reloaded-630088a5/colors.css',
   );
   $export['color_pixture_reloaded_stylesheets'] = $strongarm;
 
@@ -2259,16 +2259,16 @@ user/*/*';
   $strongarm->value = array(
     'toggle_logo' => 1,
     'toggle_name' => 1,
-    'toggle_slogan' => 1,
+    'toggle_slogan' => 0,
     'toggle_node_user_picture' => 1,
     'toggle_comment_user_picture' => 1,
     'toggle_comment_user_verification' => 0,
     'toggle_favicon' => 0,
-    'default_logo' => 1,
-    'logo_path' => '',
+    'default_logo' => 0,
+    'logo_path' => 'sites/all/themes/almostengr/ae_logo.jpg',
     'logo_upload' => '',
-    'default_favicon' => 1,
-    'favicon_path' => '',
+    'default_favicon' => 0,
+    'favicon_path' => 'sites/all/themes/almostengr/ae_logo.jpg',
     'favicon_upload' => '',
     'bigscreen_layout' => 'three_col_grail',
     'bigscreen_sidebar_unit' => '%',
@@ -2737,7 +2737,7 @@ user/*/*';
     'body_background' => 'bb-n',
     'menu_bar_position' => 'mbp-r',
     'menu_bullets' => 'mb-dd',
-    'at__active_tab' => 'edit-modify-output',
+    'at__active_tab' => 'edit-font',
     'at-release' => '7.x-3.x',
     'at-color' => '1',
     'scheme' => 'gothic',
@@ -3329,6 +3329,7 @@ user/*/*';
       'preview_css' => 'color/preview.css',
       'base_image' => 'color/base.png',
     ),
+    'favicon_mimetype' => 'image/jpeg',
   );
   $export['theme_pixture_reloaded_settings'] = $strongarm;
 
@@ -3346,12 +3347,13 @@ user/*/*';
     'toggle_favicon' => 0,
     'toggle_main_menu' => 1,
     'toggle_secondary_menu' => 0,
-    'default_logo' => 1,
-    'logo_path' => '',
+    'default_logo' => 0,
+    'logo_path' => 'sites/all/themes/almostengr/ae_logo.jpg',
     'logo_upload' => '',
-    'default_favicon' => 1,
-    'favicon_path' => '',
+    'default_favicon' => 0,
+    'favicon_path' => 'sites/all/themes/almostengr/ae_logo.jpg',
     'favicon_upload' => '',
+    'favicon_mimetype' => 'image/jpeg',
   );
   $export['theme_settings'] = $strongarm;
 

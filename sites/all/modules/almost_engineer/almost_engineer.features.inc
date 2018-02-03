@@ -48,7 +48,7 @@ function almost_engineer_node_info() {
       'description' => '',
       'has_title' => '1',
       'title_label' => t('Subject'),
-      'help' => '',
+      'help' => t('Messages that are classified as spam will not be responded to.'),
     ),
     'page' => array(
       'name' => t('Basic page'),

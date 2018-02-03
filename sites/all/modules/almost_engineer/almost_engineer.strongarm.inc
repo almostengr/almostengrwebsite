@@ -1008,6 +1008,7 @@ user/*/*';
     3 => 'navigation',
     4 => 'user-menu',
     5 => 'menu-bit-second-social',
+    6 => 'menu-things-i-use',
   );
   $export['menu_default_active_menus'] = $strongarm;
 
@@ -1197,7 +1198,7 @@ user/*/*';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'menu_parent_article';
-  $strongarm->value = 'main-menu:450';
+  $strongarm->value = 'features:0';
   $export['menu_parent_article'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -3461,7 +3462,7 @@ user/*/*';
   $strongarm->name = 'twitter_post_types';
   $strongarm->value = array(
     'contact_request' => 'contact_request',
-    'service_request' => 'service_request',
+    'service_request' => 0,
     'article' => 0,
     'page' => 0,
     'portfolio_item' => 0,

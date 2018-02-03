@@ -1752,6 +1752,90 @@ user/*/*';
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'securelogin_all_forms';
+  $strongarm->value = 1;
+  $export['securelogin_all_forms'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'securelogin_base_url';
+  $strongarm->value = '';
+  $export['securelogin_base_url'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'securelogin_form_comment_form';
+  $strongarm->value = 1;
+  $export['securelogin_form_comment_form'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'securelogin_form_node_form';
+  $strongarm->value = 1;
+  $export['securelogin_form_node_form'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'securelogin_form_user_login';
+  $strongarm->value = 1;
+  $export['securelogin_form_user_login'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'securelogin_form_user_login_block';
+  $strongarm->value = 1;
+  $export['securelogin_form_user_login_block'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'securelogin_form_user_pass';
+  $strongarm->value = 1;
+  $export['securelogin_form_user_pass'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'securelogin_form_user_pass_reset';
+  $strongarm->value = 1;
+  $export['securelogin_form_user_pass_reset'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'securelogin_form_user_profile_form';
+  $strongarm->value = 1;
+  $export['securelogin_form_user_profile_form'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'securelogin_form_user_register_form';
+  $strongarm->value = 1;
+  $export['securelogin_form_user_register_form'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'securelogin_other_forms';
+  $strongarm->value = '';
+  $export['securelogin_other_forms'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'securelogin_secure_forms';
+  $strongarm->value = 1;
+  $export['securelogin_secure_forms'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'simplenews_content_type_article';
   $strongarm->value = 1;
   $export['simplenews_content_type_article'] = $strongarm;
@@ -1839,6 +1923,327 @@ user/*/*';
   $strongarm->name = 'store__active_tab';
   $strongarm->value = 'edit-display';
   $export['store__active_tab'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'theme_default';
+  $strongarm->value = 'pixture_reloaded';
+  $export['theme_default'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'theme_garland_settings';
+  $strongarm->value = array(
+    'toggle_logo' => 1,
+    'toggle_name' => 1,
+    'toggle_slogan' => 0,
+    'toggle_node_user_picture' => 1,
+    'toggle_comment_user_picture' => 1,
+    'toggle_comment_user_verification' => 1,
+    'toggle_favicon' => 0,
+    'toggle_main_menu' => 1,
+    'toggle_secondary_menu' => 0,
+    'default_logo' => 0,
+    'logo_path' => 'public://b2t_logo_short.png',
+    'logo_upload' => '',
+    'default_favicon' => 1,
+    'favicon_path' => '',
+    'favicon_upload' => '',
+    'garland_width' => 'fluid',
+    'scheme' => 'greenbeam',
+    'palette' => array(
+      'base' => '#c9c497',
+      'link' => '#0c7a00',
+      'top' => '#03961e',
+      'bottom' => '#7be000',
+      'text' => '#494949',
+    ),
+    'theme' => 'garland',
+    'info' => array(
+      'fields' => array(
+        'base' => 'Base color',
+        'link' => 'Link color',
+        'top' => 'Header top',
+        'bottom' => 'Header bottom',
+        'text' => 'Text color',
+      ),
+      'schemes' => array(
+        'default' => array(
+          'title' => 'Blue Lagoon (Default)',
+          'colors' => array(
+            'base' => '#0072b9',
+            'link' => '#027ac6',
+            'top' => '#2385c2',
+            'bottom' => '#5ab5ee',
+            'text' => '#494949',
+          ),
+        ),
+        'ash' => array(
+          'title' => 'Ash',
+          'colors' => array(
+            'base' => '#464849',
+            'link' => '#2f416f',
+            'top' => '#2a2b2d',
+            'bottom' => '#5d6779',
+          ),
+        ),
+        'aquamarine' => array(
+          'title' => 'Aquamarine',
+          'colors' => array(
+            'base' => '#55c0e2',
+            'link' => '#000000',
+            'text' => '#696969',
+            'top' => '#085360',
+            'bottom' => '#007e94',
+          ),
+        ),
+        'chocolate' => array(
+          'title' => 'Belgian Chocolate',
+          'colors' => array(
+            'base' => '#d5b048',
+            'link' => '#6c420e',
+            'top' => '#331900',
+            'bottom' => '#971702',
+          ),
+        ),
+        'bluemarine' => array(
+          'title' => 'Bluemarine',
+          'colors' => array(
+            'base' => '#3f3f3f',
+            'link' => '#336699',
+            'text' => '#000000',
+            'top' => '#6598cb',
+            'bottom' => '#6598cb',
+          ),
+        ),
+        'citrus' => array(
+          'title' => 'Citrus Blast',
+          'colors' => array(
+            'base' => '#d0cb9a',
+            'link' => '#917803',
+            'top' => '#efde01',
+            'bottom' => '#e6fb2d',
+          ),
+        ),
+        'cold' => array(
+          'title' => 'Cold Day',
+          'colors' => array(
+            'base' => '#0f005c',
+            'link' => '#434f8c',
+            'text' => '#000000',
+            'top' => '#4d91ff',
+            'bottom' => '#1a1575',
+          ),
+        ),
+        'greenbeam' => array(
+          'title' => 'Greenbeam',
+          'colors' => array(
+            'base' => '#c9c497',
+            'link' => '#0c7a00',
+            'top' => '#03961e',
+            'bottom' => '#7be000',
+          ),
+        ),
+        'mediterrano' => array(
+          'title' => 'Mediterrano',
+          'colors' => array(
+            'base' => '#ffe23d',
+            'link' => '#a9290a',
+            'top' => '#fc6d1d',
+            'bottom' => '#a30f42',
+          ),
+        ),
+        'mercury' => array(
+          'title' => 'Mercury',
+          'colors' => array(
+            'base' => '#788597',
+            'link' => '#3f728d',
+            'top' => '#a9adbc',
+            'bottom' => '#d4d4d4',
+            'text' => '#707070',
+          ),
+        ),
+        'nocturnal' => array(
+          'title' => 'Nocturnal',
+          'colors' => array(
+            'base' => '#5b5fa9',
+            'link' => '#5b5faa',
+            'top' => '#0a2352',
+            'bottom' => '#9fa8d5',
+          ),
+        ),
+        'olivia' => array(
+          'title' => 'Olivia',
+          'colors' => array(
+            'base' => '#7db323',
+            'link' => '#6a9915',
+            'top' => '#b5d52a',
+            'bottom' => '#7db323',
+            'text' => '#191a19',
+          ),
+        ),
+        'pink_plastic' => array(
+          'title' => 'Pink Plastic',
+          'colors' => array(
+            'base' => '#12020b',
+            'link' => '#1b1a13',
+            'top' => '#f391c6',
+            'bottom' => '#f41063',
+            'text' => '#898080',
+          ),
+        ),
+        'shiny_tomato' => array(
+          'title' => 'Shiny Tomato',
+          'colors' => array(
+            'base' => '#b7a0ba',
+            'link' => '#c70000',
+            'top' => '#a1443a',
+            'bottom' => '#f21107',
+            'text' => '#515d52',
+          ),
+        ),
+        'teal_top' => array(
+          'title' => 'Teal Top',
+          'colors' => array(
+            'base' => '#18583d',
+            'link' => '#1b5f42',
+            'top' => '#34775a',
+            'bottom' => '#52bf90',
+            'text' => '#2d2d2d',
+          ),
+        ),
+        '' => array(
+          'title' => 'Custom',
+          'colors' => array(),
+        ),
+      ),
+      'copy' => array(
+        0 => 'images/menu-collapsed.gif',
+        1 => 'images/menu-collapsed-rtl.gif',
+        2 => 'images/menu-expanded.gif',
+        3 => 'images/menu-leaf.gif',
+      ),
+      'css' => array(
+        0 => 'style.css',
+      ),
+      'gradients' => array(
+        0 => array(
+          'dimension' => array(
+            0 => 0,
+            1 => 38,
+            2 => 760,
+            3 => 121,
+          ),
+          'direction' => 'vertical',
+          'colors' => array(
+            0 => 'top',
+            1 => 'bottom',
+          ),
+        ),
+      ),
+      'fill' => array(
+        'base' => array(
+          0 => 0,
+          1 => 0,
+          2 => 760,
+          3 => 568,
+        ),
+        'link' => array(
+          0 => 107,
+          1 => 533,
+          2 => 41,
+          3 => 23,
+        ),
+      ),
+      'slices' => array(
+        'images/body.png' => array(
+          0 => 0,
+          1 => 37,
+          2 => 1,
+          3 => 280,
+        ),
+        'images/bg-bar.png' => array(
+          0 => 202,
+          1 => 530,
+          2 => 76,
+          3 => 14,
+        ),
+        'images/bg-bar-white.png' => array(
+          0 => 202,
+          1 => 506,
+          2 => 76,
+          3 => 14,
+        ),
+        'images/bg-tab.png' => array(
+          0 => 107,
+          1 => 533,
+          2 => 41,
+          3 => 23,
+        ),
+        'images/bg-navigation.png' => array(
+          0 => 0,
+          1 => 0,
+          2 => 7,
+          3 => 37,
+        ),
+        'images/bg-content-left.png' => array(
+          0 => 40,
+          1 => 117,
+          2 => 50,
+          3 => 352,
+        ),
+        'images/bg-content-right.png' => array(
+          0 => 510,
+          1 => 117,
+          2 => 50,
+          3 => 352,
+        ),
+        'images/bg-content.png' => array(
+          0 => 299,
+          1 => 117,
+          2 => 7,
+          3 => 200,
+        ),
+        'images/bg-navigation-item.png' => array(
+          0 => 32,
+          1 => 37,
+          2 => 17,
+          3 => 12,
+        ),
+        'images/bg-navigation-item-hover.png' => array(
+          0 => 54,
+          1 => 37,
+          2 => 17,
+          3 => 12,
+        ),
+        'images/gradient-inner.png' => array(
+          0 => 646,
+          1 => 307,
+          2 => 112,
+          3 => 42,
+        ),
+        'logo.png' => array(
+          0 => 622,
+          1 => 51,
+          2 => 64,
+          3 => 73,
+        ),
+        'screenshot.png' => array(
+          0 => 0,
+          1 => 37,
+          2 => 400,
+          3 => 240,
+        ),
+      ),
+      'blend_target' => '#ffffff',
+      'preview_image' => 'color/preview.png',
+      'preview_css' => 'color/preview.css',
+      'base_image' => 'color/base.png',
+    ),
+  );
+  $export['theme_garland_settings'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -3928,6 +4333,43 @@ For your convenience, you are already logged in with your newly created account.
   $strongarm->name = 'uc_weight_unit';
   $strongarm->value = 'lb';
   $export['uc_weight_unit'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'update_check_disabled';
+  $strongarm->value = 1;
+  $export['update_check_disabled'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'update_check_frequency';
+  $strongarm->value = '1';
+  $export['update_check_frequency'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'update_last_email_notification';
+  $strongarm->value = 1516853914;
+  $export['update_last_email_notification'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'update_notification_threshold';
+  $strongarm->value = 'security';
+  $export['update_notification_threshold'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'update_notify_emails';
+  $strongarm->value = array(
+    0 => 'webmaint@bitsecondtech.com',
+  );
+  $export['update_notify_emails'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

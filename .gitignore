@@ -30,4 +30,5 @@ UPGRADE.txt
 !robots.txt
 .htaccess
 install.php
+cache/
 

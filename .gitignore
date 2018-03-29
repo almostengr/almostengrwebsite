@@ -30,3 +30,6 @@ UPGRADE.txt
 install.php
 cache/
 
+# ignore specific modules
+sites/all/modules/admin_menu
+

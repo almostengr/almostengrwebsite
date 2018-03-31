@@ -1,0 +1,17 @@
+; Copyright 2005-2008 Khalid Baheyeldin http://2bits.com
+; Copyright 2008      Joao Ventura      http://www.venturas.org
+
+name = AdSense Click Tracking
+description = Tracks clicks to Google Adsense
+dependencies[] = adsense
+package = Adsense
+core = 7.x
+
+configure = admin/config/services/adsense/click
+
+; Information added by Drupal.org packaging script on 2017-04-23
+version = "7.x-1.11"
+core = "7.x"
+project = "adsense"
+datestamp = "1492943648"
+

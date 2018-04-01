@@ -64,6 +64,13 @@
 <!--[if IE 8]><html class="lt-ie9"<?php print $html_attributes; ?>><![endif]-->
 <!--[if gt IE 8]><!--><html<?php print $html_attributes . $rdf_namespaces; ?>><!--<![endif]-->
 <head>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-4218270188842097",
+    enable_page_level_ads: true
+  });
+</script>
 <?php print $head; ?>
 <title><?php print $head_title; ?></title>
 <?php print $styles; ?>

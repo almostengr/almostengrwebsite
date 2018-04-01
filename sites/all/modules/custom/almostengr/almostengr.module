@@ -1,13 +1,6 @@
 <?php
 
 /**
- * implements hook_cron()
- */
-function almostengr_cron() {
-  almostengr_publish_articles();
-}
-
-/**
  * Publish articles that have their post date in the past
  */ 
 function almostengr_publish_articles() {
@@ -21,5 +14,14 @@ function almostengr_publish_articles() {
     node_save($article);
     watchdog('almostengr', 'Article ' . $row->nid . ' has been published.', array(), WATCHDOG_INFO, NULL);
   }
+}
+
+/**
+ * Removes the show name from the title of new articles
+ */
+function almostengr_node_presave($node) {
+  // remove show name from title of node
+  $node->title = str_replace('| Almost Engineered Tech', '', $node->title);
+  $node->title = str_replace('| Almost Afro Engineered', '', $node->title);
 }
 

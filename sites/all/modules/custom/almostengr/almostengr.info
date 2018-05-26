@@ -1,8 +1,0 @@
-name = Almost Engineer Support 
-package = Almost Engineer
-description = Additional custom functionality for the Almost Engineer website.
-core = 7.x
-version = 7.x-1.0
-
-files[] = almostengr.module
-

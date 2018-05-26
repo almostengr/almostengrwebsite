@@ -1,0 +1,10 @@
+<?php 
+
+/** 
+ * implements hook_cron 
+ */
+function almostengr_cron() {
+  // update variables 
+  variable_set('site_name', 'Almost Engineer');
+
+}

@@ -1,0 +1,7 @@
+name = Almost Engineer Variables 
+package = Almost Engineer
+core = 7.x 
+version=7.x-1.0 
+
+files[]=almostengr.module
+

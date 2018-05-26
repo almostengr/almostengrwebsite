@@ -10,4 +10,5 @@ sites/*/private
 cache/
 install.php 
 INSTALL*txt
+UPGRADE*txt
 

@@ -1,0 +1,6 @@
+<?php 
+
+function almostengr_install() {
+  variable_set('site_name', 'Almost Engineer');
+}
+

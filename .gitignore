@@ -16,3 +16,7 @@ UPGRADE*txt
 # ignore specific modules
 sites/all/modules/admin_menu
 
+# ignore hosting provider files and directories
+.ftpquota
+error_log/*
+

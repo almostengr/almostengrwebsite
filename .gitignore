@@ -18,5 +18,7 @@ sites/all/modules/admin_menu
 
 # ignore hosting provider files and directories
 .ftpquota
+error_log*
 error_log/*
+error_log/
 

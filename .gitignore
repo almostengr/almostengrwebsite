@@ -1,34 +1,13 @@
 # Ignore configuration files that may contain sensitive information.
-sites/*/prod*setttings*.php
-sites/*/test*settings*.php
-sites/*/devl*settings*.php
 sites/*/settings*.php
-sites/*/civicrm.settings.php
-sites/all/modules/admin_menu
-sites/all/modules/devel
 
 # Ignore paths that contain user-generated content.
 sites/*/files
 sites/*/private
 
-# Add paths that are specific to webhost
-.ftpquota
-error_log
-cache
-
-# Ignore specific Drupal files
-CHANGELOG.txt 
-COPYRIGHT.txt 
-INSTALL.mysql.txt 
-INSTALL.pgsql.txt 
-INSTALL.sqlite.txt 
-INSTALL.txt 
-LICENSE.txt 
-MAINTAINERS.txt 
-README.txt 
-UPGRADE.txt
-!robots.txt
-.htaccess
-install.php
+# drupal files and directories
+.cache/
 cache/
+install.php 
+INSTALL*txt
 

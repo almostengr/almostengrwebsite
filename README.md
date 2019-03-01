@@ -1,2 +1,1 @@
-# bitsecondtech.com-drupal
-Drupal website for bitsecondtech.com
+Drupal website for The Almost Engineer

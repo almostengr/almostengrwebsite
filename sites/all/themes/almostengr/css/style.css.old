@@ -1,0 +1,50 @@
+/**
+ * Place your custom styles here.
+ */
+
+body{
+	font-family: Arial, sans-serif;
+	color: #000;
+	background-color: #000;
+}
+
+a:hover, a {
+	color: #B22222;
+}
+
+h1, .block-title {
+	font-weight: bold;
+	text-transform: capitalize;
+}
+
+div.main-container.container {
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 15px;
+}
+
+a.name.navbar-brand {
+	color: #000;
+	font-weight: bold;
+	font-size: 20pt;
+}
+
+ul.menu.nav.navbar-nav {
+	float: right;
+}
+
+li.first.collapsed.a{
+	color: #000;
+}
+
+button.btn.btn-primary {
+	background-color: #000;
+	border-color: #ccc;
+}
+
+footer.footer.container{
+	background-color: #999;
+	border-radius: 10px;
+	text-align: center;
+}
+

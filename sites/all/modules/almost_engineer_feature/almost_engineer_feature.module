@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Almost Engineer Feature feature.
- */
-
-include_once 'almost_engineer_feature.features.inc';

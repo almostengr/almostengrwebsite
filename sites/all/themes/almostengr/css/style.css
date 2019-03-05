@@ -25,9 +25,21 @@ footer.footer.container-fluid,
 footer.footer.container {
 	background-color: #000;
 	border-radius: 0px;
-	color: #f5f5f5;
+	/* color: #f5f5f5; */
+	color: #ccc;
 	text-align: center;
 	width: 100%;
+}
+
+section#black-menu-menu-follow-me- ul.menu.nav{
+	list-style-type: none;
+	margin: 0; 
+	padding: 0;
+}
+section#block-menu-menu-follow-me- ul.menu.nav li{
+	float: left;
+	display: block;
+	text-decoration: none;
 }
 
 a:hover, a {

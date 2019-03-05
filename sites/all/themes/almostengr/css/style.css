@@ -14,7 +14,6 @@ button, button.btn{
 
 div.region.region-sidebar-second section.block {
 	border-radius: 15px;
-	/* border: 3px solid #f5f5f5;*/
 	border: 3px solid #ccc;
 	margin-bottom: 10px;
 	padding: 10px;
@@ -25,19 +24,10 @@ footer.footer.container-fluid,
 footer.footer.container {
 	background-color: #000;
 	border-radius: 0px;
-	/* color: #f5f5f5; */
 	color: #ccc;
 	text-align: center;
 	width: 100%;
 }
-
-/*
-section#black-menu-menu-follow-me- ul.menu.nav{
-	list-style-type: none;
-	margin: 0; 
-	padding: 0;
-}
-*/
 
 section#block-menu-menu-follow-me- ul.menu.nav li,
 section#block-menu-menu-follow-me- ul.menu.nav li a,
@@ -78,5 +68,9 @@ a.name.navbar-brand {
 
 ul.menu.nav.navbar-nav {
 	float: right;
+}
+
+a, a:hover, a:focus {
+	color: #900;
 }
 

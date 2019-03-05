@@ -4,7 +4,6 @@
 
 body {
 	font-family: Arial, sans-serif;
-	background-color; #900;
 	color: #000;
 }
 
@@ -31,21 +30,29 @@ footer.footer.container {
 
 section#block-menu-menu-follow-me- ul.menu.nav li,
 section#block-menu-menu-follow-me- ul.menu.nav li a,
-section#block-menu-menu-follow-me- ul.menu.nav li a:hover,
+section#block-menu-menu-follow-me- ul.menu.nav li a:focus,
 section#block-menu-menu-footer1 ul.menu.nav li,
 section#block-menu-menu-footer1 ul.menu.nav li a,
-section#block-menu-menu-footer1 ul.menu.nav li a:hover,
+section#block-menu-menu-footer1 ul.menu.nav li a:focus,
 section#block-menu-menu-footer2 ul.menu.nav li,
 section#block-menu-menu-footer2 ul.menu.nav li a,
-section#block-menu-menu-footer2 ul.menu.nav li a:hover {
+section#block-menu-menu-footer2 ul.menu.nav li a:focus {
 	list-style-type: none;
 	float: left;
 	display: block;
 	text-decoration: none;
+	background-color: #000;
 	color: #ccc;
 	margin: 0px;
 	padding: 0px;
 	padding-right: 5px;
+}
+
+section#block-menu-menu-follow-me- ul.menu.nav li a:hover,
+section#block-menu-menu-footer1 ul.menu.nav li a:hover,
+section#block-menu-menu-footer2 ul.menu.nav li a:hover {
+	background-color: #000;
+	color: #900;
 }
 
 h1, .block-title, h1.page-header {

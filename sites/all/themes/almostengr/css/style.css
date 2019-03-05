@@ -31,19 +31,31 @@ footer.footer.container {
 	width: 100%;
 }
 
+/*
 section#black-menu-menu-follow-me- ul.menu.nav{
 	list-style-type: none;
 	margin: 0; 
 	padding: 0;
 }
-section#block-menu-menu-follow-me- ul.menu.nav li{
+*/
+
+section#block-menu-menu-follow-me- ul.menu.nav li,
+section#block-menu-menu-follow-me- ul.menu.nav li a,
+section#block-menu-menu-follow-me- ul.menu.nav li a:hover,
+section#block-menu-menu-footer1 ul.menu.nav li,
+section#block-menu-menu-footer1 ul.menu.nav li a,
+section#block-menu-menu-footer1 ul.menu.nav li a:hover,
+section#block-menu-menu-footer2 ul.menu.nav li,
+section#block-menu-menu-footer2 ul.menu.nav li a,
+section#block-menu-menu-footer2 ul.menu.nav li a:hover {
+	list-style-type: none;
 	float: left;
 	display: block;
 	text-decoration: none;
-}
-
-a:hover, a {
-	color: #c00;
+	color: #ccc;
+	margin: 0px;
+	padding: 0px;
+	padding-right: 5px;
 }
 
 h1, .block-title, h1.page-header {

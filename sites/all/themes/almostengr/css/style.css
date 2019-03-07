@@ -71,11 +71,14 @@ div.main-container.container {
 
 a.name.navbar-brand {
 	font-weight: bold;
-	font-size: 20pt;
+	font-size: 35pt;
+	margin-top: 15px;
+	margin-bottom: 10px;
 }
 
 ul.menu.nav.navbar-nav {
 	float: right;
+	margin-top: 10px;
 }
 
 a, a:hover, a:focus {

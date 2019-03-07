@@ -11,7 +11,8 @@ button, button.btn{
 	border-radius: 45px;
 }
 
-div.region.region-sidebar-second section.block {
+div.region.region-sidebar-second section.block,
+div.blocked--managed-0 {
 	border-radius: 15px;
 	border: 3px solid #ccc;
 	margin-bottom: 10px;

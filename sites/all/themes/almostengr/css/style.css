@@ -85,3 +85,7 @@ a, a:hover, a:focus {
 	color: #900;
 }
 
+button.btn.btn-primary {
+	background-color: #000;
+}
+

@@ -69,6 +69,15 @@ ol.breadcrumb li {
 	text-transform: capitalize;
 }
 
+/* spacing on the blog page */
+.field-name-field-difficulty,
+.field-name-body,
+.field-name-field-link,
+.field-name-field-keyewords {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
 div.main-container.container {
 	padding: 15px;
 }

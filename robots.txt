@@ -13,8 +13,6 @@
 # For more information about the robots.txt standard, see:
 # http://www.robotstxt.org/robotstxt.html
 
-S
-
 User-agent: *
 Crawl-delay: 10
 # CSS, JS, Images
@@ -90,9 +88,3 @@ Disallow: /?q=user/password/
 Disallow: /?q=user/register/
 Disallow: /?q=user/login/
 Disallow: /?q=user/logout/
-
-#add additional paths
-Disallow: /?q=node
-
-# Sitemap 
-Sitemap: http://thealmostengineer.com/sitemap.xml

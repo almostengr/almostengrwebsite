@@ -27,6 +27,7 @@ footer.footer.container {
 	color: #ccc;
 	text-align: center;
 	width: 100%;
+	padding: 15px;
 }
 
 section#block-menu-menu-follow-me- ul.menu.nav li,
@@ -87,6 +88,8 @@ a.name.navbar-brand {
 	font-size: 35pt;
 	margin-top: 15px;
 	margin-bottom: 10px;
+	/* padding: 15px; */
+	margin: 15px;
 }
 
 ul.menu.nav.navbar-nav {

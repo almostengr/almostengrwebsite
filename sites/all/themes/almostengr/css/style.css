@@ -92,6 +92,10 @@ a.name.navbar-brand {
 	margin: 15px;
 }
 
+.navbar-brand {
+  line-height: 40px;
+}
+
 ul.menu.nav.navbar-nav {
 	float: right;
 	margin-top: 10px;

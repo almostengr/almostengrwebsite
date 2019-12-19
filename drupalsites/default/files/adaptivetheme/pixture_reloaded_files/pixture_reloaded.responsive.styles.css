@@ -1,0 +1,240 @@
+@media only screen and (max-width:320px) {
+/* Smartphone portrait */
+#admin-menu-wrapper {display: none;}
+
+#page {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0) !important;
+}
+
+#header {
+  max-height: 1000px;
+  padding: 0;
+  background-image: none;
+}
+
+#branding,
+#header .region-header {
+  float: none;
+  background: transparent !important;
+  max-height: 1000px;
+  width: 100%;
+  clear: both;
+  margin: 10px 0;
+}
+
+#header  .region-header {
+  margin: 10px 0;
+}
+
+#logo {
+  margin: 5px auto;
+  padding: 0;
+  float: none;
+}
+
+#site-name {
+  font-size: 1.6em;
+  padding: 25px 0 10px 10px;
+}
+
+#site-slogan {
+  font-size: 1em;
+  text-transform: none;
+}
+
+.region-secondary-content .block {
+  margin-bottom: 0;
+  font-size: 1em;
+}
+
+#menu-bar {
+  padding: 0;
+}
+
+#menu-bar .block {
+  clear: both;
+  float: none;
+}
+
+#menu-bar .menu-wrapper ul ul {
+  position: relative;
+  top: 0;
+  width: 100% !important;
+}
+
+#menu-bar .menu-wrapper > ul,
+#menu-bar .menu-wrapper > ul > li {
+  display: block;
+  float: none;
+  margin: 0;
+  border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+
+#menu-bar .menu-wrapper ul ul li {
+  border-bottom: 1px solid #fff;
+  float: none !important;
+}
+
+#menu-bar .menu-wrapper ul ul li.first {
+  border-top: 1px solid #fff;
+}
+
+#menu-bar .sf-menu {
+  height: auto;
+  padding: 0;
+}
+
+}
+@media only screen and (min-width:321px) and (max-width:480px) {
+/* Smartphone landscape */
+#admin-menu-wrapper {display: none;}
+
+#page {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0) !important;
+}
+
+#header {
+  max-height: 1000px;
+  padding: 0;
+  background-image: none;
+}
+
+#branding,
+#header .region-header {
+  float: none;
+  background: transparent !important;
+  max-height: 1000px;
+  width: 100%;
+  clear: both;
+  margin: 10px 0;
+}
+
+#header  .region-header {
+  margin: 10px 0;
+}
+
+#site-name {
+  font-size: 1.6em;
+  padding: 25px 0 10px 10px;
+}
+
+#site-slogan {
+  font-size: 1em;
+  text-transform: none;
+}
+
+.region-secondary-content .block {
+  margin-bottom: 0;
+  font-size: 1em;
+}
+
+#menu-bar {
+  padding: 0;
+}
+
+#menu-bar .block {
+  clear: both;
+  float: none;
+}
+
+#menu-bar .menu-wrapper ul ul {
+  position: static;
+  top: 0;
+  width: 100% !important;
+}
+
+#menu-bar .menu-wrapper > ul,
+#menu-bar .menu-wrapper > ul > li {
+  display: block;
+  float: none;
+  margin: 0;
+  border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+#menu
+-bar .menu-wrapper ul ul li {
+  border-bottom: 1px solid #fff;
+  float: none !important;
+}
+
+#menu-bar .menu-wrapper ul ul li.first {
+  border-top: 1px solid #fff;
+}
+
+#menu-bar .menu-wrapper ul ul li.last {
+  border-bottom: 0;
+}
+
+#menu-bar .sf-menu {
+  height: auto;
+  padding: 0;
+}
+
+
+.region-sidebar-first .block,
+.region-sidebar-second .block {
+  width: 100%;
+}
+
+}
+@media only screen and (min-width:481px) and (max-width:768px) {
+/* Tablet portrait */
+#page {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0) !important;
+}
+#site-name {
+  font-size: 1.6em;
+  padding: 22px 0 0;
+}
+#header {
+  max-height: 1000px;
+  padding: 0;
+  background-image: none;
+}
+#branding,
+#header .region-header {
+  float: none;
+  background: transparent !important;
+  max-height: 1000px;
+  width: 100%;
+  clear: both;
+  margin: 10px 0;
+}
+#header .header-inner {
+  padding-bottom: 5px;
+}
+#menu-bar .block {
+  clear: both;
+  float: none;
+}
+#menu-bar .menu-wrapper > ul > li {
+  width: 49%;
+  float: left;
+  margin-bottom: 1px;
+}
+}
+@media only screen and (min-width:769px) and (max-width:1024px) {
+/**
+ *   Important Information about this CSS File
+ *
+ * - Do not delete or rename this file, if you do not use it leave it blank (delete
+ *   all styles) and the file will be skipped when you enable Production Mode in
+ *   the Global theme settings.
+ *
+ *   By default this file is not used in Pixture Reloaded, however it is included
+ *   here in case you need to add some styles.
+ */
+
+}
+@media only screen and (min-width:1025px) {
+/**
+ *   Important Information about this CSS File
+ *
+ * - Do not delete or rename this file, if you do not use it leave it blank (delete
+ *   all styles) and the file will be skipped when you enable Production Mode in
+ *   the Global theme settings.
+ *
+ *   By default this file is not used in Pixture Reloaded, however it is included
+ *   here in case you need to add some styles.
+ */
+ 
+}

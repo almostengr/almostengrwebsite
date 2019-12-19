@@ -1,0 +1,19 @@
+body{font-family:'Trebuchet MS', 'Helvetica Neue', Arial, Helvetica, sans-serif}
+h1#site-name{font-size:2em;font-family:'Trebuchet MS', 'Helvetica Neue', Arial, Helvetica, sans-serif}
+h2#site-slogan{font-size:1.2em;font-family:'Trebuchet MS', 'Helvetica Neue', Arial, Helvetica, sans-serif}
+#page-title{font-size:2em;font-family:'Trebuchet MS', 'Helvetica Neue', Arial, Helvetica, sans-serif}
+.node-title{font-size:1.6em;font-family:'Trebuchet MS', 'Helvetica Neue', Arial, Helvetica, sans-serif}
+.comment-title{font-size:1.4em;font-family:'Trebuchet MS', 'Helvetica Neue', Arial, Helvetica, sans-serif}
+.block-title{font-size:1.4em;font-family:'Trebuchet MS', 'Helvetica Neue', Arial, Helvetica, sans-serif}
+h1,h2,h3,h4{font-family:'Trebuchet MS', 'Helvetica Neue', Arial, Helvetica, sans-serif}
+h5,h6{font-family:'Trebuchet MS', 'Helvetica Neue', Arial, Helvetica, sans-serif}
+h1{font-size:2em;}
+h2{font-size:1.6em;}
+h3{font-size:1.4em;}
+h4{font-size:1.2em;}
+h5{font-size:1em;}
+h6{font-size:1em;}
+#menu-bar .menu-wrapper,#primary-menu-bar .menu-wrapper{font-family:'Trebuchet MS', 'Helvetica Neue', Arial, Helvetica, sans-serif}
+#secondary-menu-bar .menu-wrapper,#menu-bar #block-system-user-menu{font-family:'Trebuchet MS', 'Helvetica Neue', Arial, Helvetica, sans-serif}
+nav.block .block-content{font-family:'Trebuchet MS', 'Helvetica Neue', Arial, Helvetica, sans-serif}
+ruby ruby{font-family:'Trebuchet MS', 'Helvetica Neue', Arial, Helvetica, sans-serif}

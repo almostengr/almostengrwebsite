@@ -1,11 +1,16 @@
 site_name: The Almost Engineer
 site_url: http://thealmostengineer.com
 repo_url: https://github.com/almostengr
+# site_favicon: 
 repo_name: Github
 site_description: The blog of Kenny R.
 site_author: Kenny R, @almostengr
-copyright: The Almost Engineer
+copyright: Copyright &copy; 2015-2019 Kenny R, The Almost Engineer
 theme:
-        name: mkdocs
+        #        name: bootstrap
+        name: null
+        custom_dir: 'cinder/cinder'
 use_directory_urls: true
+strict: false
+
 

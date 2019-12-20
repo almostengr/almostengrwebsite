@@ -11,3 +11,5 @@ site/
 *swp
 *tmp
 
+# other files 
+*sql

@@ -7,3 +7,9 @@
 [submodule "docs/linux_reference"]
 	path = docs/linux_reference
 	url = https://github.com/almostengr/linuxcheatsheet.git
+[submodule "docs/gitcheatsheet"]
+	path = docs/gitcheatsheet
+	url = https://github.com/almostengr/gitcheatsheet.git
+[submodule "docs/linuxcheatsheet"]
+	path = docs/linuxcheatsheet
+	url = https://github.com/almostengr/linuxcheatsheet.git

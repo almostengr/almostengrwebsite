@@ -5,11 +5,40 @@ repo_url: https://github.com/almostengr
 repo_name: Github
 site_description: The blog of Kenny R.
 site_author: Kenny R, @almostengr
+
+# Copyright
 copyright: Copyright &copy; 2015-2019 Kenny R, The Almost Engineer
+
+# Appearance
 theme:
         #        name: bootstrap
         name: null
-        custom_dir: 'cinder/cinder'
+        custom_dir: 'mkdocs-material/material'
+        language: en
+        palette:
+                primary: 'black'
+                accent: 'brown'
+        font: false
+        logo:
+                icon: 'cloud'
+        feature:
+                tabs: false
+
+extra:
+        social:
+                - type: 'github'
+                  link: 'https://github.com/almostengr'
+                - type: 'instagram'
+                  link: 'https://instagram.com/almostengr'
+                - type: 'linkedin'
+                  link: 'https://linkedin.com/in/krobinsontech'
+                - type: 'twitter'
+                  link: 'https://twitter.com/almostengr'
+                - type: 'youtube'
+                  link: 'https://www.youtube.com/channel/UC4HCouBLtXD1j1U_17aBqig?sub_confirmation=1'
+                - type: 'youtube'
+                  link: 'https://www.youtube.com/channel/UCB7rvymUaUbbig3skv2zvCQ?sub_confirmation=1'
+                        
 use_directory_urls: true
 strict: false
 

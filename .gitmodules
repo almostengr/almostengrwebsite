@@ -1,3 +1,9 @@
 [submodule "mkdocs-material"]
 	path = mkdocs-material
 	url = https://github.com/squidfunk/mkdocs-material.git
+[submodule "docs/blog/references/gitcheatsheet"]
+	path = docs/blog/references/gitcheatsheet
+	url = https://github.com/almostengr/gitcheatsheet
+[submodule "docs/linux_reference"]
+	path = docs/linux_reference
+	url = https://github.com/almostengr/linuxcheatsheet.git

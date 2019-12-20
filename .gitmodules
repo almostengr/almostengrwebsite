@@ -1,6 +1,3 @@
-[submodule "cinder"]
-	path = cinder
-	url = https://github.com/chrissimpkins/cinder.git
 [submodule "mkdocs-material"]
 	path = mkdocs-material
 	url = https://github.com/squidfunk/mkdocs-material.git

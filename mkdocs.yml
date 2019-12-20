@@ -11,16 +11,15 @@ copyright: Copyright &copy; 2015-2019 Kenny R, The Almost Engineer
 
 # Appearance
 theme:
-        #        name: bootstrap
         name: null
-        custom_dir: 'mkdocs-material/material'
+        custom_dir: 'theme'
         language: en
         palette:
                 primary: 'black'
                 accent: 'brown'
         font: false
         logo:
-                icon: 'cloud'
+                icon: 'user'
         feature:
                 tabs: false
 

@@ -3,9 +3,9 @@ title: About Kenny R
 date: 2019-12-21
 ---
 
-# About Me
+# About
 
-### Reasons Why I Blog
+## Reasons Why I Blog
 
 Kenny started passively blogging in 2011 after watching presentation that stated that every software developer should have a blog. Eventually that blogging habit faded. Fast forward to 2018, Kenny attended a gardening workshop that mentioned that every gardener should have a journal. It eventually occurred to him that he could start blogging about his gardening successes and failures and use that as his gardening journal.
 
@@ -15,13 +15,21 @@ Gardening started as a hobby for Kenny. After having some seasons of little succ
 
 Since then, he has been blogging his gardening and technology experiences and mishaps for several reasons: 1) you learn from your past mistakes 2) others can learn from your mistakes before they make them 3) you will forget what you previously did, but a quick search of the blog will provide the refresher that you need to keep going.
 
-### "The Almost Engineer" Explaination
+## "The Almost Engineer" Explaination
 
 If you have read this far down the page, you probably are wondering how did Kenny come up with The Almost Engineer name. Kenny works (and according to some live in) in the engineering-related field of Computer Science, has great problem solving skills, and enjoys fixing things instead of paying someone else to do it for him.  However Kenny has a Business degree from the University of Alabama (Roll Tide!) instead of an engineering degree, thus almost being an engineer.
 
-### Gardening Information
+## Gardening Information
 
 Information about the garden is based on conditions of USDA growing Zone 8a, located in the southeastern United States. That being said, the recommendations and suggestions that are made on this blog are for this growing zone and are not guaranteed to work in other growing zones. However, please do feel free to experiment in your garden and comment on your experiences. 
 
 In between blog posts, you can catch me on Twitter, Instagram, YouTube, in the garden, or on the keyboard.
+
+## Contact Me
+
+Have a question, comment, or just want to say hi? Reach out to me 
+<a href="https://twitter.com/almostengr" target="_blank">@almostengr on Twitter</a> or 
+<a href="https://instagram.com/almostengr" target="_blank">almostengr on Instagram</a>.
+
+If you have a question or comment about one of the videos that you have seen on the Almost Engineer YouTube Channel, then leave a comment on that video.
 

@@ -49,7 +49,6 @@ plugins:
 
 nav:
 - index.md
-- contact.md
 - Cheatsheets:
   - gitcheatsheet/README.md
   - linuxcheatsheet/README.md

@@ -54,7 +54,8 @@ nav:
   - linuxcheatsheet/README.md
 # - privacy.md
 - 2019:
-  - blog/2019.12.21-blog-reverse-sort-with-mkdocs.md
+  - blog/2019.12.21-switched-blog-from-drupal-to-mkdocs.md
+  - blog/2019.12.20-blog-reverse-sort-with-mkdocs.md
   - blog/2019.11.24-takeaways-from-christopher-robin-movie.md
   - blog/2019.10.31-redirect-to-raspberry-pi-traffic-light.md
   - blog/2019.10.18-youtube.md

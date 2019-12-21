@@ -9,6 +9,8 @@ site_author: Kenny R, @almostengr
 # Copyright
 copyright: Copyright &copy; 2015-2019 Kenny R, The Almost Engineer
 
+dev_addr: 192.168.57.111:8000
+
 # Appearance
 theme:
         name: null

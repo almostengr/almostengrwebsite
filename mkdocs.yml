@@ -5,6 +5,7 @@ repo_url: https://github.com/almostengr
 repo_name: Github
 site_description: The blog of Kenny R.
 site_author: Kenny R, @almostengr
+google_analytics: ['UA-64643711-1', 'thealmostengineer.com']
 
 # Copyright
 copyright: Copyright &copy; 2015-2019 Kenny R, The Almost Engineer

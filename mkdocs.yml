@@ -50,13 +50,19 @@ nav:
 - index.md
 - contact.md
 - 2019:
-  - blog/2019-12-19-index.md
+  - blog/2019-12-21-blog-reverse-sort-with-mkdocs.md
   - blog/2019-11-24-takeaways-from-christopher-robin-movie.md
   - blog/2019-09-05-copying-infested-code.md
   - blog/2019-07-23-markdown-my-words.md
+  - blog/2019-07-04-when-deploying-before-testing.md
+  - blog/2019-07-03-squirrels-taught-me-about-women-and-food.md
+  - blog/2019-06-16-7-reasons-i-can-do-that-without-the-app.md
+  - blog/2019-06-13-3-benefits-of-doing-something-different-when-stuck.md
+  - blog/2019-04-10-how-to-start-a-garden-in-8-steps.md
+  - blog/2019-03-19-containers-vs-in-ground-gardening.md
 - 2018:
-  - blog/2018.01.01-index.md
-- 2017:
+  - blog/2018-06-05-configure-simplisafe-with-home-assistant.md
+  - blog/2018-02-03-liftmaster-8500-review-1-year-later.md
   - blog/2017.02.01-index.md
 - Cheatsheets:
   - gitcheatsheet/README.md

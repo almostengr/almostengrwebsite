@@ -4,6 +4,7 @@ drop table if exists mkconversion;
 create table mkconversion as 
 select
 node.nid, node.type, node.title, node.status, node.created, node.changed
+, body.body_value
 , (select name from bsal_taxonomy_term_data taxterm where taxterm.tid = difficulty.field_difficulty_tid) as taxterms
 , image.field_image_alt, image.field_image_title, image.field_image_width, image.field_image_height
 , dfile.uri, dfile.filemime
@@ -14,6 +15,7 @@ left join bsal_field_data_field_difficulty difficulty on difficulty.entity_id = 
 left join bsal_field_data_field_image image on image.entity_id = node.nid
 left join bsal_file_managed dfile on dfile.fid = image.field_image_fid
 order by taxterms desc
+;
 -- returned 0 rows; check table to confirm data is present
 
 update mkconversion

@@ -33,7 +33,7 @@ concat('# ', title, '\n\n',
 -- replace formatting tags
 update mkconversion
 set final_output =
-replace(replace(replace(replace(replace(final_output, '<p>', ' '), '</p>', '\n'), '&nbsp;', ''), '<br />', '\n'), '<br>', '\n')
+replace(replace(replace(final_output, '<p>', ' '), '</p>', '\n'), '&nbsp;', '')
 ;
 
 update mkconversion
@@ -116,3 +116,7 @@ set file_out_name =
 replace(replace(replace(replace(concat(date_format(from_unixtime(created), '%Y.%m.%d'), '-', lower(replace(title, ' ', '-')), '.md'), '/', ''), ':', ''), '-|-almost-engineered-tech', ''), '---', '-')
 ;
 
+-- replace carriage returns with break lines
+update mkconversion 
+set final_output = replace(final_output, '\n', '<br />')
+;

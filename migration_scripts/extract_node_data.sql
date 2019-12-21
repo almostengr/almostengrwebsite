@@ -1,4 +1,5 @@
-drop table if exist mkconversion; 
+drop table if exists mkconversion; 
+-- returned 0 rows
 
 create table mkconversion as 
 select
@@ -16,5 +17,5 @@ left join bsal_field_data_field_image image on image.entity_id = node.nid
 left join bsal_file_managed dfile on dfile.fid = image.field_image_fid
 order by taxterms desc
 -- order by field_image_height desc
-;
 
+-- returned 0 rows; check table to confirm data is present

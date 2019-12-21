@@ -122,6 +122,13 @@
         {{ lang.t('skip.link.title') }}
       </a>
     {% endif %}
+    
+    <!-- ads by Google -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- banner sidebar -->
+    <ins class="adsbygoogle"     style="display:block"     data-ad-client="ca-pub-4218270188842097"     data-ad-slot="9176528274"     data-ad-format="auto"     data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
     {% block header %}
       {% include "partials/header.html" %}
     {% endblock %}
@@ -160,7 +167,9 @@
             <article class="md-content__inner md-typeset">
               {% block content %}
                 {% if page.edit_url %}
+		<!--
                   <a href="{{ page.edit_url }}" title="{{ lang.t('edit.link.title') }}" class="md-icon md-content__icon">&#xE3C9;</a>
+		-->
                 {% endif %}
                 {% if not "\x3ch1" in page.content %}
                   <h1>{{ page.title | default(config.site_name, true)}}</h1>
@@ -201,6 +210,12 @@
                 {% include "partials/integrations/disqus.html" %}
               {% endblock %}
             </article>
+
+	    <!-- ads by Google -->
+	    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	    <ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-4218270188842097"     data-ad-slot="1594133911"></ins>
+	    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
           </div>
         </div>
       </main>

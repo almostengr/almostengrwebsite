@@ -58,10 +58,10 @@ nav:
   - blog/2019.12.20-blog-reverse-sort-with-mkdocs.md
   - blog/2019.11.24-takeaways-from-christopher-robin-movie.md
   - blog/2019.10.31-redirect-to-raspberry-pi-traffic-light.md
-  - blog/2019.10.18-youtube.md
-  - blog/2019.10.18-twitter.md
-  - blog/2019.10.18-instagram.md
-  - blog/2019.10.18-dash-cam.md
+#  - blog/2019.10.18-youtube.md
+#  - blog/2019.10.18-twitter.md
+#  - blog/2019.10.18-instagram.md
+#  - blog/2019.10.18-dash-cam.md
   - blog/2019.09.05-copying-infested-code.md
   - blog/2019.09-05-copying-infested-code.md
   - blog/2019.08.15-21-days-for-a-new-habit.md

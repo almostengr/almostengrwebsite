@@ -31,21 +31,80 @@ concat('# ', title, '\n\n',
 
 update mkconversion
 set final_output =
-replace(replace(replace(replace(final_output, '<p>', ''), '</p>', '\n'), '&nbsp;', ''), '<br />', '')
+replace(replace(replace(replace(final_output, '<p>', ' '), '</p>', '\n'), '&nbsp;', ''), '<br />', '\n', '<br>', '\n')
 ;
+-- updated 68 rows
 
 update mkconversion
 set final_output = replace(replace(replace(replace(final_output, '<code>', '```'), '</code>', '```\n'),'<pre>', '```'), '</pre>', '```\n')
 ;
+-- updated 21 rows
 
 update mkconversion
 set final_output =
-replace(replace(replace(replace(replace(replace(final_output, '<h1>', '#'), '</h1>', ''), '<h2>', '## '), '</h2>', ''), '<h3>', '### '), '</h3>', '')
+replace(replace(replace(replace(replace(replace(final_output, '<h1>', '# '), '</h1>', ''), '<h2>', '## '), '</h2>', ''), '<h3>', '### '), '</h3>', '')
 ;
+-- updated 3 rows
 
 update mkconversion
 set final_output =
 replace(replace(final_output, '<li>', '* '), '</li>', '')
 ;
--- 15 rows updated
+-- updated 15 rows
+
+update mkconversion
+set final_output = 
+replace(final_output, '<span style="font-family: &quot;Courier New&quot;,Courier,monospace;">', '```')
+;
+
+update mkconversion
+set final_output = 
+replace(replace(replace(replace(replace(final_output, '<ol>', ''), '</ol>', '\n'), '<ol start="2">', ''), '<ol start="3">', ''), '<ol start="8">', '')
+;
+
+update mkconversion
+set final_output =
+replace(replace(replace(final_output, '<ul>', ''), '<ul style="margin:0;padding-left:72pt;">', ''), '</ul>', '\n')
+;
+
+update mkconversion
+set final_output = 
+replace(replace(replace(replace(final_output, '<strong>', '**'), '</strong>', '**'), '<b>', '**'), '</b>', '**')
+;
+
+update mkconversion
+set final_output = 
+replace(replace(final_output, '<o:p>', '', '</o:p>', ' ')
+;
+
+update mkconversion
+set final_output =
+replace(final_output, '<p class="MsoNormal">', ' ')
+;
+
+update mkconversion
+set final_output =
+replace(replace(replace(replace(final_output, '<i>', '*'), '</i>', '*'), '<em>', '*'), '</em>', '*')
+;
+
+update mkconversion
+set final_output =
+replace(final_output, '<p style="margin-bottom: 0in; line-height: 100%">', ' ')
+;
+
+-- remove div tags 
+update mkconversion
+set final_output = 
+replace(final_output, '<div style="background-color: white; color: #191a19; font-family: Verdana; font-size: 12px; line-height: 20px; margin-bottom: 1.2em; margin-top: 0.6em; padding: 0px;">', '')
+;
+
+update mkconversion
+set final_output = 
+replace(replace(final_output, '<div style="float: right; padding-left: 15px;">', ''), '</div>', '')
+;
+
+update mkconversion
+set final_output = 
+replace(replace(final_output, '<blockquote>', '```'), '</blockquote>', '```')
+;
 

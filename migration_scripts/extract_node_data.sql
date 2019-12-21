@@ -113,6 +113,6 @@ replace(replace(final_output, '<blockquote>', '```'), '</blockquote>', '```')
 -- update output file name 
 update mkconversion
 set file_out_name =
-concat(date_format(from_unixtime(created), '%Y.%m.%d'), '-', lower(replace(title, ' ', '-')), '.md')
+replace(replace(replace(replace(concat(date_format(from_unixtime(created), '%Y.%m.%d'), '-', lower(replace(title, ' ', '-')), '.md'), '/', ''), ':', ''), '-|-almost-engineered-tech', ''), '---', '-')
 ;
 

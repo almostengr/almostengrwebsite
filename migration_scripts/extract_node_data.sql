@@ -9,6 +9,7 @@ node.nid, node.type, node.title, node.status, node.created, node.changed
 , image.field_image_alt, image.field_image_title, image.field_image_width, image.field_image_height
 , dfile.uri, dfile.filemime
 , body_value as final_output
+, node.title as file_out_name
 from bsal_node node
 left join bsal_field_data_body body on body.entity_id = node.nid
 left join bsal_field_data_field_difficulty difficulty on difficulty.entity_id = node.nid

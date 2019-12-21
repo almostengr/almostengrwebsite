@@ -57,7 +57,7 @@ nav:
   - blog/2019.12.21-switched-blog-from-drupal-to-mkdocs.md
   - blog/2019.12.20-blog-reverse-sort-with-mkdocs.md
   - blog/2019.11.24-takeaways-from-christopher-robin-movie.md
-  - blog/2019.10.31-redirect-to-raspberry-pi-traffic-light.md
+#  - blog/2019.10.31-redirect-to-raspberry-pi-traffic-light.md
 #  - blog/2019.10.18-youtube.md
 #  - blog/2019.10.18-twitter.md
 #  - blog/2019.10.18-instagram.md
@@ -145,13 +145,13 @@ nav:
   - blog/2018.01.16-install-samba-on-ubuntu-16.04.md
   - blog/2018.01.14-farmos-nws-2.0.md
 - 2017:
-  - blog/2017.04.13-raspberry-pi-traffic-light-control.md
+#  - blog/2017.04.13-raspberry-pi-traffic-light-control.md
   - blog/2017.04.03-linux-rm-argument-list-too-long.md
-  - blog/2017.02.01-index.md
+#  - blog/2017.02.01-index.md
 - 2016:
   - blog/2016.11.19-setup-ssh-on-openwrt.md
   - blog/2016.09.28-find-lines-longer-than-specified-length.md
-  - blog/2016.08.21-faq-frequently-asked-questions.md
+#  - blog/2016.08.21-faq-frequently-asked-questions.md
   - blog/2016.07.14-install-openwrt-on-linksys-wrt1900ac-v1.md
   - blog/2016.03.10-automating-ubuntu-14.04-automatic-updates.md
   - blog/2016.02.04-run-drupal-cron-via-bash-with-drush.md
@@ -176,17 +176,17 @@ nav:
   - blog/2015.10.30-asp.net-application-errors.md
   - blog/2015.10.21-how-to-disable-foreign-key-constraints-in-mysql.md
   - blog/2015.10.07-green-screen-with-flash-videos-in-windows-10.md
-  - blog/2015.10.06-nsbe-mp-scholarship-module.md
-  - blog/2015.09.13-university-of-alabama-chapter-of-the-national-society-of-black-engineers.md
-  - blog/2015.09.13-tuscaloosa-area-black-chamber-of-commerce.md
-  - blog/2015.09.13-naacp,-university-of-alabama-chapter.md
-  - blog/2015.09.13-black-box-operations.md
+#  - blog/2015.10.06-nsbe-mp-scholarship-module.md
+#  - blog/2015.09.13-university-of-alabama-chapter-of-the-national-society-of-black-engineers.md
+#  - blog/2015.09.13-tuscaloosa-area-black-chamber-of-commerce.md
+#  - blog/2015.09.13-naacp,-university-of-alabama-chapter.md
+#  - blog/2015.09.13-black-box-operations.md
   - blog/2015.09.04-oracle-holidays-without-stored-procedure-with-2-week-notification.md
   - blog/2015.06.28-search-engine-optimization.md
   - blog/2015.06.28-project-management-system.md
   - blog/2015.06.28-installing-drupal-7-on-1-and-1-web-hosting.md
   - blog/2015.06.28-how-to-synchronize-files-between-two-or-more-windows-computers.md
   - blog/2015.06.28-dont-use-click-here-in-links.md
-  - blog/2015.06.24-services.md
-  - blog/2015.06.24-privacy-policy--terms-of-use.md
-  - blog/2015.06.24-about.md
+#  - blog/2015.06.24-services.md
+#  - blog/2015.06.24-privacy-policy--terms-of-use.md
+#  - blog/2015.06.24-about.md

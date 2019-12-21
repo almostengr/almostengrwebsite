@@ -45,3 +45,20 @@ strict: false
 
 plugins:
         - search
+
+nav:
+- index.md
+- contact.md
+- 2019:
+  - blog/2019-12-19-index.md
+  - blog/2019-11-24-takeaways-from-christopher-robin-movie.md
+  - blog/2019-09-05-copying-infested-code.md
+  - blog/2019-07-23-markdown-my-words.md
+- 2018:
+  - blog/2018.01.01-index.md
+- 2017:
+  - blog/2017.02.01-index.md
+- Cheatsheets:
+  - gitcheatsheet/README.md
+  - linuxcheatsheet/README.md
+- privacy.md

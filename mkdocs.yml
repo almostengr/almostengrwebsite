@@ -1,11 +1,13 @@
 site_name: The Almost Engineer
 site_url: http://thealmostengineer.com
-repo_url: https://github.com/almostengr
-# site_favicon: 
-repo_name: Github
-site_description: The blog of Kenny R.
-site_author: Kenny R, @almostengr
+site_description: The blog of Kenny Robinson.
+site_author: Kenny Robinson, @almostengr
+
 google_analytics: ['UA-64643711-1', 'thealmostengineer.com']
+
+# repository information
+repo_url: https://github.com/almostengr
+repo_name: Github
 
 # Copyright
 copyright: Copyright &copy; 2015-2019 Kenny R, The Almost Engineer
@@ -50,8 +52,8 @@ plugins:
 nav:
 - index.md
 - Cheatsheets:
-  - gitcheatsheet/README.md
-  - linuxcheatsheet/README.md
+  - git_cheatsheet/README.md
+  - linux_cheatsheet/README.md
 # - privacy.md
 - 2019:
   - blog/2019.12.21-switched-blog-from-drupal-to-mkdocs.md

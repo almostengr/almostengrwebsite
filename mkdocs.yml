@@ -58,13 +58,11 @@ nav:
   - technology/2019.12.21-switched-blog-from-drupal-to-mkdocs.md
   - technology/2019.12.20-blog-reverse-sort-with-mkdocs.md
   - technology/2019.09.05-copying-infested-code.md
-  - technology/2019.09-05-copying-infested-code.md
+    #  - technology/2019.09-05-copying-infested-code.md
   - technology/2019.07.23-markdown-my-words.md
-  - technology/2019.07.04.when-deploying-before-testing.md
   - technology/2019.07.04-when-deploying-before-testing.md
   - technology/2019.06.16-7-reasons-i-can-do-that-without-the-app.md
   - technology/2019.06.11-drupal-8-tutorial-series.md
-  - technology/2019.05.09.automatically-publish-content-with-custom-module.md
   - technology/2019.05.09-automatically-publish-content-with-custom-module.md
   - technology/2019.05.09-7-steps-for-more-steps.md
   - technology/2019.05.07-how-to-install-chrome-on-ubuntu.md

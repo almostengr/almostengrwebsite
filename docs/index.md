@@ -13,7 +13,11 @@ Kenny's day job is working as an IT professional. He has years of experience in 
 
 Gardening started as a hobby for Kenny. After having some seasons of little success and being able to literately taste the fruits of my labor, Kenny decided to expand his green thumb skill set. Thanks to social media, Kenny found other that some friends and former classmates also had an interest in gardening and they were looking for help. After attending a class at a local urban farm about gardening, it occurred to him that a blog could be used as a journal to track my successes and failures.
 
-Since then, he has been blogging his gardening and technology experiences and mishaps for several reasons: 1) you learn from your past mistakes 2) others can learn from your mistakes before they make them 3) you will forget what you previously did, but a quick search of the blog will provide the refresher that you need to keep going.
+Since then, he has been blogging his gardening and technology experiences and mishaps for several reasons: 
+
+* you learn from your past mistakes 
+* others can learn from your mistakes before they make them 
+* you will forget what you previously did, but a quick search of the blog will provide the refresher that you need to keep going.
 
 ## "The Almost Engineer" Explaination
 

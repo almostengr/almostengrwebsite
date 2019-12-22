@@ -54,7 +54,6 @@ nav:
 - Cheatsheets:
   - git_cheatsheet/README.md
   - linux_cheatsheet/README.md
-# - privacy.md
 - Technology:
   - technology/2019.12.21-switched-blog-from-drupal-to-mkdocs.md
   - technology/2019.12.20-blog-reverse-sort-with-mkdocs.md
@@ -164,7 +163,6 @@ nav:
   - diy/2019.06.11-identify-electrical-circuits-and-label-breaker-panel.md
   - diy/2019.05.02-4-steps-to-change-the-battery-in-nissan-altima-intelligent-key.md
   - diy/2019.04.27-weber-charcoal-chimney-review-and-first-use.md
-  - diy/2019.02.16-identify-circuits-and-label-breaker-panel.md
   - diy/2019.02.09-remove-water-from-car-trunk.md
   - diy/2018.11.03-make-your-crockpot-smarter-with-a-timer.md
   - diy/2018.10.27-change-air-filter-on-2013-2018-5th-generation-nissan-altima.md

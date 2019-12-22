@@ -157,6 +157,7 @@
             {% endif %}
           {% endblock %}
           <div class="md-content">
+	    <a name="#top"></a>
             <article class="md-content__inner md-typeset">
               {% block content %}
                 {% if page.edit_url %}
@@ -203,6 +204,8 @@
                 {% include "partials/integrations/disqus.html" %}
               {% endblock %}
             </article>
+
+	    <p><a href="#top">Back to Top</a></p>
 
 	    <!-- ads by Google -->
 	    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>

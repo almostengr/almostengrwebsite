@@ -24,7 +24,7 @@ theme:
                 accent: 'brown'
         font: false
         logo:
-                icon: 'user'
+                icon: 'speaker_notes'
         feature:
                 tabs: true
 

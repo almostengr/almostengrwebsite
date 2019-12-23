@@ -49,6 +49,9 @@ strict: false
 plugins:
         - search
 
+markdown_extensions:
+        - meta
+
 nav:
 - index.md
 - Cheatsheets:

@@ -14,8 +14,12 @@
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       {% if page and page.meta and page.meta.description %}
         <meta name="description" content="{{ page.meta.description }}">
+	<meta property="og:description" content="{{ page.meta.description }}" />
+	<meta name="twitter:description" content="{{ config.site_description }}" />
       {% elif config.site_description %}
         <meta name="description" content="{{ config.site_description }}">
+	<meta property="og:description" content="{{ config.site_description }}" />
+	<meta name="twitter:description" content="{{ config.site_description }}" />
       {% endif %}
       {% if page and page.meta and page.meta.redirect %}
         <script>var anchor=window.location.hash.substr(1);location.href="{{ page.meta.redirect }}"+(anchor?"#"+anchor:"")</script>
@@ -24,12 +28,17 @@
         <link rel="canonical" href="{{ page.meta.redirect }}">
       {% elif page.canonical_url %}
         <link rel="canonical" href="{{ page.canonical_url }}">
+	<meta property="og:url" content="{{ page.canonical_url }}" />
+	<meta name="twitter:url" content="{{ page.canonical_url }}" />
       {% endif %}
       {% if page and page.meta and page.meta.author %}
         <meta name="author" content="{{ page.meta.author | first }}">
       {% elif config.site_author %}
-        <meta name="author" content="{{ config.site_author }}">
+        <meta name="author" content="{{ config.site_author }}" />
       {% endif %}
+      <meta name="twitter:creator" content="@almostengr" />
+      <meta name="twitter:site" content="@almostengr" />
+      <meta name="twitter:card" content="summary" />
       {% for key in [
         "clipboard.copy",
         "clipboard.copied",
@@ -45,15 +54,26 @@
       {% endfor %}
       <link rel="shortcut icon" href="{{ config.theme.favicon | url }}">
       <meta name="generator" content="mkdocs-{{ mkdocs_version }}, mkdocs-material-4.6.0">
+      {% if page.meta.image %}
+        <meta property="og:image" content="{{ page.meta.image }}" />
+	<meta name="twitter:image" content="{{ page.meta.image }}" />
+      {% endif %}
     {% endblock %}
     {% block htmltitle %}
       {% if page and page.meta and page.meta.title %}
         <title>{{ page.meta.title }}</title>
+	<meta property="og:title" content="{{ page.meta.title }}" />
+	<meta name="twitter:title" content="{{ page.meta.title }}" />
       {% elif page and page.title and not page.is_homepage %}
-        <title>{{ page.title | striptags }} - {{ config.site_name }}</title>
+        <title>{{ page.title | striptags }} | {{ config.site_name }}</title>
+	<meta property="og:title" content="{{ page.title | striptags }}" />
+	<meta name="twitter:title" content="{{ page.title | striptags }}" />
       {% else %}
         <title>{{ config.site_name }}</title>
+	<meta property="og:title" content="{{ config.site_name }}" />
+	<meta name="twitter:title" content="{{ config.site_name }}" />
       {% endif %}
+      <meta property="og:site_name" content="{{ config.site_name }}" />
     {% endblock %}
     {% block styles %}
       <link rel="stylesheet" href="{{ 'assets/stylesheets/application.82a18eb7.css' | url }}">

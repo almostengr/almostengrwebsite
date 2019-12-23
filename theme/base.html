@@ -15,7 +15,7 @@
       {% if page and page.meta and page.meta.description %}
         <meta name="description" content="{{ page.meta.description }}">
 	<meta property="og:description" content="{{ page.meta.description }}" />
-	<meta name="twitter:description" content="{{ config.site_description }}" />
+	<meta name="twitter:description" content="{{ page.meta.description }}" />
       {% elif config.site_description %}
         <meta name="description" content="{{ config.site_description }}">
 	<meta property="og:description" content="{{ config.site_description }}" />

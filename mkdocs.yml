@@ -8,6 +8,8 @@ google_analytics: ['UA-64643711-1', 'thealmostengineer.com']
 # repository information
 repo_url: https://github.com/almostengr
 repo_name: Github
+remote_branch: master
+remote_name: origin
 
 # Copyright
 copyright: Copyright &copy; 2015-2019 Kenny R, The Almost Engineer

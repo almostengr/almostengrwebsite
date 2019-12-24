@@ -61,6 +61,7 @@ nav:
   - git_cheatsheet/README.md
   - linux_cheatsheet/README.md
 - Technology:
+  - technology/2019.12.23-blog-conversion-steps.md
   - technology/2019.12.21-switched-blog-from-drupal-to-mkdocs.md
   - technology/2019.12.20-blog-reverse-sort-with-mkdocs.md
   - technology/2019.09.05-copying-infested-code.md

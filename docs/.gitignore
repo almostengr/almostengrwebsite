@@ -1,0 +1,15 @@
+# ignore hosting provider files and directories
+.ftpquota
+error_log*
+error_log/*
+error_log/
+
+# output folder from mkdocs
+site/
+
+# temporary files
+*swp
+*tmp
+
+# other files 
+*sql

@@ -29,7 +29,7 @@ Kenny has been blogging his gardening and technology experiences and mishaps for
 
 ## "The Almost Engineer" Explanation
 
-If you have read this far down the page, you probably are wondering how did Kenny come up with The Almost Engineer name. Kenny works (and according to some live in) in the engineering-related field of Computer Science, has great problem solving skills, and enjoys fixing things instead of paying someone else to do it for him.  However Kenny has a Business degree from the University of Alabama (Roll Tide!) instead of an engineering degree, thus almost being an engineer.
+If you have read this far down the page, you probably are wondering how did Kenny come up with The Almost Engineer name. Kenny works (and according to some live in) in the engineering-related field of Computer Science, has great problem solving skills, and enjoys fixing things instead of paying someone else to do it for him. However Kenny has a Business degree from the University of Alabama (Roll Tide!) instead of an engineering degree, thus almost being an engineer.
 
 ## Contact Me
 

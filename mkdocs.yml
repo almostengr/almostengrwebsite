@@ -1,7 +1,9 @@
+#site information
 site_name: The Almost Engineer
 site_url: http://thealmostengineer.com
 site_description: The blog of Kenny Robinson.
 site_author: Kenny Robinson, @almostengr
+site_dir: site
 
 google_analytics: ['UA-64643711-1', 'thealmostengineer.com']
 

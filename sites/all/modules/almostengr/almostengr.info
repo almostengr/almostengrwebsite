@@ -1,8 +1,0 @@
-name = Almost Engineer Website
-package = Almost Engineer
-core = 7.x 
-version=7.x-1.0 
-
-files[]=almostengr.install
-files[]=almostengr.module
-

@@ -1,24 +1,15 @@
-# Ignore configuration files that may contain sensitive information.
-sites/*/settings*.php
-
-# Ignore paths that contain user-generated content.
-sites/*/files
-sites/*/private
-sites/all/module/custom
-
-# drupal files and directories
-.cache/
-cache/
-install.php 
-INSTALL*txt
-UPGRADE*txt
-
-# ignore specific modules
-sites/all/modules/admin_menu
-
 # ignore hosting provider files and directories
 .ftpquota
 error_log*
 error_log/*
 error_log/
 
+# output folder from mkdocs
+site/
+
+# temporary files
+*swp
+*tmp
+
+# other files 
+*sql

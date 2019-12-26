@@ -9,7 +9,9 @@
 <html lang="{{ lang.t('language') }}" class="no-js">
   <head>
 	  <!-- Google AdSense -->
+	  <!--
 	  <script data-ad-client="ca-pub-4218270188842097" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	  -->
 
     {% block site_meta %}
       <meta charset="utf-8">
@@ -226,13 +228,9 @@
               {% block disqus %}
                 {% include "partials/integrations/disqus.html" %}
               {% endblock %}
-            </article>
 
-	    <p><a href="#top">Back to Top</a></p>
-
-		<!-- Google AdSense -->
+ 		<!-- Google AdSense -->
 		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-		<!-- banner responsive -->
 		<ins class="adsbygoogle"
 		     style="display:block"
 		     data-ad-client="ca-pub-4218270188842097"
@@ -243,7 +241,11 @@
 		     (adsbygoogle = window.adsbygoogle || []).push({});
 		</script>
 
-          </div>
+           </article>
+
+	    <p><a href="#top">Back to Top</a></p>
+
+	   </div>
         </div>
       </main>
       {% block footer %}

@@ -58,8 +58,8 @@ markdown_extensions:
 nav:
 - index.md
 - Cheatsheets:
-  - git_cheatsheet/README.md
-  - linux_cheatsheet/README.md
+  - gitcheatsheet/README.md
+  - linuxcheatsheet/README.md
 - Technology:
   - technology/2019.12.24-blog-conversion-steps.md
   - technology/2019.12.21-switched-blog-from-drupal-to-mkdocs.md

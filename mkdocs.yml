@@ -13,7 +13,7 @@ repo_name: Github
 remote_name: origin
 
 # Copyright
-copyright: Copyright &copy; 2015-2019 Kenny R, The Almost Engineer
+copyright: Copyright &copy; 2015-2020 Kenny R, The Almost Engineer
 
 dev_addr: 192.168.57.111:8000
 
@@ -58,8 +58,8 @@ markdown_extensions:
 nav:
 - index.md
 - Cheatsheets:
-  - git_cheatsheet/README.md
-  - linux_cheatsheet/README.md
+  - gitcheatsheet/README.md
+  - linuxcheatsheet/README.md
 - Technology:
   - technology/2019.12.24-blog-conversion-steps.md
   - technology/2019.12.21-switched-blog-from-drupal-to-mkdocs.md
@@ -147,6 +147,8 @@ nav:
   - technology/2015.06.28-how-to-synchronize-files-between-two-or-more-windows-computers.md
   - technology/2015.06.28-dont-use-click-here-in-links.md
 - Lifestyle:
+  - lifestyle/2020.01.03-word-of-the-year.md
+  - lifestyle/2019.12.26-mcgill-university-personal-finance-essentials.md
   - lifestyle/2019.11.24-takeaways-from-christopher-robin-movie.md
   - lifestyle/2019.08.15-21-days-for-a-new-habit.md
   - lifestyle/2019.07.03-squirrels-taught-me-about-women-and-food.md
@@ -171,4 +173,11 @@ nav:
   - diy/2018.07.21-how-to-replace-toilet-gasket-and-bolts.md
   - diy/2018.05.05-repair-leaking-faucet.md
   - diy/2018.01.20-1-year-review-of-liftmaster-8500-with-myq-internet-gateway.md
+#- Cookbook:
+#  - cookbook/lunch_dinner/whole_baked_chicken.md
+#  - cookbook/lunch_dinner/hamburgers_grilled.md
+#  - cookbook/lunch_dinner/grilled_pork_ribs.md
+#  - cookbook/lunch_dinner/grilled_corn.md
+#  - cookbook/dessert/sweet_potato_pie.md
+#  - cookbook/breakfast/bacon_baked.md
 

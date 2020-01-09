@@ -80,6 +80,10 @@
       {% endif %}
       <meta property="og:site_name" content="{{ config.site_name }}" />
     {% endblock %}
+
+    <!-- localized version of page -->
+    <link rel="alternate" hreflang="en-us" href="{{ page.canonical_url }}" />
+
     {% block styles %}
       <link rel="stylesheet" href="{{ 'assets/stylesheets/application.82a18eb7.css' | url }}">
       {% if palette.primary or palette.accent %}

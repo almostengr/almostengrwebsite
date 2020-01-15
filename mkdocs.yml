@@ -61,6 +61,7 @@ nav:
   - cheatsheet/gitcheatsheet/README.md
   - cheatsheet/linuxcheatsheet/README.md
 - Technology:
+  - technology/2020.01.10-lessons-from-production-support.md
   - technology/2019.12.24-blog-conversion-steps.md
   - technology/2019.12.21-switched-blog-from-drupal-to-mkdocs.md
   - technology/2019.12.20-blog-reverse-sort-with-mkdocs.md

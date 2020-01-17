@@ -57,9 +57,9 @@ markdown_extensions:
 
 nav:
 - index.md
-- Cheatsheets:
-  - cheatsheet/gitcheatsheet/README.md
-  - cheatsheet/linuxcheatsheet/README.md
+- Resources:
+  - resources/gitcheatsheet/README.md
+  - resources/linuxcheatsheet/README.md
 - Technology:
   - technology/2020.01.10-7-lessons-from-production-support.md
   - technology/2019.12.24-blog-conversion-steps.md

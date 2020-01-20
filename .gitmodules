@@ -7,3 +7,6 @@
 [submodule "docs/cookbook"]
 	path = docs/cookbook
 	url = https://github.com/almostengr/cookbook.git
+[submodule "docs/resources/pythoncheatsheet"]
+	path = docs/resources/pythoncheatsheet
+	url = https://github.com/almostengr/pythoncheatsheet.git

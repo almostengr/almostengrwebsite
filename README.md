@@ -1,6 +1,10 @@
-The MKDocs code for my website, The Almost Engineer.
+# thealmostengineer.com 
 
-On The Almost Engineer, I share my thoughts, gardening, and technology experiences.
+This is the code for my personal blog and website,
+<a href="http://thealmostengineer.com" target="_blank">thealmostengineer.com</a>.
 
-The website can be visited at http://thealmostengineer.com
+In the past, the website was ran on the Drupal 7. I have since converted it to 
+a static website that is generated with MKDocs. 
+
+If you want to know more about MKDocs, you can visit the MKDocs website at mkdocs.org.
 

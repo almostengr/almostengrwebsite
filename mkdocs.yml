@@ -63,6 +63,7 @@ nav:
   - resources/linuxcheatsheet/README.md
   - resources/pythoncheatsheet/README.md
 - Technology:
+  - technology/2020.01.21-google-search-console-reports-500-errors.md
   - technology/2020.01.10-7-lessons-from-production-support.md
   - technology/2019.12.24-blog-conversion-steps.md
   - technology/2019.12.21-switched-blog-from-drupal-to-mkdocs.md
@@ -169,6 +170,7 @@ nav:
   - gardening/2019.03.04-greens-from-the-winter-garden.md
   - gardening/2019.02.23-every-gardener-needs-a-journal.md
 - DIY:
+  - diy/2019.07.30-reinforce-bookcase-with-plywood.md
   - diy/2019.06.11-identify-electrical-circuits-and-label-breaker-panel.md
   - diy/2019.05.02-4-steps-to-change-the-battery-in-nissan-altima-intelligent-key.md
   - diy/2019.04.27-weber-charcoal-chimney-review-and-first-use.md

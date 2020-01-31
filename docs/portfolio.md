@@ -1,5 +1,15 @@
 # Portfolio
 
+## Home Automation with Home Assistant
+
+Home automation is one of the latest trends in technology. 
+
+Using Home Assistant, I have been able to automate several repetitive tasks within my home. 
+I will continue to add more automations and share those with the community.
+
+The configuration for my Home Assistant instance is available at 
+<a href="https://github.com/almostengr/ha-config" target="_blank">https://github.com/almostengr/ha-config</a>.
+
 ## FarmOS NWS
 
 The purpose of this project is to allow FarmOS to use data from the National Weather Service to allow it to make better decisions as well as to log data from a trusted weather source.

@@ -22,8 +22,8 @@ hardware, and other tools that I use to get the job done.
 
 ### Secondary Computer 
 
-* Toshiba Satellite laptop
 * Windows 10
+* Toshiba Satellite laptop
 
 ## Software
 
@@ -46,7 +46,7 @@ hardware, and other tools that I use to get the job done.
 * [Putty](https://www.putty.org), for connecting to remote servers
 * Microsoft Word, for word processing
 * [Mozilla Firefox](https://www.mozilla.org/en-us/firefox), for browsing and building websites
-* [Visual Studio Community 2019](https://code.visualstudio.com), for building .Net Core applications
+* [Visual Studio 2019 Community Edition](https://code.visualstudio.com), for building .Net Core applications
 * [Git Bash](https://gitforwindows.org), version control
 * [Notepad++](https://notepad-plus-plus.org/downloads), text editor
 

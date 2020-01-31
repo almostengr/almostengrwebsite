@@ -44,20 +44,22 @@
       <div class="md-footer-copyright">
         {% if config.copyright %}
           <div class="md-footer-copyright__highlight">
-		  {{ config.copyright }}<br />
+		  {{ config.copyright }} |
 		  <a href="http://thealmostengineer.com/sitemap.xml">Sitemap</a> | 
-		  <a href="https://github.com/almostengr/almostengrwebsite/issues" target="_blank">Report Problem</a>
+		  <a href="https://github.com/almostengr/almostengrwebsite/issues" target="_blank">Report Problem</a> |
+		  <a href="/contact">Contact</a>
           </div>
         {% endif %}
         powered by
         <a href="https://www.mkdocs.org">MkDocs</a>
         and
         <a href="https://squidfunk.github.io/mkdocs-material/">
-          Material for MkDocs</a>
+          Material for MkDocs</a> | 
+        Last Modified <script type="text/javascript">document.write(document.lastModified);</script>
+	
       </div>
       {% include "partials/social.html" %}
     </div>
 
-    <div>Last Modified on <script type="text/javascript"> document.write(document.lastModified);</script></div>
   </div>
 </footer>

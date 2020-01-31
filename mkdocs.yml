@@ -58,6 +58,7 @@ markdown_extensions:
 nav:
 - index.md
 - portfolio.md
+- about.md
 - contact.md
 - Resources:
   - resources/gitcheatsheet/README.md

@@ -59,8 +59,8 @@ nav:
 - index.md
 - portfolio.md
 - about.md
-- contact.md
 - uses.md
+- contact.md
 - Resources:
   - resources/gitcheatsheet/README.md
   - resources/linuxcheatsheet/README.md

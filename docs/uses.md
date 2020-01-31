@@ -1,7 +1,8 @@
 # Uses 
 
 Browsing around on Github, I found that developers create "uses" pages that 
-detail the tools that they use do their work. 
+detail the tools that they use do their work. Here is my list of software, 
+hardware, and other tools that I use to get the job done. 
 
 ## Hardware
 
@@ -10,7 +11,7 @@ detail the tools that they use do their work.
 * Ubuntu 18.04 LTS Server Edition on Virtual Machine (runs headless)
 * Shuttle PC (VM Host)
 
-### Main Computer 
+### Primary Computer 
 
 * Ubuntu 18.04 LTS Desktop Edition
 * Shuttle DS160 PC 
@@ -18,6 +19,11 @@ detail the tools that they use do their work.
 * HP 23 Inch Monitors (x2)
 * Altec Lansing speakers
 * Logitec Webcam
+
+### Secondary Computer 
+
+* Toshiba Satellite laptop
+* Windows 10
 
 ## Software
 

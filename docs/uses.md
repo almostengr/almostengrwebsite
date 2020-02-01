@@ -2,7 +2,7 @@
 
 ## Background
 
-Browsing around on Github, I found that developers create "uses" pages that 
+Browsing around on Github, I found that developers create "uses" (or /uses) pages that 
 detail the tools that they use do their work. Here is my list of software, 
 hardware, and other tools that I use to get the job done. 
 
@@ -16,6 +16,7 @@ hardware, and other tools that I use to get the job done.
 [Oracle VirtualBox](https://virtualbox.org) (in headless mode)
 
 ### Development Server Host
+
 * [Ubuntu 18.04 LTS Desktop Edition](https://ubuntu.com)
 * Intel i5 3.10 GHz Quad-Core Processor
 * 32 GB RAM

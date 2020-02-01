@@ -47,20 +47,27 @@ hardware, and other tools that I use to get the job done.
 * Bash Terminal, for running commands on Linux
 * [Eclipse](https://eclipse.org), for coding in Java and PHP
 * Git, for version control
+* [Filezilla](https://filezilla-project.org/), for transferring files
 * [Google Chrome](https://google.com/chrome), for browsing and building websites
+* [guvcview](https://en.wikipedia.org/wiki/Guvcview), for recording webcam video
 * [Kdenlive](https://kdenlive.org/en), for video editing
 * LAMP (Linux, Apache, MySQL, PHP) Stack, for building applications locally
 * [LibreOffice Writer](https://www.libreoffice.org), for word processing
 * [Mozilla Firefox](https://www.mozilla.org/en-us/firefox), for browsing and building websites
 * [Oracle VirtualBox](https://virtualbox.org), Virtual Machine software for running
 development environment and home automation server
+* [SimpleScreenRecorder](https://www.maartenbaert.be/simplescreenrecorder/), for recording
+technology tutorials that I post on my YouTube channel
+[source code](https://github.com/MaartenBaert/ssr)
 * [Thunderbird](https://thunderbird.net/en-us), for email
 * Vim, for text editing
 * [Visual Studio Code](https://code.visualstudio.com/download), for text editing
 
 ### For Windows 
 
+* [Filezilla](https://filezilla-project.org/), for transferring files
 * [Git Bash](https://gitforwindows.org), for version control
+* [KeePass](https://keepass.info/), for password management
 * Microsoft Outlook, for email 
 * Microsoft Word, for word processing
 * [Mozilla Firefox](https://www.mozilla.org/en-us/firefox), for browsing and building websites
@@ -80,10 +87,17 @@ and tasks that have to be done at a specific time
 * [Pandora](https://pandora.com), for background music
 * [Trello](https://trello.com/almostengr/recommend), for managing tasks
 
+## This Website and Blog
+
+* [Arvixe](https://www.arvixe.com/), for website hosting
+* [Github](https://github.com/almostengr/almostengrwebsite), for version control
+and issue tracking
+* [Markdown](https://www.markdownguide.org/), for website content
+* [MkDocs](https://mkdocs.org), for static website generation
+
 ## Other Uses Pages
 
 To view uses pages for other developers, visit 
 <a href="https://github.com/wesbos/awesome-uses" target="_blank">https://github.com/wesbos/awesome-uses</a>
 or 
 <a href="https://uses.tech" target="_blank">https://uses.tech</a>.
-

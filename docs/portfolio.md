@@ -16,8 +16,8 @@ The purpose of this project is to allow FarmOS to use data from the National Wea
 
 Using data from the National Weather Service reduces the cost to get a FarmOS installation going as temperature, rain, humidity and other sensors do not have to be purchased. Furthermore, it reduces the maintenance costs by reducing the amount of infrastructure required to maintain the farm or garden.
 
-Read more about this project on its
-<a href="https://github.com/almostengr/farmosnws" target="_blank">project page</a>.
+Read more about this project on its project page at
+<a href="https://github.com/almostengr/farmosnws" target="_blank">https://github.com/almostengr/farmosnws</a>.
 
 ## Black Box Operations
 

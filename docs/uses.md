@@ -44,41 +44,41 @@ hardware, and other tools that I use to get the job done.
 
 ### For Linux 
 
-* [Kdenlive](https://kdenlive.org/en), for video editing
-* [Visual Studio Code](https://code.visualstudio.com/download), for text editing
-* Vim, for text editing
-* Git, for version control
-* LAMP (Linux, Apache, MySQL, PHP) Stack, for building applications locally
+* Bash Terminal, for running commands on Linux
 * [Eclipse](https://eclipse.org), for coding in Java and PHP
+* Git, for version control
 * [Google Chrome](https://google.com/chrome), for browsing and building websites
-* [Mozilla Firefox](https://www.mozilla.org/en-us/firefox), for browsing and building websites
-* [Thunderbird](https://thunderbird.net/en-us), for email
+* [Kdenlive](https://kdenlive.org/en), for video editing
+* LAMP (Linux, Apache, MySQL, PHP) Stack, for building applications locally
 * [LibreOffice Writer](https://www.libreoffice.org), for word processing
+* [Mozilla Firefox](https://www.mozilla.org/en-us/firefox), for browsing and building websites
 * [Oracle VirtualBox](https://virtualbox.org), Virtual Machine software for running
 development environment and home automation server
-* Bash Terminal, for running commands on Linux
+* [Thunderbird](https://thunderbird.net/en-us), for email
+* Vim, for text editing
+* [Visual Studio Code](https://code.visualstudio.com/download), for text editing
 
 ### For Windows 
 
+* [Git Bash](https://gitforwindows.org), for version control
 * Microsoft Outlook, for email 
-* [Putty](https://www.putty.org), for connecting to remote servers
 * Microsoft Word, for word processing
 * [Mozilla Firefox](https://www.mozilla.org/en-us/firefox), for browsing and building websites
+* [Notepad++](https://notepad-plus-plus.org/downloads), for text editing
+* [Postman](https://getpostman.com), for developing and testing API services
+* [Putty](https://www.putty.org), for connecting to remote servers
 * [Visual Studio Code](https://code.visualstudio.com/download), for text editing
 * [Visual Studio 2019 Community Edition](https://code.visualstudio.com), 
 for building ASP.Net Core applications
-* [Git Bash](https://gitforwindows.org), for version control
-* [Notepad++](https://notepad-plus-plus.org/downloads), for text editing
-* [Postman](https://getpostman.com), for developing and testing API services
 
 ## Web Applications and Other Tools
 
-* [Trello](https://trello.com/almostengr/recommend), for managing tasks
 * Github Issues Queue, for managing tasks
-* [Pandora](https://pandora.com), for background music
-* [Kodi](https://kodi.tv), for watching tv and movies
 * [Google Calendar](https://www.google.com/calendar), for managing schedules, 
 and tasks that have to be done at a specific time
+* [Kodi](https://kodi.tv), for watching tv and movies
+* [Pandora](https://pandora.com), for background music
+* [Trello](https://trello.com/almostengr/recommend), for managing tasks
 
 ## Other Uses Pages
 

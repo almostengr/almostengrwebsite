@@ -17,6 +17,7 @@ you can check out [my blog post](/technology/2020.02.01-developer-uses-page).
 
 * [Ubuntu 18.04 LTS Server Edition](https://ubuntu.com)
 * Intel i5 3.10 GHz Processor (limited to 2 cores)
+* 2 GB RAM
 * Runs as virtual machine powered by 
 [Oracle VirtualBox](https://virtualbox.org) (in headless mode)
 
@@ -33,6 +34,7 @@ you can check out [my blog post](/technology/2020.02.01-developer-uses-page).
 * [Ubuntu 18.04 LTS Desktop Edition](https://ubuntu.com)
 * Shuttle DS61 Desktop
 * Intel i3 3.4 GHz Processor
+* 8 GB RAM
 * HP 23es Inch Monitors (x2)
 * Altec Lansing BX1120 Speakers
 * Logitech Webcam, 720p HD
@@ -43,7 +45,7 @@ you can check out [my blog post](/technology/2020.02.01-developer-uses-page).
 
 * [Windows 10 Home](https://www.microsoft.com/en-us/software-download/windows10ISO)
 * Toshiba Satellite C855D laptop
-* 16 GM RAM
+* 16 GB RAM
 * AMD 1.3 GHz Dual-Core Processor
 
 ## Software

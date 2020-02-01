@@ -6,6 +6,9 @@ Browsing around on Github, I found that developers create "uses" (or /uses) page
 detail the tools that they use do their work. Here is my list of software, 
 hardware, and other tools that I use to get the job done. 
 
+For more detail about how what is a Uses page and how you can create your own, 
+you can check out [my blog post](/technology/2020.02.01-developer-uses-page.md).
+
 ## Hardware
 
 ### Development Server

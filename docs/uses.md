@@ -68,6 +68,7 @@ technology tutorials that I post on my YouTube channel
 
 * [Filezilla](https://filezilla-project.org/), for transferring files
 * [Git Bash](https://gitforwindows.org), for version control
+* [Image Analyzer](http://meesoft.com/Analyzer/), for image editing
 * [KeePass](https://keepass.info/), for password management
 * Microsoft Outlook, for email 
 * Microsoft Word, for word processing

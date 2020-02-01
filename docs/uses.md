@@ -1,4 +1,6 @@
-# Uses 
+# Uses
+
+![My uses page entry on uses.tech](/images/2020.02.01-uses-entry.jpg)
 
 ## Background
 
@@ -7,7 +9,7 @@ detail the tools that they use do their work. Here is my list of software,
 hardware, and other tools that I use to get the job done. 
 
 For more detail about how what is a Uses page and how you can create your own, 
-you can check out [my blog post](/technology/2020.02.01-developer-uses-page.md).
+you can check out [my blog post](/technology/2020.02.01-developer-uses-page).
 
 ## Hardware
 

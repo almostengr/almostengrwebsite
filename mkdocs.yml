@@ -66,6 +66,7 @@ nav:
   - resources/linuxcheatsheet/README.md
   - resources/pythoncheatsheet/README.md
 - Technology:
+  - technology/2020.02.01-developer-uses-page.md
   - technology/2020.01.21-google-search-console-reports-500-errors.md
   - technology/2020.01.10-7-lessons-from-production-support.md
   - technology/2019.12.24-blog-conversion-steps.md

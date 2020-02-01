@@ -94,6 +94,7 @@ and tasks that have to be done at a specific time
 * [Github](https://github.com/almostengr/almostengrwebsite), for version control
 and issue tracking
 * [Markdown](https://www.markdownguide.org/), for website content
+* [Material theme](https://squidfunk.github.io/mkdocs-material/), for styling website
 * [MkDocs](https://mkdocs.org), for static website generation
 
 ## Other Uses Pages

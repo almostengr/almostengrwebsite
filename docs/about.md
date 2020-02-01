@@ -6,7 +6,7 @@ author: Kenny Robinson
 
 # About
 
-![](../images/SAM_2423-f008473.png)
+![](/images/SAM_2423-f008473.png)
 
 ## IT (Information Technology) Professional
 

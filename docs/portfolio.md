@@ -33,7 +33,7 @@ Read more about this project on its project page at
 
 ## Black Box Operations (2011)
 
-![operations.jpg](/images/operations.jpg)
+![operations.jpg](/images/portfolio_operations.jpg)
 
 Black Box Operations is a project management, help desk, and invoicing system all rolled into one. This web application allows BBIT staff and BBIT clients to stay up-to-date with the status of their project and submit maintenance requests for their website(s). The system also emails invoices to clients and allows clients to login to pay their invoices. By having all of the information located in a central location, BBIT is able to produce quality work, in a timely fashion.
 
@@ -45,9 +45,10 @@ University of Alabama Chapter of the National Association for the Advancement of
 
 ## Tuscaloosa Area Black Chamber of Commerce (2010)
 
-![tabcc screenshot.png](/images/portfolio_tabcc_screenshot.png)
+![tabcc screenshot.png](/images/portfolio_tabcc.png)
 
 The Tuscaloosa Area Black Chamber of Commerce (TABCC) serves to promote Black and minority-owned businesses in the 7th congressional district of Alabama and the West Alabama areas. TABCC now has an informational website for current and prospective members, upcoming events, and community and TABCC news bulletins.
 
 You can visit the website at 
 <a href="http://tuscblackchamber.org" target="_blank">tuscblackchamber.org</a>.
+

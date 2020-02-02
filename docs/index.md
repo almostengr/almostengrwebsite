@@ -19,5 +19,5 @@ choosing from the top navigtion.
 ## Blog Technology 
 
 Information about the technology that I use to run this blog is available
-on the [Uses](/uses) page of this website.
+on the [Uses](/uses#this-website-and-blog) page of this website.
 

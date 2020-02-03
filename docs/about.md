@@ -8,6 +8,18 @@ author: Kenny Robinson
 
 ![](/images/SAM_2423-f008473.png)
 
+## Introduction
+
+Kenny started passively blogging in 2011 after watching 
+[a presentation](http://video.ch9.ms/ecn/ch9/3/2/1/1/6/5/HanselminutesOn9SocialNetworkingForDevs1_ch9.mp4) by 
+Scott Hanselman stated that that stated that every software developer should 
+have a blog. Eventually that blogging habit faded. Fast forward to 2018, Kenny attended a gardening workshop that 
+mentioned that every 
+[gardener should have a journal](/gardening/2019.02.23-every-gardener-needs-a-journal). 
+It eventually occurred to him that he could start blogging about 
+his gardening successes and failures and use that as his gardening journal and restart blogging about technology.
+You can read more about Kenny on the [About page](/about).
+
 ## IT (Information Technology) Professional
 
 Kenny's day job is working as an IT professional. He has years of experience in building web based applications and providing software support. When you create or maintain software for a living, often times you will reuse the same code over in multiple projects. By using a blog, you can search for that code snippet and copy and paste it in. In addition, it assists other developers with their coding projects, as it may be exactly what they are looking for.

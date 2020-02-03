@@ -22,6 +22,12 @@ mentioned that every
 It eventually occurred to him that he could start blogging about 
 his gardening successes and failures and use that as his gardening journal and restart blogging about technology.
 You can read more about Kenny on the [About page](/about).
+=======
+I am a builder and creator of things that shares what I know. I build software and 
+web applications to improve business processes.
+</h2>
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at aliquam nunc. Praesent convallis mollis metus et porta. Mauris rhoncus dui libero, blandit auctor erat pharetra id. Quisque at porta ante. Duis eget enim finibus dui suscipit tincidunt nec id nulla. Curabitur rutrum, magna quis bibendum dignissim, quam nunc dictum leo, nec ornare justo augue non mauris. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi accumsan ipsum aliquam ultricies ultrices. Pellentesque pretium bibendum egestas. Fusce convallis diam purus, a ultrices mi venenatis ac. Praesent tempor metus auctor arcu ornare porta. Vestibulum semper urna sem, non congue magna rhoncus quis. Suspendisse eu ante varius, lobortis augue ac, euismod orci. Integer in congue urna. 
 
 ## Navigate 
 

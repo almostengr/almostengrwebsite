@@ -58,7 +58,9 @@ markdown_extensions:
 
 nav:
 - index.md
-- blog.md
+- Blog:
+  - blog.md
+
 - portfolio.md
 - about.md
 - uses.md

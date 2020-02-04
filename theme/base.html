@@ -79,18 +79,20 @@
         {% endblock %}
     </div>
 
-    <footer class="col-md-12 text-center">
+    <footer class="col-md-12">
+	
         {% block footer %}
-        <hr>
         <p>{% if config.copyright %}
         <small>{{ config.copyright }}<br></small>
         {% endif %}
+	<small>
+	<a href="http://thealmostengineer.com/sitemap.xml">Sitemap</a> <br />
+	</small>
         <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p></small>
 
         {% if page and page.meta.revision_date %}<br>
         <small>Revised on: {{ page.meta.revision_date }}</small>
         {% endif %}
-	footer
         {% endblock %}
     </footer>
     

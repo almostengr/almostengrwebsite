@@ -30,7 +30,7 @@ theme:
         logo:
                 icon: 'speaker_notes'
         feature:
-                tabs: false
+                tabs: true
 
 extra:
         social:
@@ -55,16 +55,4 @@ plugins:
 
 markdown_extensions:
         - meta
-
-nav:
-- index.md
-- blog.md
-- portfolio.md
-- about.md
-- Resources:
-  - resources/gitcheatsheet/README.md
-  - resources/linuxcheatsheet/README.md
-  - resources/pythoncheatsheet/README.md 
-- uses.md
-- contact.md
 

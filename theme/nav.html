@@ -57,6 +57,7 @@
 
                 {%- block next_prev %}
                     {%- if page and (page.next_page or page.previous_page) %}
+		    <!--
                     <li {% if not page.previous_page %}class="disabled"{% endif %}>
                         <a rel="prev" {% if page.previous_page %}href="{{ page.previous_page.url|url }}"{% endif %}>
                             <i class="fas fa-arrow-left"></i> Previous
@@ -67,6 +68,7 @@
                             Next <i class="fas fa-arrow-right"></i>
                         </a>
                     </li>
+		    -->
                     {%- endif %}
                 {%- endblock %}
 

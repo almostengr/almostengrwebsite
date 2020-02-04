@@ -10,3 +10,6 @@
 [submodule "mkdocs-bootstrap"]
 	path = mkdocs-bootstrap
 	url = https://github.com/mkdocs/mkdocs-bootstrap.git
+[submodule "cinder"]
+	path = cinder
+	url = https://github.com/chrissimpkins/cinder.git

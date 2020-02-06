@@ -8,7 +8,7 @@ author: Kenny Robinson
 
 ![Kenny with traffic signal](/images/jumbotron.jpg)
 
-<h2>
+<h2 style="background-color: #cccccc; font-weight: bold; padding: 15px; border-radius: 15px;">
 Hi, I'm Kenny<br />
 <br />
 I am a web developer and builder of things. I <a href="https://github.com/almostengr">write code</a>, 

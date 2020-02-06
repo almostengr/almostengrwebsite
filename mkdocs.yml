@@ -57,3 +57,10 @@ plugins:
 markdown_extensions:
         - meta
 
+nav:
+#  - index.md
+  - blog/index.md
+  - about.md
+  - portfolio.md
+  - uses.md
+  - contact/index.md

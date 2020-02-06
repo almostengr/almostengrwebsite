@@ -19,7 +19,5 @@ echo "" >> ${OUTPUTFILE}
 
 # (grep -r -e blog -e "^# " * | sed "s|# ||g" | sed "s|blog/blog||g" | sed "s|:|/|g" | awk -F '/' '{print "* [" $2 "](/"$1")"}' | grep -v index.md | sed "s|.md||g" ) >> ${OUTPUTFILE}
 
-grep -r -e "^# " * | grep -e blog | grep -v index.md | sed -e "s|# ||g" -e "s|blog/blog||g" -e "s|:|/|g" -e "s|.md||g" | awk -F '/' '{print $3 "|* ["$4" ("$2")](/"$1"/"$2"/"$3")"}' | sort -r | awk -F "|" '{print $2}' >> ${OUTPUTFILE}
-
-# echo "${OUTPUT}" >> ${OUTPUTFILE}
+grep -r -e "^# " * | grep -e blog | grep -v -i -e index.md -e "draft" | sed -e "s|# ||g" -e "s|blog/blog||g" -e "s|:|/|g" -e "s|.md||g" | awk -F '/' '{print $3 "|* ["substr($3,0,10)": "$4" ("$2")](/"$1"/"$2"/"$3")"}' | sort -r | awk -F "|" '{print $2}' >> ${OUTPUTFILE}
 

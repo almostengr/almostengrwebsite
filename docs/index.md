@@ -6,16 +6,20 @@ author: Kenny Robinson
 
 # Welcome
 
-# HEADER IMAGE
+![Kenny with traffic signal](/images/jumbotron.jpg)
 
-## I am a web developer and builder of things. I enjoy sharing my thoughts and learning new things. 
-<span style="font-size: 18pt;">
-I [code](https://github.com/almostengr), [write](/blog), and enjoy sharing knowledge. I build software
+<h2>
+Hi, I'm Kenny<br />
+<br />
+I am a web developer and builder of things. I enjoy sharing my thoughts and learning new things.<br />
+<br />
+I <a href="https://github.com/almostengr">write code</a>, 
+<a href="/blog">share my thoughts</a>, and enjoy spreading knowledge. I build software
 and web applications to improve business processes.
-</span>
+</h2>
 
 * To read my latest blog post, head over to the [blog](/blog).
 * To see my work, check out my [portfolio](/portfolio).
-* To learn mroe about me, take a look at my [about me](/about) page.
+* To learn more about me, take a look at my [about me](/about) page.
 * To find out the tools that I use, peruse my [uses](/uses) page.
 

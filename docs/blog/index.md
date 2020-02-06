@@ -7,12 +7,12 @@ Select a post from below or use the navigation to see posts by category.
 
 ## Categories
 
-* **Technology** - All things related to computers, the internet, and software and web development.
+* **Technology** - All things related to computers, the internet, software, and web development.
 * **Lifestyle** - Life is difficult enough. I feel that we can all learn from others and their experiences
-on this journey. I share stories and things that I have learned along the way.
-* **Gardening** - Fresh food? Of course! Having a garden note only means that you have fresh food
+on this journey. I share stories and thoughts that I have learned along the way.
+* **Gardening** - Fresh food? Of course! Having a garden not only means that you have fresh food
 when you choose, but maintaining the garden is a great stress reliever.
-* **DIY** - I enjoy repairing and building things. I share my experiences in this category.
+* **DIY** - I enjoy repairing and building things, including home improvement projects and car repairs.
 
 ## Posts
 

@@ -11,15 +11,13 @@ author: Kenny Robinson
 <h2>
 Hi, I'm Kenny<br />
 <br />
-I am a web developer and builder of things. I enjoy sharing my thoughts and learning new things.<br />
-<br />
-I <a href="https://github.com/almostengr">write code</a>, 
-<a href="/blog">share my thoughts</a>, and enjoy spreading knowledge. I build software
-and web applications to improve business processes.
+I am a web developer and builder of things. I <a href="https://github.com/almostengr">write code</a>, 
+learn new things, and <a href="/blog">share my thoughts</a> - not always in that order.
+I build software and web applications to improve business processes.
 </h2>
 
 * To read my latest blog post, head over to the [blog](/blog).
-* To see my work, check out my [portfolio](/portfolio).
+* To see some of my work, check out my [portfolio](/portfolio).
 * To learn more about me, take a look at my [about me](/about) page.
 * To find out the tools that I use, peruse my [uses](/uses) page.
 

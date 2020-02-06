@@ -4,7 +4,7 @@ description: Information about this blog and Kenny Robinson.
 author: Kenny Robinson
 ---
 
-## Contact Me
+# Contact
 
 Have a question, comment, or just want to say hi? Reach out to me. I do not have my email 
 address listed in an effort to avoid receiving spam. However, you can reach me via 

@@ -16,11 +16,6 @@ learn new things, and <a href="/blog">share my thoughts</a> - not always in that
 I build software and web applications to improve business processes.
 </h2>
 
-* To read my latest blog post, head over to the [blog](/blog).
-* To see some of my work, check out my [portfolio](/portfolio).
-* To learn more about me, take a look at my [about me](/about) page.
-* To find out the tools that I use, peruse my [uses](/uses) page.
-
 ## Latest Posts
 
 * [2020.02.01: Developer Uses Page (technology)](/blog/technology/2020.02.01-developer-uses-page)

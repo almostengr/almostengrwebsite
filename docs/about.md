@@ -18,7 +18,6 @@ mentioned that every
 [gardener should have a journal](/gardening/2019.02.23-every-gardener-needs-a-journal). 
 It eventually occurred to him that he could start blogging about 
 his gardening successes and failures and use that as his gardening journal and restart blogging about technology.
-You can read more about Kenny on the [About page](/about).
 
 ## IT (Information Technology) Professional
 

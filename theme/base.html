@@ -83,22 +83,28 @@
         {% block footer %}
         <p>
             {% if config.copyright %}
-        <small>{{ config.copyright }}<br></small>
-        {% endif %}
-        <small>
-        <a href="http://thealmostengineer.com/sitemap.xml">Sitemap</a> | 
-        <a href="https://github.com/almostengr" target="_blank">Github</a> |
-        <a href="https://instagram.com/almostengr" target="_blank">@almostengr Instagram</a> | 
-        <a href="https://linkedin.com/in/krobinsontech" target="_blank">LinkedIn</a> |
-        <a href="https://twitter.com/almostengr" target="_blank">@almostengr Twitter</a> |
-        <a href="https://www.youtube.com/channel/UC4HCouBLtXD1j1U_17aBqig?sub_confirmation=1" target="_blank">YouTube DIY</a> | 
-        <a href="https://www.youtube.com/channel/UCB7rvymUaUbbig3skv2zvCQ?sub_confirmation=1" target="_blank">YouTube Dash Cam</a>
-        </small>
-        <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+            <small>{{ config.copyright }}<br></small>
+            {% endif %}
+            <small>
+                <a href="http://thealmostengineer.com/sitemap.xml">Sitemap</a> | 
+                <a href="https://github.com/almostengr" target="_blank">Github</a> |
+                <a href="https://instagram.com/almostengr" target="_blank">@almostengr Instagram</a> | 
+                <a href="https://linkedin.com/in/krobinsontech" target="_blank">LinkedIn</a> |
+                <a href="https://twitter.com/almostengr" target="_blank">@almostengr Twitter</a> |
+                <a href="https://www.youtube.com/channel/UC4HCouBLtXD1j1U_17aBqig?sub_confirmation=1" target="_blank">YouTube DIY</a> | 
+                <a href="https://www.youtube.com/channel/UCB7rvymUaUbbig3skv2zvCQ?sub_confirmation=1" target="_blank">YouTube Dash Cam</a>
+            </small>
+            <small>
+                Documentation built with <a href="http://www.mkdocs.org/" target="_blank">MkDocs</a> | 
+                <a href="https://github.com/almostengr/almostengrwebsite/issues" target="_blank">Report Problem</a>
+                <a href="http://thealmostengineer.com/contact" target="_blank">Contact</a>
+            </small>
         </p>
 
         {% if page and page.meta.revision_date %}<br>
-        <small>Revised on: {{ page.meta.revision_date }}</small>
+            <small>Revised on: {{ page.meta.revision_date }}</small>
+        {% else %}
+            <small>Revised on: {{ build_date_utc }}</small>
         {% endif %}
         {% endblock %}
     </footer>

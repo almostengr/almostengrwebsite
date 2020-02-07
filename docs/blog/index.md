@@ -14,6 +14,7 @@ when you choose, but maintaining the garden is a great stress reliever.
 
 ## Posts
 
+* [2020.02.06: Previous and Current Blog Posting Process (technology)](/blog/technology/2020.02.06-previous-and-current-blog-posting-process)
 * [2020.02.01: Developer Uses Page (technology)](/blog/technology/2020.02.01-developer-uses-page)
 * [2020.01.25: January 2020 Garden Update (gardening)](/blog/gardening/2020.01.25-january-2020-garden-update)
 * [2020.01.21: Google Search Console Reports 500 Errors (technology)](/blog/technology/2020.01.21-google-search-console-reports-500-errors)

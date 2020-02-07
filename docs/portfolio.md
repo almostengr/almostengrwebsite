@@ -14,6 +14,8 @@ Code for this project is downloadable from our GitHub page at
 
 ## Home Automation with Home Assistant (2017)
 
+![Screenshot of Home Automation](/images/portfolio_homeassistant.png)
+
 Home automation is one of the latest trends in technology. 
 
 Using Home Assistant, I have been able to automate several repetitive tasks within my home. 

@@ -91,6 +91,13 @@
       {% if palette.primary or palette.accent %}
         <link rel="stylesheet" href="{{ 'assets/stylesheets/application-palette.3e3d1dff.css' | url }}">
       {% endif %}
+<style type="text/css">
+div.md-content a{
+	/* font-weight: bold; */
+	text-decoration: underline;
+	color: #c00;
+}
+</style>
       {% if palette.primary %}
         {% import "partials/palette.html" as map %}
         {% set primary = map.primary(

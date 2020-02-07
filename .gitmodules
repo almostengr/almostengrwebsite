@@ -4,9 +4,6 @@
 [submodule "docs/linuxcheatsheet"]
 	path = docs/resources/linuxcheatsheet
 	url = https://github.com/almostengr/linuxcheatsheet.git
-[submodule "docs/cookbook"]
-	path = docs/cookbook
-	url = https://github.com/almostengr/cookbook.git
 [submodule "docs/resources/pythoncheatsheet"]
 	path = docs/resources/pythoncheatsheet
 	url = https://github.com/almostengr/pythoncheatsheet.git

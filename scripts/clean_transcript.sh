@@ -4,4 +4,3 @@
 # Also remove lines that are blank
 
 sed '/^0/ d' ${1} | sed '/^$/ d'
-

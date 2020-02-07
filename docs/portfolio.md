@@ -52,3 +52,10 @@ The Tuscaloosa Area Black Chamber of Commerce (TABCC) serves to promote Black an
 You can visit the website at 
 <a href="http://tuscblackchamber.org" target="_blank">tuscblackchamber.org</a>.
 
+## University of Alabama Chapter of the National Society of Black Engineers (2009)
+
+![UA NSBE Screenshot](/images/portfolio_uansbe.jpg)
+
+University of Alabama Chapter of the National Society of Black Engineers (UA NSBE) is a student organization at 
+University of Alabama, in Tuscaloosa, Alabama. A website was created to allow UA NSBE to recruit prospective and
+current students to attend organization meetings, events, and conferences. 

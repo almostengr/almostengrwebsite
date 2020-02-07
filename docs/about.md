@@ -11,7 +11,7 @@ author: Kenny Robinson
 ## Introduction
 
 Kenny started passively blogging in 2011 after watching 
-[a presentation](http://video.ch9.ms/ecn/ch9/3/2/1/1/6/5/HanselminutesOn9SocialNetworkingForDevs1_ch9.mp4) by 
+[a presentation](/blog/technology/2010.07.22-every-developer-needs-a-blog) by 
 Scott Hanselman stated that that stated that every software developer should 
 have a blog. Eventually that blogging habit faded. Fast forward to 2018, Kenny attended a gardening workshop that 
 mentioned that every 

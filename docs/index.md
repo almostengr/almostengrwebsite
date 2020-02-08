@@ -4,19 +4,19 @@ description: Information about this blog and Kenny Robinson.
 author: Kenny Robinson
 ---
 
-<div class="jumbotron bg-cover" style="background-image: url(/image/jumbotron.jpg");">
+# Welcome
 
-<p><img src="/images/jumbotron.jpg"></p>
-
-<h1>Welcome</h1>
-
-<h2>
-Hi, I'm Kenny<br />
-<br />
+<div class="card text-white bg-secondary mb-3">
+<div class="card-body">
+<div class="" style="background-image: url(/images/jumbotron.jpg); min-height: 445px; background-repeat: no-repeat; background-position: left top;">
+</div>
+<h2 class="card-header font-weight-bold">Hi I'm Kenny!</h2>
+<h3 class="card-text text-center">
 I am a web developer and builder of things. I <a href="https://github.com/almostengr">write code</a>, 
 learn new things, and <a href="/blog">share my thoughts</a> - not always in that order.
 I build software and web applications to improve business processes.
-</h2>
+</h3>
+</div>
 </div>
 
 ## Latest Posts

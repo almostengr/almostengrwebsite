@@ -4,17 +4,20 @@ description: Information about this blog and Kenny Robinson.
 author: Kenny Robinson
 ---
 
-# Welcome
+<div class="jumbotron bg-cover" style="background-image: url(/image/jumbotron.jpg");">
 
-![Kenny with traffic signal](/images/jumbotron.jpg)
+<p><img src="/images/jumbotron.jpg"></p>
 
-<h2 style="background-color: #cccccc; font-weight: bold; padding: 15px; border-radius: 15px;">
+<h1>Welcome</h1>
+
+<h2>
 Hi, I'm Kenny<br />
 <br />
 I am a web developer and builder of things. I <a href="https://github.com/almostengr">write code</a>, 
 learn new things, and <a href="/blog">share my thoughts</a> - not always in that order.
 I build software and web applications to improve business processes.
 </h2>
+</div>
 
 ## Latest Posts
 

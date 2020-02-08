@@ -64,11 +64,11 @@
     {% block extrahead %} {% endblock %}
 </head>
 
-<body{% if page and page.is_homepage %} class="homepage" {% endif %}>
+<body{% if page and page.is_homepage %} class="homepage" style="height: 100%;" {% endif %}>
 
     {% include "nav.html" %}
 
-    <div class="container">
+    <div class="container col-12">
         {% block content %}
         {% if page.meta.disable_toc %}
         <div class="col-md-12" role="main">{% include "content.html" %}</div>
@@ -79,14 +79,10 @@
         {% endblock %}
     </div>
 
-    <footer class="col-md-12">
+    <footer id="footer" class="container-fluid col-12 bg-danger" style="background-color: #000; color: #ccc; padding: 15px;">
         {% block footer %}
         <p>
-            {% if config.copyright %}
-            <small>{{ config.copyright }}<br></small>
-            {% endif %}
-            <small>
-                <a href="http://thealmostengineer.com/sitemap.xml">Sitemap</a> | 
+           <small>
                 <a href="https://github.com/almostengr" target="_blank">Github</a> |
                 <a href="https://instagram.com/almostengr" target="_blank">@almostengr Instagram</a> | 
                 <a href="https://linkedin.com/in/krobinsontech" target="_blank">LinkedIn</a> |
@@ -94,10 +90,15 @@
                 <a href="https://www.youtube.com/channel/UC4HCouBLtXD1j1U_17aBqig?sub_confirmation=1" target="_blank">YouTube DIY</a> | 
                 <a href="https://www.youtube.com/channel/UCB7rvymUaUbbig3skv2zvCQ?sub_confirmation=1" target="_blank">YouTube Dash Cam</a>
             </small>
+	    <br />
+	    {% if config.copyright %}
+            <small>{{ config.copyright }}<br></small>
+            {% endif %}
             <small>
                 Documentation built with <a href="http://www.mkdocs.org/" target="_blank">MkDocs</a> | 
-                <a href="https://github.com/almostengr/almostengrwebsite/issues" target="_blank">Report Problem</a>
-                <a href="http://thealmostengineer.com/contact" target="_blank">Contact</a>
+                <a href="https://github.com/almostengr/almostengrwebsite/issues" target="_blank">Report Problem</a> |
+                <a href="/contact" target="_blank">Contact</a> |
+                <a href="http://thealmostengineer.com/sitemap.xml">Sitemap</a>
             </small>
         </p>
 

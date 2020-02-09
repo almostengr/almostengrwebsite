@@ -4,20 +4,27 @@ description: Information about this blog and Kenny Robinson.
 author: Kenny Robinson
 ---
 
-# Welcome
-
-<div class="card text-white bg-secondary mb-3">
-<div class="card-body">
-<div class="" style="background-image: url(/images/jumbotron.jpg); min-height: 445px; background-repeat: no-repeat; background-position: left top;">
-</div>
-<h2 class="card-header font-weight-bold">Hi I'm Kenny!</h2>
-<h3 class="card-text text-center">
+<div class="jumbotron p-3 p-md-5 text-white rounded bg-dark aejumbotron">
+<div class="col-md-6 offset-6 px-0 text-right">
+<h1 class="display-4 font-italic">Hi I'm Kenny</h1>
+<p class="lead my-3">
 I am a web developer and builder of things. I <a href="https://github.com/almostengr">write code</a>, 
 learn new things, and <a href="/blog">share my thoughts</a> - not always in that order.
 I build software and web applications to improve business processes.
-</h3>
+</p>
 </div>
 </div>
+
+## Why A Blog?
+
+Kenny started passively blogging in 2011 after watching 
+[a presentation](/blog/technology/2010.07.22-every-developer-needs-a-blog) by 
+Scott Hanselman stated that that stated that every software developer should 
+have a blog. Eventually that blogging habit faded. Fast forward to 2018, Kenny attended a gardening workshop that 
+mentioned that every 
+[gardener should have a journal](/gardening/2019.02.23-every-gardener-needs-a-journal). 
+It eventually occurred to him that he could start blogging about 
+his gardening successes and failures and use that as his gardening journal and restart blogging about technology.
 
 ## Latest Posts
 

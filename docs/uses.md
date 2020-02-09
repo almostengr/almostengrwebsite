@@ -101,7 +101,9 @@ and tasks that have to be done at a specific time
 
 * [Arvixe](https://www.arvixe.com/), for website hosting
 * [Bootstrap](https://getbootstrap.com), for appearance and styling
+* [Font Awesome](https://fontawesome.com), for icons
 * [Github](https://github.com/almostengr/almostengrwebsite), for version control and issue tracking
+* [Google Custom Search](https://cse.google.com/cse/), for searching content on the website
 * [Markdown](https://www.markdownguide.org/), for website content
 * [MkDocs](https://mkdocs.org), for static website generation
 

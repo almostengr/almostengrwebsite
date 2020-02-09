@@ -1,0 +1,13 @@
+/*
+article a{
+    text-decoration: underline;
+}
+*/
+
+a{
+    color: #aa0000;
+}
+
+a:hover{
+    color: #ff0000;
+}

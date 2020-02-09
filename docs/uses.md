@@ -52,6 +52,7 @@ you can check out [my blog post](/technology/2020.02.01-developer-uses-page).
 
 ### For Linux 
 
+* [Audacity](https://www.audacityteam.org/), for editing audio
 * Bash Terminal, for running commands on Linux
 * [Eclipse](https://eclipse.org), for coding in Java and PHP
 * Git, for version control
@@ -65,14 +66,15 @@ you can check out [my blog post](/technology/2020.02.01-developer-uses-page).
 * [Oracle VirtualBox](https://virtualbox.org), Virtual Machine software for running
 development environment and home automation server
 * [SimpleScreenRecorder](https://www.maartenbaert.be/simplescreenrecorder/), for recording
-technology tutorials that I post on my YouTube channel
+technology tutorials that I post on my YouTube channel.
 [source code](https://github.com/MaartenBaert/ssr)
 * [Thunderbird](https://thunderbird.net/en-us), for email
 * Vim, for text editing
-* [Visual Studio Code](https://code.visualstudio.com/download), for text editing
+* [Visual Studio Code](https://code.visualstudio.com/download), for text editing and coding
 
 ### For Windows 
 
+* [Audacity](https://www.audacityteam.org/), for editing audio
 * [Filezilla](https://filezilla-project.org/), for transferring files
 * [Git Bash](https://gitforwindows.org), for version control
 * [Image Analyzer](http://meesoft.com/Analyzer/), for image editing
@@ -80,10 +82,9 @@ technology tutorials that I post on my YouTube channel
 * Microsoft Outlook, for email 
 * Microsoft Word, for word processing
 * [Mozilla Firefox](https://www.mozilla.org/en-us/firefox), for browsing and building websites
-* [Notepad++](https://notepad-plus-plus.org/downloads), for text editing
 * [Postman](https://getpostman.com), for developing and testing API services
 * [Putty](https://www.putty.org), for connecting to remote servers
-* [Visual Studio Code](https://code.visualstudio.com/download), for text editing
+* [Visual Studio Code](https://code.visualstudio.com/download), for text editing and coding
 * [Visual Studio 2019 Community Edition](https://code.visualstudio.com), 
 for building ASP.Net Core applications
 
@@ -99,7 +100,7 @@ and tasks that have to be done at a specific time
 ## This Website and Blog
 
 * [Arvixe](https://www.arvixe.com/), for website hosting
-* [Bootstrap](https://getbootstrap.com), for appearance
+* [Bootstrap](https://getbootstrap.com), for appearance and styling
 * [Github](https://github.com/almostengr/almostengrwebsite), for version control and issue tracking
 * [Markdown](https://www.markdownguide.org/), for website content
 * [MkDocs](https://mkdocs.org), for static website generation

@@ -18,4 +18,3 @@ If you have a question or comment about one of the videos that you have seen on 
 
 * <a href="https://www.youtube.com/channel/UC4HCouBLtXD1j1U_17aBqig?sub_confirmation=1" target="_blank">Tech and DIY Videos on YouTube</a>
 * <a href="https://www.youtube.com/channel/UCB7rvymUaUbbig3skv2zvCQ?sub_confirmation=1" target="_blank">Dash Cam Videos on YouTube</a>
-

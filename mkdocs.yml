@@ -17,7 +17,8 @@ copyright: Copyright &copy; 2015-2020 Kenny Robinson, The Almost Engineer
 
 # Development server details
 # dev_addr: 192.168.57.111:8000
-dev_addr: localhost:8000
+# dev_addr: localhost:8000
+dev_addr: 192.168.57.125:8000
 
 # Appearance
 theme:

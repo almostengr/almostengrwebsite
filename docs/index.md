@@ -4,17 +4,6 @@ description: Information about this blog and Kenny Robinson.
 author: Kenny Robinson
 ---
 
-<div class="jumbotron p-3 p-md-5 text-white rounded bg-dark aejumbotron">
-<div class="col-md-6 offset-6 px-0 text-right">
-<h1 class="display-4 font-italic">Hi I'm Kenny</h1>
-<p class="lead my-3">
-I am a web developer and builder of things. I <a href="https://github.com/almostengr">write code</a>, 
-learn new things, and <a href="/blog">share my thoughts</a> - not always in that order.
-I build software and web applications to improve business processes.
-</p>
-</div>
-</div>
-
 ## Why A Blog?
 
 Kenny started passively blogging in 2011 after watching 

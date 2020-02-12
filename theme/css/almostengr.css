@@ -8,9 +8,10 @@ a:hover{
 
 .ae-jumbotron{
     background-color: #000;
-    background-image: url(/images/jumbotron.jpg); 
+    background-image: url(/images/jumbotron2.jpg); 
     background-repeat: no-repeat; 
     background-position: center center;
+    background-size: contain;
     border-radius: 0;
-    min-height: 430px;
+    min-height: 500px;
 }

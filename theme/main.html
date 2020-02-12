@@ -54,7 +54,7 @@
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-  <link href="{{ 'css/almostengr.min.css' | url }}" rel="stylesheet" />
+  <link href="{{ 'css/almostengr.css' | url }}" rel="stylesheet" />
 
   <!-- google analytics -->
   {% if config.google_analytics %}
@@ -77,39 +77,42 @@
 
   <!-- Font Awesome -->
   <script async src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+  <!-- Google custom search -->
+  <!--
+  <script async src="https://cse.google.com/cse.js?cx=000195884435112055355:g2eqfks2ipu"></script>
+  -->
 </head>
+
 <body>
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="/">{{ config.site_name }}</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-        aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-          {% for nav_item in nav %}
-          <li class="nav-item {% if nav_item.active%}active{% endif %}">
-            <a class="nav-link" href="{{ nav_item.url|url }}">{{ nav_item.title }}</a>
-          </li>
-          {% endfor %}
-        </ul>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="/">{{ config.site_name }}</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+          aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+          <ul class="navbar-nav">
+            {% for nav_item in nav %}
+            <li class="nav-item {% if nav_item.active%}active font-weight-bold{% endif %}">
+              <a class="nav-link" href="{{ nav_item.url|url }}">{{ nav_item.title }}</a>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
       </div>
+    </nav>
+  </header>
+  {% if page.is_homepage %}
+  <div class="col-sm-12 container-fluid jumbotron mt-0 pt-0 text-white ae-jumbotron">
+    <div class="col-md-3 offset-md-6 px-5 pt-3 text-right text-bottom">
+      <h1 class="display-4 font-italic">Hi I'm Kenny</h1>
     </div>
-  </nav>
-  <main role="main" class="container main">
-    {% if page.is_homepage %}
-    <div class="col-sm-12 jumbotron p-md-2 text-white rounded bg-dark aejumbotron">
-      <div class="col-md-6 offset-md-6 px-5 pt-3 text-right text-bottom">
-        <h1 class="display-4 font-italic">Hi I'm Kenny</h1>
-      </div>
-    </div>
-    <div class="lead bg-dark text-white font-weight-bold text-center rounded p-4 my-2">
-      I am a web developer and builder of things. I <a href="https://github.com/almostengr" target="_blank">write code</a>,
-      learn new things, and <a href="/blog">share my thoughts</a> - not always in that order.
-      I build software and web applications to improve business processes.
-    </div>
-    {% endif %}
+  </div>
+  {% endif %}
+  <main role="main" id="content" class="container main">
 
     <!--breadcrumb-->
     <!--
@@ -135,6 +138,15 @@
     -->
     <div class="row">
       <div class="col-sm-12 col-lg-9">
+        <div class="gcse-searchresults"></div>
+        {% if page.is_homepage %}
+        <div class="lead bg-dark text-white font-weight-bold text-center rounded p-4 mb-2">
+          I am a web developer and builder of things. I <a href="https://github.com/almostengr" target="_blank">write
+            code</a>,
+          learn new things, and <a href="/blog">share my thoughts</a> - not always in that order.
+          I build software and web applications to improve business processes.
+        </div>
+        {% endif %}
         <article>
           {{ page.content }}
         </article>
@@ -143,16 +155,7 @@
         </div>
       </div>
       <div class="col-sm-12 col-lg-3 pt-3">
-        <div class="hidden-print affix well ">
-          <div class="card mb-3">
-            <div class="card-header bg-secondary text-white font-weight-bold text-uppercase">Search</div>
-            <div class="card-body">
-              <div class="card-text">
-                <a href="/search"><i class="fas fa-search"></i> Search</a>
-              </div>
-            </div>
-          </div>
-          <!--
+        <!--
             <div class="card mb-3">
               <div class="card-header bg-secondary text-white font-weight-bold">Page Contents</div>
               <div class="card-body">
@@ -173,54 +176,54 @@
               </div>
             </div>
             -->
-          <div class="card mb-3">
-            <div class="card-header bg-secondary text-white font-weight-bold text-uppercase">Share This!</div>
-            <div class="card-body">
-              <div class="card-text">
-                <!-- AddToAny BEGIN -->
-                <a class="a2a_dd" href="https://www.addtoany.com/share"><img
-                    src="https://static.addtoany.com/buttons/share_save_171_16.png" width="171" height="16" border="0"
-                    alt="Share"></a>
-                <script async src="https://static.addtoany.com/menu/page.js"></script>
-                <!-- AddToAny END -->
-              </div>
+        <div class="card mb-3">
+          <div class="card-header bg-dark text-white font-weight-bold text-uppercase">Share This!</div>
+          <div class="card-body">
+            <div class="card-text">
+              <!-- AddToAny BEGIN -->
+              <a class="a2a_dd" href="https://www.addtoany.com/share"><img
+                  src="https://static.addtoany.com/buttons/share_save_171_16.png" width="171" height="16" border="0"
+                  alt="Share"></a>
+              <script async src="https://static.addtoany.com/menu/page.js"></script>
+              <!-- AddToAny END -->
             </div>
           </div>
-          <div class="card mb-3">
-            <div class="card-header bg-secondary text-white font-weight-bold text-uppercase">Connect with Me</div>
-            <div class="card-body">
-              <div class="card-text">
-                <ul class="list-unstyled list-inline">
-                  <li><a href="https://github.com/almostengr" target="_blank"><i class="fab fa-github"></i> Github</a>
-                  </li>
-                  <li><a href="https://instagram.com/almostengr" target="_blank"><i class="fab fa-instagram"></i>
-                      @almostengr</a></li>
-                  <li><a href="https://linkedin.com/in/krobinsontech" target="_blank"><i class="fab fa-linkedin"></i>
-                      LinkedIn</a></li>
-                  <li><a href="https://twitter.com/almostengr" target="_blank"><i class="fab fa-twitter"></i>
-                      @almostengr</a></li>
-                  <li><a href="https://www.youtube.com/channel/UC4HCouBLtXD1j1U_17aBqig?sub_confirmation=1"
-                      target="_blank"><i class="fab fa-youtube"></i> DIY</a></li>
-                  <li><a href="https://www.youtube.com/channel/UCB7rvymUaUbbig3skv2zvCQ?sub_confirmation=1"
-                      target="_blank"><i class="fab fa-youtube"></i> Dash Cam</a></li>
-                </ul>
-              </div>
+        </div> <!-- end of block -->
+        <div class="card mb-3">
+          <div class="card-header bg-dark text-white font-weight-bold text-uppercase">Connect with Me</div>
+          <div class="card-body">
+            <div class="card-text">
+              <ul class="list-unstyled list-inline">
+                <li><a href="https://github.com/almostengr" target="_blank"><i class="fab fa-github"></i> Github</a>
+                </li>
+                <li><a href="https://instagram.com/almostengr" target="_blank"><i class="fab fa-instagram"></i>
+                    @almostengr</a></li>
+                <li><a href="https://linkedin.com/in/krobinsontech" target="_blank"><i class="fab fa-linkedin"></i>
+                    LinkedIn</a></li>
+                <li><a href="https://twitter.com/almostengr" target="_blank"><i class="fab fa-twitter"></i>
+                    @almostengr</a></li>
+                <li><a href="https://www.youtube.com/channel/UC4HCouBLtXD1j1U_17aBqig?sub_confirmation=1"
+                    target="_blank"><i class="fab fa-youtube"></i> DIY</a></li>
+                <li><a href="https://www.youtube.com/channel/UCB7rvymUaUbbig3skv2zvCQ?sub_confirmation=1"
+                    target="_blank"><i class="fab fa-youtube"></i> Dash Cam</a></li>
+              </ul>
             </div>
           </div>
-          <div class="card mb-3">
-            <div class="card-header bg-secondary text-white font-weight-bold">Sponsor</div>
-            <div class="card-body">
-              <div class="card-text">
-                <!-- Google AdSense -->
-                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4218270188842097"
-                  data-ad-slot="5189305512" data-ad-format="auto" data-full-width-responsive="true"></ins>
-                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-              </div>
+        </div> <!-- end of block -->
+        <div class="card mb-3">
+          <div class="card-header bg-dark text-white text-uppercase font-weight-bold">Sponsor</div>
+          <div class="card-body">
+            <div class="card-text">
+              <!-- Google AdSense -->
+              <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+              <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4218270188842097"
+                data-ad-slot="5189305512" data-ad-format="auto" data-full-width-responsive="true"></ins>
+              <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
             </div>
           </div>
         </div>
       </div>
+    </div>
     </div>
   </main>
   <footer class="container pb-4 footer">
@@ -228,11 +231,13 @@
     <div class="row">
       <div class="col-sm-12 col-md-8">
         <ul class="nav navbar pl-0">
-          <li class="nav-item">Powered by <a href="http://www.mkdocs.org/" target="_blank"><i
-                class="fab fa-markdown"></i> MkDocs</a></li>
-          <li class="nav-item"><a href="https://github.com/almostengr/almostengrwebsite" target="_blank"><i
-                class="fab fa-github"></i> Website Source</a></li>
-          <li class="nav-item"><a href="https://github.com/almostengr/almostengrwebsite/issues" target="_blank"><i
+          <li class="nav-item">
+            Powered by <a href="http://www.mkdocs.org/" target="_blank"><i class="fab fa-markdown"></i> MkDocs</a></li>
+          <li class="nav-item">
+            <a href="https://github.com/almostengr/almostengrwebsite" target="_blank"><i
+                class="fab fa-github"></i>Website Source</a></li>
+          <li class="nav-item">
+            <a href="https://github.com/almostengr/almostengrwebsite/issues" target="_blank"><i
                 class="fa fa-exclamation-triangle"></i> Problem</a></li>
           <li class="nav-item"><a href="/contact"><i class="fas fa-phone"></i> Contact</a></li>
           <li class="nav-item"><a href="/sitemap.xml"><i class="fas fa-sitemap"></i> Sitemap</a></li>
@@ -248,7 +253,6 @@
         <strong>Last Modified:</strong> {{ build_date_utc }}
       </div>
     </div>
-    <div class="col-sm-12">&nbsp;</div>
   </footer>
   <!-- Boostrap and Javascript CDN -->
   <!-- ================================================== -->

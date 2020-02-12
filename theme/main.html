@@ -77,11 +77,6 @@
 
   <!-- Font Awesome -->
   <script async src="https://kit.fontawesome.com/a076d05399.js"></script>
-
-  <!-- Google custom search -->
-  <!--
-  <script async src="https://cse.google.com/cse.js?cx=000195884435112055355:g2eqfks2ipu"></script>
-  -->
 </head>
 
 <body>
@@ -113,36 +108,13 @@
   </div>
   {% endif %}
   <main role="main" id="content" class="container main">
-
-    <!--breadcrumb-->
-    <!--
-    {% if not page.is_homepage %}
-    <div class="row">
-      <nav aria-label="breadcrumb" class="container">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item" aria-current="page"><a href="{{ nav.homepage.url|url }}">Home</a></li>
-          {% if page %}
-            {% for doc in page.ancestors %}
-              {% if doc.link %}
-              <li class="breadcrumb-item" aria-current="page"><a href="{{ doc.link|e }}">{{ doc.title }}</a></li>
-              {% else %}
-              <li class="breadcrumb-item" aria-current="page">{{ doc.title }}</li>
-              {% endif %}
-            {% endfor %}
-          {% endif %}
-          {% if page %}<li class="active breadcrumb-item">{{ page.title }}</li>{% endif %}
-        </ol>
-      </nav>
-    </div>
-    {% endif %}
-    -->
     <div class="row">
       <div class="col-sm-12 col-lg-9">
         <div class="gcse-searchresults"></div>
         {% if page.is_homepage %}
         <div class="lead bg-dark text-white font-weight-bold text-center rounded p-4 mb-2">
-          I am a web developer and builder of things. I <a href="https://github.com/almostengr" target="_blank">write
-            code</a>,
+          I am a web developer and builder of things. I 
+          <a href="https://github.com/almostengr" target="_blank">write code</a>,
           learn new things, and <a href="/blog">share my thoughts</a> - not always in that order.
           I build software and web applications to improve business processes.
         </div>
@@ -180,12 +152,11 @@
           <div class="card-header bg-dark text-white font-weight-bold text-uppercase">Share This!</div>
           <div class="card-body">
             <div class="card-text">
-              <!-- AddToAny BEGIN -->
+              <!-- AddToAny -->
               <a class="a2a_dd" href="https://www.addtoany.com/share"><img
                   src="https://static.addtoany.com/buttons/share_save_171_16.png" width="171" height="16" border="0"
                   alt="Share"></a>
               <script async src="https://static.addtoany.com/menu/page.js"></script>
-              <!-- AddToAny END -->
             </div>
           </div>
         </div> <!-- end of block -->
@@ -255,7 +226,6 @@
     </div>
   </footer>
   <!-- Boostrap and Javascript CDN -->
-  <!-- ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

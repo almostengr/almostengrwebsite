@@ -1,27 +1,21 @@
-# Resources 
+# Resources
 
 ## Cheat Sheets
 
+Cheatsheets have notes or snippets of commands or code that are useful to have. Feel free 
+to print them out or bookmark this page for future reference.
 
-<div class="card mb-3 shadow">
-<div class="card-header bg-dark text-white font-weight-bold text-uppercase">Git Cheatsheet</div>
-<div class="card-body">
-<div class="card-text">
+### Git Cheatsheet
+
 If you are not familiar with 
 using Git version control, then I have a list of the most commonly used commands that 
-will help you get started.<br />
-<a href="http://github.com/almostengr/gitcheatsheet" class="btn btn-dark">Read More</a>
-</div>
-</div>
-</div>
+will help you get started.
 
-<div class="card mb-3 shadow">
-<div class="card-header bg-dark text-white font-weight-bold text-uppercase">Python Cheatsheet</div>
-<div class="card-body">
-<div class="card-text">
+[Read More](https://github.com/almostengr/gitcheatsheet)
+
+### Python Cheatsheet
+
 Designed for new comers to Python, this cheatsheet provides
-the basics for you to be able to create a small application.<br />
-<a href="https://github.com/almostengr/pythoncheatsheet" class="btn btn-dark">Read More</a>
-</div>
-</div>
-</div>
+the basics for you to be able to create a small application.
+
+[Read More](https://github.com/almostengr/pythoncheatsheet)

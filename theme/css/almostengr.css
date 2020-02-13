@@ -15,3 +15,8 @@ a:hover{
     border-radius: 0;
     min-height: 500px;
 }
+
+li.nav-item a.nav-link.active {
+    color: #fff;
+    background-color: #aa0000;
+}

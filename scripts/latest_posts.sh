@@ -9,7 +9,7 @@ echo "INFO: Need to be in the docs directory for this script to work"
 
 BLOGLISTING=$(grep -r -e "^# " * | grep -e blog | grep -v -i -e index.md -e "draft" | sed -e "s|# ||g" -e "s|blog/blog||g" -e "s|:|/|g" -e "s|.md||g")
 
-BLOGLISTMD=$(echo "${BLOGLISTING}" | awk -F '/' '{print $3 "|* ["substr($3,0,11)": "$4" ("$2")](/"$1"/"$2"/"$3")"}' | sort -r | awk -F "|" '{print $2}' | grep -v "(Blog)")
+BLOGLISTMD=$(echo "${BLOGLISTING}" | awk -F '/' '{print $3 "|* ["substr($3,0,11)" - "$4" ("$2")](/"$1"/"$2"/"$3")"}' | sort -r | awk -F "|" '{print $2}' | grep -v "(Blog)")
 
 BLOGLISTPAGE=$(echo "${BLOGLISTING}" | awk -F '/' '{print $3 "| <li><a href=\"/"$1"/"$2"/"$3"\">"substr($3,0,11)" - "$4"</a></li>"}' | sort -r | awk -F "|" '{print $2}' | grep -v "blog/Blog")
 

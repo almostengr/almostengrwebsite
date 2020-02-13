@@ -92,7 +92,8 @@
           <ul class="navbar-nav text-right ml-auto">
             {% for nav_item in nav %}
             <li class="nav-item {% if nav_item.active %}active font-weight-bold{% endif %}">
-              <a class="nav-link {% if nav_item.title == 'Search' %} btn btn-outline-secondary{% endif %}" href="{{ nav_item.url|url }}">{{ nav_item.title }}</a>
+              <a class="nav-link {% if nav_item.title == 'Search' %} btn btn-outline-secondary{% endif %} {% if nav_item.active %}font-weight-bold{% endif %}"
+                href="{{ nav_item.url|url }}">{{ nav_item.title }}</a>
             </li>
             {% endfor %}
           </ul>
@@ -100,6 +101,8 @@
       </div>
     </nav>
   </header>
+
+  <!-- jumbotron -->
   {% if page.is_homepage %}
   <div class="col-sm-12 container-fluid jumbotron mt-0 pt-0 text-white ae-jumbotron">
     <div class="px-5 pt-3 text-bottom"></div>
@@ -147,6 +150,7 @@
               </div>
             </div>
             -->
+
         <div class="card mb-3 shadow">
           <div class="card-header bg-dark text-white font-weight-bold text-uppercase">Share This!</div>
           <div class="card-body">
@@ -159,6 +163,7 @@
             </div>
           </div>
         </div> <!-- end of block -->
+
         <div class="card mb-3 shadow">
           <div class="card-header bg-dark text-white font-weight-bold text-uppercase">Connect with Me</div>
           <div class="card-body">
@@ -182,6 +187,7 @@
             </div>
           </div>
         </div> <!-- end of block -->
+
         <div class="card mb-3 shadow">
           <div class="card-header bg-dark text-white text-uppercase font-weight-bold">Sponsor</div>
           <div class="card-body">
@@ -197,7 +203,8 @@
       </div>
     </div>
     </div>
-  </main>
+  </main> <!-- end container -->
+
   <footer class="container pb-4 footer">
     <hr />
     <div class="row">
@@ -226,6 +233,7 @@
       </div>
     </div>
   </footer>
+
   <!-- Boostrap and Javascript CDN -->
   <!-- Placed at the end of the document so the pages load faster -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"

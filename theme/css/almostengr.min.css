@@ -1,1 +1,1 @@
-a{ color:#aa0000;}a:hover{ color:#ff0000;}.aejumbotron{ background-image:url(/images/jumbotron.jpg); background-repeat:no-repeat; background-position:left center; min-height:430px;}
+a{color:#a00}a:hover{color:red}.ae-jumbotron{background-color:#000;background-image:url(/images/jumbotron2.jpg);background-repeat:no-repeat;background-position:center center;background-size:contain;border-radius:0;min-height:500px}li.nav-item a.nav-link.active{color:#fff;background-color:#a00}img{max-width:100%;height:auto}h1{margin-top:10px}

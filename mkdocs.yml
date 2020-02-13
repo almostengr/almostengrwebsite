@@ -28,15 +28,15 @@ theme:
 extra:
         social:
                 - type: github
-                  link: https://github.com/almostengr
+                  link: /github
                 - type: instagram
-                  link: https://instagram.com/almostengr
+                  link: /instagram
                 - type: linkedin
-                  link: https://linkedin.com/in/krobinsontech
+                  link: linkedin
                 - type: stack-overflow
                   link: https://stackoverflow.com/users/12875554/almostengr
                 - type: twitter
-                  link: https://twitter.com/almostengr
+                  link: twitter
                 - type: youtube
                   link: https://www.youtube.com/channel/UC4HCouBLtXD1j1U_17aBqig?sub_confirmation=1"
                 - type: youtube

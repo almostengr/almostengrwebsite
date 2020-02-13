@@ -169,20 +169,9 @@
           <div class="card-body">
             <div class="card-text">
               <ul class="list-unstyled list-inline">
-                <li><a href="https://github.com/almostengr" target="_blank"><i class="fab fa-github"></i> Github</a>
-                </li>
-                <li><a href="https://instagram.com/almostengr" target="_blank"><i class="fab fa-instagram"></i>
-                    @almostengr</a></li>
-                <li><a href="https://linkedin.com/in/krobinsontech" target="_blank"><i class="fab fa-linkedin"></i>
-                    LinkedIn</a></li>
-                <li><a href="https://stackoverflow.com/users/12875554/almostengr" target="_blank"><i
-                      class="fab fa-stack-overflow"></i> Stack Overflow</a></li>
-                <li><a href="https://twitter.com/almostengr" target="_blank"><i class="fab fa-twitter"></i>
-                    @almostengr</a></li>
-                <li><a href="https://www.youtube.com/channel/UC4HCouBLtXD1j1U_17aBqig?sub_confirmation=1"
-                    target="_blank"><i class="fab fa-youtube"></i> DIY</a></li>
-                <li><a href="https://www.youtube.com/channel/UCB7rvymUaUbbig3skv2zvCQ?sub_confirmation=1"
-                    target="_blank"><i class="fab fa-youtube"></i> Dash Cam</a></li>
+                {% for social in config.extra.social %}
+                <li><a href="{{ social.link }}" target="_blank" class="text-capitalize"><i class="fab fa-{{ social.type }}"></i> {{ social.type }}</a></li>
+                {% endfor %}
               </ul>
             </div>
           </div>

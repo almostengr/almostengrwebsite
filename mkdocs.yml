@@ -1,7 +1,7 @@
 #site information
 site_name: The Almost Engineer
 site_url: http://thealmostengineer.com
-site_description: The blog of Kenny Robinson.
+site_description: The blog of Kenny Robinson where he shares his thoughts and experiences.
 site_author: Kenny Robinson, @almostengr
 site_dir: site
 
@@ -16,43 +16,28 @@ remote_name: origin
 copyright: Copyright &copy; 2015-2020 Kenny Robinson, The Almost Engineer
 
 # Development server details
-dev_addr: 192.168.57.111:8000
+# dev_addr: 192.168.57.111:8000
+# dev_addr: localhost:8000
+dev_addr: 192.168.57.125:8000
 
 # Appearance
 theme:
         name: null
         custom_dir: 'theme'
         language: en
-        palette:
-                primary: 'black'
-                accent: 'red'
-        font: false
-        logo:
-                icon: 'speaker_notes'
-        feature:
-                tabs: true
-
-extra:
-        social:
-                - type: 'github'
-                  link: 'https://github.com/almostengr'
-                - type: 'instagram'
-                  link: 'https://instagram.com/almostengr'
-                - type: 'linkedin'
-                  link: 'https://linkedin.com/in/krobinsontech'
-                - type: 'twitter'
-                  link: 'https://twitter.com/almostengr'
-                - type: 'youtube'
-                  link: 'https://www.youtube.com/channel/UC4HCouBLtXD1j1U_17aBqig?sub_confirmation=1'
-                - type: 'youtube'
-                  link: 'https://www.youtube.com/channel/UCB7rvymUaUbbig3skv2zvCQ?sub_confirmation=1'
                         
 use_directory_urls: true
 strict: false
 
-plugins:
-        - search
-
 markdown_extensions:
         - meta
 
+nav:
+  - index.md
+  - blog.md
+  - portfolio.md
+  - resources.md
+  - uses.md
+  - about.md
+  - contact.md
+  - search.md

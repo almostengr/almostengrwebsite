@@ -14,6 +14,8 @@ Code for this project is downloadable from our GitHub page at
 
 ## Home Automation with Home Assistant (2017)
 
+![Screenshot of Home Automation](/images/portfolio_homeassistant.png)
+
 Home automation is one of the latest trends in technology. 
 
 Using Home Assistant, I have been able to automate several repetitive tasks within my home. 
@@ -37,6 +39,13 @@ Read more about this project or to view the code, please visit its project page 
 
 Black Box Operations is a project management, help desk, and invoicing system all rolled into one. This web application allows BBIT staff and BBIT clients to stay up-to-date with the status of their project and submit maintenance requests for their website(s). The system also emails invoices to clients and allows clients to login to pay their invoices. By having all of the information located in a central location, BBIT is able to produce quality work, in a timely fashion.
 
+## Scrap Code Dump Blog (2010)
+
+This was the first version of by blog hosted on Blogger. In 2015, I moved the blog from Blogger 
+to a dedicated site for a busines that I was starting. That business idea did not succeed, 
+so I decided to take the existing content and make it part of my personal blog. Thus the current 
+website, The Almost Engineer, has this content.
+
 ## NAACP, University of Alabama Chapter (2010)
 
 ![uanaacp_0.jpg](/images/portfolio_uanaacp.jpg)
@@ -52,3 +61,10 @@ The Tuscaloosa Area Black Chamber of Commerce (TABCC) serves to promote Black an
 You can visit the website at 
 <a href="http://tuscblackchamber.org" target="_blank">tuscblackchamber.org</a>.
 
+## University of Alabama Chapter of the National Society of Black Engineers (2009)
+
+![UA NSBE Screenshot](/images/portfolio_uansbe.jpg)
+
+University of Alabama Chapter of the National Society of Black Engineers (UA NSBE) is a student organization at 
+University of Alabama, in Tuscaloosa, Alabama. A website was created to allow UA NSBE to recruit prospective and
+current students to attend organization meetings, events, and conferences. 

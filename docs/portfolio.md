@@ -39,6 +39,13 @@ Read more about this project or to view the code, please visit its project page 
 
 Black Box Operations is a project management, help desk, and invoicing system all rolled into one. This web application allows BBIT staff and BBIT clients to stay up-to-date with the status of their project and submit maintenance requests for their website(s). The system also emails invoices to clients and allows clients to login to pay their invoices. By having all of the information located in a central location, BBIT is able to produce quality work, in a timely fashion.
 
+## Scrap Code Dump Blog (2010)
+
+This was the first version of by blog hosted on Blogger. In 2015, I moved the blog from Blogger 
+to a dedicated site for a busines that I was starting. That business idea did not succeed, 
+so I decided to take the existing content and make it part of my personal blog. Thus the current 
+website, The Almost Engineer, has this content.
+
 ## NAACP, University of Alabama Chapter (2010)
 
 ![uanaacp_0.jpg](/images/portfolio_uanaacp.jpg)

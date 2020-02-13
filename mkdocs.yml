@@ -1,7 +1,7 @@
 #site information
 site_name: The Almost Engineer
 site_url: http://thealmostengineer.com
-site_description: The blog of Kenny Robinson.
+site_description: The blog of Kenny Robinson where he shares his thoughts and experiences.
 site_author: Kenny Robinson, @almostengr
 site_dir: site
 
@@ -29,17 +29,14 @@ theme:
 use_directory_urls: true
 strict: false
 
-plugins:
-        - search
-
 markdown_extensions:
         - meta
 
 nav:
   - index.md
   - blog.md
-  - about.md
   - portfolio.md
   - resources.md
   - uses.md
+  - about.md
   - contact.md

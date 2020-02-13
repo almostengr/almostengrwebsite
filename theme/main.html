@@ -89,7 +89,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav text-right ml-auto">
             {% for nav_item in nav %}
             <li class="nav-item {% if nav_item.active%}active font-weight-bold{% endif %}">
               <a class="nav-link" href="{{ nav_item.url|url }}">{{ nav_item.title }}</a>
@@ -102,11 +102,10 @@
   </header>
   {% if page.is_homepage %}
   <div class="col-sm-12 container-fluid jumbotron mt-0 pt-0 text-white ae-jumbotron">
-    <div class="px-5 pt-3 text-bottom">
-      <h1 class="display-4 font-italic">Hi I'm Kenny!</h1>
-    </div>
+    <div class="px-5 pt-3 text-bottom"></div>
   </div>
   {% endif %}
+
   <main role="main" id="content" class="container main">
     <div class="row">
       <div class="col-sm-12 col-lg-9">
@@ -223,7 +222,7 @@
         {% if config.copyright %} {{ config.copyright }} {%endif%}
       </div>
       <div class="col-sm-12 col-lg-4 text-md-right">
-        <strong>Last Modified:</strong> {{ build_date_utc }}
+        <strong>Last Modified:</strong> {{ build_date_utc }} UTC
       </div>
     </div>
   </footer>

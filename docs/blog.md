@@ -73,6 +73,10 @@ on this journey. I share stories and thoughts that I have learned along the way.
 </div>
 <div class="tab-pane active" id="technology" role="tabpanel" aria-labelledby="technology-tab">
 <ul>
+ <li><a href="/blog/technology/2020.02.08-lacing-up-my-bootstrap">2020.02.08 - Lacing Up My Bootstrap</a></li>
+ <li><a href="/blog/technology/2020.02.06-previous-and-current-blog-posting-process">2020.02.06 - Previous and Current Blog Posting Process</a></li>
+ <li><a href="/blog/technology/2020.02.01-developer-uses-page">2020.02.01 - Developer Uses Page</a></li>
+ <li><a href="/blog/technology/2020.01.21-google-search-console-reports-500-errors">2020.01.21 - Google Search Console Reports 500 Errors</a></li>
  <li><a href="/blog/technology/2020.01.10-7-lessons-from-production-support">2020.01.10 - 7 Lessons Learned as Production Support or Help Desk Agent</a></li>
  <li><a href="/blog/technology/2019.12.24-blog-conversion-steps">2019.12.24 - Blog Conversion Steps</a></li>
  <li><a href="/blog/technology/2019.12.21-switched-blog-from-drupal-to-mkdocs">2019.12.21 - Switched Blog from Drupal to Mkdocs</a></li>

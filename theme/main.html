@@ -170,7 +170,8 @@
             <div class="card-text">
               <ul class="list-unstyled list-inline">
                 {% for social in config.extra.social %}
-                <li><a href="{{ social.link }}" target="_blank" class="text-capitalize"><i class="fab fa-{{ social.type }}"></i> {{ social.type }}</a></li>
+                <li><a href="{{ social.link }}" target="_blank" class="text-capitalize"><i
+                      class="fab fa-{{ social.type }}"></i> {{ social.type }}</a></li>
                 {% endfor %}
               </ul>
             </div>
@@ -195,22 +196,28 @@
 
   <footer class="container pb-4 footer">
     <hr />
-    <div class="row">
-      <div class="col-sm-12 col-md-8">
-        <ul class="nav navbar pl-0">
-          <li class="nav-item">
-            Powered by <a href="http://www.mkdocs.org/" target="_blank"><i class="fab fa-markdown"></i> MkDocs</a></li>
-          <li class="nav-item">
-            <a href="https://github.com/almostengr/almostengrwebsite" target="_blank"><i
-                class="fab fa-github"></i>Website Source</a></li>
-          <li class="nav-item">
-            <a href="https://github.com/almostengr/almostengrwebsite/issues" target="_blank"><i
-                class="fa fa-exclamation-triangle"></i> Problem</a></li>
-          <li class="nav-item"><a href="/contact"><i class="fas fa-phone"></i> Contact</a></li>
-          <li class="nav-item"><a href="/sitemap.xml"><i class="fas fa-sitemap"></i> Sitemap</a></li>
-          <li class="nav-item"><a href="/search"><i class="fas fa-search"></i> Search</a></li>
-        </ul>
-      </div>
+    <div class="col-sm-12 col-md-8 pl-0">
+      <ul class="nav navbar pl-0">
+        <li class="nav-item">
+          Powered by <a href="http://www.mkdocs.org/" target="_blank"><i class="fab fa-markdown"></i> MkDocs</a></li>
+        <li class="nav-item">
+          <a href="https://github.com/almostengr/almostengrwebsite" target="_blank"><i class="fab fa-github"></i>Website
+            Source</a></li>
+        <li class="nav-item">
+          <a href="https://github.com/almostengr/almostengrwebsite/issues" target="_blank"><i
+              class="fa fa-exclamation-triangle"></i> Problem</a></li>
+        <li class="nav-item"><a href="/contact"><i class="fas fa-phone"></i> Contact</a></li>
+        <li class="nav-item"><a href="/sitemap.xml"><i class="fas fa-sitemap"></i> Sitemap</a></li>
+        <li class="nav-item"><a href="/search"><i class="fas fa-search"></i> Search</a></li>
+      </ul>
+    </div>
+    <div class="col-sm-12 col-lg-8 pl-0">
+      <ul class="nav navbar pl-0">
+        {% for social in config.extra.social %}
+        <li><a href="{{ social.link }}" target="_blank" class="text-capitalize"><i class="fab fa-{{ social.type }}"></i>
+            {{ social.type }}</a></li>
+        {% endfor %}
+      </ul>
     </div>
     <div class="row">
       <div class="col-sm-12 col-lg-8">

@@ -29,7 +29,7 @@ you can check out [my blog post](/blog/technology/2020.02.01-developer-uses-page
 * Intel i5 3.10 GHz Processor (limited to 2 cores)
 * 2 GB RAM
 * Runs as virtual machine powered by 
-[Oracle VirtualBox](https://virtualbox.org) (in headless mode)
+[Oracle VirtualBox](https://virtualbox.org) in headless mode
 
 ### Development Server Host
 
@@ -84,7 +84,6 @@ technology tutorials that I post on my YouTube channel.
 
 ### For Windows 
 
-* [Audacity](https://www.audacityteam.org/), for editing audio
 * [Filezilla](https://filezilla-project.org/), for transferring files
 * [Git Bash, Git for Windows](https://gitforwindows.org), for version control
 * [Image Analyzer](http://meesoft.com/Analyzer/), for image editing
@@ -100,8 +99,8 @@ for building ASP.Net Core applications
 
 ## Web Applications and Other Tools
 
-* Github Issues Queue, for managing tasks
-* [Google Calendar](https://www.google.com/calendar), for managing schedules, 
+* Github Issues Queue, for managing project-specific tasks
+* [Google Calendar](https://www.google.com/calendar), for managing meetings, scheduling events,
 and tasks that have to be done at a specific time
 * [Kodi](https://kodi.tv), for watching tv and movies
 * [Pandora](https://pandora.com), for background music

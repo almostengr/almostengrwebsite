@@ -73,10 +73,6 @@ on this journey. I share stories and thoughts that I have learned along the way.
 </div>
 <div class="tab-pane active" id="technology" role="tabpanel" aria-labelledby="technology-tab">
 <ul>
- <li><a href="/blog/technology/2020.02.08-lacing-up-my-bootstrap">2020.02.08 - Lacing Up My Bootstrap</a></li>
- <li><a href="/blog/technology/2020.02.06-previous-and-current-blog-posting-process">2020.02.06 - Previous and Current Blog Posting Process</a></li>
- <li><a href="/blog/technology/2020.02.01-developer-uses-page">2020.02.01 - Developer Uses Page</a></li>
- <li><a href="/blog/technology/2020.01.21-google-search-console-reports-500-errors">2020.01.21 - Google Search Console Reports 500 Errors</a></li>
  <li><a href="/blog/technology/2020.01.10-7-lessons-from-production-support">2020.01.10 - 7 Lessons Learned as Production Support or Help Desk Agent</a></li>
  <li><a href="/blog/technology/2019.12.24-blog-conversion-steps">2019.12.24 - Blog Conversion Steps</a></li>
  <li><a href="/blog/technology/2019.12.21-switched-blog-from-drupal-to-mkdocs">2019.12.21 - Switched Blog from Drupal to Mkdocs</a></li>
@@ -96,7 +92,6 @@ on this journey. I share stories and thoughts that I have learned along the way.
  <li><a href="/blog/technology/2019.01.29-set-timezone-on-ubuntu-18.04-server">2019.01.29 - Set Timezone on Ubuntu 18.04 Server</a></li>
  <li><a href="/blog/technology/2018.11.10-archive-project-in-kdenlive">2018.11.10 - Archive Project in Kdenlive</a></li>
  <li><a href="/blog/technology/2018.10.20-upgrade-ubuntu-16.04-to-ubuntu-18.04">2018.10.20 - Upgrade Ubuntu 16.04 to Ubuntu 18.04</a></li>
- <li><a href="/blog/technology/2018.10.20-upgrade-ubuntu-16.04-to-ubuntu-18.04">2018.10.20 - after reboot</a></li>
  <li><a href="/blog/technology/2018.09.22-upgrade-ubuntu-16.04-lts-to-18.04-lts-upgrade-no-commentary">2018.09.22 - Upgrade Ubuntu 16.04 LTS to 18.04 LTS Upgrade (No Commentary)</a></li>
  <li><a href="/blog/technology/2018.08.28-power-on-wemo-switch-after-power-failure-with-home-assistant">2018.08.28 - Power On Wemo Switch After Power Failure with Home Assistant</a></li>
  <li><a href="/blog/technology/2018.08.14-install-hdhrviewer-plug-in-for-live-tv-on-plex-media-server">2018.08.14 - Install HDHRViewer Plug-in for Live TV on Plex Media Server</a></li>

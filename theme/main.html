@@ -54,7 +54,7 @@
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-  <link href="{{ 'css/almostengr.min.css' | url }}" rel="stylesheet" />
+  <link href="{{ 'css/almostengr.css' | url }}" rel="stylesheet" />
 
   <!-- google analytics -->
   {% if config.google_analytics %}
@@ -152,6 +152,15 @@
             -->
 
         <div class="card mb-3 shadow">
+          <div class="card-header bg-dark text-white font-weight-bold text-uppercase">Search</div>
+          <div class="card-body">
+            <div class="card-text">
+              <a href="/search"><i class="fas fa-search"></i> Search</a>
+            </div>
+          </div>
+        </div> <!-- end of block -->
+
+        <div class="card mb-3 shadow">
           <div class="card-header bg-dark text-white font-weight-bold text-uppercase">Share This!</div>
           <div class="card-body">
             <div class="card-text">
@@ -160,20 +169,6 @@
                   src="https://static.addtoany.com/buttons/share_save_171_16.png" width="171" height="16" border="0"
                   alt="Share"></a>
               <script async src="https://static.addtoany.com/menu/page.js"></script>
-            </div>
-          </div>
-        </div> <!-- end of block -->
-
-        <div class="card mb-3 shadow">
-          <div class="card-header bg-dark text-white font-weight-bold text-uppercase">Connect with Me</div>
-          <div class="card-body">
-            <div class="card-text">
-              <ul class="list-unstyled list-inline">
-                {% for social in config.extra.social %}
-                <li><a href="{{ social.link }}" target="_blank" class="text-capitalize"><i
-                      class="fab fa-{{ social.type }}"></i> {{ social.type }}</a></li>
-                {% endfor %}
-              </ul>
             </div>
           </div>
         </div> <!-- end of block -->
@@ -194,37 +189,47 @@
     </div>
   </main> <!-- end container -->
 
-  <footer class="container pb-4 footer">
-    <hr />
-    <div class="col-sm-12 col-md-8 pl-0">
-      <ul class="nav navbar pl-0">
-        <li class="nav-item">
-          Powered by <a href="http://www.mkdocs.org/" target="_blank"><i class="fab fa-markdown"></i> MkDocs</a></li>
-        <li class="nav-item">
-          <a href="https://github.com/almostengr/almostengrwebsite" target="_blank"><i class="fab fa-github"></i>Website
-            Source</a></li>
-        <li class="nav-item">
-          <a href="https://github.com/almostengr/almostengrwebsite/issues" target="_blank"><i
-              class="fa fa-exclamation-triangle"></i> Problem</a></li>
-        <li class="nav-item"><a href="/contact"><i class="fas fa-phone"></i> Contact</a></li>
-        <li class="nav-item"><a href="/sitemap.xml"><i class="fas fa-sitemap"></i> Sitemap</a></li>
-        <li class="nav-item"><a href="/search"><i class="fas fa-search"></i> Search</a></li>
-      </ul>
-    </div>
-    <div class="col-sm-12 col-lg-8 pl-0">
-      <ul class="nav navbar pl-0">
-        {% for social in config.extra.social %}
-        <li><a href="{{ social.link }}" target="_blank" class="text-capitalize"><i class="fab fa-{{ social.type }}"></i>
-            {{ social.type }}</a></li>
-        {% endfor %}
-      </ul>
-    </div>
-    <div class="row">
-      <div class="col-sm-12 col-lg-8">
-        {% if config.copyright %} {{ config.copyright }} {%endif%}
+  <footer class="container-fluid pb-3 footer ae-bg-black text-white">
+    <div class="container">
+      <div class="pl-0">
+        <ul class="nav navbar pl-0">
+          <li>Connect: </li>
+          {% for social in config.extra.social %}
+          <li><a href="{{ social.link }}" target="_blank" class="text-capitalize">
+              <i class="fab fa-{{ social.type }}"></i> {{ social.type }}</a></li>
+          {% endfor %}
+        </ul>
       </div>
-      <div class="col-sm-12 col-lg-4 text-md-right">
-        <strong>Last Modified:</strong> {{ build_date_utc }} UTC
+
+      <div class="pl-0">
+        <ul class="nav navbar navbar-left pl-0">
+          <li class="nav-item">
+            Powered by <a href="http://www.mkdocs.org/" target="_blank"><i class="fab fa-markdown"></i> MkDocs</a></li>
+          <li class="nav-item">
+            <a href="https://github.com/almostengr/almostengrwebsite" target="_blank">
+              <i class="fab fa-github"></i> Website Source</a></li>
+          <li class="nav-item">
+            <a href="https://github.com/almostengr/almostengrwebsite/issues" target="_blank">
+              <i class="fa fa-exclamation-triangle"></i> Problem</a></li>
+          <li class="nav-item"><a href="/contact"><i class="fas fa-phone"></i> Contact</a></li>
+          <li class="nav-item"><a href="/sitemap.xml"><i class="fas fa-sitemap"></i> Sitemap</a></li>
+          <li class="nav-item"><a href="/search"><i class="fas fa-search"></i> Search</a></li>
+        </ul>
+      </div>
+
+      <div class="py-3 font-weight-bold text-warning">
+        Cookies are used on this website to track your visits, provide advertisements specific
+        to you, and preferences by a third-party.
+        By continuing to use this site, you agree to the use of cookies unless you have disabled them.
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12 col-lg-8">
+          {% if config.copyright %} {{ config.copyright }} {%endif%}
+        </div>
+        <div class="col-sm-12 col-lg-4 text-md-right">
+          <strong>Last Updated:</strong> {{ build_date_utc }} UTC
+        </div>
       </div>
     </div>
   </footer>

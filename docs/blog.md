@@ -62,6 +62,7 @@ on this journey. I share stories and thoughts that I have learned along the way.
 </div>
 <div class="tab-pane" id="lifestyle" role="tabpanel" aria-labelledby="lifestyle-tab">
 <ul>
+ <li><a href="/blog/lifestyle/2020.02.19-mega-zip-at-red-mountain-park">2020.02.19 - Mega Zip at Red Mountain Park</a></li>
  <li><a href="/blog/lifestyle/2020.01.04-21-days-of-prayer-and-fasting">2020.01.04 - 21 Days of Prayer and Fasting </a></li>
  <li><a href="/blog/lifestyle/2020.01.03-word-of-the-year">2020.01.03 - Word of the Year 2020</a></li>
  <li><a href="/blog/lifestyle/2019.11.24-takeaways-from-christopher-robin-movie">2019.11.24 - Takeaways from Christopher Robin movie</a></li>

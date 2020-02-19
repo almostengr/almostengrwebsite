@@ -32,11 +32,11 @@ extra:
                 - type: instagram
                   link: /instagram
                 - type: linkedin
-                  link: linkedin
+                  link: /linkedin
                 - type: stack-overflow
                   link: https://stackoverflow.com/users/12875554/almostengr
                 - type: twitter
-                  link: twitter
+                  link: /twitter
                 - type: youtube
                   link: https://www.youtube.com/channel/UC4HCouBLtXD1j1U_17aBqig?sub_confirmation=1"
                 - type: youtube
@@ -53,5 +53,5 @@ nav:
   - portfolio.md
   - resources.md
   - uses.md
-  - About: index.md
   - contact.md
+  - About: index.md

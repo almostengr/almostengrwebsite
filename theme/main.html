@@ -174,6 +174,20 @@
         </div> <!-- end of block -->
 
         <div class="card mb-3 shadow">
+          <div class="card-header bg-dark text-white font-weight-bold text-uppercase">Connect with Me</div>
+          <div class="card-body">
+            <div class="card-text">
+              <ul>
+              {% for social in config.extra.social %}
+              <li><a href="{{ social.link }}" target="_blank" class="text-capitalize">
+                  <i class="fab fa-{{ social.type }}"></i> {{ social.type }}</a></li>
+              {% endfor %}
+            </ul>
+            </div>
+          </div>
+        </div> <!-- end of block -->
+
+        <div class="card mb-3 shadow">
           <div class="card-header bg-dark text-white text-uppercase font-weight-bold">Sponsor</div>
           <div class="card-body">
             <div class="card-text">

@@ -14,7 +14,7 @@ You can view the source code to
 
 ## Raspberry Pi Traffic Light Control (2018)
 
-![Traffic light](/images/portfolio_trafficlight.jpg)
+![Traffic light](/images/portfolio_trafficlight2.jpg)
 
 The purpose of this project is to educate children about the STEM (Science, Technology, 
 Engineering, and Mathematics) fields. Through the use of low cost devices and effective teaching, by grouping these subjects together, children are able to associate what they are learning with interactions with everyday items. 

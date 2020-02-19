@@ -4,7 +4,7 @@ description: Information about this blog and Kenny Robinson.
 author: Kenny Robinson
 ---
 
-# About
+
 
 ## Why A Blog?
 

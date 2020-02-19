@@ -4,26 +4,51 @@ description: Information about this blog and Kenny Robinson.
 author: Kenny Robinson
 ---
 
+# About
+
 ## Why A Blog?
 
 Kenny started passively blogging in 2011 after watching 
 [a presentation](/blog/technology/2010.07.22-every-developer-needs-a-blog) by 
 Scott Hanselman stated that that stated that every software developer should 
-have a blog. Eventually that blogging habit faded. Fast forward to 2018, Kenny attended a gardening workshop that 
-mentioned that every 
+have a blog. Eventually that blogging habit faded. 
+
+Fast forward to 2018, Kenny attended a gardening workshop that mentioned that every 
 [gardener should have a journal](/blog/gardening/2019.02.23-every-gardener-needs-a-journal). 
-It eventually occurred to him that he could start blogging about 
-his gardening successes and failures and use that as his gardening journal and restart blogging about technology.
 
-## Latest Posts
+By using a blog, you can search for that code snippet and copy and paste it in. In 
+addition, it assists other developers with their coding projects, as it may be exactly 
+what they are looking for.
 
-* [2020.02.19 - Mega Zip at Red Mountain Park (lifestyle)](/blog/lifestyle/2020.02.19-mega-zip-at-red-mountain-park)
-* [2020.02.08 - Lacing Up My Bootstrap (technology)](/blog/technology/2020.02.08-lacing-up-my-bootstrap)
-* [2020.02.06 - Previous and Current Blog Posting Process (technology)](/blog/technology/2020.02.06-previous-and-current-blog-posting-process)
-* [2020.02.01 - Developer Uses Page (technology)](/blog/technology/2020.02.01-developer-uses-page)
-* [2020.01.25 - January 2020 Garden Update (gardening)](/blog/gardening/2020.01.25-january-2020-garden-update)
-* [2020.01.21 - Google Search Console Reports 500 Errors (technology)](/blog/technology/2020.01.21-google-search-console-reports-500-errors)
-* [2020.01.10 - 7 Lessons Learned as Production Support or Help Desk Agent (technology)](/blog/technology/2020.01.10-7-lessons-from-production-support)
-* [2020.01.04 - 21 Days of Prayer and Fasting  (lifestyle)](/blog/lifestyle/2020.01.04-21-days-of-prayer-and-fasting)
-* [2020.01.03 - Word of the Year 2020 (lifestyle)](/blog/lifestyle/2020.01.03-word-of-the-year)
-* [2019.12.29 - Greens in Grass (gardening)](/blog/gardening/2019.12.29-greens-in-grass)
+As a gardener, it allows you to track trends and historical information about what you have 
+done in your garden in previous seasons and years.
+
+## Online Training
+
+Kenny has many 
+[tutorials on YouTube](https://www.youtube.com/channel/UC4HCouBLtXD1j1U_17aBqig) 
+that cover programming, home improvement, home automation, and more topics! New videos 
+are added all the time, so please be sure to
+[subscribe](https://www.youtube.com/channel/UC4HCouBLtXD1j1U_17aBqig?sub_confirmation=1) 
+to the channel.
+
+## Gardening
+
+Gardening started as a hobby for Kenny. After having some seasons of little success and
+being able to literately taste the fruits of my labor, Kenny decided to expand his green
+thumb skill set.
+
+Information about the garden is based on conditions of USDA growing Zone 8a, located
+in the southeastern United States. That being said, the recommendations and suggestions
+that are made on this blog are for this growing zone and are not guaranteed to work in
+other growing zones.
+
+## "The Almost Engineer"
+
+If you have read this far down the page, you probably are wondering how did Kenny come up 
+with The Almost Engineer name. Kenny works (and according to some live in) in the 
+engineering-related field of Computer Science, has great problem solving skills, and 
+enjoys fixing things instead of paying someone else to do it for him. 
+
+However Kenny has a Business degree from the University of Alabama (Roll Tide!) 
+instead of an engineering degree, thus almost being an engineer.

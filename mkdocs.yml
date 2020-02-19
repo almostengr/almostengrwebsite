@@ -49,10 +49,9 @@ markdown_extensions:
         - meta
 
 nav:
-  - index.md
   - blog.md
   - portfolio.md
   - resources.md
   - uses.md
-  - about.md
+  - index.md
   - contact.md

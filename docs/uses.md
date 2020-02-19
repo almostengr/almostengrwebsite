@@ -1,10 +1,10 @@
-# Uses
+﻿# Uses
 
 ![My uses page entry on uses.tech](/images/2020.02.01-uses-entry.jpg)
 
 ## Background
 
-Browsing around on Github, I found that developers create "uses" (or /uses) pages that 
+Browsing around on GitHub, I found that developers create "uses" (or /uses) pages that 
 detail the tools that they use do their work. Here is my list of software, 
 hardware, and other tools that I use to get the job done. 
 
@@ -16,7 +16,7 @@ you can check out [my blog post](/blog/technology/2020.02.01-developer-uses-page
 * [Arvixe](https://www.arvixe.com/), for website hosting
 * [Bootstrap](https://getbootstrap.com), for appearance and styling
 * [Font Awesome](https://fontawesome.com), for icons
-* [Github](https://github.com/almostengr/almostengrwebsite), for version control and issue tracking
+* [GitHub](https://github.com/almostengr/almostengrwebsite), for version control and issue tracking
 * [Google Custom Search](https://cse.google.com/cse/), for searching content on the website
 * [Markdown](https://www.markdownguide.org/), for website content
 * [MkDocs](https://mkdocs.org), for static website generation
@@ -29,7 +29,7 @@ you can check out [my blog post](/blog/technology/2020.02.01-developer-uses-page
 * Intel i5 3.10 GHz Processor (limited to 2 cores)
 * 2 GB RAM
 * Runs as virtual machine powered by 
-[Oracle VirtualBox](https://virtualbox.org) in headless mode
+[Oracle Virtual Box](https://virtualbox.org) in headless mode
 
 ### Development Server Host
 
@@ -73,7 +73,7 @@ you can check out [my blog post](/blog/technology/2020.02.01-developer-uses-page
 * LAMP (Linux, Apache, MySQL, PHP) Stack, for building applications locally
 * [LibreOffice Writer](https://www.libreoffice.org), for word processing
 * [Mozilla Firefox](https://www.mozilla.org/en-us/firefox), for browsing and building websites
-* [Oracle VirtualBox](https://virtualbox.org), Virtual Machine software for running
+* [Oracle Virtual Box](https://virtualbox.org), Virtual Machine software for running
 development environment and home automation server
 * [SimpleScreenRecorder](https://www.maartenbaert.be/simplescreenrecorder/), for recording
 technology tutorials that I post on my YouTube channel.
@@ -99,7 +99,7 @@ for building ASP.Net Core applications
 
 ## Web Applications and Other Tools
 
-* Github Issues Queue, for managing project-specific tasks
+* GitHub Issues Queue, for managing project-specific tasks
 * [Google Calendar](https://www.google.com/calendar), for managing meetings, scheduling events,
 and tasks that have to be done at a specific time
 * [Kodi](https://kodi.tv), for watching tv and movies

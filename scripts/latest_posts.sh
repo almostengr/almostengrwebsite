@@ -26,9 +26,9 @@ head -n +32 ${BLOGFILE} > ${TMPBLOGFILE}
 
 echo '<div class="tab-content">' >> ${TMPBLOGFILE}
 
-echo '<div class="tab-pane" id="diy" role="tabpanel" aria-labelledby="diy-tab">' >> ${TMPBLOGFILE}
+echo '<div class="tab-pane active" id="technology" role="tabpanel" aria-labelledby="technology-tab">' >> ${TMPBLOGFILE}
 echo '<ul>' >> ${TMPBLOGFILE}
-(echo "${BLOGLISTPAGE}" | grep "diy") >> ${TMPBLOGFILE}
+(echo "${BLOGLISTPAGE}" | grep "technology") >> ${TMPBLOGFILE}
 echo '</ul>' >> ${TMPBLOGFILE}
 echo '</div>' >> ${TMPBLOGFILE}
 
@@ -38,15 +38,15 @@ echo '<ul>' >> ${TMPBLOGFILE}
 echo '</ul>' >> ${TMPBLOGFILE}
 echo '</div>' >> ${TMPBLOGFILE}
 
-echo '<div class="tab-pane" id="lifestyle" role="tabpanel" aria-labelledby="lifestyle-tab">' >> ${TMPBLOGFILE}
+echo '<div class="tab-pane" id="diy" role="tabpanel" aria-labelledby="diy-tab">' >> ${TMPBLOGFILE}
 echo '<ul>' >> ${TMPBLOGFILE}
-(echo "${BLOGLISTPAGE}" | grep "lifestyle") >> ${TMPBLOGFILE}
+(echo "${BLOGLISTPAGE}" | grep "diy") >> ${TMPBLOGFILE}
 echo '</ul>' >> ${TMPBLOGFILE}
 echo '</div>' >> ${TMPBLOGFILE}
 
-echo '<div class="tab-pane active" id="technology" role="tabpanel" aria-labelledby="technology-tab">' >> ${TMPBLOGFILE}
+echo '<div class="tab-pane" id="lifestyle" role="tabpanel" aria-labelledby="lifestyle-tab">' >> ${TMPBLOGFILE}
 echo '<ul>' >> ${TMPBLOGFILE}
-(echo "${BLOGLISTPAGE}" | grep "technology") >> ${TMPBLOGFILE}
+(echo "${BLOGLISTPAGE}" | grep "lifestyle") >> ${TMPBLOGFILE}
 echo '</ul>' >> ${TMPBLOGFILE}
 echo '</div>' >> ${TMPBLOGFILE}
 

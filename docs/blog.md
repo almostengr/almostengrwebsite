@@ -17,61 +17,20 @@ on this journey. I share stories and thoughts that I have learned along the way.
 <!-- Nav tabs -->
 <ul class="nav nav-pills nav-justified mb-2">
   <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#diy">DIY</a>
+    <a class="nav-link active" data-toggle="tab" href="#technology">Technology</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" data-toggle="tab" href="#gardening">Gardening</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#lifestyle">Lifestyle</a>
+    <a class="nav-link" data-toggle="tab" href="#diy">DIY</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link active" data-toggle="tab" href="#technology">Technology</a>
+    <a class="nav-link" data-toggle="tab" href="#lifestyle">Lifestyle</a>
   </li>
 </ul>
 
 <div class="tab-content">
-<div class="tab-pane" id="diy" role="tabpanel" aria-labelledby="diy-tab">
-<ul>
- <li><a href="/blog/diy/2019.07.30-reinforce-bookcase-with-plywood">2019.07.30 - Reinforce Bookcase with Plywood</a></li>
- <li><a href="/blog/diy/2019.06.11-identify-electrical-circuits-and-label-breaker-panel">2019.06.11 - Identify Electrical Circuits and Label Breaker Panel</a></li>
- <li><a href="/blog/diy/2019.05.02-4-steps-to-change-the-battery-in-nissan-altima-intelligent-key">2019.05.02 - 4 Steps to Change the Battery in Nissan Altima Intelligent Key</a></li>
- <li><a href="/blog/diy/2019.04.27-weber-charcoal-chimney-review-and-first-use">2019.04.27 - Weber Charcoal Chimney Review and First Use</a></li>
- <li><a href="/blog/diy/2019.02.09-remove-water-from-car-trunk">2019.02.09 - Remove Water from Car Trunk</a></li>
- <li><a href="/blog/diy/2018.11.03-make-your-crockpot-smarter-with-a-timer">2018.11.03 - Make Your Crockpot Smarter with a Timer</a></li>
- <li><a href="/blog/diy/2018.10.27-change-air-filter-on-2013-2018-5th-generation-nissan-altima">2018.10.27 - Change Air Filter on 2013-2018 (5th Generation) Nissan Altima</a></li>
- <li><a href="/blog/diy/2018.07.21-how-to-replace-toilet-gasket-and-bolts">2018.07.21 - How to Replace Toilet Gasket and Bolts</a></li>
- <li><a href="/blog/diy/2018.05.05-repair-leaking-faucet">2018.05.05 - Repair Leaking Faucet</a></li>
- <li><a href="/blog/diy/2018.01.20-1-year-review-of-liftmaster-8500-with-myq-internet-gateway">2018.01.20 - 1 Year Review of Liftmaster 8500 with MyQ Internet Gateway</a></li>
-</ul>
-</div>
-<div class="tab-pane" id="gardening" role="tabpanel" aria-labelledby="gardening-tab">
-<ul>
- <li><a href="/blog/gardening/2020.01.25-january-2020-garden-update">2020.01.25 - January 2020 Garden Update</a></li>
- <li><a href="/blog/gardening/2019.12.29-greens-in-grass">2019.12.29 - Greens in Grass</a></li>
- <li><a href="/blog/gardening/2019.12.22-you-still-rake-leaves">2019.12.22 - You Still Rake Leaves?</a></li>
- <li><a href="/blog/gardening/2019.04.10-how-to-start-a-garden-in-8-steps">2019.04.10 - How to Start A Garden in 8 Steps</a></li>
- <li><a href="/blog/gardening/2019.03.19-containers-vs-in-ground-gardening">2019.03.19 - Containers vs In Ground Gardening</a></li>
- <li><a href="/blog/gardening/2019.03.16-manual-tree-branch-tear-down">2019.03.16 - Manual Tree Branch Tear Down</a></li>
- <li><a href="/blog/gardening/2019.03.11-sow,-a-planting-companion">2019.03.11 - Sow, A Planting Companion</a></li>
- <li><a href="/blog/gardening/2019.03.11-building-raised-garden-beds-">2019.03.11 - Building Raised Garden Beds </a></li>
- <li><a href="/blog/gardening/2019.03.04-greens-from-the-winter-garden">2019.03.04 - Greens From the Winter Garden</a></li>
- <li><a href="/blog/gardening/2019.02.23-every-gardener-needs-a-journal">2019.02.23 - Every Gardener Needs a Journal</a></li>
- <li><a href="/blog/gardening/2018.01.19-snowfall-timelapse-in-montgomery,-al-january-16-17,-2018">2018.01.19 - Snowfall Timelapse in Montgomery, AL - January 16-17, 2018</a></li>
-</ul>
-</div>
-<div class="tab-pane" id="lifestyle" role="tabpanel" aria-labelledby="lifestyle-tab">
-<ul>
- <li><a href="/blog/lifestyle/2020.02.19-mega-zip-at-red-mountain-park">2020.02.19 - Mega Zip at Red Mountain Park</a></li>
- <li><a href="/blog/lifestyle/2020.01.04-21-days-of-prayer-and-fasting">2020.01.04 - 21 Days of Prayer and Fasting </a></li>
- <li><a href="/blog/lifestyle/2020.01.03-word-of-the-year">2020.01.03 - Word of the Year 2020</a></li>
- <li><a href="/blog/lifestyle/2019.11.24-takeaways-from-christopher-robin-movie">2019.11.24 - Takeaways from Christopher Robin movie</a></li>
- <li><a href="/blog/lifestyle/2019.08.15-21-days-for-a-new-habit">2019.08.15 - 21 Days for a New Habit</a></li>
- <li><a href="/blog/lifestyle/2019.07.03-squirrels-taught-me-about-women-and-food">2019.07.03 - Squirrels Taught Me About Women and Food</a></li>
- <li><a href="/blog/lifestyle/2019.06.13-3-benefits-of-doing-something-different-when-stuck">2019.06.13 - 3 Benefits of Doing Something Different When Stuck</a></li>
- <li><a href="/blog/lifestyle/2019.05.09-7-steps-for-more-steps">2019.05.09 - 7 Steps for More Steps</a></li>
-</ul>
-</div>
 <div class="tab-pane active" id="technology" role="tabpanel" aria-labelledby="technology-tab">
 <ul>
  <li><a href="/blog/technology/2020.02.08-lacing-up-my-bootstrap">2020.02.08 - Lacing Up My Bootstrap</a></li>
@@ -170,6 +129,47 @@ on this journey. I share stories and thoughts that I have learned along the way.
  <li><a href="/blog/technology/2011.03.30-birt-reporting">2011.03.30 - BIRT Reporting</a></li>
  <li><a href="/blog/technology/2011.03.07-free-software-development">2011.03.07 - Free Software for Web Development</a></li>
  <li><a href="/blog/technology/2010.07.22-every-developer-needs-a-blog">2010.07.22 - Every Developer Needs A Blog</a></li>
+</ul>
+</div>
+<div class="tab-pane" id="gardening" role="tabpanel" aria-labelledby="gardening-tab">
+<ul>
+ <li><a href="/blog/gardening/2020.01.25-january-2020-garden-update">2020.01.25 - January 2020 Garden Update</a></li>
+ <li><a href="/blog/gardening/2019.12.29-greens-in-grass">2019.12.29 - Greens in Grass</a></li>
+ <li><a href="/blog/gardening/2019.12.22-you-still-rake-leaves">2019.12.22 - You Still Rake Leaves?</a></li>
+ <li><a href="/blog/gardening/2019.04.10-how-to-start-a-garden-in-8-steps">2019.04.10 - How to Start A Garden in 8 Steps</a></li>
+ <li><a href="/blog/gardening/2019.03.19-containers-vs-in-ground-gardening">2019.03.19 - Containers vs In Ground Gardening</a></li>
+ <li><a href="/blog/gardening/2019.03.16-manual-tree-branch-tear-down">2019.03.16 - Manual Tree Branch Tear Down</a></li>
+ <li><a href="/blog/gardening/2019.03.11-sow,-a-planting-companion">2019.03.11 - Sow, A Planting Companion</a></li>
+ <li><a href="/blog/gardening/2019.03.11-building-raised-garden-beds-">2019.03.11 - Building Raised Garden Beds </a></li>
+ <li><a href="/blog/gardening/2019.03.04-greens-from-the-winter-garden">2019.03.04 - Greens From the Winter Garden</a></li>
+ <li><a href="/blog/gardening/2019.02.23-every-gardener-needs-a-journal">2019.02.23 - Every Gardener Needs a Journal</a></li>
+ <li><a href="/blog/gardening/2018.01.19-snowfall-timelapse-in-montgomery,-al-january-16-17,-2018">2018.01.19 - Snowfall Timelapse in Montgomery, AL - January 16-17, 2018</a></li>
+</ul>
+</div>
+<div class="tab-pane" id="diy" role="tabpanel" aria-labelledby="diy-tab">
+<ul>
+ <li><a href="/blog/diy/2019.07.30-reinforce-bookcase-with-plywood">2019.07.30 - Reinforce Bookcase with Plywood</a></li>
+ <li><a href="/blog/diy/2019.06.11-identify-electrical-circuits-and-label-breaker-panel">2019.06.11 - Identify Electrical Circuits and Label Breaker Panel</a></li>
+ <li><a href="/blog/diy/2019.05.02-4-steps-to-change-the-battery-in-nissan-altima-intelligent-key">2019.05.02 - 4 Steps to Change the Battery in Nissan Altima Intelligent Key</a></li>
+ <li><a href="/blog/diy/2019.04.27-weber-charcoal-chimney-review-and-first-use">2019.04.27 - Weber Charcoal Chimney Review and First Use</a></li>
+ <li><a href="/blog/diy/2019.02.09-remove-water-from-car-trunk">2019.02.09 - Remove Water from Car Trunk</a></li>
+ <li><a href="/blog/diy/2018.11.03-make-your-crockpot-smarter-with-a-timer">2018.11.03 - Make Your Crockpot Smarter with a Timer</a></li>
+ <li><a href="/blog/diy/2018.10.27-change-air-filter-on-2013-2018-5th-generation-nissan-altima">2018.10.27 - Change Air Filter on 2013-2018 (5th Generation) Nissan Altima</a></li>
+ <li><a href="/blog/diy/2018.07.21-how-to-replace-toilet-gasket-and-bolts">2018.07.21 - How to Replace Toilet Gasket and Bolts</a></li>
+ <li><a href="/blog/diy/2018.05.05-repair-leaking-faucet">2018.05.05 - Repair Leaking Faucet</a></li>
+ <li><a href="/blog/diy/2018.01.20-1-year-review-of-liftmaster-8500-with-myq-internet-gateway">2018.01.20 - 1 Year Review of Liftmaster 8500 with MyQ Internet Gateway</a></li>
+</ul>
+</div>
+<div class="tab-pane" id="lifestyle" role="tabpanel" aria-labelledby="lifestyle-tab">
+<ul>
+ <li><a href="/blog/lifestyle/2020.02.19-mega-zip-at-red-mountain-park">2020.02.19 - Mega Zip at Red Mountain Park</a></li>
+ <li><a href="/blog/lifestyle/2020.01.04-21-days-of-prayer-and-fasting">2020.01.04 - 21 Days of Prayer and Fasting </a></li>
+ <li><a href="/blog/lifestyle/2020.01.03-word-of-the-year">2020.01.03 - Word of the Year 2020</a></li>
+ <li><a href="/blog/lifestyle/2019.11.24-takeaways-from-christopher-robin-movie">2019.11.24 - Takeaways from Christopher Robin movie</a></li>
+ <li><a href="/blog/lifestyle/2019.08.15-21-days-for-a-new-habit">2019.08.15 - 21 Days for a New Habit</a></li>
+ <li><a href="/blog/lifestyle/2019.07.03-squirrels-taught-me-about-women-and-food">2019.07.03 - Squirrels Taught Me About Women and Food</a></li>
+ <li><a href="/blog/lifestyle/2019.06.13-3-benefits-of-doing-something-different-when-stuck">2019.06.13 - 3 Benefits of Doing Something Different When Stuck</a></li>
+ <li><a href="/blog/lifestyle/2019.05.09-7-steps-for-more-steps">2019.05.09 - 7 Steps for More Steps</a></li>
 </ul>
 </div>
 </div>

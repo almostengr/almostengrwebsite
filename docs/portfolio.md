@@ -10,7 +10,7 @@ Kdenlive archive files. I have videos on my YouTube channel that discuss some of
 aspects of the code. 
 
 You can view the source code to 
-[this project](https://github.com/almostengr/kdenlivetoyoutube) on Github.
+<a href="https://github.com/almostengr/kdenlivetoyoutube" target="_blank">this project</a> on Github.
 
 ## Raspberry Pi Traffic Light Control (2018)
 

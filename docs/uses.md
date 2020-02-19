@@ -106,6 +106,16 @@ and tasks that have to be done at a specific time
 * [Pandora](https://pandora.com), for background music
 * [Trello](https://trello.com/almostengr/recommend), for managing tasks
 
+## Gardening
+
+* Epsom Salt (aka Magnesium Sulfate), for additional minerals to the soil
+* [FarmOS](https://www.farmos.org), for tracking harvests, plantings, and other gardening activities
+* Garden Soil, for dirt to be used in the ground or raised beds
+* [National Weather Service](https://www.weather.gov/), for loading weather data into FarmOS hourly
+* Potting Soil, for dirt to be used in containers or pots
+* Long-Handle Shovel, for digging holes and turning compost pile
+* Short-Handle Shovel, for planting plants
+
 ## Other Uses Pages
 
 To view uses pages for other developers, visit 

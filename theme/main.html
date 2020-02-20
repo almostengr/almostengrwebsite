@@ -92,8 +92,8 @@
           <ul class="navbar-nav text-right ml-auto">
             {% for nav_item in nav %}
             <li class="nav-item {% if nav_item.active %}active font-weight-bold{% endif %}">
-              <a class="nav-link {% if nav_item.title == 'Search' %} btn btn-outline-secondary{% endif %} {% if nav_item.active %}font-weight-bold{% endif %}"
-                href="{{ nav_item.url|url }}">{{ nav_item.title }}</a>
+              <a class="nav-link font-weight-bold {% if nav_item.title == 'Search' %} btn btn-outline-secondary {% endif %}" href="{{ nav_item.url|url }}">
+                {% if nav_item.title == 'Search' %} <i class="fas fa-search"></i>{% endif %} {{ nav_item.title }}</a>
             </li>
             {% endfor %}
           </ul>
@@ -113,6 +113,7 @@
     <div class="row">
       <div class="col-sm-12 col-lg-9">
         <div class="gcse-searchresults"></div>
+
         {% if page.is_homepage %}
         <div class="lead bg-dark text-white font-weight-bold text-center rounded p-4 mb-2 shadow">
           I am a web developer and builder of things. I
@@ -121,12 +122,23 @@
           I build software and web applications to improve business processes.
         </div>
         {% endif %}
+
         <article>
           {{ page.content }}
         </article>
+
         <div class="py-2">
           <a href="#top">Top of Page</a>
         </div>
+
+        <div class="py-3">
+          <!-- Google AdSense -->
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4218270188842097"
+            data-ad-slot="5189305512" data-ad-format="auto" data-full-width-responsive="true"></ins>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+
       </div>
       <div class="col-sm-12 col-lg-3 pt-3">
         <!--
@@ -150,15 +162,6 @@
               </div>
             </div>
             -->
-
-        <div class="card mb-3 shadow">
-          <div class="card-header bg-dark text-white font-weight-bold text-uppercase">Search</div>
-          <div class="card-body">
-            <div class="card-text">
-              <a href="/search"><i class="fas fa-search"></i> Search</a>
-            </div>
-          </div>
-        </div> <!-- end of block -->
 
         <div class="card mb-3 shadow">
           <div class="card-header bg-dark text-white font-weight-bold text-uppercase">Share This!</div>

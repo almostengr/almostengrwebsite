@@ -165,9 +165,10 @@
           <div class="card-body">
             <div class="card-text">
               <!-- AddToAny -->
-              <a class="a2a_dd" href="https://www.addtoany.com/share"><img
-                  src="https://static.addtoany.com/buttons/share_save_171_16.png" width="171" height="16" border="0"
-                  alt="Share"></a>
+              <a class="a2a_dd" href="https://www.addtoany.com/share">
+                <img src="https://static.addtoany.com/buttons/share_save_171_16.png" width="171" height="16" border="0"
+                  alt="Share">
+              </a>
               <script async src="https://static.addtoany.com/menu/page.js"></script>
             </div>
           </div>
@@ -178,11 +179,23 @@
           <div class="card-body">
             <div class="card-text">
               <ul>
-              {% for social in config.extra.social %}
-              <li><a href="{{ social.link }}" target="_blank" class="text-capitalize">
-                  <i class="fab fa-{{ social.type }}"></i> {{ social.type }}</a></li>
-              {% endfor %}
-            </ul>
+                {% for social in config.extra.social %}
+                <li><a href="{{ social.link }}" target="_blank" class="text-capitalize">
+                    <i class="fab fa-{{ social.type }}"></i> {{ social.type }}</a></li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+        </div> <!-- end of block -->
+
+        <div class="card mb-3 shadow">
+          <div class="card-header bg-dark text-white font-weight-bold text-uppercase">Free Drupal Training</div>
+          <div class="card-body">
+            <div class="card-text">
+              If you are interested in learning Drupal 8, I have created a series of videos that shows
+              how to set up a Drupal site and covers the core functionality.
+              <a href="https://www.youtube.com/playlist?list=PLaAJ0fv0d9WM8E2K_Ke5As-fw626yQ3tu" target="_blank">Watch
+                it now</a>.
             </div>
           </div>
         </div> <!-- end of block -->

@@ -14,4 +14,3 @@ Designed for new comers to Python, this cheatsheet provides
 the basics for you to be able to create a small application.
 
 [Read More](https://github.com/almostengr/pythoncheatsheet)
-

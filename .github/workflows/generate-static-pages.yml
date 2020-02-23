@@ -1,4 +1,4 @@
-name: Deploy from master
+name: Generate static pages
 
 on:
         push: 

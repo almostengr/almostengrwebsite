@@ -39,3 +39,10 @@ h1{
 .ae-bg-black{
     background-color: #000 !important;
 }
+
+pre{
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 15px;
+}

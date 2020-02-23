@@ -25,6 +25,12 @@ jobs:
           
                 - name: Installing Mkdocs
                   run: pip install mkdocs
+          
+                - name: Checking out gh-pages branch
+                  run: git checkout -b gh-pages origin/gh-pages
+          
+                - name: Checking out master branch
+                  run: git checkout master
                    
                 - name: Building static site
                   run: python -m mkdocs gh-deploy

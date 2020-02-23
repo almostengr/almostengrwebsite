@@ -20,11 +20,11 @@ jobs:
                   with: 
                         repository: almostengr/almostengrwebsite
 
-                - name: Installing mkdocs
-                  run:  |
-                   python -m pip install --upgrade pip
-                   pip install mkdocs
+                - name: Installing Python
+                  run:  python -m pip install --upgrade pip
+          
+                - name: Installing Mkdocs
+                  run: pip install mkdocs
                    
-                - name: building static site
+                - name: Building static site
                   run: mkdocs gh-deploy
-                  

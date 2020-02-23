@@ -26,6 +26,9 @@ jobs:
                 - name: Installing Mkdocs
                   run: pip install mkdocs
           
+                - name: Fetching branches
+                  run: git fetch -p
+          
                 - name: Checking out gh-pages branch
                   run: git checkout -b gh-pages origin/gh-pages
           

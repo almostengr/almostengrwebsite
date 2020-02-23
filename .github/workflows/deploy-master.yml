@@ -15,8 +15,16 @@ jobs:
                 runs-on: ubuntu-latest
 
                 steps:
-                - name: checkout repo
+                - name: Checkout latest master
                   uses: actions/checkout@v2
                   with: 
                         repository: almostengr/almostengrwebsite
+
+                - name: Installing mkdocs
+                  run:  |
+                   python -m pip install --upgrade pip
+                   pip install mkdocs
+                   
+                - name: building static site
+                  run: mkdocs gh-deploy
                   

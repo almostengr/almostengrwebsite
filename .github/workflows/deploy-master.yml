@@ -16,4 +16,4 @@ jobs:
 
                 steps:
                 - name: checkout repo
-                  uses: almostengrwebsite/checkout@v1
+                  uses: almostengrwebsite/checkout

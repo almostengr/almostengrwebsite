@@ -27,4 +27,4 @@ jobs:
                   run: pip install mkdocs
                    
                 - name: Building static site
-                  run: mkdocs gh-deploy
+                  run: python -m mkdocs gh-deploy

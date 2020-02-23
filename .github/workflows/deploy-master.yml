@@ -1,4 +1,26 @@
 name: Deploy from master
 
 on:
-        ;
+        push: 
+                branches:
+                        - master
+
+on:
+        pull_request:
+                branches:
+                        - master
+
+jobs:
+        build:
+                name: buildout
+                runs-on: ubuntu-latest
+
+                steps:
+                - name: checkout repo
+                  uses: almostengrwebsite/checkout@v1
+                - name: Installing mkdocs
+                  run:  |
+                   python -m pip install --upgrade pip
+                   pip install mkdocs
+                - name: building static site
+                  run: mkdocs gh-deploy

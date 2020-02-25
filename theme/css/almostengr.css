@@ -46,3 +46,9 @@ pre{
     padding: 10px;
     border-radius: 15px;
 }
+
+.navbar-brand{
+    font-size: 40px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}

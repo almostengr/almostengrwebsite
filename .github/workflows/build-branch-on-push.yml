@@ -1,30 +1,30 @@
 name: Build branch on push
 
 on:
-        push: 
-                branches:
-                        - '!master'
+  push: 
+    branches:
+      - '!master'
 
-        pull_request:
-                branches:
-                        - '!master'
+  pull_request:
+    branches:
+      - '!master'
 
 jobs:
-        build:
-                name: buildout
-                runs-on: ubuntu-latest
+  build:
+    name: buildout
+    runs-on: ubuntu-latest
 
-                steps:
-                - name: Checking out repository
-                  uses: actions/checkout@v2
-                  with: 
-                        repository: ${{ github.ref }}
+    steps:
+    - name: Checking out repository
+      uses: actions/checkout@v2
+      with: 
+        repository: ${{ github.ref }}
 
-                - name: Installing Python
-                  run:  python -m pip install --upgrade pip
-          
-                - name: Installing Mkdocs
-                  run:  python -m pip install mkdocs
-                   
-                - name: Building website
-                  run:  python -m mkdocs build
+    - name: Installing Python
+      run:  python -m pip install --upgrade pip
+
+    - name: Installing Mkdocs
+      run:  python -m pip install mkdocs
+        
+    - name: Building website
+      run:  python -m mkdocs build

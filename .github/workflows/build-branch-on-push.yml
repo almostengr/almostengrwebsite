@@ -18,7 +18,7 @@ jobs:
     - name: Checking out repository ${{ github.ref }}
       uses: actions/checkout@master
       with: 
-        repository: ${{ github.ref }}
+        repository: almostengr/almostengrwebsite/${{ github.ref }}
 
     - name: Installing Python
       run:  python -m pip install --upgrade pip

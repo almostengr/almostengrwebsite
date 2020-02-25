@@ -15,10 +15,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checking out repository ${GITHUB_REF##*/}
-      uses: actions/checkout@v2
+    - name: Checking out repository ${{ github.ref }}
+      uses: actions/checkout@master
       with: 
-        repository: ${GITHUB_REF##*/}
+        repository: ${{ github.ref }}
 
     - name: Installing Python
       run:  python -m pip install --upgrade pip

@@ -11,12 +11,14 @@ hardware, and other tools that I use to get the job done.
 For more detail about how what is a Uses page and how you can create your own, 
 you can check out [my blog post](/blog/technology/2020.02.01-developer-uses-page).
 
-## This Website and Blog
+## Website and Blog
 
 * [Arvixe](https://www.arvixe.com/), for website hosting
 * [Bootstrap](https://getbootstrap.com), for appearance and styling
 * [Font Awesome](https://fontawesome.com), for icons
 * [GitHub](https://github.com/almostengr/almostengrwebsite), for version control and issue tracking
+* [GitHub Actions](https://github.com/features/actions) for automated builds and deployment (Continuous Deployment) of website
+![Generate static pages](https://github.com/almostengr/almostengrwebsite/workflows/Generate%20static%20pages/badge.svg?branch=master)
 * [Google Custom Search](https://cse.google.com/cse/), for searching content on the website
 * [Markdown](https://www.markdownguide.org/), for website content
 * [MkDocs](https://mkdocs.org), for static website generation

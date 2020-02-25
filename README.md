@@ -12,3 +12,5 @@ You may read up on why I swtiched my blog from Drupal to MkDocs in my
 
 If you want to know more about MKDocs, you can visit the MKDocs website at 
 [mkdocs.org](https://mkdocs.org).
+
+![Generate static pages](https://github.com/almostengr/almostengrwebsite/workflows/Generate%20static%20pages/badge.svg?branch=master)

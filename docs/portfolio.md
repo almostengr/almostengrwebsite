@@ -19,7 +19,7 @@ You can view the source code for this project on GitHub at
 The purpose of this project is to educate children about the STEM (Science, Technology, 
 Engineering, and Mathematics) fields. Through the use of low cost devices and effective teaching, by grouping these subjects together, children are able to associate what they are learning with interactions with everyday items. 
 
-For example, most children are aware of the purpose of a traffic light, but most are not aware of a traffic lights' internal workings. This project is designed to educate children by explaining the workings of the "black box" of a traffic light. 
+For example, most children are aware of the purpose of a traffic light, but most are not aware of a traffic lights' internal workings. This project is designed to educate children by explaining the workings of the "black box" of a traffic light.
 
 This project targets the "T, E, and M" of "STEM" by using electronic circuits for controlling the lights, software for controlling the electronic circuits, and mathematical calculations for making timing decisions.
 
@@ -28,7 +28,7 @@ Code for this project is downloadable from our GitHub page at
 
 ## Home Automation with Home Assistant (2017)
 
-![Screenshot of Home Automation](/images/portfolio_homeassistant.png)
+![Screenshot of Home Automation](/images/portfolio_homeassistant.jpg)
 
 Home automation is one of the latest trends in technology. 
 
@@ -68,7 +68,7 @@ University of Alabama Chapter of the National Association for the Advancement of
 
 ## Tuscaloosa Area Black Chamber of Commerce (2010)
 
-![tabcc screenshot.png](/images/portfolio_tabcc.png)
+![tabcc screenshot.jpg](/images/portfolio_tabcc.jpg)
 
 The Tuscaloosa Area Black Chamber of Commerce (TABCC) serves to promote Black and minority-owned businesses in the 7th congressional district of Alabama and the West Alabama areas. TABCC now has an informational website for current and prospective members, upcoming events, and community and TABCC news bulletins.
 

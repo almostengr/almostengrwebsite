@@ -4,10 +4,14 @@ on:
   push: 
     branches:
       - '*'
+      - '!master'
 
   pull_request:
     branches:
       - '*'
+      - '!master'
+
+# help with variables https://github.com/actions/checkout
 
 jobs:
   build:

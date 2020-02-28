@@ -33,6 +33,7 @@ on this journey. I share stories and thoughts that I have learned along the way.
 <div class="tab-content">
 <div class="tab-pane active" id="technology" role="tabpanel" aria-labelledby="technology-tab">
 <ul>
+ <li><a href="/blog/technology/2020.03.01-linux-training-session">2020.03.01 - Linux Training Session</a></li>
  <li><a href="/blog/technology/2020.02.08-lacing-up-my-bootstrap">2020.02.08 - Lacing Up My Bootstrap</a></li>
  <li><a href="/blog/technology/2020.02.06-previous-and-current-blog-posting-process">2020.02.06 - Previous and Current Blog Posting Process</a></li>
  <li><a href="/blog/technology/2020.02.01-developer-uses-page">2020.02.01 - Developer Uses Page</a></li>

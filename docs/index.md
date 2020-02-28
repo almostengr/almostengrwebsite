@@ -55,7 +55,7 @@ However Kenny has a Business degree from the University of Alabama (Roll Tide!)
 instead of an engineering degree, thus almost being an engineer.
 
 ## Latest Posts
-
+* [2020.03.01 - Linux Training Session (technology)](/blog/technology/2020.03.01-linux-training-session)
 * [2020.02.19 - Mega Zip at Red Mountain Park (lifestyle)](/blog/lifestyle/2020.02.19-mega-zip-at-red-mountain-park)
 * [2020.02.08 - Lacing Up My Bootstrap (technology)](/blog/technology/2020.02.08-lacing-up-my-bootstrap)
 * [2020.02.06 - Previous and Current Blog Posting Process (technology)](/blog/technology/2020.02.06-previous-and-current-blog-posting-process)
@@ -65,4 +65,3 @@ instead of an engineering degree, thus almost being an engineer.
 * [2020.01.10 - 7 Lessons Learned as Production Support or Help Desk Agent (technology)](/blog/technology/2020.01.10-7-lessons-from-production-support)
 * [2020.01.04 - 21 Days of Prayer and Fasting  (lifestyle)](/blog/lifestyle/2020.01.04-21-days-of-prayer-and-fasting)
 * [2020.01.03 - Word of the Year 2020 (lifestyle)](/blog/lifestyle/2020.01.03-word-of-the-year)
-* [2019.12.29 - Greens in Grass (gardening)](/blog/gardening/2019.12.29-greens-in-grass)

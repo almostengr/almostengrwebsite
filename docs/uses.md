@@ -57,8 +57,8 @@ you can check out [my blog post](/blog/technology/2020.02.01-developer-uses-page
 
 * [Windows 10 Home](https://www.microsoft.com/en-us/software-download/windows10ISO)
 * Toshiba Satellite C855D laptop
+* AMD E-300 1.3 GHz Dual-Core Processor
 * 16 GB RAM
-* AMD 1.3 GHz Dual-Core Processor
 
 ## Software
 

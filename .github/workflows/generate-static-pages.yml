@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout latest master
+    - name: Checking out repository
       uses: actions/checkout@v2
       with: 
             repository: almostengr/almostengrwebsite

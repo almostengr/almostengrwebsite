@@ -7,13 +7,14 @@ ErrorDocument 404 /404/
 ErrorDocument 500 /500/
 
 # Do permenant redirects
-Redirect 301 /archive/(.*) /404/
+Redirect 301 /archive/(.*) /blog
 Redirect 301 /category/(.*) /404/
 Redirect 301 /keywords/(.*) /404/
-Redirect 301 /latest-articles /404/
+Redirect 301 /latest-articles /blog
 Redirect 301 /taxonomy/(.*) /404/
-Redirect 301 /recent-posts /
+Redirect 301 /recent-posts /blog
 
+Redirect 301 /contact-me /contact
 Redirect 301 /7-reasons-i-can-do-without-app /blog/technology/2019.06.16-7-reasons-i-can-do-that-without-the-app
 Redirect 301 /change-air-filter-2013-2018-5th-generation-nissan-altima /blog/diy/2018.10.27-change-air-filter-on-2013-2018-5th-generation-nissan-altima
 Redirect 301 /configure-etckeeper-gitlab /blog/technology/2018.05.15-configure-etckeeper-with-gitlab
@@ -44,21 +45,6 @@ Redirect 301 /drupal-8-tutorial-series-0 /blog/technology/2019.02.27-drupal-8-tu
   RewriteCond %{HTTPS} on
   RewriteRule ^ - [E=protossl:s]
 
-  # Block access to "hidden" directories whose names begin with a period. This
-  # includes directories used by version control systems such as Subversion or
-  # Git to store control files. Files whose names begin with a period, as well
-  # as the control files used by CVS, are protected by the FilesMatch directive
-  # above.
-  #
-  # NOTE: This only works when mod_rewrite is loaded. Without mod_rewrite, it is
-  # not possible to block access to entire directories from .htaccess, because
-  # <DirectoryMatch> is not allowed here.
-  #
-  # If you do not have mod_rewrite installed, you should remove these
-  # directories from your webroot or otherwise protect them from being
-  # downloaded.
-  RewriteRule "/\.|^\.(?!well-known/)" - [F]
-
   # If your site can be accessed both with and without the 'www.' prefix, you
   # can use one of the following settings to redirect users to your preferred
   # URL, either WITH or WITHOUT the 'www.' prefix. Choose ONLY one option:
@@ -76,4 +62,3 @@ Redirect 301 /drupal-8-tutorial-series-0 /blog/technology/2019.02.27-drupal-8-tu
   RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
   RewriteRule ^ http%{ENV:protossl}://%1%{REQUEST_URI} [L,R=301]
 </IfModule>
-

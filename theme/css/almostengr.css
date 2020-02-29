@@ -27,6 +27,12 @@ img{
     height: auto;
 }
 
+article img, article iframe {
+    box-shadow: .5rem 1rem rgba(0,0,0,.15)!important;
+    margin-bottom: 1rem !important;
+    box-sizing: border-box;
+}
+
 h1{
     margin-top: 10px;
 }

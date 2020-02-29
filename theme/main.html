@@ -250,7 +250,7 @@
     <div class="container">
       <div class="pl-0 text-left">
         <ul class="nav navbar pl-0">
-          <li>Connect: </li>
+          <li><strong>Connect:</strong> </li>
           {% for social in config.extra.social %}
           <li><a href="{{ social.link }}" target="_blank" class="text-capitalize">
               <i class="fab fa-{{ social.type }}"></i> {{ social.type }}</a></li>
@@ -261,19 +261,19 @@
       <div class="pl-0">
         <ul class="nav navbar navbar-left pl-0">
           <li class="nav-item">
-            Categories:
+            <strong>Categories:</strong>
+          </li>
+          <li>  
+            <a href="/technology"><i class="fas fa-laptop-code"></i> Technology</a>
           </li>
           <li>
-            <a href="/technology">Technology</a>
+            <a href="/gardening"><i class="fas fa-seedling"></i> Gardening</a>
           </li>
           <li>
-            <a href="/gardening">Gardening</a>
+            <a href="/diy"><i class="fas fa-hammer"></i> DIY (Do It Yourself)</a>
           </li>
           <li>
-            <a href="/diy">DIY (Do It Yourself)</a>
-          </li>
-          <li>
-            <a href="/lifestyle">Lifestyle</a>
+            <a href="/lifestyle"><i class="fas fa-user-friends"></i> Lifestyle</a>
           </li>
         </ul>
       </div>

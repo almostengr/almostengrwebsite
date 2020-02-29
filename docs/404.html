@@ -1,63 +1,37 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="en_US" />
-
-  {% if page and page.meta and page.meta.description %}
-  <meta name="description" content="{{ page.meta.description }}">
-  <meta property="og:description" content="{{ page.meta.description }}" />
-  <meta name="twitter:description" content="{{ page.meta.description }}" />
-  {% elif config.site_description %}
-  <meta name="description" content="{{ config.site_description }}">
-  <meta property="og:description" content="{{ config.site_description }}" />
-  <meta name="twitter:description" content="{{ config.site_description }}" />
-  {% endif %}
-
-  {% if config.site_author %}
-  <meta name="author" content="{{ config.site_author }}">
-  {% endif %}
-
-  {% if page and page.meta and page.meta.title %}
-  <title>{{ page.meta.title }}</title>
-  <meta property="og:title" content="{{ page.meta.title }}" />
-  <meta name="twitter:title" content="{{ page.meta.title }}" />
-  {% elif page and page.title and not page.is_homepage %}
-  <title>{{ page.title | striptags }} | {{ config.site_name }}</title>
-  <meta property="og:title" content="{{ page.title | striptags }}" />
-  <meta name="twitter:title" content="{{ page.title | striptags }}" />
-  {% else %}
-  <title>{{ config.site_name }}</title>
-  <meta property="og:title" content="{{ config.site_name }}" />
-  <meta name="twitter:title" content="{{ config.site_name }}" />
-  {% endif %}
-
-  {% if page.meta.image %}
-  <meta property="og:image" content="{{ page.meta.image }}" />
-  <meta name="twitter:image" content="{{ page.meta.image }}" />
-  {% endif %}
-
-  <meta property="og:site_name" content="{{ config.site_name }}" />
+  
+  <meta name="description" content="Information about this blog and Kenny Robinson.">
+  <meta property="og:description" content="Information about this blog and Kenny Robinson." />
+  <meta name="twitter:description" content="Information about this blog and Kenny Robinson." />
+  
+  
+  <meta name="author" content="Kenny Robinson, @almostengr">
+  
+  
+  <title>Page Not Found | The Almost Engineer</title>
+  <meta property="og:title" content="Contact" />
+  <meta name="twitter:title" content="Contact" />
+  
+  
+  <meta property="og:site_name" content="The Almost Engineer" />
   <link rel="icon" href="../../../../favicon.ico">
-
-  {% if page.canonical_url %}
-  <link rel="canonical" href="{{ page.canonical_url }}">
-  {% endif %}
-
+  
+  <link rel="canonical" href="http://thealmostengineer.com/contact/">
+  
   <!-- Custom styles for this template -->
-  <link href="{{ 'css/starter-template.css' | url }}" rel="stylesheet">
-
+  <link href="../css/starter-template.css" rel="stylesheet">
   <!-- Bootstrap CDN -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-  <link href="{{ 'css/almostengr.css' | url }}" rel="stylesheet" />
-
+  <link href="../css/almostengr.css" rel="stylesheet" />
   <!-- google analytics -->
-  {% if config.google_analytics %}
+  
   <script>
     (function (i, s, o, g, r, a, m) {
       i['GoogleAnalyticsObject'] = r;
@@ -70,69 +44,78 @@
       a.src = g;
       m.parentNode.insertBefore(a, m)
     })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-    ga('create', '{{ config.google_analytics[0] }}', '{{ config.google_analytics[1] }}');
+    ga('create', 'UA-64643711-1', 'thealmostengineer.com');
     ga('send', 'pageview');
   </script>
-  {% endif %}
-
+  
   <!-- Font Awesome -->
   <script async src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
-
 <body>
   <header>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
       <div class="container">
-        <a class="navbar-brand" href="/">{{ config.site_name }}</a>
+        <a class="navbar-brand" href="/">The Almost Engineer</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
           aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
           <ul class="navbar-nav text-right ml-auto">
-            {% for nav_item in nav %}
-            <li class="nav-item {% if nav_item.active %}active font-weight-bold{% endif %}">
-              <a class="nav-link font-weight-bold {% if nav_item.title == 'Search' %} btn btn-outline-secondary {% endif %}" href="{{ nav_item.url|url }}">
-                {% if nav_item.title == 'Search' %} <i class="fas fa-search"></i>{% endif %} {{ nav_item.title }}</a>
+            
+            <li class="nav-item ">
+              <a class="nav-link font-weight-bold " href="../blog/">
+                 Blog</a>
             </li>
-            {% endfor %}
+            
+            <li class="nav-item ">
+              <a class="nav-link font-weight-bold " href="../portfolio/">
+                 Portfolio</a>
+            </li>
+            
+            <li class="nav-item ">
+              <a class="nav-link font-weight-bold " href="../resources/">
+                 Resources</a>
+            </li>
+            
+            <li class="nav-item ">
+              <a class="nav-link font-weight-bold " href="../uses/">
+                 Uses</a>
+            </li>
+            
+            <li class="nav-item ">
+              <a class="nav-link font-weight-bold " href="..">
+                 About</a>
+            </li>
+            
+            <li class="nav-item active font-weight-bold">
+              <a class="nav-link font-weight-bold " href="./">
+                 Contact</a>
+            </li>
+            
+            <li class="nav-item ">
+              <a class="nav-link font-weight-bold  btn btn-outline-secondary " href="../search/">
+                 <i class="fas fa-search"></i> Search</a>
+            </li>
+            
           </ul>
         </div>
       </div>
     </nav>
   </header>
-
   <!-- jumbotron -->
-  {% if page.is_homepage %}
-  <div class="col-sm-12 container-fluid jumbotron mt-0 pt-0 text-white ae-jumbotron">
-    <div class="px-5 pt-3 text-bottom"></div>
-  </div>
-  {% endif %}
-
+  
   <main role="main" id="content" class="container main">
     <div class="row">
       <div class="col-sm-12 col-lg-9">
         <div class="gcse-searchresults"></div>
-
-        {% if page.is_homepage %}
-        <div class="lead bg-dark text-white font-weight-bold text-center rounded p-4 mb-2 shadow">
-          I am a web developer and builder of things. I
-          <a href="https://github.com/almostengr" target="_blank">write code</a>,
-          learn new things, and <a href="/blog">share my thoughts</a> - not always in that order.<br />
-          I build software and web applications to improve business processes.
-        </div>
-        {% endif %}
-
+        
         <article>
-          {% block content %}
-          {{ page.content }}
-          {% endblock %}
+          <h1 id="contact">Page Not Found</h1>
         </article>
-
         <div class="py-2">
           <a href="#top">Top of Page</a>
         </div>
-
         <div class="py-3">
           <!-- Google AdSense -->
           <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -140,7 +123,6 @@
             data-ad-slot="5189305512" data-ad-format="auto" data-full-width-responsive="true"></ins>
           <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
         </div>
-
       </div>
       <div class="col-sm-12 col-lg-3 pt-3">
         <!--
@@ -150,21 +132,18 @@
                 <div class="card-text">
                   <nav>
                     <ul class="list-unstyled">
-                      {% for toc_item in page.toc %}
-                        <li><a href="{{ toc_item.url }}">{{ toc_item.title }}</a></li>
+                      
+                        <li><a href="#contact">Contact</a></li>
                         <ul class="list-unstyled">
-                        {% for toc_item in toc_item.children %}
-                          <li><a href="{{ toc_item.url }}">{{ toc_item.title }}</a></li>
-                        {% endfor %}
+                        
                         </ul>
-                      {% endfor %}
+                      
                     </ul>
                   </nav>
                 </div>
               </div>
             </div>
             -->
-
         <div class="card mb-3 shadow">
           <div class="card-header bg-dark text-white font-weight-bold text-uppercase">Share This!</div>
           <div class="card-body">
@@ -178,21 +157,37 @@
             </div>
           </div>
         </div> <!-- end of block -->
-
         <div class="card mb-3 shadow">
           <div class="card-header bg-dark text-white font-weight-bold text-uppercase">Connect with Me</div>
           <div class="card-body">
             <div class="card-text">
               <ul>
-                {% for social in config.extra.social %}
-                <li><a href="{{ social.link }}" target="_blank" class="text-capitalize">
-                    <i class="fab fa-{{ social.type }}"></i> {{ social.type }}</a></li>
-                {% endfor %}
+                
+                <li><a href="/github" target="_blank" class="text-capitalize">
+                    <i class="fab fa-github"></i> github</a></li>
+                
+                <li><a href="/instagram" target="_blank" class="text-capitalize">
+                    <i class="fab fa-instagram"></i> instagram</a></li>
+                
+                <li><a href="/linkedin" target="_blank" class="text-capitalize">
+                    <i class="fab fa-linkedin"></i> linkedin</a></li>
+                
+                <li><a href="https://stackoverflow.com/users/12875554/almostengr" target="_blank" class="text-capitalize">
+                    <i class="fab fa-stack-overflow"></i> stack-overflow</a></li>
+                
+                <li><a href="/twitter" target="_blank" class="text-capitalize">
+                    <i class="fab fa-twitter"></i> twitter</a></li>
+                
+                <li><a href="https://www.youtube.com/channel/UC4HCouBLtXD1j1U_17aBqig?sub_confirmation=1"" target="_blank" class="text-capitalize">
+                    <i class="fab fa-youtube"></i> youtube</a></li>
+                
+                <li><a href="https://www.youtube.com/channel/UCB7rvymUaUbbig3skv2zvCQ?sub_confirmation=1" target="_blank" class="text-capitalize">
+                    <i class="fab fa-youtube"></i> youtube</a></li>
+                
               </ul>
             </div>
           </div>
         </div> <!-- end of block -->
-
         <div class="card mb-3 shadow">
           <div class="card-header bg-dark text-white font-weight-bold text-uppercase">Free Drupal Training</div>
           <div class="card-body">
@@ -204,7 +199,6 @@
             </div>
           </div>
         </div> <!-- end of block -->
-
         <div class="card mb-3 shadow">
           <div class="card-header bg-dark text-white text-uppercase font-weight-bold">Sponsor</div>
           <div class="card-body">
@@ -220,19 +214,35 @@
       </div>
     </div>
   </main> <!-- end container -->
-
   <footer class="container-fluid pb-3 footer ae-bg-black text-white">
     <div class="container">
       <div class="pl-0">
         <ul class="nav navbar pl-0">
           <li>Connect: </li>
-          {% for social in config.extra.social %}
-          <li><a href="{{ social.link }}" target="_blank" class="text-capitalize">
-              <i class="fab fa-{{ social.type }}"></i> {{ social.type }}</a></li>
-          {% endfor %}
+          
+          <li><a href="/github" target="_blank" class="text-capitalize">
+              <i class="fab fa-github"></i> github</a></li>
+          
+          <li><a href="/instagram" target="_blank" class="text-capitalize">
+              <i class="fab fa-instagram"></i> instagram</a></li>
+          
+          <li><a href="/linkedin" target="_blank" class="text-capitalize">
+              <i class="fab fa-linkedin"></i> linkedin</a></li>
+          
+          <li><a href="https://stackoverflow.com/users/12875554/almostengr" target="_blank" class="text-capitalize">
+              <i class="fab fa-stack-overflow"></i> stack-overflow</a></li>
+          
+          <li><a href="/twitter" target="_blank" class="text-capitalize">
+              <i class="fab fa-twitter"></i> twitter</a></li>
+          
+          <li><a href="https://www.youtube.com/channel/UC4HCouBLtXD1j1U_17aBqig?sub_confirmation=1"" target="_blank" class="text-capitalize">
+              <i class="fab fa-youtube"></i> youtube</a></li>
+          
+          <li><a href="https://www.youtube.com/channel/UCB7rvymUaUbbig3skv2zvCQ?sub_confirmation=1" target="_blank" class="text-capitalize">
+              <i class="fab fa-youtube"></i> youtube</a></li>
+          
         </ul>
       </div>
-
       <div class="pl-0">
         <ul class="nav navbar navbar-left pl-0">
           <li class="nav-item">
@@ -248,24 +258,21 @@
           <li class="nav-item"><a href="/search"><i class="fas fa-search"></i> Search</a></li>
         </ul>
       </div>
-
       <div class="py-3 font-weight-bold text-warning">
         Cookies are used on this website to track your visits, provide advertisements specific
         to you, and preferences by a third-party.
         By continuing to use this site, you agree to the use of cookies unless you have disabled them.
       </div>
-
       <div class="row">
         <div class="col-sm-12 col-lg-8">
-          {% if config.copyright %} {{ config.copyright }} {%endif%}
+           Copyright &copy; 2015-2020 Kenny Robinson, The Almost Engineer 
         </div>
         <div class="col-sm-12 col-lg-4 text-md-right">
-          <strong>Last Updated:</strong> {{ build_date_utc }} UTC
+          <strong>Last Updated:</strong> 2020-02-29 05:20:47 UTC
         </div>
       </div>
     </div>
   </footer>
-
   <!-- Boostrap and Javascript CDN -->
   <!-- Placed at the end of the document so the pages load faster -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -278,5 +285,4 @@
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
 </body>
-
 </html>

@@ -38,6 +38,8 @@ python <script name>
 
 Replace ```<script name>``` with the file name of the Python script that you want to run.
 
+----
+
 ## Declare Variables 
 
 Variables hold the values that are used in your application or script. In Python, 
@@ -51,6 +53,8 @@ myVariable = "red"
 myOtherVariable = false
 myOtherOtherVariable = 5
 ``` 
+
+----
 
 ## Functions
 
@@ -67,6 +71,8 @@ def myFunction (param1, param2, param3):
 If you notice, there are no braces or brackets around the contents of the function. 
 Python relies on indentation for the grouping of lines together within a given 
 section.
+
+----
 
 ## Random Number
 
@@ -89,6 +95,8 @@ myNumber = randint(5,60)
 In the example above, 5 is the lower limit of the range and 60 is the upper limit
 of the range. If your range needs to be different, then changes either or both of 
 these values.
+
+----
 
 ## Basic Mathematics
 
@@ -138,6 +146,8 @@ print quotient
 
 From the example above, the output will print 4. 
 
+----
+
 ## Hello World
 
 Below is a sample of how to print out "Hello world" in Python.
@@ -145,6 +155,8 @@ Below is a sample of how to print out "Hello world" in Python.
 ```python
 print ("Hello world")
 ```
+
+----
 
 ## More Resources
 

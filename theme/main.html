@@ -253,7 +253,7 @@
                   <i class="fab fa-{{ social.type }}"></i> {{ social.type }}</a></li>
               {% endfor %}
             </ul>
-        </div>
+        </div> <!-- end of block -->
 
         <div class="col-sm-12 col-lg-3">
           <h5>Categories</h5>
@@ -271,7 +271,7 @@
               <a href="/lifestyle"><i class="fas fa-user-friends"></i> Lifestyle</a>
             </li>
           </ul>
-        </div>
+        </div> <!-- end of block -->
 
         <div class="col-sm-12 col-lg-3">
           <h5>Links</h5>
@@ -281,16 +281,26 @@
             </li>
             <li class="nav-item">
               <a href="https://github.com/almostengr/almostengrwebsite" target="_blank">
-                <i class="fab fa-github"></i> Website Source</a></li>
+                <i class="fab fa-github"></i> Website Source</a>
+            </li>
             <li class="nav-item">
               <a href="https://github.com/almostengr/almostengrwebsite/issues" target="_blank">
-                <i class="fa fa-exclamation-triangle"></i> Problem</a></li>
-            <li class="nav-item"><a href="/archives"><i class="fas fa-archive"></i> Archives</a></li>
-            <li class="nav-item"><a href="/contact"><i class="fas fa-phone"></i> Contact</a></li>
-            <li class="nav-item"><a href="/sitemap.xml"><i class="fas fa-sitemap"></i> Sitemap</a></li>
-            <li class="nav-item"><a href="/search"><i class="fas fa-search"></i> Search</a></li>
+                <i class="fa fa-exclamation-triangle"></i> Report Problem</a>
+            </li>
+            <li class="nav-item">
+              <a href="/archives"><i class="fas fa-archive"></i> Archives</a>
+            </li>
+            <li class="nav-item">
+              <a href="/contact"><i class="fas fa-phone"></i> Contact</a>
+            </li>
+            <li class="nav-item">
+              <a href="/sitemap.xml"><i class="fas fa-sitemap"></i> Sitemap</a>
+            </li>
+            <li class="nav-item">
+              <a href="/search"><i class="fas fa-search"></i> Search</a>
+            </li>
           </ul>
-        </div>
+        </div> <!-- end of block -->
 
         <div class="col-sm-12 col-lg-3">
           <h5>Legal</h5>
@@ -299,15 +309,15 @@
             to you, and preferences by a third-party.
             By continuing to use this site, you agree to the use of cookies unless you have disabled them.
           </span>
-        </div>
+        </div> <!-- end of block -->
       </div>
 
       <div class="text-center mt-2">
         {% if config.copyright %} {{ config.copyright }} {%endif%} |
         <strong>Last Updated:</strong> {{ build_date_utc }} UTC |
         <a href="#top">Back to Top</a>
-      </div>
-    </div>
+      </div> <!-- end of block -->
+    </div> <!-- end container -->
   </footer>
 
   <!-- Boostrap and Javascript CDN -->

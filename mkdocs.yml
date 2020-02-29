@@ -47,12 +47,4 @@ strict: false
 
 markdown_extensions:
         - meta
-
-nav:
-  - archives.md
-  - portfolio.md
-  - resources.md
-  - uses.md
-  - about.md
-  - contact.md
-  - search.md
+        

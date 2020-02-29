@@ -91,11 +91,35 @@
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
           <ul class="navbar-nav text-right ml-auto">
             {% for nav_item in nav %}
+            <!--
             <li class="nav-item {% if nav_item.active %}active font-weight-bold{% endif %}">
               <a class="nav-link font-weight-bold {% if nav_item.title == 'Search' %} btn btn-outline-secondary {% endif %}" href="{{ nav_item.url|url }}">
                 {% if nav_item.title == 'Search' %} <i class="fas fa-search"></i>{% endif %} {{ nav_item.title }}</a>
             </li>
+            -->
             {% endfor %}
+            <li class="nav-item">
+              <a class="nav-link font-weight-bold text-white" href="/archives">Archives</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font-weight-bold text-white" href="/portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font-weight-bold text-white" href="/resources">Resources</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font-weight-bold text-white" href="/uses">Uses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font-weight-bold text-white" href="/about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font-weight-bold text-white" href="/contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font-weight-bold btn btn-outline-light text-white" href="/search">
+                <i class="fas fa-search"></i> Search</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -118,7 +142,7 @@
         <div class="lead bg-dark text-white font-weight-bold text-center rounded p-4 mb-2 shadow">
           I am a web developer and builder of things. I
           <a href="https://github.com/almostengr" target="_blank">write code</a>,
-          learn new things, and <a href="/blog">share my thoughts</a> - not always in that order.<br />
+          learn new things, and <a href="/archive">share my thoughts</a> - not always in that order.<br />
           I build software and web applications to improve business processes.
         </div>
         {% endif %}
@@ -186,7 +210,8 @@
               <ul>
                 {% for social in config.extra.social %}
                 <li><a href="{{ social.link }}" target="_blank" class="text-capitalize">
-                    <i class="fab fa-{{ social.type }}"></i> {{ social.type }}</a></li>
+                    <i class="fab fa-{{ social.type }}"></i> {{ social.type }}</a>
+                </li>
                 {% endfor %}
               </ul>
             </div>

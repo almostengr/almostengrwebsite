@@ -9,12 +9,12 @@ author: Kenny Robinson
 ## Why A Blog?
 
 Kenny started passively blogging in 2011 after watching 
-[a presentation](/blog/technology/2010.07.22-every-developer-needs-a-blog) by 
+[a presentation](/technology/2010.07.22-every-developer-needs-a-blog) by 
 Scott Hanselman that stated every software developer should 
 have a blog. Eventually that blogging habit faded. 
 
 Fast forward to 2018, Kenny attended a gardening workshop that mentioned that every 
-[gardener should have a journal](/blog/gardening/2019.02.23-every-gardener-needs-a-journal). 
+[gardener should have a journal](/gardening/2019.02.23-every-gardener-needs-a-journal). 
 
 As a IT professional, a blog allows you to save code snippets and copy and 
 paste them in your future projects. In 

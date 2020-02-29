@@ -112,7 +112,11 @@ sum = 5 + 3
 print sum
 ```
 
-From the example above, the output will print 8. 
+Output: 
+
+```aeoutput
+8
+```
 
 ### Subtraction
 
@@ -124,7 +128,11 @@ difference = 10 - 3
 print difference 
 ```
 
-From the example above, the output will print 7.
+Output:
+
+```aeoutput
+7
+```
 
 ### Multiplication
 
@@ -135,7 +143,11 @@ product = 4 * 3
 print product
 ```
 
-From the example above, the output will print 12.
+Output:
+
+```aeoutput
+12
+```
 
 ### Division 
 
@@ -144,7 +156,11 @@ quotient = 20 / 5
 print quotient
 ```
 
-From the example above, the output will print 4. 
+Output:
+
+```aeoutput
+4
+```
 
 ----
 
@@ -154,6 +170,12 @@ Below is a sample of how to print out "Hello world" in Python.
 
 ```python
 print ("Hello world")
+```
+
+Output:
+
+```aeoutput
+Hello world
 ```
 
 ----

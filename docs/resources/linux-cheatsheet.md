@@ -3,7 +3,6 @@
 Cheatsheet of commands to use when working on Linux-based systems. Here the commands that I use
 most frequently.
 
-
 I'm currently working on a YouTube tutorial series that will describe the commands listed and the 
 multiple ways that they can be used.
 

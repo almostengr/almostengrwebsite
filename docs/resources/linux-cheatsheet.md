@@ -22,6 +22,11 @@ may work, but are not guaranteed to do so.
 * [List All Files in Current Directory in Reverse Order](#list-all-files-in-current-directory-in-reverse-order)
 * [List All Files In Current Directory and Filter with Grep](#list-all-files-in-current-directory-and-filter-with-grep)
 
+### Bash
+
+* [View Command Execution History](#view-command-execution-history)
+* [Run Command From History](#run-command-from-history)
+
 ### Sending Emails
 
 * [Email A File To User](#email-a-file-to-user)
@@ -55,6 +60,58 @@ ls -al | grep -i <searchString>
 List the directory contents. Then search for the ```searchString``` in the output of the
 directory listing. NOTE: Depending on the system, the ```searchString``` may be 
 highlighted in a different color when it is found.
+
+----
+
+## Bash
+
+### View Command Execution History
+
+```bash
+history
+```
+
+Output: 
+
+```aeoutput
+almostengineer@aeoffice$ history
+2016  cd ../..
+2017  mkdocs build 
+2018  history | grep serve 
+2019  mkdocs serve > /dev/null 2>&1 &  
+2020  git status 
+2021  history
+```
+
+The first column shows the command number and the second column will show the command that was run.
+
+### Run Command From History
+
+```bash
+!<number>
+```
+
+Will run the command from your history as it was originally typed. You will need to replace 
+```<number>``` with the number that shows in the output. For example, entering in ```!2020```
+after running the ```history``` command above will give the below output.
+
+Output: 
+
+```aeoutput
+almostengineer@aeoffice$ !2020
+git status 
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   docs/resources/linux-cheatsheet.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+```
 
 ----
 

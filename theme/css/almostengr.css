@@ -60,15 +60,20 @@ h1{
     background-color: #000 !important;
 }
 
-pre{
+pre, p code{
     background-color: #000;
     color: #fff;
-    padding: 10px;
-    border-radius: 15px;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 .navbar-brand{
     font-size: 40px;
     padding-top: 1px;
     padding-bottom: 1px;
+}
+
+code.aeoutput{
+    background-color: #000;
+    color: #090;
 }

@@ -47,12 +47,4 @@ strict: false
 
 markdown_extensions:
         - meta
-
-nav:
-  - blog.md
-  - portfolio.md
-  - resources.md
-  - uses.md
-  - About: index.md
-  - contact.md
-  - search.md
+        

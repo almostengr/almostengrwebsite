@@ -223,13 +223,33 @@
 
   <footer class="container-fluid pb-3 footer ae-bg-black text-white">
     <div class="container">
-      <div class="pl-0">
+      <div class="pl-0 text-left">
         <ul class="nav navbar pl-0">
           <li>Connect: </li>
           {% for social in config.extra.social %}
           <li><a href="{{ social.link }}" target="_blank" class="text-capitalize">
               <i class="fab fa-{{ social.type }}"></i> {{ social.type }}</a></li>
           {% endfor %}
+        </ul>
+      </div>
+
+      <div class="pl-0">
+        <ul class="nav navbar navbar-left pl-0">
+          <li class="nav-item">
+            Categories:
+          </li>
+          <li>
+            <a href="/technology">Technology</a>
+          </li>
+          <li>
+            <a href="/gardening">Gardening</a>
+          </li>
+          <li>
+            <a href="/diy">DIY (Do It Yourself)</a>
+          </li>
+          <li>
+            <a href="/lifestyle">Lifestyle</a>
+          </li>
         </ul>
       </div>
 
@@ -243,6 +263,7 @@
           <li class="nav-item">
             <a href="https://github.com/almostengr/almostengrwebsite/issues" target="_blank">
               <i class="fa fa-exclamation-triangle"></i> Problem</a></li>
+          <li class="nav-item"><a href="/archives"><i class="fas fa-archive"></i> Archives</a></li>
           <li class="nav-item"><a href="/contact"><i class="fas fa-phone"></i> Contact</a></li>
           <li class="nav-item"><a href="/sitemap.xml"><i class="fas fa-sitemap"></i> Sitemap</a></li>
           <li class="nav-item"><a href="/search"><i class="fas fa-search"></i> Search</a></li>

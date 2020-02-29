@@ -7,6 +7,15 @@ a:hover{
     color: #ff0000;
 }
 
+footer a{
+    color: #999;
+    font-weight: normal;
+}
+
+footer a:hover{
+    color: #ccc;
+}
+
 .ae-jumbotron{
     background-color: #333;
     background-image: url(/images/jumbotron2.jpg); 

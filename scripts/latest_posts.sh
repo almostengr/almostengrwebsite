@@ -34,7 +34,7 @@ mv ${TMPINDEXFILE} ${INDEXFILE}
 
 ##### Update archive page
 
-head -n +16 ${BLOGFILE} > ${TMPBLOGFILE}
+head -n +17 ${BLOGFILE} > ${TMPBLOGFILE}
 echo "${BLOGLISTPAGE}" >> ${TMPBLOGFILE}
 mv ${TMPBLOGFILE} ${BLOGFILE}
 

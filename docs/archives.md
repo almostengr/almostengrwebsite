@@ -10,6 +10,7 @@ There's plenty to read here! Select a post from below or use the navigation to s
 when you choose, but maintaining the garden is a great stress reliever.
 * [**Lifestyle**](/lifestyle) - Life is difficult enough. I feel that we can all learn from others and their experiences
 on this journey. I share stories and thoughts that I have learned along the way.
+* [**Resources**](/resources) - Useful information and quick tips for various languages and tools.
 * [**Technology**](/technology) - All things related to computers, the internet, software, and web development.
 
 ## Past Posts

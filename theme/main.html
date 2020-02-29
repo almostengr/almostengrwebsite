@@ -244,12 +244,12 @@
       <div class="row pt-4">
         <div class="col-sm-12 col-lg-3">
           <h5 class="border-bottom">Connect</h5>
-            <ul class="list-unstyled">
-              {% for social in config.extra.social %}
-              <li><a href="{{ social.link }}" target="_blank" class="text-capitalize">
-                  <i class="fab fa-{{ social.type }}"></i> {{ social.type }}</a></li>
-              {% endfor %}
-            </ul>
+          <ul class="list-unstyled">
+            {% for social in config.extra.social %}
+            <li><a href="{{ social.link }}" target="_blank" class="text-capitalize">
+                <i class="fab fa-{{ social.type }}"></i> {{ social.type }}</a></li>
+            {% endfor %}
+          </ul>
         </div> <!-- end of block -->
 
         <div class="col-sm-12 col-lg-3">
@@ -312,14 +312,16 @@
             <a class="text-warning" href="/privacy"><i class="fas fa-user-secret"></i> Privacy Policy</a>
           </span>
         </div> <!-- end of block -->
-      </div>
-
-      <div class="text-center mt-2">
-        {% if config.copyright %} {{ config.copyright }} {%endif%} |
-        <strong>Last Updated:</strong> {{ build_date_utc }} UTC |
-        <a href="#top">Back to Top</a>
-      </div> <!-- end of block -->
+      </div> <!-- end of row -->
     </div> <!-- end container -->
+
+    <hr class="ae-footer-hr">
+
+    <div class="text-center mt-2">
+      {% if config.copyright %} {{ config.copyright }} {%endif%} |
+      <strong>Last Updated:</strong> {{ build_date_utc }} UTC |
+      <a href="#top">Back to Top</a>
+    </div> <!-- end of block -->
   </footer>
 
   <!-- Boostrap and Javascript CDN -->

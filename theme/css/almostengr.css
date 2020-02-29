@@ -16,6 +16,11 @@ footer a:hover{
     color: #ccc;
 }
 
+.ae-footer-hr{
+    background-color: #aa0000;
+    height: 3px;
+}
+
 .ae-jumbotron{
     background-color: #333;
     background-image: url(/images/jumbotron2.jpg); 
@@ -48,16 +53,11 @@ h1{
 }
 
 .main{
-    /* min-height: 1000px; */
     min-height: 100vh;
 }
 
 .ae-bg-black{
     background-color: #000 !important;
-}
-
-.ae-bg-gray {
-    background-color: #333 !important;
 }
 
 pre{

@@ -1,9 +1,11 @@
 # Python Cheatsheet
 
-This repository describes some of the tips and tricks for using the Python programming 
-language.
+This cheatsheet has some of the tips and tricks for using the Python programming 
+language. As I learn more about Python, I will post more useful code snippets here
+in order to help you.
 
-As I learn more about Python, I will post more useful code snippets here.
+Submissions or issues identified can be submitted via issue on this 
+[project's repository](https://github.com/almostengr/almostengrwebsite/issues).
 
 ## Table of Contents
 

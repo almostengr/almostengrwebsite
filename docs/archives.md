@@ -106,6 +106,7 @@ on this journey. I share stories and thoughts that I have learned along the way.
  * [2018.01.16 - Install Samba on Ubuntu 16.04 (technology)](/technology/2018.01.16-install-samba-on-ubuntu-16.04)
  * [2018.01.16 - Created the first folder  (technology)](/technology/2018.01.16-install-samba-on-ubuntu-16.04)
  * [2018.01.14 - FarmOS NWS 2.0 (technology)](/technology/2018.01.14-farmos-nws-2.0)
+ * [2017.09.21 - Build Web Applicatoin without Coding using Drupal 7 (events)](/events/2017.09.21-build-web-application-without-coding-using-drupal-7)
  * [2017.04.03 - Linux rm Argument list too long (technology)](/technology/2017.04.03-linux-rm-argument-list-too-long)
  * [2016.11.19 - Setup SSH on OpenWRT (technology)](/technology/2016.11.19-setup-ssh-on-openwrt)
  * [2016.09.28 - Find Lines Longer than Specified Length (technology)](/technology/2016.09.28-find-lines-longer-than-specified-length)

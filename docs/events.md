@@ -1,0 +1,5 @@
+# Events
+
+List of upcoming and past events and presentations
+
+ * [2020.03.06 - Linux Training Session, April 2020 (events)](/events/2020.03.06-linux-training-session-april-2020)

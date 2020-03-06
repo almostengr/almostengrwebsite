@@ -80,45 +80,43 @@
 </head>
 
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark ae-bg-black">
-      <div class="container">
-        <a class="navbar-brand" href="/">{{ config.site_name }}</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-          aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-          <ul class="navbar-nav text-right ml-auto">
-            {% for nav_item in nav %}
-            <!--
+  <header class="ae-bg-black">
+    <nav class="navbar navbar-expand-lg navbar-dark container">
+      <a class="navbar-brand" href="/">{{ config.site_name }}</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+        aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav text-right ml-auto">
+          {% for nav_item in nav %}
+          <!--
             <li class="nav-item {% if nav_item.active %}active font-weight-bold{% endif %}">
               <a class="nav-link font-weight-bold {% if nav_item.title == 'Search' %} btn btn-outline-secondary {% endif %}" href="{{ nav_item.url|url }}">
                 {% if nav_item.title == 'Search' %} <i class="fas fa-search"></i>{% endif %} {{ nav_item.title }}</a>
             </li>
             -->
-            {% endfor %}
-            <li class="nav-item">
-              <a class="nav-link font-weight-bold text-white" href="/archives">Archives</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link font-weight-bold text-white" href="/portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link font-weight-bold text-white" href="/uses">Uses</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link font-weight-bold text-white" href="/about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link font-weight-bold text-white" href="/contact">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link font-weight-bold btn btn-outline-light text-white" href="/search">
-                <i class="fas fa-search"></i> Search</a>
-            </li>
-          </ul>
-        </div>
+          {% endfor %}
+          <li class="nav-item">
+            <a class="nav-link font-weight-bold text-white" href="/archives">Archives</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font-weight-bold text-white" href="/portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font-weight-bold text-white" href="/uses">Uses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font-weight-bold text-white" href="/about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font-weight-bold text-white" href="/contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font-weight-bold btn btn-outline-light text-white" href="/search">
+              <i class="fas fa-search"></i> Search</a>
+          </li>
+        </ul>
       </div>
     </nav>
   </header>
@@ -319,9 +317,9 @@
 
     <div class="text-center mt-2">
       <small>
-      The views and opinions expressed here are those of my own and are not a reflection 
-      of those that I work or socialize with.
-    </small>
+        The views and opinions expressed here are those of my own and are not a reflection
+        of those that I work or socialize with.
+      </small>
     </div>
     <div class="text-center mt-2">
       {% if config.copyright %} {{ config.copyright }} {%endif%} |

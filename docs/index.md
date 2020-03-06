@@ -6,6 +6,7 @@ author: Kenny Robinson
 
 # Latest Posts
 
+### [2020.03.06 - Linux Training Session, April 2020 (events)](/events/2020.03.06-linux-training-session-april-2020) 
 ### [2020.03.01 - Linux Training Session (technology)](/technology/2020.03.01-linux-training-session) 
 ### [2020.02.19 - Mega Zip at Red Mountain Park (lifestyle)](/lifestyle/2020.02.19-mega-zip-at-red-mountain-park) 
 ### [2020.02.08 - Lacing Up My Bootstrap (technology)](/technology/2020.02.08-lacing-up-my-bootstrap) 
@@ -20,4 +21,3 @@ author: Kenny Robinson
 ### [2019.12.24 - Blog Conversion Steps (technology)](/technology/2019.12.24-blog-conversion-steps) 
 ### [2019.12.22 - You Still Rake Leaves? (gardening)](/gardening/2019.12.22-you-still-rake-leaves) 
 ### [2019.12.21 - Switched Blog from Drupal to Mkdocs (technology)](/technology/2019.12.21-switched-blog-from-drupal-to-mkdocs) 
-### [2019.12.20 - Blog Reverse Sort with Mkdocs (technology)](/technology/2019.12.20-blog-reverse-sort-with-mkdocs) 

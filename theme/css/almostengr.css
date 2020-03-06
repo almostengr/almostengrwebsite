@@ -57,6 +57,7 @@ article img, article iframe {
 
 h1{
     margin-top: 10px;
+    margin-bottom: 20px;
     font-weight: bold;
     border-bottom: 1px solid #aa0000;
 }

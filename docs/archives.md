@@ -6,6 +6,7 @@ There's plenty to read here! Select a post from below or use the navigation to s
 ## Categories
 
 * [**DIY**](/diy) - I enjoy repairing and building things, including home improvement projects and car repairs.
+* [**Events**](/events/) - Upcoming events that I will be presenting at or hosting.
 * [**Gardening**](/gardening) - Fresh food? Of course! Having a garden not only means that you have fresh food
 when you choose, but maintaining the garden is a great stress reliever.
 * [**Lifestyle**](/lifestyle) - Life is difficult enough. I feel that we can all learn from others and their experiences
@@ -14,9 +15,8 @@ on this journey. I share stories and thoughts that I have learned along the way.
 * [**Technology**](/technology) - All things related to computers, the internet, software, and web development.
 
 ## Past Posts
-
  * [2020.03.06 - Linux Training Session, April 2020 (events)](/events/2020.03.06-linux-training-session-april-2020)
- * [2020.03.01 - Linux Training Session (technology)](/technology/2020.03.01-linux-training-session)
+ * [2020.03.01 - Linux Training Session Notes, March 2020 (technology)](/technology/2020.03.01-linux-training-session)
  * [2020.02.19 - Mega Zip at Red Mountain Park (lifestyle)](/lifestyle/2020.02.19-mega-zip-at-red-mountain-park)
  * [2020.02.08 - Lacing Up My Bootstrap (technology)](/technology/2020.02.08-lacing-up-my-bootstrap)
  * [2020.02.06 - Previous and Current Blog Posting Process (technology)](/technology/2020.02.06-previous-and-current-blog-posting-process)

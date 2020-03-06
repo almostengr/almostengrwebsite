@@ -2,7 +2,7 @@
 
 All things related to computers, the internet, software, and web development.
 
- * [2020.03.01 - Linux Training Session (technology)](/technology/2020.03.01-linux-training-session)
+ * [2020.03.01 - Linux Training Session Notes, March 2020 (technology)](/technology/2020.03.01-linux-training-session)
  * [2020.02.08 - Lacing Up My Bootstrap (technology)](/technology/2020.02.08-lacing-up-my-bootstrap)
  * [2020.02.06 - Previous and Current Blog Posting Process (technology)](/technology/2020.02.06-previous-and-current-blog-posting-process)
  * [2020.02.01 - Developer Uses Page (technology)](/technology/2020.02.01-developer-uses-page)

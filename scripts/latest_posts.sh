@@ -18,7 +18,7 @@ GARDENINGFILE="gardening.md"
 GARDENDESCRIPTION="Fresh food? Of course! Having a garden not only means that you have fresh food when you choose, but maintaining the garden is a great stress reliever."
 
 EVENTFILE="events.md"
-EVENTDESCRIPTION="List of upcoming and past events and presentations"
+EVENTDESCRIPTION="List of upcoming and past events and presentations that I will be presenting at or hosting."
 
 echo "INFO: Need to be in the docs directory for this script to work"
 

@@ -1,5 +1,15 @@
 ﻿# Portfolio
 
+* [Kdenlive to YouTube (Java)](#kdenlive-to-youtube-2019)
+* [Raspberry Pi Traffic Light Control (Python)](#raspberry-pi-traffic-light-control-2018)
+* [Home Automation with Home Assistant (Automation)](#home-automation-with-home-assistant-2017)
+* [FarmOS NWS (Drupal Module)](#farmos-nws-2017)
+* [Black Box Operations (Drupal Website)](#black-box-operations-2011)
+* [Scrap Code Dump Blog (Static Website)](#scrap-code-dump-blog-2010)
+* [NACCP, University of Alabama Chapter Website (Static Website)](#naacp-university-of-alabama-chapter-2010)
+* [Tuscaloosa Area Black Chamber of Commerce (Drupal Website)](#tuscaloosa-area-black-chamber-of-commerce-2010)
+* [University of Alabama Chapter of the National Society of Black Engineers (Static Website)](#university-of-alabama-chapter-of-the-national-society-of-black-engineers-2009)
+
 ## Kdenlive to YouTube (2019)
 
 This project was to build an automation that would take video projects that I have created 

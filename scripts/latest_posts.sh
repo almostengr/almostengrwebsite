@@ -1,7 +1,7 @@
 #!/bin/bash
 
-TMPBLOGFILE="archives.tmp"
-BLOGFILE="archives.md"
+TMPBLOGFILE="blog.tmp"
+BLOGFILE="blog.md"
 TMPINDEXFILE="index.tmp"
 INDEXFILE="index.md"
 
@@ -35,7 +35,7 @@ echo "${BLOGLISTMD}" | head -15 >> ${TMPINDEXFILE}
 
 mv ${TMPINDEXFILE} ${INDEXFILE}
 
-##### Update archive page
+##### Update Blog page
 
 head -n +17 ${BLOGFILE} > ${TMPBLOGFILE}
 echo "${BLOGLISTPAGE}" >> ${TMPBLOGFILE}

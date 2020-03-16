@@ -7,25 +7,25 @@ The toilet in the bathroom, I discovered that the toilet was continuously runnin
 When my place was quiet, I heard a noise coming from the bathroom. It was not loud.
 
 I removed the lid of the tank and to my suprise the water was at the top of the overflow
-tube. Definitely not a good sign. 
+tube. Definitely not a good sign.
 
-Not sure how long it had that slow leak, but I wanted 
-to fix it before it got worse. 
-I immediately shut off the water to the toilet to prevent any more water from being wasted. 
+Not sure how long it had that slow leak, but I wanted
+to fix it before it got worse.
+I immediately shut off the water to the toilet to prevent any more water from being wasted.
 
-I have other bathrooms that I was able to use, so I was not concerned with this one leaking. 
-However, if you only have one toilet and choose to turn the water off, you will need to turn 
+I have other bathrooms that I was able to use, so I was not concerned with this one leaking.
+However, if you only have one toilet and choose to turn the water off, you will need to turn
 it on after each flush so that it can refill.
 
 I'll share with you the 8 steps that I took to replace the fill valve on a toilet.
 
-## 1) Gather The Tools Needed 
+## 1) Gather The Tools Needed
 
 In order to complete the job, you will need the following:
 
 * towel(s)
 * bucket or bowl (optional)
-* pliers 
+* pliers
 * replacement fill valve
 * replacement supply line (optional)
 * Teflon tape (optional)
@@ -78,7 +78,7 @@ on how long it has been on the fitting.
 Then I removed the fill valve from the tank, by removing the nut that is located on the
 bottom side of the tank.
 
-I was kinda suprised that this had not started leaking sooner. If you notice at the bottom 
+I was kinda suprised that this had not started leaking sooner. If you notice at the bottom
 of this valve, the rubber gasket has significantly warped to the point that it was no longer
 in its original shape.
 
@@ -89,6 +89,15 @@ in its original shape.
 The fill valve that I purchased, has an adjustable height. Per the instructions listed on the box,
 I the fill valve needs to be 3 inches higher than the overflow tube. Following the instructions
 on the box, I adjusted the height of the valve to the approximate height that it needed to be.
+
+### Do not use pilers or tool when tightening plastic parts.
+
+### Do not use pilers or tool when tightening plastic parts.
+
+I say this twice because it really is important.
+The reason being is that you risk stripping or breaking the plastic parts. Plastic parts are
+usually designed to be hand-tightened only. If you break a plastic part, there is a chance that
+you will not be able to buy the broken part by itself, thus wasting money.
 
 What I did not realize until after the fact, was that the fill valve that I removed also had
 an adjustable height. Coincidentally, I set the new fill valve to the same height as the old fill

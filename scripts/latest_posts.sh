@@ -22,7 +22,7 @@ SPEAKINGDESCRIPTION="List of upcoming and past speaking engagements and presenta
 
 echo "INFO: Need to be in the docs directory for this script to work"
 
-BLOGLISTING=$(grep -r -e "^# " * | grep -e '.md' | grep -e 'speaking/' -e 'technology/' -e 'diy/' -e 'gardening/' -e 'lifestyle/' | grep -v -i -e "docs/index.md" -e "draft" | sed -e "s|# ||g" -e "s|:|/|g" -e "s|.md||g")
+BLOGLISTING=$(grep -r -e "^# " * | grep -e '.md' | grep -e 'speaking/' -e 'technology/' -e 'diy/' -e 'gardening/' -e 'lifestyle/' | grep -v -i -e "docs/index.md" -e "draft" | sed -e "s|# ||g" -e "s|:|/|g" -e "s|.md||g" -e "s|index/||g")
 
 BLOGLISTMD=$(echo "${BLOGLISTING}" | awk -F '/' '{print "|### [" substr($2,0,11) " - " $3" ("$1")](/"$1"/"$2") "}' | sort -r | awk -F "|" '{print $2}')
 

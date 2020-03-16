@@ -1,19 +1,30 @@
+:root{
+    --dark-red-color: #aa0000;
+    --light-red-color: #ff0000;
+    --dark-gray-color: #333333;
+    --mid-gray-color: #999999;
+    --light-gray-color: #cccccc;
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --terminal-green-color: #009900;
+}
+
 a{
-    color: #aa0000;
+    color: var(--dark-red-color);
     font-weight: bold;
 }
 
 a:hover{
-    color: #ff0000;
+    color: var(--light-red-color);
 }
 
 .ae-footer-hr{
-    background-color: #aa0000;
+    background-color: var(--dark-red-color);
     height: 3px;
 }
 
 .ae-jumbotron{
-    background-color: #333;
+    background-color: var(--dark-gray-color);
     background-image: url(/images/jumbotron2.jpg); 
     background-repeat: no-repeat; 
     background-position: center center;
@@ -23,8 +34,8 @@ a:hover{
 }
 
 li.nav-item a.nav-link.active {
-    color: #fff;
-    background-color: #aa0000;
+    color: var(--white-color);
+    background-color: var(--dark-red-color);
 }
 
 img{
@@ -44,7 +55,7 @@ article img, article iframe {
 }
 
 .ae-bg-black{
-    background-color: #000 !important;
+    background-color: var(--black-color) !important;
 }
 
 .navbar-brand{
@@ -59,11 +70,11 @@ h1{
     margin-top: 10px;
     margin-bottom: 20px;
     font-weight: bold;
-    border-bottom: 1px solid #aa0000;
+    border-bottom: 1px solid var(--dark-red-color);
 }
 
 article h2 {
-    border-bottom: 1px solid #aa0000;
+    border-bottom: 1px solid var(--dark-red-color);
 }
 
 article h3 {
@@ -73,29 +84,29 @@ article h3 {
 /* page footer styling */
 
 footer a{
-    color: #999;
+    color: var(--mid-gray-color);
     font-weight: normal;
 }
 
 footer a:hover{
-    color: #ccc;
+    color: var(--white-color);
 }
 
 /* handling code displayed on the page */
 
 code.aeoutput{
-    background-color: #000;
-    color: #090;
+    background-color: var(--black-color);
+    color: var(--terminal-green-color);
 }
 
 code.bash, code.sh {
-    background-color: #000;
-    color: #fff;
+    background-color: var(--black-color);
+    color: var(--white-color);
 }
 
 pre, p code{
-    background-color: #000;
-    color: #fff;
+    background-color: var(--black-color);
+    color: var(--white-color);
     padding: 5px;
     border-radius: 5px;
 }

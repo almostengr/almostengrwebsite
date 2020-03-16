@@ -54,7 +54,7 @@
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-  <link href="{{ 'css/almostengr.css' | url }}" rel="stylesheet" />
+  <link href="{{ 'css/almostengr.min.css' | url }}" rel="stylesheet" />
 
   <!-- google analytics -->
   {% if config.google_analytics %}
@@ -98,7 +98,7 @@
             -->
           {% endfor %}
           <li class="nav-item">
-            <a class="nav-link font-weight-bold text-white" href="/archives">Archives</a>
+            <a class="nav-link font-weight-bold text-white" href="/blog">Blog</a>
           </li>
           <li class="nav-item">
             <a class="nav-link font-weight-bold text-white" href="/portfolio">Portfolio</a>
@@ -137,7 +137,7 @@
         <div class="lead bg-dark text-white font-weight-bold text-center rounded p-4 mb-2 shadow">
           I am a web developer and builder of things. I
           <a href="https://github.com/almostengr" target="_blank">write code</a>,
-          learn new things, and <a href="/archives">share my thoughts</a> - not always in that order.<br />
+          learn new things, and <a href="/blog">share my thoughts</a> - not always in that order.<br />
           I build software and web applications to improve business processes.
         </div>
         {% endif %}
@@ -241,7 +241,7 @@
     <div class="container">
       <div class="row pt-4">
         <div class="col-sm-12 col-lg-4">
-          <h5 class="border-bottom">Connect</h5>
+          <h5 class="border-bottom text-uppercase">Connect</h5>
           <ul class="list-unstyled">
             {% for social in config.extra.social %}
             <li><a href="{{ social.link }}" target="_blank" class="text-capitalize">
@@ -251,7 +251,7 @@
         </div> <!-- end of block -->
 
         <div class="col-sm-12 col-lg-4">
-          <h5 class="border-bottom">Categories</h5>
+          <h5 class="border-bottom text-uppercase">Categories</h5>
           <ul class="list-unstyled">
             <li>
               <a href="/technology"><i class="fas fa-laptop-code"></i> Technology</a>
@@ -275,7 +275,7 @@
         </div> <!-- end of block -->
 
         <div class="col-sm-12 col-lg-4">
-          <h5 class="border-bottom">Links</h5>
+          <h5 class="text-uppercase border-bottom">Links</h5>
           <ul class="list-unstyled">
             <li class="nav-item">
               Powered by <a href="http://www.mkdocs.org/" target="_blank"><i class="fab fa-markdown"></i> MkDocs</a>
@@ -289,7 +289,7 @@
                 <i class="fa fa-exclamation-triangle"></i> Report Problem</a>
             </li>
             <li class="nav-item">
-              <a href="/archives"><i class="fas fa-archive"></i> Archives</a>
+              <a href="/Blog"><i class="fas fa-pen"></i> Blog</a>
             </li>
             <li class="nav-item">
               <a href="/contact"><i class="fas fa-phone"></i> Contact</a>

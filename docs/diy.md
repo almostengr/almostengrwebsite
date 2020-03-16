@@ -2,6 +2,7 @@
 
 I enjoy repairing and building things, including home improvement projects and car repairs.
 
+ * [2020.03.15 - 8 Steps to Replace A Toilet Fill Valve (diy)](/diy/2020.03.15-8-steps-to-replace-a-toilet-fill-valve)
  * [2019.07.30 - Reinforce Bookcase with Plywood (diy)](/diy/2019.07.30-reinforce-bookcase-with-plywood)
  * [2019.06.11 - Identify Electrical Circuits and Label Breaker Panel (diy)](/diy/2019.06.11-identify-electrical-circuits-and-label-breaker-panel)
  * [2019.05.02 - 4 Steps to Change the Battery in Nissan Altima Intelligent Key (diy)](/diy/2019.05.02-4-steps-to-change-the-battery-in-nissan-altima-intelligent-key)

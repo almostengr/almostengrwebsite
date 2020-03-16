@@ -15,7 +15,7 @@ on this journey. I share stories and thoughts that I have learned along the way.
 * [**Technology**](/technology) - All things related to computers, the internet, software, and web development.
 
 ## Past Posts
- * [2020.03.15 - index (diy)](/diy/2020.03.15-replacing-toilet-fill-valve)
+ * [2020.03.15 - 8 Steps to Replace A Toilet Fill Valve (diy)](/diy/2020.03.15-8-steps-to-replace-a-toilet-fill-valve)
  * [2020.03.06 - Linux Training Session, April 2020 (speaking)](/speaking/2020.03.06-linux-training-session-april-2020)
  * [2020.03.01 - Linux Training Session Notes, March 2020 (technology)](/technology/2020.03.01-linux-training-session)
  * [2020.02.29 - Linux Training Session (speaking)](/speaking/2020.02.29-linux-training-session)

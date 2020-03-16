@@ -3,8 +3,6 @@ author: Kenny Robinson
 
 # 8 Steps to Replace A Toilet Fill Valve
 
-## Background
-
 The toilet in the bathroom, I discovered that the toilet was continuously running.
 When my place was quiet, I heard a noise coming from the bathroom. It was not loud.
 
@@ -19,7 +17,11 @@ I have other bathrooms that I was able to use, so I was not concerned with this 
 However, if you only have one toilet and choose to turn the water off, you will need to turn 
 it on after each flush so that it can refill.
 
-### Tools Needed 
+I'll share with you the 8 steps that I took to replace the fill valve on a toilet.
+
+## 1) Gather The Tools Needed 
+
+In order to complete the job, you will need the following:
 
 * towel(s)
 * bucket or bowl (optional)
@@ -28,9 +30,7 @@ it on after each flush so that it can refill.
 * replacement supply line (optional)
 * Teflon tape (optional)
 
-Here are the 7 steps that I used to replace the leaking fill valve on my toilet.
-
-## 1) Shut Off The Water
+## 2) Shut Off The Water
 
 Before you do anything, turn off the water. If you do not turn off the water before disconnecting the hoses or
 the fill valve, then you will flood your bathroom.
@@ -42,7 +42,7 @@ the entire home. This shut off valve could be located either outside or in the b
 
 Once you have located the shut off valve, turn the knob to the right until it stops.
 
-## 2) Remove the Water
+## 3) Remove the Water
 
 Remove the lid from the toilet tank (aka the back of the toilet). Flush the toilet and hold the
 lever down until most or all of the water runs out.
@@ -51,11 +51,11 @@ Then you will need to remove the remaining water using one of the following meth
 
 * use a towel to soak up the water and wring it out in the bowl or sink
 * allow the water to evaporate (the method I chose); this may take a couple of weeks to happen
-* Jump to step 4 and replace a bucket below the fill valve opening before you unscrew it
+* Jump to step 5 and replace a bucket below the fill valve opening before you unscrew it
 
-## 3) Purchase Replacement Parts
+## 4) Purchase Replacement Parts
 
-![Replacement fill valve in box](/diy/2020.03.15-replacing-toilet-fill-valve/20200314_162009.jpg)
+![Replacement fill valve in box](/diy/2020.03.15-8-steps-to-replace-a-toilet-fill-valve/20200314_162009.jpg)
 
 You will need to get a replacement fill valve. I bought a universal one, similar to the one
 pictured above. It has the same size fitting that connects to the water supply line.
@@ -64,9 +64,9 @@ I also bought a replacement supply line. You do not have to do this. However, in
 I have replaced almost all of the working parts of this toilet. Thus going ahead to replace
 the supply line as I do not know how long ago it was replaced.
 
-## 4) Remove Old Fill Valve and Supply Line
+## 5) Remove Old Fill Valve and Supply Line
 
-![Old fill valve](/diy/2020.03.15-replacing-toilet-fill-valve/20200314_164549.jpg)
+![Old fill valve](/diy/2020.03.15-8-steps-to-replace-a-toilet-fill-valve/20200314_164549.jpg)
 
 I disconnected the supply line from the water line and the fill valve. You may have to use
 a pair of pliers to disconnect the line.
@@ -82,9 +82,9 @@ I was kinda suprised that this had not started leaking sooner. If you notice at 
 of this valve, the rubber gasket has significantly warped to the point that it was no longer
 in its original shape.
 
-## 5) Install New Fill Valve and Supply Line
+## 6) Install New Fill Valve and Supply Line
 
-![New fill valve](/diy/2020.03.15-replacing-toilet-fill-valve/20200314_162111.jpg)
+![New fill valve](/diy/2020.03.15-8-steps-to-replace-a-toilet-fill-valve/20200314_162111.jpg)
 
 The fill valve that I purchased, has an adjustable height. Per the instructions listed on the box,
 I the fill valve needs to be 3 inches higher than the overflow tube. Following the instructions
@@ -99,12 +99,12 @@ is used to fill the gap that may exist between two connections or fittings. It i
 recommended that it be used on metal to metal fittings as they may leak of the rubber gasket
 is not seated properly.
 
-![New Teflon Tape installed](/diy/2020.03.15-replacing-toilet-fill-valve/20200314_163700.jpg)
+![New Teflon Tape installed](/diy/2020.03.15-8-steps-to-replace-a-toilet-fill-valve/20200314_163700.jpg)
 
 I only put the Teflon tape on the metal fittings. However, you can use it on the plastic
 fittings as well.
 
-## 6) Turn On The Water
+## 7) Turn On The Water
 
 Once you have checked and double checked the connections, slowly turn on the water. If you turn
 on the water slowly, then you are less likely to have a flood if a leak springs. Furthermore,
@@ -113,7 +113,7 @@ direction 5 times to stop the water.
 
 Flush the toilet several times to make sure that the fill valve works as it should.
 
-## 7) Adjust the Fill Rate
+## 8) Adjust the Fill Rate
 
 This particular fill value has adjustable knobs for the tank water level and the bowl
 water level. Be sure to adjust these accordingly so that you are not wasting water

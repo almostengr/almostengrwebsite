@@ -19,7 +19,7 @@ you can check out [my blog post](/technology/2020.02.01-developer-uses-page).
 * [Font Awesome](https://fontawesome.com) for icons
 * [GitHub](https://github.com/almostengr/almostengrwebsite) for version control and issue tracking
 * [GitHub Actions](https://github.com/features/actions) for automated builds and deployment (Continuous Deployment) of website
-* [Google Custom Search](https://cse.google.com/cse/) for searching content on the website
+* [Gohttps://docs.microsoft.com/en-us/dotnet/core/install/linux-package-manager-ubuntu-1904ogle Custom Search](https://cse.google.com/cse/) for searching content on the website
 * [Markdown](https://www.markdownguide.org/) for website content
 * [MkDocs](https://mkdocs.org) for static website generation
 
@@ -78,9 +78,8 @@ Stack for building applications locally
 * [Mozilla Firefox](https://www.mozilla.org/en-us/firefox) for browsing and building websites
 * [Oracle Virtual Box](https://virtualbox.org) for running development and home automation virtual servers
 * [PhpMyAdmin](https://phpmyadmin.net) for performing database tasks
-* [SimpleScreenRecorder](https://www.maartenbaert.be/simplescreenrecorder/) for recording
-technology tutorials that I post on my YouTube channel.
-[source code](https://github.com/MaartenBaert/ssr)
+* [OBS (Open Broadcast Studio)](https://obsproject.com/) for recording tutorials 
+that I post on my YouTube channel.
 * Terminal for connecting to remote servers
 * [Thunderbird](https://thunderbird.net/en-us) for email
 * Vim for text editing

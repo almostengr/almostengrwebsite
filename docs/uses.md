@@ -63,6 +63,7 @@ you can check out [my blog post](/technology/2020.02.01-developer-uses-page).
 
 ### For Linux 
 
+* [.Net Core SDK](https://dotnet.microsoft.com/download) for building .Net Core applications
 * [Audacity](https://www.audacityteam.org/) for editing audio
 * Bash Terminal for running commands on Linux
 * [Eclipse](https://eclipse.org) for coding in Java and PHP

@@ -1,17 +1,17 @@
 # Coding Session with Java and Selenium Webdriver
 
-This coming Sunday, March 22, 2020 at 6 PM Central Time, I will be hosting 
-a live coding session to build Selenium Webdriver automations with Java. 
+This coming Sunday, March 22, 2020 at 6 PM Central Time, I will be hosting
+a live coding session to build Selenium Webdriver automations with Java.
 
-A recording of the session will be posted on my YouTube chanel so that 
+A recording of the session will be posted on my YouTube chanel so that
 you may have it as a future reference in your coding endeavors.
 
-## Attending Session 
+## Attending Session
 
-To access the session, visit 
-[https://www.youtube.com/watch?v=fg9AgEkuy9o](https://www.youtube.com/watch?v=fg9AgEkuy9o). 
+To access the session, visit
+[https://www.youtube.com/watch?v=fg9AgEkuy9o](https://www.youtube.com/watch?v=fg9AgEkuy9o).
 
-No advanced registration is required. 
+No advanced registration is required.
 
 ## Source Code
 

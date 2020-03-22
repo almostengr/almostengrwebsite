@@ -2,7 +2,7 @@
 
 *UPDATED MARCH 6, 2020*
 
-Notes from this training session are 
+Notes from this training session are
 [now available](/technology/2020.03.01-linux-training-session).
 
 *ORIGINALLY POSTED ON FEBRUARY 29, 2020*

@@ -85,6 +85,7 @@ that I post on my YouTube channel.
 * [Thunderbird](https://thunderbird.net/en-us) for email
 * Vim for text editing
 * [Visual Studio Code](https://code.visualstudio.com/download) for text editing and coding
+* Visual Studio Code Extensions: CSS Formatter (Martin Aeschlimann), Minify (HookyQR)
 
 ### For Windows 
 

@@ -14,7 +14,7 @@ April 5th, 2020 at 3 PM Central Time.
 It is asked that participants still register for the event at the link below.
 
 The live stream can be viewed at
-[https://www.youtube.com/watch?v=RKHs66udUnI](https://www.youtube.com/watch?v=RKHs66udUnI0).
+[https://www.youtube.com/watch?v=RKHs66udUnI](https://youtu.be/RKHs66udUnI).
 
 
 **ORIGINAL POST**

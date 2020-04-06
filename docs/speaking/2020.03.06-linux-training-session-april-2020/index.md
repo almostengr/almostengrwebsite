@@ -11,12 +11,6 @@ will be moved to a YouTube Live Stream.
 That live stream will take place at the previous scheduled time on
 April 5th, 2020 at 3 PM Central Time.
 
-It is asked that participants still register for the event at the link below.
-
-The live stream can be viewed at
-[https://www.youtube.com/watch?v=RKHs66udUnI](https://youtu.be/RKHs66udUnI).
-
-
 **ORIGINAL POST**
 
 The next session for Linux training, will be held on April 5, 2020. If you would like to attend, please be sure to review the notes from the

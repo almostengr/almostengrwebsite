@@ -3,7 +3,7 @@ name: Generate static pages
 on:
   push: 
     branches:
-      - master
+      - main
 
 jobs:
   build:
@@ -28,8 +28,11 @@ jobs:
     - name: Checking out gh-pages branch
       run:  git checkout -b gh-pages origin/gh-pages
 
-    - name: Checking out master branch
-      run:  git checkout master
+    - name: Checking out main branch
+      run:  git checkout main
+
+    - name: Changing to website directory
+      run: cd website/
         
     - name: Building static site
       run:  python -m mkdocs gh-deploy

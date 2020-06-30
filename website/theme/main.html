@@ -1,11 +1,17 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website" />
   <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="{{ config.site_name }}" />
+
+  {% if page.meta.ogtype %}
+  <meta property="og:type" content="{{ page.meta.ogtype }}" />
+  {% else %}
+  <meta property="og:type" content="website" />
+  {% endif %}
+
 
   {% if page and page.meta and page.meta.description %}
   <meta name="description" content="{{ page.meta.description }}">
@@ -40,11 +46,21 @@
   <meta name="twitter:image" content="{{ page.meta.image }}" />
   {% endif %}
 
-  <meta property="og:site_name" content="{{ config.site_name }}" />
-  <link rel="icon" href="../../../../favicon.ico">
+  {% if page.meta.keywords %}
+  <meta name="description" content="{{ page.meta.keywords }}" />
+  {% endif %}
+
+  {% if page.meta.robots %}
+  <meta name="robots" content="{{ page.meta.robots }}" />
+  {% else %}
+  <meta name="robots" content="index, follow" />
+  {% endif %}
+
+  <link href="{{ 'favicon.ico' | url }}" rel="icon">
 
   {% if page.canonical_url %}
-  <link rel="canonical" href="{{ page.canonical_url }}">
+  <link rel="canonical" href="{{ page.canonical_url | url }}">
+  <meta property="og:url" content="{{ page.canonical_url | url }}" />
   {% endif %}
 
   <!-- Custom styles for this template -->
@@ -133,18 +149,25 @@
       <div class="col-sm-12 col-lg-9">
         <div class="gcse-searchresults"></div>
 
-        {% if page.is_homepage %}
-        <div class="lead bg-dark text-white font-weight-bold text-center rounded p-4 mb-2 shadow">
-          I am a web developer and builder of things. I
-          <a href="https://github.com/almostengr" target="_blank">write code</a>,
-          learn new things, and <a href="/blog">share my thoughts</a> - not always in that order.<br />
-          I build software and web applications to improve business processes.
-        </div>
-        {% endif %}
-
         <article>
           {% block content %}
+
+          {% if page.meta.title %}
+          <h1>{{ page.meta.title }}</h1>
+          {%endif%}
+
+          <p>
+            {% if page.meta.type == 'blog' and page.meta.published_date %}
+            <strong>Published: </strong> {{ page.meta.published_date }}
+            {% endif %}
+
+            {% if page.meta.type == 'post' and page.meta.author %}
+            <strong>Published: </strong> {{ page.meta.author }}
+            {% endif %}
+          </p>
+
           {{ page.content }}
+          
           {% endblock %}
         </article>
 
@@ -257,47 +280,35 @@
               <a href="/technology"><i class="fas fa-laptop-code"></i> Technology</a>
             </li>
             <li>
-              <a href="/gardening"><i class="fas fa-seedling"></i> Gardening</a>
-            </li>
-            <li>
               <a href="/diy"><i class="fas fa-hammer"></i> DIY (Do It Yourself)</a>
-            </li>
-            <li>
-              <a href="/lifestyle"><i class="fas fa-user-friends"></i> Lifestyle</a>
-            </li>
-            <li>
-              <a href="/resources"><i class="fas fa-book-open"></i> Resources</a>
-            </li>
-            <li>
-              <a href="/speaking"><i class="fas fa-calendar-alt"></i> Speaking</a>
             </li>
           </ul>
         </div> <!-- end of block -->
 
-        <div class="col-sm-12 col-lg-4">
-          <h5 class="text-uppercase border-bottom">Links</h5>
-          <ul class="list-unstyled">
-            <li class="nav-item">
+        <div class="">
+          <ul class="list-unstyled nav">
+            <li class="text-uppercase font-weight-bold mr-1">Links:</li>
+            <li class="nav-item mr-1">
               Powered by <a href="http://www.mkdocs.org/" target="_blank"><i class="fab fa-markdown"></i> MkDocs</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item mr-1">
               <a href="https://github.com/almostengr/almostengrwebsite" target="_blank">
                 <i class="fab fa-github"></i> Website Source</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item mr-1">
               <a href="https://github.com/almostengr/almostengrwebsite/issues" target="_blank">
                 <i class="fa fa-exclamation-triangle"></i> Report Problem</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item mr-1">
               <a href="/Blog"><i class="fas fa-pen"></i> Blog</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item mr-1">
               <a href="/contact"><i class="fas fa-phone"></i> Contact</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item mr-1">
               <a href="/sitemap.xml"><i class="fas fa-sitemap"></i> Sitemap</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item mr-1">
               <a href="/search"><i class="fas fa-search"></i> Search</a>
             </li>
           </ul>
@@ -322,7 +333,7 @@
     </div>
     <div class="text-center mt-2">
       {% if config.copyright %} {{ config.copyright }} {%endif%} |
-      <strong>Last Updated:</strong> {{ build_date_utc }} UTC |
+      <!-- <strong>Last Updated:</strong> {{ build_date_utc }} UTC | -->
       <a href="#top">Back to Top</a>
     </div> <!-- end of block -->
   </footer>

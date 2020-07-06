@@ -1,5 +1,9 @@
-﻿title: 8 Steps to Replace A Toilet Fill Valve
+﻿---
+title: 8 Steps to Replace A Toilet Fill Valve
 author: Kenny Robinson
+description: I cover how to replace teh fill valve on a toilet that is leaking or faulty.
+keywords: 
+---
 
 # 8 Steps to Replace A Toilet Fill Valve
 

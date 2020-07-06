@@ -59,6 +59,7 @@ keywords: request handymany, request services, request help, submit request
         <option value="Television (TV) Wall Mounting">Television (TV) Wall Mounting</option>
         <option value="Trim Repair">Trim Repair</option>
         <option value="Window Treatment (Curtains, Blinds, Drapes) Installation">Window Treatment (Curtains, Blinds, Drapes) Installation</option>
+        <opiton value="Other Handyman Service">Handyman Service Not Listed</option>
     </optgroup>
     <optgroup label="Tech Services">
         <option value="Computer Repair">Computer Repair</option>
@@ -68,6 +69,7 @@ keywords: request handymany, request services, request help, submit request
         <option value="Virus and Malware Removal">Virus and Malware Removal</option>
         <option value="Website Design">Website Design</option>
         <option value="WordPress Maintenance and Updates">WordPress Maintenance and Updates</option>
+        <option value="Other Technical Service">Technical Service Not Listed</option>
     </optgroup>
 </select>
 </div>

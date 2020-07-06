@@ -23,11 +23,11 @@ Below are the services offered. To see some of the mentioned services being perf
 * Patio Furniture Assembly
 * Picture Hanging
 * Shower Head Replacement/Installation
-* Table Assembly
-* Trim Repair
-* Television (TV) Stand Assembly
 * Smart Thermostat Replacement/Installation
+* Table Assembly
+* Television (TV) Stand Assembly
 * Television (TV) Wall Mounting
+* Trim Repair
 * Window Treatment (Curtains, Blinds, Drapes) Installation
 
 ## Technology Services

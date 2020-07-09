@@ -89,6 +89,7 @@
   </script>
   {% endif %}
 
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <script async src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 
@@ -125,10 +126,10 @@
           <li class="nav-item">
             <a class="nav-link font-weight-bold text-white" href="/uses">Uses</a>
           </li>
-          <!-- <li class="nav-item">
+          <li class="nav-item">
             <a class="nav-link font-weight-bold btn btn-outline-light text-white" href="/search">
               <i class="fas fa-search"></i> Search</a>
-          </li> -->
+          </li>
         </ul>
       </div>
     </nav>
@@ -149,31 +150,43 @@
         <article>
           {% block content %}
 
-          {% if page.meta.title %}
+          {% if page.meta.title and page.title == "" %}
           <h1>{{ page.meta.title }}</h1>
           {%endif%}
-
-          <p>
-            {% if page.meta.type == 'blog' and page.meta.published_date %}
-            <strong>Published: </strong> {{ page.meta.published_date }}
-            {% endif %}
-
-            {% if page.meta.type == 'blog' and page.meta.author %}
-            <strong>Author: </strong> {{ page.meta.author }}
-            {% endif %}
-          </p>
-
-          {% if page.meta.type == 'blog' and page.meta.category %}
-          <p><strong>Category:</strong> {{ page.meta.category }}</p>
-          {% endif %}
 
           {{ page.content }}
 
           {% endblock %}
 
-          {% if page.meta.type == 'blog' and page.meta.keywords %}
-          <p><strong>Keywords:</strong> {{ page.meta.keywords }}</p>
+          {% if page.meta.type == 'blog' %}
+          <p class="bg-light my-3 p-2 border border-danger rounded">
+            {% if page.meta.posted %}
+            <strong>Published: </strong> {{ page.meta.posted }}<br />
+            {% endif %}
+
+            {% if page.meta.updated %}
+            <strong>Updated: </strong> {{ page.meta.updated }}<br />
+            {% endif %}
+
+            {% if page.meta.author %}
+            <strong>Author: </strong> {{ page.meta.author }}<br />
+            {% endif %}
+
+            {% if page.meta.category %}
+            <strong>Category:</strong> {{ page.meta.category }}<br />
+            {% endif %}
+
+            {% if page.meta.keywords %}
+            <strong>Keywords:</strong> {{ page.meta.keywords }}<br />
+            {% endif %}
+
+            {% if page.meta.youtube %}
+            <strong>Video URL:</strong> <a href="{{ page.meta.youtube }}" 
+              target="_blank">{{ page.meta.youtube }}</a><br />
+            {% endif %}
+          </p>
           {% endif %}
+
         </article>
 
         <div class="py-3">
@@ -278,7 +291,6 @@
     </div> <!-- end of block -->
     <div class="text-center mt-2">
       {% if config.copyright %} {{ config.copyright }} {%endif%} |
-      <!-- <strong>Last Updated:</strong> {{ build_date_utc }} UTC | -->
       <a href="#top">Back to Top</a>
     </div> <!-- end of block -->
     <div class="text-center container mt-2 text-warning">

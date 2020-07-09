@@ -13,11 +13,13 @@ you can check out [the blog post](/technology/2020.02.01-developer-uses-page) ab
 
 ## Handyman Tools
 
-Below are the tools that would make up the handyman toolbox or tool set. The Basic Tools are
-relatively common because they are used on fasteners on number of items including ceiling fans, electrical
-outlets, and furniture, just to name a few.
+Below are the tools that would make up the handyman toolbox or tool set. 
 
 ### Basic Tools
+
+The Basic Tools are
+relatively common because they are used as fasteners on number of items including ceiling fans, 
+electrical outlets, and furniture, just to name a few.
 
 * Hammer
 * Screwdriver Set (Phillips Head and Flat Head)

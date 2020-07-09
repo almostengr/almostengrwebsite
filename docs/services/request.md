@@ -3,7 +3,7 @@ title: Request Services
 description: Request Services offered by Almost Engineer Services
 date: 2020-06-29
 author: Kenny Robinson
-keywords: request handymany, request services, request help, submit request
+keywords: request handyman, request services, request help, submit request
 ---
 
 <form method="get">
@@ -46,6 +46,7 @@ keywords: request handymany, request services, request help, submit request
         <option value="Doorbell Replacement/Installation">Doorbell Replacement/Installation</option>
         <option value="Furniture Assembly">Furniture Assembly</option>
         <option value="Holiday Lighting and Decorations">Holiday Lighting and Decorations</option>
+        <option value="Home Inspection Fix/Repair Lists">Home Inspection Fix/Repair Lists</option>
         <option value="Kitchen Island Assembly">Kitchen Island Assembly</option>
         <option value="Lawn Services (Cutting and Edging)">Lawn Services (Cutting and Edging)</option>
         <option value="Lighting Fixture Replacement/Installation">Lighting Fixture Replacement/Installation</option>
@@ -53,15 +54,18 @@ keywords: request handymany, request services, request help, submit request
         <option value="Patio Furniture Assembly">Patio Furniture Assembly</option>
         <option value="Picture Hanging">Picture Hanging</option>
         <option value="Shower Head Replacement/Installation">Shower Head Replacement/Installation</option>
-        <option value="Smart Thermostat Replacement/Installation">Smart Thermostat Replacement/Installation</option>
+        <option value="Smoke Detector Replacement/Installation">Smoke Detector Replacement/Installation</option>
         <option value="Table Assembly">Table Assembly</option>
         <option value="Television (TV) Stand Assembly">Television (TV) Stand Assembly</option>
         <option value="Television (TV) Wall Mounting">Television (TV) Wall Mounting</option>
+        <option value="Thermostat Replacement/Installation">Thermostat Replacement/Installation</option>
+        <option value="Toilet Valve Replacement/Installation">Toilet Valve Replacement/Installation</option>
         <option value="Trim Repair">Trim Repair</option>
+        <option value="Washing Machine Hose Replacement">Washing Machine Hose Replacement</option>
         <option value="Window Treatment (Curtains, Blinds, Drapes) Installation">Window Treatment (Curtains, Blinds, Drapes) Installation</option>
-        <opiton value="Other Handyman Service">Handyman Service Not Listed</option>
+        <option value="Other Handyman Service">Other Handyman Service</option>
     </optgroup>
-    <optgroup label="Tech Services">
+    <optgroup label="Technology Services">
         <option value="Computer Repair">Computer Repair</option>
         <option value="Computer Programming Sessions">Computer Programming Sessions</option>
         <option value="Drupal Maintenance and Updates">Drupal Maintenance and Updates</option>
@@ -69,7 +73,7 @@ keywords: request handymany, request services, request help, submit request
         <option value="Virus and Malware Removal">Virus and Malware Removal</option>
         <option value="Website Design">Website Design</option>
         <option value="WordPress Maintenance and Updates">WordPress Maintenance and Updates</option>
-        <option value="Other Technical Service">Technical Service Not Listed</option>
+        <option value="Other Technical Service">Other Technical Service</option>
     </optgroup>
 </select>
 </div>
@@ -81,8 +85,10 @@ keywords: request handymany, request services, request help, submit request
 <div class="text-muted">Enter details about the work to be done. The more details, the better.</div>
 </div>
 
+<div class="g-recaptcha" data-sitekey="6Ld_BZYUAAAAAMc5Z6e_haYXOHNtjeqgCaaXQOo8"></div>
+
 <div class="m-2">
-<button type="submit" class="btn btn-danger">Submit</button>
+<input type="submit" class="btn btn-danger" value="Submit" />
 </div>
 
 </form>

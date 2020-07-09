@@ -27,10 +27,10 @@ jobs:
         ref: ${{ github.event.pull_request.head.sha }}
 
     - name: Installing Python
-      run:  python -m pip install --upgrade pip
+      run:  python3 -m pip install --upgrade pip
 
     - name: Installing Mkdocs
-      run:  python -m pip install mkdocs
+      run:  python3 -m pip install mkdocs
         
     - name: Building website
-      run:  python -m mkdocs build
+      run:  python3 -m mkdocs build

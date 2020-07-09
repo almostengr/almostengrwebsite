@@ -16,6 +16,7 @@ Below are the services offered. To see some of the mentioned services being perf
 * Doorbell Replacement/Installation
 * Furniture Assembly
 * Holiday Lighting and Decorations
+* Home Inspection Fix/Repair Lists
 * Kitchen Island Assembly
 * Lawn Services (Cutting and Edging)
 * Lighting Fixture Replacement/Installation
@@ -23,12 +24,17 @@ Below are the services offered. To see some of the mentioned services being perf
 * Patio Furniture Assembly
 * Picture Hanging
 * Shower Head Replacement/Installation
-* Smart Thermostat Replacement/Installation
+* Smoke Detector Replacement/Installation
 * Table Assembly
 * Television (TV) Stand Assembly
 * Television (TV) Wall Mounting
+* Thermostat Replacement/Installation
+* Toilet Valve Replacement/Installation
 * Trim Repair
+* Washing Machine Hose Replacement
 * Window Treatment (Curtains, Blinds, Drapes) Installation
+
+[Request Handyman Services](/services/request)
 
 ## Technology Services
 
@@ -39,3 +45,5 @@ Below are the services offered. To see some of the mentioned services being perf
 * Virus and Malware Removal
 * Website Design
 * WordPress Maintenance and Updates
+
+[Request Technology Services](/services/request)

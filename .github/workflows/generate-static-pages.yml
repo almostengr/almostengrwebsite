@@ -17,22 +17,22 @@ jobs:
             repository: almostengr/almostengrwebsite
 
     - name: Installing Python
-      run:  python3 -m pip install --upgrade pip
+      run:  /usr/bin/python3 -m pip install --upgrade pip
 
     - name: Installing Mkdocs
-      run:  python3 -m pip install mkdocs
+      run:  /usr/bin/python3 -m pip install mkdocs
 
     - name: Fetching branches
       run:  git fetch -p
 
-    - name: Checking out gh-pages branch
-      run:  git checkout -b gh-pages origin/gh-pages
+    # - name: Checking out gh-pages branch
+    #   run:  git checkout -b gh-pages origin/gh-pages
 
     - name: Checking out main branch
-      run:  git checkout main
+      run:  git checkout main origin/main
 
-    - name: Changing to website directory
-      run: cd website/
+    # - name: Changing to website directory
+    #   run: cd website/
         
     - name: Building static site
-      run:  python3 -m mkdocs gh-deploy
+      run:  /usr/bin/python3 -m mkdocs gh-deploy -b gh-pages

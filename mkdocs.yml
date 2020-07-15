@@ -1,19 +1,15 @@
-#site information
 site_name: Almost Engineer Services
 site_url: https://thealmostengineer.com
 site_description: The blog of Kenny Robinson where he shares his thoughts and experiences.
 site_author: Kenny Robinson, @almostengr
-site_dir: site
-
+copyright: Copyright &copy; 2015-2020 Kenny Robinson, The Almost Engineer
 google_analytics: ['UA-64643711-1', 'thealmostengineer.com']
 
 # repository information
 repo_url: https://github.com/almostengr
 repo_name: Github
 remote_name: origin
-
-# Copyright
-copyright: Copyright &copy; 2015-2020 Kenny Robinson, The Almost Engineer
+remote_branch: gh-pages
 
 # Development server details
 dev_addr: 192.168.57.117:8000
@@ -25,18 +21,28 @@ theme:
   language: en
 
 # theme:
-#   name: bootstrap
+#   name: null
+#   custom_dir: 'theme/mkdocs-material/material'
+#   language: en
+#   palette:
+#     primary: indigo
+#   font:
+#     text: Roboto
+#   icon: 
+#     logo: logo
+#   favicon: assets/favicon.png
+#   features: []
 
 extra:
-        social:
-                - type: github
-                  link: /github
-                - type: instagram
-                  link: /instagram
-                - type: twitter
-                  link: /twitter
-                - type: youtube
-                  link: https://www.youtube.com/channel/UC4HCouBLtXD1j1U_17aBqig?sub_confirmation=1"
+  social:
+    - type: github
+      link: /github
+    - type: instagram
+      link: /instagram
+    - type: twitter
+      link: /twitter
+    - type: youtube
+      link: https://www.youtube.com/channel/UC4HCouBLtXD1j1U_17aBqig?sub_confirmation=1"
                         
 use_directory_urls: true
 strict: false
@@ -46,3 +52,5 @@ markdown_extensions:
         
 plugins:
   - search
+  - minify:
+      minify_html: true

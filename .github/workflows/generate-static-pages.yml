@@ -15,12 +15,18 @@ jobs:
       uses: actions/checkout@v2
       with: 
             repository: almostengr/almostengrwebsite
-
-    - name: Installing Python
+            
+    - name: Installing python3
       run:  /usr/bin/python3 -m pip install --upgrade pip
+    
+    - name: Installing setuptools
+      run: /usr/bin/python3 -m pip install --upgrade setuptools
 
     - name: Installing Mkdocs
-      run:  /usr/bin/python3 -m pip install mkdocs
+      run:  /usr/bin/python3 -m pip install --upgrade mkdocs
+
+    - name: Install Minify Plugin
+      run: /usr/bin/python3 -m pip install --upgrade mkdocs-minify-plugin
 
     - name: Fetching branches
       run:  git fetch -p

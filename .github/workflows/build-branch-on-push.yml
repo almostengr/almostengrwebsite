@@ -26,11 +26,17 @@ jobs:
       with: 
         ref: ${{ github.event.pull_request.head.sha }}
 
-    - name: Installing Python
-      run:  python3 -m pip install --upgrade pip
+    - name: Installing python3
+      run:  /usr/bin/python3 -m pip install --upgrade pip
+    
+    - name: Installing setuptools
+      run: /usr/bin/python3 -m pip install --upgrade setuptools
 
     - name: Installing Mkdocs
-      run:  python3 -m pip install mkdocs
+      run:  /usr/bin/python3 -m pip install --upgrade mkdocs
+
+    - name: Install Minify Plugin
+      run: /usr/bin/python3 -m pip install --upgrade mkdocs-minify-plugin
         
     - name: Building website
-      run:  python3 -m mkdocs build
+      run:  /usr/bin/python3 -m mkdocs build

@@ -2,7 +2,7 @@ site_name: Almost Engineer Services
 site_url: https://thealmostengineer.com
 site_description: The blog of Kenny Robinson where he shares his thoughts and experiences.
 site_author: Kenny Robinson, @almostengr
-copyright: Copyright &copy; 2015-2020 Kenny Robinson, The Almost Engineer
+copyright: Copyright &copy; 2015-2020 The Almost Engineer
 google_analytics: ['UA-64643711-1', 'thealmostengineer.com']
 
 # repository information
@@ -54,3 +54,5 @@ plugins:
   - search
   - minify:
       minify_html: true
+
+

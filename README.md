@@ -2,7 +2,7 @@
 
 ## Description
 
-This is the code for my personal blog and website, [thealmostengineer.com](http://thealmostengineer.com). 
+Code for one of my websites, [thealmostengineer.com](http://thealmostengineer.com). 
 
 In the past, the website was ran on Drupal 7. To get rid of the overhead of 
 having to keep up with the maintenance of updating the website, 
@@ -20,16 +20,10 @@ To find out the full information about the technology used on my website, you ca
 
 ## Branches 
 
-### master 
+### main (default)
 
 Source of the Markdown website 
 
 ### gh-pages 
 
 The generated HTML code from the Markdown files in master branch. This branch is built by GitHub Actions.
-
-## Cloning 
-
-```
-git clone https://github.com/almostengr/almostengrwebsite.git
-```

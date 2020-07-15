@@ -3195,9 +3195,18 @@ debconf.conf          host.conf        ltrace.conf     popularity-contest.conf  
 deluser.conf          kernel-img.conf  mke2fs.conf     resolv.conf              updatedb.conf
 fuse.conf             ld.so.conf       nsswitch.conf   rsyslog.conf
 almostengr@linuxtraining:/etc$ more libaudit.conf
+---
+category: technology
+---
 # This is the configuration file for libaudit tunables.
+---
+category: technology
+---
 # It is currently only used for the failure_action tunable.
 
+---
+category: technology
+---
 # failure_action can be: log, ignore, terminate
 failure_action = ignore
 

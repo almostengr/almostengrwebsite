@@ -1,3 +1,6 @@
+---
+category: technology
+---
 # Structured Media Wiring
 
 This post will document my journey with wiring my house with low voltage wiring

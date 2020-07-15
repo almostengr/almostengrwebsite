@@ -9,6 +9,9 @@ category: diy
 type: blog
 ---
 
+---
+category: diy
+---
 # 8 Steps to Replace A Toilet Fill Valve
 
 The toilet in the bathroom, I discovered that the toilet was continuously running.

@@ -6,13 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta property="og:locale" content="en_US" />
   <meta property="og:site_name" content="{{ config.site_name }}" />
-
+  <!-- page type -->
   {% if page.meta.ogtype %}
   <meta property="og:type" content="{{ page.meta.ogtype }}" />
   {% else %}
   <meta property="og:type" content="website" />
   {% endif %}
-
+  <!-- description -->
   {% if page and page.meta and page.meta.description %}
   <meta name="description" content="{{ page.meta.description }}">
   <meta property="og:description" content="{{ page.meta.description }}" />
@@ -22,11 +22,11 @@
   <meta property="og:description" content="{{ config.site_description }}" />
   <meta name="twitter:description" content="{{ config.site_description }}" />
   {% endif %}
-
+  <!-- author -->
   {% if config.site_author %}
   <meta name="author" content="{{ config.site_author }}">
   {% endif %}
-
+  <!-- title -->
   {% if page and page.meta and page.meta.title %}
   <title>{{ page.meta.title }} | {{ config.site_name }}</title>
   <meta property="og:title" content="{{ page.meta.title }}" />
@@ -40,16 +40,16 @@
   <meta property="og:title" content="{{ config.site_name }}" />
   <meta name="twitter:title" content="{{ config.site_name }}" />
   {% endif %}
-
+  <!-- image -->
   {% if page.meta.image %}
   <meta property="og:image" content="{{ page.meta.image }}" />
   <meta name="twitter:image" content="{{ page.meta.image }}" />
   {% endif %}
-
+  <!-- keywords -->
   {% if page.meta.keywords %}
   <meta name="description" content="{{ page.meta.keywords }}" />
   {% endif %}
-
+  <!-- robots -->
   {% if page.meta.robots %}
   <meta name="robots" content="{{ page.meta.robots }}" />
   {% else %}
@@ -57,18 +57,14 @@
   {% endif %}
 
   <!-- <link href="{{ 'favicon.ico' | url }}" rel="icon"> -->
-
   {% if page.canonical_url %}
   <link rel="canonical" href="{{ page.canonical_url | url }}">
   <meta property="og:url" content="{{ page.canonical_url | url }}" />
   {% endif %}
 
-  <!-- Custom styles for this template -->
   <link href="{{ 'css/starter-template.css' | url }}" rel="stylesheet">
-
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
   <link href="{{ 'css/almostengr.min.css' | url }}" rel="stylesheet" />
 
   {% if config.google_analytics %}
@@ -142,21 +138,60 @@
   </div>
   {% endif %}
 
+  <!-- <p>{{ config }}</p> -->
+  <!-- <p>{{ nav }}</p> -->
+  <!-- <p>{{ page.toc }}</p> -->
+
+  <!-- <p>
+    {% for nav_item in nav %}
+      {% set path = "nav-" + loop.index | string %}
+      {% set level = 1 %}
+    {% endfor %}
+  </p> -->
+
+
   <main role="main" id="content" class="container main">
     <div class="row">
       <div class="col-sm-12 col-lg-9">
         <div class="gcse-searchresults"></div>
-
         <article>
-          {% block content %}
 
-          {% if page.meta.title and page.title == "" %}
+          {% if page.meta.title %} 
           <h1>{{ page.meta.title }}</h1>
           {%endif%}
 
           {{ page.content }}
 
-          {% endblock %}
+          {% if page.meta.title == "Request Services" %}
+          {% include "_request.html" %}
+          {% endif %}
+
+          <!-- if 
+          <p>
+            {% for item in nav %}
+            {{ item }}<br />
+            {{ item.children }}
+            {{ item.children.children }}
+            {% set level = 2 %}
+            {% endfor %}
+          </p> -->
+
+          <!-- {% if page.url == "blog/" %}
+          <p>
+            aggg 
+
+            {% for nav_item in nav | sort(attribute='Page') %}
+            {% set path = "nav-" + loop.index | string %}
+            {% set level = 1 %}
+            {% include "nav-item.html" %}<br />
+          {% endfor %}
+          </p>
+          {% endif %} -->
+
+          <!-- <p>page<br />
+          {{ page.children }}
+        </p> -->
+
 
           {% if page.meta.type == 'blog' %}
           <p class="bg-light my-3 p-2 border border-danger rounded">
@@ -181,12 +216,11 @@
             {% endif %}
 
             {% if page.meta.youtube %}
-            <strong>Video URL:</strong> <a href="{{ page.meta.youtube }}" 
+            <strong>Video URL:</strong> <a href="{{ page.meta.youtube }}"
               target="_blank">{{ page.meta.youtube }}</a><br />
             {% endif %}
           </p>
           {% endif %}
-
         </article>
 
         <div class="py-3">
@@ -196,7 +230,6 @@
             data-ad-slot="5189305512" data-ad-format="auto" data-full-width-responsive="true"></ins>
           <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
         </div>
-
       </div>
       <div class="col-sm-12 col-lg-3 pt-3">
         <!--
@@ -270,7 +303,7 @@
           Powered by <a href="http://www.mkdocs.org/" target="_blank"><i class="fab fa-markdown"></i> MkDocs</a>
         </li>
         <li class="list-inline-item mr-3">
-          <a href="/Blog"><i class="fas fa-pen"></i> Blog</a>
+          <a href="/blog"><i class="fas fa-pen"></i> Blog</a>
         </li>
         <li class="list-inline-item mr-3">
           <a href="/technology"><i class="fas fa-laptop-code"></i> Technology</a>
@@ -278,9 +311,7 @@
         <li class="list-inline-item mr-3">
           <a href="/diy"><i class="fas fa-hammer"></i> DIY (Do It Yourself)</a>
         </li>
-        <li class="list-inline-item mr-3">
-          <a href="/contact"><i class="fas fa-phone"></i> Contact</a>
-        </li>
+        <li class="list-inline-item mr-3"><a href="/contact"><i class="fas fa-phone"></i> Contact</a></li>
         <li class="list-inline-item mr-3">
           <a href="/sitemap.xml"><i class="fas fa-sitemap"></i> Sitemap</a>
         </li>
@@ -288,11 +319,11 @@
           <a href="/search"><i class="fas fa-search"></i> Search</a>
         </li>
       </ul>
-    </div> <!-- end of block -->
+    </div><!-- end of block - end of block - end of block -->
     <div class="text-center mt-2">
       {% if config.copyright %} {{ config.copyright }} {%endif%} |
       <a href="#top">Back to Top</a>
-    </div> <!-- end of block -->
+    </div><!-- end of block - end of block - end of block -->
     <div class="text-center container mt-2 text-warning">
       <small>
         Cookies are used on this website to track your visits, provide advertisements specific
@@ -300,11 +331,10 @@
         By continuing to use this site, you agree to the use of cookies unless you have disabled them.
         <a class="text-warning" href="/privacy">Privacy Policy</a>
       </small>
-    </div>
+    </div><!-- end of block - end of block - end of block -->
   </footer>
 
   <!-- Boostrap and Javascript CDN -->
-  <!-- Placed at the end of the document so the pages load faster -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
     crossorigin="anonymous"></script>

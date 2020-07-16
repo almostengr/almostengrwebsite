@@ -17,6 +17,7 @@ Below are the services offered. To see some of the mentioned services being perf
 * Furniture Assembly
 * Holiday Lighting and Decorations
 * Home Inspection Fix/Repair Lists
+* Honey Do Lists
 * Kitchen Island Assembly
 * Lawn Services (Cutting and Edging)
 * Lighting Fixture Replacement/Installation
@@ -29,6 +30,7 @@ Below are the services offered. To see some of the mentioned services being perf
 * Television (TV) Stand Assembly
 * Television (TV) Wall Mounting
 * Thermostat Replacement/Installation
+* To Do Lists
 * Toilet Valve Replacement/Installation
 * Trim Repair
 * Washing Machine Hose Replacement

@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="{{ config.site_name }}" />
+
+  {% include "partial/description.html" %}
+  {% include "partial/author.html" %}
+  {% include "partial/title.html" %}
+  {% include "partial/image.html" %}
+  {% include "partial/keywords.html" %}
+  {% include "partial/pagetype.html" %}
+  {% include "partial/robots.html" %}
+  {% include "partial/canonical.html" %}
+  {% include "partial/scripts.html" %}
+  {% include "partial/styles.html" %}
+</head>
+
+<body style="">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand font-weight-bold" href="/">{{ config.site_name }}</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav ml-auto">
+        <!-- <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li> -->
+        {% for nav_item in config.mainnav %}
+        <li class="nav-item">
+          <a class="nav-link text-white" href="{{ nav_item.url }}">{{ nav_item.name }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+      <form class="mt-2 mt-md-0" method="GET" action="/services/request">
+        <button class="btn btn-outline-danger mx-2" type="submit">Request Services</button>
+      </form>
+      <!-- <form class="form-inline mt-2 mt-md-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form> -->
+    </div>
+  </nav>
+
+  <main role="main" class="container">
+      {% if page.meta.title %} 
+      <h1>{{ page.meta.title }}</h1>
+      {%endif%}
+
+      {% if page.is_homepage %}
+        {% include "partial/jumbotron.html" %}
+      {% elif page.url == "blog/" %}
+        {% include "partial/bloglist.html" %}
+      {% elif 'blog' in page.url and 'Blog' not in page.title %}
+        {% include "partial/blog.html" %}
+      {% else %}
+        {{ page.content }}
+      {% endif %}
+  </main>
+
+  <footer class="bg-dark p-3">
+    <div class="container">
+      <ul class="list-unstyled list-inline text-center">
+        <li class="list-inline-item mr-3">
+          <a href="/blog"><i class="fas fa-pen"></i> Blog</a>
+        </li>
+        <!-- <li class="list-inline-item mr-3">
+          <a href="/technology"><i class="fas fa-laptop-code"></i> Technology</a>
+        </li>
+        <li class="list-inline-item mr-3">
+          <a href="/diy"><i class="fas fa-hammer"></i> DIY (Do It Yourself)</a>
+        </li> -->
+        <li class="list-inline-item mr-3"><a href="/contact"><i class="fas fa-phone"></i> Contact</a></li>
+        <li class="list-inline-item mr-3">
+          <a href="/sitemap.xml"><i class="fas fa-sitemap"></i> Sitemap</a>
+        </li>
+        <li class="list-inline-item mr-3">
+          <a href="/search"><i class="fas fa-search"></i> Search</a>
+        </li>
+      </ul>
+    </div>
+    <div class="text-center mt-2">
+      {% if config.copyright %} {{ config.copyright }} {%endif%} |
+      <a href="#top">Back to Top</a>
+    </div>
+    <div class="text-center container mt-2 text-warning">
+      <small>
+        Cookies are used on this website to track your visits, provide advertisements specific
+        to you, and preferences by a third-party.
+        By continuing to use this site, you agree to the use of cookies unless you have disabled them.
+        <a class="text-warning" href="/privacy">Privacy Policy</a>
+      </small>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery.slim.min.js"><\/script>')</script>
+  <script src="/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

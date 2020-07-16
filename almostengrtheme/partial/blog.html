@@ -1,0 +1,30 @@
+<article>
+    {{ page.content }}
+
+    <div class="bg-light my-3 p-3 rounded">
+    {% if page.meta.posted %}
+    <strong>Published: </strong> {{ page.meta.posted }}
+    {% endif %}
+
+    {% if page.meta.updated %}
+    <strong>Updated: </strong> {{ page.meta.updated }}<br />
+    {% endif %}
+
+    {% if page.meta.author %}
+    <strong>Author: </strong> {{ page.meta.author }}
+    {% endif %}
+
+    {% if page.meta.category %}
+    <strong>Category:</strong> {{ page.meta.category }}<br />
+    {% endif %}
+
+    {% if page.meta.keywords %}
+    <strong>Keywords:</strong> {{ page.meta.keywords }}<br />
+    {% endif %}
+
+    {% if page.meta.youtube %}
+    <strong>Video URL:</strong> <a href="{{ page.meta.youtube }}"
+        target="_blank">{{ page.meta.youtube }}</a><br />
+    {% endif %}
+    </div>
+</article>

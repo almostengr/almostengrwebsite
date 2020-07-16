@@ -17,7 +17,7 @@ dev_addr: 192.168.57.117:8000
 # Appearance
 theme:
   name: null
-  custom_dir: 'theme'
+  custom_dir: 'almostengrtheme'
   language: en
 
 # theme:
@@ -32,6 +32,20 @@ theme:
 #     logo: logo
 #   favicon: assets/favicon.png
 #   features: []
+
+mainnav:
+  - url: /services
+    name: Services
+  # - url: /services/request
+  #   name: Request
+  - url: /blog
+    name: Blog
+  - url: /about
+    name: About
+  - url: /uses
+    name: Uses
+  - url: /contact
+    name: Contact
 
 extra:
   social:

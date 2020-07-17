@@ -63,6 +63,10 @@
         {% include "partial/jumbotron.html" %}
       {% elif page.url == "blog/" %}
         {% include "partial/bloglist.html" %}
+      {% elif page.url == "submission/" %}
+        {% include "partial/_submission.html" %}
+      {% elif page.meta.title == "Request Services" %}
+        {% include "partial/_request.php" %}
       {% elif 'blog' in page.url and 'Blog' not in page.title %}
         {% include "partial/blog.html" %}
       {% else %}

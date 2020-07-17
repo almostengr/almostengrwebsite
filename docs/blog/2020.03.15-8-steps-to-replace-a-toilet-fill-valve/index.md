@@ -5,13 +5,10 @@ description: I cover how to replace teh fill valve on a toilet that is leaking o
 keywords: toilet, fill value, toilet repair, toilet leaking, toilet fixes
 posted: 2020-03-15
 updated: 2020-07-08
-category: diy
+category: handyman
 type: blog
 ---
 
----
-category: diy
----
 # 8 Steps to Replace A Toilet Fill Valve
 
 The toilet in the bathroom, I discovered that the toilet was continuously running.

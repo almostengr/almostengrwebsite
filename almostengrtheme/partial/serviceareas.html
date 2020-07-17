@@ -1,0 +1,6 @@
+<strong class="text-white">Service Areas</strong>
+<ul class="list-unstyled text-white">
+    {% for area in config.serviceareas | sort %}
+    <li>{{ area }}</li>
+    {% endfor %}
+</ul>

@@ -16,15 +16,12 @@
         <label for="emailer">Email Address <span class="text-danger">*</span></label><br>
         <input class="form-control" type="email" id="emailer" name="emailer" minlength="5"
             placeholder="user@thealmostengineer.com" required>
-        <div class="text-muted">Enter the email address that you can be contacted at.</div>
     </div>
 
     <div class="m-2">
         <label for="phonenum">Phone Number <span class="text-danger">*</span></label><br>
         <input class="form-control" type="tel" id="phonenum" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
             placeholder="555-555-5555" required>
-        <div class="text-muted">Enter the phone number that you can be contacted at. Enter number in
-            555-555-5555 format.</div>
     </div>
 
     <div class="m-2">
@@ -76,12 +73,11 @@
         <label for="jobdetails">Project Details</label><br />
         <textarea class="form-control" rows="5" name="jobdetails" id="jobdetails"
             placeholder="Need exterior trim replaced and painted with rot resistent materials."></textarea>
-        <div class="text-muted">Enter details about the work to be done. The more details, the better.</div>
     </div>
 
     <!-- <div class="g-recaptcha" data-sitekey="6Ld_BZYUAAAAAMc5Z6e_haYXOHNtjeqgCaaXQOo8"></div> -->
 
     <div class="m-2">
-        <input type="submit" class="btn btn-danger" value="Submit" />
+        <input type="submit" class="btn btn-warning form-control" value="Submit" />
     </div>
 </form>

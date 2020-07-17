@@ -6,7 +6,8 @@ author: Kenny Robinson
 ---
 
 Below are the services offered. To see some of the mentioned services being performed, check out our 
-[YouTube Channel](https://www.youtube.com/channel/UC4HCouBLtXD1j1U_17aBqig?sub_confirmation=1).
+<a href="https://www.youtube.com/channel/UC4HCouBLtXD1j1U_17aBqig?sub_confirmation=1" 
+    target="_blank">YouTube Channel</a>.
 
 ## Handyman Services 
 

@@ -34,27 +34,44 @@ theme:
 #   features: []
 
 mainnav:
-  - url: /services
-    name: Services
+  # - url: /services
+  #   name: Services
   # - url: /services/request
   #   name: Request
-  - url: /blog
-    name: Blog
   - url: /about
     name: About
-  - url: /uses
-    name: Uses
   - url: /contact
     name: Contact
+  - url: /blog
+    name: Blog
+  - url: /uses
+    name: Uses
+
+footer1:
+  - url: /payment
+    name: Make Payment
+  - url: /contact#requestservice
+    name: Request Service
+  - url: /blog
+    name: Blog
+  - url: /contact
+    name: Contact
+  - url: /sitemap
+    name: Sitemap
+  - url: /search
+    name: Search
+
+serviceareas: ['Montgomery County, Alabama', 'Elmore County, Alabama', 'Autauga County, Alabama', 
+  'Pike County, Alabama']
 
 extra:
   social:
     - type: github
-      link: /github
+      link: https://github.com/almostengr
     - type: instagram
-      link: /instagram
+      link: https://instagram.com/almostengr
     - type: twitter
-      link: /twitter
+      link: https://twitter.com/almostengr
     - type: youtube
       link: https://www.youtube.com/channel/UC4HCouBLtXD1j1U_17aBqig?sub_confirmation=1"
                         
@@ -66,7 +83,5 @@ markdown_extensions:
         
 plugins:
   - search
-  - minify:
-      minify_html: true
-
-
+  # - minify:
+  #     minify_html: true

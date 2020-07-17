@@ -2,13 +2,14 @@
 date: 2019-12-22
 description: Information about this blog and Kenny Robinson.
 author: Kenny Robinson
+title: Contact
 ---
 
-# Contact
+Have a question, comment, or just want to say hi? Reach out to me. 
 
-Have a question, comment, or just want to say hi? Reach out to me. I do not have my email 
-address listed in an effort to avoid receiving spam. However, you can reach me via 
-my social media pages: 
+## Social Media 
+
+You can reach me via my social media pages: 
 
 * <a href="/twitter" target="_blank">@almostengr on Twitter</a>
 * <a href="/instagram" target="_blank">@almostengr on Instagram</a>

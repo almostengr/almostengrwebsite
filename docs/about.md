@@ -1,54 +1,73 @@
-﻿---
-date: 2019-12-22
-description: Information about this blog and Kenny Robinson.
-author: Kenny Robinson
+---
 title: About
+description: Services offered by Almost Engineer Services
+posted: 2020-06-29
+author: Kenny Robinson
 ---
 
-## Why A Blog?
+Below are the services offered. To see some of the mentioned services being performed, check out our
+<a href="https://www.youtube.com/channel/UC4HCouBLtXD1j1U_17aBqig?sub_confirmation=1"
+    target="_blank">YouTube Channel</a>.
 
-Kenny started passively blogging in 2011 after watching 
-[a presentation](/technology/2010.07.22-every-developer-needs-a-blog) by 
-Scott Hanselman that stated every software developer should 
-have a blog. Eventually that blogging habit faded. 
+## Handyman Services
 
-Fast forward to 2018, Kenny attended a gardening workshop that mentioned that every 
-[gardener should have a journal](/gardening/2019.02.23-every-gardener-needs-a-journal). 
+* Bed Assembly
+* Bookcase Assembly
+* Ceiling Fan Replacement/Installation
+* Doorbell Replacement/Installation
+* Furniture Assembly
+* Holiday Lighting and Decorations
+* Home Inspection Fix/Repair Lists
+* Honey Do Lists
+* Kitchen Island Assembly
+* Lawn Services (Cutting and Edging)
+* Lighting Fixture Replacement/Installation
+* Outdoor Furniture Assembly
+* Patio Furniture Assembly
+* Picture Hanging
+* Shower Head Replacement/Installation
+* Smoke Detector Replacement/Installation
+* Table Assembly
+* Television (TV) Stand Assembly
+* Television (TV) Wall Mounting
+* Thermostat Replacement/Installation
+* To Do Lists
+* Toilet Valve Replacement/Installation
+* Trim Repair
+* Washing Machine Hose Replacement
+* Window Treatment (Curtains, Blinds, Drapes) Installation
 
-As a IT professional, a blog allows you to save code snippets and copy and 
-paste them in your future projects. In 
-addition, it assists other developers with their coding projects, as it may be exactly 
-what they are looking for.
+[Request Handyman Services](/contact#requestservice)
 
-As a gardener, a blog allows you to track trends and historical information about what you have 
-done in your garden in previous seasons and years.
+## Technology Services
 
-## Online Training
+* Computer Repair
+* Computer Programming Sessions
+* Drupal Maintenance and Updates
+* Robotic Process Automation (RPA)
+* Virus and Malware Removal
+* Website Design
+* WordPress Maintenance and Updates
 
-Kenny has many 
-[tutorials on YouTube](https://www.youtube.com/channel/UC4HCouBLtXD1j1U_17aBqig) 
-that cover programming, home improvement, home automation, and more! New videos 
-are added all the time, so please be sure to
-[subscribe](https://www.youtube.com/channel/UC4HCouBLtXD1j1U_17aBqig?sub_confirmation=1) 
-to the channel.
+[Request Technology Services](/contact#requestservice)
 
-## Gardening
+## Service Areas
 
-Gardening started as a hobby for Kenny. After a couple of seasons of success and
-being able to literately taste the fruits of his labor, Kenny decided to 
-expand his green thumb skill set.
+Below are the primary areas served. Cities or counties not listed here can be served, depending 
+on availabity.
 
-Information about the garden is based on conditions of USDA growing Zone 8a, located
-in the southeastern United States. That being said, the recommendations and suggestions
-that are made on this blog are for this growing zone and are not guaranteed to work in
-other growing zones.
+### Cities 
 
-## "The Almost Engineer"
+* Autaugaville, Alabama
+* Millbrook, Alabama
+* Montgomery, Alabama
+* Pike Road, Alabama
+* Prattville, Alabama 
+* Troy, Alabama
 
-If you have read this far down the page, you probably are wondering how did Kenny come up 
-with The Almost Engineer name. Kenny works (and according to some live in) in the 
-engineering-related field of Computer Science, has great problem solving skills, and 
-enjoys fixing things instead of paying someone else to do it for him. 
+### Counties 
 
-However Kenny has a Business degree from the University of Alabama (Roll Tide!) 
-instead of an engineering degree, thus almost being an engineer.
+* Autauga County, Alabama
+* Elmore County, Alabama
+* Montgomery County, Alabama
+* Pike County, Alabama

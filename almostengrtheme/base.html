@@ -3,10 +3,9 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <meta property="og:locale" content="en_US" />
   <meta property="og:site_name" content="{{ config.site_name }}" />
-
   {% include "partial/description.html" %}
   {% include "partial/author.html" %}
   {% include "partial/title.html" %}
@@ -20,38 +19,52 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-black">
-    <a class="navbar-brand font-weight-bold" href="/">{{ config.site_name }}</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-black">
+      <div>
+        <a class="navbar-brand font-weight-bold" href="/">{{ config.site_name }}</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
 
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-      <ul class="navbar-nav ml-auto">
-        {% for nav_item in config.mainnav %}
-        <li class="nav-item">
-          <a class="nav-link text-white text-uppercase" href="{{ nav_item.url }}">{{ nav_item.name }}</a>
-        </li>
-        {% endfor %}
-      </ul>
-      <form class="mt-2 mt-md-0" method="GET" action="/contact">
-        <button class="btn btn-danger mx-2 text-uppercase" type="submit">Request Service</button>
-      </form>
-    </div>
-  </nav>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          {% for nav_item in config.mainnav %}
+          <li class="nav-item">
+            <a class="nav-link text-white text-uppercase" href="{{ nav_item.url }}">{{ nav_item.name }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+        <!-- <form class="mt-2 mt-md-0" method="GET" action="/contact"> -->
+          <form class="mt-2 mt-md-0" method="GET" action="/request">
+          <button class="btn btn-danger mx-2 text-uppercase" type="submit">Request Service</button>
+        </form>
+      </div>
+    </nav>
+  </header>
 
-  <main role="main" class="container">
+  {% if page.is_homepage %}
+  <main role="main" class="">
+    <div id="content-area" class="">
+      {% include "partial/carousel.html" %}
+      <div class="container marketing">
+        <div class="m-5"></div>
+        {% include "partial/featurette.html" %}
+      </div>
+    </div><!-- end content-area -->
+  </main>
+
+  {% else %}
+  <main role="main" class="container py-2">
     <div class="row">
       <div id="content-area" class="col-sm-12 col-lg-8">
         {% if page.meta.title %}
         <h1>{{ page.meta.title }}</h1>
-        {%endif%}
+        {% endif %}
 
-        {% if page.is_homepage %}
-        {% include "partial/jumbotron.html" %}
-
-        {% elif page.url == "payment/" %}
+        {% if page.url == "payment/" %}
         {{ page.content }}
         {% include "partial/payment.html" %}
 
@@ -62,8 +75,8 @@
         {% elif page.url == "submission/" %}
         {% include "partial/_submission.html" %}
 
-        {% elif page.url == "contact/" %}
-        {{ page.content }}
+        {% elif page.url == "request/" %}
+        <!-- {{ page.content }} -->
         {% include "partial/_request.html" %}
 
         {% elif 'blog' in page.url and 'Blog' not in page.title %}
@@ -73,60 +86,78 @@
         {{ page.content }}
         {% endif %}
 
-        <p><a href="#top">Back to Top</a></p>
+        <p><a href="#top" class="text-small">Back to Top</a></p>
       </div><!-- end content-area -->
+      {% endif %}
 
-      <div id="sidebar" class="col-sm-12 col-lg-4 border-left border-light">
-        <div class="mb-3 border border-dark rounded p-2 bg-dark text-white">
-          <h3 class="sidebar-header">Request Service</h3>
-          {% include "partial/_requestside.html" %}
+      {% if page.is_homepage == false %}
+
+      <div id="sidebar" class="col-sm-12 col-lg-4 border-left border-dark p-1">
+        <div class="mb-3 border border-dark rounded p-2 bg-dark text-gray">
+          <h4 class="text-left border-bottom border-white">
+            <span class="bg-white text-dark px-2 font-weight-bold">REQUEST SERVICE</span>
+          </h4>
+          <p>Do you have work that needs to be done and are ready to get started?</p>
+          <p><a class="btn btn-danger" href="/request">GET STARTED!</a></p>
         </div>
 
-        <div class="mb-3 border border-dark rounded p-2 bg-light">
-          <h3 class="sidebar-header">Sponsor</h3>
-          {% include "partial/googleadsense.html" %}
-          As a IT professional, a blog allows you to save code snippets and copy and paste them in your future projects.
-          In addition, it assists other developers with their coding projects, as it may be exactly what they are
-          looking for.
+        <div class="mb-3 border border-dark rounded bg-dark p-2 text-gray">
+          <h4 class="text-left border-bottom border-white">
+            <span class="bg-white text-dark px-2 font-weight-bold">BLOG</span>
+          </h4>
+          <p>Check out some of our past projects and work on our <a href="/blog">blog</a>!</p>
         </div>
 
-        <div class="mb-3 border border-dark rounded p-2 bg-light">
-          <h3 class="sidebar-header">Sponsor</h3>
+        <div class="mb-3 border border-dark rounded bg-dark p-2">
+          <h4 class="text-left border-bottom border-white">
+            <span class="bg-white text-dark px-2 font-weight-bold">SPONSOR</span>
+          </h4>
           {% include "partial/googleadsense.html" %}
         </div>
       </div><!-- end sidebar -->
     </div>
   </main>
+  {% endif %}
 
-  <footer class="bg-dark p-3">
+  <footer class="bg-dark pt-3">
     <div class="row container m-auto">
-      <div class="text-center col-sm-12 col-lg-3 border rounded p-2 border-secondary">
+      <div class="col-sm-12 col-lg-4 p-2 m-2">
+        <h6 class="text-uppercase text-left border-bottom border-white">
+          <span class="bg-white text-dark px-1 font-weight-bold">LINKS</span>
+        </h6>
         <ul class="list-unstyled">
           {% for link in config.footer1 %}
-          <li class="mr-3"><a href="{{ link.url }}">{{ link.name }}</a></li>
+          <li class="mr-3 text-white">- <a href="{{ link.url }}">{{ link.name }}</a></li>
           {% endfor %}
         </ul>
-        <p><a href="#top">Back to Top</a></p>
       </div>
-      <div class="text-center col-sm-12 col-lg-3 border rounded p-2 border-secondary">
-        {% include "partial/serviceareas.html" %}
-      </div>
-      <div class="text-center col-sm-12 col-lg-3 text-white border rounded p-2 border-secondary">
+      <div class="col-sm-12 col-lg-3 text-white p-2 m-2">
+        <h6 class="text-left border-bottom border-white">
+          <span class="bg-white text-dark px-1 font-weight-bold">SOCIAL</span>
+        </h6>
         <ul class="list-unstyled">
           {% for link in config.extra.social %}
-          <li class="mr-3 text-capitalize" target="_blank"><a href="{{ link.link }}">{{ link.type }}</a></li>
+          <li class="mr-3 text-capitalize">
+            - <a href="{{ link.link }}" target="_blank">{{ link.type }}</a>
+          </li>
           {% endfor %}
         </ul>
       </div>
-      <div class="text-center text-white col-sm-12 col-lg-3 border rounded p-2 border-secondary">
-        <p>{% if config.copyright %} {{ config.copyright }} {%endif%}</p>
-        <p class="text-red text-small">
-          Cookies are used on this website to track your visits, provide advertisements specific
-          to you, and preferences by a third-party.
-          By continuing to use this site, you agree to the use of cookies unless you have disabled them.
-          <a class="text-red" href="/privacy">Privacy Policy</a>
-        </p>
+      <div class="col-sm-12 col-lg-4 p-2 m-2">
+        <h6 class="text-left border-bottom border-white">
+          <span class="bg-white text-dark px-1 font-weight-bold">SERVICE AREAS</span>
+        </h6>
+        {% include "partial/serviceareas.html" %}
       </div>
+    </div>
+    <div class="text-center text-white bg-black py-3">
+      <p>{% if config.copyright %} {{ config.copyright }} {%endif%} |
+        <a href="#top">Back to Top</a></p>
+      <p class="text-small">
+        Cookies are used on this website to track your visits, provide advertisements specific
+        to you, and preferences by a third-party.
+        By continuing to use this site, you agree to the use of cookies unless you have disabled them.
+      </p>
     </div>
   </footer>
 

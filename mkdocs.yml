@@ -2,7 +2,7 @@ site_name: Almost Engineer Services
 site_url: https://thealmostengineer.com
 site_description: The blog of Kenny Robinson where he shares his thoughts and experiences.
 site_author: Kenny Robinson, @almostengr
-copyright: Copyright &copy; 2015-2020 The Almost Engineer
+copyright: Copyright &copy; 2015-2020 Almost Engineer Services
 google_analytics: ['UA-64643711-1', 'thealmostengineer.com']
 
 # repository information
@@ -34,10 +34,6 @@ theme:
 #   features: []
 
 mainnav:
-  # - url: /services
-  #   name: Services
-  # - url: /services/request
-  #   name: Request
   - url: /about
     name: About
   - url: /contact
@@ -52,14 +48,16 @@ footer1:
     name: Make Payment
   - url: /contact#requestservice
     name: Request Service
+  - url: /search
+    name: Search
   - url: /blog
     name: Blog
   - url: /contact
     name: Contact
   - url: /sitemap
     name: Sitemap
-  - url: /search
-    name: Search
+  - url: /privacy
+    name: Privacy
 
 serviceareas: ['Montgomery County, Alabama', 'Elmore County, Alabama', 'Autauga County, Alabama', 
   'Pike County, Alabama']
@@ -70,6 +68,8 @@ extra:
       link: https://github.com/almostengr
     - type: instagram
       link: https://instagram.com/almostengr
+    - type: stack overflow
+      link: https://stackoverflow.com/users/12875554/almostengr
     - type: twitter
       link: https://twitter.com/almostengr
     - type: youtube
@@ -83,5 +83,5 @@ markdown_extensions:
         
 plugins:
   - search
-  # - minify:
-  #     minify_html: true
+  - minify:
+      minify_html: true

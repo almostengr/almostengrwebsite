@@ -9,7 +9,7 @@ keywords: uses, uses page, tools used
 Browsing around on GitHub, I found that developers create "uses" (or /uses) pages that
 detail the tools that they use do their work. Below are a list of tools that are used to get
 the job done. For more detail about what is a Uses page and how you can create your own,
-you can check out [the blog post](/technology/2020.02.01-developer-uses-page) about this topic.
+you can check out [the blog post](/blog/2020.02.01-developer-uses-page) about this topic.
 
 ## Handyman Tools
 
@@ -31,9 +31,13 @@ The Advanced Tools are more for the hardcore DIY-er, those that enjoy doing Satu
 handymen and handywomen.
 
 * Circular Saw
+* Drill
+* Impact Driver
+* Lawn Mower
 * Miter Saw
 * Reciprocating Saw
-* Lawn Mower
+* Shovel
+* Socket Wrench Set
 * Weed Trimmer
 
 ## Technology Tools
@@ -79,7 +83,6 @@ that I post on my YouTube channel.
 
 * [Bootstrap](https://getbootstrap.com) for appearance and styling
 * Cell phone for pictures
-* [Font Awesome](https://fontawesome.com) for icons
 * [GitHub](https://github.com/almostengr/almostengrwebsite) for version control and issue tracking
 * [GitHub Actions](https://github.com/features/actions) for automated builds and deployment (Continuous Deployment) of websites
 * [Google Custom Search](https://cse.google.com/cse/) for searching content on the website

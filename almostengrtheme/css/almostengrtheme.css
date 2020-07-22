@@ -20,18 +20,17 @@
     text-transform: uppercase;
 }
 
-main {
-    min-height: calc(100vh - 403px - 45px);
+#content-area {
+    /* min-height: calc(100vh - 403px - 45px); */
+    min-height: 100vh;
 }
 
 main a {
     color: var(--red);
-    /* font-weight: bold; */
 }
 
 main a:hover {
     color: var(--dark-red-color);
-    /* font-weight: bold; */
 }
 
 footer a, footer a:hover {

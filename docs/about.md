@@ -19,6 +19,7 @@ Jump to the section of the page
 
 ## Handyman Services
 
+#### Air Filter Replacement
 #### Baby Crib Assembly
 #### Bed Assembly
 #### [Bookcase Assembly](/blog/2019.07.30-reinforce-bookcase-with-plywood)
@@ -34,7 +35,7 @@ Jump to the section of the page
 
 Kitchen Island from Wayfair assembled
 
-#### Lawn Services (Cutting and Edging)
+#### Lawn Services (Cutting, Edging, Light Landscaping)
 #### Lighting Fixture Replacement/Installation
 #### Outdoor Furniture Assembly
 #### Patio Furniture Assembly
@@ -49,7 +50,7 @@ Patio furniture from Wayfair assembled
 #### Table Assembly
 #### Television (TV) Stand Assembly
 #### Television (TV) Wall Mounting
-#### Thermostat Replacement/Installation
+#### Thermostat (Smart and Non-Smart) Replacement/Installation
 
 ![Honeywell Wifi Thermostat in the process of being installed.](/images/thermostat.jpg)
 
@@ -61,7 +62,7 @@ Honeywell Wifi Thermostat in the process of being installed.
 #### Washing Machine Hose Replacement
 #### Window Treatment (Curtains, Blinds, Drapes) Installation
 
-[Request Handyman Services](/contact#requestservice)
+[Request Handyman Services](/request)
 
 ---
 
@@ -76,7 +77,7 @@ Honeywell Wifi Thermostat in the process of being installed.
 #### Virus and Malware Removal
 #### Website Design
 
-[Request Technology Services](/contact#requestservice)
+[Request Technology Services](/request)
 
 ---
 

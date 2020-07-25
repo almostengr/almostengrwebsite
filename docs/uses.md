@@ -22,7 +22,7 @@ relatively common because they are used as fasteners on number of items includin
 electrical outlets, and furniture, just to name a few.
 
 * Hammer
-* Screwdriver Set (Phillips Head and Flat Head)
+* Screwdriver Set with Phillips Head and Flat Head
 * Tongue and Groove Pliers
 
 ### Additional Tools
@@ -41,6 +41,10 @@ handymen and handywomen.
 * Weed Trimmer
 
 ## Technology Tools
+
+These are the tools that I use to create websites, software, and videos on my
+<a href="https://www.youtube.com/channel/UC4HCouBLtXD1j1U_17aBqig?sub_confirmation=1" 
+    target="_blank">YouTube Channel</a>.
 
 ### Linux Software
 
@@ -79,12 +83,12 @@ that I post on my YouTube channel.
 * [Putty](https://www.putty.org) for connecting to remote servers
 * [Visual Studio Code](https://code.visualstudio.com/download) for text editing and coding
 
-### Website and Blog
+### This Website and Blog
 
 * [Bootstrap](https://getbootstrap.com) for appearance and styling
-* Cell phone for pictures
+* Cell phone for pictures and video
 * [GitHub](https://github.com/almostengr/almostengrwebsite) for version control and issue tracking
-* [GitHub Actions](https://github.com/features/actions) for automated builds and deployment (Continuous Deployment) of websites
+* [GitHub Actions](https://github.com/features/actions) for automated builds and deployment (CI/CD) of website
 * [Google Custom Search](https://cse.google.com/cse/) for searching content on the website
 * [InMotion Hosting](https://partners.inmotionhosting.com/c/2382527/260033/4222) for website hosting
 * [Markdown](https://www.markdownguide.org/) for website content

@@ -38,8 +38,8 @@
           {% endfor %}
         </ul>
         <!-- <form class="mt-2 mt-md-0" method="GET" action="/contact"> -->
-          <form class="mt-2 mt-md-0" method="GET" action="/request">
-          <button class="btn btn-danger mx-2 text-uppercase" type="submit">Request Service</button>
+        <form class="mt-2 mt-md-0" method="GET" action="/request">
+          <button class="btn btn-outline-danger mx-2 text-uppercase" type="submit">Request Service</button>
         </form>
       </div>
     </nav>
@@ -76,7 +76,7 @@
         {% include "partial/_submission.html" %}
 
         {% elif page.url == "request/" %}
-        <!-- {{ page.content }} -->
+        {{ page.content }}
         {% include "partial/_request.html" %}
 
         {% elif 'blog' in page.url and 'Blog' not in page.title %}
@@ -151,8 +151,7 @@
       </div>
     </div>
     <div class="text-center text-white bg-black py-3">
-      <p>{% if config.copyright %} {{ config.copyright }} {%endif%} |
-        <a href="#top">Back to Top</a></p>
+      <p>{% if config.copyright %} {{ config.copyright }} {%endif%}</p>
       <p class="text-small">
         Cookies are used on this website to track your visits, provide advertisements specific
         to you, and preferences by a third-party.

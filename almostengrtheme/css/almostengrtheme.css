@@ -108,3 +108,17 @@ h1 {
 .opacity-5 {
     opacity: 1!important;
 }
+
+h2 {
+    border-bottom: var(--light-gray-color) 1px solid;
+}
+
+button, .btn {
+    border-radius: 30px;
+}
+
+.required:after,
+label.required:after {
+    content: ' *';
+    color: var(--light-red-color);
+}

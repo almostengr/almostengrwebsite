@@ -2,34 +2,34 @@
 
 <form method="post">
     <div class="m-2">
-        <label for="firstname">First Name <span class="text-danger">*</span></label><br>
+        <label for="firstname" class="required">First Name</label><br>
         <input class="form-control" type="text" id="firstname" name="firstname" minlength="2" placeholder="First Name"
             required>
     </div>
 
     <div class="m-2">
-        <label for="lastname">Last Name <span class="text-danger">*</span></label><br>
+        <label for="lastname" class="required">Last Name</label><br>
         <input class="form-control" type="text" id="lastname" name="lastname" minlength="2" placeholder="Last Name"
             required>
     </div>
 
     <div class="m-2">
-        <label for="emailer">Email Address <span class="text-danger">*</span></label><br>
+        <label for="emailer" class="required">Email Address</label><br>
         <input class="form-control" type="email" id="emailer" name="emailer" minlength="5"
             placeholder="user@thealmostengineer.com" required>
         <div class="text-muted">Enter the email address that you can be contacted at.</div>
     </div>
 
     <div class="m-2">
-        <label for="phonenum">Phone Number <span class="text-danger">*</span></label><br>
+        <label for="phonenum" class="required">Phone Number</label><br>
         <input class="form-control" type="tel" id="phonenum" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-            placeholder="555-555-5555" required>
+            placeholder="555-555-5555" required class="required">
         <div class="text-muted">Enter the phone number that you can be contacted at. Enter number in
             555-555-5555 format.</div>
     </div>
 
     <div class="m-2">
-        <label for="servicetype">What Service Are You Needing? <span class="text-danger">*</span></label><br>
+        <label for="servicetype" class="required">What Service Are You Needing?</label><br>
         <select class="form-control" id="servicetype" name="servicetype" required>
             <option selected="selected"></option>
             <optgroup label="Handyman Services">
@@ -85,7 +85,7 @@
         <div class="text-muted">Enter details about the work to be done. The more details, the better.</div>
     </div>
 
-    <!-- <div class="g-recaptcha" data-sitekey="6Ld_BZYUAAAAAMc5Z6e_haYXOHNtjeqgCaaXQOo8"></div> -->
+    <div class="g-recaptcha" data-sitekey="6Ld_BZYUAAAAAMc5Z6e_haYXOHNtjeqgCaaXQOo8"></div>
 
     <div class="m-2">
         <input type="submit" class="btn btn-danger" value="Submit" />

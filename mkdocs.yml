@@ -34,19 +34,23 @@ theme:
 #   features: []
 
 mainnav:
-  - url: /about
-    name: About
-  - url: /contact
-    name: Contact
+  - url: /about#handyman-services
+    name: Handyman
+  - url: /about#technology-services
+    name: Technical
   - url: /blog
     name: Blog
   - url: /uses
     name: Uses
+  - url: /contact
+    name: Contact
 
 footer1:
+  - url: /about
+    name: About
   - url: /payment
     name: Make Payment
-  - url: /contact#requestservice
+  - url: /request
     name: Request Service
   - url: /search
     name: Search
@@ -54,7 +58,9 @@ footer1:
     name: Blog
   - url: /contact
     name: Contact
-  - url: /sitemap
+  - url: /faq
+    name: FAQ
+  - url: /sitemap.xml
     name: Sitemap
   - url: /privacy
     name: Privacy
@@ -73,7 +79,7 @@ extra:
     - type: twitter
       link: https://twitter.com/almostengr
     - type: youtube
-      link: https://www.youtube.com/channel/UC4HCouBLtXD1j1U_17aBqig?sub_confirmation=1"
+      link: https://www.youtube.com/channel/UC4HCouBLtXD1j1U_17aBqig?sub_confirmation=1
                         
 use_directory_urls: true
 strict: false

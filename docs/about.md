@@ -5,7 +5,7 @@ posted: 2020-06-29
 author: Kenny Robinson
 ---
 
-Below are the services offered. To see some of the mentioned services being performed, check out our
+To see some of the mentioned services being performed, check out our
 <a href="https://www.youtube.com/channel/UC4HCouBLtXD1j1U_17aBqig?sub_confirmation=1"
     target="_blank">YouTube Channel</a>. You can jump to the [Handyman Services](#handyman-services)
 or the [Technology Services](#technology-services).
@@ -13,6 +13,10 @@ or the [Technology Services](#technology-services).
 <a class="btn btn-danger" role="button" href="/request">Request Services</a>
 
 ## Handyman Services
+
+Below are the handyman services that we offer. Some of the services, have a blog post that show
+prior work that has been done as part of that services. We encourage you to read the blog post
+to find out more about that type of work.
 
 * Air Filter Replacement
 * Baby Crib Assembly

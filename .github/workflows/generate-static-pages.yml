@@ -28,6 +28,9 @@ jobs:
     - name: Install Minify Plugin
       run: /usr/bin/python3 -m pip install --upgrade mkdocs-minify-plugin
 
+    - name: Installing Mkdocs
+      run:  /usr/bin/python3 -m pip install --upgrade mkdocs-rss-plugins
+
     - name: Fetching branches
       run:  git fetch -p
 

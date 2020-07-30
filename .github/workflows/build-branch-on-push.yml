@@ -16,26 +16,26 @@ on:
 # help with variables https://github.com/actions/checkout
 
 jobs:
-  spelling:
-    name: Check Spelling
-    runs-on: ubuntu-latest
+  # spelling:
+  #   name: Check Spelling
+  #   runs-on: ubuntu-latest
 
-    steps:
-    - uses: actions/checkout@master
+  #   steps:
+  #   - uses: actions/checkout@master
       
-    - name: Remove duplicates from wordlist
-      run: (/bin/cat .wordlist.txt | /usr/bin/sort | /usr/bin/uniq) > .wordlist.tmp
+  #   - name: Remove duplicates from wordlist
+  #     run: (/bin/cat .wordlist.txt | /usr/bin/sort | /usr/bin/uniq) > .wordlist.tmp
     
-    - name: Moving cleaned wordlist
-      run: /bin/mv .wordlist.tmp .wordlist.txt
+  #   - name: Moving cleaned wordlist
+  #     run: /bin/mv .wordlist.tmp .wordlist.txt
           
-    - uses: rojopolis/spellcheck-github-actions@0.5.0
-      name: Spellcheck
+  #   - uses: rojopolis/spellcheck-github-actions@0.5.0
+  #     name: Spellcheck
 
   build:
     name: Build
     runs-on: ubuntu-latest
-    needs: spelling
+    # needs: spelling
 
     steps:
     - name: Checking out repository ${{ github.event.pull_request.head.sha }}

@@ -15,7 +15,7 @@ Almost Engineer Services accepts CashApp, PayPal, and major credit cards. Visit 
 ## What is the fastest way to request service? 
 
 Submitting a service request via the website is the fastest way to get in touch with us. Your request 
-will automatically be routed to your scheduling system.
+will automatically be routed to our scheduling system.
 
 ## What are your working hours?
 
@@ -29,17 +29,12 @@ cities and counties.
 
 ### Cities
 
-#### A-L
-
 Autaugaville, Alabama;
 Cecil, Alabama;
 Coosada, Alabama;
 Deatsville, Alabama;
 Elmore, Alabama;
 Hope Hull, Alabama
-
-#### M-Z
-
 Millbrook, Alabama;
 Montgomery, Alabama;
 Mount Meigs, Alabama;

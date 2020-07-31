@@ -119,46 +119,7 @@
   </main>
   {% endif %}
 
-  <footer class="bg-dark pt-3">
-    <div class="row container m-auto">
-      <div class="col-sm-12 col-lg-4 p-2 m-2">
-        <h6 class="text-uppercase text-left border-bottom border-white">
-          <span class="bg-white text-dark px-1 font-weight-bold">LINKS</span>
-        </h6>
-        <ul class="list-unstyled">
-          {% for link in config.footer1 %}
-          <li class="mr-3 text-white">- <a href="{{ link.url }}">{{ link.name }}</a></li>
-          {% endfor %}
-        </ul>
-      </div>
-      <div class="col-sm-12 col-lg-3 text-white p-2 m-2">
-        <h6 class="text-left border-bottom border-white">
-          <span class="bg-white text-dark px-1 font-weight-bold">SOCIAL</span>
-        </h6>
-        <ul class="list-unstyled">
-          {% for link in config.extra.social %}
-          <li class="mr-3 text-capitalize">
-            - <a href="{{ link.link }}" target="_blank">{{ link.type }}</a>
-          </li>
-          {% endfor %}
-        </ul>
-      </div>
-      <div class="col-sm-12 col-lg-4 p-2 m-2">
-        <h6 class="text-left border-bottom border-white">
-          <span class="bg-white text-dark px-1 font-weight-bold">SERVICE AREAS</span>
-        </h6>
-        {% include "partial/serviceareas.html" %}
-      </div>
-    </div>
-    <div class="text-center text-white bg-black py-3">
-      <p>{% if config.copyright %} {{ config.copyright }} {%endif%}</p>
-      <p class="text-small">
-        Cookies are used on this website to track your visits, provide advertisements specific
-        to you, and preferences by a third-party.
-        By continuing to use this site, you agree to the use of cookies unless you have disabled them.
-      </p>
-    </div>
-  </footer>
+  {% include "partial/footer.html" %}
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

@@ -28,7 +28,7 @@ theme:
 #     primary: indigo
 #   font:
 #     text: Roboto
-#   icon: 
+#   icon:
 #     logo: logo
 #   favicon: assets/favicon.png
 #   features: []
@@ -65,8 +65,15 @@ footer1:
   - url: /privacy
     name: Privacy
 
-serviceareas: ['Montgomery County, Alabama', 'Elmore County, Alabama', 'Autauga County, Alabama', 
-  'Pike County, Alabama']
+servicesfooter:
+  - url: /blog/2020.07.12-ceiling-fan-installation-with-downrod
+    name: Install Ceiling Fan
+  - url: /blog/2019.07.30-reinforce-bookcase-with-plywood
+    name: Bookcase Assembly
+  - url: /blog/2020.07.21-front-yard-landscaping
+    name: Lawn Services
+
+serviceareas: ['Montgomery County, Alabama', 'Elmore County, Alabama', 'Autauga County, Alabama']
 
 extra:
   social:
@@ -80,13 +87,13 @@ extra:
       link: https://twitter.com/almostengr
     - type: youtube
       link: https://www.youtube.com/channel/UC4HCouBLtXD1j1U_17aBqig?sub_confirmation=1
-                        
+
 use_directory_urls: true
 strict: false
 
 markdown_extensions:
   - meta
-        
+
 plugins:
   - search
   - rss

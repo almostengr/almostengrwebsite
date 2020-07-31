@@ -23,8 +23,11 @@ to find out more about that type of work.
 * Bed Assembly
 * [Bookcase Assembly](/blog/2019.07.30-reinforce-bookcase-with-plywood)
 * [Ceiling Fan Replacement/Installation](/blog/2020.07.12-ceiling-fan-installation-with-downrod)
+* Desk Assembly
 * Doorbell Replacement/Installation
+* Dresser Assembly
 * Furniture Assembly
+* Hanging Shelves
 * Holiday Lighting and Decorations
 * Home Inspection Fix/Repair Lists
 * Honey Do Lists
@@ -43,7 +46,7 @@ to find out more about that type of work.
 
 *Patio furniture from Wayfair assembled*
 
-* Picture Hanging
+* Picture Hanging/Hanging Pictures
 * Shower Head Replacement/Installation
 * Smoke Detector Replacement/Installation
 * Table Assembly
@@ -56,23 +59,31 @@ to find out more about that type of work.
 *Honeywell Wifi Thermostat in the process of being installed.*
 
 * To Do Lists
-* Toilet Valve Replacement/Installation
+* [Toilet Leak/Value Repair and Replacement](/blog/2018.07.21-how-to-replace-toilet-gasket-and-bolts/)
 * Trim Repair
 * Washing Machine Hose Replacement
+* Window Blind Installation/Replacement
+* Window Curtain Installation/Replacement
+* Window Drapery Installation/Replacement
 * Window Treatment (Curtains, Blinds, Drapes) Installation
 
 <a class="btn btn-danger" role="button" href="/request">Request Handyman Services</a>
 
 ## Technology Services
 
-* Computer Repair
+* [Computer Repair](/blog/2018.06.19-replace-optical-drive-in-pc/)
 * <a href="https://www.youtube.com/watch?v=fg9AgEkuy9o" target="_blank">Computer Programming Sessions</a>
 * <a href="https://www.youtube.com/watch?v=DjtIx1my2eE" target="_blank">Drupal Maintenance and Updates</a>
 * Google Analytics Installation and Configuration
+* [Google Search Console](/blog/2020.01.21-google-search-console-reports-500-errors/)
+* [Linux Training](/blog/2020.03.01-linux-training-session/)
 * <a href="https://www.youtube.com/watch?v=0cQ2bpKiO-c" target="_blank">Robotic Process Automation (RPA)</a>
 * Search Engine Optimization (SEO)
+* Selenium Webdriver Automation
+* Smart Thermostat Installation
 * Virus and Malware Removal
 * Web Application Design
 * Website Design
+* Wi-Fi Router Installation/Setup
 
 <a class="btn btn-danger" role="button" href="/request">Request Technology Services</a>

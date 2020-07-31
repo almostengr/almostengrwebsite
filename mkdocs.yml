@@ -20,19 +20,6 @@ theme:
   custom_dir: 'almostengrtheme'
   language: en
 
-# theme:
-#   name: null
-#   custom_dir: 'theme/mkdocs-material/material'
-#   language: en
-#   palette:
-#     primary: indigo
-#   font:
-#     text: Roboto
-#   icon:
-#     logo: logo
-#   favicon: assets/favicon.png
-#   features: []
-
 mainnav:
   - url: /about#handyman-services
     name: Handyman
@@ -71,8 +58,12 @@ servicesfooter:
   - url: /blog/2019.07.30-reinforce-bookcase-with-plywood
     name: Bookcase Assembly
   - url: /blog/2020.07.21-front-yard-landscaping
-    name: Lawn Services
-
+    name: Landscaping
+  - url: /blog/2018.07.21-how-to-replace-toilet-gasket-and-bolts
+    name: Toilet Repair
+  - url: /blog/2018.06.19-replace-optical-drive-in-pc/
+    name: Computer Repair
+  
 serviceareas: ['Montgomery County, Alabama', 'Elmore County, Alabama', 'Autauga County, Alabama']
 
 extra:

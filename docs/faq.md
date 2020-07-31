@@ -34,7 +34,7 @@ Cecil, Alabama;
 Coosada, Alabama;
 Deatsville, Alabama;
 Elmore, Alabama;
-Hope Hull, Alabama
+Hope Hull, Alabama;
 Millbrook, Alabama;
 Montgomery, Alabama;
 Mount Meigs, Alabama;

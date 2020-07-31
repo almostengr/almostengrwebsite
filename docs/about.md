@@ -22,7 +22,7 @@ to find out more about that type of work.
 * Baby Crib Assembly
 * Bed Assembly
 * [Bookcase Assembly](/blog/2019.07.30-reinforce-bookcase-with-plywood)
-* Ceiling Fan Replacement/Installation
+* [Ceiling Fan Replacement/Installation](/blog/2020.07.12-ceiling-fan-installation-with-downrod)
 * Doorbell Replacement/Installation
 * Furniture Assembly
 * Holiday Lighting and Decorations

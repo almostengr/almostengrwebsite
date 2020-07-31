@@ -1,5 +1,5 @@
 <footer class="bg-black pt-3">
-    <div class="container">
+    <div class="container px-0">
         <div class="col-12">
             <ul class="list-unstyled text-white">
                 <li class="px-2 bg-white text-dark font-weight-bold list-inline-item">LINKS</li>
@@ -20,8 +20,7 @@
         </div>
         <div class="col-12">
             <ul class="list-unstyled text-white">
-                <li class="px-2 list-inline-item text-left bg-white text-dark font-weight-bold">
-                    <a class="text-dark" href="/faq#what-areas-do-you-serve">SERVICES PROVIDED</a></li>
+                <li class="px-2 list-inline-item text-left bg-white text-dark font-weight-bold">SERVICES PROVIDED</li>
                 {% for link in config.servicesfooter %}
                 <li class="mr-2 list-inline-item"><a href="{{ link.url }}">{{ link.name }}</a></li>
                 {% endfor %}
@@ -39,7 +38,7 @@
         </div>
     </div>
     <hr class="text-white bg-white container">
-    <div class="text-center text-white bg-black pt-2 pb-5">
+    <div class="text-center text-white bg-black pt-2 pb-5 px-2">
         <p>{% if config.copyright %} {{ config.copyright }} {%endif%}</p>
         <p class="text-small">
             Cookies are used on this website to track your visits, provide advertisements specific

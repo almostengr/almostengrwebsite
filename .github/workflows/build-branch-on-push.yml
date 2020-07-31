@@ -56,7 +56,7 @@ jobs:
       run: /usr/bin/python3 -m pip install --upgrade mkdocs-minify-plugin
 
     - name: Installing Mkdocs
-      run:  /usr/bin/python3 -m pip install --upgrade mkdocs-rss-plugins
+      run:  /usr/bin/python3 -m pip install --upgrade mkdocs-rss-plugin
         
     - name: Building website
       run:  /usr/bin/python3 -m mkdocs build

@@ -9,7 +9,7 @@ google_analytics: ['UA-64643711-1', 'thealmostengineer.com']
 repo_url: https://github.com/almostengr
 repo_name: Github
 remote_name: origin
-remote_branch: gh-pages
+remote_branch: website
 
 # Development server details
 dev_addr: 192.168.57.117:8000
@@ -20,59 +20,61 @@ theme:
   custom_dir: 'almostengrtheme'
   language: en
 
-mainnav:
-  - url: /about#handyman-services
-    name: Handyman
-  - url: /about#technology-services
-    name: Technical
-  - url: /blog
-    name: Blog
-  - url: /uses
-    name: Uses
-  - url: /contact
-    name: Contact
-
-footer1:
-  - url: /about
-    name: About
-  - url: /payment
-    name: Make Payment
-  - url: /request
-    name: Request Service
-  - url: /search
-    name: Search
-  - url: /blog
-    name: Blog
-  - url: /contact
-    name: Contact
-  - url: /faq
-    name: FAQ
-  - url: /sitemap.xml
-    name: Sitemap
-  - url: /privacy
-    name: Privacy
-
-servicesfooter:
-  - url: /blog/2020.07.12-ceiling-fan-installation-with-downrod
-    name: Install Ceiling Fan
-  - url: /blog/2019.07.30-reinforce-bookcase-with-plywood
-    name: Bookcase Assembly
-  - url: /blog/2020.07.21-front-yard-landscaping
-    name: Landscaping
-  - url: /blog/2018.07.21-how-to-replace-toilet-gasket-and-bolts
-    name: Toilet Repair
-  - url: /blog/2018.06.19-replace-optical-drive-in-pc/
-    name: Computer Repair
-  
-serviceareas: ['Montgomery County, Alabama', 'Elmore County, Alabama', 'Autauga County, Alabama']
-
 extra:
+  serviceareas: ['Montgomery County, Alabama', 'Elmore County, Alabama', 'Autauga County, Alabama']
+
+  mainnav:
+    - url: /about#handyman-services
+      name: Handyman
+    - url: /about#technology-services
+      name: Technical
+    - url: /blog
+      name: Blog
+    - url: /uses
+      name: Uses
+    - url: /contact
+      name: Contact
+
+  footer1:
+    - url: /about
+      name: About
+    - url: /payment
+      name: Make Payment
+    - url: /request
+      name: Request Service
+    - url: /search
+      name: Search
+    - url: /blog
+      name: Blog
+    - url: /contact
+      name: Contact
+    - url: /faq
+      name: FAQ
+    - url: /sitemap.xml
+      name: Sitemap
+    - url: /privacy
+      name: Privacy
+
+  servicesfooter:
+    - url: /blog/2020.07.12-ceiling-fan-installation-with-downrod
+      name: Install Ceiling Fan
+    - url: /blog/2019.07.30-reinforce-bookcase-with-plywood
+      name: Bookcase Assembly
+    - url: /blog/2020.07.21-front-yard-landscaping
+      name: Landscaping
+    - url: /blog/2018.07.21-how-to-replace-toilet-gasket-and-bolts
+      name: Toilet Repair
+    - url: /blog/2018.06.19-replace-optical-drive-in-pc/
+      name: Computer Repair
+    - url: /blog/2020.03.01-linux-training-session/
+      name: Linux Training
+
   social:
     - type: github
       link: https://github.com/almostengr
     - type: instagram
       link: https://instagram.com/almostengr
-    - type: stack overflow
+    - type: stack-overflow
       link: https://stackoverflow.com/users/12875554/almostengr
     - type: twitter
       link: https://twitter.com/almostengr
@@ -88,5 +90,5 @@ markdown_extensions:
 plugins:
   - search
   - rss
-  - minify:
+  - minify: 
       minify_html: true

@@ -1,5 +1,5 @@
 ---
-title: About
+title: About / Services
 description: Services offered by Almost Engineer Services
 posted: 2020-06-29
 author: Kenny Robinson
@@ -69,6 +69,8 @@ to find out more about that type of work.
 
 <a class="btn btn-danger" role="button" href="/request">Request Handyman Services</a>
 
+[Back to Top](#top)
+
 ## Technology Services
 
 * [Computer Repair](/blog/2018.06.19-replace-optical-drive-in-pc/)
@@ -81,7 +83,6 @@ to find out more about that type of work.
 * Search Engine Optimization (SEO)
 * Selenium Webdriver Automation
 * Smart Thermostat Installation
-* Virus and Malware Removal
 * Web Application Design
 * Website Design
 * Wi-Fi Router Installation/Setup

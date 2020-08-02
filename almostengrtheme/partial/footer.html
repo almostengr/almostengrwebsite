@@ -1,13 +1,5 @@
 <footer class="bg-black pt-3">
     <div class="container px-0">
-        <div class="col-12">
-            <ul class="list-unstyled text-white">
-                <li class="px-2 bg-white text-dark font-weight-bold list-inline-item">LINKS</li>
-                {% for link in config.footer1 %}
-                <li class="mr-2 list-inline-item"><a href="{{ link.url }}">{{ link.name }}</a></li>
-                {% endfor %}
-            </ul>
-        </div>
         <div class="text-white col-12">
             <ul class="list-unstyled list-inline">
                 <li class="px-2 bg-white list-inline-item text-dark font-weight-bold">SOCIAL</li>
@@ -20,8 +12,16 @@
         </div>
         <div class="col-12">
             <ul class="list-unstyled text-white">
+                <li class="px-2 bg-white text-dark font-weight-bold list-inline-item">LINKS</li>
+                {% for link in config.extra.footer1 %}
+                <li class="mr-2 list-inline-item"><a href="{{ link.url }}">{{ link.name }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="col-12">
+            <ul class="list-unstyled text-white">
                 <li class="px-2 list-inline-item text-left bg-white text-dark font-weight-bold">SERVICES PROVIDED</li>
-                {% for link in config.servicesfooter %}
+                {% for link in config.extra.servicesfooter %}
                 <li class="mr-2 list-inline-item"><a href="{{ link.url }}">{{ link.name }}</a></li>
                 {% endfor %}
             </ul>
@@ -30,7 +30,7 @@
             <ul class="list-unstyled text-white">
                 <li class="px-2 list-inline-item text-left bg-white text-dark font-weight-bold">
                     <a class="text-dark" href="/faq#what-areas-do-you-serve">SERVICE AREAS</a></li>
-                {% for area in config.serviceareas | sort %}
+                {% for area in config.extra.serviceareas | sort %}
                 <li class="mr-2 list-inline-item text-capitalize">{{ area }}</li>
                 {% endfor %}
                 <li class="mr-2 list-inline-item"><a href="/faq#what-areas-do-you-serve">Surrounding Areas</a></li>

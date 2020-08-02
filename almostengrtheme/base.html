@@ -31,13 +31,12 @@
 
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav ml-auto">
-          {% for nav_item in config.mainnav %}
+          {% for nav_item in config.extra.mainnav %}
           <li class="nav-item">
             <a class="nav-link text-white text-uppercase" href="{{ nav_item.url }}">{{ nav_item.name }}</a>
           </li>
           {% endfor %}
         </ul>
-        <!-- <form class="mt-2 mt-md-0" method="GET" action="/contact"> -->
         <form class="mt-2 mt-md-0" method="GET" action="/request">
           <button class="btn btn-outline-danger mx-2 text-uppercase" type="submit">Request Service</button>
         </form>
@@ -46,8 +45,8 @@
   </header>
 
   {% if page.is_homepage %}
-  <main role="main" class="">
-    <div id="content-area" class="">
+  <main role="main">
+    <div id="content-area">
       {% include "partial/carousel.html" %}
       <div class="container marketing">
         <div class="m-5"></div>
@@ -59,7 +58,7 @@
   {% else %}
   <main role="main" class="container py-2">
     <div class="row">
-      <div id="content-area" class="col-sm-12 col-lg-8  border-right border-dark">
+      <div id="content-area" class="col-sm-12 col-lg-8 border-lg-right border-dark">
         {% if page.meta.title %}
         <h1>{{ page.meta.title }}</h1>
         {% endif %}
@@ -82,16 +81,22 @@
         {% elif 'blog' in page.url and 'Blog' not in page.title %}
         {% include "partial/blog.html" %}
 
+        {% elif page.url == "links/" %}
+        {{ page.content }}
+        <div class="text-center">
+          {% for link in config.extra.social %}
+          <a href="{{ link.link }}" class="text-uppercase" target="_blank">
+            <i class="fab fa-{{ link.type }}"></i> {{ link.type }}
+          </a>
+          {% endfor %}
+        </div>
+
         {% else %}
         {{ page.content }}
         {% endif %}
+      </div>
 
-        <p><a href="#top" class="text-small">Back to Top</a></p>
-      </div><!-- end content-area -->
-      {% endif %}
-
-      {% if page.is_homepage == false %}
-
+      <!-- sidebar -->
       <div id="sidebar" class="col-sm-12 col-lg-4 p-1">
         <div class="mb-3 border border-dark rounded p-2 bg-dark text-gray">
           <h4 class="text-left border-bottom border-white">
@@ -114,10 +119,13 @@
           </h4>
           {% include "partial/googleadsense.html" %}
         </div>
-      </div><!-- end sidebar -->
+      </div>
+      <!-- end sidebar -->
     </div>
   </main>
   {% endif %}
+
+  <p class="container"><a href="#top" class="text-small">Back to Top</a></p>
 
   {% include "partial/footer.html" %}
 

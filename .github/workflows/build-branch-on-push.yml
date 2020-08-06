@@ -16,7 +16,7 @@ on:
 # help with variables https://github.com/actions/checkout
 
 jobs:
-  apselling:
+  aspelling:
     name: Check Spelling
     runs-on: ubuntu-latest
 

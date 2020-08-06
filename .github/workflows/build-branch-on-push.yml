@@ -19,6 +19,8 @@ jobs:
   aspelling:
     name: Check Spelling
     runs-on: ubuntu-latest
+    outputs:
+      output1: ${{ steps.spellchecker.outputs.run }}
 
     steps:
     - name: Checking out repository
@@ -27,7 +29,17 @@ jobs:
             repository: almostengr/almostengrwebsite
     
     - name: Running aspell
+      id: spellchecker
       run: /usr/bin/find docs -name "*.md" -exec cat {} \; | /usr/bin/aspell list -a
+      
+  verifyspell:
+    name: Verify Spelling Output
+    runs-on: ubuntu-latest
+    needs: [aspelling]
+    
+    steps:
+      - name: print output
+        run: echo ${{needs.aspelling.outputs.output1}}
 
   # spelling:
   #   name: Check Spelling

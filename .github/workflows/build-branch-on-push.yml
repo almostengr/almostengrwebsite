@@ -21,6 +21,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Checking out repository
+      uses: actions/checkout@v2
+      with: 
+            repository: almostengr/almostengrwebsite
+    
     - name: Running aspell
       run: /usr/bin/find docs -name "*.md" -exec cat {} \; | /usr/bin/aspell list -a
 

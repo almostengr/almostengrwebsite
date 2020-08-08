@@ -63,7 +63,7 @@ Stack for building applications locally
 * [LibreOffice Writer](https://www.libreoffice.org) for word processing
 * [Mozilla Firefox](https://www.mozilla.org/en-us/firefox) for browsing and building websites
 * [Oracle Virtual Box](https://virtualbox.org) for running development and home automation virtual servers
-* [PhpMyAdmin](https://phpmyadmin.net) for performing database tasks
+* [PHPMyAdmin](https://phpmyadmin.net) for performing database tasks
 * [OBS (Open Broadcast Studio)](https://obsproject.com/) for recording tutorials
 that I post on my YouTube channel.
 * [Thunderbird](https://thunderbird.net/en-us) for email

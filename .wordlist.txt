@@ -241,7 +241,6 @@ eleifend
 elit
 Elmore
 endfor
-##[endgroup]
 Engr
 enim
 enimSednulla
@@ -340,7 +339,6 @@ grepdata
 groff
 groupId
 Groupon
-##[group]Run
 gshadow
 gss
 Gye
@@ -371,7 +369,6 @@ hotspot
 href
 htaccess
 html
-<htmlcomment>
 http
 https
 iaculis
@@ -652,7 +649,6 @@ pharetra
 phomeassistant
 php
 phpmyadmin
-PhpMyAdmin
 PHPMyAdmin
 pickaxe
 pilers
@@ -788,7 +784,6 @@ sodales
 Sokoto
 sollicitudin
 sos
-!!!Spelling
 springframework
 SpringSource
 sql
@@ -853,7 +848,6 @@ tunables
 turpis
 turpisvitae
 tuscblackchamber
-tv
 txt
 TYU
 U24Z3Ilkht8
@@ -911,7 +905,6 @@ videographers
 Vielka
 viewport
 viminfo
-Virtualbox
 VirtualBox
 VM
 vmware
@@ -927,14 +920,12 @@ Wayfair
 wc
 WD
 webdriver
-Webdriver
 WebDriver
 webhost
 Webmin
 webpage
 WEBPAGE
 webspace
-wemo
 Wemo
 Wes
 wesbos
@@ -952,7 +943,6 @@ wq
 WQ
 writeback
 WRT
-wth
 www
 XAMPP
 XBMC

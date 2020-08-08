@@ -81,7 +81,7 @@ to find out more about that type of work.
 * [Linux Training](/blog/2020.03.01-linux-training-session/)
 * <a href="https://www.youtube.com/watch?v=0cQ2bpKiO-c" target="_blank">Robotic Process Automation (RPA)</a>
 * Search Engine Optimization (SEO)
-* Selenium Webdriver Automation
+* Selenium WebDriver Automation
 * Smart Thermostat Installation
 * Web Application Design
 * Website Design

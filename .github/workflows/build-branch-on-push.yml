@@ -16,51 +16,51 @@ on:
 # help with variables https://github.com/actions/checkout
 
 jobs:
-  aspelling:
-    name: Check Spelling
-    runs-on: ubuntu-latest
-    outputs:
-      output1: ${{ steps.spellchecker.outputs.run }}
-
-    steps:
-    - name: Checking out repository
-      uses: actions/checkout@v2
-      with: 
-            repository: almostengr/almostengrwebsite
-    
-    - name: Running aspell
-      id: spellchecker
-      run: /usr/bin/find docs -name "*.md" -exec cat {} \; | /usr/bin/aspell list -a
-      
-  verifyspell:
-    name: Verify Spelling Output
-    runs-on: ubuntu-latest
-    needs: [aspelling]
-    
-    steps:
-      - name: print output
-        run: echo ${{needs.aspelling.outputs.output1}}
-
-  # spelling:
+  # aspelling:
   #   name: Check Spelling
   #   runs-on: ubuntu-latest
+  #   outputs:
+  #     output1: ${{ steps.spellchecker.outputs.run }}
 
   #   steps:
-  #   - uses: actions/checkout@master
+  #   - name: Checking out repository
+  #     uses: actions/checkout@v2
+  #     with: 
+  #           repository: almostengr/almostengrwebsite
+    
+  #   - name: Running aspell
+  #     id: spellchecker
+  #     run: /usr/bin/find docs -name "*.md" -exec cat {} \; | /usr/bin/aspell list -a
+      
+  # verifyspell:
+  #   name: Verify Spelling Output
+  #   runs-on: ubuntu-latest
+  #   needs: [aspelling]
+    
+  #   steps:
+  #     - name: print output
+  #       run: echo ${{needs.aspelling.outputs.output1}}
 
-  #   - name: Remove duplicates from wordlist
-  #     run: (/bin/cat .wordlist.txt | /usr/bin/sort | /usr/bin/uniq) > .wordlist.tmp
+  spelling:
+    name: Check Spelling
+    runs-on: ubuntu-latest
 
-  #   - name: Moving cleaned wordlist
-  #     run: /bin/mv .wordlist.tmp .wordlist.txt
+    steps:
+    - uses: actions/checkout@master
 
-  #   - uses: rojopolis/spellcheck-github-actions@0.5.0
-  #     name: Spellcheck
+    - name: Remove duplicates from and sort wordlist
+      run: (/bin/cat .wordlist.txt | /usr/bin/sort | /usr/bin/uniq) > .wordlist.tmp
+
+    - name: Moving cleaned wordlist
+      run: /bin/mv .wordlist.tmp .wordlist.txt
+
+    - uses: rojopolis/spellcheck-github-actions@0.5.0
+      name: Spellcheck
 
   build:
     name: Build
     runs-on: ubuntu-latest
-    needs: aspelling
+    needs: spelling
 
     steps:
     - name: Checking out repository ${{ github.event.pull_request.head.sha }}

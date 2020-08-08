@@ -1,0 +1,93 @@
+<!-- <h2 id="requestservice">Request Service</h2> -->
+
+<form method="post">
+    <div class="m-2">
+        <label for="firstname" class="required">First Name</label><br>
+        <input class="form-control" type="text" id="firstname" name="firstname" minlength="2" placeholder="First Name"
+            required>
+    </div>
+
+    <div class="m-2">
+        <label for="lastname" class="required">Last Name</label><br>
+        <input class="form-control" type="text" id="lastname" name="lastname" minlength="2" placeholder="Last Name"
+            required>
+    </div>
+
+    <div class="m-2">
+        <label for="emailer" class="required">Email Address</label><br>
+        <input class="form-control" type="email" id="emailer" name="emailer" minlength="5"
+            placeholder="user@thealmostengineer.com" required>
+        <div class="text-muted">Enter the email address that you can be contacted at.</div>
+    </div>
+
+    <div class="m-2">
+        <label for="phonenum" class="required">Phone Number</label><br>
+        <input class="form-control" type="tel" id="phonenum" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            placeholder="555-555-5555" required class="required">
+        <div class="text-muted">Enter the phone number that you can be contacted at. Enter number in
+            555-555-5555 format.</div>
+    </div>
+
+    <div class="m-2">
+        <label for="servicetype" class="required">What Service Are You Needing?</label><br>
+        <select class="form-control" id="servicetype" name="servicetype" required>
+            <option selected="selected"></option>
+            <optgroup label="Handyman Services">
+                <option value="Air Filter Replcement">Air Filter Replacement</option>
+                <option value="Baby Crib Assembly">Baby Crib Assembly</option>
+                <option value="Bed Assembly">Bed Assembly</option>
+                <option value="Bookcase Assembly">Bookcase Assembly</option>
+                <option value="Ceiling Fan Replacement/Installation">Ceiling Fan Replacement/Installation</option>
+                <option value="Doorbell Replacement/Installation">Doorbell Replacement/Installation</option>
+                <option value="Furniture Assembly">Furniture Assembly</option>
+                <option value="Holiday Lighting and Decorations">Holiday Lighting and Decorations</option>
+                <option value="Home Inspection Fix/Repair Lists">Home Inspection Fix/Repair Lists</option>
+                <option value="Honey Do Lists">Honey Do Lists</option>
+                <option value="Kitchen Island Assembly">Kitchen Island Assembly</option>
+                <option value="Lawn Services (Cutting and Edging)">Lawn Services (Cutting and Edging)</option>
+                <option value="Lighting Fixture Replacement/Installation">
+                    Lighting Fixture Replacement/Installation</option>
+                <option value="Outdoor Furniture Assembly">Outdoor Furniture Assembly</option>
+                <option value="Patio Furniture Assembly">Patio Furniture Assembly</option>
+                <option value="Picture Hanging">Picture Hanging</option>
+                <option value="Shower Head Replacement/Installation">Shower Head Replacement/Installation</option>
+                <option value="Smoke Detector Replacement/Installation">Smoke Detector Replacement/Installation</option>
+                <option value="Table Assembly">Table Assembly</option>
+                <option value="Television (TV) Stand Assembly">Television (TV) Stand Assembly</option>
+                <option value="Television (TV) Wall Mounting">Television (TV) Wall Mounting</option>
+                <option value="Thermostat Replacement/Installation">Thermostat Replacement/Installation</option>
+                <option value="To Do Lists">To Do Lists</option>
+                <option value="Toilet Valve Replacement/Installation">Toilet Valve Replacement/Installation</option>
+                <option value="Trim Repair">Trim Repair</option>
+                <option value="Washing Machine Hose Replacement">Washing Machine Hose Replacement</option>
+                <option value="Window Treatment (Curtains, Blinds, Drapes) Installation">
+                    Window Treatment (Curtains, Blinds, Drapes) Installation</option>
+                <option value="Other Handyman Service">Other Handyman Service</option>
+            </optgroup>
+            <optgroup label="Technology Services">
+                <option value="Computer Repair">Computer Repair</option>
+                <option value="Computer Programming Sessions">Computer Programming Sessions</option>
+                <option value="Drupal Maintenance and Updates">Drupal Maintenance and Updates</option>
+                <option value="Google Analytics Installation and Configuration">Google Analytics Installation and Configuration</option>
+                <option value="Robotic Process Automation (RPA)">Robotic Process Automation (RPA)</option>
+                <option value="Search Engine Optimization (SEO)">Search Engine Optimization (SEO)</option>
+                <option value="Virus and Malware Removal">Virus and Malware Removal</option>
+                <option value="Website Design">Website Design</option>
+                <option value="Other Technical Service">Other Technical Service</option>
+            </optgroup>
+        </select>
+    </div>
+
+    <div class="m-2">
+        <label for="jobdetails">Project Details</label><br />
+        <textarea class="form-control" rows="5" name="jobdetails" id="jobdetails"
+            placeholder="Need exterior trim replaced and painted with rot resistent materials."></textarea>
+        <div class="text-muted">Enter details about the work to be done. The more details, the better.</div>
+    </div>
+
+    <div class="g-recaptcha" data-sitekey="6Ld_BZYUAAAAAMc5Z6e_haYXOHNtjeqgCaaXQOo8"></div>
+
+    <div class="m-2">
+        <input type="submit" class="btn btn-danger" value="Submit" />
+    </div>
+</form>

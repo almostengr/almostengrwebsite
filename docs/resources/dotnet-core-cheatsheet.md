@@ -1,17 +1,17 @@
 # .NET Core CheatSheet 
 
 Cheatsheets have useful commands to do tasks that you may forget. This cheatsheet 
-consisits of commands that I use when buidling .NET Core applicatoins using Visual 
+consisits of commands that I use when buidling .NET Core applications using Visual 
 Studio Code and .NET Core via the command line. 
 
 ## dotnet watch run 
 
 Runs the application. It will also watch the files to see if they have been modified. 
-If they have been modified, the applicatoin will be rebuilt automatically.
+If they have been modified, the application will be rebuilt automatically.
 
 ## dotnet run 
 
-Runs the applicatoin. 
+Runs the application. 
 
 ## dotnet tool install --glboal dotnet-ef 
 

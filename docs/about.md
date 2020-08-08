@@ -1,55 +1,90 @@
-﻿---
-date: 2019-12-22
-description: Information about this blog and Kenny Robinson.
+---
+title: About / Services
+description: Services offered by Almost Engineer Services
+posted: 2020-06-29
 author: Kenny Robinson
 ---
 
-# About
+To see some of the mentioned services being performed, check out our
+<a href="https://www.youtube.com/channel/UC4HCouBLtXD1j1U_17aBqig?sub_confirmation=1"
+    target="_blank">YouTube Channel</a>. You can jump to the [Handyman Services](#handyman-services)
+or the [Technology Services](#technology-services).
 
-## Why A Blog?
+<a class="btn btn-danger" role="button" href="/request">Request Services</a>
 
-Kenny started passively blogging in 2011 after watching 
-[a presentation](/technology/2010.07.22-every-developer-needs-a-blog) by 
-Scott Hanselman that stated every software developer should 
-have a blog. Eventually that blogging habit faded. 
+## Handyman Services
 
-Fast forward to 2018, Kenny attended a gardening workshop that mentioned that every 
-[gardener should have a journal](/gardening/2019.02.23-every-gardener-needs-a-journal). 
+Below are the handyman services that we offer. Some of the services, have a blog post that show
+prior work that has been done as part of that services. We encourage you to read the blog post
+to find out more about that type of work.
 
-As a IT professional, a blog allows you to save code snippets and copy and 
-paste them in your future projects. In 
-addition, it assists other developers with their coding projects, as it may be exactly 
-what they are looking for.
+* Air Filter Replacement
+* Baby Crib Assembly
+* Bed Assembly
+* [Bookcase Assembly](/blog/2019.07.30-reinforce-bookcase-with-plywood)
+* [Ceiling Fan Replacement/Installation](/blog/2020.07.12-ceiling-fan-installation-with-downrod)
+* Desk Assembly
+* Doorbell Replacement/Installation
+* Dresser Assembly
+* Furniture Assembly
+* Hanging Shelves
+* Holiday Lighting and Decorations
+* Home Inspection Fix/Repair Lists
+* Honey Do Lists
+* Kitchen Island Assembly
 
-As a gardener, a blog allows you to track trends and historical information about what you have 
-done in your garden in previous seasons and years.
+![Kitchen Island from Wayfair assembled](/images/kitchenisland.jpg)
 
-## Online Training
+*Kitchen Island from Wayfair assembled*
 
-Kenny has many 
-[tutorials on YouTube](https://www.youtube.com/channel/UC4HCouBLtXD1j1U_17aBqig) 
-that cover programming, home improvement, home automation, and more! New videos 
-are added all the time, so please be sure to
-[subscribe](https://www.youtube.com/channel/UC4HCouBLtXD1j1U_17aBqig?sub_confirmation=1) 
-to the channel.
+* [Lawn Services (Cutting, Edging, Light Landscaping)](/blog/2020.07.21-front-yard-landscaping)
+* Lighting Fixture Replacement/Installation
+* Outdoor Furniture Assembly
+* Patio Furniture Assembly
 
-## Gardening
+![Patio furniture from Wayfair assembled](/images/patiofurniture.jpg)
 
-Gardening started as a hobby for Kenny. After a couple of seasons of success and
-being able to literately taste the fruits of his labor, Kenny decided to 
-expand his green thumb skill set.
+*Patio furniture from Wayfair assembled*
 
-Information about the garden is based on conditions of USDA growing Zone 8a, located
-in the southeastern United States. That being said, the recommendations and suggestions
-that are made on this blog are for this growing zone and are not guaranteed to work in
-other growing zones.
+* Picture Hanging/Hanging Pictures
+* Shower Head Replacement/Installation
+* Smoke Detector Replacement/Installation
+* Table Assembly
+* Television (TV) Stand Assembly
+* Television (TV) Wall Mounting
+* Thermostat (Smart and Non-Smart) Replacement/Installation
 
-## "The Almost Engineer"
+![Honeywell Wifi Thermostat in the process of being installed.](/images/thermostat.jpg)
 
-If you have read this far down the page, you probably are wondering how did Kenny come up 
-with The Almost Engineer name. Kenny works (and according to some live in) in the 
-engineering-related field of Computer Science, has great problem solving skills, and 
-enjoys fixing things instead of paying someone else to do it for him. 
+*Honeywell Wifi Thermostat in the process of being installed.*
 
-However Kenny has a Business degree from the University of Alabama (Roll Tide!) 
-instead of an engineering degree, thus almost being an engineer.
+* To Do Lists
+* [Toilet Leak/Value Repair and Replacement](/blog/2018.07.21-how-to-replace-toilet-gasket-and-bolts/)
+* Trim Repair
+* Washing Machine Hose Replacement
+* Window Blind Installation/Replacement
+* Window Curtain Installation/Replacement
+* Window Drapery Installation/Replacement
+* Window Treatment (Curtains, Blinds, Drapes) Installation
+
+<a class="btn btn-danger" role="button" href="/request">Request Handyman Services</a>
+
+[Back to Top](#top)
+
+## Technology Services
+
+* [Computer Repair](/blog/2018.06.19-replace-optical-drive-in-pc/)
+* <a href="https://www.youtube.com/watch?v=fg9AgEkuy9o" target="_blank">Computer Programming Sessions</a>
+* <a href="https://www.youtube.com/watch?v=DjtIx1my2eE" target="_blank">Drupal Maintenance and Updates</a>
+* Google Analytics Installation and Configuration
+* [Google Search Console](/blog/2020.01.21-google-search-console-reports-500-errors/)
+* [Linux Training](/blog/2020.03.01-linux-training-session/)
+* <a href="https://www.youtube.com/watch?v=0cQ2bpKiO-c" target="_blank">Robotic Process Automation (RPA)</a>
+* Search Engine Optimization (SEO)
+* Selenium WebDriver Automation
+* Smart Thermostat Installation
+* Web Application Design
+* Website Design
+* Wi-Fi Router Installation/Setup
+
+<a class="btn btn-danger" role="button" href="/request">Request Technology Services</a>

@@ -1,50 +1,94 @@
-#site information
-site_name: The Almost Engineer
-site_url: http://thealmostengineer.com
+site_name: Almost Engineer Services
+site_url: https://thealmostengineer.com
 site_description: The blog of Kenny Robinson where he shares his thoughts and experiences.
 site_author: Kenny Robinson, @almostengr
-site_dir: site
-
+copyright: Copyright &copy; 2015-2020 Almost Engineer Services
 google_analytics: ['UA-64643711-1', 'thealmostengineer.com']
 
 # repository information
 repo_url: https://github.com/almostengr
 repo_name: Github
 remote_name: origin
-
-# Copyright
-copyright: Copyright &copy; 2015-2020 Kenny Robinson, The Almost Engineer
+remote_branch: website
 
 # Development server details
-# dev_addr: 192.168.57.111:8000
-# dev_addr: localhost:8000
-dev_addr: 192.168.57.125:8000
+dev_addr: 192.168.57.117:8000
 
 # Appearance
 theme:
-        name: null
-        custom_dir: 'theme'
-        language: en
+  name: null
+  custom_dir: 'almostengrtheme'
+  language: en
+
 extra:
-        social:
-                - type: github
-                  link: /github
-                - type: instagram
-                  link: /instagram
-                - type: linkedin
-                  link: /linkedin
-                - type: stack-overflow
-                  link: https://stackoverflow.com/users/12875554/almostengr
-                - type: twitter
-                  link: /twitter
-                - type: youtube
-                  link: https://www.youtube.com/channel/UC4HCouBLtXD1j1U_17aBqig?sub_confirmation=1"
-                - type: youtube
-                  link: https://www.youtube.com/channel/UCB7rvymUaUbbig3skv2zvCQ?sub_confirmation=1
-                        
+  serviceareas: ['Montgomery County, Alabama', 'Elmore County, Alabama', 'Autauga County, Alabama']
+
+  mainnav:
+    - url: /about#handyman-services
+      name: Handyman
+    - url: /about#technology-services
+      name: Technical
+    - url: /blog
+      name: Blog
+    - url: /uses
+      name: Uses
+    - url: /contact
+      name: Contact
+
+  footer1:
+    - url: /about
+      name: About
+    - url: /payment
+      name: Make Payment
+    - url: /request
+      name: Request Service
+    - url: /search
+      name: Search
+    - url: /blog
+      name: Blog
+    - url: /contact
+      name: Contact
+    - url: /faq
+      name: FAQ
+    - url: /sitemap.xml
+      name: Sitemap
+    - url: /privacy
+      name: Privacy
+
+  servicesfooter:
+    - url: /blog/2020.07.12-ceiling-fan-installation-with-downrod
+      name: Install Ceiling Fan
+    - url: /blog/2019.07.30-reinforce-bookcase-with-plywood
+      name: Bookcase Assembly
+    - url: /blog/2020.07.21-front-yard-landscaping
+      name: Landscaping
+    - url: /blog/2018.07.21-how-to-replace-toilet-gasket-and-bolts
+      name: Toilet Repair
+    - url: /blog/2018.06.19-replace-optical-drive-in-pc/
+      name: Computer Repair
+    - url: /blog/2020.03.01-linux-training-session/
+      name: Linux Training
+
+  social:
+    - type: github
+      link: https://github.com/almostengr
+    - type: instagram
+      link: https://instagram.com/almostengr
+    - type: stack-overflow
+      link: https://stackoverflow.com/users/12875554/almostengr
+    - type: twitter
+      link: https://twitter.com/almostengr
+    - type: youtube
+      link: https://www.youtube.com/channel/UC4HCouBLtXD1j1U_17aBqig?sub_confirmation=1
+
 use_directory_urls: true
 strict: false
 
 markdown_extensions:
-        - meta
-        
+  - meta
+
+plugins:
+  - search
+  - rss
+  - minify: 
+      minify_html: true

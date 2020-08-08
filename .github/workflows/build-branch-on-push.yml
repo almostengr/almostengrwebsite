@@ -1,36 +1,87 @@
 name: Build branch on push
 
 on:
-  push: 
+  push:
     branches:
       - '*'
-      - '!master'
-      - '!gh-pages'
+      - '!main'
+      - '!website'
 
   pull_request:
     branches:
       - '*'
-      - '!master'
-      - '!gh-pages'
+      - '!main'
+      - '!website'
 
 # help with variables https://github.com/actions/checkout
 
 jobs:
-  build:
-    name: buildout
+  # aspelling:
+  #   name: Check Spelling
+  #   runs-on: ubuntu-latest
+  #   outputs:
+  #     output1: ${{ steps.spellchecker.outputs.run }}
+
+  #   steps:
+  #   - name: Checking out repository
+  #     uses: actions/checkout@v2
+  #     with: 
+  #           repository: almostengr/almostengrwebsite
+    
+  #   - name: Running aspell
+  #     id: spellchecker
+  #     run: /usr/bin/find docs -name "*.md" -exec cat {} \; | /usr/bin/aspell list -a
+      
+  # verifyspell:
+  #   name: Verify Spelling Output
+  #   runs-on: ubuntu-latest
+  #   needs: [aspelling]
+    
+  #   steps:
+  #     - name: print output
+  #       run: echo ${{needs.aspelling.outputs.output1}}
+
+  spelling:
+    name: Check Spelling
     runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@master
+
+    - name: Remove duplicates from and sort wordlist
+      run: (/bin/cat .wordlist.txt | /usr/bin/sort | /usr/bin/uniq) > .wordlist.tmp
+
+    - name: Moving cleaned wordlist
+      run: /bin/mv .wordlist.tmp .wordlist.txt
+
+    - uses: rojopolis/spellcheck-github-actions@0.5.0
+      name: Spellcheck
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    needs: spelling
 
     steps:
     - name: Checking out repository ${{ github.event.pull_request.head.sha }}
       uses: actions/checkout@v2
-      with: 
+      with:
         ref: ${{ github.event.pull_request.head.sha }}
 
-    - name: Installing Python
-      run:  python -m pip install --upgrade pip
+    - name: Installing python3
+      run:  /usr/bin/python3 -m pip install --upgrade pip
+
+    - name: Installing setuptools
+      run: /usr/bin/python3 -m pip install --upgrade setuptools
 
     - name: Installing Mkdocs
-      run:  python -m pip install mkdocs
-        
+      run:  /usr/bin/python3 -m pip install --upgrade mkdocs
+
+    - name: Install Minify Plugin
+      run: /usr/bin/python3 -m pip install --upgrade mkdocs-minify-plugin
+
+    - name: Installing Mkdocs
+      run:  /usr/bin/python3 -m pip install --upgrade mkdocs-rss-plugin
+
     - name: Building website
-      run:  python -m mkdocs build
+      run:  /usr/bin/python3 -m mkdocs build

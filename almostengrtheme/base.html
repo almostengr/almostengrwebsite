@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="{{ config.site_name }}" />
+  {% include "partial/description.html" %}
+  {% include "partial/author.html" %}
+  {% include "partial/title.html" %}
+  {% include "partial/image.html" %}
+  {% include "partial/keywords.html" %}
+  {% include "partial/pagetype.html" %}
+  {% include "partial/robots.html" %}
+  {% include "partial/canonical.html" %}
+  {% include "partial/scripts.html" %}
+  {% include "partial/styles.html" %}
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-black">
+      <div>
+        <a class="navbar-brand font-weight-bold" href="/">{{ config.site_name }}</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          {% for nav_item in config.extra.mainnav %}
+          <li class="nav-item">
+            <a class="nav-link text-white text-uppercase" href="{{ nav_item.url }}">{{ nav_item.name }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+        
+        <form class="mt-2 mt-md-0" method="GET" action="/request">
+          <button class="btn btn-outline-danger mx-2 text-uppercase" type="submit">Request Service</button>
+        </form>
+      </div>
+    </nav>
+  </header>
+
+  {% if page.is_homepage %}
+  <main role="main">
+    <div id="content-area">
+      {% include "partial/carousel.html" %}
+      <div class="container marketing">
+        <div class="m-5"></div>
+        {% include "partial/featurette.html" %}
+      </div>
+    </div><!-- end content-area -->
+  </main>
+
+  {% else %}
+  <main role="main" class="container py-2">
+    <div class="row">
+      <div id="content-area" class="col-sm-12 col-lg-8 border-lg-right border-dark">
+        {% if page.meta.title %}
+        <h1>{{ page.meta.title }}</h1>
+        {% endif %}
+
+        {% if page.url == "payment/" %}
+        {{ page.content }}
+        {% include "partial/payment.html" %}
+
+        {% elif page.url == "blog/" %}
+        {% include "partial/bloglist.html" %}
+        {% include "partial/googleadsense.html" %}
+
+        {% elif page.url == "submission/" %}
+        {% include "partial/_submission.html" %}
+
+        {% elif page.url == "request/" %}
+        {{ page.content }}
+        {% include "partial/_request.html" %}
+
+        {% elif 'blog' in page.url and 'Blog' not in page.title %}
+        {% include "partial/blog.html" %}
+
+        {% elif page.url == "links/" %}
+        {{ page.content }}
+        <div class="text-center">
+          {% for link in config.extra.social %}
+          <a href="{{ link.link }}" class="text-uppercase" target="_blank">
+            <i class="fab fa-{{ link.type }}"></i> {{ link.type }}
+          </a>
+          {% endfor %}
+        </div>
+
+        {% else %}
+        {{ page.content }}
+        {% endif %}
+      </div>
+
+      <!-- sidebar -->
+      <div id="sidebar" class="col-sm-12 col-lg-4 p-1">
+        <div class="mb-3 border border-dark rounded p-2 bg-dark text-gray">
+          <h4 class="text-left border-bottom border-white">
+            <span class="bg-white text-dark px-2 font-weight-bold">REQUEST SERVICE</span>
+          </h4>
+          <p>Do you have work that needs to be done and are ready to get started?</p>
+          <p><a class="btn btn-danger" href="/request">GET STARTED!</a></p>
+        </div>
+
+        <div class="mb-3 border border-dark rounded bg-dark p-2 text-gray">
+          <h4 class="text-left border-bottom border-white">
+            <span class="bg-white text-dark px-2 font-weight-bold">BLOG</span>
+          </h4>
+          <p>Check out some of our past projects and work on our <a href="/blog">blog</a>!</p>
+        </div>
+
+        <div class="mb-3 border border-dark rounded bg-dark p-2">
+          <h4 class="text-left border-bottom border-white">
+            <span class="bg-white text-dark px-2 font-weight-bold">SPONSOR</span>
+          </h4>
+          {% include "partial/googleadsense.html" %}
+        </div>
+      </div>
+      <!-- end sidebar -->
+    </div>
+  </main>
+  {% endif %}
+
+  <p class="container"><a href="#top" class="text-small text-red">Back to Top</a></p>
+
+  {% include "partial/footer.html" %}
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery.slim.min.js"><\/script>')</script>
+  <script src="/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

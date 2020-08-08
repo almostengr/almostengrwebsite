@@ -15,3 +15,5 @@ site/
 *sql
 nohup.out
 .vscode
+bootstrap-4.5.0-examples*
+

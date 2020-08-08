@@ -1,0 +1,3 @@
+[submodule "theme/mkdocs-material"]
+	path = theme/mkdocs-material
+	url = https://github.com/squidfunk/mkdocs-material.git

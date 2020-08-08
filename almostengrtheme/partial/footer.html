@@ -1,0 +1,49 @@
+<footer class="bg-black pt-3">
+    <div class="container px-0">
+        <div class="text-white col-12">
+            <ul class="list-unstyled list-inline">
+                <li class="px-2 bg-white list-inline-item text-dark font-weight-bold">SOCIAL</li>
+                {% for link in config.extra.social %}
+                <li class="mr-2 list-inline-item text-capitalize">
+                    <a href="{{ link.link }}" target="_blank">{{ link.type }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="col-12">
+            <ul class="list-unstyled text-white">
+                <li class="px-2 bg-white text-dark font-weight-bold list-inline-item">LINKS</li>
+                {% for link in config.extra.footer1 %}
+                <li class="mr-2 list-inline-item"><a href="{{ link.url }}">{{ link.name }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="col-12">
+            <ul class="list-unstyled text-white">
+                <li class="px-2 list-inline-item text-left bg-white text-dark font-weight-bold">SERVICES PROVIDED</li>
+                {% for link in config.extra.servicesfooter %}
+                <li class="mr-2 list-inline-item"><a href="{{ link.url }}">{{ link.name }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="col-12">
+            <ul class="list-unstyled text-white">
+                <li class="px-2 list-inline-item text-left bg-white text-dark font-weight-bold">
+                    <a class="text-dark" href="/faq#what-areas-do-you-serve">SERVICE AREAS</a></li>
+                {% for area in config.extra.serviceareas | sort %}
+                <li class="mr-2 list-inline-item text-capitalize">{{ area }}</li>
+                {% endfor %}
+                <li class="mr-2 list-inline-item"><a href="/faq#what-areas-do-you-serve">Surrounding Areas</a></li>
+            </ul>
+        </div>
+    </div>
+    <hr class="text-white bg-white container">
+    <div class="text-center text-white bg-black pt-2 pb-5 px-2">
+        <p>{% if config.copyright %} {{ config.copyright }} {%endif%}</p>
+        <p class="text-small">
+            Cookies are used on this website to track your visits, provide advertisements specific
+            to you, and preferences by a third-party.
+            By continuing to use this site, you agree to the use of cookies unless you have disabled them.
+        </p>
+    </div>
+</footer>

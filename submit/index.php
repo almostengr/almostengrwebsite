@@ -1,6 +1,6 @@
 <?php
 
-$env_vars = "../phpenv.php";
+$env_vars = "../../phpenv.php";
 require_once($env_vars);
 
 if(isset($_POST['emailer'])){

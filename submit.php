@@ -19,12 +19,12 @@ if(isset($_POST['submit'])){
     $mail_result = mail($HELPDESK_EMAIL, $subject, $message, $headers);
 
     if ($mail_result){
-        header('Location: /submission');
+        header('Location: https://thealmostengineer.com/submission');
     }
     else {
         echo "Unexpected error occurred";
     }
 }
 else {
-    header('Location: /');
+    header('Location: https://thealmostengineer.com');
 }

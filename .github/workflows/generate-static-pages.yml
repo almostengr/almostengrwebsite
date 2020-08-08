@@ -51,8 +51,5 @@ jobs:
     - name: Fetching branches
       run:  git fetch -p
 
-    - name: Checking out main branch
-      run:  git checkout -b main origin/main
-
     - name: Building static site
       run:  /usr/bin/python3 -m mkdocs gh-deploy -b website

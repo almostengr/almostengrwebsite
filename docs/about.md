@@ -33,7 +33,7 @@ to find out more about that type of work.
 * Honey Do Lists
 * Kitchen Island Assembly
 
-![Kitchen Island from Wayfair assembled](/images/kitchenisland.jpg)
+![Kitchen Island from Wayfair assembled](/images/kitchenisland2.jpg)
 
 *Kitchen Island from Wayfair assembled*
 
@@ -42,7 +42,7 @@ to find out more about that type of work.
 * Outdoor Furniture Assembly
 * Patio Furniture Assembly
 
-![Patio furniture from Wayfair assembled](/images/patiofurniture.jpg)
+![Patio furniture from Wayfair assembled](/images/patiofurniture2.jpg)
 
 *Patio furniture from Wayfair assembled*
 
@@ -54,7 +54,7 @@ to find out more about that type of work.
 * Television (TV) Wall Mounting
 * Thermostat (Smart and Non-Smart) Replacement/Installation
 
-![Honeywell Wifi Thermostat in the process of being installed.](/images/thermostat.jpg)
+![Honeywell Wifi Thermostat in the process of being installed.](/images/thermostat2.jpg)
 
 *Honeywell Wifi Thermostat in the process of being installed.*
 

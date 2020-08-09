@@ -1,6 +1,6 @@
 <?php
 
-$env_vars = "../phpenv.php";
+$env_vars = "../../phpenv.php";
 require_once($env_vars);
 
 if(isset($_POST['emailer'])){
@@ -14,13 +14,13 @@ if(isset($_POST['emailer'])){
     $mail_result = mail($HELPDESK_EMAIL, $subject, $message, $headers);
 
     if ($mail_result){
-        header('Location: https://thealmostengineer.com/submission');
+        header('Location: ' . $base_url . '/submission');
     }
     else {
         echo "Unexpected error occurred";
     }
 }
 else {
-    header('Location: https://thealmostengineer.com');
+    header('Location: ' . $base_url);
 }
 ?>

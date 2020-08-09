@@ -63,3 +63,11 @@ Redirect 301 /drupal-8-tutorial-series-0 /technology/2019.02.27-drupal-8-tutoria
   RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
   RewriteRule ^ http%{ENV:protossl}://%1%{REQUEST_URI} [L,R=301]
 </IfModule>
+
+# caching
+<IfModule mod_headers.c>
+Header set Expires "max-age=A10368000, public"
+Header unset ETag
+Header set Connection keep-alive
+FileETag None
+</IfModule>

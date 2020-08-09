@@ -65,7 +65,6 @@ to find out more about that type of work.
 * Window Blind Installation/Replacement
 * Window Curtain Installation/Replacement
 * Window Drapery Installation/Replacement
-* Window Treatment (Curtains, Blinds, Drapes) Installation
 
 <a class="btn btn-danger" role="button" href="/request">Request Handyman Services</a>
 

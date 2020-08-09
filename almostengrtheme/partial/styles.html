@@ -19,6 +19,10 @@
     }
 </style>
 <!-- Custom styles for this template -->
+{% if page.url == "links/" %}
+<link href="/css/almostengrlinks.css" rel="stylesheet">
+{% endif %}
+
 {% if page.is_homepage %}
 <link href="/css/carousel.min.css" rel="stylesheet">
 {% else %}

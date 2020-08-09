@@ -1,0 +1,15 @@
+div#content-area a {
+    background-color: var(--red);
+    border-radius: 30px;
+    border: #000 solid 4px;
+    color: #000;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    height: calc(1.5em + .75em + 2px);
+    margin-bottom: 1em;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    width: 100%;
+}

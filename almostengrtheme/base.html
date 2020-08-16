@@ -80,7 +80,7 @@
         {{ page.content }}
         {% include "partial/_request.html" %}
 
-        {% elif 'blog' in page.url and 'Blog' not in page.title %}
+        {% elif 'blog' in page.url and page.title != "Blog" %}
         {% include "partial/blog.html" %}
 
         {% elif page.url == "links/" %}
@@ -94,6 +94,8 @@
         </div>
 
         {% else %}
+        basic
+        {{ page.url }}
         {{ page.content }}
         {% endif %}
       </div>

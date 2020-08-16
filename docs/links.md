@@ -4,7 +4,8 @@ description: Links to other resources that are mentioned in posts on social medi
 author: Kenny Robinson, @almostengr
 ---
 
-[Latest Blog Post](/blog/2020.08.08-build-firewood-stand)
+[College Programming Files on GitHub](/blog/2020.08.16-college-programming-course-files-on-github)
+[Building Firewood Stand](/blog/2020.08.08-build-firewood-stand)
 [Front Yard Landscaping](/blog/2020.07.21-front-yard-landscaping)
 
 ---

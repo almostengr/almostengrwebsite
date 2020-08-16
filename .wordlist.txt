@@ -967,3 +967,9 @@ zoneinfo
 zsh
 zynine
 readtime
+microsoft
+MIS
+Interships
+skillsets
+Reddits
+repos

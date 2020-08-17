@@ -1000,3 +1000,10 @@ pcLIq
 rex
 cli
 wp
+wordpress
+Wordpress
+cronjobs
+APIS
+EXECUTABLES
+JSON
+CRON

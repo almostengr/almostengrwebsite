@@ -26,7 +26,7 @@ At the time I am writing this article, I have not done laps around this
 floor in the building, but I will one day.
 
 I have 7 ways that you can get
-[more steps in your day](/blog/lifestyle/2019.05.09-7-steps-for-more-steps).
+[more steps in your day](https://almostengr.github.iohttps://almostengr.github.io/lifestyle/2019.05.09-7-steps-for-more-steps).
 
 ## 2) Water Intake 
 

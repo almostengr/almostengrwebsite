@@ -78,6 +78,7 @@ to find out more about that type of work.
 * Google Analytics Installation and Configuration
 * [Google Search Console](/blog/2020.01.21-google-search-console-reports-500-errors/)
 * [Linux Training](/blog/2020.03.01-linux-training-session/)
+* Printer Installation/Configuration
 * <a href="https://www.youtube.com/watch?v=0cQ2bpKiO-c" target="_blank">Robotic Process Automation (RPA)</a>
 * Search Engine Optimization (SEO)
 * Selenium WebDriver Automation

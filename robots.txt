@@ -3,4 +3,7 @@ Crawl-delay: 10
 Allow: /
 Disallow: submit.php
 Disallow: submission.html
+Disallow: /submission
+Disallow: /404
+Disallow: /500
 Sitemap: https://thealmostengineer.com/sitemap.xml

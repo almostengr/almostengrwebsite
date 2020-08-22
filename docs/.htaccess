@@ -1,17 +1,18 @@
 # Apache settings:
 
 # Handle any server errors
+ErrorDocument 403 /403
 ErrorDocument 404 /404
 ErrorDocument 500 /404
 
 # Do permenant redirects
-Redirect 301 /archive/(.*) /archives
-Redirect 301 /category/(.*) /archives
-Redirect 301 /events/(.*) /speaking
-Redirect 301 /keywords/(.*) /archives
-Redirect 301 /latest-articles /archives
-Redirect 301 /taxonomy/(.*) /archives
-Redirect 301 /recent-posts /archives
+Redirect 301 /archive/(.*) /blog
+Redirect 301 /category/(.*) /blog
+Redirect 301 /events/(.*) /
+Redirect 301 /keywords/(.*) /
+Redirect 301 /latest-articles /blog
+Redirect 301 /taxonomy/(.*) /
+Redirect 301 /recent-posts /blog
 
 Redirect 301 /contact-me /contact
 Redirect 301 /7-reasons-i-can-do-without-app /blog/2019.06.16-7-reasons-i-can-do-that-without-the-app
@@ -32,6 +33,12 @@ Redirect 301 /copying-infested-code /blog/2019.09.05-copying-infested-code
 Redirect 301 /use-twitter-and-rules-farmos-notifications /blog/2018.02.13-use-twitter-and-rules-for-farmos-notifications
 Redirect 301 /use-twitter-and-rules-farmos-notifications-almost-engineered-tech /blog/2018.02.13-use-twitter-and-rules-for-farmos-notifications
 Redirect 301 /drupal-8-tutorial-series-0 /blog/2019.02.27-drupal-8-tutorial-series
+
+# Prevent Apache from serving .htaccess files:
+<FilesMatch "^\.htaccess">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
 
 # Various rewrite rules.
 <IfModule mod_rewrite.c>
@@ -68,14 +75,6 @@ Redirect 301 /drupal-8-tutorial-series-0 /blog/2019.02.27-drupal-8-tutorial-seri
   RewriteRule ^(.*)$ https://thealmostengineer.com/$1 [R=301,L]
 </IfModule>
 
-# caching
-<IfModule mod_headers.c>
-Header set Expires "max-age=A10368000, public"
-Header unset ETag
-Header set Connection keep-alive
-FileETag None
-</IfModule>
-
 ## EXPIRES CACHING ##
 <IfModule mod_expires.c>
 ExpiresActive On
@@ -87,6 +86,7 @@ ExpiresByType image/x-icon "access 1 year"
 ExpiresByType text/css "access 1 month"
 ExpiresByType text/javascript "access 1 month"
 ExpiresByType text/html "access 1 day"
+ExpiresByType text/php "access 1 day"
 ExpiresByType text/x-javascript "access 1 month"
 ExpiresByType application/pdf "access 1 month"
 ExpiresByType application/javascript "access 1 month"
@@ -123,3 +123,9 @@ Header unset ETag
 Header set Connection keep-alive
 FileETag None
 </IfModule>
+
+# disable the server signature
+ServerSignature Off
+
+# disable directory browsing
+Options All -Indexes

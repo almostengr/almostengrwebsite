@@ -2,8 +2,6 @@ User-agent: *
 Crawl-delay: 10
 Allow: /
 Disallow: submit.php
-Disallow: submission.html
 Disallow: /submission
-Disallow: /404
-Disallow: /500
+Disallow: /payment
 Sitemap: https://thealmostengineer.com/sitemap.xml

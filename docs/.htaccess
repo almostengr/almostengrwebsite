@@ -5,7 +5,7 @@ ErrorDocument 403 /403/index.html
 ErrorDocument 404 /404/index.html
 ErrorDocument 500 /500/index.html
 
-# Do permenant redirects
+# Do permanent redirects
 Redirect 301 /archive/(.*) /blog/index.html
 Redirect 301 /category/(.*) /blog/index.html
 Redirect 301 /events/(.*) /

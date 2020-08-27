@@ -1,24 +1,24 @@
 # Apache settings:
 
 # Handle any server errors
-ErrorDocument 403 /403
-ErrorDocument 404 /404
-ErrorDocument 500 /404
+ErrorDocument 403 /403/index.html
+ErrorDocument 404 /404/index.html
+ErrorDocument 500 /500/index.html
 
 # Do permenant redirects
-Redirect 301 /archive/(.*) /blog
-Redirect 301 /category/(.*) /blog
+Redirect 301 /archive/(.*) /blog/index.html
+Redirect 301 /category/(.*) /blog/index.html
 Redirect 301 /events/(.*) /
 Redirect 301 /keywords/(.*) /
-Redirect 301 /latest-articles /blog
+Redirect 301 /latest-articles /blog/index.html
 Redirect 301 /taxonomy/(.*) /
-Redirect 301 /recent-posts /blog
+Redirect 301 /recent-posts /blog/index.html
 
 Redirect 301 /contact-me /contact
 Redirect 301 /7-reasons-i-can-do-without-app /blog/2019.06.16-7-reasons-i-can-do-that-without-the-app
 Redirect 301 /change-air-filter-2013-2018-5th-generation-nissan-altima /blog/2018.10.27-change-air-filter-on-2013-2018-5th-generation-nissan-altima
 Redirect 301 /configure-etckeeper-gitlab /blog/2018.05.15-configure-etckeeper-with-gitlab
-Redirect 301 /faq-frequently-asked-questions /404
+Redirect 301 /faq-frequently-asked-questions /faq/index.html
 Redirect 301 /install-home-assistant-ubuntu-1604-vm-almost-engineered-tech /blog/2018.03.13-install-home-assistant-on-ubuntu-16.04-vm
 Redirect 301 /install-seven-square-ubuntu /blog/2018.07.14-install-seven-square-on-ubuntu
 Redirect 301 /markdown-my-words /blog/2019.07.23-markdown-my-words

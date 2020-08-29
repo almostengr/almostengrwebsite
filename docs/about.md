@@ -33,7 +33,7 @@ to find out more about that type of work.
 * Honey Do Lists
 * Kitchen Island Assembly
 
-![Kitchen Island from Wayfair assembled](/images/kitchenisland2.jpg)
+![Kitchen Island from Wayfair assembled](/images/kitchenisland_optimized.jpg)
 
 *Kitchen Island from Wayfair assembled*
 
@@ -42,7 +42,7 @@ to find out more about that type of work.
 * Outdoor Furniture Assembly
 * Patio Furniture Assembly
 
-![Patio furniture from Wayfair assembled](/images/patiofurniture2.jpg)
+![Patio furniture from Wayfair assembled](/images/patiofurniture_optimized.jpg)
 
 *Patio furniture from Wayfair assembled*
 

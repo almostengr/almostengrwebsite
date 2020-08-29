@@ -1,12 +1,14 @@
 <article>
-    <div class="p-1 font-italic text-small rounded">
-        {% if page.meta.readtime %}
-        <strong>Read Time:</strong> {{ page.meta.readtime }} minutes
+    <div class="p-1 font-italic text-small rounded text-center">
+        {% if page.meta.posted %}
+        <strong>Posted:</strong> {{ page.meta.posted }} |
         {% endif %}
 
         {% if page.meta.updated %}
-        <strong>Updated:</strong> {{ page.meta.updated }}
+        <strong>Updated:</strong> {{ page.meta.updated }} |
         {% endif %}
+
+        <strong>Read Time:</strong> {{ page.content | wordcount // 200 }} minutes
     </div>
 
     {{ page.content }}
@@ -14,6 +16,8 @@
     <div class="bg-light border border-danger my-3 p-3 rounded">
     {% if page.meta.posted %}
     <strong>Published:</strong> {{ page.meta.posted }}
+    {% elif page.meta.updated %}
+    <strong>Published:</strong> {{ page.meta.updated }}
     {% endif %}
 
     {% if page.meta.updated %}
@@ -40,5 +44,8 @@
     {% if page.meta.readtime %}
     <strong>Read Time:</strong> {{ page.meta.readtime }} minutes<br />
     {% endif %}
+
+    <strong>Words:</strong> {{ page.content | wordcount }}<br />
+    <strong>Read Time:</strong> {{ page.content | wordcount // 200 }} minutes
     </div>
 </article>

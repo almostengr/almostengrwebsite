@@ -966,7 +966,6 @@ Zl
 zoneinfo
 zsh
 zynine
-readtime
 microsoft
 MIS
 Interships

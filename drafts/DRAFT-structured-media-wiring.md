@@ -1,5 +1,5 @@
 ---
-category: technology
+category: Technology
 ---
 # Structured Media Wiring
 

@@ -1,4 +1,5 @@
 <article>
+    {% if page.meta.title %}
     <div class="p-1 font-italic text-small rounded text-center">
         {% if page.meta.posted %}
         <strong>Posted:</strong> {{ page.meta.posted }} |
@@ -8,8 +9,9 @@
         <strong>Updated:</strong> {{ page.meta.updated }} |
         {% endif %}
 
-        <strong>Read Time:</strong> {{ page.content | wordcount // 200 }} minutes
+        <strong>Read Time:</strong> {{ page.content | wordcount // 200 }} minute(s)
     </div>
+    {% endif %}
 
     {{ page.content }}
 
@@ -19,6 +21,7 @@
     {% elif page.meta.updated %}
     <strong>Published:</strong> {{ page.meta.updated }}
     {% endif %}
+    <br />
 
     {% if page.meta.updated %}
     <strong>Updated:</strong> {{ page.meta.updated }}<br />
@@ -29,7 +32,7 @@
     {% endif %}
 
     {% if page.meta.category %}
-    <strong>Category:</strong> {{ page.meta.category }}<br />
+    <strong>Category:</strong> {{ page.meta.category | capitalize }}<br />
     {% endif %}
 
     {% if page.meta.keywords %}
@@ -41,11 +44,7 @@
         target="_blank">{{ page.meta.youtube }}</a><br />
     {% endif %}
 
-    {% if page.meta.readtime %}
-    <strong>Read Time:</strong> {{ page.meta.readtime }} minutes<br />
-    {% endif %}
-
+    <strong>Read Time:</strong> {{ page.content | wordcount // 200 }} minute(s)<br />
     <strong>Words:</strong> {{ page.content | wordcount }}<br />
-    <strong>Read Time:</strong> {{ page.content | wordcount // 200 }} minutes
     </div>
 </article>

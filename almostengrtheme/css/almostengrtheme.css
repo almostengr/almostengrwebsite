@@ -122,3 +122,13 @@ label.required:after {
     content: ' *';
     color: var(--light-red-color);
 }
+
+ul.nav.nav-tabs li.nav-item a.active {
+    background-color: #343a40!important;
+    color: var(--light-red-color);
+}
+
+ul.nav.nav-tabs li.nav-item a:hover {
+    background-color: #343a40!important;
+    color: #fff;
+}

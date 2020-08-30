@@ -59,12 +59,25 @@ jobs:
     needs: build
 
     steps:
-    - name: Execute SSH commmands on remote server
-      uses: JimCronqvist/action-ssh@master
+    # - name: Deploy code to production
+    #   uses: JimCronqvist/action-ssh@0.1.1
+    #   with:
+    #     hosts: ${{ secrets.LOGIN }}
+    #     privateKey: ${{ secrets.PRIVATE_KEY }}
+    #     debug: false
+    #     command: |
+    #       cd
+    #       cd www
+    #       git pull
+
+    - name: Deploy code to production
+      uses: fifsky/ssh-action@master
       with:
-        hosts: ${{ secrets.LOGIN }}
-        privateKey: ${{ secrets.PRIVATE_KEY }}
-        command: |
+        command: | 
           cd
           cd www
           git pull
+        host: "thealmostengineer.com"
+        key: ${{ secrets.PRIVATE_KEY }}
+        post: ${{ secrets.PORT_NUMBER }}
+        user: ${{ secrets.USERNAME }}

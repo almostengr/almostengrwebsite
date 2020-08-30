@@ -65,12 +65,8 @@ jobs:
         hosts: ${{ secrets.LOGIN }}
         privateKey: ${{ secrets.PRIVATE_KEY }}
         debug: false
-        command: |
-          cd
-          cd www
-          git pull
-          exit
-          
+        command: cd && cd www && git pull && exit
+
     # - name: Deploy code to production
     #   uses: fifsky/ssh-action@master
     #   with:

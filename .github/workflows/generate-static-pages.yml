@@ -59,26 +59,26 @@ jobs:
     needs: build
 
     steps:
-    # - name: Deploy code to production
-    #   uses: JimCronqvist/action-ssh@0.1.1
-    #   with:
-    #     hosts: ${{ secrets.LOGIN }}
-    #     privateKey: ${{ secrets.PRIVATE_KEY }}
-    #     debug: false
-    #     command: |
-    #       cd
-    #       cd www
-    #       git pull
-
     - name: Deploy code to production
-      uses: fifsky/ssh-action@master
+      uses: JimCronqvist/action-ssh@0.1.1
       with:
-        command: | 
+        hosts: ${{ secrets.LOGIN }}
+        privateKey: ${{ secrets.PRIVATE_KEY }}
+        debug: false
+        command: |
           cd
           cd www
           git pull
-          exit
-        host: "thealmostengineer.com"
-        key: ${{ secrets.PRIVATE_KEY }}
-        post: ${{ secrets.PORT_NUMBER }}
-        user: ${{ secrets.USERNAME }}
+
+    # - name: Deploy code to production
+    #   uses: fifsky/ssh-action@master
+    #   with:
+    #     command: | 
+    #       cd
+    #       cd www
+    #       git pull
+    #       exit
+    #     host: "thealmostengineer.com"
+    #     key: ${{ secrets.PRIVATE_KEY }}
+    #     post: ${{ secrets.PORT_NUMBER }}
+    #     user: ${{ secrets.USERNAME }}

@@ -69,7 +69,8 @@ jobs:
           cd
           cd www
           git pull
-
+          exit
+          
     # - name: Deploy code to production
     #   uses: fifsky/ssh-action@master
     #   with:

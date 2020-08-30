@@ -24,20 +24,18 @@ extra:
   serviceareas: ['Montgomery County, Alabama', 'Elmore County, Alabama', 'Autauga County, Alabama']
 
   mainnav:
-    - url: /about#handyman-services
-      name: Handyman
-    - url: /about#technology-services
-      name: Technical
+    - url: /about
+      name: Services
     - url: /blog
       name: Blog
-    - url: /uses
-      name: Uses
     - url: /contact
       name: Contact
 
   footer1:
     - url: /about
       name: About
+    - url: /uses
+      name: Uses
     - url: /payment
       name: Make Payment
     - url: /request

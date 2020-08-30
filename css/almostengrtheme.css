@@ -132,3 +132,8 @@ ul.nav.nav-tabs li.nav-item a:hover {
     background-color: #343a40!important;
     color: #fff;
 }
+
+iframe.youtube {
+    margin: 0 auto;
+    display: block;
+}

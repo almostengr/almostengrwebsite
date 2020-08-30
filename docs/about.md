@@ -18,6 +18,14 @@ Below are the handyman services that we offer. Some of the services, have a blog
 prior work that has been done as part of that services. We encourage you to read the blog post
 to find out more about that type of work.
 
+### Service Area
+
+Handyman services are provided in Montgomery County, Alabama; Autauga County, Alabama; and
+Elmore County, Alabama. Customers outside of theses areas may request services, but may be subject to mileage
+and travel fees. See the [FAQ page](/faq#what-areas-do-you-serve) for more information.
+
+### Handyman Services Offered
+
 * Air Filter Replacement
 * Baby Crib Assembly
 * Bed Assembly
@@ -33,7 +41,7 @@ to find out more about that type of work.
 * Honey Do Lists
 * Kitchen Island Assembly
 
-![Kitchen Island from Wayfair assembled](/images/kitchenisland2.jpg)
+![Kitchen Island from Wayfair assembled](/images/kitchenisland_optimized.jpg)
 
 *Kitchen Island from Wayfair assembled*
 
@@ -42,7 +50,7 @@ to find out more about that type of work.
 * Outdoor Furniture Assembly
 * Patio Furniture Assembly
 
-![Patio furniture from Wayfair assembled](/images/patiofurniture2.jpg)
+![Patio furniture from Wayfair assembled](/images/patiofurniture_optimized.jpg)
 
 *Patio furniture from Wayfair assembled*
 

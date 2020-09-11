@@ -1,10 +1,8 @@
-using System.IO;
-using System.Reflection;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 
-namespace Almostengr.websitetests
+namespace Almostengr.WebsiteTests
 {
     [TestFixture]
     public class RequestServicesTest

@@ -31,3 +31,5 @@ The generated HTML code from the Markdown files in main branch. This branch is b
 Below are some of the content that I referenced when building the technical aspects of this website
 
 * [.htaccess files](https://perishablepress.com/stupid-htaccess-tricks/#gen3)
+* [Jinja Template Language](https://jinja.palletsprojects.com/en/2.11.x/)
+* [MkDocs](https://www.mkdocs.org/)

@@ -33,3 +33,9 @@ Below are some of the content that I referenced when building the technical aspe
 * [.htaccess files](https://perishablepress.com/stupid-htaccess-tricks/#gen3)
 * [Jinja Template Language](https://jinja.palletsprojects.com/en/2.11.x/)
 * [MkDocs](https://www.mkdocs.org/)
+
+## Automated Tests
+
+This project does contain automated tests. Long term goal is to have those test used in the 
+CI/CD (Continous Integration/Continuous Development) process to be leveraged by GitHub Actions. I have 
+created a video series on how I built this automation, which will be released at a later time.

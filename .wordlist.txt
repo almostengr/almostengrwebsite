@@ -1036,3 +1036,4 @@ roku
 tv
 xcp
 mockups
+boolean

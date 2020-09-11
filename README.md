@@ -37,5 +37,5 @@ Below are some of the content that I referenced when building the technical aspe
 ## Automated Tests
 
 This project does contain automated tests. Long term goal is to have those test used in the 
-CI/CD (Continous Integration/Continuous Development) process to be leveraged by GitHub Actions. I have 
+CI/CD (Continuous Integration/Continuous Development) process to be leveraged by GitHub Actions. I have 
 created a video series on how I built this automation, which will be released at a later time.

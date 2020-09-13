@@ -69,7 +69,7 @@
   {% endif %}
 
   {% if config.google_analytics %}
-  <script>
+  <script type="text/javascript">
   (function (i, s, o, g, r, a, m) {
       i['GoogleAnalyticsObject'] = r;
       i[r] = i[r] || function () {
@@ -141,7 +141,8 @@
         </ul>
         
         <form class="mt-2 mt-md-0" method="GET" action="/request">
-          <button class="btn btn-outline-danger mx-2 text-uppercase" id="requestservice" type="submit">Request Service</button>
+          <button class="btn btn-outline-danger mx-2 text-uppercase" id="requestservice" 
+            type="submit">Request Service</button>
         </form>
       </div>
     </nav>
@@ -155,7 +156,7 @@
         <div class="m-5"></div>
         {% include "partial/_featurette.html" %}
       </div>
-    </div><!-- end content-area -->
+    </div>
   </main>
 
   {% else %}
@@ -258,16 +259,6 @@
                 {% endfor %}
             </ul>
         </div>
-        <!-- <div class="col-12">
-            <ul class="list-unstyled text-white">
-                <li class="px-2 list-inline-item text-left bg-white text-dark font-weight-bold">
-                    <a class="text-dark" href="/faq#what-areas-do-you-serve">SERVICE AREAS</a></li>
-                {% for area in config.extra.serviceareas | sort %}
-                <li class="mr-2 list-inline-item text-capitalize">{{ area }}</li>
-                {% endfor %}
-                <li class="mr-2 list-inline-item"><a href="/faq#what-areas-do-you-serve">Surrounding Areas</a></li>
-            </ul>
-        </div> -->
     </div>
     <hr class="text-white bg-white container">
     <div class="text-center text-white bg-black pt-2 pb-5 px-2">
@@ -278,7 +269,7 @@
             By continuing to use this site, you agree to the use of cookies unless you have disabled them.
         </p>
     </div>
-</footer>
+  </footer>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -287,5 +278,4 @@
   <script src="/js/bootstrap.bundle.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
 </body>
-
 </html>

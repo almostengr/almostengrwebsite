@@ -1,0 +1,87 @@
+{{ page.content }}
+
+<ul class="nav nav-tabs nav-fill mx-2 border-secondary">
+    <li class="nav-item"><a href="#technology" data-toggle="tab" class="active nav-link">Technology</a></li>
+    <li class="nav-item"><a href="#diy" data-toggle="tab" class="nav-link">DIY/Handyman</a></li>
+    <li class="nav-item"><a href="#youtube" data-toggle="tab" class="nav-link">YouTube</a></li>
+    <li class="nav-item"><a href="#all" data-toggle="tab" class="nav-link">All</a></li>
+</ul>
+
+<div class="tab-content pt-2">
+{% for nav_item in nav %}
+    {% if nav_item.children %}
+    <div id="technology" class="tab-pane active">
+        <ul>
+            {% for nav_item in nav_item.children | reverse %}
+                {% if 'blog' in nav_item.url and nav_item.title != "Blog" and nav_item.meta.category == "Technology" %}
+                    <li class="{% if nav_item.active%}current{% endif %}">
+                        <a href="{{ nav_item.url|url }}">
+                        {% if nav_item.meta.posted %} [{{ nav_item.meta.posted }}] {% endif %}
+                        {% if nav_item.meta.title %}
+                            {{ nav_item.meta.title | title }}
+                        {% else %} 
+                            {{ nav_item.title | title }}
+                        {% endif %}
+                        </a>
+                    </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+    <div id="diy" class="tab-pane">
+        <ul>
+            {% for nav_item in nav_item.children | reverse %}
+                {% if 'blog' in nav_item.url and nav_item.title != "Blog" and nav_item.meta.category == "Handyman" %}
+                    <li class="{% if nav_item.active%}current{% endif %}">
+                        <a href="{{ nav_item.url|url }}">
+                        {% if nav_item.meta.posted %} [{{ nav_item.meta.posted }}] {% endif %}
+                        {% if nav_item.meta.title %}
+                            {{ nav_item.meta.title | title }}
+                        {% else %} 
+                            {{ nav_item.title | title }}
+                        {% endif %}
+                        </a>
+                    </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+    <div id="youtube" class="tab-pane">
+        <ul>
+            {% for nav_item in nav_item.children | reverse %}
+                {% if 'blog' in nav_item.url and nav_item.title != "Blog" and nav_item.meta.youtube %}
+                    <li class="{% if nav_item.active%}current{% endif %}">
+                        <a href="{{ nav_item.url|url }}">
+                        {% if nav_item.meta.posted %} [{{ nav_item.meta.posted }}] {% endif %}
+                        {% if nav_item.meta.title %}
+                            {{ nav_item.meta.title | title }}
+                        {% else %} 
+                            {{ nav_item.title | title }}
+                        {% endif %}
+                        </a>
+                    </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+    <div id="all" class="tab-pane">
+        <ul>
+            {% for nav_item in nav_item.children | reverse %}
+                {% if 'blog' in nav_item.url and nav_item.title != "Blog" %}
+                    <li class="{% if nav_item.active%}current{% endif %}">
+                        <a href="{{ nav_item.url|url }}">
+                        {% if nav_item.meta.posted %} [{{ nav_item.meta.posted }}] {% endif %}
+                        {% if nav_item.meta.title %}
+                            {{ nav_item.meta.title | title }}
+                        {% else %} 
+                            {{ nav_item.title | title }}
+                        {% endif %}
+                        </a>
+                    </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
+{% endfor %}
+</div>

@@ -7,13 +7,11 @@ namespace Almostengr.WebsiteTests
     [TestFixture]
     public class RequestServicesTest
     {
-        IWebDriver _driver = null;
-        // private readonly string driverPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+        private IWebDriver _driver = null;
 
-        [SetUp]
+        [OneTimeSetUp]
         public void Setup()
         {
-            // _driver = new ChromeDriver(driverPath);
             _driver = new ChromeDriver();
         }
 
@@ -39,7 +37,7 @@ namespace Almostengr.WebsiteTests
             Assert.IsTrue(_driver.PageSource.Contains(placeholderLastName));
         }
 
-        [TearDown]
+        [OneTimeTearDown]
         public void Close()
         {
             _driver.Quit();

@@ -1,24 +1,125 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <meta property="og:locale" content="en_US" />
   <meta property="og:site_name" content="{{ config.site_name }}" />
-  {% include "partial/description.html" %}
-  {% include "partial/author.html" %}
-  {% include "partial/title.html" %}
-  {% include "partial/image.html" %}
-  {% include "partial/keywords.html" %}
-  {% include "partial/pagetype.html" %}
-  {% include "partial/robots.html" %}
-  {% include "partial/canonical.html" %}
-  {% include "partial/scripts.html" %}
-  {% include "partial/styles.html" %}
-  {% include "partial/favicon.html" %}
-</head>
+  
+  {% if page.meta.description %}
+  <meta name="description" content="{{ page.meta.description }}">
+  <meta property="og:description" content="{{ page.meta.description }}" />
+  <meta name="twitter:description" content="{{ page.meta.description }}" />
+  {% elif config.site_description %}
+  <meta name="description" content="{{ config.site_description }}">
+  <meta property="og:description" content="{{ config.site_description }}" />
+  <meta name="twitter:description" content="{{ config.site_description }}" />
+  {% endif %}
 
+  {% if page.meta.author %}
+  <meta name="author" content="{{ page.meta.author }}">
+  {% else %}
+  <meta name="author" content="{{ config.site_author }}">
+  {% endif %}
+
+  {% if page.meta.title %}
+  <title>{{ page.meta.title | striptags }} | {{ config.site_name }}</title>
+  <meta property="og:title" content="{{ page.meta.title }}" />
+  <meta name="twitter:title" content="{{ page.meta.title }}" />
+  {% elif page.title and not page.is_homepage %}
+  <title>{{ page.title | striptags }} | {{ config.site_name }}</title>
+  <meta property="og:title" content="{{ page.title | striptags }}" />
+  <meta name="twitter:title" content="{{ page.title | striptags }}" />
+  {% else %}
+  <title>{{ config.site_name }}</title>
+  <meta property="og:title" content="{{ config.site_name }}" />
+  <meta name="twitter:title" content="{{ config.site_name }}" />
+  {% endif %}
+
+  {% if page.meta.image %}
+  <meta property="og:image" content="{{ page.meta.image | url }}" />
+  <meta name="twitter:image" content="{{ page.meta.image | url }}" />
+  {% endif %}
+
+  {% if page.meta.keywords %}
+  <meta name="keywords" content="{{ page.meta.keywords }}" />
+  {% endif %}
+
+  {% if page.meta.ogtype %}
+  <meta property="og:type" content="{{ page.meta.ogtype }}" />
+  {% elif 'blog' in page.url %}
+  <meta property="og:type" content="article" />
+  {% else %}
+  <meta property="og:type" content="website" />
+  {% endif %}
+
+  {% if page.meta.robots %}
+  <meta name="robots" content="{{ page.meta.robots }}" />
+  {% else %}
+  <meta name="robots" content="index, follow" />
+  {% endif %}
+
+  {% if page.canonical_url %}
+  <link rel="canonical" href="{{ page.canonical_url | url }}">
+  <meta property="og:url" content="{{ page.canonical_url | url }}" />
+  {% endif %}
+
+  {% if page.meta.youtube %}
+  <meta property="og:video" content="{{ page.meta.youtube }}" />
+  {% endif %}
+
+  {% if config.google_analytics %}
+  <script type="text/javascript">
+  (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+  ga('create', '{{ config.google_analytics[0] }}', '{{ config.google_analytics[1] }}');
+  ga('send', 'pageview');
+  </script>
+  {% endif %}
+
+  {% if page.url == "request/" %}
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  {% endif %}
+
+  <script async src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js"></script>
+
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/almostengrtheme.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/default.min.css">
+  <link rel="stylesheet" href="/css/a11y-dark-theme.min.css">
+
+  <style type="text/css">
+      .bd-placeholder-img {font-size: 1.125rem;text-anchor: middle;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
+      @media (min-width: 768px) {.bd-placeholder-img-lg {font-size: 3.5rem;}}
+  </style>
+
+  <!-- Custom styles for by page -->
+  {% if page.url == "links/" %}
+  <link rel="stylesheet" href="/css/almostengrlinks.min.css">
+  {% endif %}
+
+  {% if page.is_homepage %}
+  <link rel="stylesheet" href="/css/carousel.min.css">
+  {% else %}
+  <link rel="stylesheet" href="/css/navbar-top-fixed.min.css">
+  {% endif %}
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="manifest" href="/images/site.webmanifest">
+</head>
 <body>
   <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-black">
@@ -40,7 +141,8 @@
         </ul>
         
         <form class="mt-2 mt-md-0" method="GET" action="/request">
-          <button class="btn btn-outline-danger mx-2 text-uppercase" id="requestservice" type="submit">Request Service</button>
+          <button class="btn btn-outline-danger mx-2 text-uppercase" id="requestservice" 
+            type="submit">Request Service</button>
         </form>
       </div>
     </nav>
@@ -49,12 +151,12 @@
   {% if page.is_homepage %}
   <main role="main">
     <div id="content-area">
-      {% include "partial/carousel.html" %}
+      {% include "partial/_carousel.html" %}
       <div class="container marketing">
         <div class="m-5"></div>
-        {% include "partial/featurette.html" %}
+        {% include "partial/_featurette.html" %}
       </div>
-    </div><!-- end content-area -->
+    </div>
   </main>
 
   {% else %}
@@ -67,11 +169,11 @@
 
         {% if page.url == "payment/" %}
         {{ page.content }}
-        {% include "partial/payment.html" %}
+        {% include "partial/_payment.html" %}
 
         {% elif page.url == "blog/" %}
-        {% include "partial/bloglist.html" %}
-        {% include "partial/googleadsense.html" %}
+        {% include "partial/_bloglist.html" %}
+        {% include "partial/_googleadsense.html" %}
 
         {% elif page.url == "submission/" %}
         {% include "partial/_submission.html" %}
@@ -81,7 +183,7 @@
         {% include "partial/_request.html" %}
 
         {% elif 'blog' in page.url and page.title != "Blog" %}
-        {% include "partial/blog.html" %}
+        {% include "partial/_blog.html" %}
 
         {% elif page.url == "links/" %}
         {{ page.content }}
@@ -119,7 +221,7 @@
           <h4 class="text-left border-bottom border-white">
             <span class="bg-white text-dark px-2 font-weight-bold">SPONSORED BY</span>
           </h4>
-          {% include "partial/googleadsense.html" %}
+          {% include "partial/_googleadsense.html" %}
         </div>
       </div>
       <!-- end sidebar -->
@@ -129,7 +231,45 @@
 
   <p class="container"><a href="#top" class="text-small text-red">Back to Top</a></p>
 
-  {% include "partial/footer.html" %}
+  <footer class="bg-black pt-3">
+    <div class="container px-0">
+        <div class="text-white col-12">
+            <ul class="list-unstyled list-inline">
+                <li class="px-2 bg-white list-inline-item text-dark font-weight-bold">SOCIAL</li>
+                {% for link in config.extra.social %}
+                <li class="mr-2 list-inline-item text-capitalize">
+                    <a href="{{ link.link }}" target="_blank">{{ link.type }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="col-12">
+            <ul class="list-unstyled text-white">
+                <li class="px-2 bg-white text-dark font-weight-bold list-inline-item">LINKS</li>
+                {% for link in config.extra.footer1 %}
+                <li class="mr-2 list-inline-item"><a href="{{ link.url }}">{{ link.name }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="col-12">
+            <ul class="list-unstyled text-white">
+                <li class="px-2 list-inline-item text-left bg-white text-dark font-weight-bold">SERVICES PROVIDED</li>
+                {% for link in config.extra.servicesfooter %}
+                <li class="mr-2 list-inline-item"><a href="{{ link.url }}">{{ link.name }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    <hr class="text-white bg-white container">
+    <div class="text-center text-white bg-black pt-2 pb-5 px-2">
+        <p>{% if config.copyright %} {{ config.copyright }} {%endif%}</p>
+        <p class="text-small">
+            Cookies are used on this website to track your visits, provide advertisements specific
+            to you, and preferences by a third-party.
+            By continuing to use this site, you agree to the use of cookies unless you have disabled them.
+        </p>
+    </div>
+  </footer>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -138,5 +278,4 @@
   <script src="/js/bootstrap.bundle.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
 </body>
-
 </html>

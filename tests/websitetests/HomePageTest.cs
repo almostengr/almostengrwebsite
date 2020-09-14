@@ -8,9 +8,9 @@ namespace Almostengr.WebsiteTests
     [TestFixture]
     public class HomePageTest
     {
-        IWebDriver _driver = null;
+        private IWebDriver _driver = null;
 
-        [SetUp]
+        [OneTimeSetUp]
         public void Setup()
         {
             _driver = new ChromeDriver();
@@ -64,7 +64,22 @@ namespace Almostengr.WebsiteTests
             Assert.True(_driver.FindElement(By.Id("technology-services")).Text.Equals("Technology Services"));
         }
 
-        [TearDown]
+        [Test]
+        public void ClickContact()
+        {
+            // arrange 
+
+            // act 
+            GoHome();
+            _driver.FindElement(By.LinkText("CONTACT")).Click();
+
+            // assert
+            Assert.True(_driver.FindElement(By.TagName("h1")).Text.Equals("Contact"));
+            Assert.True(_driver.FindElement(By.LinkText("@almostengr on Instagram")).GetAttribute("href").Equals("https://instagram.com/almostengr"));
+            Assert.True(_driver.FindElement(By.LinkText("@almostengr on Twitter")).GetAttribute("href").Equals("https://twitter.com/almostengr"));
+        }
+
+        [OneTimeTearDown]
         public void Close()
         {
             _driver.Quit();

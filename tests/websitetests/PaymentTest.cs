@@ -1,3 +1,4 @@
+using System;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
@@ -5,7 +6,7 @@ using OpenQA.Selenium.Chrome;
 namespace Almostengr.WebsiteTests
 {
     [TestFixture]
-    public class RequestServicesTest
+    public class PaymentTest
     {
         private IWebDriver _driver = null;
 
@@ -22,23 +23,21 @@ namespace Almostengr.WebsiteTests
         }
 
         [Test]
-        public void ClickRequestService()
+        public void CheckPayPal()
         {
-            // arrange
-            string placeholderPhone = "555-555-5555";
-            string placeholderLastName = "Last Name";
+            // arrange 
 
             // act
             GoHome();
-            _driver.FindElement(By.Id("requestservice")).Click();
+            _driver.FindElement(By.LinkText("Make Payment")).Click();
 
             // assert
-            Assert.IsTrue(_driver.PageSource.Contains(placeholderPhone));
-            Assert.IsTrue(_driver.PageSource.Contains(placeholderLastName));
+            Assert.True(_driver.PageSource.Contains("PayPal"));
+            Assert.True(_driver.PageSource.Contains("CashApp"));
         }
 
         [OneTimeTearDown]
-        public void Close()
+        public void TearDown()
         {
             _driver.Quit();
         }

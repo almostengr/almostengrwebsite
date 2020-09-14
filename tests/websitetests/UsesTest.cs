@@ -5,7 +5,7 @@ using OpenQA.Selenium.Chrome;
 namespace Almostengr.WebsiteTests
 {
     [TestFixture]
-    public class RequestServicesTest
+    public class UsesTest
     {
         private IWebDriver _driver = null;
 
@@ -22,23 +22,18 @@ namespace Almostengr.WebsiteTests
         }
 
         [Test]
-        public void ClickRequestService()
+        public void NavigateUsesPage()
         {
-            // arrange
-            string placeholderPhone = "555-555-5555";
-            string placeholderLastName = "Last Name";
-
-            // act
             GoHome();
-            _driver.FindElement(By.Id("requestservice")).Click();
+            _driver.FindElement(By.LinkText("Uses")).Click();
 
-            // assert
-            Assert.IsTrue(_driver.PageSource.Contains(placeholderPhone));
-            Assert.IsTrue(_driver.PageSource.Contains(placeholderLastName));
+            Assert.AreEqual(_driver.FindElement(By.Id("handyman-tools")).Text, "Handyman Tools");
+            Assert.AreEqual(_driver.FindElement(By.Id("technology-tools")).Text, "Technology Tools");
+            Assert.AreEqual(_driver.FindElement(By.Id("other-uses-pages")).Text, "Other Uses Pages");
         }
 
         [OneTimeTearDown]
-        public void Close()
+        public void TearDown()
         {
             _driver.Quit();
         }

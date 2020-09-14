@@ -7,9 +7,9 @@ namespace Almostengr.WebsiteTests
     [TestFixture]
     public class BlogTest
     {
-        IWebDriver _driver = null;
+        private IWebDriver _driver = null;
 
-        [SetUp]
+        [OneTimeSetUp]
         public void Setup()
         {
             _driver = new ChromeDriver();
@@ -27,12 +27,10 @@ namespace Almostengr.WebsiteTests
             // arrange
 
             // act
-
             GoHome();
             _driver.FindElement(By.LinkText("BLOG")).Click();
 
             // assert
-
             Assert.True(_driver.PageSource.Contains("[2018-10-20] Upgrade Ubuntu 16.04 To 18.04"));
             Assert.True(_driver.PageSource.Contains("[2018-01-14] Farmos Nws 2.0"));
             Assert.False(_driver.PageSource.Contains("[2010-07-23] Every Developer Needs A Blog"));
@@ -44,13 +42,11 @@ namespace Almostengr.WebsiteTests
             // arrange
 
             // act
-
             GoHome();
             _driver.FindElement(By.LinkText("BLOG")).Click();
             _driver.FindElement(By.LinkText("DIY/Handyman")).Click();
 
             // assert
-
             Assert.True(_driver.FindElement(By.TagName("h1")).Text.Contains("Blog"));
             Assert.True(_driver.PageSource.Contains("How To Replace Toilet Gasket And Bolts"));
             Assert.False(_driver.PageSource.Contains("Window Fan Installation With Downrod"));
@@ -62,13 +58,11 @@ namespace Almostengr.WebsiteTests
             // arrange
 
             // act
-
             GoHome();
             _driver.FindElement(By.LinkText("BLOG")).Click();
             _driver.FindElement(By.LinkText("All")).Click();
 
             // assert
-
             Assert.True(_driver.FindElement(By.TagName("h1")).Text.Contains("Blog"));
             Assert.True(_driver.PageSource.Contains("How To Replace Toilet Gasket And Bolts"));
             Assert.True(_driver.PageSource.Contains("Ceiling Fan Installation With Downrod"));
@@ -78,7 +72,24 @@ namespace Almostengr.WebsiteTests
             Assert.True(_driver.PageSource.Contains("[2011-03-07] Free Software For Web Development"));
         }
 
-        [TearDown]
+        [Test]
+        public void ChangeToYoutubeTab()
+        {
+            // arrange
+
+            // act
+            GoHome();
+            _driver.FindElement(By.LinkText("BLOG")).Click();
+            _driver.FindElement(By.LinkText("YouTube")).Click();
+
+            // assert
+            Assert.True(_driver.FindElement(By.TagName("h1")).Text.Contains("Blog"));
+            Assert.True(_driver.PageSource.Contains("[2020-08-11] Civicrm Configuration Checklist"));
+            Assert.True(_driver.PageSource.Contains("[2018-10-20] Upgrade Ubuntu 16.04 To 18.04"));
+            Assert.True(_driver.PageSource.Contains("[2018-08-14] Install Hdhrviewer Plug-In For Live Tv On Plex Media Server "));
+        }
+
+        [OneTimeTearDown]
         public void Close()
         {
             _driver.Quit();

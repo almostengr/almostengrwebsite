@@ -70,7 +70,9 @@ jobs:
     - name: Deploy code to production
       uses: fifsky/ssh-action@master
       with:
-        command: ls
+        command: |
+        ls
+        ls -a
         host: "thealmostengineer.com"
         key: ${{ secrets.PRIVATE_KEY }}
         port: ${{ secrets.PORT_NUMBER }}

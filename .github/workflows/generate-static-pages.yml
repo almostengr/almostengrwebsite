@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      uses: actions/checkout@v2
+    - uses: actions/checkout@v2
 
     - name: Remove duplicates from and sort wordlist
       run: (/bin/cat .wordlist.txt | /usr/bin/sort | /usr/bin/uniq) > .wordlist.tmp

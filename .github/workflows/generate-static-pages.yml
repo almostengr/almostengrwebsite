@@ -64,7 +64,6 @@ jobs:
       with:
         hosts: '${{ secrets.LOGIN_WITH_PORT }}'
         privateKey: ${{ secrets.PRIVATE_KEY }}
-        debug: false
         command: ls
         debug: true
 

@@ -60,7 +60,7 @@ jobs:
 
     steps:
     - name: Deploy code to production
-      uses: fifsky/ssh-action@0.5.0
+      uses: fifsky/ssh-action@v0.5.0
       with:
         command: cd && cd www && git pull origin website && 
         host: "thealmostengineer.com"

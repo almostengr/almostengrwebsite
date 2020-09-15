@@ -24,7 +24,7 @@ jobs:
       name: Perform spell check
 
   build:
-    name: Build
+    name: Build static files
     runs-on: ubuntu-latest
     needs: spelling
 
@@ -54,12 +54,12 @@ jobs:
       run:  /usr/bin/python3 -m mkdocs gh-deploy -b website
 
   deploy:
-    name: Deploy
+    name: Deploy to production
     runs-on: ubuntu-latest
     needs: build
 
     steps:
-    - name: Deploy code to production
+    - name: Connect via SSH and pull latest branch
       uses: fifsky/ssh-action@master
       with:
         command: cd && cd www && git pull origin website && 
@@ -74,10 +74,12 @@ jobs:
     needs: deploy
     
     steps:
+    - uses: actions/checkout@v2
+
     - uses: actions/setup-dotnet@v1
-      name: Test production deployment
+      name: Set up .NET Core
       with:
         dotnet-version: '3.1.x'
     
     - name: Running tests
-      run: dotnet test tests/websitetests
+      run: dotnet test tests/websitetests/websitetests.csproj

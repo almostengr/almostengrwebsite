@@ -69,14 +69,15 @@ jobs:
         user: ${{ secrets.USERNAME }}
 
   test:
-    name: Test
+    name: Testing production
     runs-on: ubuntu-latest
     needs: deploy
     
     steps:
-    - name: Test production deployment
     - uses: actions/setup-dotnet@v1
+      name: Test production deployment
       with:
         dotnet-version: '3.1.x'
-    - run: dotnet test tests/websitetests
     
+    - name: Running tests
+      run: dotnet test tests/websitetests

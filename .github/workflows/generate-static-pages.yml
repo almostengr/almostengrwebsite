@@ -53,19 +53,20 @@ jobs:
     - name: Deploy to website branch
       run:  /usr/bin/python3 -m mkdocs gh-deploy -b website
 
-  # deploy:
-  #   name: Deploy
-  #   runs-on: ubuntu-latest
-  #   needs: build
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    needs: build
 
-  #   steps:
-  #   - name: Deploy code to production
-  #     uses: JimCronqvist/action-ssh@0.1.1
-  #     with:
-  #       hosts: ${{ secrets.LOGIN }}
-  #       privateKey: ${{ secrets.PRIVATE_KEY }}
-  #       debug: false
-  #       command: cd && cd www && git pull && exit
+    steps:
+    - name: Deploy code to production
+      uses: JimCronqvist/action-ssh@0.1.1
+      with:
+        hosts: '${{ secrets.LOGIN_WITH_PORT }}'
+        privateKey: ${{ secrets.PRIVATE_KEY }}
+        debug: false
+        command: ls
+        debug: true
 
     # - name: Deploy code to production
     #   uses: fifsky/ssh-action@master

@@ -2,26 +2,18 @@ using System;
 using System.Threading;
 using NUnit.Framework;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
 
 namespace Almostengr.WebsiteTests
 {
     [TestFixture]
-    public class ContactPageTest
+    public class ContactPageTest : BaseTest
     {
         private IWebDriver _driver = null;
 
         [OneTimeSetUp]
         public void Setup()
         {
-            _driver = new ChromeDriver();
-            _driver.Manage().Timeouts().ImplicitWait.Equals(TimeSpan.FromSeconds(30));
-        }
-
-        public void GoHome()
-        {
-            string websiteUrl = "http://192.168.57.117:8000/";
-            _driver.Navigate().GoToUrl(websiteUrl);
+            _driver = StartBrowser();
         }
 
         [Test]
@@ -30,7 +22,7 @@ namespace Almostengr.WebsiteTests
             // arrange 
 
             // act 
-            GoHome();
+            _driver.Navigate().GoToUrl(WebsiteUrl);
             _driver.FindElement(By.LinkText("CONTACT")).Click();
 
             // assert
@@ -47,7 +39,7 @@ namespace Almostengr.WebsiteTests
 
             // act
             _driver.SwitchTo().Window(_driver.WindowHandles[0]);
-            GoHome();
+            _driver.Navigate().GoToUrl(WebsiteUrl);
             _driver.FindElement(By.LinkText("CONTACT")).Click();
             _driver.FindElement(By.PartialLinkText("on Instagram")).Click();
             _driver.SwitchTo().Window(_driver.WindowHandles[1]);
@@ -67,7 +59,7 @@ namespace Almostengr.WebsiteTests
 
             // act
             _driver.SwitchTo().Window(_driver.WindowHandles[0]);
-            GoHome();
+            _driver.Navigate().GoToUrl(WebsiteUrl);
             _driver.FindElement(By.LinkText("CONTACT")).Click();
             _driver.FindElement(By.PartialLinkText("on Twitter")).Click();
             _driver.SwitchTo().Window(_driver.WindowHandles[1]);
@@ -99,7 +91,7 @@ namespace Almostengr.WebsiteTests
 
             // act
             _driver.SwitchTo().Window(_driver.WindowHandles[0]);
-            GoHome();
+            _driver.Navigate().GoToUrl(WebsiteUrl);
             _driver.FindElement(By.LinkText("CONTACT")).Click();
             _driver.FindElement(By.LinkText(ytLinkText)).Click();
             _driver.SwitchTo().Window(_driver.WindowHandles[1]);

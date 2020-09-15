@@ -1,30 +1,23 @@
 using NUnit.Framework;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
 
 namespace Almostengr.WebsiteTests
 {
     [TestFixture]
-    public class UsesTest
+    public class UsesTest : BaseTest
     {
         private IWebDriver _driver = null;
 
         [OneTimeSetUp]
         public void Setup()
         {
-            _driver = new ChromeDriver();
-        }
-
-        public void GoHome()
-        {
-            string websiteUrl = "http://192.168.57.117:8000/";
-            _driver.Navigate().GoToUrl(websiteUrl);
+            _driver = StartBrowser();
         }
 
         [Test]
         public void NavigateUsesPage()
         {
-            GoHome();
+            _driver.Navigate().GoToUrl(WebsiteUrl);
             _driver.FindElement(By.LinkText("Uses")).Click();
 
             Assert.AreEqual(_driver.FindElement(By.Id("handyman-tools")).Text, "Handyman Tools");

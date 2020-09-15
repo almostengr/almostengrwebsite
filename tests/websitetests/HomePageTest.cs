@@ -1,25 +1,18 @@
 using System;
 using NUnit.Framework;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
 
 namespace Almostengr.WebsiteTests
 {
     [TestFixture]
-    public class HomePageTest
+    public class HomePageTest : BaseTest
     {
         private IWebDriver _driver = null;
 
         [OneTimeSetUp]
         public void Setup()
         {
-            _driver = new ChromeDriver();
-        }
-
-        public void GoHome()
-        {
-            string websiteUrl = "http://192.168.57.117:8000/";
-            _driver.Navigate().GoToUrl(websiteUrl);
+            _driver = StartBrowser();
         }
 
         [Test]
@@ -29,7 +22,7 @@ namespace Almostengr.WebsiteTests
             DateTime currentDate = DateTime.Now;
 
             // act
-            GoHome();
+            _driver.Navigate().GoToUrl(WebsiteUrl);
 
             // assert
             Assert.True(_driver.PageSource.Contains(currentDate.Year.ToString()));
@@ -41,7 +34,7 @@ namespace Almostengr.WebsiteTests
             // arrange
 
             // act
-            GoHome();
+            _driver.Navigate().GoToUrl(WebsiteUrl);
             _driver.FindElement(By.Id("readmoreblog")).Click();
 
             // assert
@@ -55,7 +48,7 @@ namespace Almostengr.WebsiteTests
             // arrange
 
             // act
-            GoHome();
+            _driver.Navigate().GoToUrl(WebsiteUrl);
             _driver.FindElement(By.LinkText("SERVICES")).Click();
 
             // assert
@@ -70,7 +63,7 @@ namespace Almostengr.WebsiteTests
             // arrange 
 
             // act 
-            GoHome();
+            _driver.Navigate().GoToUrl(WebsiteUrl);
             _driver.FindElement(By.LinkText("CONTACT")).Click();
 
             // assert

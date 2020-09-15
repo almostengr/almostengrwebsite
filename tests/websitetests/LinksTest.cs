@@ -1,18 +1,17 @@
 using NUnit.Framework;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
 
 namespace Almostengr.WebsiteTests
 {
     [TestFixture]
-    public class LinksTest
+    public class LinksTest : BaseTest
     {
         private IWebDriver _driver = null;
 
         [OneTimeSetUp]
         public void Setup()
         {
-            _driver = new ChromeDriver();
+            _driver = StartBrowser();
         }
 
         [Test]

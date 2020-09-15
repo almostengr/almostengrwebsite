@@ -1,24 +1,17 @@
 using NUnit.Framework;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
 
 namespace Almostengr.WebsiteTests
 {
     [TestFixture]
-    public class BlogTest
+    public class BlogTest : BaseTest
     {
         private IWebDriver _driver = null;
 
         [OneTimeSetUp]
         public void Setup()
         {
-            _driver = new ChromeDriver();
-        }
-
-        public void GoHome()
-        {
-            string websiteUrl = "http://192.168.57.117:8000/";
-            _driver.Navigate().GoToUrl(websiteUrl);
+            _driver = StartBrowser();
         }
 
         [Test]
@@ -27,7 +20,7 @@ namespace Almostengr.WebsiteTests
             // arrange
 
             // act
-            GoHome();
+            _driver.Navigate().GoToUrl(WebsiteUrl);
             _driver.FindElement(By.LinkText("BLOG")).Click();
 
             // assert
@@ -42,7 +35,7 @@ namespace Almostengr.WebsiteTests
             // arrange
 
             // act
-            GoHome();
+            _driver.Navigate().GoToUrl(WebsiteUrl);
             _driver.FindElement(By.LinkText("BLOG")).Click();
             _driver.FindElement(By.LinkText("DIY/Handyman")).Click();
 
@@ -58,7 +51,7 @@ namespace Almostengr.WebsiteTests
             // arrange
 
             // act
-            GoHome();
+            _driver.Navigate().GoToUrl(WebsiteUrl);
             _driver.FindElement(By.LinkText("BLOG")).Click();
             _driver.FindElement(By.LinkText("All")).Click();
 
@@ -78,9 +71,9 @@ namespace Almostengr.WebsiteTests
             // arrange
 
             // act
-            GoHome();
+            _driver.Navigate().GoToUrl(WebsiteUrl);
             _driver.FindElement(By.LinkText("BLOG")).Click();
-            _driver.FindElement(By.LinkText("YouTube")).Click();
+            _driver.FindElement(By.LinkText("YouTube Videos")).Click();
 
             // assert
             Assert.True(_driver.FindElement(By.TagName("h1")).Text.Contains("Blog"));

@@ -7,11 +7,9 @@ on:
 
 jobs:
   spelling:
-    name: Check Spelling
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout out repository
       uses: actions/checkout@v2
 
     - name: Remove duplicates from and sort wordlist

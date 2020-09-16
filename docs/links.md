@@ -4,6 +4,7 @@ description: Links to other resources that are mentioned in posts on social medi
 author: Kenny Robinson, @almostengr
 ---
 
+[Git: Change Master Branch to Main Branch](/blog/2020.09.15-git-change-master-branch-to-main-branch)
 [Prune Old Branches in Visual Studio 2019](/blog/2020.09.12-prune-branch-in-visual-studio)
 [Select List of Times](/blog/2020.08.25-select-list-of-times)
 [#NSBE46 Convention Notes](https://almostengr.github.io/lifestyle/2020/2020-08-20-nsbe-46-engineering-the-revolution/)

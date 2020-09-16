@@ -187,14 +187,8 @@
         {% include "partial/_blog.html" %}
 
         {% elif page.url == "links/" %}
+        <p><a href="/">thealmostengineer.com</a></p>
         {{ page.content }}
-        <div class="text-center">
-          {% for link in config.extra.social %}
-          <a href="{{ link.link }}" class="text-uppercase" target="_blank">
-            <i class="fab fa-{{ link.type }}"></i> {{ link.type }}
-          </a>
-          {% endfor %}
-        </div>
 
         {% else %}
         {{ page.content }}

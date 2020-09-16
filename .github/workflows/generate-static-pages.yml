@@ -1,13 +1,13 @@
 name: Generate static pages
 
 on:
-  push: 
+  push:
     branches:
       - main
 
 jobs:
   spelling:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
 
     steps:
     - uses: actions/checkout@v2
@@ -18,64 +18,63 @@ jobs:
     - name: Move cleaned wordlist
       run: /bin/mv .wordlist.tmp .wordlist.txt
 
-    - uses: rojopolis/spellcheck-github-actions@0.5.0
-      name: Perform spell check
+    - name: Perform spell check
+      uses: rojopolis/spellcheck-github-actions@0.5.0
 
-  build:
-    name: Build static files
-    runs-on: ubuntu-latest
-    needs: spelling
+  mkdocs:
+    runs-on: ubuntu-18.04
 
     steps:
-    - name: Checkout out repository
-      uses: actions/checkout@v2
-            
-    - name: Fetch branches
-      run:  git fetch -p
-            
     - name: Install pip
       run:  /usr/bin/python3 -m pip install --upgrade pip
-    
+
     - name: Install setuptools
-      run: /usr/bin/python3 -m pip install --upgrade setuptools
+      run:  /usr/bin/python3 -m pip install --upgrade setuptools
 
     - name: Install Mkdocs
       run:  /usr/bin/python3 -m pip install --upgrade mkdocs
 
     - name: Install Minify Plugin
-      run: /usr/bin/python3 -m pip install --upgrade mkdocs-minify-plugin
+      run:  /usr/bin/python3 -m pip install --upgrade mkdocs-minify-plugin
 
     - name: Install Mkdocs
       run:  /usr/bin/python3 -m pip install --upgrade mkdocs-rss-plugin
+
+  build:
+    runs-on: ubuntu-18.04
+    needs: [spelling, mkdocs]
+
+    steps:
+    - uses: actions/checkout@v2
 
     - name: Deploy to website branch
       run:  /usr/bin/python3 -m mkdocs gh-deploy -b website
 
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     needs: build
 
     steps:
     - name: Deploy to Production
       uses: fifsky/ssh-action@master
       with:
-        command: cd && cd www && git pull origin website && 
+        command: cd && cd www && git pull origin website &&
         host: "thealmostengineer.com"
         key: ${{ secrets.PRIVATE_KEY }}
         port: ${{ secrets.PORT_NUMBER }}
         user: ${{ secrets.USERNAME }}
 
-  test:
-    runs-on: ubuntu-latest
-    needs: deploy
-    
-    steps:
-    - uses: actions/checkout@v2
+  # test:
+  #   runs-on: ubuntu-18.04
+  #   needs: deploy
 
-    - uses: actions/setup-dotnet@v1
-      name: Setup .NET Core
-      with:
-        dotnet-version: '3.1.x'
-    
-    - name: Running tests
-      run: dotnet test tests/websitetests/websitetests.csproj
+  #   steps:
+  #   - uses: actions/checkout@v2
+
+  #   - uses: actions/setup-dotnet@v1
+  #     name: Setup .NET Core
+  #     with:
+  #       dotnet-version: '3.1.x'
+
+  #   - name: Running tests
+  #     run: dotnet test tests/websitetests/websitetests.csproj

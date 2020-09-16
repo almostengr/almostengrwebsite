@@ -18,10 +18,10 @@ namespace Almostengr.WebsiteTests
         public void NavigateUsesPage()
         {
             // arrange
-            string websiteUrl = "http://192.168.57.117:8000/links";
+            WebsiteUrl += "/links";
 
             // act
-            _driver.Navigate().GoToUrl(websiteUrl);
+            _driver.Navigate().GoToUrl(WebsiteUrl);
 
             // assert
             Assert.AreEqual(_driver.FindElement(By.TagName("h1")).Text, "Links for @almostengr");

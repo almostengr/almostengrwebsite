@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RunSettings>
+    <TestRunParameters>
+        <Parameter name="websiteurl" value="http://192.168.57.117:8000" />
+    </TestRunParameters>
+</RunSettings>

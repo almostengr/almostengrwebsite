@@ -42,6 +42,8 @@ jobs:
     - name: Install Mkdocs
       run:  /usr/bin/python3 -m pip install --upgrade mkdocs-rss-plugin
 
+    - run: git fetch -p
+
     - name: Deploy to website branch
       run:  /usr/bin/python3 -m mkdocs gh-deploy -b website
 

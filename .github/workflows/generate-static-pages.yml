@@ -23,10 +23,11 @@ jobs:
 
   mkdocs:
     runs-on: ubuntu-18.04
+    needs: spelling
 
     steps:
     - uses: actions/checkout@v2
-    
+
     - name: Install pip
       run:  /usr/bin/python3 -m pip install --upgrade pip
 
@@ -42,6 +43,8 @@ jobs:
     - name: Install Mkdocs
       run:  /usr/bin/python3 -m pip install --upgrade mkdocs-rss-plugin
 
+    - run: git fetch -p
+
     - name: Deploy to website branch
       run:  /usr/bin/python3 -m mkdocs gh-deploy -b website
 
@@ -54,7 +57,7 @@ jobs:
       uses: fifsky/ssh-action@master
       with:
         command: cd && cd www && git pull origin website &&
-        host: "thealmostengineer.com"
+        host: ${{ secrets.HOSTNAME }}
         key: ${{ secrets.PRIVATE_KEY }}
         port: ${{ secrets.PORT_NUMBER }}
         user: ${{ secrets.USERNAME }}

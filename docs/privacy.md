@@ -13,7 +13,7 @@ control what’s visible to the public, seen by search engines, kept private, an
 
 ## Terms
 
-By accessing this website, <a href="http://thealmostengineer.com">thealmostengineer.com</a>, 
+By accessing this website,[http://thealmostengineer.com](thealmostengineer.com), 
 you agree to be bound and operate by the terms, conditions, and policies listed in this 
 agreement. If you do not agree with the terms listed here, please discontinue use of this website.
 

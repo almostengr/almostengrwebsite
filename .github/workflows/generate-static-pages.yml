@@ -25,6 +25,8 @@ jobs:
     runs-on: ubuntu-18.04
 
     steps:
+    - uses: actions/checkout@v2
+    
     - name: Install pip
       run:  /usr/bin/python3 -m pip install --upgrade pip
 

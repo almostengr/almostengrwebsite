@@ -13,15 +13,15 @@
     <managingEditor>Kenny Robinson, @almostengr</managingEditor>
     <category>None</category>
     <docs>https://github.com/almostengr/</docs>
-    
+    <language>en</language>
 
     <!-- Timestamps and frequency -->
-    <pubDate>Mon, 21 Sep 2020 21:30:21 -0000</pubDate>
-    <lastBuildDate>Mon, 21 Sep 2020 21:30:21 -0000</lastBuildDate>
+    <pubDate>Tue, 22 Sep 2020 23:21:17 -0000</pubDate>
+    <lastBuildDate>Tue, 22 Sep 2020 23:21:17 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     <!-- Credits -->
-    <generator>MkDocs RSS plugin - v0.6.1</generator>
+    <generator>MkDocs RSS plugin - v0.7.0</generator>
 
     <!-- Feed illustration -->
     

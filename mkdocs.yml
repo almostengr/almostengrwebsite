@@ -2,7 +2,7 @@ site_name: Almost Engineer Services
 site_url: https://thealmostengineer.com
 site_description: The blog of Kenny Robinson where he shares his thoughts and experiences.
 site_author: Kenny Robinson, @almostengr
-copyright: Copyright &copy; 2015-2020 Almost Engineer Services
+copyright: Almost Engineer Services
 google_analytics: ['UA-64643711-1', 'thealmostengineer.com']
 
 # repository information
@@ -19,10 +19,7 @@ theme:
   name: null
   custom_dir: 'almostengrtheme'
   language: en
-
-extra:
-  serviceareas: ['Montgomery County, Alabama', 'Elmore County, Alabama', 'Autauga County, Alabama']
-
+  social_user: @almostengr
   mainnav:
     - url: /about
       name: Services
@@ -31,7 +28,7 @@ extra:
     - url: /contact
       name: Contact
 
-  footer1:
+  footernav:
     - url: /about
       name: About
     - url: /uses
@@ -53,7 +50,7 @@ extra:
     - url: /privacy
       name: Privacy
 
-  servicesfooter:
+  services:
     - url: /blog/2020.07.12-ceiling-fan-installation-with-downrod
       name: Install Ceiling Fan
     - url: /blog/2019.07.30-reinforce-bookcase-with-plywood
@@ -77,14 +74,19 @@ extra:
     - type: youtube
       link: https://www.youtube.com/channel/UC4HCouBLtXD1j1U_17aBqig?sub_confirmation=1
 
+  serviceareas: [
+    'Montgomery County, Alabama', 
+    'Elmore County, Alabama', 
+    'Autauga County, Alabama'
+    ]
+
 use_directory_urls: true
 strict: false
 
-markdown_extensions:
-  - meta
+# markdown_extensions:
+  # - meta
 
 plugins:
   - search
-  - rss
   - minify: 
       minify_html: true

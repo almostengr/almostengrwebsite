@@ -7,8 +7,8 @@
   <meta property="og:locale" content="en_US" />
   <meta property="og:site_name" content="{{ config.site_name }}" />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="@almostengr" />
-  <meta name="twitter:creator" content="@almostengr" />
+  <meta name="twitter:site" content="{{ config.theme.social_user }}" />
+  <meta name="twitter:creator" content="{{ config.theme.social_user }}" />
 
   {% if page.meta.description %}
   <meta name="description" content="{{ page.meta.description }}">
@@ -134,7 +134,7 @@
 
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav ml-auto">
-          {% for nav_item in config.extra.mainnav %}
+          {% for nav_item in config.theme.mainnav %}
           <li class="nav-item">
             <a class="nav-link text-white text-uppercase" href="{{ nav_item.url }}">{{ nav_item.name }}</a>
           </li>
@@ -231,7 +231,7 @@
       <div class="text-white col-12">
         <ul class="list-unstyled list-inline">
           <li class="px-2 bg-white list-inline-item text-dark font-weight-bold">SOCIAL</li>
-          {% for link in config.extra.social %}
+          {% for link in config.theme.social %}
           <li class="mr-2 list-inline-item text-capitalize">
             <a href="{{ link.link }}" target="_blank">{{ link.type }}</a>
           </li>
@@ -241,7 +241,7 @@
       <div class="col-12">
         <ul class="list-unstyled text-white">
           <li class="px-2 bg-white text-dark font-weight-bold list-inline-item">LINKS</li>
-          {% for link in config.extra.footer1 %}
+          {% for link in config.theme.footernav %}
           <li class="mr-2 list-inline-item"><a href="{{ link.url }}">{{ link.name }}</a></li>
           {% endfor %}
         </ul>
@@ -249,7 +249,7 @@
       <div class="col-12">
         <ul class="list-unstyled text-white">
           <li class="px-2 list-inline-item text-left bg-white text-dark font-weight-bold">SERVICES PROVIDED</li>
-          {% for link in config.extra.servicesfooter %}
+          {% for link in config.theme.services %}
           <li class="mr-2 list-inline-item"><a href="{{ link.url }}">{{ link.name }}</a></li>
           {% endfor %}
         </ul>
@@ -257,7 +257,7 @@
     </div>
     <hr class="text-white bg-white container">
     <div class="text-center text-white bg-black pt-2 pb-5 px-2">
-      <p>{% if config.copyright %} {{ config.copyright }} {%endif%}</p>
+      <p>Copyright &copy; 2015-{{ build_date_utc.strftime("%Y") }} {{ config.copyright }}</p>
       <p class="text-small">
         Cookies are used on this website to track your visits, provide advertisements specific
         to you, and preferences by a third-party.

@@ -1044,3 +1044,7 @@ Uninstall
 uninstall
 fEitsA
 lsCZ
+SSG
+CMS
+cms
+SSGs

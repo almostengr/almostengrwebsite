@@ -19,7 +19,8 @@ theme:
   name: null
   custom_dir: 'almostengrtheme'
   language: en
-  social_user: @almostengr
+  social_user: "@almostengr"
+  
   mainnav:
     - url: /about
       name: Services

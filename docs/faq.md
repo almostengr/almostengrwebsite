@@ -6,6 +6,7 @@ title: FAQ (Frequently Asked Questions)
 * [Requesting Service](#what-is-the-fastest-way-to-request-service)
 * [Service Areas](#what-areas-do-you-serve)
 * [Working Hours](#what-are-your-working-hours)
+* [How to Update My Static Website?](/faq/update-static-website)
 
 ## What forms of payment do you accept? 
 

@@ -6,7 +6,7 @@ copyright: Almost Engineer Services
 google_analytics: ['UA-64643711-1', 'thealmostengineer.com']
 
 # repository information
-repo_url: https://github.com/almostengr
+repo_url: https://github.com/almostengr/almostengrwebsite
 repo_name: Github
 remote_name: origin
 remote_branch: website
@@ -20,7 +20,7 @@ theme:
   custom_dir: 'almostengrtheme'
   language: en
   social_user: "@almostengr"
-  
+
   mainnav:
     - url: /about
       name: Services
@@ -75,17 +75,8 @@ theme:
     - type: youtube
       link: https://www.youtube.com/channel/UC4HCouBLtXD1j1U_17aBqig?sub_confirmation=1
 
-  serviceareas: [
-    'Montgomery County, Alabama', 
-    'Elmore County, Alabama', 
-    'Autauga County, Alabama'
-    ]
-
 use_directory_urls: true
 strict: false
-
-# markdown_extensions:
-  # - meta
 
 plugins:
   - search

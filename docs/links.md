@@ -11,4 +11,3 @@ author: Kenny Robinson, @almostengr
 [Select List of Times](/blog/2020.08.25-select-list-of-times)
 
 [Raspberry Pi Traffic Light](https://github.com/almostengr/trafficpi)
----

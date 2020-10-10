@@ -13,6 +13,12 @@
     </div>
     {% endif %}
 
+    {% if page.meta.imageurl and page.meta.imagealt %}
+    <div class="text-center">
+        <img src="{{ page.meta.imageurl }}" alt="{{ page.meta.imagealt }}" />
+    </div>
+    {% endif %}
+
     {{ page.content }}
 
     <div class="bg-light border border-danger my-3 p-3 rounded">

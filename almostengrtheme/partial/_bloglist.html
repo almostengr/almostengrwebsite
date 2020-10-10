@@ -43,9 +43,9 @@
         </ul>
     </div>
     <div id="diy" class="tab-pane">
-        <ul>
+        <ul class="list-unstyled">
             {% for nav_item in nav_item.children | sort(attribute='posted') | reverse %}
-            {% if 'blog' in nav_item.url and nav_item.title != "Blog" and nav_item.meta.category == "Technology" %}
+            {% if 'blog' in nav_item.url and nav_item.title != "Blog" and nav_item.meta.category == "Handyman" %}
             <li class="">
                 <h2 class="pt-3">
                     <a href="{{ nav_item.url|url }}" class="text-dark">
@@ -76,9 +76,9 @@
         </ul>
     </div>
     <div id="youtube" class="tab-pane">
-        <ul>
+        <ul class="list-unstyled">
             {% for nav_item in nav_item.children | sort(attribute='posted') | reverse %}
-            {% if 'blog' in nav_item.url and nav_item.title != "Blog" and nav_item.meta.category == "Technology" %}
+            {% if 'blog' in nav_item.url and nav_item.title != "Blog" and nav_item.meta.youtube %}
             <li class="">
                 <h2 class="pt-3">
                     <a href="{{ nav_item.url|url }}" class="text-dark">
@@ -109,9 +109,9 @@
         </ul>
     </div>
     <div id="all" class="tab-pane">
-        <ul>
+        <ul class="list-unstyled">
             {% for nav_item in nav_item.children | sort(attribute='posted') | reverse %}
-            {% if 'blog' in nav_item.url and nav_item.title != "Blog" and nav_item.meta.category == "Technology" %}
+            {% if 'blog' in nav_item.url and nav_item.title != "Blog" %}
             <li class="">
                 <h2 class="pt-3">
                     <a href="{{ nav_item.url|url }}" class="text-dark">

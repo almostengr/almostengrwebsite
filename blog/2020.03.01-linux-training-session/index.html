@@ -12,10 +12,10 @@
     })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
     ga('create', 'UA-64643711-1', 'thealmostengineer.com');
     ga('send', 'pageview');
-  </script><script async src=https://kit.fontawesome.com/a076d05399.js></script><script src=//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js></script><link rel=stylesheet href=/css/bootstrap.min.css><link rel=stylesheet href=/css/almostengrtheme.min.css><link rel=stylesheet href=//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css><link rel=stylesheet href=//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/default.min.css><link rel=stylesheet href=/css/a11y-dark-theme.min.css><!-- Custom styles for by page --><link rel=stylesheet href=/css/navbar-top-fixed.min.css><link rel=apple-touch-icon sizes=180x180 href=/images/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/images/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/images/favicon-16x16.png><link rel=manifest href=/images/site.webmanifest></head> <body> <header> <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-black"> <div> <a href=/ class="navbar-brand font-weight-bold">Almost Engineer Services</a> <button class=navbar-toggler type=button data-toggle=collapse data-target=#navbarCollapse aria-controls=navbarCollapse aria-expanded=false aria-label="Toggle navigation"> <span class=navbar-toggler-icon></span> </button> </div> <div class="collapse navbar-collapse" id=navbarCollapse> <ul class="navbar-nav ml-auto"> <li class=nav-item> <a class="nav-link text-white text-uppercase" href=/about>Services</a> </li> <li class=nav-item> <a class="nav-link text-white text-uppercase" href=/blog>Blog</a> </li> <li class=nav-item> <a class="nav-link text-white text-uppercase" href=/contact>Contact</a> </li> </ul> <form class="mt-2 mt-md-0" method=GET action=/request> <button class="btn btn-outline-danger mx-2 text-uppercase" id=requestservice type=submit>Request Service</button> </form> </div> </nav> </header> <main role=main class="container py-2"> <div class=row> <div id=content-area class="col-sm-12 col-lg-8 border-lg-right border-dark"> <article> <h1 id=linux-training-session-notes-march-2020>Linux Training Session Notes, March 2020</h1> <p><img alt="Discussion in progress" src=/images/2020.03.01-linux-training-session-2.jpeg></p> <h2 id=background-information>Background Information</h2> <p>As mentioned in the training session, I am providing the output from the terminal from the commands that were ran and some detail about the output and commentary for each.</p> <h3 id=input-and-output>Input and Output</h3> <p>The commands entered into the terminal look like the following</p> <pre><code class=bash>almostengr@linuxtraining:~$ input command
-</code></pre> <p>and the output from running the command look like the following</p> <pre><code class=aeoutput>I'm some output
-</code></pre> <h3 id=raw-log-file>Raw Log File</h3> <p>The entire <a href=/blog/2020.03.01-linux-training-session.log>unmodified log file</a> is available for download. Some of the inputs, due to typos, are difficult to read due to the way that PuTTY generates the log files.</p> <h3 id=csv-data-files>CSV Data Files</h3> <p>CSV data files were generated using <a href=https://generatedata.com target=_blank>generatedata.com</a>.</p> <h3 id=next-training-session>Next Training Session</h3> <p>Future training sessions have not been scheduled at this time. If you are interested in attending a future session, you can reach out to me via the <a href=/contact/ >contact page</a> to let me know that you are interested. Once the next session has been scheduled, a notification will be sent out with the details. In addition, sessions will be listed on this website when they are scheduled.</p> <h2 id=let-the-session-begin>Let The Session Begin</h2> <p><img alt="Session in progress" src=/images/2020.03.01-linux-training-session-3.jpeg></p> <p>To ensure that everyone was able to see my screen, I ran the <code>top</code> command as it periodically refreshes the data on the screen. Once we had screen sharing going, the training got started.</p> <h3 id=whats-running-on-the-system>Whats Running On The System</h3> <p>The <code>top</code> command shows the current CPU usage as well as the processes that are currently running, memory usage, and system up-time. This is similar to the Task Manager in Windows.</p> <p>To exit this program, you will need to press the "q" key. </p> <pre><code class=bash>almostengr@linuxtraining:~$ top
-</code></pre> <pre><code class=aeoutput>top - 21:41:08 up 23:48,  1 user,  load average: 0.00, 0.00, 0.00
+  </script><script async src=https://kit.fontawesome.com/a076d05399.js></script><script src=//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js></script><link rel=stylesheet href=/css/bootstrap.min.css><link rel=stylesheet href=/css/almostengrtheme.min.css><link rel=stylesheet href=//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css><link rel=stylesheet href=//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/default.min.css><link rel=stylesheet href=/css/a11y-dark-theme.min.css><!-- Custom styles for by page --><link rel=stylesheet href=/css/navbar-top-fixed.min.css><link rel=apple-touch-icon sizes=180x180 href=/images/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/images/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/images/favicon-16x16.png><link rel=manifest href=/images/site.webmanifest></head> <body> <header> <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-black"> <div> <a href=/ class="navbar-brand font-weight-bold">Almost Engineer Services</a> <button class=navbar-toggler type=button data-toggle=collapse data-target=#navbarCollapse aria-controls=navbarCollapse aria-expanded=false aria-label="Toggle navigation"> <span class=navbar-toggler-icon></span> </button> </div> <div class="collapse navbar-collapse" id=navbarCollapse> <ul class="navbar-nav ml-auto"> <li class=nav-item> <a class="nav-link text-white text-uppercase" href=/about>Services</a> </li> <li class=nav-item> <a class="nav-link text-white text-uppercase" href=/blog>Blog</a> </li> <li class=nav-item> <a class="nav-link text-white text-uppercase" href=/contact>Contact</a> </li> </ul> <form class="mt-2 mt-md-0" method=GET action=/request> <button class="btn btn-outline-danger mx-2 text-uppercase" id=requestservice type=submit>Request Service</button> </form> </div> </nav> </header> <main role=main class="container py-2"> <div class=row> <div id=content-area class="col-sm-12 col-lg-8 border-lg-right border-dark"> <article> <h1 id=linux-training-session-notes-march-2020>Linux Training Session Notes, March 2020</h1> <p><img alt="Discussion in progress" src=/images/2020.03.01-linux-training-session-2.jpeg></p> <h2 id=background-information>Background Information</h2> <p>As mentioned in the training session, I am providing the output from the terminal from the commands that were ran and some detail about the output and commentary for each.</p> <h3 id=input-and-output>Input and Output</h3> <p>The commands entered into the terminal look like the following</p> <pre><code class=language-bash>almostengr@linuxtraining:~$ input command
+</code></pre> <p>and the output from running the command look like the following</p> <pre><code class=language-aeoutput>I'm some output
+</code></pre> <h3 id=raw-log-file>Raw Log File</h3> <p>The entire <a href=/blog/2020.03.01-linux-training-session.log>unmodified log file</a> is available for download. Some of the inputs, due to typos, are difficult to read due to the way that PuTTY generates the log files.</p> <h3 id=csv-data-files>CSV Data Files</h3> <p>CSV data files were generated using <a href=https://generatedata.com target=_blank>generatedata.com</a>.</p> <h3 id=next-training-session>Next Training Session</h3> <p>Future training sessions have not been scheduled at this time. If you are interested in attending a future session, you can reach out to me via the <a href=/contact/ >contact page</a> to let me know that you are interested. Once the next session has been scheduled, a notification will be sent out with the details. In addition, sessions will be listed on this website when they are scheduled.</p> <h2 id=let-the-session-begin>Let The Session Begin</h2> <p><img alt="Session in progress" src=/images/2020.03.01-linux-training-session-3.jpeg></p> <p>To ensure that everyone was able to see my screen, I ran the <code>top</code> command as it periodically refreshes the data on the screen. Once we had screen sharing going, the training got started.</p> <h3 id=whats-running-on-the-system>Whats Running On The System</h3> <p>The <code>top</code> command shows the current CPU usage as well as the processes that are currently running, memory usage, and system up-time. This is similar to the Task Manager in Windows.</p> <p>To exit this program, you will need to press the "q" key. </p> <pre><code class=language-bash>almostengr@linuxtraining:~$ top
+</code></pre> <pre><code class=language-aeoutput>top - 21:41:08 up 23:48,  1 user,  load average: 0.00, 0.00, 0.00
 %Cpu(s):  0.0 us,  0.3 sy,  0.0 ni, 99.7 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
  3528 almost+  20   0   42652   3944   3388 R  0.7  0.4   0:00.63 top
     1 root      20   0  159772   8892   6612 S  0.0  0.9   0:01.95 systemd
@@ -36,33 +36,33 @@
    18 root      20   0       0      0      0 S  0.0  0.0   0:00.00 oom_reaper
    19 root       0 -20       0      0      0 I  0.0  0.0   0:00.00 writeback
    20 root      20   0       0      0      0 S  0.0  0.0   0:00.00 kcompactd0
-</code></pre> <h3 id=showing-what-version-of-linux-is-running-and-system-information>Showing What Version of Linux is Running and System Information</h3> <pre><code class=bash>almostengr@linuxtraining:~$ uname -a
-</code></pre> <pre><code class=aeoutput>Linux linuxtraining 4.15.0-88-generic #88-Ubuntu SMP Tue Feb 11 20:11:34 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
-</code></pre> <h3 id=printing-the-current-directory-and-changing-directories>Printing The Current Directory and Changing Directories</h3> <p>See (print) the current working directory.</p> <pre><code class=bash>almostengr@linuxtraining:~$ pwd
-</code></pre> <pre><code class=aeoutput>/home/almostengr
-</code></pre> <p>List the files in the current directory</p> <pre><code class=bash>almostengr@linuxtraining:~$ ls
-</code></pre> <pre><code class=aeoutput>almostengr.txt  data2.csv  data.csv  dirtocopy  kenny.txt
-</code></pre> <p>Change to the /var/tmp directory. This command has no output unless directory entered does not exist.</p> <pre><code class=bash>almostengr@linuxtraining:~$ cd /var/tmp
-</code></pre> <p>Confirm that you are in the /var/tmp directory by printing the current directory</p> <pre><code class=bash>almostengr@linuxtraining:/var/tmp$ pwd
-</code></pre> <pre><code class=aeoutput>/var/tmp
-</code></pre> <p>Go back to the home directory. This command has no output.</p> <pre><code class=bash>almostengr@linuxtraining:/var/tmp$ cd
-</code></pre> <p>Confirm that you are in the home directory.</p> <pre><code class=bash>almostengr@linuxtraining:~$ pwd
-</code></pre> <pre><code class=aeoutput>/home/almostengr
-</code></pre> <h3 id=multiple-ways-to-change-directories>Multiple Ways to Change Directories</h3> <p>This shows that there is more than one way to get to the /var/log directory.</p> <pre><code class=bash>almostengr@linuxtraining:~$ cd ../../var/log
+</code></pre> <h3 id=showing-what-version-of-linux-is-running-and-system-information>Showing What Version of Linux is Running and System Information</h3> <pre><code class=language-bash>almostengr@linuxtraining:~$ uname -a
+</code></pre> <pre><code class=language-aeoutput>Linux linuxtraining 4.15.0-88-generic #88-Ubuntu SMP Tue Feb 11 20:11:34 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
+</code></pre> <h3 id=printing-the-current-directory-and-changing-directories>Printing The Current Directory and Changing Directories</h3> <p>See (print) the current working directory.</p> <pre><code class=language-bash>almostengr@linuxtraining:~$ pwd
+</code></pre> <pre><code class=language-aeoutput>/home/almostengr
+</code></pre> <p>List the files in the current directory</p> <pre><code class=language-bash>almostengr@linuxtraining:~$ ls
+</code></pre> <pre><code class=language-aeoutput>almostengr.txt  data2.csv  data.csv  dirtocopy  kenny.txt
+</code></pre> <p>Change to the /var/tmp directory. This command has no output unless directory entered does not exist.</p> <pre><code class=language-bash>almostengr@linuxtraining:~$ cd /var/tmp
+</code></pre> <p>Confirm that you are in the /var/tmp directory by printing the current directory</p> <pre><code class=language-bash>almostengr@linuxtraining:/var/tmp$ pwd
+</code></pre> <pre><code class=language-aeoutput>/var/tmp
+</code></pre> <p>Go back to the home directory. This command has no output.</p> <pre><code class=language-bash>almostengr@linuxtraining:/var/tmp$ cd
+</code></pre> <p>Confirm that you are in the home directory.</p> <pre><code class=language-bash>almostengr@linuxtraining:~$ pwd
+</code></pre> <pre><code class=language-aeoutput>/home/almostengr
+</code></pre> <h3 id=multiple-ways-to-change-directories>Multiple Ways to Change Directories</h3> <p>This shows that there is more than one way to get to the /var/log directory.</p> <pre><code class=language-bash>almostengr@linuxtraining:~$ cd ../../var/log
 almostengr@linuxtraining:/var/log$ pwd
-</code></pre> <pre><code class=aeoutput>/var/log
-</code></pre> <p>Go back to the home directory.</p> <pre><code class=bash>almostengr@linuxtraining:/var/log$ cd
-</code></pre> <p>Navigate to the /var/log directory again, by entering in a different path.</p> <pre><code class=bash>almostengr@linuxtraining:~$ cd /var/log
+</code></pre> <pre><code class=language-aeoutput>/var/log
+</code></pre> <p>Go back to the home directory.</p> <pre><code class=language-bash>almostengr@linuxtraining:/var/log$ cd
+</code></pre> <p>Navigate to the /var/log directory again, by entering in a different path.</p> <pre><code class=language-bash>almostengr@linuxtraining:~$ cd /var/log
 almostengr@linuxtraining:/var/log$ pwd
-</code></pre> <pre><code class=aeoutput>/var/log
-</code></pre> <h3 id=listing-directory-contents>Listing Directory Contents</h3> <p>List the visible files in the current directory.</p> <pre><code class=bash>almostengr@linuxtraining:~$ ls
-</code></pre> <pre><code class=aeoutput>almostengr.txt  data2.csv  data.csv  dirtocopy  kenny.txt
-</code></pre> <p>List all (hidden and visible) files in the current directory. Hidden files and directories start with a period <code>.</code>. </p> <pre><code class=bash>almostengr@linuxtraining:~$ ls -a
-</code></pre> <pre><code class=aeoutput>.               .bash_history  .cache     dirtocopy  .profile                   .viminfo
+</code></pre> <pre><code class=language-aeoutput>/var/log
+</code></pre> <h3 id=listing-directory-contents>Listing Directory Contents</h3> <p>List the visible files in the current directory.</p> <pre><code class=language-bash>almostengr@linuxtraining:~$ ls
+</code></pre> <pre><code class=language-aeoutput>almostengr.txt  data2.csv  data.csv  dirtocopy  kenny.txt
+</code></pre> <p>List all (hidden and visible) files in the current directory. Hidden files and directories start with a period <code>.</code>. </p> <pre><code class=language-bash>almostengr@linuxtraining:~$ ls -a
+</code></pre> <pre><code class=language-aeoutput>.               .bash_history  .cache     dirtocopy  .profile                   .viminfo
 ..              .bash_logout   data2.csv  .gnupg     .sudo_as_admin_successful
 almostengr.txt  .bashrc        data.csv   kenny.txt  .vim
-</code></pre> <p>List all of the files in the current directory with their details.</p> <pre><code class=bash>almostengr@linuxtraining:~$ ls -al
-</code></pre> <pre><code class=aeoutput>total 72
+</code></pre> <p>List all of the files in the current directory with their details.</p> <pre><code class=language-bash>almostengr@linuxtraining:~$ ls -al
+</code></pre> <pre><code class=language-aeoutput>total 72
 drwxr-xr-x 6 almostengr almostengr 4096 Mar  1 05:40 .
 drwxr-xr-x 3 root       root       4096 Feb 23 21:05 ..
 -rw-rw-r-- 1 almostengr almostengr  790 Feb 24 03:11 almostengr.txt
@@ -79,62 +79,62 @@ drwx------ 3 almostengr almostengr 4096 Feb 23 21:05 .gnupg
 -rw-r--r-- 1 almostengr almostengr    0 Feb 23 21:06 .sudo_as_admin_successful
 drwxr-xr-x 2 almostengr almostengr 4096 Mar  1 05:39 .vim
 -rw------- 1 almostengr almostengr 6805 Mar  1 05:40 .viminfo
-</code></pre> <p>One period <code>.</code> refers to the current directory. Thus the command below will change the directory to the current directory.</p> <pre><code class=bash>almostengr@linuxtraining:~$ cd .
+</code></pre> <p>One period <code>.</code> refers to the current directory. Thus the command below will change the directory to the current directory.</p> <pre><code class=language-bash>almostengr@linuxtraining:~$ cd .
 almostengr@linuxtraining:~$ pwd
-</code></pre> <pre><code class=aeoutput>/home/almostengr
-</code></pre> <p>Two periods <code>..</code> refers to the parent directory. Thus the command below will change to the parent directory of the current directory.</p> <pre><code class=bash>almostengr@linuxtraining:~$ cd ..
+</code></pre> <pre><code class=language-aeoutput>/home/almostengr
+</code></pre> <p>Two periods <code>..</code> refers to the parent directory. Thus the command below will change to the parent directory of the current directory.</p> <pre><code class=language-bash>almostengr@linuxtraining:~$ cd ..
 almostengr@linuxtraining:/home$ pwd
-</code></pre> <pre><code class=aeoutput>/home
-</code></pre> <p>Each user has a home directory. To go back to your home directory, you enter the command below in. This command does not return any output.</p> <pre><code class=bash>almostengr@linuxtraining:/home$ cd
-</code></pre> <h3 id=creating-new-folder>Creating New Folder</h3> <p>To create a new folder, you use the command below. You will need to replace <code>anewfolder</code> with the name of the folder that you want to create. This command does not return any output. </p> <pre><code class=bash>almostengr@linuxtraining:~$ mkdir nanewfolder
-</code></pre> <p>Once you have ran the command above, you can use the <code>ls</code> command to confirm that the folder has been created.</p> <pre><code class=bash>almostengr@linuxtraining:~$ ls
-</code></pre> <pre><code class=aeoutput>almostengr.txt  anewfolder  data2.csv  data.csv  dirtocopy  kenny.txt
-</code></pre> <h3 id=predefined-aliases>Predefined Aliases</h3> <p>On some systems, the directories are highlighted a different color from the files. Ubuntu is one of the systems that does this out of the box. The reason is because there is an alias defined for the <code>ls</code> command. I showed what was really running when performing the <code>ls</code> by showing the alias.</p> <pre><code class=bash>almostengr@linuxtraining:~$ alias ls
-</code></pre> <pre><code class=aeoutput>alias ls='ls --color=auto'
-</code></pre> <h3 id=removing-folders-and-files>Removing Folders and Files</h3> <p>If you attempt to remove a directory without specifying the recursive option, the system will complain that the action cannot be done. The system will not allow you to delete a folder without deleting the child elements in that folder because that would leave the child elements orphaned on the system.</p> <pre><code class=bash>almostengr@linuxtraining:~$ rm anewfolder/
-</code></pre> <pre><code class=aeoutput>rm: cannot remove 'anewfolder/': Is a directory
-</code></pre> <pre><code class=bash>almostengr@linuxtraining:~$ ls
-</code></pre> <pre><code class=aeoutput>almostengr.txt  anewfolder  data2.csv  data.csv  dirtocopy  kenny.txt
-</code></pre> <p>The recursive option still must be used even if the directory is empty. This time the remove command is run with the recursive option and the folder is removed. The <code>rm</code> command does not return any output unless there is an error executing the command.</p> <pre><code class=bash>almostengr@linuxtraining:~$ rm -r anewfolder/
+</code></pre> <pre><code class=language-aeoutput>/home
+</code></pre> <p>Each user has a home directory. To go back to your home directory, you enter the command below in. This command does not return any output.</p> <pre><code class=language-bash>almostengr@linuxtraining:/home$ cd
+</code></pre> <h3 id=creating-new-folder>Creating New Folder</h3> <p>To create a new folder, you use the command below. You will need to replace <code>anewfolder</code> with the name of the folder that you want to create. This command does not return any output. </p> <pre><code class=language-bash>almostengr@linuxtraining:~$ mkdir nanewfolder
+</code></pre> <p>Once you have ran the command above, you can use the <code>ls</code> command to confirm that the folder has been created.</p> <pre><code class=language-bash>almostengr@linuxtraining:~$ ls
+</code></pre> <pre><code class=language-aeoutput>almostengr.txt  anewfolder  data2.csv  data.csv  dirtocopy  kenny.txt
+</code></pre> <h3 id=predefined-aliases>Predefined Aliases</h3> <p>On some systems, the directories are highlighted a different color from the files. Ubuntu is one of the systems that does this out of the box. The reason is because there is an alias defined for the <code>ls</code> command. I showed what was really running when performing the <code>ls</code> by showing the alias.</p> <pre><code class=language-bash>almostengr@linuxtraining:~$ alias ls
+</code></pre> <pre><code class=language-aeoutput>alias ls='ls --color=auto'
+</code></pre> <h3 id=removing-folders-and-files>Removing Folders and Files</h3> <p>If you attempt to remove a directory without specifying the recursive option, the system will complain that the action cannot be done. The system will not allow you to delete a folder without deleting the child elements in that folder because that would leave the child elements orphaned on the system.</p> <pre><code class=language-bash>almostengr@linuxtraining:~$ rm anewfolder/
+</code></pre> <pre><code class=language-aeoutput>rm: cannot remove 'anewfolder/': Is a directory
+</code></pre> <pre><code class=language-bash>almostengr@linuxtraining:~$ ls
+</code></pre> <pre><code class=language-aeoutput>almostengr.txt  anewfolder  data2.csv  data.csv  dirtocopy  kenny.txt
+</code></pre> <p>The recursive option still must be used even if the directory is empty. This time the remove command is run with the recursive option and the folder is removed. The <code>rm</code> command does not return any output unless there is an error executing the command.</p> <pre><code class=language-bash>almostengr@linuxtraining:~$ rm -r anewfolder/
 almostengr@linuxtraining:~$ ls
-</code></pre> <pre><code class=aeoutput>almostengr.txt  data2.csv  data.csv  dirtocopy  kenny.txt
-</code></pre> <p>Below are examples of commands that you do not want to run. If you do run any of the commands, they will result in the entire file system being deleted. Some of these require that the executing user have sudo permissions. The commands in the example below have been commented out so that they cannot be intentionally run.</p> <pre><code class=bash>almostengr@linuxtraining:~$ # do not run
+</code></pre> <pre><code class=language-aeoutput>almostengr.txt  data2.csv  data.csv  dirtocopy  kenny.txt
+</code></pre> <p>Below are examples of commands that you do not want to run. If you do run any of the commands, they will result in the entire file system being deleted. Some of these require that the executing user have sudo permissions. The commands in the example below have been commented out so that they cannot be intentionally run.</p> <pre><code class=language-bash>almostengr@linuxtraining:~$ # do not run
 almostengr@linuxtraining:~$ # rm -r /*
 almostengr@linuxtraining:~$ # rm -rf /*
-</code></pre> <p>The equivalent of the above commands is going to the root <code>/</code> directory and running the commands below. The commands in the example have intentionally been commented out so that they cannot be easily run.</p> <pre><code class=bash>almostengr@linuxtraining:~$ cd /
+</code></pre> <p>The equivalent of the above commands is going to the root <code>/</code> directory and running the commands below. The commands in the example have intentionally been commented out so that they cannot be easily run.</p> <pre><code class=language-bash>almostengr@linuxtraining:~$ cd /
 almostengr@linuxtraining:/$ ls
 almostengr@linuxtraining:~$ # do not run
 almostengr@linuxtraining:/$ # rm -r f
 almostengr@linuxtraining:/$ # rm -r f f *
-</code></pre> <p>To find all of the options an example of the <code>rm</code> command, you can enter in the the help argument to the command. The help page wil display different output depending on the distrubution of Linux that you are using.</p> <pre><code class=bash>almostengr@linuxtraining:/$ rm --help
+</code></pre> <p>To find all of the options an example of the <code>rm</code> command, you can enter in the the help argument to the command. The help page wil display different output depending on the distrubution of Linux that you are using.</p> <pre><code class=language-bash>almostengr@linuxtraining:/$ rm --help
 </code></pre> <p>For more information about the command, you can use the <code>man</code> page. The output from this will vary depending on the Linux distribution that you are using.</p> <pre><code>almostengr@linuxtraining:/$ man rm
-</code></pre> <p>Autocomplete can be used with the <code>rm</code> command as well. Just type part of the file name and double press the Tab key to have the system type the rest of the file or to present you with files that match the pattern.</p> <pre><code class=bash>almostengr@linuxtraining:~$ rm cop
-</code></pre> <pre><code class=aeoutput>copiedfile.csv     copyofsample2.txt  copyofsample.txt
-</code></pre> <pre><code class=bash>almostengr@linuxtraining:~$ rm copyofsample*
-</code></pre> <pre><code class=aeoutput>copyofsample2.txt  copyofsample.txt
-</code></pre> <p>Below, I show that "sample" as the pattern matched two files. However, "<em>s</em>e*" matches three files. Using this wildcard pattern can result in you deleting files that you do not want to delete. </p> <pre><code class=bash>almostengr@linuxtraining:~$ ls *s*e*
-</code></pre> <pre><code class=aeoutput>almostengr.txt  copyofsample2.txt  copyofsample.txt
-</code></pre> <p>If you are not sure what all files will match a pattern, run the pattern of your choice with the <code>ls</code> command first before running the <code>rm</code> command.</p> <h3 id=recovering-deleted-files>Recovering Deleted Files</h3> <p>Recovering delete files on Linux is not an easy task unless you use a disk recovery utility. On Windows-based systems, when a file is deleted, it goes to the Recycle Bin. Linux has no concept of the Recycle Bin. There is a way that the Recycle Bin concept can be done. </p> <p>To set up your makeshift Recycle Bin on Linux, you can create an alias for the <code>rm</code> command or use a different alias that will move the file to a different directory instead of deleting the file. </p> <p><code>alias rm="mv $@ /var/tmp"</code></p> <p>If you use the command above as an alias, any time that you use the <code>rm</code> command, it will move the file to the /var/tmp directory instead. Periodically, you will need to "empty the trash" by removing the files from the /var/tmp directory.</p> <h3 id=clear-the-screen>Clear The Screen</h3> <p>Clearing the screen will do what it says. The prompt will be moved to the top of the screen. On some systems, this will limit whether you can scroll back or not.</p> <pre><code class=bash>almostengr@linuxtraining:~$ clear
-</code></pre> <h3 id=copying-files>Copying Files</h3> <p>To display the help information for using the file copy, use the <code>--help</code> option. The help page will vary based on the Linux distribution that you are using.</p> <pre><code class=bash>almostengr@linuxtraining:~$ cp --help
-</code></pre> <p>This is the list of directory contents before performing a file copy.</p> <pre><code class=bash>almostengr@linuxtraining:~$ ls
-</code></pre> <pre><code class=aeoutput>almostengr.txt  data2.csv  data.csv  dirtocopy  kenny.txt
-</code></pre> <p>If you do not remember the filename that you want to copy or the filename is long that you do not want to type it, then you can use auto-complete to have the system complete the filename for you. Start by typing part of the file name in the prompt.</p> <pre><code class=bash>almostengr@linuxtraining:~$ cp -p d
-</code></pre> <p>Then double press the Tab key and you will get the following. </p> <pre><code class=aeoutput>data2.csv  data.csv   dirtocopy/
-</code></pre> <p>Since there are multiple matches for files that start with "d", the system will not automatically guess which one that you are trying to type. Instead it will list all of the files that match the criteria that you have defined so that you can pick which one.</p> <p>The same will happen now that we have typed "data" in the prompt as there are two files that being with "data" in this directory. From here we can type an additional character that matches the file that we want to use in our command and it will complete the rest of the filename.</p> <pre><code class=bash>almostengr@linuxtraining:~$ cp -p data
-</code></pre> <pre><code class=aeoutput>data2.csv  data.csv
-</code></pre> <p>"data2.csv" is the file that is being copied to "copiedfile.csv". To confirm that the file has been copied, we run the ls command with the file names that were used in the <code>cp</code> command as arguments to only show those two files. </p> <pre><code class=bash>almostengr@linuxtraining:~$ cp -p data2.csv copiedfile.csv
+</code></pre> <p>Autocomplete can be used with the <code>rm</code> command as well. Just type part of the file name and double press the Tab key to have the system type the rest of the file or to present you with files that match the pattern.</p> <pre><code class=language-bash>almostengr@linuxtraining:~$ rm cop
+</code></pre> <pre><code class=language-aeoutput>copiedfile.csv     copyofsample2.txt  copyofsample.txt
+</code></pre> <pre><code class=language-bash>almostengr@linuxtraining:~$ rm copyofsample*
+</code></pre> <pre><code class=language-aeoutput>copyofsample2.txt  copyofsample.txt
+</code></pre> <p>Below, I show that "sample" as the pattern matched two files. However, "<em>s</em>e*" matches three files. Using this wildcard pattern can result in you deleting files that you do not want to delete. </p> <pre><code class=language-bash>almostengr@linuxtraining:~$ ls *s*e*
+</code></pre> <pre><code class=language-aeoutput>almostengr.txt  copyofsample2.txt  copyofsample.txt
+</code></pre> <p>If you are not sure what all files will match a pattern, run the pattern of your choice with the <code>ls</code> command first before running the <code>rm</code> command.</p> <h3 id=recovering-deleted-files>Recovering Deleted Files</h3> <p>Recovering delete files on Linux is not an easy task unless you use a disk recovery utility. On Windows-based systems, when a file is deleted, it goes to the Recycle Bin. Linux has no concept of the Recycle Bin. There is a way that the Recycle Bin concept can be done. </p> <p>To set up your makeshift Recycle Bin on Linux, you can create an alias for the <code>rm</code> command or use a different alias that will move the file to a different directory instead of deleting the file. </p> <p><code>alias rm="mv $@ /var/tmp"</code></p> <p>If you use the command above as an alias, any time that you use the <code>rm</code> command, it will move the file to the /var/tmp directory instead. Periodically, you will need to "empty the trash" by removing the files from the /var/tmp directory.</p> <h3 id=clear-the-screen>Clear The Screen</h3> <p>Clearing the screen will do what it says. The prompt will be moved to the top of the screen. On some systems, this will limit whether you can scroll back or not.</p> <pre><code class=language-bash>almostengr@linuxtraining:~$ clear
+</code></pre> <h3 id=copying-files>Copying Files</h3> <p>To display the help information for using the file copy, use the <code>--help</code> option. The help page will vary based on the Linux distribution that you are using.</p> <pre><code class=language-bash>almostengr@linuxtraining:~$ cp --help
+</code></pre> <p>This is the list of directory contents before performing a file copy.</p> <pre><code class=language-bash>almostengr@linuxtraining:~$ ls
+</code></pre> <pre><code class=language-aeoutput>almostengr.txt  data2.csv  data.csv  dirtocopy  kenny.txt
+</code></pre> <p>If you do not remember the filename that you want to copy or the filename is long that you do not want to type it, then you can use auto-complete to have the system complete the filename for you. Start by typing part of the file name in the prompt.</p> <pre><code class=language-bash>almostengr@linuxtraining:~$ cp -p d
+</code></pre> <p>Then double press the Tab key and you will get the following. </p> <pre><code class=language-aeoutput>data2.csv  data.csv   dirtocopy/
+</code></pre> <p>Since there are multiple matches for files that start with "d", the system will not automatically guess which one that you are trying to type. Instead it will list all of the files that match the criteria that you have defined so that you can pick which one.</p> <p>The same will happen now that we have typed "data" in the prompt as there are two files that being with "data" in this directory. From here we can type an additional character that matches the file that we want to use in our command and it will complete the rest of the filename.</p> <pre><code class=language-bash>almostengr@linuxtraining:~$ cp -p data
+</code></pre> <pre><code class=language-aeoutput>data2.csv  data.csv
+</code></pre> <p>"data2.csv" is the file that is being copied to "copiedfile.csv". To confirm that the file has been copied, we run the ls command with the file names that were used in the <code>cp</code> command as arguments to only show those two files. </p> <pre><code class=language-bash>almostengr@linuxtraining:~$ cp -p data2.csv copiedfile.csv
 almostengr@linuxtraining:~$ ls -al data2.csv copiedfile.csv
-</code></pre> <p>Since we used the <code>-p</code> option in our file copy, the original and copied file will have the same last modified date and time.</p> <pre><code class=aeoutput>-rw-rw-r-- 1 almostengr almostengr 6595 Mar  1 05:40 copiedfile.csv
+</code></pre> <p>Since we used the <code>-p</code> option in our file copy, the original and copied file will have the same last modified date and time.</p> <pre><code class=language-aeoutput>-rw-rw-r-- 1 almostengr almostengr 6595 Mar  1 05:40 copiedfile.csv
 -rw-rw-r-- 1 almostengr almostengr 6595 Mar  1 05:40 data2.csv
-</code></pre> <p>Going to copy the file that we created to another file. This time without using the preserve option. Also going to use the wild card with the <code>ls</code> command to show both files instead of specifying each file name. </p> <pre><code class=bash>almostengr@linuxtraining:~$ cp sample.txt copysofsample.txt
+</code></pre> <p>Going to copy the file that we created to another file. This time without using the preserve option. Also going to use the wild card with the <code>ls</code> command to show both files instead of specifying each file name. </p> <pre><code class=language-bash>almostengr@linuxtraining:~$ cp sample.txt copysofsample.txt
 almostengr@linuxtraining:~$ ls -al *sample*
-</code></pre> <pre><code class=aeoutput>-rw-rw-r-- 1 almostengr almostengr 0 Mar  1 22:15 copyofsample.txt
+</code></pre> <pre><code class=language-aeoutput>-rw-rw-r-- 1 almostengr almostengr 0 Mar  1 22:15 copyofsample.txt
 -rw-rw-r-- 1 almostengr almostengr 0 Mar  1 22:12 sample.txt
-</code></pre> <p>Since the <code>-p</code> option was not used when copying the file, the copied file will have the current timestamp (22:15).</p> <h3 id=creating-files>Creating Files</h3> <p>To create a file, you can use the <code>touch</code> command. The file will be created with the name that you provide.</p> <pre><code class=bash>almostengr@linuxtraining:~$ touch sample.txt
+</code></pre> <p>Since the <code>-p</code> option was not used when copying the file, the copied file will have the current timestamp (22:15).</p> <h3 id=creating-files>Creating Files</h3> <p>To create a file, you can use the <code>touch</code> command. The file will be created with the name that you provide.</p> <pre><code class=language-bash>almostengr@linuxtraining:~$ touch sample.txt
 almostengr@linuxtraining:~$ ls -al sample.txt
-</code></pre> <pre><code class=aeoutput>-rw-rw-r-- 1 almostengr almostengr 0 Mar  1 22:12 sample.txt
-</code></pre> <h3 id=viewing-file-contents>Viewing File Contents</h3> <p>There are many ways of viewing file contents. To display an entire file on the screen, you use <code>cat</code>. </p> <pre><code class=bash>almostengr@linuxtraining:~$ cat data2.csv
-</code></pre> <pre><code class=aeoutput>id,first_name,last_name,email,region,country
+</code></pre> <pre><code class=language-aeoutput>-rw-rw-r-- 1 almostengr almostengr 0 Mar  1 22:12 sample.txt
+</code></pre> <h3 id=viewing-file-contents>Viewing File Contents</h3> <p>There are many ways of viewing file contents. To display an entire file on the screen, you use <code>cat</code>. </p> <pre><code class=language-bash>almostengr@linuxtraining:~$ cat data2.csv
+</code></pre> <pre><code class=language-aeoutput>id,first_name,last_name,email,region,country
 1,Christian,Walls,non.hendrerit.id@a.net,Manitoba,Spain
 2,Mona,Morales,pulvinar.arcu.et@lacusEtiam.ca,Cusco,Mongolia
 3,Channing,Ford,ipsum.dolor.sit@id.ca,Metropolitana de Santiago,Faroe Islands
@@ -235,8 +235,8 @@ almostengr@linuxtraining:~$ ls -al sample.txt
 98,Branden,Leon,sed.leo@liberoIntegerin.com,La Libertad,French Guiana
 99,Tucker,Clark,nibh.sit.amet@leoVivamus.net,Emilia-Romagna,Saint Kitts and Nevis
 100,Todd,Dyer,nunc.nulla.vulputate@hendrerit.co.uk,Gl,Mozambique
-</code></pre> <p>A better way of displaying data on the page, is to use the <code>more</code> command. This will display one full screen of information. To navigate using the <code>more</code> command, you can </p> <ul> <li>go the next screen of information by using the space bar</li> <li>go forward one line by pressing the Enter key</li> <li>go backwards one line by pressing the "B" key</li> <li>go back to the command prompt by pressing the "Q" key or continue to end the space bar until you reach the end of the file</li> </ul> <pre><code class=bash>almostengr@linuxtraining:~$ more data2.csv
-</code></pre> <pre><code class=aeoutput>id,first_name,last_name,email,region,country
+</code></pre> <p>A better way of displaying data on the page, is to use the <code>more</code> command. This will display one full screen of information. To navigate using the <code>more</code> command, you can </p> <ul> <li>go the next screen of information by using the space bar</li> <li>go forward one line by pressing the Enter key</li> <li>go backwards one line by pressing the "B" key</li> <li>go back to the command prompt by pressing the "Q" key or continue to end the space bar until you reach the end of the file</li> </ul> <pre><code class=language-bash>almostengr@linuxtraining:~$ more data2.csv
+</code></pre> <pre><code class=language-aeoutput>id,first_name,last_name,email,region,country
 1,Christian,Walls,non.hendrerit.id@a.net,Manitoba,Spain
 2,Mona,Morales,pulvinar.arcu.et@lacusEtiam.ca,Cusco,Mongolia
 3,Channing,Ford,ipsum.dolor.sit@id.ca,Metropolitana de Santiago,Faroe Islands
@@ -266,8 +266,8 @@ almostengr@linuxtraining:~$ ls -al sample.txt
 --More--(25%)
 26,Mercedes,Oneal,Nullam@vehicula.net,Metropolitana de Santiago,Cyprus
 --More--(26%)
-</code></pre> <p>"B" key was pressed which resulted in this message being shown in the bottom left of the screen and the file backing up.</p> <pre><code class=aeoutput>...back 1 page
-</code></pre> <p>I used the space bar to go forward which shows the next set of rows on the screen.</p> <pre><code class=aeoutput>25,Dante,Kelly,blandit.at@fermentum.com,FATA,French Guiana
+</code></pre> <p>"B" key was pressed which resulted in this message being shown in the bottom left of the screen and the file backing up.</p> <pre><code class=language-aeoutput>...back 1 page
+</code></pre> <p>I used the space bar to go forward which shows the next set of rows on the screen.</p> <pre><code class=language-aeoutput>25,Dante,Kelly,blandit.at@fermentum.com,FATA,French Guiana
 26,Mercedes,Oneal,Nullam@vehicula.net,Metropolitana de Santiago,Cyprus
 27,Vielka,Shields,Quisque.ac.libero@leo.com,East Nusa Tenggara,Togo
 28,Nasim,Sharp,id.erat.Etiam@nascetur.org,F,Reunion
@@ -294,9 +294,9 @@ almostengr@linuxtraining:~$ ls -al sample.txt
 49,Marcia,Ramos,Integer.id@luctuset.com,L.,Guatemala
 50,Helen,Gardner,pellentesque@DonecnibhQuisque.org,Ayd,Costa Rica
 --More--(52%)
-</code></pre> <p>The <code>more</code> command can be used for other operations, including paging the output for files and directories. </p> <p>We navigated to the /etc directory and listed the contents.</p> <pre><code class=bash>almostengr@linuxtraining:~$ cd /etc/
+</code></pre> <p>The <code>more</code> command can be used for other operations, including paging the output for files and directories. </p> <p>We navigated to the /etc directory and listed the contents.</p> <pre><code class=language-bash>almostengr@linuxtraining:~$ cd /etc/
 almostengr@linuxtraining:/etc$ ls
-</code></pre> <pre><code class=aeoutput>acpi                    groff            manpath.config           rmt
+</code></pre> <pre><code class=language-aeoutput>acpi                    groff            manpath.config           rmt
 adduser.conf            group            mdadm                    rpc
 alternatives            group-           mime.types               rsyslog.conf
 apm                     grub.d           mke2fs.conf              rsyslog.d
@@ -341,15 +341,15 @@ fonts                   magic            rc5.d                    xdg
 fstab                   magic.mime       rc6.d                    zsh_command_not_found
 fuse.conf               mailcap          rcS.d
 gai.conf                mailcap.order    resolv.conf
-</code></pre> <p>Question was asked if more could only be used on data files. I showed that it could be used on any text file on the system. I also mentioned that it could be used on image files, but that the output would not be pretty.</p> <pre><code class=bash>almostengr@linuxtraining:/etc$ more libaudit.conf
-</code></pre> <pre><code class=aeoutput>## This is the configuration file for libaudit tunables.
+</code></pre> <p>Question was asked if more could only be used on data files. I showed that it could be used on any text file on the system. I also mentioned that it could be used on image files, but that the output would not be pretty.</p> <pre><code class=language-bash>almostengr@linuxtraining:/etc$ more libaudit.conf
+</code></pre> <pre><code class=language-aeoutput>## This is the configuration file for libaudit tunables.
 ## It is currently only used for the failure_action tunable.
 
 ## failure_action can be: log, ignore, terminate
 failure_action = ignore
-</code></pre> <h3 id=viewing-files-from-beginning-of-file-using-head>Viewing Files (From Beginning of File) Using Head</h3> <p>The <code>head</code> command is used to read from the top of a file. To find out the options for this command, you can run the command below.</p> <pre><code class=bash>almostengr@linuxtraining:~$ head --help
-</code></pre> <p>By default, head will display the top 10 lines in a file. You can specify the number of lines that it should display. In the command below, I have specified that it display the top 15 lines of the file.</p> <pre><code class=bash>almostengr@linuxtraining:~$ head -15 data2.csv
-</code></pre> <pre><code class=aeoutput>id,first_name,last_name,email,region,country
+</code></pre> <h3 id=viewing-files-from-beginning-of-file-using-head>Viewing Files (From Beginning of File) Using Head</h3> <p>The <code>head</code> command is used to read from the top of a file. To find out the options for this command, you can run the command below.</p> <pre><code class=language-bash>almostengr@linuxtraining:~$ head --help
+</code></pre> <p>By default, head will display the top 10 lines in a file. You can specify the number of lines that it should display. In the command below, I have specified that it display the top 15 lines of the file.</p> <pre><code class=language-bash>almostengr@linuxtraining:~$ head -15 data2.csv
+</code></pre> <pre><code class=language-aeoutput>id,first_name,last_name,email,region,country
 1,Christian,Walls,non.hendrerit.id@a.net,Manitoba,Spain
 2,Mona,Morales,pulvinar.arcu.et@lacusEtiam.ca,Cusco,Mongolia
 3,Channing,Ford,ipsum.dolor.sit@id.ca,Metropolitana de Santiago,Faroe Islands
@@ -364,8 +364,8 @@ failure_action = ignore
 12,Hammett,Rowe,tincidunt.aliquam.arcu@Donecegestas.co.uk,SJ,Malta
 13,Kasimir,Bentley,pellentesque.massa.lobortis@Integeraliquam.ca,East Kalimantan,Fiji
 14,Macon,Stone,varius.ultrices.mauris@ornarelectusjusto.com,JT,Macao
-</code></pre> <p>If you specify that it display more lines than what are in the file, it will be the equivalent of running the <code>cat</code> command as it will display the entire file. The data2.csv file only has 101 lines in it. Since 125 was specified as the number of lines to print out, it will display the entire file.</p> <pre><code class=bash>almostengr@linuxtraining:~$ head -125 data2.csv
-</code></pre> <pre><code class=aeoutput>id,first_name,last_name,email,region,country
+</code></pre> <p>If you specify that it display more lines than what are in the file, it will be the equivalent of running the <code>cat</code> command as it will display the entire file. The data2.csv file only has 101 lines in it. Since 125 was specified as the number of lines to print out, it will display the entire file.</p> <pre><code class=language-bash>almostengr@linuxtraining:~$ head -125 data2.csv
+</code></pre> <pre><code class=language-aeoutput>id,first_name,last_name,email,region,country
 1,Christian,Walls,non.hendrerit.id@a.net,Manitoba,Spain
 2,Mona,Morales,pulvinar.arcu.et@lacusEtiam.ca,Cusco,Mongolia
 3,Channing,Ford,ipsum.dolor.sit@id.ca,Metropolitana de Santiago,Faroe Islands
@@ -466,8 +466,8 @@ failure_action = ignore
 98,Branden,Leon,sed.leo@liberoIntegerin.com,La Libertad,French Guiana
 99,Tucker,Clark,nibh.sit.amet@leoVivamus.net,Emilia-Romagna,Saint Kitts and Nevis
 100,Todd,Dyer,nunc.nulla.vulputate@hendrerit.co.uk,Gl,Mozambique
-</code></pre> <h3 id=viewing-files-from-end-of-file-using-tail>Viewing Files (From End of File), Using Tail</h3> <p><code>tail</code> command works in the same fashion as the <code>head</code> command excepts it reads from the end of the file. By default, it will display the last 10 lines of the file. In the command below, I have specified that it displays the last 15 lines of the file. </p> <pre><code class=bash>almostengr@linuxtraining:~$ tail -15 data2.csv
-</code></pre> <pre><code class=aeoutput>86,Isabella,Snider,sollicitudin.adipiscing.ligula@dis.com,Gye,Tanzania
+</code></pre> <h3 id=viewing-files-from-end-of-file-using-tail>Viewing Files (From End of File), Using Tail</h3> <p><code>tail</code> command works in the same fashion as the <code>head</code> command excepts it reads from the end of the file. By default, it will display the last 10 lines of the file. In the command below, I have specified that it displays the last 15 lines of the file. </p> <pre><code class=language-bash>almostengr@linuxtraining:~$ tail -15 data2.csv
+</code></pre> <pre><code class=language-aeoutput>86,Isabella,Snider,sollicitudin.adipiscing.ligula@dis.com,Gye,Tanzania
 87,Ria,Scott,sem.semper.erat@Uttincidunt.edu,Andaluca,Hungary
 88,Courtney,Washington,eu.tellus.eu@Aliquamerat.co.uk,Piura,Mayotte
 89,Brendan,Blackwell,nascetur.ridiculus.mus@velarcu.org,Sokoto,United Arab Emirates
@@ -482,8 +482,8 @@ failure_action = ignore
 98,Branden,Leon,sed.leo@liberoIntegerin.com,La Libertad,French Guiana
 99,Tucker,Clark,nibh.sit.amet@leoVivamus.net,Emilia-Romagna,Saint Kitts and Nevis
 100,Todd,Dyer,nunc.nulla.vulputate@hendrerit.co.uk,Gl,Mozambique
-</code></pre> <pre><code class=bash>almostengr@linuxtraining:~$ ls -altr
-</code></pre> <pre><code class=aeoutput>total 80
+</code></pre> <pre><code class=language-bash>almostengr@linuxtraining:~$ ls -altr
+</code></pre> <pre><code class=language-aeoutput>total 80
 -rw-r--r-- 1 almostengr almostengr  807 Apr  4  2018 .profile
 -rw-r--r-- 1 almostengr almostengr 3771 Apr  4  2018 .bashrc
 -rw-r--r-- 1 almostengr almostengr  220 Apr  4  2018 .bash_logout
@@ -503,10 +503,10 @@ drwxr-xr-x 2 almostengr almostengr 4096 Mar  1 05:39 .vim
 -rw-rw-r-- 1 almostengr almostengr    0 Mar  1 22:17 copyofsample.txt
 -rw-rw-r-- 1 almostengr almostengr    0 Mar  1 22:17 copyofsample2.txt
 drwxr-xr-x 6 almostengr almostengr 4096 Mar  1 22:17 .
-</code></pre> <h3 id=listing-files-by-last-modified-and-sort-order>Listing Files By Last Modified and Sort Order</h3> <p>To see the list of options that can be used with the <code>ls</code> command, you can use the help option or man page. </p> <pre><code class=bash>almostengr@linuxtraining:~$ ls --help
-</code></pre> <p>or</p> <pre><code class=bash>almostengr@linuxtraining:/etc$ man ls
-</code></pre> <p>To list files in order that are sorted by date and time in reverse order, you can use the command below. </p> <pre><code class=bash>almostengr@linuxtraining:/etc$ ls -altr
-</code></pre> <pre><code class=aeoutput>total 816
+</code></pre> <h3 id=listing-files-by-last-modified-and-sort-order>Listing Files By Last Modified and Sort Order</h3> <p>To see the list of options that can be used with the <code>ls</code> command, you can use the help option or man page. </p> <pre><code class=language-bash>almostengr@linuxtraining:~$ ls --help
+</code></pre> <p>or</p> <pre><code class=language-bash>almostengr@linuxtraining:/etc$ man ls
+</code></pre> <p>To list files in order that are sorted by date and time in reverse order, you can use the command below. </p> <pre><code class=language-bash>almostengr@linuxtraining:/etc$ ls -altr
+</code></pre> <pre><code class=language-aeoutput>total 816
 -rw-r--r--  1 root root        280 Jun 20  2014 fuse.conf
 -rw-r--r--  1 root root       3663 Jun  9  2015 screenrc
 -rw-r--r--  1 root root         34 Jan 27  2016 ld.so.conf
@@ -688,8 +688,8 @@ drwxr-xr-x  2 root root       4096 Feb 28 01:58 rc0.d
 drwxr-xr-x  2 root root       4096 Feb 28 01:58 python
 -rw-r--r--  1 root root       3623 Feb 28 01:58 mailcap
 drwxr-xr-x 95 root root       4096 Feb 28 01:58 .
-</code></pre> <p>As you see, the most recent files will show up at the bottom of the screen. When there are a number of files in a directory, those files will flood the screen which means you will have to scroll back to see the files at the beginning. </p> <p>The command <code>ls -alt</code> will place the most recently modified files at the top of the list and oldest files at the bottom. If you are looking for the oldest files, then you would not have to scroll back to find them.</p> <p>It is possible to list the files by time without displaying the timestamp of when the file or directory was last modified. In most circumstances, this listing will not be useful as it will not have any of the date or time information presented. </p> <pre><code class=bash>almostengr@linuxtraining:/etc$ ls -1t
-</code></pre> <pre><code class=aeoutput>mailcap               systemd                  shells                host.conf
+</code></pre> <p>As you see, the most recent files will show up at the bottom of the screen. When there are a number of files in a directory, those files will flood the screen which means you will have to scroll back to see the files at the beginning. </p> <p>The command <code>ls -alt</code> will place the most recently modified files at the top of the list and oldest files at the bottom. If you are looking for the oldest files, then you would not have to scroll back to find them.</p> <p>It is possible to list the files by time without displaying the timestamp of when the file or directory was last modified. In most circumstances, this listing will not be useful as it will not have any of the date or time information presented. </p> <pre><code class=language-bash>almostengr@linuxtraining:/etc$ ls -1t
+</code></pre> <pre><code class=language-aeoutput>mailcap               systemd                  shells                host.conf
 python                sysctl.d                 tmpfiles.d            legal
 rc0.d                 security                 groff                 networks
 rc1.d                 modules-load.d           logcheck              profile
@@ -734,8 +734,8 @@ thermald              byobu                    landscape             screenrc
 depmod.d              popularity-contest.conf  wgetrc                fuse.conf
 networkd-dispatcher   calendar                 binfmt.d
 apt                   libnl-3                  locale.alias
-</code></pre> <h3 id=listing-only-directories>Listing Only Directories</h3> <p>You can list only the directories using the <code>ls</code> command. You have to use the <code>*/</code> in the command. This command may vary depending on the Linux distribution that you are using.</p> <pre><code class=bash>almostengr@linuxtraining:/etc$ ls -d */
-</code></pre> <pre><code class=aeoutput>acpi/               cryptsetup-initramfs/  ldap/                 polkit-1/   ssh/
+</code></pre> <h3 id=listing-only-directories>Listing Only Directories</h3> <p>You can list only the directories using the <code>ls</code> command. You have to use the <code>*/</code> in the command. This command may vary depending on the Linux distribution that you are using.</p> <pre><code class=language-bash>almostengr@linuxtraining:/etc$ ls -d */
+</code></pre> <pre><code class=language-aeoutput>acpi/               cryptsetup-initramfs/  ldap/                 polkit-1/   ssh/
 alternatives/       dbus-1/                ld.so.conf.d/         pollinate/  ssl/
 apm/                default/               libnl-3/              profile.d/  sudoers.d/
 apparmor/           depmod.d/              logcheck/             python/     sysctl.d/
@@ -754,8 +754,8 @@ cron.daily/         iproute2/              opt/                  rsyslog.d/  X11
 cron.hourly/        iscsi/                 pam.d/                security/   xdg/
 cron.monthly/       kernel/                perl/                 selinux/
 cron.weekly/        landscape/             pm/                   skel/
-</code></pre> <p>Another way to list the files with the directories is to run the following command. This command will put a trailing slash on each item that is a directory. Files do not have slashes.</p> <pre><code class=bash>almostengr@linuxtraining:/etc$ ls -F
-</code></pre> <pre><code class=aeoutput>acpi/                   groff/            manpath.config           rmt*
+</code></pre> <p>Another way to list the files with the directories is to run the following command. This command will put a trailing slash on each item that is a directory. Files do not have slashes.</p> <pre><code class=language-bash>almostengr@linuxtraining:/etc$ ls -F
+</code></pre> <pre><code class=language-aeoutput>acpi/                   groff/            manpath.config           rmt*
 adduser.conf            group             mdadm/                   rpc
 alternatives/           group-            mime.types               rsyslog.conf
 apm/                    grub.d/           mke2fs.conf              rsyslog.d/
@@ -800,17 +800,17 @@ fonts/                  magic             rc5.d/                   xdg/
 fstab                   magic.mime        rc6.d/                   zsh_command_not_found
 fuse.conf               mailcap           rcS.d/
 gai.conf                mailcap.order     resolv.conf@
-</code></pre> <h3 id=different-way-of-listing-only-csv-files-in-directory>Different Way Of Listing Only CSV Files In Directory</h3> <p>You can use the grep command to filter out the list of files and directories using the pipe <code>|</code> character.</p> <p>In the example below, the output of the <code>ls</code> command is "piped" to the <code>grep</code> command and then displayed.</p> <pre><code class=bash>almostengr@linuxtraining:~$ ls -l | grep csv
-</code></pre> <pre><code class=aeoutput>-rw-rw-r-- 1 almostengr almostengr 6595 Mar  1 05:40 copiedfile.csv
+</code></pre> <h3 id=different-way-of-listing-only-csv-files-in-directory>Different Way Of Listing Only CSV Files In Directory</h3> <p>You can use the grep command to filter out the list of files and directories using the pipe <code>|</code> character.</p> <p>In the example below, the output of the <code>ls</code> command is "piped" to the <code>grep</code> command and then displayed.</p> <pre><code class=language-bash>almostengr@linuxtraining:~$ ls -l | grep csv
+</code></pre> <pre><code class=language-aeoutput>-rw-rw-r-- 1 almostengr almostengr 6595 Mar  1 05:40 copiedfile.csv
 -rw-rw-r-- 1 almostengr almostengr 6595 Mar  1 05:40 data2.csv
 -rw-rw-r-- 1 almostengr almostengr 6538 Mar  1 05:39 data.csv
-</code></pre> <p>The command above, will return the same command as below.</p> <pre><code class=bash>almostengr@linuxtraining:~$ ls -l *csv
-</code></pre> <pre><code class=aeoutput>-rw-rw-r-- 1 almostengr almostengr 6595 Mar  1 05:40 copiedfile.csv
+</code></pre> <p>The command above, will return the same command as below.</p> <pre><code class=language-bash>almostengr@linuxtraining:~$ ls -l *csv
+</code></pre> <pre><code class=language-aeoutput>-rw-rw-r-- 1 almostengr almostengr 6595 Mar  1 05:40 copiedfile.csv
 -rw-rw-r-- 1 almostengr almostengr 6595 Mar  1 05:40 data2.csv
 -rw-rw-r-- 1 almostengr almostengr 6538 Mar  1 05:39 data.csv
-</code></pre> <h3 id=searching-files-and-output-with-grep>Searching Files and Output with grep</h3> <p>You can use <code>grep</code> to find certain strings or patterns in a file. The help documentation for the command can be found by running the command below.</p> <pre><code class=bash>almostengr@linuxtraining:~$ grep --help
-</code></pre> <p>Below I have used the command and piped it to <code>more</code> to show the lines in the file that contain "s". </p> <pre><code class=bash>almostengr@linuxtraining:~$ grep s data2.csv | more
-</code></pre> <pre><code class=aeoutput>id,first_name,last_name,email,region,country
+</code></pre> <h3 id=searching-files-and-output-with-grep>Searching Files and Output with grep</h3> <p>You can use <code>grep</code> to find certain strings or patterns in a file. The help documentation for the command can be found by running the command below.</p> <pre><code class=language-bash>almostengr@linuxtraining:~$ grep --help
+</code></pre> <p>Below I have used the command and piped it to <code>more</code> to show the lines in the file that contain "s". </p> <pre><code class=language-bash>almostengr@linuxtraining:~$ grep s data2.csv | more
+</code></pre> <pre><code class=language-aeoutput>id,first_name,last_name,email,region,country
 1,Christian,Walls,non.hendrerit.id@a.net,Manitoba,Spain
 2,Mona,Morales,pulvinar.arcu.et@lacusEtiam.ca,Cusco,Mongolia
 3,Channing,Ford,ipsum.dolor.sit@id.ca,Metropolitana de Santiago,Faroe Islands
@@ -836,23 +836,23 @@ gai.conf                mailcap.order     resolv.conf@
 23,Nigel,Holden,et@varius.co.uk,IV,&quot;Saint Helena, Ascension and Tristan da Cunha&quot;
 24,Sylvester,Thornton,Cras@utnullaCras.co.uk,QC,Mexico
 --More--
-</code></pre> <p>The grep command is case-sensitive. As you can see, the lower case "s" returns a different number of rows than the upper case "S" from the same file. </p> <pre><code class=bash>almostengr@linuxtraining:~$ grep s data2.csv | more wc -l
-</code></pre> <pre><code class=aeoutput>97
-</code></pre> <pre><code class=bash>almostengr@linuxtraining:~$ grep S data2.csv | wc -l
-</code></pre> <pre><code class=aeoutput>46
-</code></pre> <p>A case-insensitive search can be done by using the <code>-i</code> option. The below command was run and returned a all of the lines that contained a "S" whether it was upper or lowercase.</p> <pre><code class=bash>almostengr@linuxtraining:~$ grep -i S data2.csv | wc -l
-</code></pre> <pre><code class=aeoutput>99
-</code></pre> <h3 id=difference-between-pipe-and-output>Difference Between Pipe and Output</h3> <p>In the examples above, I piped the output from one command to another command. It was asked if <code>|</code> is the same as using <code>&gt;&gt;</code>, to which I answered that it was not. I ran the commands below to demonstrate the differences.</p> <p>When using the pipe command, the output is passed to the next command after the pipe. In this example, it resulted in the number of lines being displayed on the screen and no file being created.</p> <pre><code class=bash>almostengr@linuxtraining:~$ ls -al | wc -l
-</code></pre> <pre><code class=aeoutput>20
-</code></pre> <pre><code class=bash>almostengr@linuxtraining:~$ ls
-</code></pre> <pre><code class=aeoutput>almostengr.txt  copyofsample2.txt  data2.csv  dirtocopy
+</code></pre> <p>The grep command is case-sensitive. As you can see, the lower case "s" returns a different number of rows than the upper case "S" from the same file. </p> <pre><code class=language-bash>almostengr@linuxtraining:~$ grep s data2.csv | more wc -l
+</code></pre> <pre><code class=language-aeoutput>97
+</code></pre> <pre><code class=language-bash>almostengr@linuxtraining:~$ grep S data2.csv | wc -l
+</code></pre> <pre><code class=language-aeoutput>46
+</code></pre> <p>A case-insensitive search can be done by using the <code>-i</code> option. The below command was run and returned a all of the lines that contained a "S" whether it was upper or lowercase.</p> <pre><code class=language-bash>almostengr@linuxtraining:~$ grep -i S data2.csv | wc -l
+</code></pre> <pre><code class=language-aeoutput>99
+</code></pre> <h3 id=difference-between-pipe-and-output>Difference Between Pipe and Output</h3> <p>In the examples above, I piped the output from one command to another command. It was asked if <code>|</code> is the same as using <code>&gt;&gt;</code>, to which I answered that it was not. I ran the commands below to demonstrate the differences.</p> <p>When using the pipe command, the output is passed to the next command after the pipe. In this example, it resulted in the number of lines being displayed on the screen and no file being created.</p> <pre><code class=language-bash>almostengr@linuxtraining:~$ ls -al | wc -l
+</code></pre> <pre><code class=language-aeoutput>20
+</code></pre> <pre><code class=language-bash>almostengr@linuxtraining:~$ ls
+</code></pre> <pre><code class=language-aeoutput>almostengr.txt  copyofsample2.txt  data2.csv  dirtocopy
 copiedfile.csv  copyofsample.txt   data.csv   kenny.txt
-</code></pre> <p>When using the append command, the output is passed to the filename that comes after the double arrowss. in this e example, it resulted in the output of the <code>ls</code> command being written to a file named wc.</p> <pre><code class=bash>almostengr@linuxtraining:~$ ls -al &gt;&gt; wc -l
+</code></pre> <p>When using the append command, the output is passed to the filename that comes after the double arrowss. in this e example, it resulted in the output of the <code>ls</code> command being written to a file named wc.</p> <pre><code class=language-bash>almostengr@linuxtraining:~$ ls -al &gt;&gt; wc -l
 almostengr@linuxtraining:~$ ls
-</code></pre> <pre><code class=aeoutput>almostengr.txt  copyofsample2.txt  data2.csv  dirtocopy  wc
+</code></pre> <pre><code class=language-aeoutput>almostengr.txt  copyofsample2.txt  data2.csv  dirtocopy  wc
 copiedfile.csv  copyofsample.txt   data.csv   kenny.txt
-</code></pre> <p>When viewing the contents of the file named "wc", we see a listing of files and directories.</p> <pre><code class=bash>almostengr@linuxtraining:~$ more wc
-</code></pre> <pre><code class=aeoutput>total 80
+</code></pre> <p>When viewing the contents of the file named "wc", we see a listing of files and directories.</p> <pre><code class=language-bash>almostengr@linuxtraining:~$ more wc
+</code></pre> <pre><code class=language-aeoutput>total 80
 drwxr-xr-x 6 almostengr almostengr 4096 Mar  1 22:47 .
 drwxr-xr-x 3 root       root       4096 Feb 23 21:05 ..
 -rw-rw-r-- 1 almostengr almostengr  790 Feb 24 03:11 almostengr.txt
@@ -873,8 +873,8 @@ drwx------ 3 almostengr almostengr 4096 Feb 23 21:05 .gnupg
 drwxr-xr-x 2 almostengr almostengr 4096 Mar  1 05:39 .vim
 -rw------- 1 almostengr almostengr 6805 Mar  1 05:40 .viminfo
 -rw-rw-r-- 1 almostengr almostengr    0 Mar  1 22:47 wc
-</code></pre> <h3 id=look-at-previous-commands-ran>Look At Previous Commands Ran</h3> <p>To see the previous commands that you have ran, you can run the <code>history</code> command. To filter that list, you can use the <code>grep</code> command. In this scenario, I was grepping for the grep command. Thus why it is listed twice after the pipe.</p> <pre><code class=bash>almostengr@linuxtraining:~$ history | grep grep
-</code></pre> <pre><code class=aeoutput>    2  ifconfig | grep 192
+</code></pre> <h3 id=look-at-previous-commands-ran>Look At Previous Commands Ran</h3> <p>To see the previous commands that you have ran, you can run the <code>history</code> command. To filter that list, you can use the <code>grep</code> command. In this scenario, I was grepping for the grep command. Thus why it is listed twice after the pipe.</p> <pre><code class=language-bash>almostengr@linuxtraining:~$ history | grep grep
+</code></pre> <pre><code class=language-aeoutput>    2  ifconfig | grep 192
   231  ps -ef | grep almostengr
   343  ls -l | grep csv
   345  grep s data2.csv | more
@@ -886,28 +886,28 @@ drwxr-xr-x 2 almostengr almostengr 4096 Mar  1 05:39 .vim
   352* grep -i S data2.csv
   353  grep -i q data2.csv | wc -l
   361  history | grep grep
-</code></pre> <h3 id=using-the-wc-command>Using the wc Command</h3> <pre><code class=bash>almostengr@linuxtraining:~$ grep -i q data2.csv | wc -l
-</code></pre> <pre><code class=aeoutput>30
-</code></pre> <p>I filtered the data file by only including rows that have a "q" in them into another file. Then I counted the number of lines in that file using the <code>wc</code> command.</p> <pre><code class=bash>almostengr@linuxtraining:~$ grep -i q data2.csv &gt;&gt; filrowswithq.txt
+</code></pre> <h3 id=using-the-wc-command>Using the wc Command</h3> <pre><code class=language-bash>almostengr@linuxtraining:~$ grep -i q data2.csv | wc -l
+</code></pre> <pre><code class=language-aeoutput>30
+</code></pre> <p>I filtered the data file by only including rows that have a "q" in them into another file. Then I counted the number of lines in that file using the <code>wc</code> command.</p> <pre><code class=language-bash>almostengr@linuxtraining:~$ grep -i q data2.csv &gt;&gt; filrowswithq.txt
 almostengr@linuxtraining:~$ wc rowswithq.txt
-</code></pre> <pre><code class=aeoutput>  30   49 1999 rowswithq.txt
-</code></pre> <h3 id=using-vi>Using vi</h3> <p>Those that attended the session got some experience using vi. That output was not easily captured by PuTTY log utility, so it was excluded from this blog post.</p> <p>After creating and adding text to a file in vi, the attendees were shown how to display the contents of their file as well as grep the contents of the file they had created.</p> <p>Below are the commands that were run for this.</p> <pre><code class=bash>almostengr@linuxtraining:~$ cat editingfile.txt
-</code></pre> <pre><code class=aeoutput>kasdfj;kalsdfjoai5rj;eafk
+</code></pre> <pre><code class=language-aeoutput>  30   49 1999 rowswithq.txt
+</code></pre> <h3 id=using-vi>Using vi</h3> <p>Those that attended the session got some experience using vi. That output was not easily captured by PuTTY log utility, so it was excluded from this blog post.</p> <p>After creating and adding text to a file in vi, the attendees were shown how to display the contents of their file as well as grep the contents of the file they had created.</p> <p>Below are the commands that were run for this.</p> <pre><code class=language-bash>almostengr@linuxtraining:~$ cat editingfile.txt
+</code></pre> <pre><code class=language-aeoutput>kasdfj;kalsdfjoai5rj;eafk
 lkvn;aovn 9042a
 the quick brown fox
 jumped over the lazy
 brown dog
-</code></pre> <pre><code class=bash>almostengr@linuxtraining:~$ grep brown editingfile.txt
-</code></pre> <pre><code class=aeoutput>the quick brown fox
+</code></pre> <pre><code class=language-bash>almostengr@linuxtraining:~$ grep brown editingfile.txt
+</code></pre> <pre><code class=language-aeoutput>the quick brown fox
 brown dog
-</code></pre> <p><code>grep</code> found two lines in the file that matched the string or pattern provided.</p> <pre><code class=bash>almostengr@linuxtraining:~$ grep BROWN editingfile.txt
-</code></pre> <p>No output was returned from the command above because the pattern did not exist in the file.</p> <pre><code class=bash>almostengr@linuxtraining:~$ grep -i BROWN editingfile.txt
-</code></pre> <pre><code class=aeoutput>the quick brown fox
+</code></pre> <p><code>grep</code> found two lines in the file that matched the string or pattern provided.</p> <pre><code class=language-bash>almostengr@linuxtraining:~$ grep BROWN editingfile.txt
+</code></pre> <p>No output was returned from the command above because the pattern did not exist in the file.</p> <pre><code class=language-bash>almostengr@linuxtraining:~$ grep -i BROWN editingfile.txt
+</code></pre> <pre><code class=language-aeoutput>the quick brown fox
 brown dog
-</code></pre> <p><code>grep</code> found two lines in the file that matched the string or pattern provided as the ignore case option was used.</p> <pre><code class=bash>almostengr@linuxtraining:~$ rm editingfile.txt &amp;&amp; ls
-</code></pre> <pre><code class=aeoutput>almostengr.txt  copyofsample2.txt  data2.csv  dirtocopy  rowswithq.txt
+</code></pre> <p><code>grep</code> found two lines in the file that matched the string or pattern provided as the ignore case option was used.</p> <pre><code class=language-bash>almostengr@linuxtraining:~$ rm editingfile.txt &amp;&amp; ls
+</code></pre> <pre><code class=language-aeoutput>almostengr.txt  copyofsample2.txt  data2.csv  dirtocopy  rowswithq.txt
 copiedfile.csv  copyofsample.txt   data.csv   kenny.txt  wc
-</code></pre> <h3 id=aliases-and-example-usage>Aliases and Example Usage</h3> <pre><code class=bash>almostengr@linuxtraining:~$ alias
+</code></pre> <h3 id=aliases-and-example-usage>Aliases and Example Usage</h3> <pre><code class=language-bash>almostengr@linuxtraining:~$ alias
 alias alert='notify-send --urgency=low -i &quot;$([ $? = 0 ] &amp;&amp; echo terminal || echo error)&quot; &quot;$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&amp;|]\s*alert$//'\'')&quot;'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
@@ -916,14 +916,14 @@ alias l='ls -CF'
 alias la='ls -A'
 alias ll='ls -alF'
 alias ls='ls --color=auto'
-</code></pre> <h3 id=aliases-with-debugging-enabled>Aliases with Debugging Enabled</h3> <p>To turn on debugging, you run the command below. The command will not return any output.</p> <pre><code class=bash>almostengr@linuxtraining:~$ set -x
+</code></pre> <h3 id=aliases-with-debugging-enabled>Aliases with Debugging Enabled</h3> <p>To turn on debugging, you run the command below. The command will not return any output.</p> <pre><code class=language-bash>almostengr@linuxtraining:~$ set -x
 almostengr@linuxtraining:~$ ls
-</code></pre> <p>To confirm that it is on, run any other command (in this case <code>ls</code>) and you will see a line that begins with <code>+</code>. The line with "+" comes from the debugger.</p> <pre><code class=aeoutput>+ ls --color=auto
+</code></pre> <p>To confirm that it is on, run any other command (in this case <code>ls</code>) and you will see a line that begins with <code>+</code>. The line with "+" comes from the debugger.</p> <pre><code class=language-aeoutput>+ ls --color=auto
 almostengr.txt  copyofsample2.txt  data2.csv  dirtocopy  rowswithq.txt
 copiedfile.csv  copyofsample.txt   data.csv   kenny.txt  wc
-</code></pre> <p>To turn off debugging, you run the command below. The command will not return any output</p> <pre><code class=bash>almostengr@linuxtraining:~$ set +x
-</code></pre> <p>To see all of the aliases that have been set, type <code>alias</code> in the prompt.</p> <pre><code class=bash>almostengr@linuxtraining:~$ alias
-</code></pre> <pre><code class=aeoutput>+ alias
+</code></pre> <p>To turn off debugging, you run the command below. The command will not return any output</p> <pre><code class=language-bash>almostengr@linuxtraining:~$ set +x
+</code></pre> <p>To see all of the aliases that have been set, type <code>alias</code> in the prompt.</p> <pre><code class=language-bash>almostengr@linuxtraining:~$ alias
+</code></pre> <pre><code class=language-aeoutput>+ alias
 alias alert='notify-send --urgency=low -i &quot;$([ $? = 0 ] &amp;&amp; echo terminal || echo error)&quot; &quot;$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&amp;|]\s*alert$//'\'')&quot;'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
@@ -932,8 +932,8 @@ alias l='ls -CF'
 alias la='ls -A'
 alias ll='ls -alF'
 alias ls='ls --color=auto'
-</code></pre> <pre><code class=bash>almostengr@linuxtraining:~$ grep data
-</code></pre> <p>Double tapping the Tab key after entering the above in the prompt, resulted in the below output.</p> <pre><code class=aeoutput>+ local cur prev words cword split
+</code></pre> <pre><code class=language-bash>almostengr@linuxtraining:~$ grep data
+</code></pre> <p>Double tapping the Tab key after entering the above in the prompt, resulted in the below output.</p> <pre><code class=language-aeoutput>+ local cur prev words cword split
 + _init_completion -s
 + local exclude= flag outx errx inx OPTIND=1
 + getopts n:e:o:i:s flag -s
@@ -1164,11 +1164,11 @@ data.csv'
 + [[ 2 -ne 0 ]]
 + compopt -o filenames
 + COMPREPLY+=(&quot;${toks[@]}&quot;)
-</code></pre> <p>The above output is all of the commands that are being run in the background to perform the auto-complete functionality.</p> <p>To create an alias, you can run the command below. The command will not return output unless you have debugging enabled.</p> <pre><code class=bash>almostengr@linuxtraining:~$ alias power=&quot;ls -al | grep csv&quot;
-</code></pre> <p>To use the alias, enter it on the prompt.</p> <pre><code class=bash>almostengr@linuxtraining:~$ power
-</code></pre> <pre><code class=aeoutput>+ grep --color=auto csv
+</code></pre> <p>The above output is all of the commands that are being run in the background to perform the auto-complete functionality.</p> <p>To create an alias, you can run the command below. The command will not return output unless you have debugging enabled.</p> <pre><code class=language-bash>almostengr@linuxtraining:~$ alias power=&quot;ls -al | grep csv&quot;
+</code></pre> <p>To use the alias, enter it on the prompt.</p> <pre><code class=language-bash>almostengr@linuxtraining:~$ power
+</code></pre> <pre><code class=language-aeoutput>+ grep --color=auto csv
 + ls --color=auto -al
 -rw-rw-r-- 1 almostengr almostengr 6595 Mar  1 05:40 copiedfile.csv
 -rw-rw-r-- 1 almostengr almostengr 6595 Mar  1 05:40 data2.csv
 -rw-rw-r-- 1 almostengr almostengr 6538 Mar  1 05:39 data.csv
-</code></pre> <div class="bg-light border border-danger my-3 p-3 rounded"> <strong>Published:</strong> 2020-03-01 <br> <strong>Updated:</strong> 2020-07-15<br> <strong>Category:</strong> Technology<br> <strong>Read Time:</strong> 67 minute(s)<br> </div> </article> </div> <!-- sidebar --> <div id=sidebar class="col-sm-12 col-lg-4 p-1"> <div class="mb-3 border border-dark rounded p-2 bg-dark text-gray"> <h4 class="text-left border-bottom border-white"> <span class="bg-white text-dark px-2 font-weight-bold">REQUEST SERVICE</span> </h4> <p>Do you have work that needs to be done and are ready to get started?</p> <p><a class="btn btn-danger" href=/request>GET STARTED!</a></p> </div> <div class="mb-3 border border-dark rounded bg-dark p-2 text-gray"> <h4 class="text-left border-bottom border-white"> <span class="bg-white text-dark px-2 font-weight-bold">BLOG</span> </h4> <p>Check out some of our past projects and work on our <a href=/blog>blog</a>!</p> </div> <div class="mb-3 border border-dark rounded bg-dark p-2"> <h4 class="text-left border-bottom border-white"> <span class="bg-white text-dark px-2 font-weight-bold">SPONSORED BY</span> </h4> <script async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script> <ins class=adsbygoogle style=display:block data-ad-client=ca-pub-4218270188842097 data-ad-slot=5189305512 data-ad-format=auto data-full-width-responsive=true></ins> <script>(adsbygoogle = window.adsbygoogle || []).push({});</script> </div> </div> <!-- end sidebar --> </div> </main> <p class=container><a href=#top class="text-small text-red">Back to Top</a></p> <footer class="bg-black pt-3"> <div class="container px-0"> <div class="text-white col-12"> <ul class="list-unstyled list-inline"> <li class="px-2 bg-white list-inline-item text-dark font-weight-bold">SOCIAL</li> <li class="mr-2 list-inline-item text-capitalize"> <a href=https://github.com/almostengr target=_blank>github</a> </li> <li class="mr-2 list-inline-item text-capitalize"> <a href=https://instagram.com/almostengr target=_blank>instagram</a> </li> <li class="mr-2 list-inline-item text-capitalize"> <a href=https://twitter.com/almostengr target=_blank>twitter</a> </li> <li class="mr-2 list-inline-item text-capitalize"> <a href="https://www.youtube.com/channel/UC4HCouBLtXD1j1U_17aBqig?sub_confirmation=1" target=_blank>youtube</a> </li> </ul> </div> <div class=col-12> <ul class="list-unstyled text-white"> <li class="px-2 bg-white text-dark font-weight-bold list-inline-item">LINKS</li> <li class="mr-2 list-inline-item"><a href=/about>About</a></li> <li class="mr-2 list-inline-item"><a href=/uses>Uses</a></li> <li class="mr-2 list-inline-item"><a href=/payment>Make Payment</a></li> <li class="mr-2 list-inline-item"><a href=/request>Request Service</a></li> <li class="mr-2 list-inline-item"><a href=/search>Search</a></li> <li class="mr-2 list-inline-item"><a href=/blog>Blog</a></li> <li class="mr-2 list-inline-item"><a href=/contact>Contact</a></li> <li class="mr-2 list-inline-item"><a href=/faq>FAQ</a></li> <li class="mr-2 list-inline-item"><a href=/sitemap.xml>Sitemap</a></li> <li class="mr-2 list-inline-item"><a href=/privacy>Privacy</a></li> </ul> </div> <div class=col-12> <ul class="list-unstyled text-white"> <li class="px-2 list-inline-item text-left bg-white text-dark font-weight-bold">SERVICES PROVIDED</li> <li class="mr-2 list-inline-item"><a href=/blog/2020.07.12-ceiling-fan-installation-with-downrod>Install Ceiling Fan</a></li> <li class="mr-2 list-inline-item"><a href=/blog/2019.07.30-reinforce-bookcase-with-plywood>Bookcase Assembly</a></li> <li class="mr-2 list-inline-item"><a href=/blog/2020.07.21-front-yard-landscaping>Landscaping</a></li> <li class="mr-2 list-inline-item"><a href=/blog/2018.07.21-how-to-replace-toilet-gasket-and-bolts>Toilet Repair</a></li> <li class="mr-2 list-inline-item"><a href=/blog/2018.06.19-replace-optical-drive-in-pc/ >Computer Repair</a></li> <li class="mr-2 list-inline-item"><a href=/blog/2020.03.01-linux-training-session/ >Linux Training</a></li> </ul> </div> </div> <hr class="text-white bg-white container"> <div class="text-center text-white bg-black pt-2 pb-5 px-2"> <p>Copyright &copy; 2015-2020 Almost Engineer Services</p> <p class=text-small> Cookies are used on this website to track your visits, provide advertisements specific to you, and preferences by a third-party. By continuing to use this site, you agree to the use of cookies unless you have disabled them. </p> </div> </footer> <script src=https://code.jquery.com/jquery-3.5.1.slim.min.js integrity=sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj crossorigin=anonymous></script> <script>window.jQuery || document.write('<script src="js/vendor/jquery.slim.min.js"><\/script>')</script> <script src=/js/bootstrap.bundle.min.js></script> <script>hljs.initHighlightingOnLoad();</script> </body> </html>
+</code></pre> <div class="bg-light border border-danger my-3 p-3 rounded"> <strong>Published:</strong> 2020-03-01 <br> <strong>Updated:</strong> 2020-07-15<br> <strong>Category:</strong> Technology<br> <strong>Read Time:</strong> 68 minute(s)<br> </div> </article> </div> <!-- sidebar --> <div id=sidebar class="col-sm-12 col-lg-4 p-1"> <div class="mb-3 border border-dark rounded p-2 bg-dark text-gray"> <h4 class="text-left border-bottom border-white"> <span class="bg-white text-dark px-2 font-weight-bold">REQUEST SERVICE</span> </h4> <p>Do you have work that needs to be done and are ready to get started?</p> <p><a class="btn btn-danger" href=/request>GET STARTED!</a></p> </div> <div class="mb-3 border border-dark rounded bg-dark p-2 text-gray"> <h4 class="text-left border-bottom border-white"> <span class="bg-white text-dark px-2 font-weight-bold">BLOG</span> </h4> <p>Check out some of our past projects and work on our <a href=/blog>blog</a>!</p> </div> <div class="mb-3 border border-dark rounded bg-dark p-2"> <h4 class="text-left border-bottom border-white"> <span class="bg-white text-dark px-2 font-weight-bold">SPONSORED BY</span> </h4> <script async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script> <ins class=adsbygoogle style=display:block data-ad-client=ca-pub-4218270188842097 data-ad-slot=5189305512 data-ad-format=auto data-full-width-responsive=true></ins> <script>(adsbygoogle = window.adsbygoogle || []).push({});</script> </div> </div> <!-- end sidebar --> </div> </main> <p class=container><a href=#top class="text-small text-red">Back to Top</a></p> <footer class="bg-black pt-3"> <div class="container px-0"> <div class="text-white col-12"> <ul class="list-unstyled list-inline"> <li class="px-2 bg-white list-inline-item text-dark font-weight-bold">SOCIAL</li> <li class="mr-2 list-inline-item text-capitalize"> <a href=https://github.com/almostengr target=_blank>github</a> </li> <li class="mr-2 list-inline-item text-capitalize"> <a href=https://instagram.com/almostengr target=_blank>instagram</a> </li> <li class="mr-2 list-inline-item text-capitalize"> <a href=https://twitter.com/almostengr target=_blank>twitter</a> </li> <li class="mr-2 list-inline-item text-capitalize"> <a href="https://www.youtube.com/channel/UC4HCouBLtXD1j1U_17aBqig?sub_confirmation=1" target=_blank>youtube</a> </li> </ul> </div> <div class=col-12> <ul class="list-unstyled text-white"> <li class="px-2 bg-white text-dark font-weight-bold list-inline-item">LINKS</li> <li class="mr-2 list-inline-item"><a href=/about>About</a></li> <li class="mr-2 list-inline-item"><a href=/uses>Uses</a></li> <li class="mr-2 list-inline-item"><a href=/payment>Make Payment</a></li> <li class="mr-2 list-inline-item"><a href=/request>Request Service</a></li> <li class="mr-2 list-inline-item"><a href=/search>Search</a></li> <li class="mr-2 list-inline-item"><a href=/blog>Blog</a></li> <li class="mr-2 list-inline-item"><a href=/contact>Contact</a></li> <li class="mr-2 list-inline-item"><a href=/faq>FAQ</a></li> <li class="mr-2 list-inline-item"><a href=/sitemap.xml>Sitemap</a></li> <li class="mr-2 list-inline-item"><a href=/privacy>Privacy</a></li> </ul> </div> <div class=col-12> <ul class="list-unstyled text-white"> <li class="px-2 list-inline-item text-left bg-white text-dark font-weight-bold">SERVICES PROVIDED</li> <li class="mr-2 list-inline-item"><a href=/blog/2020.07.12-ceiling-fan-installation-with-downrod>Install Ceiling Fan</a></li> <li class="mr-2 list-inline-item"><a href=/blog/2019.07.30-reinforce-bookcase-with-plywood>Bookcase Assembly</a></li> <li class="mr-2 list-inline-item"><a href=/blog/2020.07.21-front-yard-landscaping>Landscaping</a></li> <li class="mr-2 list-inline-item"><a href=/blog/2018.07.21-how-to-replace-toilet-gasket-and-bolts>Toilet Repair</a></li> <li class="mr-2 list-inline-item"><a href=/blog/2018.06.19-replace-optical-drive-in-pc/ >Computer Repair</a></li> <li class="mr-2 list-inline-item"><a href=/blog/2020.03.01-linux-training-session/ >Linux Training</a></li> </ul> </div> </div> <hr class="text-white bg-white container"> <div class="text-center text-white bg-black pt-2 pb-5 px-2"> <p>Copyright &copy; 2015-2020 Almost Engineer Services</p> <p class=text-small> Cookies are used on this website to track your visits, provide advertisements specific to you, and preferences by a third-party. By continuing to use this site, you agree to the use of cookies unless you have disabled them. </p> </div> </footer> <script src=https://code.jquery.com/jquery-3.5.1.slim.min.js integrity=sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj crossorigin=anonymous></script> <script>window.jQuery || document.write('<script src="js/vendor/jquery.slim.min.js"><\/script>')</script> <script src=/js/bootstrap.bundle.min.js></script> <script>hljs.initHighlightingOnLoad();</script> </body> </html>

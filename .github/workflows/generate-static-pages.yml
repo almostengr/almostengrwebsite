@@ -1,4 +1,4 @@
-name: Generate static pages
+name: Deploy to Production
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  spelling:
+  spellcheck:
     runs-on: ubuntu-18.04
 
     steps:
@@ -21,9 +21,9 @@ jobs:
     - name: Perform spell check
       uses: rojopolis/spellcheck-github-actions@0.5.0
 
-  mkdocs:
+  build:
     runs-on: ubuntu-18.04
-    needs: spelling
+    needs: spellcheck
 
     steps:
     - uses: actions/checkout@v2
@@ -50,7 +50,7 @@ jobs:
 
   deploy:
     runs-on: ubuntu-18.04
-    needs: mkdocs
+    needs: build
 
     steps:
     - name: Deploy to Production

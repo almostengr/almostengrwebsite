@@ -103,18 +103,15 @@
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/default.min.css">
   <link rel="stylesheet" href="/css/a11y-dark-theme.min.css">
+  <link rel="stylesheet" href="/css/navbar-top-fixed.min.css">
 
   <!-- Custom styles for by page -->
   {% if page.url == "links/" %}
   <link rel="stylesheet" href="/css/almostengrlinks.min.css">
-  {% endif %}
-
-  {% if page.is_homepage %}
+  {% elif page.is_homepage %}
   <link rel="stylesheet" href="/css/carousel.min.css">
-  {% else %}
-  <link rel="stylesheet" href="/css/navbar-top-fixed.min.css">
   {% endif %}
-
+  
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
@@ -162,11 +159,13 @@
 
   {% else %}
   <main role="main" class="container py-2">
+    {% if page.meta.title %}
+    <div class="col-12 pb-2">
+      <h1 class="text-sm-center text-lg-left">{{ page.meta.title }}</h1>
+    </div>
+    {% endif %}
     <div class="row">
       <div id="content-area" class="col-sm-12 col-lg-8 border-lg-right border-dark">
-        {% if page.meta.title %}
-        <h1>{{ page.meta.title }}</h1>
-        {% endif %}
 
         {% if page.url == "payment/" %}
         {{ page.content }}
@@ -185,10 +184,6 @@
 
         {% elif 'blog' in page.url and page.title != "Blog" %}
         {% include "partial/_blog.html" %}
-
-        {% elif page.url == "links/" %}
-        <p><a href="/">thealmostengineer.com</a></p>
-        {{ page.content }}
 
         {% else %}
         {{ page.content }}

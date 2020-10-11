@@ -6,7 +6,6 @@
     --light-gray-color: #cccccc;
     --white-color: #ffffff;
     --black-color: #000000;
-    --terminal-green-color: #009900;
     --red: #dc3545;
 }
 
@@ -54,18 +53,13 @@ footer a, footer a:hover {
     color: white;
 }
 
-/* pre {
-    background-color: #000000;
-    color: #00ff00;
-    padding: 3em;
-} */
-
 img {
     width: 100%;
+    height: auto;
 }
 
 h1 {
-    border-bottom: var(--red) 1px solid;
+    border-bottom: var(--red) 4px solid;
     font-weight: bold;
 }
 
@@ -127,7 +121,7 @@ h1 {
 }
 
 h2 {
-    border-bottom: var(--light-gray-color) 1px solid;
+    border-bottom: var(--light-gray-color) 2px solid;
 }
 
 button, .btn {

@@ -3,9 +3,9 @@
     --light-red-color: #ff0000;
     --dark-gray-color: #333333;
     --mid-gray-color: #999999;
-    --light-gray-color: #cccccc;
-    --white-color: #ffffff;
-    --black-color: #000000;
+    --light-gray: #cccccc;
+    --white: #ffffff;
+    --black: #000000;
     --red: #dc3545;
 }
 
@@ -36,17 +36,16 @@
     text-transform: uppercase;
 }
 
-#content-area {
-    /* min-height: calc(100vh - 403px - 45px); */
-    min-height: 100vh;
-}
-
 main a {
     color: var(--red);
 }
 
 main a:hover {
     color: var(--dark-red-color);
+}
+
+main {
+    min-height: 50vh;
 }
 
 footer a, footer a:hover {
@@ -67,20 +66,19 @@ h1 {
     border-width: 12pt;
 }
 
+.bg-light-gray {
+    background-color: var(--light-gray);
+}
+.bg-white {
+    background-color: var(--white);
+}
+
 .bg-black {
     background-color: #000000;
 }
 
 .bg-gray {
-    background-color: var(--light-gray-color);
-}
-
-.text-red {
-    color: var(--red);
-}
-
-.text-gray {
-    color: var(--light-gray-color);
+    background-color: var(--light-gray);
 }
 
 .bg-red {
@@ -89,6 +87,18 @@ h1 {
 
 .bg-dark-red {
     background-color: var(--dark-red-color);
+}
+
+.text-red {
+    color: var(--red);
+}
+
+.text-gray {
+    color: var(--light-gray);
+}
+
+.text-black {
+    color: var(--black);
 }
 
 .text-small {
@@ -121,7 +131,7 @@ h1 {
 }
 
 h2 {
-    border-bottom: var(--light-gray-color) 2px solid;
+    border-bottom: var(--light-gray) 2px solid;
 }
 
 button, .btn {
@@ -135,15 +145,24 @@ button, .btn {
 
 ul.nav.nav-tabs li.nav-item a.active {
     background-color: #343a40!important;
-    color: var(--light-red-color);
+    color: var(--white);
 }
 
 ul.nav.nav-tabs li.nav-item a:hover {
-    background-color: #343a40!important;
-    color: #fff;
+    /* background-color: #343a40!important; */
+    color: var(--red);
+    font-weight: bold;
 }
 
 iframe.youtube {
     margin: 0 auto;
     display: block;
+}
+
+h2>a:hover {
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--black);
 }

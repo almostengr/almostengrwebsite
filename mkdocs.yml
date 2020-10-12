@@ -1,6 +1,6 @@
 site_name: Almost Engineer Services
 site_url: https://thealmostengineer.com
-site_description: The blog of Kenny Robinson where he shares his thoughts and experiences.
+site_description: Providing technology and handyman services.
 site_author: Kenny Robinson, @almostengr
 copyright: Almost Engineer Services
 google_analytics: ['UA-64643711-1', 'thealmostengineer.com']
@@ -28,6 +28,37 @@ theme:
       name: Blog
     - url: /contact
       name: Contact
+
+  carousel:
+    - heading: Handyman Services
+      description: Need a ceiling fan replaced? Need furniture assembled? We handle it all!
+      imageurl: /images/kitchenisland_optimized.jpg
+      buttonurl: /request
+      buttontext: Request Tech Services
+    - heading: Technology Services
+      description: Need a change made to your website? Website not getting enough traffic? We cover all of these things!
+      imageurl: /images/portfolio_tabcc2.jpg
+      buttonurl: /request
+      buttontext: Request Tech Services
+    - heading: Blog and Portfolio
+      description: To see our past work, checkout the blog where we share our experiences with and photos of our previous projects.
+      imageurl: /images/writingcontent2.jpg
+      buttonurl: /blog
+      buttontext: See Past Projects
+
+  featurette:
+    - heading: Handyman Services
+      description: Need that new furniture put together? Rotted trim that needs to be replaced? Is your toilet running even when nobody has used it? Hot summer days make you wish that you had a ceiling fan? We got you covered!
+      buttonlink: /about#handyman-services
+      imageurl: /images/patiofurniture_optimized.jpg
+    - heading: Technology Services
+      description: Need your business's website updated? Want to have Google Analytics set up on your website? Check out the Technology Services that we offer!
+      buttonlink: /about#technology-services
+      imageurl: /images/thermostat2.jpg
+    - heading: Blog and Portfolio
+      description: To see our past work, checkout out the blog where we describe and share our experience with and photos of previous projects.
+      imageurl: /images/kitchenisland_optimized.jpg
+      buttonlink: /blog
 
   footernav:
     - url: /about
@@ -79,6 +110,5 @@ use_directory_urls: true
 strict: false
 
 plugins:
-  - search
-  - minify: 
+  - minify:
       minify_html: true

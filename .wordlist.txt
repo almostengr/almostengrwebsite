@@ -1061,3 +1061,9 @@ rgb
 vfr
 vsync
 Services's
+GPIO
+gettext
+libunwind
+netcoreapp
+scp
+traffipi

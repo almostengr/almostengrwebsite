@@ -28,8 +28,8 @@ implied that the information provided on this website will work or is accurate.
 Like most website operators, Almost Engineer Services collects non-personally-identifying 
 information of the sort that web browsers and servers typically make available, such 
 as the browser type, language preference, referring site, and the date and time of 
-each visitor request. Almost Engineer Services’s purpose in collecting non-personally 
-identifying information is to better understand how Almost Engineer Services’s visitors 
+each visitor request. Almost Engineer Services's purpose in collecting non-personally 
+identifying information is to better understand how Almost Engineer Services's visitors 
 use its website.
 
 Almost Engineer Services also collects potentially personally-identifying information like 
@@ -41,7 +41,7 @@ are visible and disclosed to the administrators of the blog where the comment wa
 
 ## Gathering of Personally-Identifying Information
 
-Certain visitors to Almost Engineer Services’s websites choose to interact with The 
+Certain visitors to Almost Engineer Services's websites choose to interact with The 
 Almost Engineer in ways that require Almost Engineer Services to gather personally-identifying 
 information. The amount and type of information that Almost Engineer Services gathers 
 depends on the nature of the interaction. Those who engage in transactions with 
@@ -82,7 +82,7 @@ the affiliate may pay a referral fee to Almost Engineer Services.
 ## Privacy Policy Changes
 
 Although most changes are likely to be minor, Almost Engineer Services may change its 
-Privacy Policy from time to time, and in Almost Engineer Services’s sole discretion. The
+Privacy Policy from time to time, and in Almost Engineer Services's sole discretion. The
 Almost Engineer encourages visitors to frequently check this page for any changes 
 to its Privacy Policy. Your continued use of this site after any change in this 
 Privacy Policy and Terms of use will constitute your acceptance of such change.

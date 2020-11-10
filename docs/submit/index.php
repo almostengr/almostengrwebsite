@@ -8,6 +8,7 @@ if(isset($_POST['emailer'])){
     $current_time = date("Y-m-d H:i:s");
     $message = print_r($_POST, true);
     $message .= "Submitted " . $current_time . $new_line;
+    $message .= "IP Address " . $_SERVER['REMOTE_ADDR'];
     $subject = $_POST['servicetype'] . " " . $current_time;
     $headers = array('From' => $_POST['emailer']);
 

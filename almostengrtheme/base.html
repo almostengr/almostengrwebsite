@@ -309,7 +309,7 @@
 
             {% if page.meta.imageurl and page.meta.imagealt %}
             <div class="text-center">
-              <img src="{{ page.meta.imageurl }}" alt="{{ page.meta.imagealt }}" />
+              <img id="blogimage" src="{{ page.meta.imageurl }}" alt="{{ page.meta.imagealt }}" />
             </div>
             {% endif %}
 
@@ -317,34 +317,35 @@
 
             <div class="bg-light border border-danger my-3 p-3 rounded">
               {% if page.meta.posted %}
-              <strong>Published:</strong> {{ page.meta.posted }}
+              <span id="posted"><strong>Published:</strong> {{ page.meta.posted }}</span>
               {% elif page.meta.updated %}
-              <strong>Published:</strong> {{ page.meta.updated }}
+              <span id="posted"><strong>Published:</strong> {{ page.meta.updated }}</span>
               {% endif %}
               <br />
 
               {% if page.meta.updated %}
-              <strong>Updated:</strong> {{ page.meta.updated }}<br />
+              <span id="updated"><strong>Updated:</strong> {{ page.meta.updated }}</span><br />
               {% endif %}
 
               {% if page.meta.author %}
-              <strong>Author:</strong> {{ page.meta.author }}<br />
+              <span id="author"><strong>Author:</strong> {{ page.meta.author }}</span><br />
               {% endif %}
 
               {% if page.meta.category %}
-              <strong>Category:</strong> {{ page.meta.category | capitalize }}<br />
+              <span id="category"><strong>Category:</strong> {{ page.meta.category | capitalize }}</span><br />
               {% endif %}
 
               {% if page.meta.keywords %}
-              <strong>Keywords:</strong> {{ page.meta.keywords }}<br />
+              <span id="keywords"><strong>Keywords:</strong> {{ page.meta.keywords }}</span><br />
               {% endif %}
 
               {% if page.meta.youtube %}
-              <strong>Video URL:</strong> <a href="{{ page.meta.youtube }}"
-                target="_blank">{{ page.meta.youtube }}</a><br />
+              <span id="youtubeurl"><strong>Video URL:</strong> <a href="{{ page.meta.youtube }}"
+                target="_blank">{{ page.meta.youtube }}</a></span><br />
               {% endif %}
 
-              <strong>Read Time:</strong> {{ page.content | wordcount // 200 }} minute(s)<br />
+              <span id="readtime"><strong>Read Time:</strong> 
+                {{ page.content | wordcount // 200 }} minute(s)</span><br />
             </div>
           </article>
 

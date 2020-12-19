@@ -1,7 +1,7 @@
 ---
 title: How to Update My Static Website?
 posted: 2020-10-04
-updated: 2020-10-04
+updated: 2020-12-19
 ---
 
 If you have a static website, here is how to make those updates.
@@ -28,7 +28,8 @@ near the top of the page. See [Update Indicators for more info](#update-indicato
 * If the update completes successfully, then a green checkmark will appear.
 * If the update fails, then a red "X" will appear.
 
-**NOTE:** Updates usually take about 2 minutes to complete.
+**NOTE:** Updates usually take about 2 minutes to complete. This will take longer if you have over 100 
+pages on your website.
 
 ### Where's The File?
 

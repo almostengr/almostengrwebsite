@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="{{ config.site_name }}" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="{{ config.theme.social_user }}" />
+  <meta name="twitter:creator" content="{{ config.theme.social_user }}" />
+
+  {% if page.meta.description %}
+  <meta name="description" content="{{ page.meta.description }}">
+  <meta property="og:description" content="{{ page.meta.description }}" />
+  <meta name="twitter:description" content="{{ page.meta.description }}" />
+  {% elif config.site_description %}
+  <meta name="description" content="{{ config.site_description }}">
+  <meta property="og:description" content="{{ config.site_description }}" />
+  <meta name="twitter:description" content="{{ config.site_description }}" />
+  {% endif %}
+
+  {% if page.meta.author %}
+  <meta name="author" content="{{ page.meta.author }}">
+  {% else %}
+  <meta name="author" content="{{ config.site_author }}">
+  {% endif %}
+
+  {% if page.meta.title %}
+  <title>{{ page.meta.title | striptags }} | {{ config.site_name }}</title>
+  <meta property="og:title" content="{{ page.meta.title }}" />
+  <meta name="twitter:title" content="{{ page.meta.title }}" />
+  {% elif page.title and not page.is_homepage %}
+  <title>{{ page.title | striptags }} | {{ config.site_name }}</title>
+  <meta property="og:title" content="{{ page.title | striptags }}" />
+  <meta name="twitter:title" content="{{ page.title | striptags }}" />
+  {% else %}
+  <title>{{ config.site_name }}</title>
+  <meta property="og:title" content="{{ config.site_name }}" />
+  <meta name="twitter:title" content="{{ config.site_name }}" />
+  {% endif %}
+
+  {% if page.meta.image %}
+  <meta property="og:image" content="{{ page.meta.image | url }}" />
+  <meta name="twitter:image" content="{{ page.meta.image | url }}" />
+  {% endif %}
+
+  {% if page.meta.keywords %}
+  <meta name="keywords" content="{{ page.meta.keywords }}" />
+  {% endif %}
+
+  {% if page.meta.ogtype %}
+  <meta property="og:type" content="{{ page.meta.ogtype }}" />
+  {% elif 'blog' in page.url %}
+  <meta property="og:type" content="article" />
+  {% else %}
+  <meta property="og:type" content="website" />
+  {% endif %}
+
+  {% if page.meta.robots %}
+  <meta name="robots" content="{{ page.meta.robots }}" />
+  {% else %}
+  <meta name="robots" content="index, follow" />
+  {% endif %}
+
+  {% if page.canonical_url %}
+  <link rel="canonical" href="{{ page.canonical_url | url }}">
+  <meta property="og:url" content="{{ page.canonical_url | url }}" />
+  <meta property="twitter:url" content="{{ page.canonical_url | url }}" />
+  {% endif %}
+
+  {% if page.meta.youtube %}
+  <meta property="og:video" content="{{ page.meta.youtube }}" />
+  {% endif %}
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-64643711-1"></script>
+  <script async>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-64643711-1');
+  </script>
+
+  <script async src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js"></script>
+
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/almostengrtheme.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/default.min.css">
+  <link rel="stylesheet" href="/css/a11y-dark-theme.min.css">
+
+  <!-- Custom styles for by page -->
+  {% if page.url == "links/" %}
+  <link rel="stylesheet" href="/css/almostengrlinks.min.css">
+  {% endif %}
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="manifest" href="/images/site.webmanifest">
+</head>
+
+<body class="bg-light">
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-black">
+      <div>
+        <a class="navbar-brand font-weight-bold" href="/">{{ config.site_name }}</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          {% for nav_item in config.theme.mainnav %}
+          <li class="nav-item">
+            <a class="nav-link text-white text-uppercase" href="{{ nav_item.url | url }}">{{ nav_item.name }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+
+      </div>
+    </nav>
+  </header>
+
+  {% for message in config.theme.sitemessage %}
+  <section class="{{ message.bgcolor }} {{ message.textcolor }} py-4 sitemessage">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 pb-2 pl-4">
+          <h4>{{ message.heading }}</h4>
+          <p>{{ message.detail }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  {% endfor %}
+
+  {% if page and page.is_homepage %}
+  {% for message in config.theme.homemessage %}
+  <section class="{{ message.bgcolor }} {{ message.textcolor }} py-4 homemessage">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 pb-2 pl-4">
+          <h4>{{ message.heading }}</h4>
+          <p>{{ message.detail }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  {% endfor %}
+
+  {% for jt in config.theme.jumbotron %}
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron {{ jt.textcolor }}" style="background-image: url({{ jt.background_image }});">
+    <div class="container">
+      <h1 class="display-3">{{ jt.heading }}</h1>
+
+      {% if jt.detail %}
+      <p>{{ jt.detail }}</p>
+      {% endif %}
+
+      {% if jt.buttontext %}
+      <p>
+        <a class="btn {{ jt.buttoncolor }} btn-lg" href="{{ jt.url | url }}" role="button">{{ jt.buttontext }}</a>
+      </p>
+      {% endif %}
+    </div>
+  </div>
+  {% endfor %}
+  {% endif %}
+
+  <main role="main" class="container py-2">
+    {% if page.meta.title %}
+    <div class="col-12 pb-2">
+      <h1 class="text-sm-center text-lg-left px-3">{{ page.meta.title }}</h1>
+    </div>
+    {% endif %}
+    <div class="row">
+      <div id="content-area" class="col-sm-12 col-lg-8 border-lg-right border-dark">
+
+        {% if page.url == "blog/" %}
+
+        {{ page.content }}
+
+        <ul class="nav nav-tabs nav-fill mx-2 border-secondary">
+          <li class="nav-item"><a href="#technology" data-toggle="tab" class="active nav-link">Technology</a></li>
+          <li class="nav-item"><a href="#diy" data-toggle="tab" class="nav-link">DIY/Handyman</a></li>
+          <li class="nav-item"><a href="#youtube" data-toggle="tab" class="nav-link">YouTube Videos</a></li>
+          <li class="nav-item"><a href="#all" data-toggle="tab" class="nav-link">All</a></li>
+        </ul>
+        <div class="tab-content pt-2">
+          {% for nav_item in nav %}
+          {% if nav_item.children %}
+          <div id="technology" class="tab-pane active">
+            <ul class="list-unstyled">
+              {% for nav_item in nav_item.children | sort(attribute='posted') | reverse %}
+              {% if 'blog' in nav_item.url and nav_item.title != "Blog" and nav_item.meta.category == "Technology" %}
+              {% include "partial/_bloglistitem.html" %}
+              {% endif %}
+              {% endfor %}
+            </ul>
+          </div>
+          <div id="diy" class="tab-pane">
+            <ul class="list-unstyled">
+              {% for nav_item in nav_item.children | sort(attribute='posted') | reverse %}
+              {% if 'blog' in nav_item.url and nav_item.title != "Blog" and nav_item.meta.category == "Handyman" %}
+              {% include "partial/_bloglistitem.html" %}
+              {% endif %}
+              {% endfor %}
+            </ul>
+          </div>
+          <div id="youtube" class="tab-pane">
+            <ul class="list-unstyled">
+              {% for nav_item in nav_item.children | sort(attribute='posted') | reverse %}
+              {% if 'blog' in nav_item.url and nav_item.title != "Blog" and nav_item.meta.youtube %}
+              {% include "partial/_bloglistitem.html" %}
+              {% endif %}
+              {% endfor %}
+            </ul>
+          </div>
+          <div id="all" class="tab-pane">
+            <ul class="list-unstyled">
+              {% for nav_item in nav_item.children | sort(attribute='posted') | reverse %}
+              {% if 'blog' in nav_item.url and nav_item.title != "Blog" %}
+              {% include "partial/_bloglistitem.html" %}
+              {% endif %}
+              {% endfor %}
+            </ul>
+          </div>
+          {% endif %}
+          {% endfor %}
+        </div>
+
+        {% include "partial/_googleadsense.html" %}
+
+        {% elif 'blog' in page.url and page.title != "Blog" %}
+        <article>
+          {% if page.meta.title %}
+          <div class="p-1 font-italic text-small rounded text-center">
+            {% if page.meta.posted %}
+            <strong>Posted:</strong> {{ page.meta.posted }} |
+            {% endif %}
+
+            {% if page.meta.updated %}
+            <strong>Updated:</strong> {{ page.meta.updated }} |
+            {% endif %}
+
+            <strong>Read Time:</strong> {{ page.content | wordcount // 200 }} minute(s)
+          </div>
+          {% endif %}
+
+          {% if page.meta.imageurl and page.meta.imagealt %}
+          <div class="text-center">
+            <img id="blogimage" src="{{ page.meta.imageurl }}" alt="{{ page.meta.imagealt }}" />
+          </div>
+          {% endif %}
+
+          {{ page.content }}
+
+          <div class="bg-light border border-danger my-3 p-3 rounded">
+            {% if page.meta.posted %}
+            <span id="posted"><strong>Published:</strong> {{ page.meta.posted }}</span>
+            {% elif page.meta.updated %}
+            <span id="posted"><strong>Published:</strong> {{ page.meta.updated }}</span>
+            {% endif %}
+            <br />
+
+            {% if page.meta.updated %}
+            <span id="updated"><strong>Updated:</strong> {{ page.meta.updated }}</span><br />
+            {% endif %}
+
+            {% if page.meta.author %}
+            <span id="author"><strong>Author:</strong> {{ page.meta.author }}</span><br />
+            {% endif %}
+
+            {% if page.meta.category %}
+            <span id="category"><strong>Category:</strong> {{ page.meta.category | capitalize }}</span><br />
+            {% endif %}
+
+            {% if page.meta.keywords %}
+            <span id="keywords"><strong>Keywords:</strong> {{ page.meta.keywords }}</span><br />
+            {% endif %}
+
+            {% if page.meta.youtube %}
+            <span id="youtubeurl"><strong>Video URL:</strong> <a href="{{ page.meta.youtube }}"
+                target="_blank">{{ page.meta.youtube }}</a></span><br />
+            {% endif %}
+
+            <span id="readtime"><strong>Read Time:</strong>
+              {{ page.content | wordcount // 200 }} minute(s)</span><br />
+          </div>
+        </article>
+
+        {% else %}
+
+        {{ page.content }}
+
+        {% endif %}
+      </div>
+
+      <!-- sidebar -->
+      <div id="sidebar" class="col-sm-12 col-lg-4 p-2 bg-light-gray">
+
+        <div class="mb-3 border border-dark bg-white text-black">
+          <h4 class="text-left bg-black p-2">
+            <span class="text-white p-2 font-weight-bold">Blog and Past Work</span>
+          </h4>
+          <div class="p-2">
+            <p>Check out some of our past projects and work on our blog!</p>
+            <!-- <p><a class="btn btn-danger" href="/request">Read Blog</a></p> -->
+            <p><a class="btn btn-dark" href="/request">Read Blog</a></p>
+          </div>
+        </div>
+
+        <div class="mb-3 border border-dark bg-white text-black">
+          <div class="p-2">
+            {% include "partial/_googleadsense.html" %}
+          </div>
+        </div>
+
+        <div class="mb-3 border border-dark bg-white text-black">
+          <div class="p-2">
+            {% include "partial/_googleadsense.html" %}
+          </div>
+        </div>
+      </div>
+      <!-- end sidebar -->
+    </div>
+  </main>
+
+  <p class="container"><a href="#top" class="text-black">Back to Top</a></p>
+  </div>
+
+  <footer class="bg-black pt-3">
+    <div class="container px-0">
+      <div class="col-12">
+        <ul class="list-unstyled text-white">
+          {% for link in config.theme.footernav %}
+          <li class="mr-2 list-inline-item"><a href="{{ link.url }}">{{ link.name }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    <div class="text-center text-white bg-black pt-2 pb-5 px-2">
+      <p>
+        Copyright &copy; {{ build_date_utc.strftime("%Y") }} {{ config.copyright }}
+      </p>
+      <p>
+        Website developed and maintained by
+        <a href="https://rhtservices.net" target="_blank">Robinson Handy and Technology Services LLC</a>.
+      </p>
+      <p class="text-small">
+        Cookies are used on this website to track your visits, provide advertisements specific
+        to you, and preferences by a third-party.
+        By continuing to use this site, you agree to the use of cookies unless you have disabled them.
+        More information this is available in the <a href="/privacy">Privacy Policy</a>.
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery.slim.min.js"><\/script>')</script>
+  <script src="/js/bootstrap.bundle.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</body>
+
+</html>

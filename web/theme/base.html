@@ -3,14 +3,11 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta property="og:type" content="website" />
   <meta property="og:locale" content="en_US" />
-  <meta property="og:site_name" content="{{ config.site_name }}" />
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="{{ config.theme.social_user }}" />
-  <meta name="twitter:creator" content="{{ config.theme.social_user }}" />
 
-  {% if page.meta.description %}
+  {% if page and page.meta and page.meta.description %}
   <meta name="description" content="{{ page.meta.description }}">
   <meta property="og:description" content="{{ page.meta.description }}" />
   <meta name="twitter:description" content="{{ page.meta.description }}" />
@@ -20,17 +17,15 @@
   <meta name="twitter:description" content="{{ config.site_description }}" />
   {% endif %}
 
-  {% if page.meta.author %}
-  <meta name="author" content="{{ page.meta.author }}">
-  {% else %}
+  {% if config.site_author %}
   <meta name="author" content="{{ config.site_author }}">
   {% endif %}
 
-  {% if page.meta.title %}
-  <title>{{ page.meta.title | striptags }} | {{ config.site_name }}</title>
+  {% if page and page.meta and page.meta.title %}
+  <title>{{ page.meta.title }}</title>
   <meta property="og:title" content="{{ page.meta.title }}" />
   <meta name="twitter:title" content="{{ page.meta.title }}" />
-  {% elif page.title and not page.is_homepage %}
+  {% elif page and page.title and not page.is_homepage %}
   <title>{{ page.title | striptags }} | {{ config.site_name }}</title>
   <meta property="og:title" content="{{ page.title | striptags }}" />
   <meta name="twitter:title" content="{{ page.title | striptags }}" />
@@ -41,333 +36,308 @@
   {% endif %}
 
   {% if page.meta.image %}
-  <meta property="og:image" content="{{ page.meta.image | url }}" />
-  <meta name="twitter:image" content="{{ page.meta.image | url }}" />
+  <meta property="og:image" content="{{ page.meta.image }}" />
+  <meta name="twitter:image" content="{{ page.meta.image }}" />
   {% endif %}
 
-  {% if page.meta.keywords %}
-  <meta name="keywords" content="{{ page.meta.keywords }}" />
-  {% endif %}
-
-  {% if page.meta.ogtype %}
-  <meta property="og:type" content="{{ page.meta.ogtype }}" />
-  {% elif 'blog' in page.url %}
-  <meta property="og:type" content="article" />
-  {% else %}
-  <meta property="og:type" content="website" />
-  {% endif %}
-
-  {% if page.meta.robots %}
-  <meta name="robots" content="{{ page.meta.robots }}" />
-  {% else %}
-  <meta name="robots" content="index, follow" />
-  {% endif %}
+  <meta property="og:site_name" content="{{ config.site_name }}" />
+  <link rel="icon" href="../../../../favicon.ico">
 
   {% if page.canonical_url %}
-  <link rel="canonical" href="{{ page.canonical_url | url }}">
-  <meta property="og:url" content="{{ page.canonical_url | url }}" />
-  <meta property="twitter:url" content="{{ page.canonical_url | url }}" />
+  <link rel="canonical" href="{{ page.canonical_url }}">
   {% endif %}
 
-  {% if page.meta.youtube %}
-  <meta property="og:video" content="{{ page.meta.youtube }}" />
-  {% endif %}
+  <!-- Custom styles for this template -->
+  <link href="{{ 'css/starter-template.css' | url }}" rel="stylesheet">
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-64643711-1"></script>
-  <script async>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'UA-64643711-1');
+  <!-- Bootstrap CDN -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <link href="{{ 'css/almostengr.min.css' | url }}" rel="stylesheet" />
+
+  <!-- google analytics -->
+  {% if config.google_analytics %}
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', '{{ config.google_analytics[0] }}', '{{ config.google_analytics[1] }}');
+    ga('send', 'pageview');
   </script>
-
-  <script async src="https://kit.fontawesome.com/a076d05399.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js"></script>
-
-  <link rel="stylesheet" href="/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/css/almostengrtheme.min.css">
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/default.min.css">
-  <link rel="stylesheet" href="/css/a11y-dark-theme.min.css">
-
-  <!-- Custom styles for by page -->
-  {% if page.url == "links/" %}
-  <link rel="stylesheet" href="/css/almostengrlinks.min.css">
   {% endif %}
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
-  <link rel="manifest" href="/images/site.webmanifest">
+  <!-- Font Awesome -->
+  <script async src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 
-<body class="bg-light">
-  <header>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-black">
-      <div>
-        <a class="navbar-brand font-weight-bold" href="/">{{ config.site_name }}</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </div>
-
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav ml-auto">
-          {% for nav_item in config.theme.mainnav %}
-          <li class="nav-item">
-            <a class="nav-link text-white text-uppercase" href="{{ nav_item.url | url }}">{{ nav_item.name }}</a>
-          </li>
+<body>
+  <header class="ae-bg-black">
+    <nav class="navbar navbar-expand-lg navbar-dark container">
+      <a class="navbar-brand" href="/">{{ config.site_name }}</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+        aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav text-right ml-auto">
+          {% for nav_item in nav %}
+          <!--
+            <li class="nav-item {% if nav_item.active %}active font-weight-bold{% endif %}">
+              <a class="nav-link font-weight-bold {% if nav_item.title == 'Search' %} btn btn-outline-secondary {% endif %}" href="{{ nav_item.url|url }}">
+                {% if nav_item.title == 'Search' %} <i class="fas fa-search"></i>{% endif %} {{ nav_item.title }}</a>
+            </li>
+            -->
           {% endfor %}
+          <li class="nav-item">
+            <a class="nav-link font-weight-bold text-white" href="/blog">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font-weight-bold text-white" href="/portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font-weight-bold text-white" href="/uses">Uses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font-weight-bold text-white" href="/about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font-weight-bold text-white" href="/contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font-weight-bold btn btn-outline-light text-white" href="/search">
+              <i class="fas fa-search"></i> Search</a>
+          </li>
         </ul>
-
       </div>
     </nav>
   </header>
 
-  {% for message in config.theme.sitemessage %}
-  <section class="{{ message.bgcolor }} {{ message.textcolor }} py-4 sitemessage">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 pb-2 pl-4">
-          <h4>{{ message.heading }}</h4>
-          <p>{{ message.detail }}</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  {% endfor %}
-
-  {% if page and page.is_homepage %}
-  {% for message in config.theme.homemessage %}
-  <section class="{{ message.bgcolor }} {{ message.textcolor }} py-4 homemessage">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 pb-2 pl-4">
-          <h4>{{ message.heading }}</h4>
-          <p>{{ message.detail }}</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  {% endfor %}
-
-  {% for jt in config.theme.jumbotron %}
-  <!-- Main jumbotron for a primary marketing message or call to action -->
-  <div class="jumbotron {{ jt.textcolor }}" style="background-image: url({{ jt.background_image }});">
-    <div class="container">
-      <h1 class="display-3">{{ jt.heading }}</h1>
-
-      {% if jt.detail %}
-      <p>{{ jt.detail }}</p>
-      {% endif %}
-
-      {% if jt.buttontext %}
-      <p>
-        <a class="btn {{ jt.buttoncolor }} btn-lg" href="{{ jt.url | url }}" role="button">{{ jt.buttontext }}</a>
-      </p>
-      {% endif %}
-    </div>
+  <!-- jumbotron -->
+  {% if page.is_homepage %}
+  <div class="col-sm-12 container-fluid jumbotron mt-0 pt-0 text-white ae-jumbotron">
+    <div class="px-5 pt-3 text-bottom"></div>
   </div>
-  {% endfor %}
   {% endif %}
 
-  <main role="main" class="container py-2">
-    {% if page.meta.title %}
-    <div class="col-12 pb-2">
-      <h1 class="text-sm-center text-lg-left px-3">{{ page.meta.title }}</h1>
-    </div>
-    {% endif %}
+  <main role="main" id="content" class="container main">
     <div class="row">
-      <div id="content-area" class="col-sm-12 col-lg-8 border-lg-right border-dark">
+      <div class="col-sm-12 col-lg-9">
+        <div class="gcse-searchresults"></div>
 
-        {% if page.url == "blog/" %}
-
-        {{ page.content }}
-
-        <ul class="nav nav-tabs nav-fill mx-2 border-secondary">
-          <li class="nav-item"><a href="#technology" data-toggle="tab" class="active nav-link">Technology</a></li>
-          <li class="nav-item"><a href="#diy" data-toggle="tab" class="nav-link">DIY/Handyman</a></li>
-          <li class="nav-item"><a href="#youtube" data-toggle="tab" class="nav-link">YouTube Videos</a></li>
-          <li class="nav-item"><a href="#all" data-toggle="tab" class="nav-link">All</a></li>
-        </ul>
-        <div class="tab-content pt-2">
-          {% for nav_item in nav %}
-          {% if nav_item.children %}
-          <div id="technology" class="tab-pane active">
-            <ul class="list-unstyled">
-              {% for nav_item in nav_item.children | sort(attribute='posted') | reverse %}
-              {% if 'blog' in nav_item.url and nav_item.title != "Blog" and nav_item.meta.category == "Technology" %}
-              {% include "partial/_bloglistitem.html" %}
-              {% endif %}
-              {% endfor %}
-            </ul>
-          </div>
-          <div id="diy" class="tab-pane">
-            <ul class="list-unstyled">
-              {% for nav_item in nav_item.children | sort(attribute='posted') | reverse %}
-              {% if 'blog' in nav_item.url and nav_item.title != "Blog" and nav_item.meta.category == "Handyman" %}
-              {% include "partial/_bloglistitem.html" %}
-              {% endif %}
-              {% endfor %}
-            </ul>
-          </div>
-          <div id="youtube" class="tab-pane">
-            <ul class="list-unstyled">
-              {% for nav_item in nav_item.children | sort(attribute='posted') | reverse %}
-              {% if 'blog' in nav_item.url and nav_item.title != "Blog" and nav_item.meta.youtube %}
-              {% include "partial/_bloglistitem.html" %}
-              {% endif %}
-              {% endfor %}
-            </ul>
-          </div>
-          <div id="all" class="tab-pane">
-            <ul class="list-unstyled">
-              {% for nav_item in nav_item.children | sort(attribute='posted') | reverse %}
-              {% if 'blog' in nav_item.url and nav_item.title != "Blog" %}
-              {% include "partial/_bloglistitem.html" %}
-              {% endif %}
-              {% endfor %}
-            </ul>
-          </div>
-          {% endif %}
-          {% endfor %}
+        {% if page.is_homepage %}
+        <div class="lead bg-dark text-white font-weight-bold text-center rounded p-4 mb-2 shadow">
+          I am a web developer and builder of things. I
+          <a href="https://github.com/almostengr" target="_blank">write code</a>,
+          learn new things, and <a href="/blog">share my thoughts</a> - not always in that order.<br />
+          I build software and web applications to improve business processes.
         </div>
+        {% endif %}
 
-        {% include "partial/_googleadsense.html" %}
-
-        {% elif 'blog' in page.url and page.title != "Blog" %}
         <article>
-          {% if page.meta.title %}
-          <div class="p-1 font-italic text-small rounded text-center">
-            {% if page.meta.posted %}
-            <strong>Posted:</strong> {{ page.meta.posted }} |
-            {% endif %}
-
-            {% if page.meta.updated %}
-            <strong>Updated:</strong> {{ page.meta.updated }} |
-            {% endif %}
-
-            <strong>Read Time:</strong> {{ page.content | wordcount // 200 }} minute(s)
-          </div>
-          {% endif %}
-
-          {% if page.meta.imageurl and page.meta.imagealt %}
-          <div class="text-center">
-            <img id="blogimage" src="{{ page.meta.imageurl }}" alt="{{ page.meta.imagealt }}" />
-          </div>
-          {% endif %}
-
+          {% block content %}
           {{ page.content }}
-
-          <div class="bg-light border border-danger my-3 p-3 rounded">
-            {% if page.meta.posted %}
-            <span id="posted"><strong>Published:</strong> {{ page.meta.posted }}</span>
-            {% elif page.meta.updated %}
-            <span id="posted"><strong>Published:</strong> {{ page.meta.updated }}</span>
-            {% endif %}
-            <br />
-
-            {% if page.meta.updated %}
-            <span id="updated"><strong>Updated:</strong> {{ page.meta.updated }}</span><br />
-            {% endif %}
-
-            {% if page.meta.author %}
-            <span id="author"><strong>Author:</strong> {{ page.meta.author }}</span><br />
-            {% endif %}
-
-            {% if page.meta.category %}
-            <span id="category"><strong>Category:</strong> {{ page.meta.category | capitalize }}</span><br />
-            {% endif %}
-
-            {% if page.meta.keywords %}
-            <span id="keywords"><strong>Keywords:</strong> {{ page.meta.keywords }}</span><br />
-            {% endif %}
-
-            {% if page.meta.youtube %}
-            <span id="youtubeurl"><strong>Video URL:</strong> <a href="{{ page.meta.youtube }}"
-                target="_blank">{{ page.meta.youtube }}</a></span><br />
-            {% endif %}
-
-            <span id="readtime"><strong>Read Time:</strong>
-              {{ page.content | wordcount // 200 }} minute(s)</span><br />
-          </div>
+          {% endblock %}
         </article>
 
-        {% else %}
-
-        {{ page.content }}
-
-        {% endif %}
-      </div>
-
-      <!-- sidebar -->
-      <div id="sidebar" class="col-sm-12 col-lg-4 p-2 bg-light-gray">
-
-        <div class="mb-3 border border-dark bg-white text-black">
-          <h4 class="text-left bg-black p-2">
-            <span class="text-white p-2 font-weight-bold">Blog and Past Work</span>
-          </h4>
-          <div class="p-2">
-            <p>Check out some of our past projects and work on our blog!</p>
-            <!-- <p><a class="btn btn-danger" href="/request">Read Blog</a></p> -->
-            <p><a class="btn btn-dark" href="/request">Read Blog</a></p>
-          </div>
+        <div class="py-3">
+          <!-- Google AdSense -->
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4218270188842097"
+            data-ad-slot="5189305512" data-ad-format="auto" data-full-width-responsive="true"></ins>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
         </div>
 
-        <div class="mb-3 border border-dark bg-white text-black">
-          <div class="p-2">
-            {% include "partial/_googleadsense.html" %}
-          </div>
-        </div>
+      </div>
+      <div class="col-sm-12 col-lg-3 pt-3">
+        <!--
+            <div class="card mb-3">
+              <div class="card-header bg-secondary text-white font-weight-bold">Page Contents</div>
+              <div class="card-body">
+                <div class="card-text">
+                  <nav>
+                    <ul class="list-unstyled">
+                      {% for toc_item in page.toc %}
+                        <li><a href="{{ toc_item.url }}">{{ toc_item.title }}</a></li>
+                        <ul class="list-unstyled">
+                        {% for toc_item in toc_item.children %}
+                          <li><a href="{{ toc_item.url }}">{{ toc_item.title }}</a></li>
+                        {% endfor %}
+                        </ul>
+                      {% endfor %}
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+            -->
 
-        <div class="mb-3 border border-dark bg-white text-black">
-          <div class="p-2">
-            {% include "partial/_googleadsense.html" %}
+        <div class="card mb-3 shadow">
+          <div class="card-header bg-dark text-white font-weight-bold text-uppercase">Share This!</div>
+          <div class="card-body">
+            <div class="card-text">
+              <!-- AddToAny -->
+              <a class="a2a_dd" href="https://www.addtoany.com/share">
+                <img src="https://static.addtoany.com/buttons/share_save_171_16.png" width="171" height="16" border="0"
+                  alt="Share">
+              </a>
+              <script async src="https://static.addtoany.com/menu/page.js"></script>
+            </div>
+          </div>
+        </div> <!-- end of block -->
+
+        <div class="card mb-3 shadow">
+          <div class="card-header bg-dark text-white font-weight-bold text-uppercase">Free Drupal Training</div>
+          <div class="card-body">
+            <div class="card-text">
+              If you are interested in learning Drupal 8, I have created a series of videos that shows
+              how to set up a Drupal site and covers the core functionality.<br />
+              <a href="https://www.youtube.com/playlist?list=PLaAJ0fv0d9WM8E2K_Ke5As-fw626yQ3tu" target="_blank">Watch
+                it now</a>.
+            </div>
+          </div>
+        </div> <!-- end of block -->
+
+        <div class="card mb-3 shadow">
+          <div class="card-header bg-dark text-white font-weight-bold text-uppercase">Connect with Me</div>
+          <div class="card-body">
+            <div class="card-text">
+              <ul>
+                {% for social in config.extra.social %}
+                <li><a href="{{ social.link }}" target="_blank" class="text-capitalize">
+                    <i class="fab fa-{{ social.type }}"></i> {{ social.type }}</a>
+                </li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+        </div> <!-- end of block -->
+
+        <div class="card mb-3 shadow">
+          <div class="card-header bg-dark text-white text-uppercase font-weight-bold">Sponsor</div>
+          <div class="card-body">
+            <div class="card-text">
+              <!-- Google AdSense -->
+              <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+              <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4218270188842097"
+                data-ad-slot="5189305512" data-ad-format="auto" data-full-width-responsive="true"></ins>
+              <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
           </div>
         </div>
       </div>
-      <!-- end sidebar -->
     </div>
-  </main>
+  </main> <!-- end container -->
 
-  <p class="container"><a href="#top" class="text-black">Back to Top</a></p>
-  </div>
+  <footer class="container-fluid px-0 pb-4 text-white ae-bg-black">
+    <div class="container">
+      <div class="row pt-4">
+        <div class="col-sm-12 col-lg-4">
+          <h5 class="border-bottom text-uppercase">Connect</h5>
+          <ul class="list-unstyled">
+            {% for social in config.extra.social %}
+            <li><a href="{{ social.link }}" target="_blank" class="text-capitalize">
+                <i class="fab fa-{{ social.type }}"></i> {{ social.type }}</a></li>
+            {% endfor %}
+          </ul>
+        </div> <!-- end of block -->
 
-  <footer class="bg-black pt-3">
-    <div class="container px-0">
-      <div class="col-12">
-        <ul class="list-unstyled text-white">
-          {% for link in config.theme.footernav %}
-          <li class="mr-2 list-inline-item"><a href="{{ link.url }}">{{ link.name }}</a></li>
-          {% endfor %}
-        </ul>
-      </div>
+        <div class="col-sm-12 col-lg-4">
+          <h5 class="border-bottom text-uppercase">Categories</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="/technology"><i class="fas fa-laptop-code"></i> Technology</a>
+            </li>
+            <li>
+              <a href="/gardening"><i class="fas fa-seedling"></i> Gardening</a>
+            </li>
+            <li>
+              <a href="/diy"><i class="fas fa-hammer"></i> DIY (Do It Yourself)</a>
+            </li>
+            <li>
+              <a href="/lifestyle"><i class="fas fa-user-friends"></i> Lifestyle</a>
+            </li>
+            <li>
+              <a href="/resources"><i class="fas fa-book-open"></i> Resources</a>
+            </li>
+            <li>
+              <a href="/speaking"><i class="fas fa-calendar-alt"></i> Speaking</a>
+            </li>
+          </ul>
+        </div> <!-- end of block -->
+
+        <div class="col-sm-12 col-lg-4">
+          <h5 class="text-uppercase border-bottom">Links</h5>
+          <ul class="list-unstyled">
+            <li class="nav-item">
+              Powered by <a href="http://www.mkdocs.org/" target="_blank"><i class="fab fa-markdown"></i> MkDocs</a>
+            </li>
+            <li class="nav-item">
+              <a href="https://github.com/almostengr/almostengrwebsite" target="_blank">
+                <i class="fab fa-github"></i> Website Source</a>
+            </li>
+            <li class="nav-item">
+              <a href="https://github.com/almostengr/almostengrwebsite/issues" target="_blank">
+                <i class="fa fa-exclamation-triangle"></i> Report Problem</a>
+            </li>
+            <li class="nav-item">
+              <a href="/Blog"><i class="fas fa-pen"></i> Blog</a>
+            </li>
+            <li class="nav-item">
+              <a href="/contact"><i class="fas fa-phone"></i> Contact</a>
+            </li>
+            <li class="nav-item">
+              <a href="/sitemap.xml"><i class="fas fa-sitemap"></i> Sitemap</a>
+            </li>
+            <li class="nav-item">
+              <a href="/search"><i class="fas fa-search"></i> Search</a>
+            </li>
+          </ul>
+        </div> <!-- end of block -->
+      </div> <!-- end of row -->
+    </div> <!-- end container -->
+
+    <hr class="ae-footer-hr">
+
+    <div class="text-center container mt-2">
+      <small>
+        The views and opinions expressed here are those of my own and are not a reflection
+        of those that I work or socialize with.
+
+        <p class="text-warning">
+          Cookies are used on this website to track your visits, provide advertisements specific
+          to you, and preferences by a third-party.
+          By continuing to use this site, you agree to the use of cookies unless you have disabled them.
+          <a class="text-warning" href="/privacy">Privacy Policy</a>
+        </p>
+      </small>
     </div>
-    <div class="text-center text-white bg-black pt-2 pb-5 px-2">
-      <p>
-        Copyright &copy; {{ build_date_utc.strftime("%Y") }} {{ config.copyright }}
-      </p>
-      <p>
-        Website developed and maintained by
-        <a href="https://rhtservices.net" target="_blank">Robinson Handy and Technology Services LLC</a>.
-      </p>
-      <p class="text-small">
-        Cookies are used on this website to track your visits, provide advertisements specific
-        to you, and preferences by a third-party.
-        By continuing to use this site, you agree to the use of cookies unless you have disabled them.
-        More information this is available in the <a href="/privacy">Privacy Policy</a>.
-      </p>
-    </div>
+    <div class="text-center mt-2">
+      {% if config.copyright %} {{ config.copyright }} {%endif%} |
+      <strong>Last Updated:</strong> {{ build_date_utc }} UTC |
+      <a href="#top">Back to Top</a>
+    </div> <!-- end of block -->
   </footer>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+  <!-- Boostrap and Javascript CDN -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
     crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery.slim.min.js"><\/script>')</script>
-  <script src="/js/bootstrap.bundle.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -16,10 +16,13 @@ namespace Almostengr.WebsiteTests
         public IWebDriver StartBrowser()
         {
             // WebsiteUrl = TestContext.Parameters["websiteurl"];
-            WebsiteUrl = Environment.GetEnvironmentVariable("AEWEBSITEURL");
+            // WebsiteUrl = Environment.GetEnvironmentVariable("AEWEBSITEURL");
 
             ChromeOptions options = new ChromeOptions();
+
+            #if RELEASE
             options.AddArgument("--headless");
+            #endif
 
             if (ChromeDriverPath != "")
                 return new ChromeDriver(ChromeDriverPath);

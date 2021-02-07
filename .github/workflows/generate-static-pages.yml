@@ -6,24 +6,8 @@ on:
       - main
 
 jobs:
-  spellcheck:
-    runs-on: ubuntu-18.04
-
-    steps:
-    - uses: actions/checkout@v2
-
-    - name: Remove duplicates from and sort wordlist
-      run: (/bin/cat .wordlist.txt | /usr/bin/sort | /usr/bin/uniq) > .wordlist.tmp
-
-    - name: Move cleaned wordlist
-      run: /bin/mv .wordlist.tmp .wordlist.txt
-
-    - name: Perform spell check
-      uses: rojopolis/spellcheck-github-actions@0.5.0
-
   build:
-    runs-on: ubuntu-18.04
-    needs: spellcheck
+    runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v2
@@ -40,16 +24,13 @@ jobs:
     - name: Install Minify Plugin
       run:  /usr/bin/python3 -m pip install --upgrade mkdocs-minify-plugin
 
-    - name: Install Mkdocs
-      run:  /usr/bin/python3 -m pip install --upgrade mkdocs-rss-plugin
-
     - run: git fetch -p
 
     - name: Deploy to website branch
-      run:  /usr/bin/python3 -m mkdocs gh-deploy -b website
+      run:  /usr/bin/python3 -m mkdocs gh-deploy -f web/mkdocs.yml -b website
 
   deploy:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     needs: build
 
     steps:
@@ -62,17 +43,17 @@ jobs:
         port: ${{ secrets.PORT_NUMBER }}
         user: ${{ secrets.USERNAME }}
 
-  # test:
-  #   runs-on: ubuntu-18.04
-  #   needs: deploy
+  shakeout:
+    runs-on: ubuntu-latest
+    needs: deploy
 
-  #   steps:
-  #   - uses: actions/checkout@v2
+    steps:
+    - uses: actions/checkout@v2
 
-  #   - uses: actions/setup-dotnet@v1
-  #     name: Setup .NET Core
-  #     with:
-  #       dotnet-version: '3.1.x'
+    - uses: actions/setup-dotnet@v1
+      name: Setup .NET Core
+      with:
+        dotnet-version: '3.1.x' # SDK Version to use; x will use the latest version of the 3.1 channel
 
-  #   - name: Running tests
-  #     run: dotnet test tests/websitetests/websitetests.csproj
+    - name: Running tests
+      run: dotnet test -c RELEASE test/websitetests.csproj

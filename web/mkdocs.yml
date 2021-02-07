@@ -1,6 +1,6 @@
-site_name: Kenny The Almost Engineer
+site_name: The Almost Engineer, Blog of Kenny Robinson
 site_url: https://thealmostengineer.com
-site_description: Blog for Kenny Robinson
+site_description: The personal blog for Kenny Robinson, where he talks about programming, handyman projects, and more.
 site_author: Kenny Robinson, @almostengr
 copyright: Kenny Robinson
 google_analytics: ['UA-64643711-1', 'thealmostengineer.com']
@@ -17,7 +17,8 @@ dev_addr: 192.168.57.117:8000
 # Appearance
 theme:
   name: null
-  custom_dir: 'theme'
+  # custom_dir: 'theme'
+  custom_dir: 'apitheme'
   language: en
   social_user: "@almostengr"
   # sitemessage
@@ -62,19 +63,21 @@ theme:
       name: Blog
     - url: /contact
       name: Contact
-    - url: /faq
-      name: FAQ
+    # - url: /faq
+    #   name: FAQ
     - url: /sitemap.xml
       name: Sitemap
     - url: /privacy
       name: Privacy
-    - url: /donate
-      name: Donate
+    # - url: /donate
+    #   name: Donate
   social:
     - type: github
       link: https://github.com/almostengr
     - type: instagram
       link: https://instagram.com/almostengr
+    - type: linkedin
+      link: https://www.linkedin.com/in/krobinsontech
     - type: twitter
       link: https://twitter.com/almostengr
     - type: youtube
@@ -86,3 +89,5 @@ strict: false
 plugins:
   - minify:
       minify_html: true
+  - search:
+      lang: en

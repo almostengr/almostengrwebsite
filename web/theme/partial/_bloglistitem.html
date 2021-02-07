@@ -1,0 +1,28 @@
+<li class="">
+    <h2 class="pt-3">
+        <a href="{{ nav_item.url|url }}" class="text-dark">
+            {% if nav_item.meta.title %}
+            {{ nav_item.meta.title }}
+            {% else %}
+            {{ nav_item.title }}
+            {% endif %}
+        </a>
+    </h2>
+    <div class="text-secondary">
+        {% if nav_item.meta.posted %}
+        {{ nav_item.meta.posted }}
+        {% elif nav_item.meta.updated %}
+        {{ nav_item.meta.updated }}
+        {% endif %}
+    </div>
+
+    {% if nav_item.meta.description %}
+    <div class="text-secondary">
+        {{ nav_item.meta.description | truncate(150, false) | striptags }}
+    </div>
+    {% endif %}
+
+    <div>
+        <a class="btn btn-danger" href="{{ nav_item.url | url }}">Read More</a>
+    </div>
+</li>

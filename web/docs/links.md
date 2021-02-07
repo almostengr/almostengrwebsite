@@ -9,3 +9,5 @@ author: Kenny Robinson, @almostengr
 [Control GPIO with .NET Core on Raspberry Pi](/blog/2020.10.25-control-gpio-with-net-core-on-raspberry-pi/)
 [Merge Two Git Repositories Into One](https://youtu.be/DLOcQQgyQWo)
 [FFMPEG for Image Slideshow](/blog/2020.10.10-ffmpeg-for-image-slideshow)
+
+[RHT Services LLC](https://rhtservices.net)

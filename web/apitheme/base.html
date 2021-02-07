@@ -1,7 +1,7 @@
 {
-"title": "{{ page.title }}",
-"description": "{{ page.description}}",
-"keywords": "{{ page.meta.keywords }}",
-"author": "{{ page.meta.author }}",
+"title": "{{ page.title | striptags }}",
+"description": "{{ page.description | striptags }}",
+"keywords": "{{ page.meta.keywords | striptags }}",
+"author": "{{ page.meta.author | striptags }}",
 "content": "{{ page.content | striptags }}"
 }

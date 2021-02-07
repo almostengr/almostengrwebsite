@@ -6,7 +6,7 @@ description:
 ## Links
 
 * [https://dd-wrt.com](https://www.dd-wrt.com)
-* TP Link Archer C7
+* TP Link Archer C 7
 
 
 ## Video Transcript

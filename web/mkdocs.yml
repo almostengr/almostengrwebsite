@@ -17,8 +17,8 @@ dev_addr: 192.168.57.117:8000
 # Appearance
 theme:
   name: null
-  # custom_dir: 'theme'
-  custom_dir: 'apitheme'
+  custom_dir: 'theme'
+  # custom_dir: 'apitheme'
   language: en
   social_user: "@almostengr"
   # sitemessage

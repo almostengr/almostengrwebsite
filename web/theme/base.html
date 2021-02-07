@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="{{ config.site_name }}" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="{{ config.theme.social_user }}" />
+  <meta name="twitter:creator" content="{{ config.theme.social_user }}" />
 
   {% if page and page.meta and page.meta.description %}
   <meta name="description" content="{{ page.meta.description }}">
@@ -17,7 +21,9 @@
   <meta name="twitter:description" content="{{ config.site_description }}" />
   {% endif %}
 
-  {% if config.site_author %}
+  {% if page and page.meta.author %}
+  <meta name="author" content="{{ page.meta.author }}">
+  {% else %}
   <meta name="author" content="{{ config.site_author }}">
   {% endif %}
 
@@ -35,309 +41,327 @@
   <meta name="twitter:title" content="{{ config.site_name }}" />
   {% endif %}
 
-  {% if page.meta.image %}
+  {% if page and page.meta.image %}
   <meta property="og:image" content="{{ page.meta.image }}" />
   <meta name="twitter:image" content="{{ page.meta.image }}" />
   {% endif %}
 
-  <meta property="og:site_name" content="{{ config.site_name }}" />
-  <link rel="icon" href="../../../../favicon.ico">
+  {% if page.meta.keywords %}
+  <meta name="keywords" content="{{ page.meta.keywords }}" />
+  {% endif %}
+
+  {% if page.meta.ogtype %}
+  <meta property="og:type" content="{{ page.meta.ogtype }}" />
+  {% elif 'blog' in page.url %}
+  <meta property="og:type" content="article" />
+  {% else %}
+  <meta property="og:type" content="website" />
+  {% endif %}
+
+  {% if page and page.meta.youtube %}
+  <meta property="og:video" content="{{ page.meta.youtube }}" />
+  {% endif %}
+
+  {% if page.meta.robots %}
+  <meta name="robots" content="{{ page.meta.robots }}" />
+  {% else %}
+  <meta name="robots" content="index, follow" />
+  {% endif %}
 
   {% if page.canonical_url %}
-  <link rel="canonical" href="{{ page.canonical_url }}">
+  <link rel="canonical" href="{{ page.canonical_url | url }}">
+  <meta property="og:url" content="{{ page.canonical_url | url }}" />
+  <meta property="twitter:url" content="{{ page.canonical_url | url }}" />
   {% endif %}
 
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom styles for this template -->
-  <link href="{{ 'css/starter-template.css' | url }}" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900" rel="stylesheet">
+  <link href="/css/blog.min.css" rel="stylesheet">
 
-  <!-- Bootstrap CDN -->
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/default.min.css">
+  <link rel="stylesheet" href="/css/a11y-dark-theme.min.css">
 
-  <link href="{{ 'css/almostengr.min.css' | url }}" rel="stylesheet" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="manifest" href="/images/site.webmanifest">
 
-  <!-- google analytics -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
   {% if config.google_analytics %}
-  <script>
-    (function (i, s, o, g, r, a, m) {
-      i['GoogleAnalyticsObject'] = r;
-      i[r] = i[r] || function () {
-        (i[r].q = i[r].q || []).push(arguments)
-      }, i[r].l = 1 * new Date();
-      a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0];
-      a.async = 1;
-      a.src = g;
-      m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-    ga('create', '{{ config.google_analytics[0] }}', '{{ config.google_analytics[1] }}');
-    ga('send', 'pageview');
-  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ config.google_analytics[0] }}"></script>
+  <script async>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date()); gtag('config', '{{ config.google_analytics[0] }}');</script>
   {% endif %}
-
-  <!-- Font Awesome -->
-  <script async src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 
 <body>
-  <header class="ae-bg-black">
-    <nav class="navbar navbar-expand-lg navbar-dark container">
-      <a class="navbar-brand" href="/">{{ config.site_name }}</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-        aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav text-right ml-auto">
-          {% for nav_item in nav %}
-          <!--
-            <li class="nav-item {% if nav_item.active %}active font-weight-bold{% endif %}">
-              <a class="nav-link font-weight-bold {% if nav_item.title == 'Search' %} btn btn-outline-secondary {% endif %}" href="{{ nav_item.url|url }}">
-                {% if nav_item.title == 'Search' %} <i class="fas fa-search"></i>{% endif %} {{ nav_item.title }}</a>
-            </li>
-            -->
-          {% endfor %}
-          <li class="nav-item">
-            <a class="nav-link font-weight-bold text-white" href="/blog">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link font-weight-bold text-white" href="/portfolio">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link font-weight-bold text-white" href="/uses">Uses</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link font-weight-bold text-white" href="/about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link font-weight-bold text-white" href="/contact">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link font-weight-bold btn btn-outline-light text-white" href="/search">
-              <i class="fas fa-search"></i> Search</a>
-          </li>
-        </ul>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-black">
+    <a class="navbar-brand font-weight-bold text-uppercase" href="/">{{ config.theme.site_short_name }}</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        {% for nav_item in config.theme.mainnav %}
+        <li class="nav-item">
+          <a class="nav-link text-white text-uppercase" href="{{ nav_item.url | url }}">{{ nav_item.name }}</a>
+        </li>
+        {% endfor %}
+        <!-- <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li> -->
+      </ul>
+      <form class="form-inline mt-2 mt-md-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  <!-- <div class="container">
+    <header class="blog-header py-3">
+      <div class="row flex-nowrap justify-content-between align-items-center">
+        <div class="col-4 pt-1">
+          <a class="text-muted" href="#">Subscribe</a>
+        </div>
+        <div class="col-4 text-center">
+          <a class="blog-header-logo text-dark" href="#">Large</a>
+        </div>
+        <div class="col-4 d-flex justify-content-end align-items-center">
+          <a class="text-muted" href="#" aria-label="Search">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
+              stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img"
+              viewBox="0 0 24 24" focusable="false">
+              <title>Search</title>
+              <circle cx="10.5" cy="10.5" r="7.5" />
+              <path d="M21 21l-5.2-5.2" />
+            </svg>
+          </a>
+          <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
+        </div>
       </div>
-    </nav>
-  </header>
-
-  <!-- jumbotron -->
-  {% if page.is_homepage %}
-  <div class="col-sm-12 container-fluid jumbotron mt-0 pt-0 text-white ae-jumbotron">
-    <div class="px-5 pt-3 text-bottom"></div>
-  </div>
-  {% endif %}
-
-  <main role="main" id="content" class="container main">
+    </header>
+    <div class="nav-scroller py-1 mb-2">
+      <nav class="nav d-flex justify-content-between">
+        <a class="p-2 text-muted" href="#">World</a>
+        <a class="p-2 text-muted" href="#">U.S.</a>
+        <a class="p-2 text-muted" href="#">Technology</a>
+        <a class="p-2 text-muted" href="#">Design</a>
+        <a class="p-2 text-muted" href="#">Culture</a>
+        <a class="p-2 text-muted" href="#">Business</a>
+        <a class="p-2 text-muted" href="#">Politics</a>
+        <a class="p-2 text-muted" href="#">Opinion</a>
+        <a class="p-2 text-muted" href="#">Science</a>
+        <a class="p-2 text-muted" href="#">Health</a>
+        <a class="p-2 text-muted" href="#">Style</a>
+        <a class="p-2 text-muted" href="#">Travel</a>
+      </nav>
+    </div>
+    <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+      <div class="col-md-6 px-0">
+        <h1 class="display-4 font-italic">Title of a longer featured blog post</h1>
+        <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently
+          about what’s most interesting in this post’s contents.</p>
+        <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div
+          class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">World</strong>
+            <h3 class="mb-0">Featured post</h3>
+            <div class="mb-1 text-muted">Nov 12</div>
+            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to
+              additional content.</p>
+            <a href="#" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img"
+              aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                dy=".3em">Thumbnail</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div
+          class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success">Design</strong>
+            <h3 class="mb-0">Post title</h3>
+            <div class="mb-1 text-muted">Nov 11</div>
+            <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional
+              content.</p>
+            <a href="#" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img"
+              aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                dy=".3em">Thumbnail</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <main role="main" class="container">
     <div class="row">
-      <div class="col-sm-12 col-lg-9">
-        <div class="gcse-searchresults"></div>
-
-        {% if page.is_homepage %}
-        <div class="lead bg-dark text-white font-weight-bold text-center rounded p-4 mb-2 shadow">
-          I am a web developer and builder of things. I
-          <a href="https://github.com/almostengr" target="_blank">write code</a>,
-          learn new things, and <a href="/blog">share my thoughts</a> - not always in that order.<br />
-          I build software and web applications to improve business processes.
+      <div class="col-md-8 blog-main">
+        <h3 class="pb-4 mb-4 font-italic border-bottom">
+          From the Firehose
+        </h3>
+        <div class="blog-post">
+          <h2 class="blog-post-title">Sample blog post</h2>
+          <p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p>
+          <p>This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic
+            typography, images, and code are all supported.</p>
+          <hr>
+          <p>Yeah, she dances to her own beat. Oh, no. You could've been the greatest. 'Cause, baby, <a href="#">you're
+              a firework</a>. Maybe a reason why all the doors are closed. Open up your heart and just let it begin. So
+            très chic, yeah, she's a classic.</p>
+          <blockquote>
+            <p>Bikinis, zucchinis, Martinis, no weenies. I know there will be sacrifice but that's the price.
+              <strong>This is how we do it</strong>. I'm not sticking around to watch you go down. You think you're so
+              rock and roll, but you're really just a joke. I know one spark will shock the world, yeah yeah. Can't
+              replace you with a million rings.</p>
+          </blockquote>
+          <p>Trying to connect the dots, don't know what to tell my boss. Before you met me I was alright but things
+            were kinda heavy. You just gotta ignite the light and let it shine. Glitter all over the room <em>pink
+              flamingos</em> in the pool. </p>
+          <h2>Heading</h2>
+          <p>Suiting up for my crowning battle. If you only knew what the future holds. Bring the beat back. Peach-pink
+            lips, yeah, everybody stares.</p>
+          <h3>Sub-heading</h3>
+          <p>You give a hundred reasons why, and you say you're really gonna try. Straight stuntin' yeah we do it like
+            that. Calling out my name. ‘Cause I, I’m capable of anything.</p>
+          <pre><code>Example code block</code></pre>
+          <p>Before you met me I was alright but things were kinda heavy. You just gotta ignite the light and let it
+            shine.</p>
+          <h3>Sub-heading</h3>
+          <p>You got the finest architecture. Passport stamps, she's cosmopolitan. Fine, fresh, fierce, we got it on
+            lock. Never planned that one day I'd be losing you. She eats your heart out.</p>
+          <ul>
+            <li>Got a motel and built a fort out of sheets.</li>
+            <li>Your kiss is cosmic, every move is magic.</li>
+            <li>Suiting up for my crowning battle.</li>
+          </ul>
+          <p>Takes you miles high, so high, 'cause she’s got that one international smile.</p>
+          <ol>
+            <li>Scared to rock the boat and make a mess.</li>
+            <li>I could have rewrite your addiction.</li>
+            <li>I know you get me so I let my walls come down.</li>
+          </ol>
+          <p>After a hurricane comes a rainbow.</p>
+        </div><!-- /.blog-post -->
+        <div class="blog-post">
+          <h2 class="blog-post-title">Another blog post</h2>
+          <p class="blog-post-meta">December 23, 2013 by <a href="#">Jacob</a></p>
+          <p>I am ready for the road less traveled. Already <a href="#">brushing off the dust</a>. Yeah, you're lucky if
+            you're on her plane. I used to bite my tongue and hold my breath. Uh, She’s a beast. I call her Karma (come
+            back). Black ray-bans, you know she's with the band. I can't sleep let's run away and don't ever look back,
+            don't ever look back.</p>
+          <blockquote>
+            <p>Growing fast into a <strong>bolt of lightning</strong>. Be careful Try not to lead her on</p>
+          </blockquote>
+          <p>I'm intrigued, for a peek, heard it's fascinating. Oh oh! Wanna be a victim ready for abduction. She's got
+            that international smile, oh yeah, she's got that one international smile. Do you ever feel, feel so paper
+            thin. I’m gon’ put her in a coma. Sun-kissed skin so hot we'll melt your popsicle.</p>
+          <p>This is transcendental, on another level, boy, you're my lucky star.</p>
+        </div><!-- /.blog-post -->
+        <div class="blog-post">
+          <h2 class="blog-post-title">New feature</h2>
+          <p class="blog-post-meta">December 14, 2013 by <a href="#">Chris</a></p>
+          <p>From Tokyo to Mexico, to Rio. Yeah, you take me to utopia. I'm walking on air. We'd make out in your
+            Mustang to Radiohead. I mean the ones, I mean like she's the one. Sun-kissed skin so hot we'll melt your
+            popsicle. Slow cooking pancakes for my boy, still up, still fresh as a Daisy.</p>
+          <ul>
+            <li>I hope you got a healthy appetite.</li>
+            <li>You're never gonna be unsatisfied.</li>
+            <li>Got a motel and built a fort out of sheets.</li>
+          </ul>
+          <p>Don't need apologies. Boy, you're an alien your touch so foreign, it's <em>supernatural</em>,
+            extraterrestrial. Talk about our future like we had a clue. I can feel a phoenix inside of me.</p>
+        </div><!-- /.blog-post -->
+        <!-- <nav class="blog-pagination">
+          <a class="btn btn-outline-primary" href="#">Older</a>
+          <a class="btn btn-outline-secondary disabled" href="#" tabindex="-1" aria-disabled="true">Newer</a>
+        </nav> -->
+      </div><!-- /.blog-main -->
+      <aside class="col-md-4 blog-sidebar">
+        <div class="p-4 mb-3 bg-light rounded">
+          <h4 class="font-italic">About</h4>
+          <p class="mb-0">Saw you downtown singing the Blues. Watch you circle the drain. Why don't you let me stop by?
+            Heavy is the head that <em>wears the crown</em>. Yes, we make angels cry, raining down on earth from up
+            above.</p>
         </div>
-        {% endif %}
-
-        <article>
-          {% block content %}
-          {{ page.content }}
-          {% endblock %}
-        </article>
-
-        <div class="py-3">
-          <!-- Google AdSense -->
-          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-          <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4218270188842097"
-            data-ad-slot="5189305512" data-ad-format="auto" data-full-width-responsive="true"></ins>
-          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-        </div>
-
-      </div>
-      <div class="col-sm-12 col-lg-3 pt-3">
-        <!--
-            <div class="card mb-3">
-              <div class="card-header bg-secondary text-white font-weight-bold">Page Contents</div>
-              <div class="card-body">
-                <div class="card-text">
-                  <nav>
-                    <ul class="list-unstyled">
-                      {% for toc_item in page.toc %}
-                        <li><a href="{{ toc_item.url }}">{{ toc_item.title }}</a></li>
-                        <ul class="list-unstyled">
-                        {% for toc_item in toc_item.children %}
-                          <li><a href="{{ toc_item.url }}">{{ toc_item.title }}</a></li>
-                        {% endfor %}
-                        </ul>
-                      {% endfor %}
-                    </ul>
-                  </nav>
-                </div>
-              </div>
-            </div>
-            -->
-
-        <div class="card mb-3 shadow">
-          <div class="card-header bg-dark text-white font-weight-bold text-uppercase">Share This!</div>
-          <div class="card-body">
-            <div class="card-text">
-              <!-- AddToAny -->
-              <a class="a2a_dd" href="https://www.addtoany.com/share">
-                <img src="https://static.addtoany.com/buttons/share_save_171_16.png" width="171" height="16" border="0"
-                  alt="Share">
-              </a>
-              <script async src="https://static.addtoany.com/menu/page.js"></script>
-            </div>
-          </div>
-        </div> <!-- end of block -->
-
-        <div class="card mb-3 shadow">
-          <div class="card-header bg-dark text-white font-weight-bold text-uppercase">Free Drupal Training</div>
-          <div class="card-body">
-            <div class="card-text">
-              If you are interested in learning Drupal 8, I have created a series of videos that shows
-              how to set up a Drupal site and covers the core functionality.<br />
-              <a href="https://www.youtube.com/playlist?list=PLaAJ0fv0d9WM8E2K_Ke5As-fw626yQ3tu" target="_blank">Watch
-                it now</a>.
-            </div>
-          </div>
-        </div> <!-- end of block -->
-
-        <div class="card mb-3 shadow">
-          <div class="card-header bg-dark text-white font-weight-bold text-uppercase">Connect with Me</div>
-          <div class="card-body">
-            <div class="card-text">
-              <ul>
-                {% for social in config.extra.social %}
-                <li><a href="{{ social.link }}" target="_blank" class="text-capitalize">
-                    <i class="fab fa-{{ social.type }}"></i> {{ social.type }}</a>
-                </li>
-                {% endfor %}
-              </ul>
-            </div>
-          </div>
-        </div> <!-- end of block -->
-
-        <div class="card mb-3 shadow">
-          <div class="card-header bg-dark text-white text-uppercase font-weight-bold">Sponsor</div>
-          <div class="card-body">
-            <div class="card-text">
-              <!-- Google AdSense -->
-              <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-              <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4218270188842097"
-                data-ad-slot="5189305512" data-ad-format="auto" data-full-width-responsive="true"></ins>
-              <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </main> <!-- end container -->
-
-  <footer class="container-fluid px-0 pb-4 text-white ae-bg-black">
-    <div class="container">
-      <div class="row pt-4">
-        <div class="col-sm-12 col-lg-4">
-          <h5 class="border-bottom text-uppercase">Connect</h5>
-          <ul class="list-unstyled">
-            {% for social in config.extra.social %}
-            <li><a href="{{ social.link }}" target="_blank" class="text-capitalize">
-                <i class="fab fa-{{ social.type }}"></i> {{ social.type }}</a></li>
+        <!-- <div class="p-4">
+          <h4 class="font-italic">Archives</h4>
+          <ol class="list-unstyled mb-0">
+            <li><a href="#">March 2014</a></li>
+            <li><a href="#">February 2014</a></li>
+            <li><a href="#">January 2014</a></li>
+            <li><a href="#">December 2013</a></li>
+            <li><a href="#">November 2013</a></li>
+            <li><a href="#">October 2013</a></li>
+            <li><a href="#">September 2013</a></li>
+            <li><a href="#">August 2013</a></li>
+            <li><a href="#">July 2013</a></li>
+            <li><a href="#">June 2013</a></li>
+            <li><a href="#">May 2013</a></li>
+            <li><a href="#">April 2013</a></li>
+          </ol>
+        </div> -->
+        <div class="p-4 mb-3 bg-light rounded">
+          <h4 class="font-italic">Topics</h4>
+          <ol class="list-unstyled">
+            {% for topic in config.theme.topics %}
+            <li><a href="{{ topic.link }}">{{ topic.name }}</a></li>
             {% endfor %}
-          </ul>
-        </div> <!-- end of block -->
-
-        <div class="col-sm-12 col-lg-4">
-          <h5 class="border-bottom text-uppercase">Categories</h5>
-          <ul class="list-unstyled">
-            <li>
-              <a href="/technology"><i class="fas fa-laptop-code"></i> Technology</a>
-            </li>
-            <li>
-              <a href="/gardening"><i class="fas fa-seedling"></i> Gardening</a>
-            </li>
-            <li>
-              <a href="/diy"><i class="fas fa-hammer"></i> DIY (Do It Yourself)</a>
-            </li>
-            <li>
-              <a href="/lifestyle"><i class="fas fa-user-friends"></i> Lifestyle</a>
-            </li>
-            <li>
-              <a href="/resources"><i class="fas fa-book-open"></i> Resources</a>
-            </li>
-            <li>
-              <a href="/speaking"><i class="fas fa-calendar-alt"></i> Speaking</a>
-            </li>
-          </ul>
-        </div> <!-- end of block -->
-
-        <div class="col-sm-12 col-lg-4">
-          <h5 class="text-uppercase border-bottom">Links</h5>
-          <ul class="list-unstyled">
-            <li class="nav-item">
-              Powered by <a href="http://www.mkdocs.org/" target="_blank"><i class="fab fa-markdown"></i> MkDocs</a>
-            </li>
-            <li class="nav-item">
-              <a href="https://github.com/almostengr/almostengrwebsite" target="_blank">
-                <i class="fab fa-github"></i> Website Source</a>
-            </li>
-            <li class="nav-item">
-              <a href="https://github.com/almostengr/almostengrwebsite/issues" target="_blank">
-                <i class="fa fa-exclamation-triangle"></i> Report Problem</a>
-            </li>
-            <li class="nav-item">
-              <a href="/Blog"><i class="fas fa-pen"></i> Blog</a>
-            </li>
-            <li class="nav-item">
-              <a href="/contact"><i class="fas fa-phone"></i> Contact</a>
-            </li>
-            <li class="nav-item">
-              <a href="/sitemap.xml"><i class="fas fa-sitemap"></i> Sitemap</a>
-            </li>
-            <li class="nav-item">
-              <a href="/search"><i class="fas fa-search"></i> Search</a>
-            </li>
-          </ul>
-        </div> <!-- end of block -->
-      </div> <!-- end of row -->
-    </div> <!-- end container -->
-
-    <hr class="ae-footer-hr">
-
-    <div class="text-center container mt-2">
-      <small>
-        The views and opinions expressed here are those of my own and are not a reflection
-        of those that I work or socialize with.
-
-        <p class="text-warning">
-          Cookies are used on this website to track your visits, provide advertisements specific
-          to you, and preferences by a third-party.
-          By continuing to use this site, you agree to the use of cookies unless you have disabled them.
-          <a class="text-warning" href="/privacy">Privacy Policy</a>
-        </p>
-      </small>
-    </div>
-    <div class="text-center mt-2">
-      {% if config.copyright %} {{ config.copyright }} {%endif%} |
-      <strong>Last Updated:</strong> {{ build_date_utc }} UTC |
-      <a href="#top">Back to Top</a>
-    </div> <!-- end of block -->
+          </ol>
+        </div>
+        <div class="p-4 mb-3 bg-light rounded">
+          <h4 class="font-italic">Elsewhere</h4>
+          <ol class="list-unstyled">
+            <!-- <li><a href="#">GitHub</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Facebook</a></li> -->
+            {% for link in config.theme.social %}
+            <li><a href="{{ link.link }}" target="_blank">{{ link.name }}</a></li>
+            {% endfor %}
+          </ol>
+        </div>
+      </aside><!-- /.blog-sidebar -->
+    </div><!-- /.row -->
+  </main><!-- /.container -->
+  <footer class="blog-footer bg-black">
+    <!-- <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a
+        href="https://twitter.com/mdo">@mdo</a>.</p> -->
+    <p>
+      <a href="#">Back to top</a>
+    </p>
   </footer>
-
-  <!-- Boostrap and Javascript CDN -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" async
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"></script>
+  <!-- <script>window.jQuery || document.write('<script src="/js/vendor/jquery.slim.min.js"><\/script>')</script> -->
+  <script async src="/js/bootstrap.bundle.min.js"></script>
+  <!-- Font Awesome -->
+  <script async src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script async src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js"></script>
 </body>
 
 </html>

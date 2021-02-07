@@ -21,6 +21,16 @@ theme:
   # custom_dir: 'apitheme'
   language: en
   social_user: "@almostengr"
+  site_short_name: The Almost Engineer
+  mainnav:
+    - url: /about
+      name: About
+    - url: /uses
+      name: Uses
+    - url: /contact
+      name: Contact
+    # - url: /donate
+    #   name: Donate
   # sitemessage
     # - heading: heading
     #   detail: detail
@@ -38,15 +48,15 @@ theme:
       background_image: "/images/jumbotron.jpg"
       textcolor: text-warning
       buttoncolor: btn-warning
-  mainnav:
-    - url: /blog
-      name: Blog
-    - url: /uses
-      name: Uses
-    - url: /donate
-      name: Donate
-    - url: /about
-      name: About
+  # mainnav:
+  #   - url: /blog
+  #     name: Blog
+  #   - url: /uses
+  #     name: Uses
+  #   - url: /donate
+  #     name: Donate
+  #   - url: /about
+  #     name: About
   featurette:
     - heading: Blog
       description: To see our past work, checkout out the blog where we describe and share our experience with and photos of previous projects.
@@ -71,17 +81,35 @@ theme:
       name: Privacy
     # - url: /donate
     #   name: Donate
+  topics:
+    - link: /handyman
+      name: DIY
+    - link: /technology
+      name: Technology
+    - link: /speaking
+      name: Speaking
+    - link: /gardening
+      name: Gardening
+    - link: /resource
+      name: Tech Resources
+    - link: /portfolio
+      name: Portfolio
   social:
     - type: github
       link: https://github.com/almostengr
+      name: GitHub
     - type: instagram
       link: https://instagram.com/almostengr
+      name: Instagram
     - type: linkedin
       link: https://www.linkedin.com/in/krobinsontech
+      name: LinkedIn
     - type: twitter
       link: https://twitter.com/almostengr
+      name: Twitter
     - type: youtube
       link: https://www.youtube.com/channel/UC4HCouBLtXD1j1U_17aBqig?sub_confirmation=1
+      name: YouTube
 
 use_directory_urls: true
 strict: false

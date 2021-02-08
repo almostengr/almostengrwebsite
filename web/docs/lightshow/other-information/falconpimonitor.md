@@ -1,6 +1,6 @@
 # Falcon Pi Monitor
 
-![](/images/20201220presentation/twittertweets.jpg)
+![](/lightshow/images/20201220presentation/twittertweets.jpg)
 
 This project is designed for Falcon Pi Player to provide updates via Twitter on the light show that 
 you are running. Those updates include posting the current song and providing alerts when problems
@@ -119,7 +119,7 @@ degrees Celsius is close to the safe upper operating limit of the Pi.
 
 ## Twitter Examples
 
-Follow my Christmas Light Show account [@hpchristmas](https://twitter.com/hpchristmas) to see what this 
+Follow my Christmas Light Show account [@hplightshow](https://twitter.com/hplightshow) to see what this 
 application can do.
 
 ## Known Bugs

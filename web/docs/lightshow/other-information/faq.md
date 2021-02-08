@@ -104,7 +104,7 @@ or the AC lights that I already had on hand.
 
 ## What are the parts that I need to build my own control box?
 
-![Photo of control box](/images/20201220presentation/20201204_120013.jpg)
+![Photo of control box](/lightshow/images/20201220presentation/20201204_120013.jpg)
 
 This is the list of the electrical related components. The full list of components will vary depending
 upon how to you choose to design your control box.
@@ -155,7 +155,7 @@ actually over heat, self-destruct, or weld itself closed.
 
 Music is transmitted over radio via a low-power FM transmitter. Music goes into the transmitter directly from
 the Raspberry Pi and broadcasted on an open frequency. Radio Locator
-[mentioned below](/other-information/faq#where-can-i-find-out-more-information-or-ask-questions)
+[mentioned below](/lightshow/other-information/faq#where-can-i-find-out-more-information-or-ask-questions)
 was used to locate the best frequency.
 
 ### What kind of software do you use?
@@ -186,7 +186,7 @@ the latest version from <a href="https://kdenlive.org/en/download" target="_blan
 
 ### Song updates are posted to Twitter. How does that work?
 
-See the [Falcon Pi Monitor](/other-information/falconpimonitor) page for more information about
+See the [Falcon Pi Monitor](/lightshow/other-information/falconpimonitor) page for more information about
 that project.
 
 ## Resources

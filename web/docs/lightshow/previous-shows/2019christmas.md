@@ -13,4 +13,4 @@ All of the lights were connected to a single timer. That timer was set to run fr
 
 ## FAQ (Frequently Asked Questions)
 
-See the [FAQ](/other-information/faq) page for questions and answers.
+See the [FAQ](/lightshow/other-information/faq) page for questions and answers.

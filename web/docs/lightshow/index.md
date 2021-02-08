@@ -1,6 +1,6 @@
 # 2020 Christmas Light Show
 
-![2020 Light Show](/images/2020 Christmas Light Show 20201211-f000000.jpg)
+![2020 Light Show](/lightshow/images/2020 Christmas Light Show 20201211-f000000.jpg)
 
 ## Show Details
 

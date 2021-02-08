@@ -1,4 +1,4 @@
-div#content-area a {
+div.content a {
     background-color: #000;
     border: #000 solid 4px;
     color: #fff;
@@ -13,11 +13,7 @@ div#content-area a {
     width: 100%;
 }
 
-div#content-area a:hover {
+div.content-area a:hover {
     background-color: #fff;
     color: #000;
-}
-
-h1 {
-    margin-bottom: 1em;
 }

@@ -79,10 +79,14 @@
   <link href="/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom styles for this template -->
   <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900" rel="stylesheet">
-  <link href="/css/blog.min.css" rel="stylesheet">
+  <link href="/css/theme.min.css" rel="stylesheet">
+
+  {% if page and page.url == "links/" %}
+  <link href="/css/themelinks.min.css" rel="stylesheet">
+  {% endif %}
 
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/default.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/default.min.css">
   <link rel="stylesheet" href="/css/a11y-dark-theme.min.css">
 
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
@@ -233,19 +237,15 @@
             {% if page and page.meta.posted %}
             Posted on {{ page.meta.posted }}
             {% endif %}
-
             {% if page and page.meta.author and page.meta.authorurl %}
             by <a href="{{ page.meta.authorurl }}" target="_blank">{{ page.meta.author | striptags }}</a>
             {% elif page and page.meta.author %}
             by {{ page.meta.author | striptags }}
-
             {% endif %}
-
             {% if page and page.meta.category %}
             in <a href="/{{page.meta.category|lower}}">{{ page.meta.category }}</a>
             {% endif %}
           </p>
-
           {% if page and page.is_homepage %}
           <h2>Latest Technology Posts</h2>
           <p>
@@ -437,6 +437,7 @@
           </p>
           <div class="content">
             {{ page.content }}
+            {% include "_googleadsense.html" %}
           </div>
           <!-- <h3 class="pb-4 mb-4 font-italic border-bottom">
           From the Firehose
@@ -596,8 +597,10 @@
   <!-- <script>window.jQuery || document.write('<script src="/js/vendor/jquery.slim.min.js"><\/script>')</script> -->
   <script async src="/js/bootstrap.bundle.min.js"></script>
   <!-- Font Awesome -->
-  <script async src="https://kit.fontawesome.com/a076d05399.js"></script>
-  <script async src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js"></script>
+  <!-- <script async src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script async src="/js/theme.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 </body>
 
 </html>

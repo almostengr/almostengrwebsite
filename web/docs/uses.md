@@ -78,6 +78,7 @@ that I post on my YouTube channel.
 * [Image Analyzer](http://meesoft.com/Analyzer/) for image editing
 * [KeePass](https://keepass.info/) for password management
 * Microsoft Outlook for email
+* Microsoft PowerPoint for graphic design and presentations
 * Microsoft Word for word processing
 * [Mozilla Firefox](https://www.mozilla.org/en-us/firefox) for browsing and building websites
 * [Postman](https://getpostman.com) for developing and testing API services
@@ -86,7 +87,7 @@ that I post on my YouTube channel.
 
 ### This Website and Blog
 
-* [Bootstrap](https://getbootstrap.com) for appearance and styling
+* [Bootstrap 4](https://getbootstrap.com) for appearance and styling
 * Cell phone for pictures and video
 * [GitHub](https://github.com/almostengr/almostengrwebsite) for version control and issue tracking
 * [GitHub Actions](https://github.com/features/actions) for automated builds and deployment (CI/CD) of website

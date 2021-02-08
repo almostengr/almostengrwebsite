@@ -1,6 +1,6 @@
-site_name: The Almost Engineer, Blog of Kenny Robinson
+site_name: The Almost Engineer
 site_url: https://thealmostengineer.com
-site_description: The personal blog for Kenny Robinson, where he talks about programming, handyman projects, and more.
+site_description: The blog of Kenny Robinson
 site_author: Kenny Robinson, @almostengr
 copyright: Kenny Robinson
 google_analytics: ['UA-64643711-1', 'thealmostengineer.com']
@@ -23,6 +23,8 @@ theme:
   social_user: "@almostengr"
   site_short_name: The Almost Engineer
   mainnav:
+    - url: /blog
+      name: Blog
     - url: /portfolio
       name: Portfolio
     - url: /uses
@@ -43,13 +45,13 @@ theme:
   #     detail: detail
   #     bgcolor: bg-primary
   #     textcolor: text-light
-  jumbotron:
-    - heading: heading
-      detail: detail
-      url: #
-      background_image: "/images/jumbotron.jpg"
-      textcolor: text-warning
-      buttoncolor: btn-warning
+  # jumbotron:
+  #   - heading: heading
+  #     detail: detail
+  #     url: #
+  #     background_image: "/images/jumbotron.jpg"
+  #     textcolor: text-warning
+  #     buttoncolor: btn-warning
   # mainnav:
   #   - url: /blog
   #     name: Blog
@@ -59,6 +61,17 @@ theme:
   #     name: Donate
   #   - url: /about
   #     name: About
+  homepagecategory:
+    - name: Technology
+      url: /technology
+    - name: Handyman
+      url: /handyman
+    - name: Speaking
+      url: /speaking
+    - name: Gardening
+      url: /gardening
+    
+
   featurette:
     - heading: Blog
       description: To see our past work, checkout out the blog where we describe and share our experience with and photos of previous projects.
@@ -85,14 +98,14 @@ theme:
     #   name: Donate
   topics:
     - link: /handyman
-      name: DIY
+      name: DIY/Handyman
     - link: /technology
       name: Technology
     - link: /speaking
       name: Speaking
     - link: /gardening
       name: Gardening
-    - link: /resource
+    - link: /resources
       name: Tech Resources
     - link: /portfolio
       name: Portfolio

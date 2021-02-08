@@ -5,7 +5,7 @@ posted: 2020-06-29
 author: Kenny Robinson
 ---
 
-![](/images/SAM_2423-f008473.png)
+![Kenny being silly](/images/SAM_2423-f008473.png)
 
 ## IT (Information Technology) Professional
 
@@ -41,4 +41,4 @@ it for his personal use.
 In 2019, Kenny converted the blog again from Drupal 7 over to MKDocs. The reason 
 for this conversion was because he found myself spending more time performing 
 maintenance updates than writing content. He outlines this more in his post on 
-[switching from Drupal to MkDocs](/blog/2019.12.21-switched-blog-from-drupal-to-mkdocs).
+[switching from Drupal to MkDocs](/technology/2019.12.21-switched-blog-from-drupal-to-mkdocs).

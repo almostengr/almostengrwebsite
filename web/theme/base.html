@@ -27,7 +27,11 @@
   <meta name="author" content="{{ config.site_author }}">
   {% endif %}
 
-  {% if page and page.meta and page.meta.title %}
+  {% if page and page.is_homepage %}
+  <title>{{ config.site_name }} | {{ config.site_description }}</title>
+  <meta property="og:title" content="{{ config.site_name }} | {{ config.site_description }}" />
+  <meta name="twitter:title" content="{{ config.site_name }} | {{ config.site_description }}" />
+  {% elif page and page.meta and page.meta.title %}
   <title>{{ page.meta.title }} | {{ config.site_name }}</title>
   <meta property="og:title" content="{{ page.meta.title }} | {{ config.site_name }}" />
   <meta name="twitter:title" content="{{ page.meta.title }} | {{ config.site_name }}" />
@@ -217,15 +221,15 @@
     </div>
   </div> -->
   <div class="bg-white">
-  <main role="main" class="container">
-    <div class="row">
-      <div class="col-md-8 blog-main">
-        <h1 class="blog-post-title">
-          {% if page and page.meta.title %}
-          {{ page.meta.title }}
-          {% endif %}
-        </h1>
-        <p class="blog-post-meta text-secondary">
+    <main role="main" class="container">
+      <div class="row">
+        <div class="col-md-8 blog-main">
+          <h1 class="blog-post-title">
+            {% if page and page.meta.title %}
+            {{ page.meta.title }}
+            {% endif %}
+          </h1>
+          <p class="blog-post-meta text-secondary">
             {% if page and page.meta.posted %}
             Posted on {{ page.meta.posted }}
             {% endif %}
@@ -237,121 +241,160 @@
 
             {% endif %}
 
-	    {% if page and page.meta.category %}
-		in  <a href="/{{page.meta.category|lower}}">{{ page.meta.category }}</a>
-		{% endif %}
-        </p>
-
-        {% if page and page.is_homepage %}
-        <h2>Latest Technology Posts</h2>
-        <p>
-          {% for nav_item in nav %}
-            {% if nav_item.children %}
-            <div id="technology" class="tab-pane active">
-              <ul class="list-unstyled">
-                {% for nav_item in nav_item.children | sort(attribute='posted') | reverse | batch(4) | first %}
-                {% if 'technology' in nav_item.url and nav_item.title != "Blog" and nav_item.meta.category == "Technology" %}
-                <li><h3><a href="{{ nav_item.url }}">{{ nav_item.title }}</a></h3>
-{% if nav_item.meta.image %}
-<p><img src="{{ nav_item.meta.image }}" /></p>
-{% endif %}
-<p>
-{% if nav_item.meta.description %}
-{{ nav_item.meta.description }}
-{% else %}
-{{ nav_item.content | striptags | truncate(150,false) }}
-{% endif %}
-<br />
-		<span class="text-muted">
-<strong>Posted:</strong> {{ nav_item.meta.posted }}
-{% if nav_item.meta.updated %}
-| <strong>Last Updated:</strong> {{ nav_item.meta.updated }}
-{% endif %}
-</span>
-</p>
-</li>
-                {% endif %}
-                {% endfor %}
-              </ul>
-            </div>
+            {% if page and page.meta.category %}
+            in <a href="/{{page.meta.category|lower}}">{{ page.meta.category }}</a>
             {% endif %}
-          {% endfor %}
-	<p><a href="/technology">See all Technology Posts</a></p>
-        </p>
-        <h2>Latest Handyman Posts</h2>
-        <p>
-          {% for nav_item in nav %}
+          </p>
+
+          {% if page and page.is_homepage %}
+          <h2>Latest Technology Posts</h2>
+          <p>
+            {% for nav_item in nav %}
             {% if nav_item.children %}
-            <div id="handyman" class="tab-pane active">
-              <ul class="list-unstyled">
-                {% for nav_item in nav_item.children | sort(attribute='posted') | reverse | batch(4) | first %}
-                {% if 'handyman' in nav_item.url %}
-                <li><h3><a href="{{ nav_item.url }}">{{ nav_item.title }}</a></h3>
+          <div id="technology" class="tab-pane active">
+            <ul class="list-unstyled">
+              {% for nav_item in nav_item.children | sort(attribute='posted') | reverse | batch(3) | first %}
+              {% if 'technology' in nav_item.url and nav_item.title != "Blog" and nav_item.meta.category == "Technology" %}
+              <li>
+                <h3><a href="{{ nav_item.url }}">{{ nav_item.title }}</a></h3>
+                {% if nav_item.meta.image %}
+                <p><img src="{{ nav_item.meta.image }}" /></p>
+                {% endif %}
                 <p>
-
-{% if nav_item.meta.description %}
-{{ nav_item.meta.description }}
-{% else %}
-{{ nav_item.content | striptags | truncate(150,false) }}
-{% endif %}
-<br />
-                <span class="text-muted">
-<strong>Posted:</strong> {{ nav_item.meta.posted }}
-{% if nav_item.meta.updated %}
-| <strong>Last Updated:</strong> {{ nav_item.meta.updated }}
-{% endif %}
-</span>
-</p>
-</li>
-                {% endif %}
-                {% endfor %}
-              </ul>
-            </div>
-            {% endif %}
+                  {% if nav_item.meta.description %}
+                  {{ nav_item.meta.description }}
+                  {% else %}
+                  {{ nav_item.content | striptags | truncate(150,false) }}
+                  {% endif %}
+                  <br />
+                  <span class="text-muted">
+                    <strong>Posted:</strong> {{ nav_item.meta.posted }}
+                    {% if nav_item.meta.updated %}
+                    | <strong>Last Updated:</strong> {{ nav_item.meta.updated }}
+                    {% endif %}
+                  </span>
+                </p>
+              </li>
+              {% endif %}
+              {% endfor %}
+            </ul>
+          </div>
+          {% endif %}
           {% endfor %}
-        <p><a href="/handyman">See all Handyman Posts</a></p>
-        </p>
-        <h2>Latest Gardening Posts</h2>
-        <p>
-          {% for nav_item in nav %}
+          </p>
+          <p><a href="/technology">See all Technology Posts</a></p>
+          <hr />
+          <h2>Latest Handyman Posts</h2>
+          <p>
+            {% for nav_item in nav %}
             {% if nav_item.children %}
-            <div id="gardening" class="tab-pane active">
-              <ul class="list-unstyled">
-                {% for nav_item in nav_item.children | sort(attribute='posted') | reverse | batch(4) | first %}
-                {% if 'gardening' in nav_item.url %}
-                <li><h3><a href="{{ nav_item.url }}">{{ nav_item.title }}</a></h3>
+          <div id="handyman" class="tab-pane active">
+            <ul class="list-unstyled">
+              {% for nav_item in nav_item.children | sort(attribute='posted') | reverse | batch(3) | first %}
+              {% if 'handyman' in nav_item.url %}
+              <li>
+                <h3><a href="{{ nav_item.url }}">{{ nav_item.title }}</a></h3>
                 <p>
-
-{% if nav_item.meta.description %}
-{{ nav_item.meta.description }}
-{% else %}
-{{ nav_item.content | striptags | truncate(150,false) }}
-{% endif %}
-<br />
-                <span class="text-muted">
-<strong>Posted:</strong> {{ nav_item.meta.posted }}
-{% if nav_item.meta.updated %}
-| <strong>Last Updated:</strong> {{ nav_item.meta.updated }}
-{% endif %}
-</span>
-</p>
-</li>
-                {% endif %}
-                {% endfor %}
-              </ul>
-            </div>
-            {% endif %}
+                  {% if nav_item.meta.description %}
+                  {{ nav_item.meta.description }}
+                  {% else %}
+                  {{ nav_item.content | striptags | truncate(150,false) }}
+                  {% endif %}
+                  <br />
+                  <span class="text-muted">
+                    <strong>Posted:</strong> {{ nav_item.meta.posted }}
+                    {% if nav_item.meta.updated %}
+                    | <strong>Last Updated:</strong> {{ nav_item.meta.updated }}
+                    {% endif %}
+                  </span>
+                </p>
+              </li>
+              {% endif %}
+              {% endfor %}
+            </ul>
+          </div>
+          {% endif %}
           {% endfor %}
-        <p><a href="/gardening">See all Gardening Posts</a></p>
-        </p>
-        {% endif %} <!-- home page listing -->
+          </p>
+          <p><a href="/handyman">See all Handyman Posts</a></p>
+          <hr />
+          <h2>Latest Gardening Posts</h2>
+          <p>
+            {% for nav_item in nav %}
+            {% if nav_item.children %}
+          <div id="gardening" class="tab-pane active">
+            <ul class="list-unstyled">
+              {% for nav_item in nav_item.children | sort(attribute='posted') | reverse | batch(3) | first %}
+              {% if 'gardening' in nav_item.url %}
+              <li>
+                <h3><a href="{{ nav_item.url }}">{{ nav_item.title }}</a></h3>
+                <p>
+                  {% if nav_item.meta.description %}
+                  {{ nav_item.meta.description }}
+                  {% else %}
+                  {{ nav_item.content | striptags | truncate(150,false) }}
+                  {% endif %}
+                  <br />
+                  <span class="text-muted">
+                    <strong>Posted:</strong> {{ nav_item.meta.posted }}
+                    {% if nav_item.meta.updated %}
+                    | <strong>Last Updated:</strong> {{ nav_item.meta.updated }}
+                    {% endif %}
+                  </span>
+                </p>
+              </li>
+              {% endif %}
+              {% endfor %}
+            </ul>
+          </div>
+          {% endif %}
+          {% endfor %}
+          </p>
+          <p><a href="/gardening">See all Gardening Posts</a></p>
+          <hr />
+          <h2>Latest Speaking Posts</h2>
+          <p>
+            {% for nav_item in nav %}
+            {% if nav_item.children %}
+          <div id="speaking" class="tab-pane active">
+            <ul class="list-unstyled">
+              {% for nav_item in nav_item.children | sort(attribute='posted') | reverse | batch(3) | first %}
+              {% if 'speaking' in nav_item.url %}
+              <li>
+                <h3><a href="{{ nav_item.url }}">{{ nav_item.title }}</a></h3>
+                <p>
+                  {% if nav_item.meta.description %}
+                  {{ nav_item.meta.description }}
+                  {% else %}
+                  {{ nav_item.content | striptags | truncate(150,false) }}
+                  {% endif %}
+                  <br />
+                  <span class="text-muted">
+                    <strong>Posted:</strong> {{ nav_item.meta.posted }}
+                    {% if nav_item.meta.updated %}
+                    | <strong>Last Updated:</strong> {{ nav_item.meta.updated }}
+                    {% endif %}
+                  </span>
+                </p>
+              </li>
+              {% endif %}
+              {% endfor %}
+            </ul>
+          </div>
+          {% endif %}
+          {% endfor %}
+          </p>
+          <p><a href="/speaking">See all Speaking Posts</a></p>
+          <hr />
+          {% endif %}
+          <!-- home page listing -->
 
-        <p>
+          <p>
           <ul class="list-unstyled">
             {% for nav_item in nav %}
             {% if nav_item.children and page and page.url == "technology/" %}
             {% for nav_item in nav_item.children | sort(attribute='posted') | reverse %}
-            {% if 'technology' in nav_item.url and 'Blog' not in nav_item.title and not nav_item.draft == true %}
+            {% if 'technology' in nav_item.url and nav_item.title != "Technology" %}
             {% include "_bloglistitem.html" %}
             {% endif %}
             {% endfor %}
@@ -362,7 +405,7 @@
             {% for nav_item in nav %}
             {% if nav_item.children and page and page.url == "handyman/" %}
             {% for nav_item in nav_item.children | sort(attribute='posted') | reverse %}
-            {% if 'handyman' in nav_item.url and 'Blog' not in nav_item.title  %}
+            {% if 'handyman' in nav_item.url and nav_item.title != "Handyman" %}
             {% include "_bloglistitem.html" %}
             {% endif %}
             {% endfor %}
@@ -373,21 +416,32 @@
             {% for nav_item in nav %}
             {% if nav_item.children and page and page.url == "gardening/" %}
             {% for nav_item in nav_item.children | sort(attribute='posted') | reverse %}
-            {% if 'gardening' in nav_item.url and 'Blog' not in nav_item.title  %}
+            {% if 'gardening' in nav_item.url and nav_item.title != "Gardening" %}
             {% include "_bloglistitem.html" %}
             {% endif %}
             {% endfor %}
             {% endif %}
             {% endfor %}
           </ul>
-        </p>
-        <div class="content">
-          {{ page.content }}
-        </div>
-        <!-- <h3 class="pb-4 mb-4 font-italic border-bottom">
+          <ul class="list-unstyled">
+            {% for nav_item in nav %}
+            {% if nav_item.children and page and page.url == "speaking/" %}
+            {% for nav_item in nav_item.children | sort(attribute='posted') | reverse %}
+            {% if 'speaking' in nav_item.url and nav_item.title != "Speaking" %}
+            {% include "_bloglistitem.html" %}
+            {% endif %}
+            {% endfor %}
+            {% endif %}
+            {% endfor %}
+          </ul>
+          </p>
+          <div class="content">
+            {{ page.content }}
+          </div>
+          <!-- <h3 class="pb-4 mb-4 font-italic border-bottom">
           From the Firehose
         </h3> -->
-        <!-- <div class="blog-post">
+          <!-- <div class="blog-post">
           <h2 class="blog-post-title">Sample blog post</h2>
           <p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p>
           <p>This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic
@@ -430,7 +484,7 @@
           </ol>
           <p>After a hurricane comes a rainbow.</p>
         </div>/.blog-post -->
-        <!-- <div class="blog-post">
+          <!-- <div class="blog-post">
           <h2 class="blog-post-title">Another blog post</h2>
           <p class="blog-post-meta">December 23, 2013 by <a href="#">Jacob</a></p>
           <p>I am ready for the road less traveled. Already <a href="#">brushing off the dust</a>. Yeah, you're lucky if
@@ -445,7 +499,7 @@
             thin. I’m gon’ put her in a coma. Sun-kissed skin so hot we'll melt your popsicle.</p>
           <p>This is transcendental, on another level, boy, you're my lucky star.</p>
         </div>/.blog-post -->
-        <!-- <div class="blog-post">
+          <!-- <div class="blog-post">
           <h2 class="blog-post-title">New feature</h2>
           <p class="blog-post-meta">December 14, 2013 by <a href="#">Chris</a></p>
           <p>From Tokyo to Mexico, to Rio. Yeah, you take me to utopia. I'm walking on air. We'd make out in your
@@ -459,19 +513,20 @@
           <p>Don't need apologies. Boy, you're an alien your touch so foreign, it's <em>supernatural</em>,
             extraterrestrial. Talk about our future like we had a clue. I can feel a phoenix inside of me.</p>
         </div>/.blog-post -->
-        <!-- <nav class="blog-pagination">
+          <!-- <nav class="blog-pagination">
           <a class="btn btn-outline-primary" href="#">Older</a>
           <a class="btn btn-outline-secondary disabled" href="#" tabindex="-1" aria-disabled="true">Newer</a>
         </nav> -->
-      </div><!-- /.blog-main -->
-      <aside class="col-md-4 blog-sidebar">
-        <div class="p-4 mb-3 bg-light rounded">
-          <h4 class="font-italic">About</h4>
-          <p class="mb-0">Saw you downtown singing the Blues. Watch you circle the drain. Why don't you let me stop by?
-            Heavy is the head that <em>wears the crown</em>. Yes, we make angels cry, raining down on earth from up
-            above.</p>
-        </div>
-        <!-- <div class="p-4">
+        </div><!-- /.blog-main -->
+        <aside class="col-md-4 blog-sidebar">
+          <div class="p-4 mb-3 bg-light rounded">
+            <h4 class="font-italic">About</h4>
+            <p class="mb-0">Saw you downtown singing the Blues. Watch you circle the drain. Why don't you let me stop
+              by?
+              Heavy is the head that <em>wears the crown</em>. Yes, we make angels cry, raining down on earth from up
+              above.</p>
+          </div>
+          <!-- <div class="p-4">
           <h4 class="font-italic">Archives</h4>
           <ol class="list-unstyled mb-0">
             <li><a href="#">March 2014</a></li>
@@ -488,37 +543,37 @@
             <li><a href="#">April 2013</a></li>
           </ol>
         </div> -->
-        <div class="p-4 mb-3 bg-light rounded">
-          <h4 class="font-italic">Topics</h4>
-          <ol class="list-unstyled">
-            {% for topic in config.theme.topics %}
-            <li><a href="{{ topic.link }}">{{ topic.name }}</a></li>
-            {% endfor %}
-          </ol>
-        </div>
-        <div class="p-4 mb-3 bg-light rounded">
-          <!-- <h4 class="font-italic">Elsewhere</h4> -->
-          <!-- <ol class="list-unstyled"> -->
-          {% include "_googleadsense.html" %}
-          <!-- </ol> -->
-        </div>
-        <div class="p-4 mb-3 bg-light rounded">
-          <h4 class="font-italic">Elsewhere</h4>
-          <ol class="list-unstyled">
-            <!-- <li><a href="#">GitHub</a></li>
+          <div class="p-4 mb-3 bg-light rounded">
+            <h4 class="font-italic">Topics</h4>
+            <ol class="list-unstyled">
+              {% for topic in config.theme.topics %}
+              <li><a href="{{ topic.link }}">{{ topic.name }}</a></li>
+              {% endfor %}
+            </ol>
+          </div>
+          <div class="p-4 mb-3 bg-light rounded">
+            <!-- <h4 class="font-italic">Elsewhere</h4> -->
+            <!-- <ol class="list-unstyled"> -->
+            {% include "_googleadsense.html" %}
+            <!-- </ol> -->
+          </div>
+          <div class="p-4 mb-3 bg-light rounded">
+            <h4 class="font-italic">Elsewhere</h4>
+            <ol class="list-unstyled">
+              <!-- <li><a href="#">GitHub</a></li>
             <li><a href="#">Twitter</a></li>
             <li><a href="#">Facebook</a></li> -->
-            {% for link in config.theme.social %}
-            <li><a href="{{ link.link }}" target="_blank">{{ link.name }}</a></li>
-            {% endfor %}
-          </ol>
-        </div>
-        <div class="p-4 mb-3 bg-light rounded">
-          {% include "_googleadsense.html" %}
-        </div>
-      </aside><!-- /.blog-sidebar -->
-    </div><!-- /.row -->
-  </main><!-- /.container -->
+              {% for link in config.theme.social %}
+              <li><a href="{{ link.link }}" target="_blank">{{ link.name }}</a></li>
+              {% endfor %}
+            </ol>
+          </div>
+          <div class="p-4 mb-3 bg-light rounded">
+            {% include "_googleadsense.html" %}
+          </div>
+        </aside><!-- /.blog-sidebar -->
+      </div><!-- /.row -->
+    </main><!-- /.container -->
   </div>
   <footer class="blog-footer bg-black">
     <!-- <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a

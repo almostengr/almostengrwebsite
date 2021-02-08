@@ -4,8 +4,8 @@ robots: index,follow
 ---
 
 <meta charset="utf-8">
-<meta http-equiv="refresh" content="2;url=https://almostengr.github.io/christmaslights">
+<meta http-equiv="refresh" content="2;url=https://thealmostengineer.com/lightshow"/>
 
 Redirecting...
 
-If you are not automatically redirected, [click here](https://almostengr.github.io/christmaslights).
+If you are not automatically redirected, [click here](https://thealmostengineer.com/lightshow).

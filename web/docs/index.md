@@ -1,7 +1,4 @@
 ﻿---
-date: 2019-12-22
+title: Welcome
 description: Information about this blog and Kenny Robinson.
-author: Kenny Robinson
 ---
-
-Welcome

@@ -187,3 +187,7 @@ img {
 body {
 	background-color: var(--black);
 }
+
+.blog-sidebar h4 {
+  border-bottom: solid 4px var(--dark-red);
+}

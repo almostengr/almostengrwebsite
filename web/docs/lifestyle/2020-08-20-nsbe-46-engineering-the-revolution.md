@@ -1,6 +1,6 @@
 ---
 title: NSBE 46th National Convention - Engineering the Revolution
-author: Kenny Robinson, @almostengr
+author: Kenny Robinson
 posted: 2020-08-20
 updated: 2020-08-20
 keywords: nsbe, nsbe46, engineering the revolution, nsbe convention, workshops, mental health, personal branding, 

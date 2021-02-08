@@ -1,7 +1,7 @@
 ---
 title: LSU AG Gardening Course Module 5
 posted: 2020-06-24
-author: Kenny Robinson, @almostengr
+author: Kenny Robinson
 categories: gardening
 ---
 

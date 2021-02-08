@@ -4,7 +4,7 @@ category: lifestyle
 posted: 2020-03-31
 updated: 2020-08-30
 keywords: investing, finances, financial advice, stock market
-author: Kenny Robinson, @almostengr
+author: Kenny Robinson
 ---
 
 ## Background

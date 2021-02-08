@@ -17,3 +17,8 @@ div.content-area a:hover {
     background-color: #fff;
     color: #000;
 }
+
+.blog-sidebar
+{
+    display: none;
+}

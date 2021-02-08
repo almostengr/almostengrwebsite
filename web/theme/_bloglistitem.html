@@ -8,11 +8,11 @@
             {% endif %}
         </a>
     </h2>
-    <div class="text-secondary">
+    <div class="">
         {% if nav_item.meta.description %}
         {{ nav_item.meta.description | striptags }}
         {% else %}
-        {{ nav_item.content | striptags | truncate(150, false) }}
+        {{ nav_item.content | striptags | truncate(250, false) }}
         {% endif %}
     </div>
     <div class="text-secondary">

@@ -21,12 +21,13 @@ theme:
   # custom_dir: 'apitheme'
   language: en
   social_user: "@almostengr"
-  site_short_name: The Almost Engineer
   mainnav:
     - url: /blog
       name: Blog
     - url: /portfolio
       name: Portfolio
+    - url: /resources
+      name: Resources
     - url: /uses
       name: Uses
     - url: /about
@@ -45,22 +46,6 @@ theme:
   #     detail: detail
   #     bgcolor: bg-primary
   #     textcolor: text-light
-  # jumbotron:
-  #   - heading: heading
-  #     detail: detail
-  #     url: #
-  #     background_image: "/images/jumbotron.jpg"
-  #     textcolor: text-warning
-  #     buttoncolor: btn-warning
-  # mainnav:
-  #   - url: /blog
-  #     name: Blog
-  #   - url: /uses
-  #     name: Uses
-  #   - url: /donate
-  #     name: Donate
-  #   - url: /about
-  #     name: About
   homepagecategory:
     - name: Technology
       url: /technology
@@ -70,13 +55,6 @@ theme:
       url: /speaking
     - name: Gardening
       url: /gardening
-    
-
-  featurette:
-    - heading: Blog
-      description: To see our past work, checkout out the blog where we describe and share our experience with and photos of previous projects.
-      imageurl: /images/kitchenisland_optimized.jpg
-      buttonlink: /blog
   footernav:
     - url: /about
       name: About
@@ -84,12 +62,10 @@ theme:
       name: Uses
     # - url: /search
     #   name: Search
-    # - url: /blog
-    #   name: Blog
+    - url: /blog
+      name: Blog
     - url: /contact
       name: Contact
-    # - url: /faq
-    #   name: FAQ
     - url: /sitemap.xml
       name: Sitemap
     - url: /privacy
@@ -127,7 +103,18 @@ theme:
       name: YouTube
   about:
     - heading: About
-    - detail: 
+    # - detail: 
+  mobilelinks:
+    - name: RHT Services LLC
+      url: https://rhtservices.net
+    - name: Follow Me On Github
+      url: https://github.com/almostengr
+    - name: Follow Me On Instagram
+      url: https://instagram.com/almostengr
+    - name: Follow Me On Twitter
+      url: https://twitter.com/almostengr
+    - name: Subscribe To My YouTube Channel
+      url: https://www.youtube.com/channel/UC4HCouBLtXD1j1U_17aBqig?sub_confirmation=1
 
 use_directory_urls: true
 strict: false

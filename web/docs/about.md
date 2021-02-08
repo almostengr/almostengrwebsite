@@ -1,11 +1,9 @@
 ---
 title: About
 description: Services offered by Almost Engineer Services
-posted: 2020-06-29
-author: Kenny Robinson
+image: /images/SAM_2423-f008473.png
+imagealt: Kenny being silly
 ---
-
-![Kenny being silly](/images/SAM_2423-f008473.png)
 
 ## IT (Information Technology) Professional
 

@@ -1,7 +1,7 @@
 ---
 posted: 2019-12.22
 updated: 2020-07-14
-author: Kenny Robinson, @almostengr
+author: Kenny Robinson
 title: You Still Rake Leaves?
 ---
 

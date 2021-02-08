@@ -1,6 +1,7 @@
 ---
 category: Technology
 ---
+
 # Structured Media Wiring
 
 This post will document my journey with wiring my house with low voltage wiring
@@ -97,4 +98,3 @@ my cabling project. They my be of use to you.
 * https://www.structuredhomewiring.com/Wiring/StructuredWiringPanel/
 * https://digitized.house/future-proofing-your-smart-home-with-structured-media-components/
 * https://myeasytek.com/blog/structured-cabling-enclosure-wire/
-

@@ -1,8 +1,8 @@
 ﻿---
 title: Uses
 description: Page describes the tools used for various tasks.
-author: Kenny Robinson, @almostengr
 keywords: uses, uses page, tools used
+image: /images/2020.02.01-uses-entry.jpg
 ---
 
 ## Background

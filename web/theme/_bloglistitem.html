@@ -1,0 +1,35 @@
+<li class="blog-list-item">
+    <h2 class="pt-3">
+        <a href="{{ nav_item.url|url }}" class="text-dark">
+            {% if nav_item.meta.title %}
+            {{ nav_item.meta.title }}
+            {% else %}
+            {{ nav_item.title }}
+            {% endif %}
+        </a>
+    </h2>
+    <div class="text-secondary">
+        {% if nav_item.meta.description %}
+        {{ nav_item.meta.description | striptags }}
+        {% else %}
+        {{ nav_item.content | striptags | truncate(150, false) }}
+        {% endif %}
+    </div>
+    <div class="text-secondary">
+        {% if nav_item.meta.posted %}
+        <strong>Posted:</strong> {{ nav_item.meta.posted }}
+	{% endif %}
+        {% if nav_item.meta.updated %}
+        <strong>Last Updated:</strong> {{ nav_item.meta.updated }}
+        {% endif %}
+    </div>
+    <div class="text-secondary">
+        {% if nav_item.meta.keywords %}
+        <strong>Keywords:</strong> {{ nav_item.meta.keywords }}
+        {% endif %}
+    </div>
+
+    <!-- <div>
+        <a class="btn btn-danger" href="{{ nav_item.url | url }}">Read More</a>
+    </div> -->
+</li>

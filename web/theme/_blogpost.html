@@ -1,0 +1,25 @@
+<div class="blog-post">
+    <h1 class="blog-post-title">
+        {% if page and page.meta.title %}
+        {{ page.meta.title }}
+        {% else %}
+        {{ page.title }}
+        {% endif %}
+    </h1>
+    <p class="blog-post-meta">
+        {% if page and page.meta.published %}
+        {{ page.meta.published }} |
+        {% endif %}
+        <!-- by -->
+        <!-- <a href="#">Mark</a> -->
+        {% if page and page.meta.author and page.meta.authorurl %}
+        <a href="{{ page.meta.authorurl }}" target="_blank">{{ page.meta.author | striptags }}</a>
+        {% elif page and page.meta.author %}
+        {{ page.meta.author | striptags }}
+        {% else %}
+        {{ config.site_author | striptags }}
+        {% endif %}
+    </p>
+    <p>{{ page.content }}</p>
+</div>
+<!-- /.blog-post -->

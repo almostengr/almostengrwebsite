@@ -23,10 +23,12 @@ theme:
   social_user: "@almostengr"
   site_short_name: The Almost Engineer
   mainnav:
-    - url: /about
-      name: About
+    - url: /portfolio
+      name: Portfolio
     - url: /uses
       name: Uses
+    - url: /about
+      name: About
     - url: /contact
       name: Contact
     # - url: /donate
@@ -67,10 +69,10 @@ theme:
       name: About
     - url: /uses
       name: Uses
-    - url: /search
-      name: Search
-    - url: /blog
-      name: Blog
+    # - url: /search
+    #   name: Search
+    # - url: /blog
+    #   name: Blog
     - url: /contact
       name: Contact
     # - url: /faq
@@ -110,6 +112,9 @@ theme:
     - type: youtube
       link: https://www.youtube.com/channel/UC4HCouBLtXD1j1U_17aBqig?sub_confirmation=1
       name: YouTube
+  about:
+    - heading: About
+    - detail: 
 
 use_directory_urls: true
 strict: false

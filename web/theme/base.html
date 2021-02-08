@@ -15,7 +15,7 @@
   <meta name="description" content="{{ page.meta.description }}">
   <meta property="og:description" content="{{ page.meta.description }}" />
   <meta name="twitter:description" content="{{ page.meta.description }}" />
-  {% elif config.site_description %}
+  {% else %}
   <meta name="description" content="{{ config.site_description }}">
   <meta property="og:description" content="{{ config.site_description }}" />
   <meta name="twitter:description" content="{{ config.site_description }}" />
@@ -28,13 +28,13 @@
   {% endif %}
 
   {% if page and page.meta and page.meta.title %}
-  <title>{{ page.meta.title }}</title>
-  <meta property="og:title" content="{{ page.meta.title }}" />
-  <meta name="twitter:title" content="{{ page.meta.title }}" />
+  <title>{{ page.meta.title }} | {{ config.site_name }}</title>
+  <meta property="og:title" content="{{ page.meta.title }} | {{ config.site_name }}" />
+  <meta name="twitter:title" content="{{ page.meta.title }} | {{ config.site_name }}" />
   {% elif page and page.title and not page.is_homepage %}
   <title>{{ page.title | striptags }} | {{ config.site_name }}</title>
-  <meta property="og:title" content="{{ page.title | striptags }}" />
-  <meta name="twitter:title" content="{{ page.title | striptags }}" />
+  <meta property="og:title" content="{{ page.title | striptags }} | {{ config.site_name }}" />
+  <meta name="twitter:title" content="{{ page.title | striptags }} | {{ config.site_name }}" />
   {% else %}
   <title>{{ config.site_name }}</title>
   <meta property="og:title" content="{{ config.site_name }}" />
@@ -46,14 +46,12 @@
   <meta name="twitter:image" content="{{ page.meta.image }}" />
   {% endif %}
 
-  {% if page.meta.keywords %}
+  {% if page and page.meta.keywords %}
   <meta name="keywords" content="{{ page.meta.keywords }}" />
   {% endif %}
 
-  {% if page.meta.ogtype %}
+  {% if page and page.meta.ogtype %}
   <meta property="og:type" content="{{ page.meta.ogtype }}" />
-  {% elif 'blog' in page.url %}
-  <meta property="og:type" content="article" />
   {% else %}
   <meta property="og:type" content="website" />
   {% endif %}
@@ -62,13 +60,13 @@
   <meta property="og:video" content="{{ page.meta.youtube }}" />
   {% endif %}
 
-  {% if page.meta.robots %}
+  {% if page and page.meta.robots %}
   <meta name="robots" content="{{ page.meta.robots }}" />
   {% else %}
   <meta name="robots" content="index, follow" />
   {% endif %}
 
-  {% if page.canonical_url %}
+  {% if page and page.canonical_url %}
   <link rel="canonical" href="{{ page.canonical_url | url }}">
   <meta property="og:url" content="{{ page.canonical_url | url }}" />
   <meta property="twitter:url" content="{{ page.canonical_url | url }}" />
@@ -97,7 +95,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-black">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark-red">
     <a class="navbar-brand font-weight-bold text-uppercase" href="/">{{ config.theme.site_short_name }}</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
       aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -218,13 +216,178 @@
       </div>
     </div>
   </div> -->
+  <div class="bg-white">
   <main role="main" class="container">
     <div class="row">
       <div class="col-md-8 blog-main">
-        <h3 class="pb-4 mb-4 font-italic border-bottom">
+        <h1 class="blog-post-title">
+          {% if page and page.meta.title %}
+          {{ page.meta.title }}
+          {% endif %}
+        </h1>
+        <p class="blog-post-meta text-secondary">
+            {% if page and page.meta.posted %}
+            Posted on {{ page.meta.posted }}
+            {% endif %}
+
+            {% if page and page.meta.author and page.meta.authorurl %}
+            by <a href="{{ page.meta.authorurl }}" target="_blank">{{ page.meta.author | striptags }}</a>
+            {% elif page and page.meta.author %}
+            by {{ page.meta.author | striptags }}
+
+            {% endif %}
+
+	    {% if page and page.meta.category %}
+		in  <a href="/{{page.meta.category|lower}}">{{ page.meta.category }}</a>
+		{% endif %}
+        </p>
+
+        {% if page and page.is_homepage %}
+        <h2>Latest Technology Posts</h2>
+        <p>
+          {% for nav_item in nav %}
+            {% if nav_item.children %}
+            <div id="technology" class="tab-pane active">
+              <ul class="list-unstyled">
+                {% for nav_item in nav_item.children | sort(attribute='posted') | reverse | batch(4) | first %}
+                {% if 'technology' in nav_item.url and nav_item.title != "Blog" and nav_item.meta.category == "Technology" %}
+                <li><h3><a href="{{ nav_item.url }}">{{ nav_item.title }}</a></h3>
+{% if nav_item.meta.image %}
+<p><img src="{{ nav_item.meta.image }}" /></p>
+{% endif %}
+<p>
+{% if nav_item.meta.description %}
+{{ nav_item.meta.description }}
+{% else %}
+{{ nav_item.content | striptags | truncate(150,false) }}
+{% endif %}
+<br />
+		<span class="text-muted">
+<strong>Posted:</strong> {{ nav_item.meta.posted }}
+{% if nav_item.meta.updated %}
+| <strong>Last Updated:</strong> {{ nav_item.meta.updated }}
+{% endif %}
+</span>
+</p>
+</li>
+                {% endif %}
+                {% endfor %}
+              </ul>
+            </div>
+            {% endif %}
+          {% endfor %}
+	<p><a href="/technology">See all Technology Posts</a></p>
+        </p>
+        <h2>Latest Handyman Posts</h2>
+        <p>
+          {% for nav_item in nav %}
+            {% if nav_item.children %}
+            <div id="handyman" class="tab-pane active">
+              <ul class="list-unstyled">
+                {% for nav_item in nav_item.children | sort(attribute='posted') | reverse | batch(4) | first %}
+                {% if 'handyman' in nav_item.url %}
+                <li><h3><a href="{{ nav_item.url }}">{{ nav_item.title }}</a></h3>
+                <p>
+
+{% if nav_item.meta.description %}
+{{ nav_item.meta.description }}
+{% else %}
+{{ nav_item.content | striptags | truncate(150,false) }}
+{% endif %}
+<br />
+                <span class="text-muted">
+<strong>Posted:</strong> {{ nav_item.meta.posted }}
+{% if nav_item.meta.updated %}
+| <strong>Last Updated:</strong> {{ nav_item.meta.updated }}
+{% endif %}
+</span>
+</p>
+</li>
+                {% endif %}
+                {% endfor %}
+              </ul>
+            </div>
+            {% endif %}
+          {% endfor %}
+        <p><a href="/handyman">See all Handyman Posts</a></p>
+        </p>
+        <h2>Latest Gardening Posts</h2>
+        <p>
+          {% for nav_item in nav %}
+            {% if nav_item.children %}
+            <div id="gardening" class="tab-pane active">
+              <ul class="list-unstyled">
+                {% for nav_item in nav_item.children | sort(attribute='posted') | reverse | batch(4) | first %}
+                {% if 'gardening' in nav_item.url %}
+                <li><h3><a href="{{ nav_item.url }}">{{ nav_item.title }}</a></h3>
+                <p>
+
+{% if nav_item.meta.description %}
+{{ nav_item.meta.description }}
+{% else %}
+{{ nav_item.content | striptags | truncate(150,false) }}
+{% endif %}
+<br />
+                <span class="text-muted">
+<strong>Posted:</strong> {{ nav_item.meta.posted }}
+{% if nav_item.meta.updated %}
+| <strong>Last Updated:</strong> {{ nav_item.meta.updated }}
+{% endif %}
+</span>
+</p>
+</li>
+                {% endif %}
+                {% endfor %}
+              </ul>
+            </div>
+            {% endif %}
+          {% endfor %}
+        <p><a href="/gardening">See all Gardening Posts</a></p>
+        </p>
+        {% endif %} <!-- home page listing -->
+
+        <p>
+          <ul class="list-unstyled">
+            {% for nav_item in nav %}
+            {% if nav_item.children and page and page.url == "technology/" %}
+            {% for nav_item in nav_item.children | sort(attribute='posted') | reverse %}
+            {% if 'technology' in nav_item.url and 'Blog' not in nav_item.title and not nav_item.draft == true %}
+            {% include "_bloglistitem.html" %}
+            {% endif %}
+            {% endfor %}
+            {% endif %}
+            {% endfor %}
+          </ul>
+          <ul class="list-unstyled">
+            {% for nav_item in nav %}
+            {% if nav_item.children and page and page.url == "handyman/" %}
+            {% for nav_item in nav_item.children | sort(attribute='posted') | reverse %}
+            {% if 'handyman' in nav_item.url and 'Blog' not in nav_item.title  %}
+            {% include "_bloglistitem.html" %}
+            {% endif %}
+            {% endfor %}
+            {% endif %}
+            {% endfor %}
+          </ul>
+          <ul class="list-unstyled">
+            {% for nav_item in nav %}
+            {% if nav_item.children and page and page.url == "gardening/" %}
+            {% for nav_item in nav_item.children | sort(attribute='posted') | reverse %}
+            {% if 'gardening' in nav_item.url and 'Blog' not in nav_item.title  %}
+            {% include "_bloglistitem.html" %}
+            {% endif %}
+            {% endfor %}
+            {% endif %}
+            {% endfor %}
+          </ul>
+        </p>
+        <div class="content">
+          {{ page.content }}
+        </div>
+        <!-- <h3 class="pb-4 mb-4 font-italic border-bottom">
           From the Firehose
-        </h3>
-        <div class="blog-post">
+        </h3> -->
+        <!-- <div class="blog-post">
           <h2 class="blog-post-title">Sample blog post</h2>
           <p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p>
           <p>This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic
@@ -266,8 +429,8 @@
             <li>I know you get me so I let my walls come down.</li>
           </ol>
           <p>After a hurricane comes a rainbow.</p>
-        </div><!-- /.blog-post -->
-        <div class="blog-post">
+        </div>/.blog-post -->
+        <!-- <div class="blog-post">
           <h2 class="blog-post-title">Another blog post</h2>
           <p class="blog-post-meta">December 23, 2013 by <a href="#">Jacob</a></p>
           <p>I am ready for the road less traveled. Already <a href="#">brushing off the dust</a>. Yeah, you're lucky if
@@ -281,8 +444,8 @@
             that international smile, oh yeah, she's got that one international smile. Do you ever feel, feel so paper
             thin. I’m gon’ put her in a coma. Sun-kissed skin so hot we'll melt your popsicle.</p>
           <p>This is transcendental, on another level, boy, you're my lucky star.</p>
-        </div><!-- /.blog-post -->
-        <div class="blog-post">
+        </div>/.blog-post -->
+        <!-- <div class="blog-post">
           <h2 class="blog-post-title">New feature</h2>
           <p class="blog-post-meta">December 14, 2013 by <a href="#">Chris</a></p>
           <p>From Tokyo to Mexico, to Rio. Yeah, you take me to utopia. I'm walking on air. We'd make out in your
@@ -295,7 +458,7 @@
           </ul>
           <p>Don't need apologies. Boy, you're an alien your touch so foreign, it's <em>supernatural</em>,
             extraterrestrial. Talk about our future like we had a clue. I can feel a phoenix inside of me.</p>
-        </div><!-- /.blog-post -->
+        </div>/.blog-post -->
         <!-- <nav class="blog-pagination">
           <a class="btn btn-outline-primary" href="#">Older</a>
           <a class="btn btn-outline-secondary disabled" href="#" tabindex="-1" aria-disabled="true">Newer</a>
@@ -334,6 +497,12 @@
           </ol>
         </div>
         <div class="p-4 mb-3 bg-light rounded">
+          <!-- <h4 class="font-italic">Elsewhere</h4> -->
+          <!-- <ol class="list-unstyled"> -->
+          {% include "_googleadsense.html" %}
+          <!-- </ol> -->
+        </div>
+        <div class="p-4 mb-3 bg-light rounded">
           <h4 class="font-italic">Elsewhere</h4>
           <ol class="list-unstyled">
             <!-- <li><a href="#">GitHub</a></li>
@@ -344,14 +513,26 @@
             {% endfor %}
           </ol>
         </div>
+        <div class="p-4 mb-3 bg-light rounded">
+          {% include "_googleadsense.html" %}
+        </div>
       </aside><!-- /.blog-sidebar -->
     </div><!-- /.row -->
   </main><!-- /.container -->
+  </div>
   <footer class="blog-footer bg-black">
     <!-- <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a
         href="https://twitter.com/mdo">@mdo</a>.</p> -->
+    <p><a href="#">Back To Top</a></p>
     <p>
-      <a href="#">Back to top</a>
+      {% for link in config.theme.footernav %}
+      <a href="{{ link.url }}">{{ link.name }}</a>
+      {% endfor %}
+    </p>
+    <p>Copyright &copy; 2015-{{ build_date_utc.strftime("%Y") }} {{ config.copyright }}</p>
+    <p>
+      Website built and maintained by <a href="https://rhtservices.net" target="_blank">Robinson Handy and Technology
+        Services LLC</a>
     </p>
   </footer>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" async

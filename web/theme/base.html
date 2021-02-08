@@ -153,6 +153,9 @@
             {% if page and page.meta.category %}
             in <a href="/{{page.meta.category|lower}}">{{ page.meta.category }}</a>
             {% endif %}
+            {% if page and page.meta.author and page.meta.posted %}
+            | Read Time: {{ page.content | wordcount // 200 }} minute(s)
+            {% endif %}
           </p>
           {% if page and page.is_homepage %}
           {% include "_latestposts.html" %}

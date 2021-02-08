@@ -30,10 +30,10 @@ theme:
       name: Resources
     - url: /uses
       name: Uses
-    - url: /about
-      name: About
-    - url: /contact
-      name: Contact
+    # - url: /about
+    #   name: About
+    # - url: /contact
+    #   name: Contact
     # - url: /donate
     #   name: Donate
   # sitemessage

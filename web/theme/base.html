@@ -126,13 +126,33 @@
           <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
         </li> -->
       </ul>
-      <!-- <form class="form-inline mt-2 mt-md-0">
-        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form> -->
+      <form class="form-inline mt-2 mt-md-0" action="/search" method="GET">
+        <!-- <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search"> -->
+        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+      </form>
     </div>
   </nav>
-  <div class="bg-white">
+  <div class="pt-3 mt-0 bg-white">
+    {% if page and page.is_homepage and config.theme.homemessage %}
+    {% for message in config.theme.homemessage %}
+    <div class="{{ message.bgcolor }} {{ message.textcolor }} py-2">
+      <div class="container px-3">
+        <h2>{{ message.heading }}</h2>
+        <p>{{ message.detail }}</p>
+      </div>
+    </div>
+    {% endfor %}
+    {% endif %}
+    {% if config.theme.sitemessage %}
+    {% for message in config.theme.sitemessage %}
+    <div class="{{ message.bgcolor }} {{ message.textcolor }} py-2">
+      <div class="container px-3">
+        <h2>{{ message.heading }}</h2>
+        <p>{{ message.detail }}</p>
+      </div>
+    </div>
+    {% endfor %}
+    {% endif %}
     <main role="main" class="container">
       <div class="row">
         <div class="col-sm-12 col-md-9 blog-main">
@@ -215,23 +235,32 @@
           <div class="content">
             {{ page.content }}
 
+            {% if page and page.meta.keywords %}
+            <span class="text-muted"><strong>Keywords: </strong>{{ page.meta.keywords }}</span>
+            {% endif %}
+
             {% if page and page.url == "links/" %}
             {% for link in config.theme.mobilelinks %}
             <a href="{{ link.url }}">{{ link.name }}</a>
             {% endfor %}
             {% endif %}
 
+            {% if page and page.url == "search/" %}
+            <script async src="https://cse.google.com/cse.js?cx=000195884435112055355:g2eqfks2ipu"></script>
+            <div class="gcse-search"></div>
+            {% endif %}
+
             {% include "_googleadsense.html" %}
           </div>
         </div><!-- /.blog-main -->
         <aside class="col-md-3 blog-sidebar">
-          <div class="p-4 mb-3 bg-light rounded">
+          <!-- <div class="p-4 mb-3 bg-light rounded">
             <h4 class="font-italic">About</h4>
             <p class="mb-0">Saw you downtown singing the Blues. Watch you circle the drain. Why don't you let me stop
               by?
               Heavy is the head that <em>wears the crown</em>. Yes, we make angels cry, raining down on earth from up
               above.</p>
-          </div>
+          </div> -->
           <div class="p-4 mb-3 bg-light rounded">
             <h4 class="font-italic">Categories</h4>
             <ol class="list-unstyled">
@@ -258,23 +287,36 @@
       </div><!-- /.row -->
     </main><!-- /.container -->
   </div>
-  <footer class="blog-footer bg-black">
-    <p><a href="#">Back To Top</a></p>
-    <p>
-      {% for link in config.theme.footernav %}
-      <a href="{{ link.url }}">{{ link.name }}</a>
+  <footer class="blog-footer bg-black container text-left">
+    <p class="text-center"><a href="#">Back To Top</a></p>
+    {% for section in config.theme.footernav %}
+    <ul class="list-unstyled">
+      <li class="list-inline-item bg-white text-dark px-2 font-weight-bold">
+        {{ section.title }}
+      </li>
+      {% for link in section.links %}
+      <li class="list-inline-item">
+        {{ link.name }}
+      </li>
       {% endfor %}
+    </ul>
+    {% endfor %}
+    <p class="">
+      Copyright &copy; 2015-{{ build_date_utc.strftime("%Y") }} {{ config.copyright }} |
+      Website built and maintained by
+      <a href="https://rhtservices.net" target="_blank">Robinson Handy and Technology Services LLC</a>
     </p>
-    <p>Copyright &copy; 2015-{{ build_date_utc.strftime("%Y") }} {{ config.copyright }}</p>
-    <p>
-      Website built and maintained by <a href="https://rhtservices.net" target="_blank">Robinson Handy and Technology
-        Services LLC</a>
+    <p class="">
+      Cookies are used on this website to track your visits, provide advertisements specific to you, and
+      preferences by a third-party. By continuing to use this site, you agree to the use of cookies unless
+      you have disabled them. More information this is available in the
+      <a href="/privacy">Privacy Policy</a>.
     </p>
   </footer>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" async
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
-  <!-- <script>window.jQuery || document.write('<script src="/js/vendor/jquery.slim.min.js"><\/script>')</script> -->
+  <script>window.jQuery || document.write('<script src="/js/vendor/jquery.slim.min.js"><\/script>')</script>
   <script async src="/js/bootstrap.bundle.min.js"></script>
   <!-- Font Awesome -->
   <!-- <script async src="https://kit.fontawesome.com/a076d05399.js"></script> -->

@@ -18,7 +18,6 @@ dev_addr: 192.168.57.117:8000
 theme:
   name: null
   custom_dir: 'theme'
-  # custom_dir: 'apitheme'
   language: en
   social_user: "@almostengr"
   mainnav:
@@ -30,21 +29,15 @@ theme:
       name: Resources
     - url: /uses
       name: Uses
-    # - url: /about
-    #   name: About
-    # - url: /contact
-    #   name: Contact
-    # - url: /donate
-    #   name: Donate
-  # sitemessage
-    # - heading: heading
-    #   detail: detail
-    #   bgcolor: bg-primary
-    #   textcolor: text-light
-  # homemessage:
+  # sitemessage:
   #   - heading: heading
   #     detail: detail
   #     bgcolor: bg-primary
+  #     textcolor: text-light
+  # homemessage:
+  #   - heading: heading
+  #     detail: detail
+  #     bgcolor: bg-danger
   #     textcolor: text-light
   homepagecategory:
     - name: Technology
@@ -56,22 +49,32 @@ theme:
     - name: Gardening
       url: /gardening
   footernav:
-    - url: /about
-      name: About
-    - url: /uses
-      name: Uses
-    # - url: /search
-    #   name: Search
-    - url: /blog
-      name: Blog
-    - url: /contact
-      name: Contact
-    - url: /sitemap.xml
-      name: Sitemap
-    - url: /privacy
-      name: Privacy
-    # - url: /donate
-    #   name: Donate
+    - title: SOCIAL
+      links:
+      - url: https://github.com/almostengr
+        name: Github
+      - url: https://instagram.com/almostengr
+        name: Instagram
+      - url: https://twitter.com/almostengr
+        name: Twitter
+      - url: https://www.youtube.com/channel/UC4HCouBLtXD1j1U_17aBqig?sub_confirmation=1
+        name: YouTube
+    - title: LINKS
+      links:
+      - url: /about
+        name: About
+      - url: /uses
+        name: Uses
+      - url: /blog
+        name: Blog
+      - url: /search
+        name: Search
+      - url: /contact
+        name: Contact
+      - url: /sitemap.xml
+        name: Sitemap
+      - url: /privacy
+        name: Privacy
   topics:
     - link: /handyman
       name: DIY/Handyman

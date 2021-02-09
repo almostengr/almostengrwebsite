@@ -1,4 +1,6 @@
-# Linux CheatSheet
+---
+title: Linux CheatSheet
+---
 
 Cheatsheet of commands to use when working on Linux-based systems. Here the commands that I use
 most frequently.

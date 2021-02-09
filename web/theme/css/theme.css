@@ -167,13 +167,17 @@ main a, main a:hover{
   text-decoration: underline;
 }
 
+aside a {
+  text-decoration: none;
+}
+
 .blog-list-item a{
   text-decoration: none;
 }
 
 footer a, footer a:hover{
   color: var(--gray);
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 img {

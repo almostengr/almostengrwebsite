@@ -51,62 +51,89 @@ theme:
   footernav:
     - title: SOCIAL
       links:
-      - url: https://github.com/almostengr
-        name: Github
-      - url: https://instagram.com/almostengr
+      - type: github
+        url: https://github.com/almostengr
+        name: GitHub
+        icon: bi bi-github
+      - type: instagram
+        url: https://instagram.com/almostengr
         name: Instagram
-      - url: https://twitter.com/almostengr
+        icon: bi bi-instagram
+      - type: linkedin
+        url: https://www.linkedin.com/in/krobinsontech
+        name: LinkedIn
+        icon: bi bi-linkedin
+      - type: twitter
+        url: https://twitter.com/almostengr
         name: Twitter
-      - url: https://www.youtube.com/channel/UC4HCouBLtXD1j1U_17aBqig?sub_confirmation=1
+        icon: bi bi-twitter
+      - type: youtube
+        url: https://www.youtube.com/channel/UC4HCouBLtXD1j1U_17aBqig?sub_confirmation=1
         name: YouTube
+        icon: bi bi-youtube"
     - title: LINKS
       links:
       - url: /about
         name: About
+        icon: bi bi-file-person-fill
       - url: /uses
         name: Uses
+        icon: bi bi-tools
       - url: /blog
         name: Blog
+        icon: bi bi-journal-text
       - url: /search
         name: Search
+        icon: bi bi-search
       - url: /contact
         name: Contact
+        icon: bi bi-person-lines-fill
       - url: /sitemap.xml
         name: Sitemap
+        icon: bi bi-diagram-3
       - url: /privacy
         name: Privacy
+        icon: bi bi-shield-shaded
   topics:
     - link: /handyman
       name: DIY/Handyman
+      icon: bi bi-wrench
     - link: /technology
       name: Technology
+      icon: bi bi-laptop
     - link: /speaking
       name: Speaking
+      icon: bi bi-megaphone-fill
     - link: /gardening
       name: Gardening
+      icon: bi bi-flower1
     - link: /resources
-      name: Tech Resources
+      name: Resources
+      icon: bi bi-bookshelf
     - link: /portfolio
       name: Portfolio
+      icon: bi bi-journal
   social:
     - type: github
       link: https://github.com/almostengr
       name: GitHub
+      icon: bi bi-github
     - type: instagram
       link: https://instagram.com/almostengr
       name: Instagram
+      icon: bi bi-instagram
     - type: linkedin
       link: https://www.linkedin.com/in/krobinsontech
       name: LinkedIn
+      icon: bi bi-linkedin
     - type: twitter
       link: https://twitter.com/almostengr
       name: Twitter
+      icon: bi bi-twitter
     - type: youtube
       link: https://www.youtube.com/channel/UC4HCouBLtXD1j1U_17aBqig?sub_confirmation=1
       name: YouTube
-  about:
-    - heading: About
-    # - detail: 
+      icon: bi bi-youtube"
   mobilelinks:
     - name: RHT Services LLC
       url: https://rhtservices.net

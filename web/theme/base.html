@@ -88,6 +88,7 @@
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/default.min.css">
   <link rel="stylesheet" href="/css/a11y-dark-theme.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
@@ -116,18 +117,8 @@
           <a class="nav-link text-white text-uppercase" href="{{ nav_item.url | url }}">{{ nav_item.name }}</a>
         </li>
         {% endfor %}
-        <!-- <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li> -->
       </ul>
       <form class="form-inline mt-2 mt-md-0" action="/search" method="GET">
-        <!-- <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search"> -->
         <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
       </form>
     </div>
@@ -254,18 +245,11 @@
           </div>
         </div><!-- /.blog-main -->
         <aside class="col-md-3 blog-sidebar">
-          <!-- <div class="p-4 mb-3 bg-light rounded">
-            <h4 class="font-italic">About</h4>
-            <p class="mb-0">Saw you downtown singing the Blues. Watch you circle the drain. Why don't you let me stop
-              by?
-              Heavy is the head that <em>wears the crown</em>. Yes, we make angels cry, raining down on earth from up
-              above.</p>
-          </div> -->
           <div class="p-4 mb-3 bg-light rounded">
             <h4 class="font-italic">Categories</h4>
             <ol class="list-unstyled">
               {% for topic in config.theme.topics %}
-              <li><a href="{{ topic.link }}">{{ topic.name }}</a></li>
+              <li><a href="{{ topic.link }}"><i class="{{topic.icon}}"></i> {{ topic.name }}</a></li>
               {% endfor %}
             </ol>
           </div>
@@ -276,7 +260,8 @@
             <h4 class="font-italic">Connect With Me</h4>
             <ol class="list-unstyled">
               {% for link in config.theme.social %}
-              <li><a href="{{ link.link }}" target="_blank">{{ link.name }}</a></li>
+              <li><a href="{{ link.link }}" target="_blank"><i class="{{link.icon}}"></i> {{link.name}}</a></li>
+              </svg>
               {% endfor %}
             </ol>
           </div>
@@ -296,17 +281,17 @@
       </li>
       {% for link in section.links %}
       <li class="list-inline-item">
-        {{ link.name }}
+        <a href="{{link.url}}"><i class="{{link.icon}}"></i> {{ link.name }}</a>
       </li>
       {% endfor %}
     </ul>
     {% endfor %}
-    <p class="">
+    <p>
       Copyright &copy; 2015-{{ build_date_utc.strftime("%Y") }} {{ config.copyright }} |
       Website built and maintained by
       <a href="https://rhtservices.net" target="_blank">Robinson Handy and Technology Services LLC</a>
     </p>
-    <p class="">
+    <p>
       Cookies are used on this website to track your visits, provide advertisements specific to you, and
       preferences by a third-party. By continuing to use this site, you agree to the use of cookies unless
       you have disabled them. More information this is available in the

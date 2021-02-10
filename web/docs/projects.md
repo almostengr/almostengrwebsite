@@ -1,4 +1,6 @@
-# Portfolio
+---
+title: Projects
+---
 
 Below is a list of some of the projects that I have worked on in the past. Click the project below to see 
 more details about that project.

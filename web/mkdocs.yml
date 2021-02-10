@@ -23,8 +23,8 @@ theme:
   mainnav:
     - url: /blog
       name: Blog
-    - url: /portfolio
-      name: Portfolio
+    - url: /projects
+      name: Projects
     - url: /resources
       name: Resources
     - url: /uses
@@ -110,8 +110,8 @@ theme:
     - link: /resources
       name: Resources
       icon: bi bi-bookshelf
-    - link: /portfolio
-      name: Portfolio
+    - link: /projects
+      name: Projects
       icon: bi bi-journal
   social:
     - type: github

@@ -27,6 +27,7 @@
   <meta name="author" content="{{ config.site_author }}">
   {% endif %}
 
+  {%- block title %}
   {% if page and page.is_homepage %}
   <title>{{ config.site_name }} | {{ config.site_description }}</title>
   <meta property="og:title" content="{{ config.site_name }} | {{ config.site_description }}" />
@@ -44,6 +45,7 @@
   <meta property="og:title" content="{{ config.site_name }}" />
   <meta name="twitter:title" content="{{ config.site_name }}" />
   {% endif %}
+  {%- endblock %}
 
   {% if page and page.meta.image %}
   <meta property="og:image" content="{{ page.meta.image }}" />
@@ -147,6 +149,21 @@
     <main role="main" class="container">
       <div class="row">
         <div class="col-sm-12 col-md-9 blog-main">
+          <ul class="list-unstyled">
+            {% if page and not page.is_homepage %}
+            <li class="list-inline-item">Home</li>
+            {% for doc in page.ancestors %}
+            {% if doc.link and not page.is_homepage %}
+            <li class="list-inline-item">&raquo; <a href="{{ doc.link|e }}">{{ doc.title }}</a> &raquo;</li>
+            {% else %}
+            <li class="list-inline-item">&raquo; {{ doc.title }} &raquo;</li>
+            {% endif %}
+            {% endfor %}
+            {% endif %}
+            {% if page and not page.is_homepage %}
+            <li class="list-inline-item">{{ page.title }}</li>
+            {% endif %}
+          </ul>
           <h1 class="blog-post-title">
             {% if page and page.meta.title %}
             {{ page.meta.title }}
@@ -224,7 +241,10 @@
           </ul>
           </p>
           <div class="content">
+
+            {%- block content %}
             {{ page.content }}
+            {%- endblock %}
 
             {% if page and page.meta.keywords %}
             <span class="text-muted"><strong>Keywords: </strong>{{ page.meta.keywords }}</span>
@@ -254,9 +274,6 @@
             </ol>
           </div>
           <div class="p-4 mb-3 bg-light rounded">
-            {% include "_googleadsense.html" %}
-          </div>
-          <div class="p-4 mb-3 bg-light rounded">
             <h4 class="font-italic">Connect With Me</h4>
             <ol class="list-unstyled">
               {% for link in config.theme.social %}
@@ -264,6 +281,9 @@
               </svg>
               {% endfor %}
             </ol>
+          </div>
+          <div class="p-4 mb-3 bg-light rounded">
+            {% include "_googleadsense.html" %}
           </div>
           <div class="p-4 mb-3 bg-light rounded">
             {% include "_googleadsense.html" %}
@@ -308,6 +328,7 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
   <script async src="/js/theme.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
+  <!-- Build Date UTC : {{ build_date_utc }} -->
 </body>
 
 </html>

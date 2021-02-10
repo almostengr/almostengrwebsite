@@ -1,5 +1,9 @@
 {% extends "base.html" %}
 
+{% block title %}
+<title>500 Internal Server Error | {{ config.site_name }}</title>
+{% endblock %}
+
 {% block content %}
 <h1 id="500-internal-server-error">500 Internal Server Error</h1>
 <p>We encountered an error when trying to process your request.</p>

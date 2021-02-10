@@ -1,0 +1,28 @@
+site_name: The Almost Engineer, Blog of Kenny Robinson
+site_url: https://thealmostengineer.com
+site_description: The personal blog for Kenny Robinson, where he talks about programming, handyman projects, and more.
+site_author: Kenny Robinson, @almostengr
+copyright: Kenny Robinson
+
+# repository information
+repo_url: https://github.com/almostengr/almostengrwebsite
+repo_name: Github
+remote_name: origin
+remote_branch: json
+
+# Development server details
+dev_addr: 192.168.57.117:8888
+
+# Appearance
+theme:
+  name: null
+  # custom_dir: 'theme'
+  custom_dir: 'apitheme'
+  language: en
+
+use_directory_urls: true
+strict: false
+
+plugins:
+  - minify:
+      minify_html: true

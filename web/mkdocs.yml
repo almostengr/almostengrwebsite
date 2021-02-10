@@ -1,0 +1,156 @@
+site_name: The Almost Engineer
+site_url: https://thealmostengineer.com
+site_description: The blog of Kenny Robinson
+site_author: Kenny Robinson, @almostengr
+copyright: Kenny Robinson
+google_analytics: ['UA-64643711-1', 'thealmostengineer.com']
+
+# repository information
+repo_url: https://github.com/almostengr/almostengrwebsite
+repo_name: Github
+remote_name: origin
+remote_branch: website
+
+# Development server details
+dev_addr: 192.168.57.117:8000
+
+# Appearance
+theme:
+  name: null
+  custom_dir: 'theme'
+  language: en
+  social_user: "@almostengr"
+  mainnav:
+    - url: /blog
+      name: Blog
+    - url: /projects
+      name: Projects
+    - url: /resources
+      name: Resources
+    - url: /uses
+      name: Uses
+  # sitemessage:
+  #   - heading: heading
+  #     detail: detail
+  #     bgcolor: bg-primary
+  #     textcolor: text-light
+  # homemessage:
+  #   - heading: heading
+  #     detail: detail
+  #     bgcolor: bg-danger
+  #     textcolor: text-light
+  homepagecategory:
+    - name: Technology
+      url: /technology
+    - name: Handyman
+      url: /handyman
+    - name: Speaking
+      url: /speaking
+    - name: Gardening
+      url: /gardening
+  footernav:
+    - title: SOCIAL
+      links:
+      - type: github
+        url: https://github.com/almostengr
+        name: GitHub
+        icon: bi bi-github
+      - type: instagram
+        url: https://instagram.com/almostengr
+        name: Instagram
+        icon: bi bi-instagram
+      - type: linkedin
+        url: https://www.linkedin.com/in/krobinsontech
+        name: LinkedIn
+        icon: bi bi-linkedin
+      - type: twitter
+        url: https://twitter.com/almostengr
+        name: Twitter
+        icon: bi bi-twitter
+      - type: youtube
+        url: https://www.youtube.com/channel/UC4HCouBLtXD1j1U_17aBqig?sub_confirmation=1
+        name: YouTube
+        icon: bi bi-youtube"
+    - title: LINKS
+      links:
+      - url: /about
+        name: About
+        icon: bi bi-file-person-fill
+      - url: /uses
+        name: Uses
+        icon: bi bi-tools
+      - url: /blog
+        name: Blog
+        icon: bi bi-journal-text
+      - url: /search
+        name: Search
+        icon: bi bi-search
+      - url: /contact
+        name: Contact
+        icon: bi bi-person-lines-fill
+      - url: /sitemap.xml
+        name: Sitemap
+        icon: bi bi-diagram-3
+      - url: /privacy
+        name: Privacy
+        icon: bi bi-shield-shaded
+  topics:
+    - link: /handyman
+      name: DIY/Handyman
+      icon: bi bi-wrench
+    - link: /technology
+      name: Technology
+      icon: bi bi-laptop
+    - link: /speaking
+      name: Speaking
+      icon: bi bi-megaphone-fill
+    - link: /gardening
+      name: Gardening
+      icon: bi bi-flower1
+    - link: /resources
+      name: Resources
+      icon: bi bi-bookshelf
+    - link: /projects
+      name: Projects
+      icon: bi bi-journal
+  social:
+    - type: github
+      link: https://github.com/almostengr
+      name: GitHub
+      icon: bi bi-github
+    - type: instagram
+      link: https://instagram.com/almostengr
+      name: Instagram
+      icon: bi bi-instagram
+    - type: linkedin
+      link: https://www.linkedin.com/in/krobinsontech
+      name: LinkedIn
+      icon: bi bi-linkedin
+    - type: twitter
+      link: https://twitter.com/almostengr
+      name: Twitter
+      icon: bi bi-twitter
+    - type: youtube
+      link: https://www.youtube.com/channel/UC4HCouBLtXD1j1U_17aBqig?sub_confirmation=1
+      name: YouTube
+      icon: bi bi-youtube"
+  mobilelinks:
+    - name: RHT Services LLC
+      url: https://rhtservices.net
+    - name: Follow Me On Github
+      url: https://github.com/almostengr
+    - name: Follow Me On Instagram
+      url: https://instagram.com/almostengr
+    - name: Follow Me On Twitter
+      url: https://twitter.com/almostengr
+    - name: Subscribe To My YouTube Channel
+      url: https://www.youtube.com/channel/UC4HCouBLtXD1j1U_17aBqig?sub_confirmation=1
+
+use_directory_urls: true
+strict: false
+
+plugins:
+  - minify:
+      minify_html: true
+  - search:
+      lang: en

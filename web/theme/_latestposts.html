@@ -1,0 +1,202 @@
+<!-- <h2>Latest Technology Posts</h2>
+<p>
+    {% for nav_item in nav %}
+    {% if nav_item.children %}
+<div id="technology" class="tab-pane active">
+    <ul class="list-unstyled">
+        {% for post in nav_item.children | sort(attribute='posted') | reverse | batch(1) | first %}
+        {% if 'technology' in post.url or "handyman" in post.url or "gardening" in post.url %}
+        <li>
+            <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+            {% if post.meta.image %}
+            <p><img src="{{ post.meta.image }}" /></p>
+            {% endif %}
+            <p>
+                {% if post.meta.description %}
+                {{ post.meta.description }}
+                {% else %}
+                {{ post.content | striptags | truncate(250,false) }}
+                {% endif %}
+                <br />
+                <span class="text-muted">
+                    {% if post.meta.posted %}
+                    <strong>Posted:</strong> {{ post.meta.posted }}
+                    {% endif %}
+                    {% if post.meta.updated %}
+                    <strong>Last Updated:</strong> {{ post.meta.updated }}
+                    {% endif %}
+                    <strong>Read Time:</strong> {{ post.content | wordcount // 200 }} minute(s)
+                </span>
+            </p>
+        </li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+</div>
+{% endif %}
+{% endfor %}
+</p>
+<p><a href="/technology">See All Technology Posts</a></p>
+<hr /> -->
+
+
+<h2>Latest Technology Posts</h2>
+<p>
+    {% for nav_item in nav %}
+    {% if nav_item.children %}
+<div id="technology" class="tab-pane active">
+    <ul class="list-unstyled">
+        {% for post in nav_item.children | sort(attribute='posted') | reverse | batch(3) | first %}
+        {% if 'technology' in post.url %}
+        <li>
+            <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+            {% if post.meta.image %}
+            <p><img src="{{ post.meta.image }}" /></p>
+            {% endif %}
+            <p>
+                {% if post.meta.description %}
+                {{ post.meta.description }}
+                {% else %}
+                {{ post.content | striptags | truncate(250,false) }}
+                {% endif %}
+                <br />
+                <span class="text-muted">
+                    {% if post.meta.posted %}
+                    <strong>Posted:</strong> {{ post.meta.posted }}
+                    {% endif %}
+                    {% if post.meta.updated %}
+                    <strong>Last Updated:</strong> {{ post.meta.updated }}
+                    {% endif %}
+                    <strong>Read Time:</strong> {{ post.content | wordcount // 200 }} minute(s)
+                </span>
+            </p>
+        </li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+</div>
+{% endif %}
+{% endfor %}
+</p>
+<p><a href="/technology">See All Technology Posts</a></p>
+<hr />
+<h2>Latest Handyman Posts</h2>
+<p>
+    {% for nav_item in nav %}
+    {% if nav_item.children %}
+<div id="handyman" class="tab-pane active">
+    <ul class="list-unstyled">
+        {% for nav_item in nav_item.children | sort(attribute='posted') | reverse | batch(3) | first %}
+        {% if 'handyman' in nav_item.url %}
+        <li>
+            <h3><a href="{{ nav_item.url }}">{{ nav_item.title }}</a></h3>
+            {% if nav_item.meta.image %}
+            <p><img src="{{ nav_item.meta.image }}" /></p>
+            {% endif %}
+            <p>
+                {% if nav_item.meta.description %}
+                {{ nav_item.meta.description }}
+                {% else %}
+                {{ nav_item.content | striptags | truncate(250,false) }}
+                {% endif %}
+                <br />
+                <span class="text-muted">
+                    {% if nav_item.meta.posted %}
+                    <strong>Posted:</strong> {{ nav_item.meta.posted }}
+                    {% endif %}
+                    {% if nav_item.meta.updated %}
+                    <strong>Last Updated:</strong> {{ nav_item.meta.updated }}
+                    {% endif %}
+                    <strong>Read Time:</strong> {{ nav_item.content | wordcount // 200 }} minute(s)
+                </span>
+            </p>
+        </li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+</div>
+{% endif %}
+{% endfor %}
+</p>
+<p><a href="/handyman">See All Handyman Posts</a></p>
+<hr />
+<h2>Latest Gardening Posts</h2>
+<p>
+    {% for nav_item in nav %}
+    {% if nav_item.children %}
+<div id="gardening" class="tab-pane active">
+    <ul class="list-unstyled">
+        {% for nav_item in nav_item.children | sort(attribute='posted') | reverse | batch(3) | first %}
+        {% if 'gardening' in nav_item.url %}
+        <li>
+            <h3><a href="{{ nav_item.url }}">{{ nav_item.title }}</a></h3>
+            {% if nav_item.meta.image %}
+            <p><img src="{{ nav_item.meta.image }}" /></p>
+            {% endif %}
+            <p>
+                {% if nav_item.meta.description %}
+                {{ nav_item.meta.description }}
+                {% else %}
+                {{ nav_item.content | striptags | truncate(250,false) }}
+                {% endif %}
+                <br />
+                <span class="text-muted">
+                    {% if nav_item.meta.posted %}
+                    <strong>Posted:</strong> {{ nav_item.meta.posted }}
+                    {% endif %}
+                    {% if nav_item.meta.updated %}
+                    <strong>Last Updated:</strong> {{ nav_item.meta.updated }}
+                    {% endif %}
+                    <strong>Read Time:</strong> {{ nav_item.content | wordcount // 200 }} minute(s)
+                </span>
+            </p>
+        </li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+</div>
+{% endif %}
+{% endfor %}
+</p>
+<p><a href="/gardening">See All Gardening Posts</a></p>
+<hr />
+<h2>Latest Speaking Posts</h2>
+<p>
+    {% for nav_item in nav %}
+    {% if nav_item.children %}
+<div id="speaking" class="tab-pane active">
+    <ul class="list-unstyled">
+        {% for nav_item in nav_item.children | sort(attribute='posted') | reverse | batch(3) | first %}
+        {% if 'speaking' in nav_item.url %}
+        <li>
+            <h3><a href="{{ nav_item.url }}">{{ nav_item.title }}</a></h3>
+            {% if nav_item.meta.image %}
+            <p><img src="{{ nav_item.meta.image }}" /></p>
+            {% endif %}
+            <p>
+                {% if nav_item.meta.description %}
+                {{ nav_item.meta.description }}
+                {% else %}
+                {{ nav_item.content | striptags | truncate(250,false) }}
+                {% endif %}
+                <br />
+                <span class="text-muted">
+                    {% if nav_item.meta.posted %}
+                    <strong>Posted:</strong> {{ nav_item.meta.posted }}
+                    {% endif %}
+                    {% if nav_item.meta.updated %}
+                    <strong>Last Updated:</strong> {{ nav_item.meta.updated }}
+                    {% endif %}
+                    <strong>Read Time:</strong> {{ nav_item.content | wordcount // 200 }} minute(s)
+                </span>
+            </p>
+        </li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+</div>
+{% endif %}
+{% endfor %}
+</p>
+<p><a href="/speaking">See All Speaking Posts</a></p>
+<hr />

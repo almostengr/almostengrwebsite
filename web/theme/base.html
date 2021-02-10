@@ -154,14 +154,14 @@
             <li class="list-inline-item">Home</li>
             {% for doc in page.ancestors %}
             {% if doc.link and not page.is_homepage %}
-            <li class="list-inline-item">&raquo; <a href="{{ doc.link|e }}">{{ doc.title }}</a> &raquo;</li>
+            <li class="list-inline-item">&raquo; <a href="{{ doc.link|e }}">{{ doc.title }}</a></li>
             {% else %}
-            <li class="list-inline-item">&raquo; {{ doc.title }} &raquo;</li>
+            <li class="list-inline-item">&raquo; {{ doc.title }}</li>
             {% endif %}
             {% endfor %}
             {% endif %}
             {% if page and not page.is_homepage %}
-            <li class="list-inline-item">{{ page.title }}</li>
+            <li class="list-inline-item">&raquo; {{ page.title }}</li>
             {% endif %}
           </ul>
           <h1 class="blog-post-title">
@@ -247,12 +247,25 @@
             {%- endblock %}
 
             {% if page and page.meta.keywords %}
-            <span class="text-muted"><strong>Keywords: </strong>{{ page.meta.keywords }}</span>
+            <p class="text-muted"><strong>Keywords: </strong>{{ page.meta.keywords }}</p>
             {% endif %}
 
+            <!-- mobile page links -->
             {% if page and page.url == "links/" %}
             {% for link in config.theme.mobilelinks %}
             <a href="{{ link.url }}">{{ link.name }}</a>
+            {% endfor %}
+            {% for nav_item in nav %}
+            {% if nav_item.children %}
+            <div id="speaking" class="tab-pane active">
+                {% for nav_item in nav_item.children | sort(attribute='posted') | reverse | batch(3) | first %}
+                {% if 'technology' in nav_item.url or 'handyman' in nav_item.url or 'gardening' in nav_item.url %}
+                  <a href="/{{ nav_item.url }}">{{ nav_item.title }}</a>
+                {% endif %}
+                {% endfor %}
+              </ul>
+            </div>
+            {% endif %}
             {% endfor %}
             {% endif %}
 

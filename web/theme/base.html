@@ -151,10 +151,11 @@
         <div class="col-sm-12 col-md-9 blog-main">
           <ul class="list-unstyled">
             {% if page and not page.is_homepage %}
-            <li class="list-inline-item">Home</li>
+            <li class="list-inline-item"><a href="/">Home</a></li>
             {% for doc in page.ancestors %}
-            {% if doc.link and not page.is_homepage %}
-            <li class="list-inline-item">&raquo; <a href="{{ doc.link|e }}">{{ doc.title }}</a></li>
+            {% if doc %}
+            <!-- <li class="list-inline-item">&raquo; <a href="{{ doc.link|e }}">{{ doc.title }}</a></li> -->
+            <li class="list-inline-item">&raquo; <a href="..">{{ doc.title }}</a></li>
             {% else %}
             <li class="list-inline-item">&raquo; {{ doc.title }}</li>
             {% endif %}
@@ -258,11 +259,11 @@
             {% for nav_item in nav %}
             {% if nav_item.children %}
             <div id="speaking" class="tab-pane active">
-                {% for nav_item in nav_item.children | sort(attribute='posted') | reverse | batch(3) | first %}
-                {% if 'technology' in nav_item.url or 'handyman' in nav_item.url or 'gardening' in nav_item.url %}
-                  <a href="/{{ nav_item.url }}">{{ nav_item.title }}</a>
-                {% endif %}
-                {% endfor %}
+              {% for nav_item in nav_item.children | sort(attribute='posted') | reverse | batch(3) | first %}
+              {% if 'technology' in nav_item.url or 'handyman' in nav_item.url or 'gardening' in nav_item.url %}
+              <a href="/{{ nav_item.url }}">{{ nav_item.title }}</a>
+              {% endif %}
+              {% endfor %}
               </ul>
             </div>
             {% endif %}

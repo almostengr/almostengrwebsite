@@ -1,6 +1,7 @@
 div.content a {
-    background-color: #000;
+    background-color: var(--dark-red);
     border: #000 solid 4px;
+    border-radius: .50em;
     color: #fff;
     display: inline-block;
     font-family: Arial, Helvetica, sans-serif;

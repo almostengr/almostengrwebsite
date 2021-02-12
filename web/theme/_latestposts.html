@@ -5,29 +5,29 @@
 <div id="technology" class="tab-pane active">
     <ul class="list-unstyled">
         <strong>CHILDREN</strong>
-        {% for post in nav_item.children | sort(attribute='posted') | reverse | batch(3) | first %}
+        {% for nav_item in nav_item.children | sort(attribute='posted') | reverse | batch(3) | first %}
         <strong>POST</strong>
-        {% if 'technology' in post.url %}
+        {% if 'technology' in nav_item.url %}
         <li>
-            <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-            {% if post.meta.image %}
-            <p><img src="{{ post.meta.image }}" /></p>
+            <h3><a href="{{ nav_item.url }}">{{ nav_item.title }}</a></h3>
+            {% if nav_item.meta.image %}
+            <p><img src="{{ nav_item.meta.image }}" /></p>
             {% endif %}
             <p>
-                {% if post.meta.description %}
-                {{ post.meta.description }}
+                {% if nav_item.meta.description %}
+                {{ nav_item.meta.description }}
                 {% else %}
-                {{ post.content | striptags | truncate(250,false) }}
+                {{ nav_item.content | striptags | truncate(250,false) }}
                 {% endif %}
                 <br />
                 <span class="text-muted">
-                    {% if post.meta.posted %}
-                    <strong>Posted:</strong> {{ post.meta.posted }}
+                    {% if nav_item.meta.posted %}
+                    <strong>Posted:</strong> {{ nav_item.meta.posted }}
                     {% endif %}
-                    {% if post.meta.updated %}
-                    <strong>Last Updated:</strong> {{ post.meta.updated }}
+                    {% if nav_item.meta.updated %}
+                    <strong>Last Updated:</strong> {{ nav_item.meta.updated }}
                     {% endif %}
-                    <strong>Read Time:</strong> {{ post.content | wordcount // 200 }} minute(s)
+                    <strong>Read Time:</strong> {{ nav_item.content | wordcount // 200 }} minute(s)
                 </span>
             </p>
         </li>

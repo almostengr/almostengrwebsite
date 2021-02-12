@@ -1,52 +1,12 @@
-<!-- <h2>Latest Technology Posts</h2>
-<p>
-    {% for nav_item in nav %}
-    {% if nav_item.children %}
-<div id="technology" class="tab-pane active">
-    <ul class="list-unstyled">
-        {% for post in nav_item.children | sort(attribute='posted') | reverse | batch(1) | first %}
-        {% if 'technology' in post.url or "handyman" in post.url or "gardening" in post.url %}
-        <li>
-            <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-            {% if post.meta.image %}
-            <p><img src="{{ post.meta.image }}" /></p>
-            {% endif %}
-            <p>
-                {% if post.meta.description %}
-                {{ post.meta.description }}
-                {% else %}
-                {{ post.content | striptags | truncate(250,false) }}
-                {% endif %}
-                <br />
-                <span class="text-muted">
-                    {% if post.meta.posted %}
-                    <strong>Posted:</strong> {{ post.meta.posted }}
-                    {% endif %}
-                    {% if post.meta.updated %}
-                    <strong>Last Updated:</strong> {{ post.meta.updated }}
-                    {% endif %}
-                    <strong>Read Time:</strong> {{ post.content | wordcount // 200 }} minute(s)
-                </span>
-            </p>
-        </li>
-        {% endif %}
-        {% endfor %}
-    </ul>
-</div>
-{% endif %}
-{% endfor %}
-</p>
-<p><a href="/technology">See All Technology Posts</a></p>
-<hr /> -->
-
-
 <h2>Latest Technology Posts</h2>
 <p>
     {% for nav_item in nav %}
     {% if nav_item.children %}
 <div id="technology" class="tab-pane active">
     <ul class="list-unstyled">
+        <strong>CHILDREN</strong>
         {% for post in nav_item.children | sort(attribute='posted') | reverse | batch(3) | first %}
+        <strong>POST</strong>
         {% if 'technology' in post.url %}
         <li>
             <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>

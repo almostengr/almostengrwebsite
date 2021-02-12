@@ -82,9 +82,6 @@ theme:
       - url: /blog
         name: Blog
         icon: bi bi-journal-text
-      - url: /search
-        name: Search
-        icon: bi bi-search
       - url: /contact
         name: Contact
         icon: bi bi-person-lines-fill

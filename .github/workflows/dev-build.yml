@@ -1,0 +1,30 @@
+name: Dev Build
+
+on:
+  pull_request:
+    branches:
+      - !main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Install pip
+      run:  /usr/bin/python3 -m pip install --upgrade pip
+
+    - name: Install setuptools
+      run:  /usr/bin/python3 -m pip install --upgrade setuptools
+
+    - name: Install Mkdocs
+      run:  /usr/bin/python3 -m pip install --upgrade mkdocs
+
+    - name: Install Minify Plugin
+      run:  /usr/bin/python3 -m pip install --upgrade mkdocs-minify-plugin
+
+    - run: git fetch -p
+
+    - name: Deploy to website branch
+      run:  /usr/bin/python3 -m mkdocs gh-deploy -f web/mkdocs.yml -b website

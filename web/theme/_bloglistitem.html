@@ -12,10 +12,11 @@
         {% if nav_item.meta.description %}
         {{ nav_item.meta.description | striptags }}
         {% else %}
-        {{ nav_item.content | striptags | truncate(250, false) }}
+        {{ nav_item.content | striptags | truncate(150, false) }}
         {% endif %}
     </div>
     <div class="text-secondary">
+        {{ nav_item.meta }}
         {% if nav_item.meta.posted %}
         <strong>Posted:</strong> {{ nav_item.meta.posted }}
 	{% endif %}

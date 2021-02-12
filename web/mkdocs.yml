@@ -110,6 +110,9 @@ theme:
     - link: /projects
       name: Projects
       icon: bi bi-journal
+  courses:
+    - link: https://www.youtube.com/watch?v=iujOWWbiUP0&list=PLaAJ0fv0d9WM8E2K_Ke5As-fw626yQ3tu
+      name: Drupal 8 Basics
   social:
     - type: github
       link: https://github.com/almostengr

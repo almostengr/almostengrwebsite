@@ -189,7 +189,46 @@
             {% endif %}
           </p>
           {% if page and page.is_homepage %}
-          {% include "_latestposts.html" %}
+          <h2>Latest Technology Posts</h2>
+          <p>
+            {% for nav_item in nav %}
+            {% if nav_item.children and page %}
+          <div id="technology" class="tab-pane active">
+            <ul class="list-unstyled">
+              {% for nav_item in nav_item.children | sort(attribute='posted') | reverse | batch(3) | first %}
+              {% if 'technology' in nav_item.url %}
+              <li>
+                <h3><a href="{{ nav_item.url }}">{{ nav_item.title }}</a></h3>
+                {% if nav_item.meta.image %}
+                <p><img src="{{ nav_item.meta.image }}" /></p>
+                {% endif %}
+                <p>
+                  {% if nav_item.meta.description %}
+                  {{ nav_item.meta.description }}
+                  {% else %}
+                  {{ nav_item.content | striptags | truncate(250,false) }}
+                  {% endif %}
+                  <br />
+                  <span class="text-muted">
+                    {% if nav_item.meta.posted %}
+                    <strong>Posted:</strong> {{ nav_item.meta.posted }}
+                    {% endif %}
+                    {% if nav_item.meta.updated %}
+                    <strong>Last Updated:</strong> {{ nav_item.meta.updated }}
+                    {% endif %}
+                    <strong>Read Time:</strong> {{ nav_item.content | wordcount // 200 }} minute(s)
+                  </span>
+                </p>
+              </li>
+              {% endif %}
+              {% endfor %}
+            </ul>
+          </div>
+          {% endif %}
+          {% endfor %}
+          </p>
+          <p><a href="/technology">See All Technology Posts</a></p>
+          <hr />
           {% endif %}
           <!-- home page listing -->
 

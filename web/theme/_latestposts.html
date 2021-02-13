@@ -1,12 +1,10 @@
 <h2>Latest Technology Posts</h2>
 <p>
     {% for nav_item in nav %}
-    {% if nav_item.children %}
+    {% if nav_item.children and page %}
 <div id="technology" class="tab-pane active">
     <ul class="list-unstyled">
-        <strong>CHILDREN</strong>
         {% for nav_item in nav_item.children | sort(attribute='posted') | reverse | batch(3) | first %}
-        <strong>POST</strong>
         {% if 'technology' in nav_item.url %}
         <li>
             <h3><a href="{{ nav_item.url }}">{{ nav_item.title }}</a></h3>
@@ -40,10 +38,11 @@
 </p>
 <p><a href="/technology">See All Technology Posts</a></p>
 <hr />
+
 <h2>Latest Handyman Posts</h2>
 <p>
     {% for nav_item in nav %}
-    {% if nav_item.children %}
+    {% if nav_item.children and page %}
 <div id="handyman" class="tab-pane active">
     <ul class="list-unstyled">
         {% for nav_item in nav_item.children | sort(attribute='posted') | reverse | batch(3) | first %}
@@ -80,10 +79,11 @@
 </p>
 <p><a href="/handyman">See All Handyman Posts</a></p>
 <hr />
+
 <h2>Latest Gardening Posts</h2>
 <p>
     {% for nav_item in nav %}
-    {% if nav_item.children %}
+    {% if nav_item.children and page %}
 <div id="gardening" class="tab-pane active">
     <ul class="list-unstyled">
         {% for nav_item in nav_item.children | sort(attribute='posted') | reverse | batch(3) | first %}
@@ -120,10 +120,11 @@
 </p>
 <p><a href="/gardening">See All Gardening Posts</a></p>
 <hr />
+
 <h2>Latest Speaking Posts</h2>
 <p>
     {% for nav_item in nav %}
-    {% if nav_item.children %}
+    {% if nav_item.children and page %}
 <div id="speaking" class="tab-pane active">
     <ul class="list-unstyled">
         {% for nav_item in nav_item.children | sort(attribute='posted') | reverse | batch(3) | first %}

@@ -12,6 +12,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+      name: Checking out code
 
     - name: Python version
       run: /usr/bin/python3 --version

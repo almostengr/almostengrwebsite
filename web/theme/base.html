@@ -201,7 +201,7 @@
           <ul class="list-unstyled">
             {% for nav_item in nav %}
             {% if nav_item.children and page and page.url == "technology/" %}
-            {% for nav_item in nav_item.children | sort(attribute='posted') | reverse %}
+            {% for nav_item in nav_item.children | reverse %}
             {% if 'technology' in nav_item.url and nav_item.title != "Technology" %}
             {% include "_bloglistitem.html" %}
             {% endif %}
@@ -212,7 +212,7 @@
           <ul class="list-unstyled">
             {% for nav_item in nav %}
             {% if nav_item.children and page and page.url == "handyman/" %}
-            {% for nav_item in nav_item.children | sort(attribute='posted') | reverse %}
+            {% for nav_item in nav_item.children | reverse %}
             {% if 'handyman' in nav_item.url and nav_item.title != "Handyman" %}
             {% include "_bloglistitem.html" %}
             {% endif %}
@@ -223,7 +223,7 @@
           <ul class="list-unstyled">
             {% for nav_item in nav %}
             {% if nav_item.children and page and page.url == "gardening/" %}
-            {% for nav_item in nav_item.children | sort(attribute='posted') | reverse %}
+            {% for nav_item in nav_item.children | reverse %}
             {% if 'gardening' in nav_item.url and nav_item.title != "Gardening" %}
             {% include "_bloglistitem.html" %}
             {% endif %}
@@ -234,7 +234,7 @@
           <ul class="list-unstyled">
             {% for nav_item in nav %}
             {% if nav_item.children and page and page.url == "speaking/" %}
-            {% for nav_item in nav_item.children | sort(attribute='posted') | reverse %}
+            {% for nav_item in nav_item.children | reverse %}
             {% if 'speaking' in nav_item.url and nav_item.title != "Speaking" %}
             {% include "_bloglistitem.html" %}
             {% endif %}

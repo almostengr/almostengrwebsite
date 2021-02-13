@@ -260,7 +260,7 @@
             {% for nav_item in nav %}
             {% if nav_item.children %}
             <div id="speaking" class="tab-pane active">
-              {% for nav_item in nav_item.children | sort(attribute='posted') | reverse | batch(3) | first %}
+              {% for nav_item in nav_item.children | reverse | batch(3) | first %}
               {% if 'technology' in nav_item.url or 'handyman' in nav_item.url or 'gardening' in nav_item.url %}
               <a href="/{{ nav_item.url }}">{{ nav_item.title }}</a>
               {% endif %}

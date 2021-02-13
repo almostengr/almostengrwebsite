@@ -156,7 +156,6 @@
             <li class="list-inline-item"><a href="/">Home</a></li>
             {% for doc in page.ancestors %}
             {% if doc %}
-            <!-- <li class="list-inline-item">&raquo; <a href="{{ doc.link|e }}">{{ doc.title }}</a></li> -->
             <li class="list-inline-item">&raquo; <a href="..">{{ doc.title }}</a></li>
             {% else %}
             <li class="list-inline-item">&raquo; {{ doc.title }}</li>
@@ -172,9 +171,12 @@
             {{ page.meta.title }}
             {% endif %}
           </h1>
-          <p class="blog-post-meta text-secondary">
+          <p class="text-center blog-post-meta text-secondary">
+            {% if page and page.meta.author and page.meta.posted %}
+            A {{ page.content | wordcount // 200 }} minute read
+            {% endif %}
             {% if page and page.meta.posted %}
-            Posted on {{ page.meta.posted }}
+            posted on {{ page.meta.posted }}
             {% endif %}
             {% if page and page.meta.author and page.meta.authorurl %}
             by <a href="{{ page.meta.authorurl }}" target="_blank">{{ page.meta.author | striptags }}</a>
@@ -184,51 +186,10 @@
             {% if page and page.meta.category %}
             in <a href="/{{page.meta.category|lower}}">{{ page.meta.category }}</a>
             {% endif %}
-            {% if page and page.meta.author and page.meta.posted %}
-            | Read Time: {{ page.content | wordcount // 200 }} minute(s)
-            {% endif %}
           </p>
+
           {% if page and page.is_homepage %}
-          <h2>Latest Technology Posts</h2>
-          <p>
-            {% for nav_item in nav %}
-            {% if nav_item.children and page %}
-          <div id="technology" class="tab-pane active">
-            <ul class="list-unstyled">
-              {% for nav_item in nav_item.children | sort(attribute='posted') | reverse | batch(3) | first %}
-              {% if 'technology' in nav_item.url %}
-              <li>
-                <h3><a href="{{ nav_item.url }}">{{ nav_item.title }}</a></h3>
-                {% if nav_item.meta.image %}
-                <p><img src="{{ nav_item.meta.image }}" /></p>
-                {% endif %}
-                <p>
-                  {% if nav_item.meta.description %}
-                  {{ nav_item.meta.description }}
-                  {% else %}
-                  {{ nav_item.content | striptags | truncate(250,false) }}
-                  {% endif %}
-                  <br />
-                  <span class="text-muted">
-                    {% if nav_item.meta.posted %}
-                    <strong>Posted:</strong> {{ nav_item.meta.posted }}
-                    {% endif %}
-                    {% if nav_item.meta.updated %}
-                    <strong>Last Updated:</strong> {{ nav_item.meta.updated }}
-                    {% endif %}
-                    <strong>Read Time:</strong> {{ nav_item.content | wordcount // 200 }} minute(s)
-                  </span>
-                </p>
-              </li>
-              {% endif %}
-              {% endfor %}
-            </ul>
-          </div>
-          {% endif %}
-          {% endfor %}
-          </p>
-          <p><a href="/technology">See All Technology Posts</a></p>
-          <hr />
+          {% include "_latest-posts.html" %}
           {% endif %}
           <!-- home page listing -->
 

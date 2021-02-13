@@ -162,7 +162,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: var(--dark-red);
 }
 
-main a, main a:hover{
+main a, main a:hover {
   color: var(--black);
   text-decoration: underline;
 }
@@ -171,27 +171,30 @@ aside a {
   text-decoration: none;
 }
 
-.blog-list-item a{
+.blog-list-item a {
   text-decoration: none;
 }
 
-footer a, footer a:hover{
+footer a, footer a:hover {
   color: var(--gray);
-  /* text-decoration: underline; */
 }
 
 img {
   max-width: 100%;
 }
 
-.bg-white{
-	background-color: #ffffff;
+.bg-white {
+  background-color: #ffffff;
 }
 
 body {
-	background-color: var(--black);
+  background-color: var(--black);
 }
 
 .blog-sidebar h4 {
+  border-bottom: solid 4px var(--dark-red);
+}
+
+h2.latest-posts {
   border-bottom: solid 4px var(--dark-red);
 }

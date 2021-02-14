@@ -23,7 +23,9 @@
     </div>
     <div class="text-secondary">
         {% if nav_item.meta.keywords %}
-        <strong>Keywords:</strong> {{ nav_item.meta.keywords }}
+        <strong>Keywords:</strong>
+        {% set keywordlist = nav_item.meta.keywords.split(',') %}
+        {%- include "_keywords.html" -%}
         {% endif %}
     </div>
 </li>

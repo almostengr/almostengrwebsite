@@ -202,3 +202,11 @@ h2.latest-posts {
 h2>a, h3>a {
   text-decoration: none;
 }
+
+.text-secondary>a {
+  color: #6c757d !important;
+}
+
+.text-secondary>a:hover {
+  color: #000000 !important;
+}

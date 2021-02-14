@@ -45,12 +45,16 @@ theme:
   homepagecategory:
     - name: Technology
       url: /technology
+      url_filter: technology/
     - name: Handyman
       url: /handyman
-    - name: Speaking
-      url: /speaking
+      url_filter: handyman/
     - name: Gardening
       url: /gardening
+      url_filter: gardening/
+    - name: Speaking
+      url: /speaking
+      url_filter: speaking
   footernav:
     - title: SOCIAL
       links:

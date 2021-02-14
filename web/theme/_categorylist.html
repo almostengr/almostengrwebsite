@@ -1,0 +1,41 @@
+<ul class="list-unstyled">
+    {% for nav_item in nav %}
+    {% if nav_item.children and page and page.url == category_url %}
+    {% for nav_item in nav_item.children | reverse %}
+    {% if category_url in nav_item.url and nav_item.title != category_title %}
+    <li class="blog-list-item {{category_title | lower}}">
+        <h2 class="pt-3">
+            <a href="{{ nav_item.url|url }}" class="text-dark">
+                {% if nav_item.meta.title %}
+                {{ nav_item.meta.title }}
+                {% else %}
+                {{ nav_item.title }}
+                {% endif %}
+            </a>
+        </h2>
+        <div>
+            {% if nav_item.meta.description %}
+            {{ nav_item.meta.description | striptags }}
+            {% else %}
+            {{ nav_item.content | striptags | truncate(150, false) }}
+            {% endif %}
+        </div>
+        <div class="text-secondary">
+            {% if nav_item.meta.posted %}
+            <strong>Posted:</strong> {{ nav_item.meta.posted }}
+            {% endif %}
+            <strong>Read Time:</strong> {{ nav_item.content | wordcount // 200 }} minute(s)
+        </div>
+        <div class="text-secondary">
+            {% if nav_item.meta.keywords %}
+            <strong>Keywords:</strong>
+            {% set keywordlist = nav_item.meta.keywords.split(',') %}
+            {%- include "_keywords.html" -%}
+            {% endif %}
+        </div>
+    </li>
+    {% endif %}
+    {% endfor %}
+    {% endif %}
+    {% endfor %}
+</ul>

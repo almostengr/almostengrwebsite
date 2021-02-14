@@ -1,4 +1,8 @@
-# Privacy Policy and Terms of Use
+---
+title: Privacy Policy and Terms of Use
+robots: noindex, follow
+description: Details about what data is captured and how it is used on this website.
+---
 
 Your privacy is critically important to us. There are a few fundamental principles:
 

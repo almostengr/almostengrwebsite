@@ -186,7 +186,7 @@ the latest version from <a href="https://kdenlive.org/en/download" target="_blan
 
 ### Song updates are posted to Twitter. How does that work?
 
-See the [Falcon Pi Monitor](/lightshow/other-information/falconpimonitor) page for more information about
+See the [Falcon Pi Monitor](/falconpimonitor) page for more information about
 that project.
 
 ## Resources

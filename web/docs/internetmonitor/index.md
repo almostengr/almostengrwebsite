@@ -1,6 +1,15 @@
-# Internet Monitor
+# Internet Monitor Project
 
 Reboots the DD-WRT router when there are no WiFi clients connected to it.
+
+## Table of Contents
+
+[Background](#background)
+[Solution](#solution)
+[Technology](#the-technology)
+[Checking Job Log](#checking-job-log)
+[Create System Service on Ubuntu 20.04](#create-system-service-on-ubuntu-20.04)
+[Remove System Service on Ubuntu 20.04](#remove-system-service-on-ubuntu-20.04)
 
 ## Background
 

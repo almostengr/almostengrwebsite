@@ -122,7 +122,8 @@
       </ul>
       <form class="form-inline mt-2 mt-md-0" action="https://www.google.com/search" method="GET">
         <input type="hidden" name="q" value="site:thealmostengineer.com" />
-        <input type="text" name="q" alt="Search" placeholder="Search with Google" class="form-control mr-3" />
+        <input type="text" name="q" alt="Search" placeholder="Search with Google" title="Search"
+          class="form-control mr-3" />
         <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
       </form>
     </div>
@@ -166,28 +167,28 @@
             <li class="list-inline-item">&raquo; {{ page.title }}</li>
             {% endif %}
           </ul>
+          {% if page and page.meta.title %}
           <h1 class="blog-post-title">
-            {% if page and page.meta.title %}
             {{ page.meta.title }}
-            {% endif %}
           </h1>
+          {% endif %}
           <p class="text-center blog-post-meta text-secondary">
             <em>
-            {% if page and page.meta.author and page.meta.posted %}
-            a {{ page.content | wordcount // 200 }} minute read
-            {% endif %}
-            {% if page and page.meta.posted %}
-            posted on {{ page.meta.posted }}
-            {% endif %}
-            {% if page and page.meta.author and page.meta.authorurl %}
-            by <a href="{{ page.meta.authorurl }}" target="_blank">{{ page.meta.author | striptags }}</a>
-            {% elif page and page.meta.author %}
-            by {{ page.meta.author | striptags }}
-            {% endif %}
-            {% if page and page.meta.category %}
-            in <a href="/{{page.meta.category|lower}}">{{ page.meta.category }}</a>
-            {% endif %}
-          </em>
+              {% if page and page.meta.author and page.meta.posted %}
+              a {{ page.content | wordcount // 200 }} minute read
+              {% endif %}
+              {% if page and page.meta.posted %}
+              posted on {{ page.meta.posted }}
+              {% endif %}
+              {% if page and page.meta.author and page.meta.authorurl %}
+              by <a href="{{ page.meta.authorurl }}" target="_blank">{{ page.meta.author | striptags }}</a>
+              {% elif page and page.meta.author %}
+              by {{ page.meta.author | striptags }}
+              {% endif %}
+              {% if page and page.meta.category %}
+              in <a href="/{{page.meta.category|lower}}">{{ page.meta.category }}</a>
+              {% endif %}
+            </em>
           </p>
 
           {% if page and page.is_homepage %}

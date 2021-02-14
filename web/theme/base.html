@@ -172,8 +172,9 @@
             {% endif %}
           </h1>
           <p class="text-center blog-post-meta text-secondary">
+            <em>
             {% if page and page.meta.author and page.meta.posted %}
-            A {{ page.content | wordcount // 200 }} minute read
+            a {{ page.content | wordcount // 200 }} minute read
             {% endif %}
             {% if page and page.meta.posted %}
             posted on {{ page.meta.posted }}
@@ -186,6 +187,7 @@
             {% if page and page.meta.category %}
             in <a href="/{{page.meta.category|lower}}">{{ page.meta.category }}</a>
             {% endif %}
+          </em>
           </p>
 
           {% if page and page.is_homepage %}
@@ -193,7 +195,7 @@
           {% endif %}
           <!-- home page listing -->
 
-          {% if page.meta.image %}
+          {% if page and page.meta.image %}
           <p><img src="{{ page.meta.image }}" alt="{{ page.meta.imagealt }}" /></p>
           {% endif %}
 
@@ -331,7 +333,7 @@
     </ul>
     {% endfor %}
     <p>
-      Copyright &copy; 2015-{{ build_date_utc.strftime("%Y") }} {{ config.copyright }} |
+      Copyright &copy; {{ build_date_utc.strftime("%Y") }} {{ config.copyright }} |
       Website built and maintained by
       <a href="https://rhtservices.net" target="_blank">Robinson Handy and Technology Services LLC</a>
     </p>

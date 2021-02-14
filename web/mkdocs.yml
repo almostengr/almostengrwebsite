@@ -20,6 +20,9 @@ theme:
   custom_dir: 'theme'
   language: en
   social_user: "@almostengr"
+  static_templates:
+    - 404.html
+    - 500.html
   mainnav:
     - url: /blog
       name: Blog

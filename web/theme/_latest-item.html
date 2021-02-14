@@ -1,7 +1,9 @@
 <li>
     <h3><a href="{{ nav_item.url }}" class="text-decoration-none">{{ nav_item.title }}</a></h3>
-    {% if nav_item.meta.image %}
-    <p><img src="{{ nav_item.meta.image }}" /></p>
+    {% if nav_item.meta.image and nav_item.meta.imagealt %}
+    <p><img src="{{ nav_item.meta.image }}" alt="{{nav_item.meta.imagealt}}" /></p>
+    {% elif nav_item.meta.image %}
+    <p><img src="{{ nav_item.meta.image }}" alt="No alternate text was provided" /></p>
     {% endif %}
     <p>
         {% if nav_item.meta.description %}

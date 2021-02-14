@@ -156,7 +156,6 @@
             <li class="list-inline-item"><a href="/">Home</a></li>
             {% for doc in page.ancestors %}
             {% if doc %}
-            <!-- <li class="list-inline-item">&raquo; <a href="{{ doc.link|e }}">{{ doc.title }}</a></li> -->
             <li class="list-inline-item">&raquo; <a href="..">{{ doc.title }}</a></li>
             {% else %}
             <li class="list-inline-item">&raquo; {{ doc.title }}</li>
@@ -172,9 +171,13 @@
             {{ page.meta.title }}
             {% endif %}
           </h1>
-          <p class="blog-post-meta text-secondary">
+          <p class="text-center blog-post-meta text-secondary">
+            <em>
+            {% if page and page.meta.author and page.meta.posted %}
+            a {{ page.content | wordcount // 200 }} minute read
+            {% endif %}
             {% if page and page.meta.posted %}
-            Posted on {{ page.meta.posted }}
+            posted on {{ page.meta.posted }}
             {% endif %}
             {% if page and page.meta.author and page.meta.authorurl %}
             by <a href="{{ page.meta.authorurl }}" target="_blank">{{ page.meta.author | striptags }}</a>
@@ -184,16 +187,15 @@
             {% if page and page.meta.category %}
             in <a href="/{{page.meta.category|lower}}">{{ page.meta.category }}</a>
             {% endif %}
-            {% if page and page.meta.author and page.meta.posted %}
-            | Read Time: {{ page.content | wordcount // 200 }} minute(s)
-            {% endif %}
+          </em>
           </p>
+
           {% if page and page.is_homepage %}
-          {% include "_latestposts.html" %}
+          {% include "_latest-posts.html" %}
           {% endif %}
           <!-- home page listing -->
 
-          {% if page.meta.image %}
+          {% if page and page.meta.image %}
           <p><img src="{{ page.meta.image }}" alt="{{ page.meta.imagealt }}" /></p>
           {% endif %}
 
@@ -201,7 +203,7 @@
           <ul class="list-unstyled">
             {% for nav_item in nav %}
             {% if nav_item.children and page and page.url == "technology/" %}
-            {% for nav_item in nav_item.children | sort(attribute='posted') | reverse %}
+            {% for nav_item in nav_item.children | reverse %}
             {% if 'technology' in nav_item.url and nav_item.title != "Technology" %}
             {% include "_bloglistitem.html" %}
             {% endif %}
@@ -212,7 +214,7 @@
           <ul class="list-unstyled">
             {% for nav_item in nav %}
             {% if nav_item.children and page and page.url == "handyman/" %}
-            {% for nav_item in nav_item.children | sort(attribute='posted') | reverse %}
+            {% for nav_item in nav_item.children | reverse %}
             {% if 'handyman' in nav_item.url and nav_item.title != "Handyman" %}
             {% include "_bloglistitem.html" %}
             {% endif %}
@@ -223,7 +225,7 @@
           <ul class="list-unstyled">
             {% for nav_item in nav %}
             {% if nav_item.children and page and page.url == "gardening/" %}
-            {% for nav_item in nav_item.children | sort(attribute='posted') | reverse %}
+            {% for nav_item in nav_item.children | reverse %}
             {% if 'gardening' in nav_item.url and nav_item.title != "Gardening" %}
             {% include "_bloglistitem.html" %}
             {% endif %}
@@ -234,7 +236,7 @@
           <ul class="list-unstyled">
             {% for nav_item in nav %}
             {% if nav_item.children and page and page.url == "speaking/" %}
-            {% for nav_item in nav_item.children | sort(attribute='posted') | reverse %}
+            {% for nav_item in nav_item.children | reverse %}
             {% if 'speaking' in nav_item.url and nav_item.title != "Speaking" %}
             {% include "_bloglistitem.html" %}
             {% endif %}
@@ -260,7 +262,7 @@
             {% for nav_item in nav %}
             {% if nav_item.children %}
             <div id="speaking" class="tab-pane active">
-              {% for nav_item in nav_item.children | sort(attribute='posted') | reverse | batch(3) | first %}
+              {% for nav_item in nav_item.children | reverse | batch(3) | first %}
               {% if 'technology' in nav_item.url or 'handyman' in nav_item.url or 'gardening' in nav_item.url %}
               <a href="/{{ nav_item.url }}">{{ nav_item.title }}</a>
               {% endif %}
@@ -298,6 +300,15 @@
             </ol>
           </div>
           <div class="p-4 mb-3 bg-light rounded">
+            <h4 class="font-italic">Online Courses</h4>
+            <ol class="list-unstyled">
+              {% for link in config.theme.courses %}
+              <li><a href="{{ link.link }}" target="_blank"><i class="{{link.icon}}"></i> {{link.name}}</a></li>
+              </svg>
+              {% endfor %}
+            </ol>
+          </div>
+          <div class="p-4 mb-3 bg-light rounded">
             {% include "_googleadsense.html" %}
           </div>
           <div class="p-4 mb-3 bg-light rounded">
@@ -322,7 +333,7 @@
     </ul>
     {% endfor %}
     <p>
-      Copyright &copy; 2015-{{ build_date_utc.strftime("%Y") }} {{ config.copyright }} |
+      Copyright &copy; {{ build_date_utc.strftime("%Y") }} {{ config.copyright }} |
       Website built and maintained by
       <a href="https://rhtservices.net" target="_blank">Robinson Handy and Technology Services LLC</a>
     </p>

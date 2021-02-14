@@ -68,3 +68,6 @@ jobs:
     #   run: dotnet test -c RELEASE test/websitetests.csproj
   
   
+# find web/site/api/ -iname "*.html" -exec rename "s/.html/.json/g" {} \
+# find . -type f -not -iname "*.json" -exec git rm {} \;
+## commit

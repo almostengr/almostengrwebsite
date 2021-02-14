@@ -12,24 +12,18 @@
         {% if nav_item.meta.description %}
         {{ nav_item.meta.description | striptags }}
         {% else %}
-        {{ nav_item.content | striptags | truncate(250, false) }}
+        {{ nav_item.content | striptags | truncate(150, false) }}
         {% endif %}
     </div>
     <div class="text-secondary">
         {% if nav_item.meta.posted %}
         <strong>Posted:</strong> {{ nav_item.meta.posted }}
-	{% endif %}
-        {% if nav_item.meta.updated %}
-        <strong>Last Updated:</strong> {{ nav_item.meta.updated }}
         {% endif %}
+        <strong>Read Time:</strong> {{ nav_item.content | wordcount // 200 }} minute(s)
     </div>
     <div class="text-secondary">
         {% if nav_item.meta.keywords %}
         <strong>Keywords:</strong> {{ nav_item.meta.keywords }}
         {% endif %}
     </div>
-
-    <!-- <div>
-        <a class="btn btn-danger" href="{{ nav_item.url | url }}">Read More</a>
-    </div> -->
 </li>

@@ -20,6 +20,9 @@ theme:
   custom_dir: 'theme'
   language: en
   social_user: "@almostengr"
+  static_templates:
+    - 404.html
+    - 500.html
   mainnav:
     - url: /blog
       name: Blog
@@ -110,6 +113,9 @@ theme:
     - link: /projects
       name: Projects
       icon: bi bi-journal
+  courses:
+    - link: https://www.youtube.com/watch?v=iujOWWbiUP0&list=PLaAJ0fv0d9WM8E2K_Ke5As-fw626yQ3tu
+      name: Drupal 8 Basics
   social:
     - type: github
       link: https://github.com/almostengr

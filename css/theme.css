@@ -198,3 +198,7 @@ body {
 h2.latest-posts {
   border-bottom: solid 4px var(--dark-red);
 }
+
+h2>a, h3>a {
+  text-decoration: none;
+}

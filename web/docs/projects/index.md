@@ -8,13 +8,13 @@ more details about that project. There are more projects listed on
 
 ## Falcon Pi Twitter (2021)
 
-![Screenshot of tweets from the application](/lightshow/images/20201220presentation/twittertweets.jpg)
+![Screenshot of tweets from the application](/images/lightshow/20201220presentation/twittertweets.jpg)
 
 Read more about [Falcon Pi Twitter project](/falconpimonitor)
 
 ## Christmas Light Show (2020)
 
-![House with Christmast lights illuminated](/lightshow/images/2020 Christmas Light Show 20201211-f000000.jpg)
+![House with Christmast lights illuminated](/images/lightshow/2020 Christmas Light Show 20201211-f000000.jpg)
 
 Read more about [Christmas Light Show project](/projects/lightshow)
 

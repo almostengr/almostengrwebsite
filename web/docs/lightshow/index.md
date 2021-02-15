@@ -81,7 +81,7 @@ non-show hours.
 
 To find out more about the light show, visit one of the pages listed below.
 
-* [Show Twitter Page @hplightshow](https://twitter.com/hplightshow)
+* <a href="https://twitter.com/hplightshow" target="_blank">Light Show Twitter Page</a>
 * [Building A Christmas Light Show Control Box (Presentation 2020-12-20)](/lightshow/20201220presentation)
 * [2019 Christmas Light Show Details](/lightshow/2019christmas)
 * [FAQs (Frequently Asked Questions)](/lightshow/faq)

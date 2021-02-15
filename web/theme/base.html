@@ -80,7 +80,7 @@
 
   <link href="/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom styles for this template -->
-  <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900" rel="stylesheet">
+  <link href="//fonts.googleapis.com/css?family=Playfair&#43;Display:700,900" rel="stylesheet">
   <link href="/css/theme.min.css" rel="stylesheet">
 
   {% if page and page.url == "links/" %}
@@ -90,7 +90,7 @@
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/default.min.css">
   <link rel="stylesheet" href="/css/a11y-dark-theme.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.min.css">
 
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
@@ -99,7 +99,7 @@
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   {% if config.google_analytics %}
-  <script async src="https://www.googletagmanager.com/gtag/js?id={{ config.google_analytics[0] }}"></script>
+  <script async src="//www.googletagmanager.com/gtag/js?id={{ config.google_analytics[0] }}"></script>
   <script async>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date()); gtag('config', '{{ config.google_analytics[0] }}');</script>
   {% endif %}
@@ -252,7 +252,7 @@
             <h4 class="font-italic">Categories</h4>
             <ol class="list-unstyled">
               {% for topic in config.theme.topics %}
-              <li><a href="{{ topic.link|url }}"><i class="{{topic.icon}}"></i> {{ topic.name }}</a></li>
+              <li><a href="{{ topic.url|url }}"><i class="{{topic.icon}}"></i> {{ topic.name }}</a></li>
               {% endfor %}
             </ol>
           </div>
@@ -260,7 +260,7 @@
             <h4 class="font-italic">Connect With Me</h4>
             <ol class="list-unstyled">
               {% for link in config.theme.social %}
-              <li><a href="{{ link.link|url }}" target="_blank"><i class="{{link.icon}}"></i> {{link.name}}</a></li>
+              <li><a href="{{ link.url|url }}" target="_blank"><i class="{{link.icon}}"></i> {{link.name}}</a></li>
               </svg>
               {% endfor %}
             </ol>
@@ -269,7 +269,7 @@
             <h4 class="font-italic">Online Courses</h4>
             <ol class="list-unstyled">
               {% for link in config.theme.courses %}
-              <li><a href="{{ link.link|url }}" target="_blank"><i class="{{link.icon}}"></i> {{link.name}}</a></li>
+              <li><a href="{{ link.url|url }}" target="_blank"><i class="{{link.icon}}"></i> {{link.name}}</a></li>
               </svg>
               {% endfor %}
             </ol>
@@ -310,7 +310,7 @@
       <a href="/privacy">Privacy Policy</a>.
     </p>
   </footer>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" async
+  <script src="//code.jquery.com/jquery-3.5.1.slim.min.js" async
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="/js/vendor/jquery.slim.min.js"><\/script>')</script>

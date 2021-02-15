@@ -181,7 +181,7 @@
               posted on {{ page.meta.posted }}
               {% endif %}
               {% if page and page.meta.author and page.meta.authorurl %}
-              by <a href="{{ page.meta.authorurl }}" target="_blank">{{ page.meta.author | striptags }}</a>
+              by <a href="{{ page.meta.authorurl|url }}" target="_blank">{{ page.meta.author | striptags }}</a>
               {% elif page and page.meta.author %}
               by {{ page.meta.author | striptags }}
               {% endif %}
@@ -223,14 +223,14 @@
             <!-- mobile page links -->
             {% if page and page.url == "links/" %}
             {% for link in config.theme.mobilelinks %}
-            <a href="{{ link.url }}">{{ link.name }}</a>
+            <a href="{{ link.url|url }}">{{ link.name }}</a>
             {% endfor %}
             {% for nav_item in nav %}
             {% if nav_item.children %}
             <div id="speaking" class="tab-pane active">
               {% for nav_item in nav_item.children | reverse | batch(3) | first %}
               {% if 'technology' in nav_item.url or 'handyman' in nav_item.url or 'gardening' in nav_item.url %}
-              <a href="/{{ nav_item.url }}">{{ nav_item.title }}</a>
+              <a href="/{{ nav_item.url|url }}">{{ nav_item.title }}</a>
               {% endif %}
               {% endfor %}
               </ul>
@@ -252,7 +252,7 @@
             <h4 class="font-italic">Categories</h4>
             <ol class="list-unstyled">
               {% for topic in config.theme.topics %}
-              <li><a href="{{ topic.link }}"><i class="{{topic.icon}}"></i> {{ topic.name }}</a></li>
+              <li><a href="{{ topic.link|url }}"><i class="{{topic.icon}}"></i> {{ topic.name }}</a></li>
               {% endfor %}
             </ol>
           </div>
@@ -260,7 +260,7 @@
             <h4 class="font-italic">Connect With Me</h4>
             <ol class="list-unstyled">
               {% for link in config.theme.social %}
-              <li><a href="{{ link.link }}" target="_blank"><i class="{{link.icon}}"></i> {{link.name}}</a></li>
+              <li><a href="{{ link.link|url }}" target="_blank"><i class="{{link.icon}}"></i> {{link.name}}</a></li>
               </svg>
               {% endfor %}
             </ol>
@@ -269,7 +269,7 @@
             <h4 class="font-italic">Online Courses</h4>
             <ol class="list-unstyled">
               {% for link in config.theme.courses %}
-              <li><a href="{{ link.link }}" target="_blank"><i class="{{link.icon}}"></i> {{link.name}}</a></li>
+              <li><a href="{{ link.link|url }}" target="_blank"><i class="{{link.icon}}"></i> {{link.name}}</a></li>
               </svg>
               {% endfor %}
             </ol>
@@ -293,7 +293,7 @@
       </li>
       {% for link in section.links %}
       <li class="list-inline-item">
-        <a href="{{link.url}}"><i class="{{link.icon}}"></i> {{ link.name }}</a>
+        <a href="{{link.url|url}}"><i class="{{link.icon}}"></i> {{ link.name }}</a>
       </li>
       {% endfor %}
     </ul>

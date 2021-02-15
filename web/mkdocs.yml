@@ -80,6 +80,12 @@ theme:
         icon: bi bi-youtube"
     - title: LINKS
       links:
+      - url: /lightshow
+        name: Christmas Light Show  
+        icon: bi bi-lightbulb
+      - url: /trafficpi
+        name: Traffic Pi
+        icon: bi bi-stoplights
       - url: /about
         name: About
         icon: bi bi-file-person-fill

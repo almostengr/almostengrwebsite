@@ -1,7 +1,7 @@
 ---
 title: 2020 Christmas Light Show
 imagealt: 2020 Light Show
-image: /lightshow/images/2020 Christmas Light Show 20201211-f000000.jpg
+image: /images/lightshow/2020 Christmas Light Show 20201211-f000000.jpg
 ---
 
 ## Show Details

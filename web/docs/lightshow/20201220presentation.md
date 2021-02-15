@@ -1,8 +1,10 @@
-# Building A Christmas Light Show Control Box (Presentation 2020-12-20)
+---
+title: Building A Christmas Light Show Control Box (Presentation 2020-12-20)
+imagealt: House with lights
+image: /images/lightshow/2020 Christmas Light Show 20201211-f000000.jpg
+---
 
 ## About The Show
-
-![House with lights](/lightshow/images/2020 Christmas Light Show 20201211-f000000.jpg)
 
 * 2,130 LED lights
 * 16 channels
@@ -13,7 +15,7 @@
 
 ### Control Box
 
-![Control box with relays, Rapsberry Pi, and outlets](/lightshow/images/20201220presentation/20201204_120013.jpg)
+![Control box with relays, Rapsberry Pi, and outlets](/images/lightshow/20201220presentation/20201204_120013.jpg)
 
 * Incoming power
 * Relays
@@ -26,7 +28,7 @@
 
 #### Raspberry Pi and FM Transmitter
 
-![Raspberry Pi and FM Transmitter](/lightshow/images/20201220presentation/20201220_084747.jpg)
+![Raspberry Pi and FM Transmitter](/images/lightshow/20201220presentation/20201220_084747.jpg)
 
 * 5 volt circuit, provided by the Raspberry Pi
 * Used to control relays
@@ -36,7 +38,7 @@
 
 ### Solid State Relays
 
-![8-Channel Solid State Relay board](/lightshow/images/20201220presentation/20201220_084801.jpg)
+![8-Channel Solid State Relay board](/images/lightshow/20201220presentation/20201220_084801.jpg)
 
 * No moving parts
 * Silent operation
@@ -46,14 +48,14 @@
 
 ### Xlights
 
-![Screenshot of Xlights sequencing](/lightshow/images/20201220presentation/xlights.jpg)
+![Screenshot of Xlights sequencing](/images/lightshow/20201220presentation/xlights.jpg)
 
 * Used to create a file that controls the lights
 * Build model of house to preview show
 
 ### Falcon Pi Player (FPP)
 
-![Screenshot of Falcon Pi Player homepage](/lightshow/images/20201220presentation/falconpi.jpg)
+![Screenshot of Falcon Pi Player homepage](/images/lightshow/20201220presentation/falconpi.jpg)
 
 * Runs on Raspberry Pi
 * Reads the file created in xLights with the light data
@@ -63,14 +65,14 @@
 
 ## Updates Via Twitter
 
-![Screenshot of C# application with code](/lightshow/images/20201220presentation/fpptwitter.jpg)
+![Screenshot of C# application with code](/images/lightshow/20201220presentation/fpptwitter.jpg)
 
 * .NET Core application using C#
 * Reads data from FPP and posts to Twitter
 * <a href="https://twitter.com/hpchristmas" target="_blank">@hpchristmas on Twitter</a>
 * <a href="https://github.com/almostengr/falconpimonitor" target="_blank">Source Code</a>
 
-![Screenshot of tweets from the application](/lightshow/images/20201220presentation/twittertweets.jpg)
+![Screenshot of tweets from the application](/images/lightshow/20201220presentation/twittertweets.jpg)
 
 ## 2020 Christmas Light Show
 

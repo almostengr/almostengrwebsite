@@ -24,8 +24,10 @@ theme:
     - 404.html
     - 500.html
   mainnav:
-    - url: /blog
-      name: Blog
+    - url: /technology
+      name: Technology
+    - url: /handyman
+      name: Handyman
     - url: /projects
       name: Projects
     - url: /resources
@@ -45,12 +47,16 @@ theme:
   homepagecategory:
     - name: Technology
       url: /technology
+      url_filter: technology/
     - name: Handyman
       url: /handyman
-    - name: Speaking
-      url: /speaking
+      url_filter: handyman/
     - name: Gardening
       url: /gardening
+      url_filter: gardening/
+    - name: Speaking
+      url: /speaking
+      url_filter: speaking
   footernav:
     - title: SOCIAL
       links:
@@ -76,14 +82,23 @@ theme:
         icon: bi bi-youtube"
     - title: LINKS
       links:
+      - url: /lightshow
+        name: Christmas Light Show  
+        icon: bi bi-lightbulb
+      - url: /trafficpi
+        name: Traffic Pi
+        icon: bi bi-stoplights
       - url: /about
         name: About
         icon: bi bi-file-person-fill
       - url: /uses
         name: Uses
         icon: bi bi-tools
-      - url: /blog
-        name: Blog
+      - url: /technology
+        name: Technology
+        icon: bi bi-journal-text
+      - url: /handyman
+        name: Handyman
         icon: bi bi-journal-text
       - url: /contact
         name: Contact
@@ -95,46 +110,52 @@ theme:
         name: Privacy
         icon: bi bi-shield-shaded
   topics:
-    - link: /handyman
+    - url: /handyman
       name: DIY/Handyman
       icon: bi bi-wrench
-    - link: /technology
+    - url: /technology
       name: Technology
       icon: bi bi-laptop
-    - link: /speaking
+    - url: /lightshow
+      name: Christmas Light Show  
+      icon: bi bi-lightbulb
+    - url: /trafficpi
+      name: Traffic Pi
+      icon: bi bi-stoplights
+    - url: /speaking
       name: Speaking
       icon: bi bi-megaphone-fill
-    - link: /gardening
+    - url: /gardening
       name: Gardening
       icon: bi bi-flower1
-    - link: /resources
+    - url: /resources
       name: Resources
       icon: bi bi-bookshelf
-    - link: /projects
+    - url: /projects
       name: Projects
       icon: bi bi-journal
   courses:
-    - link: https://www.youtube.com/watch?v=iujOWWbiUP0&list=PLaAJ0fv0d9WM8E2K_Ke5As-fw626yQ3tu
+    - url: https://www.youtube.com/watch?v=iujOWWbiUP0&list=PLaAJ0fv0d9WM8E2K_Ke5As-fw626yQ3tu
       name: Drupal 8 Basics
   social:
     - type: github
-      link: https://github.com/almostengr
+      url: https://github.com/almostengr
       name: GitHub
       icon: bi bi-github
     - type: instagram
-      link: https://instagram.com/almostengr
+      url: https://instagram.com/almostengr
       name: Instagram
       icon: bi bi-instagram
     - type: linkedin
-      link: https://www.linkedin.com/in/krobinsontech
+      url: https://www.linkedin.com/in/krobinsontech
       name: LinkedIn
       icon: bi bi-linkedin
     - type: twitter
-      link: https://twitter.com/almostengr
+      url: https://twitter.com/almostengr
       name: Twitter
       icon: bi bi-twitter
     - type: youtube
-      link: https://www.youtube.com/channel/UC4HCouBLtXD1j1U_17aBqig?sub_confirmation=1
+      url: https://www.youtube.com/channel/UC4HCouBLtXD1j1U_17aBqig?sub_confirmation=1
       name: YouTube
       icon: bi bi-youtube"
   mobilelinks:

@@ -1,6 +1,8 @@
-# 2020 Christmas Light Show
-
-![2020 Light Show](/lightshow/images/2020 Christmas Light Show 20201211-f000000.jpg)
+---
+title: 2020 Christmas Light Show
+imagealt: 2020 Light Show
+image: /images/lightshow/2020 Christmas Light Show 20201211-f000000.jpg
+---
 
 ## Show Details
 
@@ -74,3 +76,12 @@ non-show hours.
 * Someday at Christmas - Stevie Wonder
 * Taking Care of Christmas - Randy Bachman
 * What You Want For Christmas - Quad City DJs and K-nock
+
+## Other Information
+
+To find out more about the light show, visit one of the pages listed below.
+
+* <a href="https://twitter.com/hplightshow" target="_blank">Light Show Twitter Page</a>
+* [Building A Christmas Light Show Control Box (Presentation 2020-12-20)](/lightshow/20201220presentation)
+* [2019 Christmas Light Show Details](/lightshow/2019christmas)
+* [FAQs (Frequently Asked Questions)](/lightshow/faq)

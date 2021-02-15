@@ -1,9 +1,7 @@
 ---
-title: FAQ
+title: FAQ (Frequently Asked Questions)
 description: Frequently asked questions about this and other light shows.
 ---
-
-# FAQ (Frequently Asked Questions)
 
 Here are the most common questions that are asked about the light show. Please use the navigation to jump
 to the question that you are looking for or use the search feature.
@@ -104,7 +102,7 @@ or the AC lights that I already had on hand.
 
 ## What are the parts that I need to build my own control box?
 
-![Photo of control box](/lightshow/images/20201220presentation/20201204_120013.jpg)
+![Photo of control box](/images/lightshow/20201220presentation/20201204_120013.jpg)
 
 This is the list of the electrical related components. The full list of components will vary depending
 upon how to you choose to design your control box.
@@ -155,7 +153,7 @@ actually over heat, self-destruct, or weld itself closed.
 
 Music is transmitted over radio via a low-power FM transmitter. Music goes into the transmitter directly from
 the Raspberry Pi and broadcasted on an open frequency. Radio Locator
-[mentioned below](/lightshow/other-information/faq#where-can-i-find-out-more-information-or-ask-questions)
+[mentioned below](/lightshow/faq#where-can-i-find-out-more-information-or-ask-questions)
 was used to locate the best frequency.
 
 ### What kind of software do you use?

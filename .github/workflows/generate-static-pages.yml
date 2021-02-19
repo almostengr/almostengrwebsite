@@ -29,9 +29,9 @@ jobs:
     # - name: Deploy HTML to website branch
     #   run: /usr/bin/python3 -m mkdocs gh-deploy -f web/mkdocs.yml -b website
 
-    - run: /usr/bin/python3 -m mkdocs build -f almostengrwebsite/almostengrwebsite/web/mkdocs.yml -d site
+    - run: /usr/bin/python3 -m mkdocs build -f web/mkdocs.yml -d site
 
-    - run: /usr/bin/python3 -m mkdocs build -f almostengrwebsite/almostengrwebsite/web/mkdocsapi.yml -d site/api
+    - run: /usr/bin/python3 -m mkdocs build -f web/mkdocsapi.yml -d site/api
 
     - run: /usr/bin/find almostengrwebsite/almostengrwebsite/web/site/api/ -iname "*.html" -exec /usr/bin/rename "s/.html/.json/g" {} \;
 

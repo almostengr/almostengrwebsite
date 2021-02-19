@@ -32,6 +32,10 @@ jobs:
     - run: /usr/bin/python3 -m mkdocs build -f web/mkdocs.yml -d site
 
     - run: /usr/bin/python3 -m mkdocs build -f web/mkdocsapi.yml -d site/api
+    
+    - run: ls -al
+    
+    - run: ls -ald */
 
     - run: /usr/bin/find almostengrwebsite/almostengrwebsite/web/site/api/ -iname "*.html" -exec /usr/bin/rename "s/.html/.json/g" {} \;
 

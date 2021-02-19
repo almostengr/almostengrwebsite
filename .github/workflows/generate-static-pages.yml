@@ -33,7 +33,8 @@ jobs:
 
     - run: /usr/bin/python3 -m mkdocs build -f almostengrwebsite/almostengrwebsite/web/mkdocsapi.yml -d site/api
 
-    - run: /usr/bin/find almostengrwebsite/almostengrwebsite/web/site/api/ -iname "*.html" -exec /usr/bin/rename "s/.html/.json/g" {} \;
+    # - run: /usr/bin/find almostengrwebsite/almostengrwebsite/web/site/api/ -iname "*.html" -exec /usr/bin/rename "s/.html/.json/g" {} \;
+    - run: /usr/bin/find almostengrwebsite/almostengrwebsite/web/site/api/ -iname "*.html" -exec mv "{}" "`echo {} | sed "s/.html/.json/"`" \;
 
     - run: /usr/bin/find almostengrwebsite/almostengrwebsite/web/site/api/ -type f -not -iname "*.json" -exec /bin/rm {} \;
 

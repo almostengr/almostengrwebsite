@@ -1,3 +1,4 @@
+{% if page and not page.is_homepage %}
 {
 "title": "{{ page.title | striptags }}",
 "description": "{{ page.description | striptags }}",
@@ -6,3 +7,55 @@
 "content": "{{ page.content | striptags }}",
 "copyright": "{{ config.site_copyright | striptags }}"
 }
+
+{% elif page and page.is_homepage %}
+
+{
+"latest_posts": [
+{% for nav_item in nav %}
+{% if nav_item.children and page %}
+{% for nav_item in nav_item.children | reverse | batch(3) | first %}
+{% if 'technology' in nav_item.url %}
+{% include "_latest-item.html" %}
+{% if not loop.last %}
+,
+{% endif %}
+
+{% endif %}
+{% endfor %}
+{% endif %}
+{% endfor %}
+,
+
+{% for nav_item in nav %}
+{% if nav_item.children and page %}
+{% for nav_item in nav_item.children | reverse | batch(3) | first %}
+{% if 'handyman' in nav_item.url %}
+{% include "_latest-item.html" %}
+{% if not loop.last %}
+,
+{% endif %}
+
+{% endif %}
+{% endfor %}
+{% endif %}
+{% endfor %}
+,
+
+{% for nav_item in nav %}
+{% if nav_item.children and page %}
+{% for nav_item in nav_item.children | reverse | batch(3) | first %}
+{% if 'gardening' in nav_item.url %}
+{% include "_latest-item.html" %}
+{% if not loop.last %}
+,
+{% endif %}
+
+{% endif %}
+{% endfor %}
+{% endif %}
+{% endfor %}
+]
+}
+
+{% endif %}

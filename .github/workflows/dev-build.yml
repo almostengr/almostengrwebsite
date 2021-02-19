@@ -14,22 +14,20 @@ jobs:
     - uses: actions/checkout@v2
       name: Checking out code
 
-    - name: Python version
-      run: /usr/bin/python3 --version
+    - run: /usr/bin/python3 --version
 
-    - name: Install pip
-      run:  /usr/bin/python3 -m pip install --upgrade pip
+    - run:  /usr/bin/python3 -m pip install --upgrade pip
 
-    - name: Install setuptools
-      run:  /usr/bin/python3 -m pip install --upgrade setuptools
+    - run:  /usr/bin/python3 -m pip install --upgrade setuptools
 
-    - name: Install Mkdocs
-      run:  /usr/bin/python3 -m pip install --upgrade mkdocs
+    - run:  /usr/bin/python3 -m pip install --upgrade mkdocs
 
-    - name: Install Minify Plugin
-      run:  /usr/bin/python3 -m pip install --upgrade mkdocs-minify-plugin
+    - run:  /usr/bin/python3 -m pip install --upgrade mkdocs-minify-plugin
 
     - run: git fetch -p
 
-    - name: Deploy to website branch
+    - name: Build website files
       run:  /usr/bin/python3 -m mkdocs build -f web/mkdocs.yml
+
+    - name: Build JSON files
+      run:  /usr/bin/python3 -m mkdocs build -f web/mkdocsapi.yml

@@ -32,13 +32,13 @@ jobs:
     # - name: Deploy JSON to website branch
       # run:  /usr/bin/python3 -m mkdocs gh-deploy -f web/mkdocsapi.yml -b website -d site/api
 
-      # mkdocs build -f web/mkdocs.yml -d site
-      # mkdocs build -f web/mkdocsapi.yml -d site/api
-      # find web/site/api/ -iname "*.html" -exec rename "s/.html/.json/g" {} \;
-      # find . -type f -not -iname "*.json" -exec git rm {} \;
-      # git checkout -b website
-      # git mv web/site . 
-      ## git commit
+      mkdocs build -f web/mkdocs.yml -d site
+      mkdocs build -f web/mkdocsapi.yml -d site/api
+      find web/site/api/ -iname "*.html" -exec rename "s/.html/.json/g" {} \;
+      find web/site/api/ -type f -not -iname "*.json" -exec rm {} \;
+      git checkout -b website
+      git mv web/site . 
+      # git commit
 
   deploy:
     runs-on: ubuntu-latest

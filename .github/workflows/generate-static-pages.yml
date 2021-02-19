@@ -23,40 +23,9 @@ jobs:
       with:
         ref: main
 
-    - name: Fetching all branches
-      run: git fetch -p
+    - run: git fetch -p
 
-    # - name: Deploy HTML to website branch
-    #   run: /usr/bin/python3 -m mkdocs gh-deploy -f web/mkdocs.yml -b website
-
-    - run: /usr/bin/python3 -m mkdocs build -f web/mkdocs.yml -d site
-
-    - run: /usr/bin/python3 -m mkdocs build -f web/mkdocsapi.yml -d site/api
-    
-    - run: ls -al
-    
-    - run: ls -ald */
-
-    - run: /usr/bin/find web/site/api/ -iname "*.html" -exec /usr/bin/rename "s/.html/.json/g" {} \;
-
-    - run: /usr/bin/find web/site/api/ -type f -not -iname "*.json" -exec /bin/rm {} \;
-
-    - name: Check out website branch
-      uses: actions/checkout@v2
-      with:
-        ref: website
-
-    - run: /bin/cp -pr almostengrwebsite/almostengrwebsite/web/site/* .
-
-    - run: /bin/rm -r almostengrwebsite/almostengrwebsite/web/
-
-    - run: git config core.ignorecase true
-
-    - run: git add .
-
-    - run: git commit -m 'Deployed latest updates to website'
-
-    - run: git push
+    - run: /usr/bin/python3 -m mkdocs gh-deploy -f web/mkdocs.yml -b website
 
   deploy:
     runs-on: ubuntu-latest

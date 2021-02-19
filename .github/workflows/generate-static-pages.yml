@@ -37,9 +37,9 @@ jobs:
     
     - run: ls -ald */
 
-    - run: /usr/bin/find almostengrwebsite/almostengrwebsite/web/site/api/ -iname "*.html" -exec /usr/bin/rename "s/.html/.json/g" {} \;
+    - run: /usr/bin/find web/site/api/ -iname "*.html" -exec /usr/bin/rename "s/.html/.json/g" {} \;
 
-    - run: /usr/bin/find almostengrwebsite/almostengrwebsite/web/site/api/ -type f -not -iname "*.json" -exec /bin/rm {} \;
+    - run: /usr/bin/find web/site/api/ -type f -not -iname "*.json" -exec /bin/rm {} \;
 
     - name: Check out website branch
       uses: actions/checkout@v2

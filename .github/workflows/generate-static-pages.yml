@@ -29,22 +29,22 @@ jobs:
     # - name: Deploy HTML to website branch
     #   run: /usr/bin/python3 -m mkdocs gh-deploy -f web/mkdocs.yml -b website
 
-    - run: /usr/bin/python3 -m mkdocs build -f web/mkdocs.yml -d site
+    - run: /usr/bin/python3 -m mkdocs build -f almostengrwebsite/almostengrwebsite/web/mkdocs.yml -d site
 
-    - run: /usr/bin/python3 -m mkdocs build -f web/mkdocsapi.yml -d site/api
+    - run: /usr/bin/python3 -m mkdocs build -f almostengrwebsite/almostengrwebsite/web/mkdocsapi.yml -d site/api
 
-    - run: /usr/bin/find web/site/api/ -iname "*.html" -exec rename "s/.html/.json/g" {} \;
+    - run: /usr/bin/find almostengrwebsite/almostengrwebsite/web/site/api/ -iname "*.html" -exec /usr/bin/rename "s/.html/.json/g" {} \;
 
-    - run: /usr/bin/find web/site/api/ -type f -not -iname "*.json" -exec rm {} \;
+    - run: /usr/bin/find almostengrwebsite/almostengrwebsite/web/site/api/ -type f -not -iname "*.json" -exec /bin/rm {} \;
 
     - name: Check out website branch
       uses: actions/checkout@v2
       with:
         ref: website
 
-    - run: /bin/cp -pr web/site/* .
+    - run: /bin/cp -pr almostengrwebsite/almostengrwebsite/web/site/* .
 
-    - run: /bin/rm -r web/
+    - run: /bin/rm -r almostengrwebsite/almostengrwebsite/web/
 
     - run: git config core.ignorecase true
 

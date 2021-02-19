@@ -24,8 +24,6 @@ jobs:
 
     - run:  /usr/bin/python3 -m pip install --upgrade mkdocs-minify-plugin
 
-    - run: git fetch -p
-
     - name: Build website files
       run:  /usr/bin/python3 -m mkdocs build -f web/mkdocs.yml
 

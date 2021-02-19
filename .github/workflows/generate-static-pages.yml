@@ -26,8 +26,19 @@ jobs:
 
     - run: git fetch -p
 
-    - name: Deploy to website branch
-      run:  /usr/bin/python3 -m mkdocs gh-deploy -f web/mkdocs.yml -b website
+    # - name: Deploy HTML to website branch
+    #   run:  /usr/bin/python3 -m mkdocs gh-deploy -f web/mkdocs.yml -b website
+
+    # - name: Deploy JSON to website branch
+      # run:  /usr/bin/python3 -m mkdocs gh-deploy -f web/mkdocsapi.yml -b website -d site/api
+
+      # mkdocs build -f web/mkdocs.yml -d site
+      # mkdocs build -f web/mkdocsapi.yml -d site/api
+      # find web/site/api/ -iname "*.html" -exec rename "s/.html/.json/g" {} \;
+      # find . -type f -not -iname "*.json" -exec git rm {} \;
+      # git checkout -b website
+      # git mv web/site . 
+      ## git commit
 
   deploy:
     runs-on: ubuntu-latest
@@ -68,6 +79,3 @@ jobs:
     #   run: dotnet test -c RELEASE test/websitetests.csproj
   
   
-# find web/site/api/ -iname "*.html" -exec rename "s/.html/.json/g" {} \
-# find . -type f -not -iname "*.json" -exec git rm {} \;
-## commit

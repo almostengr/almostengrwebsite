@@ -1,8 +1,81 @@
+{%- if page and not page.is_homepage -%} 
 {
+{%- if page and page.title -%} 
 "title": "{{ page.title | striptags }}",
+{%- endif -%}
+
+{%- if page and page.description -%} 
 "description": "{{ page.description | striptags }}",
+{%- endif -%}
+
+{%- if page and page.keywords -%} 
 "keywords": "{{ page.meta.keywords | striptags }}",
+{%- endif -%}
+
+{%- if page and page.author -%} 
 "author": "{{ page.meta.author | striptags }}",
-"content": "{{ page.content | striptags }}",
-"copyright": "{{ config.site_copyright | striptags }}"
+{%- endif -%}
+
+{%- if page and page.posted -%}
+"posted": "{{ page.meta.posted }}",
+{%- endif -%}
+
+{%- if page and page.updated -%}
+"posted": "{{ page.meta.updated }}",
+{%- endif -%}
+
+"content": "{{ page.content | striptags | escape }}"
+
 }
+
+{%- elif page and page.is_homepage -%} 
+
+{
+"latest_posts": [
+{%- for nav_item in nav -%} 
+{%- if nav_item.children and page -%} 
+{%- for nav_item in nav_item.children | reverse | batch(3) | first -%} 
+{%- if 'technology' in nav_item.url -%} 
+{%- include "_latest-item.html" -%} 
+{%- if not loop.last -%} 
+,
+{%- endif -%} 
+
+{%- endif -%} 
+{%- endfor -%} 
+{%- endif -%} 
+{%- endfor -%} 
+,
+
+{%- for nav_item in nav -%} 
+{%- if nav_item.children and page -%} 
+{%- for nav_item in nav_item.children | reverse | batch(3) | first -%} 
+{%- if 'handyman' in nav_item.url -%} 
+{%- include "_latest-item.html" -%} 
+{%- if not loop.last -%} 
+,
+{%- endif -%} 
+
+{%- endif -%} 
+{%- endfor -%} 
+{%- endif -%} 
+{%- endfor -%} 
+,
+
+{%- for nav_item in nav -%} 
+{%- if nav_item.children and page -%} 
+{%- for nav_item in nav_item.children | reverse | batch(3) | first -%} 
+{%- if 'gardening' in nav_item.url -%} 
+{%- include "_latest-item.html" -%} 
+{%- if not loop.last -%} 
+,
+{%- endif -%} 
+
+{%- endif -%} 
+{%- endfor -%} 
+{%- endif -%} 
+{%- endfor -%} 
+]
+}
+
+{%- endif -%} 

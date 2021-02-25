@@ -1,10 +1,10 @@
 name: Dev Build
 
-# on:
-#   push:
-#     branches:
-#       - '*'
-#       - '!main'
+on:
+  push:
+    branches:
+      - '*'
+      - '!main'
 
 jobs:
   build:
@@ -16,16 +16,13 @@ jobs:
 
     - run: /usr/bin/python3 --version
 
-    - run:  /usr/bin/python3 -m pip install --upgrade pip
+    - run: /usr/bin/python3 -m pip install --upgrade pip
 
-    - run:  /usr/bin/python3 -m pip install --upgrade setuptools
+    - run: /usr/bin/python3 -m pip install --upgrade setuptools
 
-    - run:  /usr/bin/python3 -m pip install --upgrade mkdocs
+    - run: /usr/bin/python3 -m pip install --upgrade mkdocs
 
-    - run:  /usr/bin/python3 -m pip install --upgrade mkdocs-minify-plugin
+    - run: /usr/bin/python3 -m pip install --upgrade mkdocs-minify-plugin
 
     - name: Build website files
-      run:  /usr/bin/python3 -m mkdocs build -f web/mkdocs.yml
-
-    - name: Build JSON files
-      run:  /usr/bin/python3 -m mkdocs build -f web/mkdocsapi.yml
+      run: /usr/bin/python3 -m mkdocs build -f web/mkdocs.yml

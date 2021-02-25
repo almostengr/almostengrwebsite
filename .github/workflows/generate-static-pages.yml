@@ -3,7 +3,7 @@ name: Deploy to Production
 on:
   push:
     branches:
-      - "jsondata"
+      - main
 
 jobs:
   build:
@@ -25,69 +25,30 @@ jobs:
 
     - run: git fetch -p
 
-<<<<<<< HEAD
-    # - name: Deploy HTML to website branch
-    #   run: /usr/bin/python3 -m mkdocs gh-deploy -f web/mkdocs.yml -b website
-
-    - run: /usr/bin/python3 -m mkdocs build -f web/mkdocs.yml -d site
-
-    - run: /usr/bin/python3 -m mkdocs build -f web/mkdocsapi.yml -d site/api
-
-    - run: ls -al
-    
-    - run: ls -ald */
-
-    # - run: /usr/bin/find almostengrwebsite/almostengrwebsite/web/site/api/ -iname "*.html" -exec /usr/bin/rename "s/.html/.json/g" {} \;
-    - run: /usr/bin/find web/site/api/ -iname "*.html" -exec mv "{}" "`echo {} | sed "s/.html/.json/"`" \;
-
-    - run: /usr/bin/find web/site/api/ -type f -not -iname "*.json" -exec /bin/rm {} \;
-
-    # - run: /usr/bin/find web/site/api/ -iname "*.html" -exec /usr/bin/rename "s/.html/.json/g" {} \;
-
-    # - run: /usr/bin/find web/site/api/ -type f -not -iname "*.json" -exec /bin/rm {} \;
-
-    - name: Check out website branch
-      uses: actions/checkout@v2
-      with:
-        ref: website
-
-    - run: /bin/cp -pr web/site/* .
-
-    - run: /bin/rm -r web/
-
-    - run: git config core.ignorecase true
-
-    - run: git add .
-
-    - run: git commit -m 'Deployed latest updates to website'
-
-    - run: git push
-=======
     - run: /usr/bin/python3 -m mkdocs gh-deploy -f web/mkdocs.yml -b website
->>>>>>> cf2c6783f7279bf1662cba67207ba8ca8670337f
 
-  # deploy:
-  #   runs-on: ubuntu-latest
-  #   needs: build
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
 
-  #   steps:
-  #   - name: Deploy to Production
-  #     uses: fifsky/ssh-action@master
-  #     with:
-  #       command: cd && cd www && git pull origin website
-  #       host: ${{ secrets.HOSTNAME }}
-  #       key: ${{ secrets.PRIVATE_KEY }}
-  #       port: ${{ secrets.PORT_NUMBER }}
-  #       user: ${{ secrets.USERNAME }}
+    steps:
+    - name: Deploy to Production
+      uses: fifsky/ssh-action@master
+      with:
+        command: cd && cd www && git pull origin website
+        host: ${{ secrets.HOSTNAME }}
+        key: ${{ secrets.PRIVATE_KEY }}
+        port: ${{ secrets.PORT_NUMBER }}
+        user: ${{ secrets.USERNAME }}
 
-  # sitemapush:
-  #   runs-on: ubuntu-latest
-  #   needs: deploy
-  #   steps:
-  #   - name: Sitemap Ping to search engines
-  #     uses: atymic/sitemap-ping-action@1.0.0
-  #     with:
-  #       sitemap-url: https://thealmostengineer.com/sitemap.xml
+  sitemapush:
+    runs-on: ubuntu-latest
+    needs: deploy
+    steps:
+    - name: Sitemap Ping to search engines
+      uses: atymic/sitemap-ping-action@1.0.0
+      with:
+        sitemap-url: https://thealmostengineer.com/sitemap.xml
 
   # shakeout:
   #   runs-on: ubuntu-latest

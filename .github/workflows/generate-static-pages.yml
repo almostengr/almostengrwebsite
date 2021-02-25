@@ -23,9 +23,9 @@ jobs:
       with:
         ref: main
 
-    - name: Fetching all branches
-      run: git fetch -p
+    - run: git fetch -p
 
+<<<<<<< HEAD
     # - name: Deploy HTML to website branch
     #   run: /usr/bin/python3 -m mkdocs gh-deploy -f web/mkdocs.yml -b website
 
@@ -62,6 +62,9 @@ jobs:
     - run: git commit -m 'Deployed latest updates to website'
 
     - run: git push
+=======
+    - run: /usr/bin/python3 -m mkdocs gh-deploy -f web/mkdocs.yml -b website
+>>>>>>> cf2c6783f7279bf1662cba67207ba8ca8670337f
 
   # deploy:
   #   runs-on: ubuntu-latest

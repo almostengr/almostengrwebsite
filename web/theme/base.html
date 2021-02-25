@@ -152,7 +152,7 @@
     <main role="main" class="container">
       <div class="row">
         <div class="col-sm-12 col-md-9 blog-main">
-          <ul class="list-unstyled">
+          <ul class="list-unstyled {% if not page.is_homepage %} breadcrumb {% endif %}">
             {% if page and not page.is_homepage %}
             <li class="list-inline-item"><a href="/">Home</a></li>
             {% for doc in page.ancestors %}
@@ -222,20 +222,26 @@
 
             <!-- mobile page links -->
             {% if page and page.url == "links/" %}
-            {% for link in config.theme.mobilelinks %}
-            <a href="{{ link.url|url }}">{{ link.name }}</a>
-            {% endfor %}
             {% for nav_item in nav %}
             {% if nav_item.children %}
             <div id="speaking" class="tab-pane active">
               {% for nav_item in nav_item.children | reverse | batch(3) | first %}
               {% if 'technology' in nav_item.url or 'handyman' in nav_item.url or 'gardening' in nav_item.url %}
-              <a href="/{{ nav_item.url|url }}">{{ nav_item.title }}</a>
+              {% set category = nav_item.url.split("/") %}
+              <a href="/{{ nav_item.url|url }}">
+                {% if nav_item.meta.image %}
+                <p><img src="{{ nav_item.meta.image }}" alt="{{ nav_item.title }}"></p>
+                {% endif %}
+                {{ nav_item.title }} ({{ category[0] | title }})
+              </a>
               {% endif %}
               {% endfor %}
               </ul>
             </div>
             {% endif %}
+            {% endfor %}
+            {% for link in config.theme.mobilelinks %}
+            <a href="{{ link.url|url }}">{{ link.name }}</a>
             {% endfor %}
             {% endif %}
 

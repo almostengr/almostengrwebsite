@@ -28,6 +28,8 @@ theme:
       name: Technology
     - url: /handyman
       name: Handyman
+    - url: /gardening
+      name: Gardening
     - url: /projects
       name: Projects
     - url: /resources
@@ -159,7 +161,7 @@ theme:
       name: YouTube
       icon: bi bi-youtube"
   mobilelinks:
-    - name: RHT Services LLC
+    - name: Robinson Handy and Technology (RHT) Services LLC
       url: https://rhtservices.net
     - name: Follow Me On Github
       url: https://github.com/almostengr
@@ -169,6 +171,8 @@ theme:
       url: https://twitter.com/almostengr
     - name: Subscribe To My YouTube Channel
       url: https://www.youtube.com/channel/UC4HCouBLtXD1j1U_17aBqig?sub_confirmation=1
+    - name: The Almost Engineer Website (Home Page)
+      url: /
 
 use_directory_urls: true
 strict: false

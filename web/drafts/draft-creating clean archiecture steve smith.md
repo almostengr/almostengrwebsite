@@ -1,0 +1,193 @@
+# SLC.NET Presents: Steve Smith (ardalis) - Clean Architecture with ASP.NET Core
+
+Applying Clean Architecture to ASP.NET Core
+April 9, 2020
+
+## separation of concerns
+
+* dont let your plumbing code pollute your software
+* avoid mixing different code responsibilties in the same method, class or project
+
+### the big three
+
+* data access
+* business rules and domain model
+* user interface
+
+## single responsibiity
+
+* avoid tightly coupling your tools together
+* works in tandem with Separation of Concenrs
+* class should focus on single responsibily; should only have one reason to change
+
+## Dont Repeat Yourself (DRY)
+
+* put repetitive code into functions
+* group functions into cohesive classes; dealing with the same responsbility
+* group classes by folders and namespaces by responsibiltiy, level of
+abstraction, etc
+* further group class folders into projects
+
+## Dependency Inversion
+
+* Would you solder a lamp directly into the electrical wiring in a wall?
+
+## invert (and inject) dependencies
+
+* both high level classes and implementation-detail classes should depend
+on abstractions (interfaces); should not be hard coded
+* classes should follow explicit dependencies principle; classes should be explicit
+about all of the classes that they need; dependencies are defined in the class constructor
+* make your types honest, not deceptive
+* dont have a constructor with a lot of dependencies. consider using additional
+classes if this is the case
+* advised not to use property dependency injection
+
+### abstractions/inferfaces must be defined somewhere accessible by
+* low level implemetnation services
+* high level business services
+* user interface entry points; usually done in configure services
+
+## Dependency Graphs
+
+### Direct Dependency Graph
+
+* Class A -> Class B -> Class C
+
+### Inverted dpedency graph
+
+* Class A -> Inteface B -> Class B -> Interface C -> Class C
+* this allows the actual class to be swapped out and easier to test
+
+## Make the right thing easy and the wrong thing hard
+
+* UI classes shouldnt depend on infrastructure classes (file system, database, external resources, etc)
+* how can we strcuture our solution to help enforce this?
+* business / domain classes shouldnt depend on infrastructure classes
+* avoid repeating or copy pasting (DRY)
+
+## Class N Tier Architecture (or N Layer)
+
+* originally, everything was in the same layer (Classical)
+* over time, that changed to N-tier where each layer is separated
+
+### Transitive dependencies
+
+* this resulted in everything on the database because the top layer depended
+on the later below it
+* this mean that the database had to be reset each time the tests were ran
+
+## domain-centric design
+
+* better than data centric design
+
+### domain model
+
+* model of the problem that exists of entities, interfaces, services, and more
+* should be able to work independent of the database
+* interfaces define contracts for work with domain objects
+* everything in the application (including infrasctrucutre and data access) depends
+on these interfaces and domain objects
+
+## clean architecture (aka Onion Architecture)
+
+* each layer points to the inside layer
+* the domain entities at the center; they should be protected from being coupled;
+it makes things easier to test
+* the middle circles are what everything depends on; outer circles are other services
+and depend on the things in the middle
+
+* domain model represents the entities and abstractions; not the repository thought,
+just the interface
+
+## clean architecture "rules"
+
+* application core contains the domain model
+* all projects depends on the core project; dependencies point inward to the
+application core
+* inner projects define intefaces; outer projects implement them (like infrastructure)
+* abstraction lives in core; impementation lives in outter
+* avoid direct depednecy on the infrastructure project (except from integration
+test and possbily startup.cs); controllers should not be using things from the infrastructure
+* framework independent
+* database independent
+* UI independent
+* it is very testable
+* everything knows about core
+
+## refactoring to a clean architecture
+
+* best: start from properly configured project
+* next best: start from single application project
+* most difficult: large, existing investment in multilayer architecture
+
+## the core project (domain)
+
+Minimal dependencies - none on infrastructure
+What goes in it
+
+* interfaces
+* entities, value objects, aggregates
+* domain services
+* custom exceptions
+* domain events
+* event handlers
+* specifications
+
+## infrastructure project
+
+all dependencies on out of process resources
+
+* repositories
+* ef core, dbcontext
+* cached repositories
+* web api clients
+* file system
+* logging
+* email / sms sending
+* system clock
+* other services
+* interfaces (sometimes; these are for the ones that depends on infrastructure stuff)
+
+## web project 
+
+* controllers 
+* views 
+* view models (or api models, or binding models)
+* filters 
+* binders 
+* tag / html helpers 
+* other services 
+* interfaces (that depend on UI stuff)
+
+## shared kernel 
+
+* items that are shared between multiple solutions 
+* referenced by the core projects
+* ideally distributed as nuget packages 
+
+# solution structure - clean architecture
+
+functional test -> web 
+web -> infrastructure 
+web -> core 
+infrastructure -> core 
+unit tests -> core 
+integration tests -> infrastructure 
+core -> shared kernel 
+
+
+## how to keep controllers smaller 
+
+* dont use a lot of logic in them; especially if it is not UI related 
+* accept a type (view model, api model) 
+* perform model validation 
+* do work 
+* create model required for response 
+* return with result type (view, page, ok, not found)
+
+### do work 
+
+* get entity from injected repository 
+* work with the entity and its methods 
+* update the entitys state using the repository 

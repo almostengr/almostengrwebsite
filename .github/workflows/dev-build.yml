@@ -1,0 +1,28 @@
+name: Dev Build
+
+on:
+  push:
+    branches:
+      - '*'
+      - '!main'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+      name: Checking out code
+
+    - run: /usr/bin/python3 --version
+
+    - run: /usr/bin/python3 -m pip install --upgrade pip
+
+    - run: /usr/bin/python3 -m pip install --upgrade setuptools
+
+    - run: /usr/bin/python3 -m pip install --upgrade mkdocs
+
+    - run: /usr/bin/python3 -m pip install --upgrade mkdocs-minify-plugin
+
+    - name: Build website files
+      run: /usr/bin/python3 -m mkdocs build -f web/mkdocs.yml

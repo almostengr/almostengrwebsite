@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="{{ config.site_name }}" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="{{ config.theme.social_user }}" />
+  <meta name="twitter:creator" content="{{ config.theme.social_user }}" />
+
+  {% if page and page.meta and page.meta.description %}
+  <meta name="description" content="{{ page.meta.description }}">
+  <meta property="og:description" content="{{ page.meta.description }}" />
+  <meta name="twitter:description" content="{{ page.meta.description }}" />
+  {% else %}
+  <meta name="description" content="{{ config.site_description }}">
+  <meta property="og:description" content="{{ config.site_description }}" />
+  <meta name="twitter:description" content="{{ config.site_description }}" />
+  {% endif %}
+
+  {% if page and page.meta.author %}
+  <meta name="author" content="{{ page.meta.author }}">
+  {% else %}
+  <meta name="author" content="{{ config.site_author }}">
+  {% endif %}
+
+  {%- block title %}
+  {% if page and page.is_homepage %}
+  <title>{{ config.site_name }} | {{ config.site_description }}</title>
+  <meta property="og:title" content="{{ config.site_name }} | {{ config.site_description }}" />
+  <meta name="twitter:title" content="{{ config.site_name }} | {{ config.site_description }}" />
+  {% elif page and page.meta and page.meta.title %}
+  <title>{{ page.meta.title }} | {{ config.site_name }}</title>
+  <meta property="og:title" content="{{ page.meta.title }} | {{ config.site_name }}" />
+  <meta name="twitter:title" content="{{ page.meta.title }} | {{ config.site_name }}" />
+  {% elif page and page.title and not page.is_homepage %}
+  <title>{{ page.title | striptags }} | {{ config.site_name }}</title>
+  <meta property="og:title" content="{{ page.title | striptags }} | {{ config.site_name }}" />
+  <meta name="twitter:title" content="{{ page.title | striptags }} | {{ config.site_name }}" />
+  {% else %}
+  <title>{{ config.site_name }}</title>
+  <meta property="og:title" content="{{ config.site_name }}" />
+  <meta name="twitter:title" content="{{ config.site_name }}" />
+  {% endif %}
+  {%- endblock %}
+
+  {% if page and page.meta.image %}
+  <meta property="og:image" content="{{ page.meta.image }}" />
+  <meta name="twitter:image" content="{{ page.meta.image }}" />
+  {% endif %}
+
+  {% if page and page.meta.keywords %}
+  <meta name="keywords" content="{{ page.meta.keywords }}" />
+  {% endif %}
+
+  {% if page and page.meta.ogtype %}
+  <meta property="og:type" content="{{ page.meta.ogtype }}" />
+  {% else %}
+  <meta property="og:type" content="website" />
+  {% endif %}
+
+  {% if page and page.meta.youtube %}
+  <meta property="og:video" content="{{ page.meta.youtube }}" />
+  {% endif %}
+
+  {% if page and page.meta.robots %}
+  <meta name="robots" content="{{ page.meta.robots }}" />
+  {% else %}
+  <meta name="robots" content="index, follow" />
+  {% endif %}
+
+  {% if page and page.canonical_url %}
+  <link rel="canonical" href="{{ page.canonical_url | url }}">
+  <meta property="og:url" content="{{ page.canonical_url | url }}" />
+  <meta property="twitter:url" content="{{ page.canonical_url | url }}" />
+  {% endif %}
+
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="//fonts.googleapis.com/css?family=Playfair&#43;Display:700,900" rel="stylesheet">
+  <link href="/css/theme.min.css" rel="stylesheet">
+
+  {% if page and page.url == "links/" %}
+  <link href="/css/themelinks.min.css" rel="stylesheet">
+  {% endif %}
+
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/default.min.css">
+  <link rel="stylesheet" href="/css/a11y-dark-theme.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.min.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="manifest" href="/images/site.webmanifest">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  {% if config.google_analytics %}
+  <script async src="//www.googletagmanager.com/gtag/js?id={{ config.google_analytics[0] }}"></script>
+  <script async>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date()); gtag('config', '{{ config.google_analytics[0] }}');</script>
+  {% endif %}
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark-red">
+    <a class="navbar-brand font-weight-bold text-uppercase" href="/">{{ config.site_name }}</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        {% for nav_item in config.theme.mainnav %}
+        <li class="nav-item">
+          <a class="nav-link text-white text-uppercase" href="{{ nav_item.url | url }}">{{ nav_item.name }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+      <form class="form-inline mt-2 mt-md-0" action="https://www.google.com/search" method="GET">
+        <input type="hidden" name="q" value="site:thealmostengineer.com" />
+        <input type="text" name="q" alt="Search" placeholder="Search with Google" title="Search"
+          class="form-control mr-3" />
+        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  <div class="pt-3 mt-0 bg-white">
+    {% if page and page.is_homepage and config.theme.homemessage %}
+    {% for message in config.theme.homemessage %}
+    <div class="{{ message.bgcolor }} {{ message.textcolor }} py-2">
+      <div class="container px-3">
+        <h2>{{ message.heading }}</h2>
+        <p>{{ message.detail }}</p>
+      </div>
+    </div>
+    {% endfor %}
+    {% endif %}
+    {% if config.theme.sitemessage %}
+    {% for message in config.theme.sitemessage %}
+    <div class="{{ message.bgcolor }} {{ message.textcolor }} py-2">
+      <div class="container px-3">
+        <h2>{{ message.heading }}</h2>
+        <p>{{ message.detail }}</p>
+      </div>
+    </div>
+    {% endfor %}
+    {% endif %}
+    <main role="main" class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-9 blog-main">
+          <ul class="list-unstyled {% if not page.is_homepage %} breadcrumb {% endif %}">
+            {% if page and not page.is_homepage %}
+            <li class="list-inline-item"><a href="/">Home</a></li>
+            {% for doc in page.ancestors %}
+            {% if doc %}
+            <li class="list-inline-item">&raquo; <a href="..">{{ doc.title }}</a></li>
+            {% else %}
+            <li class="list-inline-item">&raquo; {{ doc.title }}</li>
+            {% endif %}
+            {% endfor %}
+            {% endif %}
+            {% if page and not page.is_homepage %}
+            <li class="list-inline-item">&raquo; {{ page.title }}</li>
+            {% endif %}
+          </ul>
+          {% if page and page.meta.title %}
+          <h1 class="blog-post-title">
+            {{ page.meta.title }}
+          </h1>
+          {% endif %}
+          <p class="text-center blog-post-meta text-secondary">
+            <em>
+              {% if page and page.meta.author and page.meta.posted %}
+              a {{ page.content | wordcount // 200 }} minute read
+              {% endif %}
+              {% if page and page.meta.posted %}
+              posted on {{ page.meta.posted }}
+              {% endif %}
+              {% if page and page.meta.author and page.meta.authorurl %}
+              by <a href="{{ page.meta.authorurl|url }}" target="_blank">{{ page.meta.author | striptags }}</a>
+              {% elif page and page.meta.author %}
+              by {{ page.meta.author | striptags }}
+              {% endif %}
+              {% if page and page.meta.category %}
+              in <a href="/{{page.meta.category|lower}}">{{ page.meta.category }}</a>
+              {% endif %}
+            </em>
+          </p>
+
+          {% if page and page.is_homepage %}
+          {% include "_latest-posts.html" %}
+          {% endif %}
+          <!-- home page listing -->
+
+          {% if page and page.meta.image %}
+          <p><img src="{{ page.meta.image }}" alt="{{ page.meta.imagealt }}" /></p>
+          {% endif %}
+
+          <p>
+            {%- for category in config.theme.homepagecategory -%}
+            {%- set category_url = category.url_filter -%}
+            {%- set category_title = category.name -%}
+            {%- include "_categorylist.html" -%}
+            {%- endfor -%}
+          </p>
+          <div class="content">
+            {%- block content %}
+            {{ page.content }}
+            {%- endblock %}
+
+            {% if page and page.meta.keywords %}
+            <p class="text-muted">
+              <strong>Keywords: </strong>
+              {% set keywordlist = page.meta.keywords.split(',') %}
+              {%- include "_keywords.html" -%}
+            </p>
+            {% endif %}
+
+            <!-- mobile page links -->
+            {% if page and page.url == "links/" %}
+            {% for nav_item in nav %}
+            {% if nav_item.children %}
+            <div id="speaking" class="tab-pane active">
+              {% for nav_item in nav_item.children | reverse | batch(3) | first %}
+              {% if 'technology' in nav_item.url or 'handyman' in nav_item.url or 'gardening' in nav_item.url %}
+              {% set category = nav_item.url.split("/") %}
+              <a href="/{{ nav_item.url|url }}">
+                {% if nav_item.meta.image %}
+                <p><img src="{{ nav_item.meta.image }}" alt="{{ nav_item.title }}"></p>
+                {% endif %}
+                {{ nav_item.title }} ({{ category[0] | title }})
+              </a>
+              {% endif %}
+              {% endfor %}
+              </ul>
+            </div>
+            {% endif %}
+            {% endfor %}
+            {% for link in config.theme.mobilelinks %}
+            <a href="{{ link.url|url }}">{{ link.name }}</a>
+            {% endfor %}
+            {% endif %}
+
+            {% if page and page.url == "search/" %}
+            <script async src="https://cse.google.com/cse.js?cx=000195884435112055355:g2eqfks2ipu"></script>
+            <div class="gcse-search"></div>
+            {% endif %}
+
+            {% include "_googleadsense.html" %}
+          </div>
+        </div><!-- /.blog-main -->
+        <aside class="col-md-3 blog-sidebar">
+          <div class="p-4 mb-3 bg-light rounded">
+            <h4 class="font-italic">Categories</h4>
+            <ol class="list-unstyled">
+              {% for topic in config.theme.topics %}
+              <li><a href="{{ topic.url|url }}"><i class="{{topic.icon}}"></i> {{ topic.name }}</a></li>
+              {% endfor %}
+            </ol>
+          </div>
+          <div class="p-4 mb-3 bg-light rounded">
+            <h4 class="font-italic">Connect With Me</h4>
+            <ol class="list-unstyled">
+              {% for link in config.theme.social %}
+              <li><a href="{{ link.url|url }}" target="_blank"><i class="{{link.icon}}"></i> {{link.name}}</a></li>
+              </svg>
+              {% endfor %}
+            </ol>
+          </div>
+          <div class="p-4 mb-3 bg-light rounded">
+            <h4 class="font-italic">Online Courses</h4>
+            <ol class="list-unstyled">
+              {% for link in config.theme.courses %}
+              <li><a href="{{ link.url|url }}" target="_blank"><i class="{{link.icon}}"></i> {{link.name}}</a></li>
+              </svg>
+              {% endfor %}
+            </ol>
+          </div>
+          <div class="p-4 mb-3 bg-light rounded">
+            {% include "_googleadsense.html" %}
+          </div>
+          <div class="p-4 mb-3 bg-light rounded">
+            {% include "_googleadsense.html" %}
+          </div>
+        </aside><!-- /.blog-sidebar -->
+      </div><!-- /.row -->
+    </main><!-- /.container -->
+  </div>
+  <footer class="blog-footer bg-black container text-left">
+    <p class="text-center"><a href="#">Back To Top</a></p>
+    {% for section in config.theme.footernav %}
+    <ul class="list-unstyled">
+      <li class="list-inline-item bg-white text-dark px-2 font-weight-bold">
+        {{ section.title }}
+      </li>
+      {% for link in section.links %}
+      <li class="list-inline-item">
+        <a href="{{link.url|url}}"><i class="{{link.icon}}"></i> {{ link.name }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+    {% endfor %}
+    <p>
+      Copyright &copy; {{ build_date_utc.strftime("%Y") }} {{ config.copyright }} |
+      Website built and maintained by
+      <a href="https://rhtservices.net" target="_blank">Robinson Handy and Technology Services LLC</a>
+    </p>
+    <p>
+      Cookies are used on this website to track your visits, provide advertisements specific to you, and
+      preferences by a third-party. By continuing to use this site, you agree to the use of cookies unless
+      you have disabled them. More information this is available in the
+      <a href="/privacy">Privacy Policy</a>.
+    </p>
+  </footer>
+  <script src="//code.jquery.com/jquery-3.5.1.slim.min.js" async
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="/js/vendor/jquery.slim.min.js"><\/script>')</script>
+  <script async src="/js/bootstrap.bundle.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script async src="/js/theme.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- Build Date UTC : {{ build_date_utc }} -->
+</body>
+
+</html>

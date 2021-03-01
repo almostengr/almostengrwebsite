@@ -1,8 +1,0 @@
-almostengineer@aeoffice:~/Downloads/almostengrwebsite/docs$ grep -i -r '](\/' $(pwd) | grep -v -e '\/blog' -e '\/contact' -e '\/about' -e '\/portfolio'
-/home/almostengineer/Downloads/almostengrwebsite/docs/uses.md:![My uses page entry on uses.tech](/images/2020.02.01-uses-entry.jpg)
-/home/almostengineer/Downloads/almostengrwebsite/docs/uses.md:you can check out [my blog post](/blog/2020.02.01-developer-uses-page).
-Binary file /home/almostengineer/Downloads/almostengrwebsite/docs/images/2019.05.02-20190402_101838.jpg matches
-Binary file /home/almostengineer/Downloads/almostengrwebsite/docs/images_full/2019.05.02-20190402_101838.jpg matches
-almostengineer@aeoffice:~/Downloads/almostengrwebsite/docs$ grep -i -r '](\/' $(pwd) | grep -v -e '\/blog' -e '\/contact' -e '\/about' -e '\/portfolio' -e '\/images' 
-/home/almostengineer/Downloads/almostengrwebsite/docs/uses.md:you can check out [my blog post](/blog/2020.02.01-developer-uses-page).
-almostengineer@aeoffice:~/Downloads/almostengrwebsite/docs$ grep -i -r '](\/' $(pwd) | grep -v -e '\/blog' -e '\/contact' -e '\/about' -e '\/portfolio' -e '\/images' 

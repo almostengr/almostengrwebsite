@@ -1,6 +1,5 @@
 ---
 title: Donate
-robots: noindex, nofollow
 ---
 
 To make a donation to support my YouTube channel or other content that you see me create, 

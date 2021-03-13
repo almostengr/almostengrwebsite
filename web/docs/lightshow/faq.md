@@ -55,6 +55,12 @@ Yes, there are many that exist. See the list below.
 * <a href="https://www.wsfa.com/video/2020/11/30/wetumpka-family-puts-griswold-christmas-display-th-year/" target="_blank">Wetumpka Griswold Christmas (MGM)</a>
 * <a href="https://woodardfamilylights.weebly.com/" target="_blank">Woodard Family Lights</a>
 
+### Why did you start doing this? 
+
+I wanted to do something different for Christmas. Given that the COVID-19 (Coronavirus) pandemic was happening 
+during this time, I had extra funds on hand since I was not doing much travelling during this time. I decided 
+to leverage my tech and Electrical Engineering skills and build a Christmas light show. 
+
 ## Money
 
 ### How much does it cost to run the light show? Your electric bill must be high!

@@ -1,10 +1,20 @@
 ---
 title: FAQ (Frequently Asked Questions)
 description: Frequently asked questions about this and other light shows.
+posted: 2020-12-18
+updated: 2021-03-12
+author: Kenny Robinson
 ---
 
 Here are the most common questions that are asked about the light show. Please use the navigation to jump
 to the question that you are looking for or use the search feature.
+
+## Table of Contents
+
+* [Basics](#basics)
+* [Money](#money)
+* [Technology](#technology)
+* [Resources](#resources)
 
 ## Basics
 
@@ -15,11 +25,11 @@ reaching the connections, which would result in an electrical short, thus trippi
 shutting down the show.
 
 Outlets and plugs that are not on the ground, are pointed downwards so that water cannot enter the
-socket and/or taped to prevent water from getting in.
+socket and taped to prevent water from getting in.
 
 ### What have you done in previous years?
 
-Use the navigation on the left to see the information about the displays from previous years.
+For previous year show information, see the [Resources](#resources) section.
 
 ### Are there other residential light shows?
 
@@ -36,14 +46,14 @@ Yes, there are many that exist. See the list below.
 * <a href="http://www.mosslights.com" target="_blank">Moss Lights</a>
 * <a href="https://www.christmaslightfinder.com/displays/display-details/?id=2529" target="_blank">Percivals Christmas Lights and Santaland & Clark Wannabe (MGM)</a>
 * <a href="https://riparianlights.com/" target="_blank">Riparian Lights</a>
-* <a href="https://sjlights.com" target="_blank">San Jose Lights</a>
+* <a href="http://sjlights.com" target="_blank">San Jose Lights</a>
 * <a href="https://taralights.com" target="_blank">Tara Lights (MGM)</a>
 * <a href="https://www.thechristmaslightshow.com/" target="_blank">The Christmas Light Show</a>
 * <a href="https://www.facebook.com/theminionhouse334" target="_blank">The Minion House (MGM)</a>
 * <a href="https://tzchristmas.com" target="_blank">Thyno Zgouvas' Christmas Wonderland (MGM)</a>
 * <a href="https://www.wayoffbroadwaylights.com/" target="_blank">Way Off Broadway Lights (MGM)</a>
 * <a href="https://www.wsfa.com/video/2020/11/30/wetumpka-family-puts-griswold-christmas-display-th-year/" target="_blank">Wetumpka Griswold Christmas (MGM)</a>
-* <a href="https://woodardfamilylights" target="_blank">Woodard Family Lights</a>
+* <a href="https://woodardfamilylights.weebly.com/" target="_blank">Woodard Family Lights</a>
 
 ## Money
 
@@ -86,7 +96,7 @@ Cost for controller = 0.100511 * 73.08 kWh = 7.34
 ```
 
 That means the maximum total cost of the show per week is
-Christmas season would be $7.78 or $38.90 for the entire season.
+Christmas season (or 5 weeks) would be $7.78 or $38.90 for the entire season.
 
 Now given that the light show does not have all of the lights on at any given point during the show and
 the controller is not running at maximum capacity all of the time, the
@@ -100,12 +110,12 @@ to use for this project. For those items, I used the current cost for those item
 This doesn't include the wood, nails, or paint that I used to build the control box
 or the AC lights that I already had on hand.
 
-## What are the parts that I need to build my own control box?
+### What are the parts that I need to build my own control box?
 
 ![Photo of control box](/images/lightshow/20201220presentation/20201204_120013.jpg)
 
 This is the list of the electrical related components. The full list of components will vary depending
-upon how to you choose to design your control box.
+upon how to you choose to design your control box. The prices were how much the items costed in 2020.
 
 * Fuse holders (x24) = $7.50
 * Fuses (rated 2 Amps) (x30)= $17.97
@@ -133,9 +143,8 @@ Total = $332.59
 
 #### Raspbery Pi
 
-The Falcon Pi Player is installed in the Raspberry Pi. The Rasberry Pi controls the relays, which in turn
-controls all of the lights. The Pi controls each of the 24 channels of relays via the GPIO pins on the
-Raspberry Pi.
+The Falcon Pi Player is installed on the Raspberry Pi. The Rasberry Pi controls the relays, which in turn
+controls all of the lights. The Pi controls each of the 24 channels of relays via the GPIO pins that it has.
 
 #### Christmas Lights
 
@@ -147,7 +156,7 @@ All of the relays are Solid State Relays (SSR). SSRs were used because they have
 parts and having greater reliability for being switched on and off frequently.
 
 Mechanical relays heat up from switching on an off. When done repeatedly, like during a song, the relay can
-actually over heat, self-destruct, or weld itself closed.
+actually over heat and weld itself closed.
 
 #### FM Radio Transmitter
 
@@ -180,7 +189,7 @@ For assistance with configuring or issues with Falcon Pi Player, you can post in
 
 Kdenlive is a video editing tool. It can also be used to modify audio files. The show intro audio file was
 modified with Kdenlive to have the voice over and background music on the same track. You can download
-the latest version from <a href="https://kdenlive.org/en/download" target="_blank">its website</a>.
+the latest version from <a href="https://kdenlive.org/" target="_blank">its website</a>.
 
 ### Song updates are posted to Twitter. How does that work?
 
@@ -194,8 +203,8 @@ that project.
 Below are resources to additional information about various products and tools.
 
 * <a href="https://www.youtube.com/channel/UCby1v6Kbi8AHMkV2yMyF1MQ" target="_blank">Canispater Christmas</a>
-* <a href="http://www.falconchristmas.com" target="_blank">Falcon Christmas</a>
+* <a href="https://www.falconchristmas.com" target="_blank">Falcon Christmas</a>
 * <a href="https://www.facebook.com/groups/FalconPlayer/" target="_blank">FPP, Falcon Player Group</a>
-* <a href="https://www.facebook.comgroups/;xLights" target="_blank">Official xLights Support Group</a>
+* <a href="https://www.facebook.com/groups/xLights" target="_blank">Official xLights Support Group</a>
 * <a href="https://radio-locator.com/cgi-bin/vacant" target="_blank">Radio Locator, find vacant radio channels</a>
 * <a href="https://ttstool.com" target="_blank">TTS Tool, for text to speech recordings</a>

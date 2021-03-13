@@ -28,7 +28,8 @@ You can watch this years light show below or
 <a href="https://www.youtube.com/watch?v=fs6Lx8ySL9Y&feature=youtu.be" target="_blank">on YouTube</a>.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fs6Lx8ySL9Y" frameborder="0"
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
 
 ## More Information
 
@@ -39,9 +40,9 @@ This year's show has:
 
 ### Rain Delay
 
-During times of heavy rain, or in the worse case snow, the light show may be stopped to reduce the
+During times of heavy rain or severe weather the light show may be stopped to reduce the
 chance of electrical shorts occurring. If the show is cancelled, it is asked that you revisit
-another evening after the rain has cleared.
+another evening after the weather has cleared.
 
 ### Show Playlist (Approximately 15 minutes)
 

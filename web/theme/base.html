@@ -181,6 +181,9 @@
               {% if page and page.meta.posted %}
               posted on {{ page.meta.posted }}
               {% endif %}
+              {% if page and page.meta.updated %}
+              last updated on {{ page.meta.updated }}
+              {% endif %}
               {% if page and page.meta.author and page.meta.authorurl %}
               by <a href="{{ page.meta.authorurl|url }}" target="_blank">{{ page.meta.author | striptags }}</a>
               {% elif page and page.meta.author %}

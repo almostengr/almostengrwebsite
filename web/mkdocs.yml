@@ -121,6 +121,9 @@ theme:
     - url: /lightshow
       name: Christmas Light Show  
       icon: bi bi-lightbulb
+    - url: /falconpimonitor
+      name: Falcon Pi Monitor
+      icon: bi bi-cpu-fill
     - url: /trafficpi
       name: Traffic Pi
       icon: bi bi-stoplights

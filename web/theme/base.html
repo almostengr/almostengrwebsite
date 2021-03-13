@@ -120,10 +120,15 @@
         </li>
         {% endfor %}
       </ul>
-      <form class="form-inline mt-2 mt-md-0" action="https://www.google.com/search" method="GET">
-        <input type="hidden" name="q" value="site:thealmostengineer.com" />
-        <input type="text" name="q" alt="Search" placeholder="Search with Google" title="Search"
-          class="form-control mr-3" />
+      <!-- <form class="form-inline mt-2 mt-md-0" action="https://www.google.com/search" method="GET"> -->
+      <form class="form-inline mt-2 mt-md-0">
+        <!-- <input type="hidden" name="q" value="site:thealmostengineer.com" /> -->
+        <!-- <input type="text" name="q" alt="Search" placeholder="Search with Google" title="Search"
+          class="form-control mr-3" /> -->
+        <!-- <input class="md-toggle" data-md-toggle="search" type="text" id="mkdocs-search-query" autocomplete="off"> -->
+        <!-- <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search"
+          autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query"
+          data-md-state="active" required=""> -->
         <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
       </form>
     </div>
@@ -149,6 +154,8 @@
     </div>
     {% endfor %}
     {% endif %}
+
+
     <main role="main" class="container">
       <div class="row">
         <div class="col-sm-12 col-md-9 blog-main">
@@ -208,6 +215,22 @@
             {%- endfor -%}
           </p>
           <div class="content">
+
+            {% if page and page.url == "search2/" %}
+            <form>
+              <div class="row">
+                <!-- <div class="col-10"> -->
+                  <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query"
+                    title="Type search term here">
+                <!-- </div> -->
+                <!-- <div class="col-2 text-right">
+                  <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+                </div> -->
+              </div>
+              <div id="mkdocs-search-results"></div>
+            </form>
+            {% endif %}
+
             {%- block content %}
             {{ page.content }}
             {%- endblock %}
@@ -324,6 +347,14 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
   <script async src="/js/theme.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
+  <!-- <script async src="https://unpkg.com/lunr/lunr.js"></script> -->
+  <!-- <script src="/search/lunr.js" async></script> -->
+  <script>
+    var getUrl = window.location;
+    var base_url = getUrl.protocol + "//" + getUrl.host + "/";
+    console.log("base url: " + base_url);
+  </script>
+  <script src="/search/main.js" defer></script>
   <!-- Build Date UTC : {{ build_date_utc }} -->
 </body>
 

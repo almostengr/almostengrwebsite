@@ -182,3 +182,4 @@ plugins:
       minify_html: true
   - search:
       lang: en
+      min_search_length: 3

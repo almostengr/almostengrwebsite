@@ -120,10 +120,7 @@
         </li>
         {% endfor %}
       </ul>
-      <form class="form-inline mt-2 mt-md-0" action="https://www.google.com/search" method="GET">
-        <input type="hidden" name="q" value="site:thealmostengineer.com" />
-        <input type="text" name="q" alt="Search" placeholder="Search with Google" title="Search"
-          class="form-control mr-3" />
+      <form class="form-inline mt-2 mt-md-0" action="/search2">
         <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
       </form>
     </div>
@@ -149,6 +146,8 @@
     </div>
     {% endfor %}
     {% endif %}
+
+
     <main role="main" class="container">
       <div class="row">
         <div class="col-sm-12 col-md-9 blog-main">
@@ -167,11 +166,13 @@
             <li class="list-inline-item">&raquo; {{ page.title }}</li>
             {% endif %}
           </ul>
+
           {% if page and page.meta.title %}
           <h1 class="blog-post-title">
             {{ page.meta.title }}
           </h1>
           {% endif %}
+
           <p class="text-center blog-post-meta text-secondary">
             <em>
               {% if page and page.meta.author and page.meta.posted %}
@@ -179,6 +180,9 @@
               {% endif %}
               {% if page and page.meta.posted %}
               posted on {{ page.meta.posted }}
+              {% endif %}
+              {% if page and page.meta.updated %}
+              last updated on {{ page.meta.updated }}
               {% endif %}
               {% if page and page.meta.author and page.meta.authorurl %}
               by <a href="{{ page.meta.authorurl|url }}" target="_blank">{{ page.meta.author | striptags }}</a>
@@ -211,6 +215,16 @@
             {%- block content %}
             {{ page.content }}
             {%- endblock %}
+
+            {% if page and page.url == "search2/" %}
+            <form>
+              <label for="mkdocs-search-query">What are you looking for?</label>
+              <input type="search" class="form-control" placeholder="What are you looking for?" id="mkdocs-search-query"
+                name="mkdocs-search-query" title="Type search term here">
+            </form>
+            <p></p>
+            <div id="mkdocs-search-results"></div>
+            {% endif %}
 
             {% if page and page.meta.keywords %}
             <p class="text-muted">
@@ -322,7 +336,9 @@
   <script>window.jQuery || document.write('<script src="/js/vendor/jquery.slim.min.js"><\/script>')</script>
   <script async src="/js/bootstrap.bundle.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-  <script async src="/js/theme.min.js"></script>
+  <script src="/js/theme.min.js" defer></script>
+  <script>let getUrl = window.location; var base_url = getUrl.protocol + "//" + getUrl.host + "/";</script>
+  <script src="/search/main.js" defer></script>
   <script>hljs.initHighlightingOnLoad();</script>
   <!-- Build Date UTC : {{ build_date_utc }} -->
 </body>

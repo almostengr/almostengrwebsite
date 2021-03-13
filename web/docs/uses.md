@@ -99,6 +99,7 @@ that I post on my YouTube channel.
 * [GitHub Actions](https://github.com/features/actions) for automated builds and deployment (CI/CD) of website
 * [Google Custom Search](https://cse.google.com/cse/) for searching content on the website
 * [InMotion Hosting](https://partners.inmotionhosting.com/c/2382527/260033/4222) for website hosting
+* [Lunr.js](https://lunrjs.com/) for website search
 * [Markdown](https://www.markdownguide.org/) for website content
 * [MkDocs](https://mkdocs.org) for static website generation
 

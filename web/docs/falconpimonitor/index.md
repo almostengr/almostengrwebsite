@@ -6,7 +6,17 @@ This project is designed for Falcon Pi Player to provide updates via Twitter on 
 you are running. Those updates include posting the current song and providing alerts when problems
 are detected.
 
-This application is ONLY designed to run on Falcon Pi Players that are installed on Raspberry Pi.
+This application is ONLY designed to run on Falcon Pi Players that are installed on Raspberry Pi, but it 
+may be possible to run it on Beagle Bone Black (BBB).
+
+## Table of Contents
+
+* [How Does It Work](#how-does-it-work)
+* [Source Code](#source-code)
+* [Installation Instructions](#installation-instructions)
+* [Twitter Examples](#twitter-examples)
+* [Known Bugs](#known-bugs)
+* [Questions or Comments](#questions-comments)
 
 ## How Does It Work
 
@@ -133,6 +143,11 @@ in the log that HttpRequestException is not repeating in the logs after 2 or 3 a
 
 Log entries are duplicated after project refactoring. Issue #11 has been opened to track the work on 
 this effort.
+
+### Issue Queue
+
+See the [Issues queue](https://github.com/almostengr/falconpimonitor/issues) for any other bugs 
+that have been identified.
 
 ## Questions / Comments
 

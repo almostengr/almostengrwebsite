@@ -74,7 +74,8 @@ to clean up.
 ### No Toys
 
 Sometime ago, while digging in the garden, I found tennis ball. Tried to give the dog the tennis ball, but
-he was not feeling it. Bought a couple of other toys and he was not feeling them... at all.
+he was not feeling it. Bought a couple of other toys and he was not feeling them... at all. So much 
+for entertainment.
 
 ### Walks
 
@@ -90,7 +91,9 @@ not fully sure.
 
 My neighbor mentioned that because he always like to follow me around and to be snuggled next to me or
 in my presence, that he was probably a persons' lap dog. Furthermore, I am thinking that the dog
-probably was owned by somebody that was retired or always had a person at home. Given that it was
+probably was owned by somebody that was retired or always had a person at home. Given that, I will have to 
+break him of that habit by going into rooms and closing the door and placing him in the kennel while 
+I'm working from home.
 
 ### Other Dogs
 
@@ -101,7 +104,8 @@ neighbors dog barking at him, he ignored it and continued to explore this new te
 ### Commands
 
 There are some commands that he does understand. Majority of the commands, he does not understand. Will
-probably do some training in order for him to learn more vocabulary.
+probably do some training in order for him to learn more vocabulary and maybe the same commands in a 
+different language.
 
 ### Barking
 

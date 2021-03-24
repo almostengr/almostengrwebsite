@@ -36,22 +36,25 @@ probably would have responded to the posts that I had made about him after about
 responding to my post, they would have made their own post stating they were looking for him.
 
 Also took him to a local vet to see if he had a microchip. They scanned him and he did not have one.
-Since he did not have one, the vet that I took him too would not keep him. The humane shelter does take
+Since he did not have one, the vet that I took him to would not keep him. The humane shelter does take
 animals that do not have chips, but I was talked out of taking him there.
 
 ## Training The New Human
 
-This has definitely been a learning moment. Seeking advice from other dog owners, seeing what his habits are,
+This has definitely been a learning experience. Seeking advice from other dog owners, seeing what his habits are,
 and learning his food preferences are just some of the things that I have had to do. Learning how to
-understand a animal that cannot speak your language does require a different skillset. Here's what I have
+understand an animal that cannot speak your language does require a different skillset. Here's what I have
 learned thus far.
 
 ### Food
 
 He does not like dry dog food. It at least needs to be wet or mixed with wet food. Found this out through trial
 and error. Initially when I tried to get him to eat, he sniffed the dry food
-and that was it. The next attempt, I hand fed him and he ate a few more bites. Multiple people suggested that
-you mix the wet with the dry.
+and that was it. The next attempt, I hand fed him dry food and he ate a few more bites. Multiple people suggested that
+you mix the wet with the dry. Thus I have been doing that since.
+
+I have been plotting on building a pet feeder. That being said, wet food will not work well in a automated
+feeder and thus that automated feeder idea is still on the drawing board.
 
 From discussions, dry food is better for the dog than wet, because wet food has a tendency to stick to
 the dogs teeth. Who knew? I sure did not before that.
@@ -81,19 +84,22 @@ for entertainment.
 
 He does enjoy walks. Often times, he is the one leading the way down the path. Only problem that I have
 noticed is that when walking in the neighborhood, he stops at every other mailbox to mark his territory.
+I don't mind the occasional stop, but when you are trying to get a walk in during a lunch break and still
+be able to eat, time is of the essence.
 
 ### Older Dog
 
-He is an older based on the gray hair around his feed and mouth and what others have mentioned. How old,
-not fully sure.
+He is an older based on the gray hair around his feed and mouth and what others have mentioned. How old?
+not fully sure. That wisdom does make it easier to manage him as he does not have to be taught the 
+very basics.
 
 ### Lap Dog
 
-My neighbor mentioned that because he always like to follow me around and to be snuggled next to me or
+My neighbor mentioned that because he always like to follow me around, to be snuggled next to me or
 in my presence, that he was probably a persons' lap dog. Furthermore, I am thinking that the dog
 probably was owned by somebody that was retired or always had a person at home. Given that, I will have to 
 break him of that habit by going into rooms and closing the door and placing him in the kennel while 
-I'm working from home.
+I am working from home.
 
 ### Other Dogs
 
@@ -118,7 +124,8 @@ something that he has seen before. He has managed to stay clear of it when it ru
 
 ## Conclusion
 
-Today is day 3, National Puppy Day. Of course I had no idea about this day since I am not a pet owner.
+Today is day 3 of having a dog. Oddly, it is also
+National Puppy Day. Of course I had no idea about this day since I am not a pet owner.
 It seems though that now I am a dog owner, as said by a number of people who have seen me with him.
 
 Since the dog did not have a collar, after talking with my significant other, he will henceforth be

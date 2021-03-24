@@ -122,3 +122,6 @@ named "Buddy". Now to continue learning Buddy and his habits.
 
 If the owner does not come forth, then I will
 eventually get him taken to a vet to get checked out and see if he needs any treatments.
+
+Still haven't figured out what type of dog Buddy is. Based on his features and color, he's probably a mix 
+between a rat terrier, mini pinscher, and one other breed.

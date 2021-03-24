@@ -48,8 +48,8 @@
   {%- endblock %}
 
   {% if page and page.meta.image %}
-  <meta property="og:image" content="{{ page.meta.image }}" />
-  <meta name="twitter:image" content="{{ page.meta.image }}" />
+  <meta property="og:image" content="{{ page.meta.image | url }}" />
+  <meta name="twitter:image" content="{{ page.meta.image | url }}" />
   {% endif %}
 
   {% if page and page.meta.keywords %}
@@ -63,7 +63,7 @@
   {% endif %}
 
   {% if page and page.meta.youtube %}
-  <meta property="og:video" content="{{ page.meta.youtube }}" />
+  <meta property="og:video" content="{{ page.meta.youtube | url }}" />
   {% endif %}
 
   {% if page and page.meta.robots %}

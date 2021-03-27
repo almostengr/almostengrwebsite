@@ -81,7 +81,7 @@ theme:
       - type: youtube
         url: https://www.youtube.com/channel/UC4HCouBLtXD1j1U_17aBqig?sub_confirmation=1
         name: YouTube
-        icon: bi bi-youtube"
+        icon: bi bi-youtube
     - title: LINKS
       links:
       - url: /lightshow

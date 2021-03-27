@@ -133,6 +133,9 @@ theme:
     - url: /gardening
       name: Gardening
       icon: bi bi-flower1
+    - url: /lifestyle
+      name: Lifestyle
+      icon: bi bi-person
     - url: /resources
       name: Resources
       icon: bi bi-bookshelf

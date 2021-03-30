@@ -8,6 +8,7 @@ description: Project build using a Raspberry Pi to control a retired traffic lig
 ## Table of Contents
 
 * [Purpose](#purpose)
+* [Activities](#activities)
 * [Parts List](#parts-list)
 * [Source Code](#source-code)
 * [Pin Setup](#pin-setup)
@@ -29,6 +30,11 @@ to educate future engineers about the impact that computers and computer program
 society. This project targets the "T, E, and M" of "STEM" by using electronic circuits
 for controlling the lights, software for controlling the electronic circuits, and
 mathematical calculations for making timing decisions.
+
+## Activities
+
+There is a [classroom activity](/trafficpi/exercise)
+that can be done with students to demonstrate the importance of programming coding the traffic light correctly.
 
 ### Teach Software Versioning
 
@@ -218,5 +224,5 @@ seen at
 <a href="https://www.youtube.com/watch?v=xqZRDtX64UA" target="_blank">https://www.youtube.com/watch?v=xqZRDtX64UA</a>
 influenced this project.
 * Wifi AP configuration steps provided by
-<a href="https://pimylifeup.com/raspberry-pi-wireless-access-point/" 
+<a href="https://pimylifeup.com/raspberry-pi-wireless-access-point/"
 target="_blank">https://pimylifeup.com/raspberry-pi-wireless-access-point/</a>

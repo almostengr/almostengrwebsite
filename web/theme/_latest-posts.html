@@ -45,3 +45,18 @@
 {% endif %}
 {% endfor %}
 <hr />
+
+<h2 class="latest-posts">Latest Lifestyle Posts</h2>
+{% for nav_item in nav %}
+{% if nav_item.children and page %}
+<div class="latest-posts tab-pane active">
+    <ul class="list-unstyled">
+        {% for nav_item in nav_item.children | reverse | batch(3) | first %}
+        {% if 'lifestyle' in nav_item.url %}
+        {% include "_latest-item.html" %}
+        {% endif %}
+        {% endfor %}
+    </ul>
+</div>
+{% endif %}
+{% endfor %}

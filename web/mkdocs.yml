@@ -59,6 +59,9 @@ theme:
     - name: Speaking
       url: /speaking
       url_filter: speaking
+    - name: Lifestyle
+      url: /lifestyle
+      url_filter: lifestyle
   footernav:
     - title: SOCIAL
       links:

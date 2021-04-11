@@ -2,6 +2,8 @@
 posted: 2019-11-24 20:26:49
 Updated: 2019-11-24 20:29:56
 title: Takeaways from Christopher Robin movie
+category: Lifestyle
+author: Kenny Robinson
 ---
 
 Every year during the month of November, the church that I attend does a series where movies are used to provide examples and metaphors of the Word. This week's particular movie was "Disney's Christopher Robin". As I was in church, watching this message and movie, it spoke to me given the number of changes that were taking place in my life.

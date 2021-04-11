@@ -1,7 +1,7 @@
 ---
 title: COVID Vaccination
 description: Talk about what happen and the side effects that I experienced after getting the COVID vaccination
-category: lifestyle
+category: Lifestyle
 keywords: vaccination, covid, vaccine
 posted: 2021-04-11
 author: Kenny Robinson

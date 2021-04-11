@@ -1,5 +1,6 @@
 ---
 title: NSBE 46th National Convention - Engineering the Revolution
+category: Lifestyle
 author: Kenny Robinson
 posted: 2020-08-20
 updated: 2020-08-20

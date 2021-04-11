@@ -1,4 +1,9 @@
-# NSBE National Leadership Training 202007
+---
+title: NSBE National Leadership Training 202007
+posted: 2020-07-07
+category: Lifestyle
+author: Kenny Robinson
+---
 
 ## Comm Zone Strategic Planning Session 20200708
 

@@ -58,10 +58,10 @@ theme:
       url_filter: gardening/
     - name: Speaking
       url: /speaking
-      url_filter: speaking
+      url_filter: speaking/
     - name: Lifestyle
       url: /lifestyle
-      url_filter: lifestyle
+      url_filter: lifestyle/
   footernav:
     - title: SOCIAL
       links:
@@ -115,36 +115,36 @@ theme:
         name: Privacy
         icon: bi bi-shield-shaded
   topics:
-    - url: /handyman
-      name: DIY/Handyman
-      icon: bi bi-wrench
-    - url: /technology
-      name: Technology
-      icon: bi bi-laptop
     - url: /lightshow
       name: Christmas Light Show  
       icon: bi bi-lightbulb
     - url: /falconpimonitor
       name: Falcon Pi Monitor
       icon: bi bi-cpu-fill
-    - url: /trafficpi
-      name: Traffic Pi
-      icon: bi bi-stoplights
-    - url: /speaking
-      name: Speaking
-      icon: bi bi-megaphone-fill
     - url: /gardening
       name: Gardening
       icon: bi bi-flower1
+    - url: /handyman
+      name: Handyman
+      icon: bi bi-wrench
     - url: /lifestyle
       name: Lifestyle
       icon: bi bi-person
-    - url: /resources
-      name: Resources
-      icon: bi bi-bookshelf
     - url: /projects
       name: Projects
       icon: bi bi-journal
+    - url: /resources
+      name: Resources
+      icon: bi bi-bookshelf
+    - url: /speaking
+      name: Speaking
+      icon: bi bi-megaphone-fill
+    - url: /technology
+      name: Technology
+      icon: bi bi-laptop
+    - url: /trafficpi
+      name: Traffic Pi
+      icon: bi bi-stoplights
   courses:
     - url: https://www.youtube.com/watch?v=iujOWWbiUP0&list=PLaAJ0fv0d9WM8E2K_Ke5As-fw626yQ3tu
       name: Drupal 8 Basics

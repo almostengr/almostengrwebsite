@@ -2,6 +2,7 @@
 title: Dutch Oven Chicken
 posted: 2020-09-07
 updated: 2020-09-07
+category: Lifestyle
 author: Kenny Robinson
 description: There are many ways to cook a chicken. I show you how I do it.
 keywords: chicken, oven, cooking, dutch oven, cast iron, cast iron pot

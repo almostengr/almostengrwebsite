@@ -3,7 +3,7 @@ title: Becoming a Dog Parent
 description: Discussing things that you will have to learn when you become a dog parent
 author: Kenny Robinson
 posted: 2021-03-30
-category: lifestyle
+category: Lifestyle
 keywords: dog, pet owner, pets, pet parent, fur kid, fur baby, dog owner
 ---
 

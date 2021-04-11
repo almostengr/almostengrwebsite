@@ -1,4 +1,9 @@
-# NSBE RLC Notes 2020.09.12
+---
+title: NSBE RLC Notes 
+posted: 2020.09.12
+category: Lifestyle
+author: Kenny Robinson
+---
 
 TODO email r3chair , amazon card
 

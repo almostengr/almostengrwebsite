@@ -2,6 +2,7 @@
 title: Word of the Year 2020
 date: 2020-01-03
 description: How I went about choosing a word of the year
+category: Lifestyle
 author: Kenny Robinson
 ---
 

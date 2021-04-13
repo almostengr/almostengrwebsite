@@ -9,7 +9,7 @@ more details about that project. There are more projects listed on
 
 ## Themometer Pi (2021)
 
-Read more about [Thermometer Pi](/projects/thermometerpi)
+Read more about [Thermometer Pi](/thermometerpi)
 
 ## Falcon Pi Monitor (2021)
 

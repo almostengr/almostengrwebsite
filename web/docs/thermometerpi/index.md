@@ -13,18 +13,18 @@ description: Used a Raspberry Pi to be a thermometer that can be access by home 
 ## Project Background
 
 A common problem that exists with US home construction
-is that multiple story homes were built with a single zoned system. 
-Often times, that thermostat is on the first floor and can properly manage the temperature on the first 
-floor. However, the second floor often times gets too hot because heat rises and cold air sinks. 
+is that multiple story homes were built with a single zoned system.
+Often times, that thermostat is on the first floor and can properly manage the temperature on the first
+floor. However, the second floor often times gets too hot because heat rises and cold air sinks.
 
-Several houses in the neighborhood have window AC units installed in the rooms on the upper floor of their 
-house and so do I. The thing about the window units is that they do not have thermometers on them that will 
-accurately keep the room cool. Thus I built a .NET Core application that will read the temperature 
-from a sensor connected to a Raspberry Pi and post it to the Home Assistant API. Home Assistant will then 
+Several houses in the neighborhood have window AC units installed in the rooms on the upper floor of their
+house and so do I. The thing about the window units is that they do not have thermometers on them that will
+accurately keep the room cool. Thus I built a .NET Core application that will read the temperature
+from a sensor connected to a Raspberry Pi and post it to the Home Assistant API. Home Assistant will then
 use that data to trigger automations, like turning on an off the window AC unit.
 
-I have several Rapsberry Pi that are used in my home and used as television set top boxes. Instead of 
-purchasing additional devices to detect temperature, I decided to get some one-wire temperature sensors that 
+I have several Rapsberry Pi that are used in my home and used as television set top boxes. Instead of
+purchasing additional devices to detect temperature, I decided to get some one-wire temperature sensors that
 can be connected to the Raspberry Pi that is already in the rooms that I want to monitor.
 
 ## Components Used
@@ -38,13 +38,13 @@ can be connected to the Raspberry Pi that is already in the rooms that I want to
 
 ## Code
 
-The application was build using .NET Core 3.1 Worker Service. The application will run the command to get the 
+The application was build using .NET Core 3.1 Worker Service. The application will run the command to get the
 data from the temperature sensor. After getting the data, then it makes a call to Home Assistant API that
 provides the temperature as a state to a sensor named of your chosing.
 
 The code is available on my [GitHub repository](https://github.com/almostengr/themometerpi).
 
-## The Setup 
+## The Setup
 
 Here's how I did it...
 
@@ -52,8 +52,13 @@ Here's how I did it...
 * Install an operating system of your choosing on your Raspberry Pi (OSMC was installed on mine)
 * Copy the ThermometerPi files to the Raspberry Pi
 * Configure the appsettings.json file to point to your Home Assistant instance. Also need the HA Token
+* Perform the [first run steps](/thermometerpi/firstrun) to configure the temperature sensor
 * Set up the ThermometerPi as a system service
 * Start the service
 * Set up automations in Home Assistant using the sensor
 
 Eventually will do a walkthrough video on how I did my setup.
+
+## Additional Resources
+
+[https://martybugs.net/electronics/tempsensor/usb.cgi](https://martybugs.net/electronics/tempsensor/usb.cgi)

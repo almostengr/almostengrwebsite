@@ -1,10 +1,15 @@
 ---
 title: Projects
+description: List of projectst that I have worked on.
 ---
 
 Below is a list of some of the projects that I have worked on in the past. Click the project below to see 
 more details about that project. There are more projects listed on
 [my GitHub page](https://github.com/almostengr/).
+
+## Themometer Pi (2021)
+
+Read more about [Thermometer Pi](/projects/thermometerpi)
 
 ## Falcon Pi Monitor (2021)
 

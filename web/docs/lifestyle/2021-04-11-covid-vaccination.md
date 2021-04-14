@@ -4,6 +4,7 @@ description: Talk about what happen and the side effects that I experienced afte
 category: Lifestyle
 keywords: vaccination, covid, vaccine
 posted: 2021-04-11
+updated: 2021-04-13
 author: Kenny Robinson
 ---
 
@@ -71,6 +72,19 @@ my body does seem to be responding properly to the vaccine. Thus why staying hyd
 vaccinated is important as the body cannot flush the bad stuff out of your system if you do not
 put new stuff (e.g. water) into your system.
 
+### Day Four
+
+Soreness at the injection site has majority, like 95% gone away. If I press really hard, then I can feel 
+some soreness. Lymph node is still swollen, but it does seem to be going down. 
+
+### Day Five
+
+Lymph node can be found if deeply searched for and is kinda swollen, but it is still decreasing. All feels 
+like before the vaccine. 
+
 ## Conclusion
 
-I will continue to post updates here as the side effects and symptoms evolve. 
+This was an interesting experience. I figured that I would share mine as others can have some sense 
+of what they could experience if they choose to get vaccinated. There are a number of factors that come 
+into play such as your current health condition and lifestyle, that determine whether you will have very 
+few or a lot of side effects from the vaccine.

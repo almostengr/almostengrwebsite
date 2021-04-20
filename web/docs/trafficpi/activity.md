@@ -1,5 +1,5 @@
 ---
-title: Traffic Control Classroom Exercise
+title: Traffic Control Classroom Activity
 keywords: traffic, traffic light, traffic light, programmer exercise
 ---
 

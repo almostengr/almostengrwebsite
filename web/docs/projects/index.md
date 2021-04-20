@@ -11,15 +11,15 @@ more details about that project. There are more projects listed on
 
 Read more about [Thermometer Pi](/thermometerpi)
 
-## Falcon Pi Monitor (2021)
+## Falcon Pi Twitter (2020)
 
 ![Screenshot of tweets from the application](/images/lightshow/20201220presentation/twittertweets.jpg)
 
-Read more about [Falcon Pi Monitor project](/falconpimonitor)
+Read more about [Falcon Pi Twitter project](/falconpitwitter)
 
 ## Christmas Light Show (2020)
 
-![House with Christmast lights illuminated](/images/lightshow/2020 Christmas Light Show 20201211-f000000.jpg)
+![House with Christmas lights illuminated](/images/lightshow/2020 Christmas Light Show 20201211-f000000.jpg)
 
 Read more about [Christmas Light Show project](/lightshow)
 

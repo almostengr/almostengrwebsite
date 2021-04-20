@@ -5,20 +5,6 @@ description: Project build using a Raspberry Pi to control a retired traffic lig
 
 ![Traffic light](/images/portfolio_trafficlight2.jpg)
 
-## Table of Contents
-
-* [Purpose](#purpose)
-* [Activities](#activities)
-* [Parts List](#parts-list)
-* [Source Code](#source-code)
-* [Pin Setup](#pin-setup)
-* [Initial Setup](#initial-setup)
-* [Running the Scripts](#running-the-scripts)
-* [Uninstall Script](#uninstall-script)
-* [Bug Reports and Road Map](#bug-reports-and-road-map)
-* [Known Bugs](#known-bugs)
-* [Acknowledgements](#acknowledgements)
-
 ## Purpose
 
 The purpose of this project is to educate children about the STEM (Science, Technology,
@@ -31,10 +17,17 @@ society. This project targets the "T, E, and M" of "STEM" by using electronic ci
 for controlling the lights, software for controlling the electronic circuits, and
 mathematical calculations for making timing decisions.
 
-## Activities
+## Table of Contents
 
-There is a [classroom activity](/trafficpi/exercise)
-that can be done with students to demonstrate the importance of programming coding the traffic light correctly.
+* [Purpose](#purpose)
+* [Classroom Activity](/trafficpi/activity)
+* [Parts List](#parts-list)
+* [Source Code](#source-code)
+* [Pin Setup](#pin-setup)
+* [Initial Setup](#initial-setup)
+* [Running the Scripts](#running-the-scripts)
+* [Uninstall Script](#uninstall-script)
+* [Acknowledgements](/trafficpi/acknowledgements)
 
 ### Teach Software Versioning
 
@@ -52,12 +45,6 @@ and turn off each light as well as include a delay in between each light change.
 
 ![Image of Versioning](/images/trafficpi/versioning.jpg)
 
-### Video Demonstration
-
-Video demonstration of version 1.0 of the project is available to be watched at
-<a href="https://www.youtube.com/watch?v=lr_ZJNX0viM" target="_blank">https://www.youtube.com/watch?v=lr_ZJNX0viM</a>.
-This version of the demonstration of the traffic light working
-with an LCD screen connected.
 
 ## Parts List
 
@@ -116,13 +103,7 @@ Visual of Pin Connections to Relay Board
 
 ![Image of connections on Raspberry Pi board](/images/trafficpi/circuitry.jpg)
 
-## Demostrations and Video Discusssions
 
-These demostration videos show the traffic in one of several operating modes.
-
-[Raspberry PI Traffic Light Controller Demonstration](https://www.youtube.com/watch?v=lr_ZJNX0viM)
-
-[Discussing the Traffic Light Code](https://www.youtube.com/watch?v=ZyBnWOX3wGE)
 
 ## Initial Setup
 
@@ -215,14 +196,3 @@ Run the program by calling the executable. This filename will be the name of you
 
 * If your app does not run, make sure that execute permissions have been set for all roles (755).
 
-## Acknowledgements
-
-* LCD Display code for controlling the LCD display were provided from
-<a href="https://github.com/the-raspberry-pi-guy/lcd" target="_blank">https://github.com/the-raspberry-pi-guy/lcd</a>.
-* Attempts to replicate the Traffic Light Simulation created by Samuel Vidal
-seen at
-<a href="https://www.youtube.com/watch?v=xqZRDtX64UA" target="_blank">https://www.youtube.com/watch?v=xqZRDtX64UA</a>
-influenced this project.
-* Wifi AP configuration steps provided by
-<a href="https://pimylifeup.com/raspberry-pi-wireless-access-point/"
-target="_blank">https://pimylifeup.com/raspberry-pi-wireless-access-point/</a>

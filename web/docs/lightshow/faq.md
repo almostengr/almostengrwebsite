@@ -1,9 +1,6 @@
 ---
 title: FAQ (Frequently Asked Questions)
 description: Frequently asked questions about this and other light shows.
-posted: 2020-12-18
-updated: 2021-03-12
-author: Kenny Robinson
 ---
 
 Here are the most common questions that are asked about the light show. Please use the navigation to jump
@@ -55,11 +52,11 @@ Yes, there are many that exist. See the list below.
 * <a href="https://www.wsfa.com/video/2020/11/30/wetumpka-family-puts-griswold-christmas-display-th-year/" target="_blank">Wetumpka Griswold Christmas (MGM)</a>
 * <a href="https://woodardfamilylights.weebly.com/" target="_blank">Woodard Family Lights</a>
 
-### Why did you start doing this? 
+### Why did you start doing this?
 
-I wanted to do something different for Christmas. Given that the COVID-19 (Coronavirus) pandemic was happening 
-during this time, I had extra funds on hand since I was not doing much travelling during this time. I decided 
-to leverage my tech and Electrical Engineering skills and build a Christmas light show. 
+I wanted to do something different for Christmas. Given that the COVID-19 (Coronavirus) pandemic was happening
+during this time, I had extra funds on hand since I was not doing much travelling during this time. I decided
+to leverage my tech and Electrical Engineering skills and build a Christmas light show.
 
 ## Money
 
@@ -75,7 +72,7 @@ See [Do The Math](#long-answer-do-the-math) for the breakout and how this cost w
 
 #### Long Answer - Do The Math
 
-With all lights turned on (2130 LEDs were used for the 2020 Light Show), it pulls 130 Watts.
+With all lights turned on (2,130 LEDs were used for the 2020 Light Show), it pulls 130 Watts.
 The show controller and components can pull a maximum of 305 Watts.
 Thus the show in total can use 435 (130 + 305) Watts maximum.
 
@@ -87,7 +84,7 @@ Electric companies measure the amount of electricity that you use in kilowatt-ho
 To convert W (Watts) to kWh (kilowatt-hours), you have to compute the lights and controller separately
 since they are on for different durations.
 
-```shell
+```text
 E(kWh lights) = P(W) × t(hr) / 1000 = 130 Watts * 33.5 hours / 1000 = 4.355 kWh
 
 E(kWh controller) = P(W) × t(hr) / 1000 = 435 Watts * 168 hours / 1000 = 73.08 kWh
@@ -95,14 +92,21 @@ E(kWh controller) = P(W) × t(hr) / 1000 = 435 Watts * 168 hours / 1000 = 73.08 
 
 The rate for electricity (in 2020) during the winter months (Oct-May) is $0.100511 per kWh.
 
-```shell
+```text
 Cost for lights = 0.100511 * 4.355 kWh = 0.44
 
 Cost for controller = 0.100511 * 73.08 kWh = 7.34
 ```
 
-That means the maximum total cost of the show per week is
-Christmas season (or 5 weeks) would be $7.78 or $38.90 for the entire season.
+Since we have the cost for each group of components, we can compute the cost per week and per season.
+
+```text
+Cost per week = $0.44 + $7.34 = $7.78
+
+Cost per season (5 weeks) = $7.78 * 5 = $38.90
+```
+
+That means the maximum total cost of the show per week is $7.78 and cost for the season is $38.90.
 
 Now given that the light show does not have all of the lights on at any given point during the show and
 the controller is not running at maximum capacity all of the time, the
@@ -110,7 +114,7 @@ actual cost is less than the above mentioned amount.
 
 ### You built a control box for your show. How much did that cost?
 
-A total of $332.59.
+A total of $332.59 (all purchased in 2020).
 I did have some items already on hand from existing projects that I was able
 to use for this project. For those items, I used the current cost for those items.
 This doesn't include the wood, nails, or paint that I used to build the control box
@@ -124,7 +128,7 @@ This is the list of the electrical related components. The full list of componen
 upon how to you choose to design your control box. The prices were how much the items costed in 2020.
 
 * Fuse holders (x24) = $7.50
-* Fuses (rated 2 Amps) (x30)= $17.97
+* Fuses (rated 2 Amps) (x30) = $17.97
 * 8-channel solid state relays (x2) = $9.33
 * SPT-2 male plugs (x25) = $23.99
 * SPT-2 female plugs (x25) = $23.99
@@ -197,9 +201,17 @@ Kdenlive is a video editing tool. It can also be used to modify audio files. The
 modified with Kdenlive to have the voice over and background music on the same track. You can download
 the latest version from <a href="https://kdenlive.org/" target="_blank">its website</a>.
 
+#### Falcon Pi Twitter
+
+[Falcon Pi Twitter](/falconpitwitter)
+is a custom .NET Core application written in C#. The application serves as a bridge
+between the Falcon Pi Player and Twitter. As the show plays, the song information is pulled from the
+Falcon Pi Player and then posted as a tweet on Twitter. You can find out more information about this
+project by visiting the [project page](/falconpitwitter).
+
 ### Song updates are posted to Twitter. How does that work?
 
-See the [Falcon Pi Monitor](/falconpimonitor) page for more information about
+See the [Falcon Pi Twitter](/falconpitwitter) page for more information about
 that project.
 
 ## Resources

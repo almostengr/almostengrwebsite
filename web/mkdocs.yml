@@ -118,8 +118,8 @@ theme:
     - url: /lightshow
       name: Christmas Light Show  
       icon: bi bi-lightbulb
-    - url: /falconpimonitor
-      name: Falcon Pi Monitor
+    - url: /falconpitwitter
+      name: Falcon Pi Twitter
       icon: bi bi-cpu-fill
     - url: /gardening
       name: Gardening

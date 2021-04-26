@@ -10,6 +10,8 @@ You may read up on why I swtiched my blog from Drupal to MkDocs in my
 To find out the full information about the technology used on my website, you can visit the
 [uses page](https://thealmostengineer.com/uses).
 
+Automated tests are run have deployment. Those test use C# and Selenium WebDriver.
+
 ## Resources
 
 Below are some of the content that I referenced when building the technical aspects of this website

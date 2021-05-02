@@ -77,6 +77,15 @@ The show controller and components can pull a maximum of 305 Watts.
 Thus the show in total can use 435 (130 + 305) Watts maximum.
 
 The lights run for 33.5 hours per week (Sunday through Thursday, 4.5 hours; Friday and Saturday, 5.5 hours).
+
+```text
+Sun through Thurs hours = 4.5 hours * 5 days = 22.5 hours
+
+Fri and Sat hours = 5.5 hours * 2 days = 11 hours
+
+11 + 22.5 = 33.5 hours
+```
+
 The show runs for 5 weeks during the Christmas season.
 The controller runs 168 hours per week (24 hours per day).
 

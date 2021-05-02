@@ -30,12 +30,10 @@ theme:
       name: Handyman
     - url: /gardening
       name: Gardening
+    - url: https://www.youtube.com/channel/UC4HCouBLtXD1j1U_17aBqig?sub_confirmation=1
+      name: YouTube
     - url: /projects
       name: Projects
-    - url: /resources
-      name: Resources
-    - url: /uses
-      name: Uses
   # sitemessage:
   #   - heading: heading
   #     detail: detail
@@ -85,26 +83,51 @@ theme:
         url: https://www.youtube.com/channel/UC4HCouBLtXD1j1U_17aBqig?sub_confirmation=1
         name: YouTube
         icon: bi bi-youtube
-    - title: LINKS
+    - title: BLOG
       links:
-      - url: /lightshow
-        name: Christmas Light Show  
-        icon: bi bi-lightbulb
-      - url: /trafficpi
-        name: Traffic Pi
-        icon: bi bi-stoplights
-      - url: /about
-        name: About
-        icon: bi bi-file-person-fill
-      - url: /uses
-        name: Uses
-        icon: bi bi-tools
       - url: /technology
         name: Technology
         icon: bi bi-journal-text
       - url: /handyman
         name: Handyman
         icon: bi bi-journal-text
+      - url: /gardening
+        name: Gardening
+        icon: bi bi-journal-text
+      - url: /lifestyle
+        name: Lifestyle
+        icon: bi bi-journal-text
+    - title: PROJECTS
+      links:
+      - url: /lightshow
+        name: Christmas Light Show  
+        icon: bi bi-lightbulb
+      - url: /falconpitwitter
+        name: Falcon Pi Twitter
+        icon: bi bi-cpu-fill
+      - url: /projects
+        name: Projects (All)
+        icon: bi bi-journal
+      - url: /resources
+        name: Resources
+        icon: bi bi-bookshelf
+      - url: /speaking
+        name: Speaking
+        icon: bi bi-megaphone-fill
+      - url: /trafficpi
+        name: Traffic Pi
+        icon: bi bi-stoplights
+    - title: LINKS
+      links:
+      - url: https://www.youtube.com/watch?v=iujOWWbiUP0&list=PLaAJ0fv0d9WM8E2K_Ke5As-fw626yQ3tu
+        name: Drupal 8 Basics Course
+        icon: bi bi-camera-video-fill
+      - url: /about
+        name: About
+        icon: bi bi-file-person-fill
+      - url: /uses
+        name: Uses
+        icon: bi bi-tools
       - url: /contact
         name: Contact
         icon: bi bi-person-lines-fill

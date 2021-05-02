@@ -7,9 +7,5 @@ function externalLinks() {
         }
     }
 }
-function getBaseUrl() {
-    let getUrl = window.location;
-    var base_url = getUrl.protocol + "//" + getUrl.host + "/";
-}
+
 externalLinks();
-getBaseUrl();

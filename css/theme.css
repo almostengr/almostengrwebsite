@@ -210,3 +210,7 @@ h2>a, h3>a {
 .text-secondary>a:hover {
   color: #000000 !important;
 }
+
+.jumbotext a{
+  color: var(--dark-gray);
+}

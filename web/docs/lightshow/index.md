@@ -44,8 +44,9 @@ To find out more about the light show, including previous years show information
 scenes looks, visit one of the pages listed below.
 
 * <a href="https://twitter.com/hplightshow" target="_blank">Light Show Twitter Page</a>
-* [Falcon Pi Twitter](/falconpitwitter)
+* [Falcon Pi Twitter](/falconpitwitter) which reads the song data from FPP and posts it to Twitter
 * [2020 Christmas Light Show Details](/lightshow/2020christmas)
+* <a href="https://www.youtube.com/watch?v=5sm_wmnRPDs" target="_blank">Behind The Scenes of the 2020 Christmas Light Show</a>
 * [Building A Christmas Light Show Control Box (Presentation 2020-12-20)](/lightshow/20201220presentation)
 * [2019 Christmas Light Show Details](/lightshow/2019christmas)
 * [FAQs (Frequently Asked Questions)](/lightshow/faq)

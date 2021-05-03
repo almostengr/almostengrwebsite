@@ -52,6 +52,18 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display", Georgia, "Times New Roman", serif;
 }
 
+h1 {
+  border-bottom: solid var(--dark-red) 3px;
+}
+
+h2 {
+  border-bottom: solid var(--dark-gray) 3px;
+}
+
+h2 a, h2>a, h2 a:hover, aside a, h3>a, .blog-list-item a {
+  text-decoration: none;
+}
+
 .display-4 {
   font-size: 2.5rem;
 }
@@ -167,14 +179,6 @@ main a, main a:hover {
   text-decoration: underline;
 }
 
-aside a {
-  text-decoration: none;
-}
-
-.blog-list-item a {
-  text-decoration: none;
-}
-
 footer a, footer a:hover {
   color: var(--gray);
 }
@@ -199,10 +203,6 @@ h2.latest-posts {
   border-bottom: solid 4px var(--dark-red);
 }
 
-h2>a, h3>a {
-  text-decoration: none;
-}
-
 .text-secondary>a {
   color: #6c757d !important;
 }
@@ -211,6 +211,6 @@ h2>a, h3>a {
   color: #000000 !important;
 }
 
-.jumbotext a{
+.jumbotext a {
   color: var(--dark-gray);
 }

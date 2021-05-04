@@ -7,6 +7,10 @@ Below is a list of some of the projects that I have worked on in the past. Click
 more details about that project. There are more projects listed on
 [my GitHub page](https://github.com/almostengr/).
 
+## Ecobee Status Monitor (2021)
+
+Read more about [Ecobee Status Monitor](/ecobeestatus) project.
+
 ## Themometer Pi (2021)
 
 Read more about [Thermometer Pi](/thermometerpi)

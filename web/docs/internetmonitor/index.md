@@ -4,14 +4,14 @@ Reboots the DD-WRT router when there are no WiFi clients connected to it.
 
 ## Table of Contents
 
-[Background](#background)
-[Solution](#solution)
-[Technology](#the-technology)
-[Checking Job Log](#checking-job-log)
-[Create System Service on Ubuntu 20.04](#create-system-service-on-ubuntu-20.04)
-[Remove System Service on Ubuntu 20.04](#remove-system-service-on-ubuntu-20.04)
+* [Problem](#problem)
+* [Solution](#solution)
+* [Technology](#the-technology)
+* [Checking Job Log](#checking-job-log)
+* [Create System Service on Ubuntu 20.04](#create-system-service-on-ubuntu-2004)
+* [Remove System Service on Ubuntu 20.04](#remove-system-service-on-ubuntu-2004)
 
-## Background
+## Problem
 
 My router would occasionally disconnect any of the wireless clients that were connected to it. Since
 I have wired and wireless devices connected, some of the time I would not know that the wifi had

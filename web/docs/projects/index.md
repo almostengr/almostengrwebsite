@@ -1,22 +1,31 @@
 ---
 title: Projects
+description: List of projectst that I have worked on.
 ---
 
 Below is a list of some of the projects that I have worked on in the past. Click the project below to see 
 more details about that project. There are more projects listed on
 [my GitHub page](https://github.com/almostengr/).
 
-## Falcon Pi Twitter (2021)
+## Ecobee Status Monitor (2021)
+
+Read more about [Ecobee Status Monitor](/ecobeestatus) project.
+
+## Themometer Pi (2021)
+
+Read more about [Thermometer Pi](/thermometerpi)
+
+## Falcon Pi Twitter (2020)
 
 ![Screenshot of tweets from the application](/images/lightshow/20201220presentation/twittertweets.jpg)
 
-Read more about [Falcon Pi Twitter project](/falconpimonitor)
+Read more about [Falcon Pi Twitter project](/falconpitwitter)
 
 ## Christmas Light Show (2020)
 
-![House with Christmast lights illuminated](/images/lightshow/2020 Christmas Light Show 20201211-f000000.jpg)
+![House with Christmas lights illuminated](/images/lightshow/2020 Christmas Light Show 20201211-f000000.jpg)
 
-Read more about [Christmas Light Show project](/projects/lightshow)
+Read more about [Christmas Light Show project](/lightshow)
 
 ## Kdenlive to YouTube (2019)
 
@@ -24,7 +33,7 @@ Read more about [Kdenlive to YouTube project](/projects/kdenlivetoyoutube)
 
 ## Raspberry Pi Traffic Light Control (2018)
 
-Read more about [Raspberry Pi Traffic Light Control project](/projects/trafficpi)
+Read more about [Raspberry Pi Traffic Light Control project](/trafficpi)
 
 ## Home Automation with Home Assistant (2017)
 

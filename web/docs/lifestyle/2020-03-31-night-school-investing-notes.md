@@ -1,6 +1,6 @@
 ---
 title: Night School Investing Notes
-category: lifestyle
+category: Lifestyle
 posted: 2020-03-31
 updated: 2020-08-30
 keywords: investing, finances, financial advice, stock market

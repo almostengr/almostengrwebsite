@@ -1,4 +1,9 @@
-# Notes from session @theblackupstart about writing book during quarantine
+---
+title: Notes from session @theblackupstart about writing book during quarantine
+category: Lifestyle
+author: Kenny Robinson
+posted: 2020-04-05
+---
 
 * iamashcash was the speaker
 

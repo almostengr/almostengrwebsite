@@ -2,6 +2,8 @@
 posted: 2019-07-03 11:49:56
 updated: 2020-02-01 16:16:16
 title: Squirrels Taught Me About Women and Food
+category: Lifestyle
+author: Kenny Robinson
 ---
 
 ![My Girlfriend Is Not Hungry on Restaurant Menu](/images/2019.07.03-65887135-3254981701240750-4923646209148583936-n-1562075980.jpg)

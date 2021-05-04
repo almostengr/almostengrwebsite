@@ -1,4 +1,4 @@
 ---
-title: DIY / Handyman
+title: Handyman
 description: Articles thatand videos discussing on to do things around the house and car yourself.
 ---

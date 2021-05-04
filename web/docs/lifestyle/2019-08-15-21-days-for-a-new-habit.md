@@ -2,6 +2,8 @@
 posted: 2019-08-15 22:40:33
 updated: 2020-02-01 11:50:01
 title: 21 Days for a New Habit
+category: Lifestyle
+author: Kenny Robinson
 ---
 
 ## Background

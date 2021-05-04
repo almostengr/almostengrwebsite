@@ -7,4 +7,5 @@ function externalLinks() {
         }
     }
 }
+
 externalLinks();

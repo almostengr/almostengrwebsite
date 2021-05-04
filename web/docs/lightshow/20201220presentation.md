@@ -70,7 +70,7 @@ image: /images/lightshow/2020 Christmas Light Show 20201211-f000000.jpg
 * .NET Core application using C#
 * Reads data from FPP and posts to Twitter
 * <a href="https://twitter.com/hpchristmas" target="_blank">@hpchristmas on Twitter</a>
-* <a href="https://github.com/almostengr/falconpimonitor" target="_blank">Source Code</a>
+* <a href="https://github.com/almostengr/falconpitwitter" target="_blank">Source Code</a>
 
 ![Screenshot of tweets from the application](/images/lightshow/20201220presentation/twittertweets.jpg)
 

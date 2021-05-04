@@ -1,5 +1,8 @@
 ﻿---
 title: McGill University Personal Finance Essentials
+category: Lifestyle
+author: Kenny Robinson
+posted: 2019-12-26
 ---
 
 ![](/images/2019.12.26-mcgil university.png)

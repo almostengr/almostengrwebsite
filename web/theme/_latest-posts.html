@@ -1,9 +1,10 @@
-<h2 class="latest-posts">Latest Technology Posts</h2>
+<h2 class="latest-posts">Latest Blog Posts</h2>
+
 {% for nav_item in nav %}
 {% if nav_item.children and page %}
 <div class="latest-posts tab-pane active">
     <ul class="list-unstyled">
-        {% for nav_item in nav_item.children | reverse | batch(3) | first %}
+        {% for nav_item in nav_item.children | reverse | batch(1) | first %}
         {% if 'technology' in nav_item.url %}
         {% include "_latest-item.html" %}
         {% endif %}
@@ -14,12 +15,11 @@
 {% endfor %}
 <hr />
 
-<h2 class="latest-posts">Latest Handyman Posts</h2>
 {% for nav_item in nav %}
 {% if nav_item.children and page %}
 <div class="latest-posts tab-pane active">
     <ul class="list-unstyled">
-        {% for nav_item in nav_item.children | reverse | batch(3) | first %}
+        {% for nav_item in nav_item.children | reverse | batch(1) | first %}
         {% if 'handyman' in nav_item.url %}
         {% include "_latest-item.html" %}
         {% endif %}
@@ -30,12 +30,11 @@
 {% endfor %}
 <hr />
 
-<h2 class="latest-posts">Latest Gardening Posts</h2>
 {% for nav_item in nav %}
 {% if nav_item.children and page %}
 <div class="latest-posts tab-pane active">
     <ul class="list-unstyled">
-        {% for nav_item in nav_item.children | reverse | batch(3) | first %}
+        {% for nav_item in nav_item.children | reverse | batch(1) | first %}
         {% if 'gardening' in nav_item.url %}
         {% include "_latest-item.html" %}
         {% endif %}
@@ -45,3 +44,17 @@
 {% endif %}
 {% endfor %}
 <hr />
+
+{% for nav_item in nav %}
+{% if nav_item.children and page %}
+<div class="latest-posts tab-pane active">
+    <ul class="list-unstyled">
+        {% for nav_item in nav_item.children | reverse | batch(1) | first %}
+        {% if 'lifestyle' in nav_item.url %}
+        {% include "_latest-item.html" %}
+        {% endif %}
+        {% endfor %}
+    </ul>
+</div>
+{% endif %}
+{% endfor %}

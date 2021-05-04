@@ -1,63 +1,55 @@
 ---
-title: Raspberry Pi Traffic Light Controller
+title: Raspberry Pi Traffic Light Controller (TrafficPi)
+description: Project build using a Raspberry Pi to control a retired traffic light.
 ---
+
+![Traffic light](/images/portfolio_trafficlight2.jpg)
+
+## Purpose
+
+The purpose of this project is to educate children about the STEM (Science, Technology,
+Engineering, and Mathematics) fields. Through the use of low cost devices and effective
+teaching, children are able to associate what they are learning with interactions with
+everyday items. For example, most future engineers are aware of the purpose of a traffic light,
+but most are not aware of a traffic lights' internal workings. This project is designed
+to educate future engineers about the impact that computers and computer programming has with
+society. This project targets the "T, E, and M" of "STEM" by using electronic circuits
+for controlling the lights, software for controlling the electronic circuits, and
+mathematical calculations for making timing decisions.
 
 ## Table of Contents
 
 * [Purpose](#purpose)
+* [Classroom Activity](/trafficpi/activity)
 * [Parts List](#parts-list)
+* [Source Code](#source-code)
 * [Pin Setup](#pin-setup)
 * [Initial Setup](#initial-setup)
 * [Running the Scripts](#running-the-scripts)
 * [Uninstall Script](#uninstall-script)
-* [Bug Reports and Road Map](#bug-reports-and-road-map)
-* [Known Bugs](#known-bugs)
-* [Acknowledgements](#acknowledgements)
-* [License](#license)
-
-----
-
-## Purpose 
-
-The purpose of this project is to educate children about the STEM (Science, Technology, 
-Engineering, and Mathematics) fields. Through the use of low cost devices and effective 
-teaching, children are able to associate what they are learning with interactions with 
-everyday items. For example, most future engineers are aware of the purpose of a traffic light, 
-but most are not aware of a traffic lights' internal workings. This project is designed 
-to educate future engineers about the impact that computers and computer programming has with
-society. This project targets the "T, E, and M" of "STEM" by using electronic circuits 
-for controlling the lights, software for controlling the electronic circuits, and 
-mathematical calculations for making timing decisions.
+* [Acknowledgements](/trafficpi/acknowledgements)
 
 ### Teach Software Versioning
 
-One of the goals of this project is to be able to teach the next generation of 
-engineers about the programming, software versioning, and how valuable engineers and 
-technologists are to society and the impact that they have. 
+One of the goals of this project is to be able to teach the next generation of
+engineers about the programming, software versioning, and how valuable engineers and
+technologists are to society and the impact that they have.
 A game was developed to be combined with this project to teach about software versioning,
-how sometimes Software Developers don't get it right the first time, and the 
-negative impact that can occur if they don't get it right the first time. 
+how sometimes Software Developers don't get it right the first time, and the
+negative impact that can occur if they don't get it right the first time.
 
-Below is the image of a group of future engineers working their way to developing the 
+Below is the image of a group of future engineers working their way to developing the
 psuedocode for a normal traffic cycle. As shown in the first version, all of the lights turned
-on but never turned off.  In the final version, they figured out that they had to turn on 
-and turn off each light as well as include a delay in between each light change. 
+on but never turned off.  In the final version, they figured out that they had to turn on
+and turn off each light as well as include a delay in between each light change.
 
 ![Image of Versioning](/images/trafficpi/versioning.jpg)
 
-### Video Demonstration
-
-Video demonstration of version 1.0 of the project is available to be watched at 
-<a href="https://www.youtube.com/watch?v=lr_ZJNX0viM" target="_blank">https://www.youtube.com/watch?v=lr_ZJNX0viM</a>. 
-This version of the demonstration of the traffic light working 
-with an LCD screen connected.
-
-----
 
 ## Parts List
 
-Below are the list of parts used for this project. You'll need to choose one of 
-the mentioned options below depending on your budget. Using LEDs is cheaper than 
+Below are the list of parts used for this project. You'll need to choose one of
+the mentioned options below depending on your budget. Using LEDs is cheaper than
 getting an actual traffic light.
 
 * <a href="https://www.amazon.com/gp/product/B01CD5VC92/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B01CD5VC92&linkCode=as2&tag=almostengr-20&linkId=b25e1b38c2c187404a50b967837af72b" target="_blank">Raspiberry Pi 3</a> (May work on other models, but has only been tested on Raspberry Pi 3)
@@ -82,17 +74,21 @@ getting an actual traffic light.
 * <a href="https://www.amazon.com/gp/product/B00KTEN3TM/ref=as_li_tl?ie=UTF8&tag=almostengr-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B00KTEN3TM&linkId=1178d5b941f8f41f5bc23fc6da317cf0" target="_blank">Relay board(s) with at least 3 channels</a>
 * Traffic Light
 
-----
+## Source Code
+
+The source code for this project can be downloaded from GitHub at
+<a href="https://github.com/almostengr/raspitraffic-stem" target="_blank">
+https://github.com/almostengr/raspitraffic-stem</a>.
 
 ## Pin Setup
 
 Below is the mapping for the connections to the Raspberry Pi. The Pin numbers
-listed are the physical pin numbers on the board, not the GPIO pin numbers. If 
-you are not using a relay board, the connections can be made directly to a 
+listed are the physical pin numbers on the board, not the GPIO pin numbers. If
+you are not using a relay board, the connections can be made directly to a
 breadboard with LEDs connected.
 
 Pi Pin (Board) | GPIO | Device Connection
--------------- | ---- | -----------------
+-- |  | -
 2 | -- | LCD Display VCC (+5V)
 3 | -- | LCD Display SDA
 4 | -- | Relay Board VCC (+5V)
@@ -107,48 +103,36 @@ Visual of Pin Connections to Relay Board
 
 ![Image of connections on Raspberry Pi board](/images/trafficpi/circuitry.jpg)
 
-----
 
-## Demostrations and Video Discusssions 
-
-These demostration videos show the traffic in one of several operating modes. 
-
-[Raspberry PI Traffic Light Controller Demonstration](https://www.youtube.com/watch?v=lr_ZJNX0viM)
-
-[Discussing the Traffic Light Code](https://www.youtube.com/watch?v=ZyBnWOX3wGE)
-
-----
 
 ## Initial Setup
 
-### Install Raspbian 
+### Install Raspbian
 
-You will need to install Raspbian on your SD. Once you have completed this install, 
-Then you can insert the SD card into the Raspberry Pi and power it on. 
+You will need to install Raspbian on your SD. Once you have completed this install,
+Then you can insert the SD card into the Raspberry Pi and power it on.
 
-To install Raspbian using Ubuntu, I made a video tutorial which you can watch 
+To install Raspbian using Ubuntu, I made a video tutorial which you can watch
 at [https://www.youtube.com/watch?v=Wy1_MWWlkNI](https://www.youtube.com/watch?v=Wy1_MWWlkNI).
 
 ### Install Script
 
-In the ```scripts``` directory, run the ```install.sh``` script 
+In the ```scripts``` directory, run the ```install.sh``` script
 as root user. This will install of the required software and python packages.
 
 ### Update Apache Configuration
 
 Search for the file containing "PrivateTmp=true". This file should be in your /etc
 directory. Change this value to ```PrivateTmp=false```. Then restart Apache.
-You may use 
+You may use
 
 ```sh
 cd /etc/
 grep -R "PrivateTmp=true" *
 ```
 
-to search for the file that contains this value. Once grep returns the file name, 
+to search for the file that contains this value. Once grep returns the file name,
 edit the file and make the stated change.
-
-----
 
 ## Running The Scripts
 
@@ -158,22 +142,20 @@ To control the traffic light, run the raspitraffic.py script via command line.
 python raspitraffic.py
 ```
 
-Then visit the webpage to your TrafficPi in a web browser. A form will be 
-presented with a list of programs to select from. Select the program you wish to 
-run and click the "Submit" button. 
+Then visit the webpage to your TrafficPi in a web browser. A form will be
+presented with a list of programs to select from. Select the program you wish to
+run and click the "Submit" button.
 
-If a program is already running, the newly selected program will start once the end of 
-the current program has been reached. If no program has been selected, the newly 
+If a program is already running, the newly selected program will start once the end of
+the current program has been reached. If no program has been selected, the newly
 selected program will start immediately.
 
 ### Pseudocode Program
 
-The Pseudocode Program allows you to write your own program for controlling the traffic 
+The Pseudocode Program allows you to write your own program for controlling the traffic
 light. On the Control Panel webpage, enter each command that you want the light
-to perform on a line by itself in the "Pseudocode Commands" textbox. The list of 
+to perform on a line by itself in the "Pseudocode Commands" textbox. The list of
 commands are listed on the Control Panel webpage below the textbox.
-
-----
 
 ## Move and Run Code on the Pi
 
@@ -210,21 +192,7 @@ Run the program by calling the executable. This filename will be the name of you
 ./rpidotnet
 ```
 
-## Troubleshooting 
+## Troubleshooting
 
 * If your app does not run, make sure that execute permissions have been set for all roles (755).
 
-## Acknowledgements
-
-* LCD Display code for controlling the LCD display were provided from 
-<a href="https://github.com/the-raspberry-pi-guy/lcd" target="_blank">https://github.com/the-raspberry-pi-guy/lcd</a>.
-* Attempts to replicate the Traffic Light Simulation created by Samuel Vidal 
-seen at <a href="https://www.youtube.com/watch?v=xqZRDtX64UA" target="_blank">https://www.youtube.com/watch?v=xqZRDtX64UA</a> influenced this project.
-* Wifi AP configuration steps provided by 
-<a href="https://pimylifeup.com/raspberry-pi-wireless-access-point/" target="_blank">https://pimylifeup.com/raspberry-pi-wireless-access-point/</a>
-
-----
-
-## License
-
-See LICENSE for more details.

@@ -3,6 +3,8 @@ posted: 2019-06-13 12:58:19
 updated: 2020-02-01 11:42:47
 keywords: stuck, confusion,
 title: 3 Benefits of Doing Something Different When Stuck
+category: Lifestyle
+author: Kenny Robinson
 ---
 
 ![Pedestrain Crosswalk Button](/images/2019.06.13-blur-button-car-1827232.jpg)

@@ -1,5 +1,6 @@
 ﻿---
 title: Mega Zip at Red Mountain Park
+category: Lifestyle
 author: Kenny Robinson
 description: Read about my recent visit to the Red Mountain Park in Birmingham, Alabama
 posted: 2020.02.19

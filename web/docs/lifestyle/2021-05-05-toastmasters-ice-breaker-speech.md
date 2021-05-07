@@ -70,8 +70,8 @@ some of the points in case you run short on time.
 
 I titled my speech "Dr. Jekyll and Mr. Hyde" after the novel. Reason being is that I had a coaching 
 call with Ryan Cox earlier in the year. In our discussion, he mentioned that I had a Dr. Jekyll 
-and Mr. Hyde way of things. That I am known for working wtih technology, but also known 
-for being a handyman and do it yourselfer. Those are commonly to distinct categories, but I have 
+and Mr. Hyde way of things. That I am known for working with technology, but also known 
+for being a handyman and do it yourselfer. Those are commonly two distinct categories, but I have 
 an unique skillset that merges the both of them together. Following this title, I used those 
 two different personalities and skillsets to be my first and second main points in my speech. 
 From there, I connect the two main points by using my third main point as both of those roles 

@@ -45,7 +45,6 @@ and turn off each light as well as include a delay in between each light change.
 
 ![Image of Versioning](/images/trafficpi/versioning.jpg)
 
-
 ## Parts List
 
 Below are the list of parts used for this project. You'll need to choose one of
@@ -102,8 +101,6 @@ Pi Pin (Board) | GPIO | Device Connection
 Visual of Pin Connections to Relay Board
 
 ![Image of connections on Raspberry Pi board](/images/trafficpi/circuitry.jpg)
-
-
 
 ## Initial Setup
 
@@ -195,4 +192,3 @@ Run the program by calling the executable. This filename will be the name of you
 ## Troubleshooting
 
 * If your app does not run, make sure that execute permissions have been set for all roles (755).
-

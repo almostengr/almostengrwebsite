@@ -25,8 +25,7 @@ which does not permit posting tweets.
 * Add the key, secrets, and token that you got from your Twitter developer account to the appsettings.json file.
 See the [Configuration](/falconpitwitter/configuration#example-appsettingsjson-file) page 
 for explainations and details.
-* Create a [system service](/falconpitwitter/systemservice) that will run the applicaton on startup. 
-    * NOTE: If you do not want to create a system service, then you can create cronjob that will run the automation on startup. See [Creating Cronjob](/falconpitwitter/cronjob) for explaination.
+* Create a [system service](/falconpitwitter/systemservice) that will run the applicaton on startup.
 * Reboot your Raspberry Pi
 * Once the Pi has come back online, log in and check the log file to confirm that the monitor has started. 
 You should see output similar to the below near the beginning of the log file.
@@ -38,4 +37,3 @@ Connected to Twitter as hplightshow
 The "Connected to Twitter" message in the log file, confirms that your account has been properly configured
 to access Twitter. If there are exception messages in the log, double check the configuration file and your 
 internet connection.
-

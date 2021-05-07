@@ -12,7 +12,6 @@ may be possible to run it on Beagle Bone Black (BBB).
 ## Table of Contents
 
 * [Getting Started](/falconpitwitter/gettingstarted)
-* [Run As Cron Job](/falconpitwitter/cronjob)
 * [Configuration](/falconpitwitter/configuration)
 * [Twitter Examples](#twitter-examples)
 * [Known Bugs](/falconpitwitter/knownbugs)

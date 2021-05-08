@@ -58,4 +58,5 @@ expand them by applying them to something different than what I am used to.
 
 Please file an [Issue on the repo](https://github.com/almostengr/falconpitwitter/issues)
 if you have questions, comments, or bug reports about this application.
-You may also reach out to the developer via Twitter [@almostengr](https://twitter.com/almostengr).
+You may also reach out to the developer via Twitter [@almostengr](https://twitter.com/almostengr) or 
+[@hplightshow](https://twitter.com/hplightshow).

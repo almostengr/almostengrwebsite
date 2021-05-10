@@ -57,6 +57,6 @@ expand them by applying them to something different than what I am used to.
 ## I have a question not answered. Where do I ask it?
 
 Please file an [Issue on the repo](https://github.com/almostengr/falconpitwitter/issues)
-if you have questions, comments, or bug reports about this application.
+with your comment, question, or bug report.
 You may also reach out to the developer via Twitter [@almostengr](https://twitter.com/almostengr) or 
 [@hplightshow](https://twitter.com/hplightshow).

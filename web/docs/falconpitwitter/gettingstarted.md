@@ -7,7 +7,7 @@ title: Getting Started
 In order to use Falcon Pi Twitter, you will need to have 
 
 * an internet connection
-* a Twitter developer account
+* a <a href="https://developer.twitter.com" target="_blank">Twitter developer account</a>
 * Falcon Pi Player version 4 (confirmed working with version 4.6.1)
 
 ## Installation Steps
@@ -16,12 +16,12 @@ In order to use Falcon Pi Twitter, you will need to have
 that is available in zip or tar format.
 * Copy the archive file to your Falcon Pi Player instance(s).
 * Extract the archive file contents. Ideally extract them to a folder in the /home/fpp directory.
-* Login to your [Twitter Developer account](https://developer.twitter.com/).
+* Login to your <a href="https://developer.twitter.com" target="_blank">Twitter Developer Account</a>.
 * Once your account is approved, create a project. 
 Within that project, create Consumer Key (aka API Key), Consumer Secret (aka API Secret), Access Token and Access Secret.
 Also within that project, update the App Permissions to "Read and Write". By default, permissions are "Read", 
 which does not permit posting tweets.
-* Copy [appsettings.template.json](falconpitwitter/configuration) to [appsettings.json](/falconpitwitter/configuration).
+* Copy [appsettings.template.json](/falconpitwitter/configuration) to [appsettings.json](/falconpitwitter/configuration).
 * Add the key, secrets, and token that you got from your Twitter developer account to the appsettings.json file.
 See the [Configuration](/falconpitwitter/configuration#example-appsettingsjson-file) page 
 for explainations and details.

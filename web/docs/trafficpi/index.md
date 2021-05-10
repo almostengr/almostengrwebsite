@@ -51,26 +51,24 @@ Below are the list of parts used for this project. You'll need to choose one of
 the mentioned options below depending on your budget. Using LEDs is cheaper than
 getting an actual traffic light.
 
-* <a href="https://www.amazon.com/gp/product/B01CD5VC92/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B01CD5VC92&linkCode=as2&tag=almostengr-20&linkId=b25e1b38c2c187404a50b967837af72b" target="_blank">Raspiberry Pi 3</a> (May work on other models, but has only been tested on Raspberry Pi 3)
-* <a href="https://www.amazon.com/gp/product/B00MARDJZ4/ref=as_li_tl?ie=UTF8&tag=almostengr-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B00MARDJZ4&linkId=d8a07d1f200ba168b5fd5a49d4bb8afa" target="_blank">Raspiberry Pi power supply</a>
-* <a href="https://amzn.to/2IcYREu" target="_blank">Micro SD card</a> (to run the OS and store project files)
-* <a href="https://amzn.to/2tfNnpE" target="_blank">USB keyboard</a> (mouse optional)
+* <a href="https://www.amazon.com/gp/product/B07BC7BMHY/ref=as_li_tl?ie=UTF8&tag=rhtservicesll-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B07BC7BMHY&linkId=b51d201ecdca3bed2a84249448d0dd4f" target="_blank">Raspiberry Pi 3 Kit</a> (May work on other models, but has only been tested on Raspberry Pi 3)
+* <a href="https://www.amazon.com/gp/product/B08GYKNCCP/ref=as_li_tl?ie=UTF8&tag=rhtservicesll-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B08GYKNCCP&linkId=1e440b7afda77da0a25f2af4d65b8b6a" target="_blank">Micro SD card</a> (to run the OS and store project files)
+* <a href="https://www.amazon.com/gp/product/B07RQVB3HQ/ref=as_li_tl?ie=UTF8&tag=rhtservicesll-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B07RQVB3HQ&linkId=8452f5455a39f35597424dcc8a2ae388" target="_blank">USB keyboard</a> (mouse optional)
 * HDMI display
-* <a href="https://www.amazon.com/gp/product/B07D83DY17/ref=as_li_tl?ie=UTF8&tag=almostengr-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B07D83DY17&linkId=e283038ab1f79e840b5d893586a38e19" target="_blank">I2C 16x2 LCD Display</a>
-* <a href="https://www.amazon.com/gp/product/B07GD2BWPY/ref=as_li_tl?ie=UTF8&tag=almostengr-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B07GD2BWPY&linkId=c3042114933e20a073b88c0947756efd" target="_blank">Breadboard Jumper Cables</a>
-* <a href="https://www.amazon.com/gp/product/B01EV6LJ7G/ref=as_li_tl?ie=UTF8&tag=almostengr-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B01EV6LJ7G&linkId=d6d36ad3de7629f3e963d620893c4ee3" target="_blank">Breadboard</a> (optional)
+* <a href="https://www.amazon.com/gp/product/B07GD25V8D/ref=as_li_tl?ie=UTF8&tag=rhtservicesll-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B07GD25V8D&linkId=ea5fb3393909abe778b518e808e674d5" target="_blank">Breadboard Jumper Cables</a>
+* <a href="https://www.amazon.com/gp/product/B07PCJP9DY/ref=as_li_tl?ie=UTF8&tag=rhtservicesll-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B07PCJP9DY&linkId=dca65d5d374944f5c1d213924d2fb183" target="_blank">Breadboard</a> (optional)
 * Python 2.7.9 (May work with later versions, but has only been tested with 2.7.9)
 * Raspbian Jessie, Stretch, or Buster (May work on other OSs, but has only been tested with Raspbian Jessie)
 
 ### LED Option
 
-* <a href="https://www.amazon.com/gp/product/B0765NKCZ4/ref=as_li_tl?ie=UTF8&tag=almostengr-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B0765NKCZ4&linkId=0beb817f2435922b5666155b94430ecc" target="_blank">Red LED</a>
-* <a href="https://www.amazon.com/gp/product/B0765NKCZ4/ref=as_li_tl?ie=UTF8&tag=almostengr-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B0765NKCZ4&linkId=0beb817f2435922b5666155b94430ecc" target="_blank">Yellow LED</a>
-* <a href="https://www.amazon.com/gp/product/B0765NKCZ4/ref=as_li_tl?ie=UTF8&tag=almostengr-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B0765NKCZ4&linkId=0beb817f2435922b5666155b94430ecc" target="_blank">Green LED</a>
+* <a href="https://www.amazon.com/gp/product/B06XPV4CSH/ref=as_li_tl?ie=UTF8&tag=rhtservicesll-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B06XPV4CSH&linkId=ab8747a23cf5b35f3e83190c54cacd36" target="_blank">Red LED</a>
+* <a href="https://www.amazon.com/gp/product/B06XPV4CSH/ref=as_li_tl?ie=UTF8&tag=rhtservicesll-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B06XPV4CSH&linkId=ab8747a23cf5b35f3e83190c54cacd36" target="_blank">Yellow LED</a>
+* <a href="https://www.amazon.com/gp/product/B06XPV4CSH/ref=as_li_tl?ie=UTF8&tag=rhtservicesll-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B06XPV4CSH&linkId=ab8747a23cf5b35f3e83190c54cacd36" target="_blank">Green LED</a>
 
 ### Real Traffic Light Option
 
-* <a href="https://www.amazon.com/gp/product/B00KTEN3TM/ref=as_li_tl?ie=UTF8&tag=almostengr-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B00KTEN3TM&linkId=1178d5b941f8f41f5bc23fc6da317cf0" target="_blank">Relay board(s) with at least 3 channels</a>
+* <a href="https://www.amazon.com/gp/product/B00KTEN3TM/ref=as_li_tl?ie=UTF8&tag=rhtservicesll-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B00KTEN3TM&linkId=581b0fc60dcc9f3ddc5645b8eb20029a" target="_blank">Relay board(s) with at least 3 channels</a>
 * Traffic Light
 
 ## Source Code

@@ -18,5 +18,5 @@ matrix:
     - src
     - target
   sources:
-  - 'docs/**/*.md'
+  - 'web/docs/**/*.md'
   default_encoding: utf-8

@@ -5,18 +5,6 @@ description: Project build using a Raspberry Pi to control a retired traffic lig
 
 ![Traffic light](/images/portfolio_trafficlight2.jpg)
 
-## Purpose
-
-The purpose of this project is to educate children about the STEM (Science, Technology,
-Engineering, and Mathematics) fields. Through the use of low cost devices and effective
-teaching, children are able to associate what they are learning with interactions with
-everyday items. For example, most future engineers are aware of the purpose of a traffic light,
-but most are not aware of a traffic lights' internal workings. This project is designed
-to educate future engineers about the impact that computers and computer programming has with
-society. This project targets the "T, E, and M" of "STEM" by using electronic circuits
-for controlling the lights, software for controlling the electronic circuits, and
-mathematical calculations for making timing decisions.
-
 ## Table of Contents
 
 * [Purpose](#purpose)
@@ -28,6 +16,18 @@ mathematical calculations for making timing decisions.
 * [Running the Scripts](#running-the-scripts)
 * [Uninstall Script](#uninstall-script)
 * [Acknowledgements](/trafficpi/acknowledgements)
+
+## Purpose
+
+The purpose of this project is to educate children about the STEM (Science, Technology,
+Engineering, and Mathematics) fields. Through the use of low cost devices and effective
+teaching, children are able to associate what they are learning with interactions with
+everyday items. For example, most future engineers are aware of the purpose of a traffic light,
+but most are not aware of a traffic lights' internal workings. This project is designed
+to educate future engineers about the impact that computers and computer programming has with
+society. This project targets the "T, E, and M" of "STEM" by using electronic circuits
+for controlling the lights, software for controlling the electronic circuits, and
+mathematical calculations for making timing decisions.
 
 ### Teach Software Versioning
 
@@ -74,8 +74,8 @@ getting an actual traffic light.
 ## Source Code
 
 The source code for this project can be downloaded from GitHub at
-<a href="https://github.com/almostengr/raspitraffic-stem" target="_blank">
-https://github.com/almostengr/raspitraffic-stem</a>.
+<a href="https://github.com/almostengr/trafficpi" target="_blank">
+https://github.com/almostengr/trafficpi</a>.
 
 ## Pin Setup
 

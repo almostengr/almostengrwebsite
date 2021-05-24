@@ -13,6 +13,7 @@ description: Project build using a Raspberry Pi to control a retired traffic lig
 * [Source Code](#source-code)
 * [Pin Setup](#pin-setup)
 * [Initial Setup](#initial-setup)
+* [System Service](#system-service)
 * [Running the Scripts](#running-the-scripts)
 * [Uninstall Script](#uninstall-script)
 * [Acknowledgements](/trafficpi/acknowledgements)
@@ -77,7 +78,17 @@ The source code for this project can be downloaded from GitHub at
 <a href="https://github.com/almostengr/trafficpi" target="_blank">
 https://github.com/almostengr/trafficpi</a>.
 
-## Pin Setup
+## Initial Setup
+
+### Install Raspbian
+
+You will need to install Raspbian on your SD. Once you have completed this install,
+Then you can insert the SD card into the Raspberry Pi and power it on.
+
+To install Raspbian using Ubuntu, I made a video tutorial which you can watch
+at [https://www.youtube.com/watch?v=Wy1_MWWlkNI](https://www.youtube.com/watch?v=Wy1_MWWlkNI).
+
+### Pin Setup
 
 Below is the mapping for the connections to the Raspberry Pi. The Pin numbers
 listed are the physical pin numbers on the board, not the GPIO pin numbers. If
@@ -100,50 +111,12 @@ Visual of Pin Connections to Relay Board
 
 ![Image of connections on Raspberry Pi board](/images/trafficpi/circuitry.jpg)
 
-## Initial Setup
+### System Service
 
-### Install Raspbian
-
-You will need to install Raspbian on your SD. Once you have completed this install,
-Then you can insert the SD card into the Raspberry Pi and power it on.
-
-To install Raspbian using Ubuntu, I made a video tutorial which you can watch
-at [https://www.youtube.com/watch?v=Wy1_MWWlkNI](https://www.youtube.com/watch?v=Wy1_MWWlkNI).
-
-### Install Script
-
-In the ```scripts``` directory, run the ```install.sh``` script
-as root user. This will install of the required software and python packages.
-
-### Update Apache Configuration
-
-Search for the file containing "PrivateTmp=true". This file should be in your /etc
-directory. Change this value to ```PrivateTmp=false```. Then restart Apache.
-You may use
-
-```sh
-cd /etc/
-grep -R "PrivateTmp=true" *
-```
-
-to search for the file that contains this value. Once grep returns the file name,
-edit the file and make the stated change.
-
-## Running The Scripts
-
-To control the traffic light, run the raspitraffic.py script via command line.
-
-```sh
-python raspitraffic.py
-```
-
-Then visit the webpage to your TrafficPi in a web browser. A form will be
-presented with a list of programs to select from. Select the program you wish to
-run and click the "Submit" button.
-
-If a program is already running, the newly selected program will start once the end of
-the current program has been reached. If no program has been selected, the newly
-selected program will start immediately.
+To set up the application as a service, run the below commands. If you see error messages 
+when running the commands, you may need to run them with "sudo" privileges. See the 
+[System Service](/trafficpi/systemservice) page for details on how to add or remove the 
+application as a system service.
 
 ### Pseudocode Program
 
@@ -152,41 +125,10 @@ light. On the Control Panel webpage, enter each command that you want the light
 to perform on a line by itself in the "Pseudocode Commands" textbox. The list of
 commands are listed on the Control Panel webpage below the textbox.
 
-## Move and Run Code on the Pi
-
-### Software to Install on Pi
-
-Run these commands to install the necessary software on the Pi. You only need to do them once.
-
-```sh
-sudo apt-get update
-sudo apt-get install curl libunwind8 gettext apt-transport-https
-```
-
-### Publish Your App
-
-Then run the publish command on your app
-
-```sh
-dotnet publish -r linux-arm
-```
-
-### Copy the Files
-
-Then copy the files from your computer to the Pi. I used SSH for this.
-
-```sh
-scp -pr bin/Debug/netcoreapp3.1/linux-arm/publish/* pi@trafficpi://home/pi/rpidotnet
-```
-
-### Run App On Pi
+## Run App On Pi
 
 Run the program by calling the executable. This filename will be the name of your project.
 
 ```sh
-./rpidotnet
+./Almostengr.TrafficPi.Web
 ```
-
-## Troubleshooting
-
-* If your app does not run, make sure that execute permissions have been set for all roles (755).

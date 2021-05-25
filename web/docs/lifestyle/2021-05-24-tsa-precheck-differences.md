@@ -2,9 +2,9 @@
 title: TSA Pre-Check Differences in Non-Precheck Line by Airport
 description: As a registered TSA Pre-Check user, I went through the non-precheck line and noticed differences at each airport.
 author: Kenny Robinson
-posted:
+posted: 2021-05-24
 category: lifestyle
-keywords: flying in the US, flying domestic, tsa, tsa pre-check, tsa pre check, clear
+keywords: flying in the US, flying domestic, tsa, tsa pre-check, tsa pre check, clear, what is tsa pre-check, tsa precheck, tsa united states, tsa pre-screened
 ---
 
 ## Background

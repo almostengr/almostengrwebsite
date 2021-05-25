@@ -8,15 +8,15 @@ description: Project build using a Raspberry Pi to control a retired traffic lig
 ## Table of Contents
 
 * [Purpose](#purpose)
-* [Classroom Activity](/trafficpi/activity)
 * [Parts List](#parts-list)
-* [Source Code](#source-code)
 * [Pin Setup](#pin-setup)
-* [Initial Setup](#initial-setup)
-* [System Service](#system-service)
+* [Installation Instructions](/trafficpi/install)
 * [Running the Scripts](#running-the-scripts)
-* [Uninstall Script](#uninstall-script)
+* [Classroom Activity](/trafficpi/activity)
 * [Acknowledgements](/trafficpi/acknowledgements)
+* [Video Demonstration](/trafficpi/demonstration)
+* [Uninstall Instructions](/trafficpi/uninstall)
+* [Controller Technology](/trafficpi/technology)
 
 ## Purpose
 
@@ -72,63 +72,9 @@ getting an actual traffic light.
 * <a href="https://www.amazon.com/gp/product/B00KTEN3TM/ref=as_li_tl?ie=UTF8&tag=rhtservicesll-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B00KTEN3TM&linkId=581b0fc60dcc9f3ddc5645b8eb20029a" target="_blank">Relay board(s) with at least 3 channels</a>
 * Traffic Light
 
-## Source Code
-
-The source code for this project can be downloaded from GitHub at
-<a href="https://github.com/almostengr/trafficpi" target="_blank">
-https://github.com/almostengr/trafficpi</a>.
-
-## Initial Setup
-
-### Install Raspbian
-
-You will need to install Raspbian on your SD. Once you have completed this install,
-Then you can insert the SD card into the Raspberry Pi and power it on.
-
-To install Raspbian using Ubuntu, I made a video tutorial which you can watch
-at [https://www.youtube.com/watch?v=Wy1_MWWlkNI](https://www.youtube.com/watch?v=Wy1_MWWlkNI).
-
-### Pin Setup
-
-Below is the mapping for the connections to the Raspberry Pi. The Pin numbers
-listed are the physical pin numbers on the board, not the GPIO pin numbers. If
-you are not using a relay board, the connections can be made directly to a
-breadboard with LEDs connected.
-
-Pi Pin (Board) | GPIO | Device Connection
--- |  | -
-2 | -- | LCD Display VCC (+5V)
-3 | -- | LCD Display SDA
-4 | -- | Relay Board VCC (+5V)
-5 | -- | LCD Display SLC
-19 | 11 | Red Signal
-21 | 9 | Yellow Signal
-23 | 10 | Green Signal
-30 | -- | LCD Display GND
-34 | -- | Relay Board GND
-
-Visual of Pin Connections to Relay Board
-
-![Image of connections on Raspberry Pi board](/images/trafficpi/circuitry.jpg)
-
-### System Service
-
-To set up the application as a service, run the below commands. If you see error messages 
-when running the commands, you may need to run them with "sudo" privileges. See the 
-[System Service](/trafficpi/systemservice) page for details on how to add or remove the 
-application as a system service.
-
 ### Pseudocode Program
 
 The Pseudocode Program allows you to write your own program for controlling the traffic
 light. On the Control Panel webpage, enter each command that you want the light
 to perform on a line by itself in the "Pseudocode Commands" textbox. The list of
 commands are listed on the Control Panel webpage below the textbox.
-
-## Run App On Pi
-
-Run the program by calling the executable. This filename will be the name of your project.
-
-```sh
-./Almostengr.TrafficPi.Web
-```

@@ -4,14 +4,14 @@ description: As a registered TSA Pre-Check user, I went through the non-precheck
 author: Kenny Robinson
 posted: 2021-05-24
 category: lifestyle
-keywords: flying in the US, flying domestic, tsa, tsa pre-check, tsa pre check, clear, what is tsa pre-check, tsa precheck, tsa united states, tsa pre-screened
+keywords: flying in the US, flying domestic, tsa, tsa Pre-Check, tsa pre check, clear, what is tsa Pre-Check, tsa precheck, tsa united states, tsa pre-screened
 ---
 
 ## Background
 
 I took my first flights after being approved for
 <a href="https://www.tsa.gov/precheck" target="_blank">TSA Pre-Check</a>.
-I signed up early in 2020, and then boom... COVID hit. Thus I lost an entire year of pre-check because
+I signed up early in 2020, and then boom... COVID hit. Thus I lost an entire year of Pre-Check because
 it was not safe to travel with a lot of other people.
 Since I was not traveling by myself, I
 chose not to use the dedicated Pre-Check line that is available at the airport. My experience
@@ -56,7 +56,7 @@ TSA and that airport's governing body.
 I believe due to COVID and probably other reasons, 
 <a href="http://atl.com/" target="_blank">ATL</a> was doing a modified version of
 security screening. This version,
-they gave everyone the pre-check protocol for going through security. This means able to keep
+they gave everyone the Pre-Check protocol for going through security. This means able to keep
 shoes and jackets on. Also not having to unload larger electronics out of your bag. They had people go
 through the metal detector as well as the body scanner. From what I could tell, there was not a method to
 how they determined what device you went though.
@@ -80,26 +80,29 @@ After scanning my boarding pass and the agent verifying my ID, I was given a red
 laminated card 
 (<a href="https://flysea.org/" target="_blank">SEA</a>) or piece of paper 
 (<a href="https://www.flydenver.com/" target="_blank">DEN</a>)
-that identified me as being pre-check. Thus I was able to go through the general security checkpoint
-and get the benefits of pre-check like not having to take my shoes off, being able to keep
+that identified me as being Pre-Check approved. Thus I was able to go through the general security checkpoint
+and get the benefits of Pre-Check like not having to take my shoes off, being able to keep
 my jacket on, and going through the metal detector instead of the body scanner.
 Only thing that it did not get me was access to a shorter security line.
 
 ## Pre-Check at Chicago-Midway International Airport (MDW)
 
-There was no modified measures here. The TSA agent at the gate asked if I knew that I had pre-check on my
+There was no modified measures here. The TSA agent at the gate asked if I knew that I had Pre-Check on my
 boarding pass. I told her that I did and that some of the other airports would give you a card
 that noted it if you were flying with others. She said that they did not do that at 
 <a href="https://www.flychicago.com/midway/home/pages/default.aspx" target="_blank">MDW</a> and that I would
-be subjected to the same rules since I was going through the general security checkpoint.
-That was not music to my ears, but the band played on. It happened that they had some older people
-go through the body scanner, which resulted in the line backing up. So they let a number of people
-go through the metal detector instead.
+be subjected to the same screening as everyone else since I was going through the general security checkpoint.
+That was not music to my ears, but the band played on. It just so happened that they let some older 
+people who primarily used a wheelchair to get around go before myself and others through the body
+scanner, which resulted line backing up almost immediately. Once the agents realized that the line 
+was not moving because of the elderly, they let a number of people, myself included,
+go through the metal detector instead of the body scanner. Essentially I got some of the benefits of 
+Pre-Check, but on a technicality.
 
 ## Conclusion
 
-Very interesting to see how different airports do the same checks differently whether you have
-pre-check or not. Especially since the airports have to follow the same federal rules for
+It was very interesting to see how different airports do the same checks differently whether you have
+Pre-Check or not. Especially since the airports have to follow the same federal rules for
 screening passengers.
 If I am traveling by myself next time, I will try to go through the Pre-Check
-line so that I can receive the full benefit of having pre-check.
+line so that I can receive the full benefit of having Pre-Check.

@@ -5,6 +5,19 @@ description: Project build using a Raspberry Pi to control a retired traffic lig
 
 ![Traffic light](/images/portfolio_trafficlight2.jpg)
 
+## Table of Contents
+
+* [Purpose](#purpose)
+* [Parts List](#parts-list)
+* [Pin Setup](#pin-setup)
+* [Installation Instructions](/trafficpi/install)
+* [Running the Scripts](#running-the-scripts)
+* [Classroom Activity](/trafficpi/activity)
+* [Acknowledgements](/trafficpi/acknowledgements)
+* [Video Demonstration](/trafficpi/demonstration)
+* [Uninstall Instructions](/trafficpi/uninstall)
+* [Controller Technology](/trafficpi/technology)
+
 ## Purpose
 
 The purpose of this project is to educate children about the STEM (Science, Technology,
@@ -16,18 +29,6 @@ to educate future engineers about the impact that computers and computer program
 society. This project targets the "T, E, and M" of "STEM" by using electronic circuits
 for controlling the lights, software for controlling the electronic circuits, and
 mathematical calculations for making timing decisions.
-
-## Table of Contents
-
-* [Purpose](#purpose)
-* [Classroom Activity](/trafficpi/activity)
-* [Parts List](#parts-list)
-* [Source Code](#source-code)
-* [Pin Setup](#pin-setup)
-* [Initial Setup](#initial-setup)
-* [Running the Scripts](#running-the-scripts)
-* [Uninstall Script](#uninstall-script)
-* [Acknowledgements](/trafficpi/acknowledgements)
 
 ### Teach Software Versioning
 
@@ -71,122 +72,9 @@ getting an actual traffic light.
 * <a href="https://www.amazon.com/gp/product/B00KTEN3TM/ref=as_li_tl?ie=UTF8&tag=rhtservicesll-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B00KTEN3TM&linkId=581b0fc60dcc9f3ddc5645b8eb20029a" target="_blank">Relay board(s) with at least 3 channels</a>
 * Traffic Light
 
-## Source Code
-
-The source code for this project can be downloaded from GitHub at
-<a href="https://github.com/almostengr/raspitraffic-stem" target="_blank">
-https://github.com/almostengr/raspitraffic-stem</a>.
-
-## Pin Setup
-
-Below is the mapping for the connections to the Raspberry Pi. The Pin numbers
-listed are the physical pin numbers on the board, not the GPIO pin numbers. If
-you are not using a relay board, the connections can be made directly to a
-breadboard with LEDs connected.
-
-Pi Pin (Board) | GPIO | Device Connection
--- |  | -
-2 | -- | LCD Display VCC (+5V)
-3 | -- | LCD Display SDA
-4 | -- | Relay Board VCC (+5V)
-5 | -- | LCD Display SLC
-19 | 11 | Red Signal
-21 | 9 | Yellow Signal
-23 | 10 | Green Signal
-30 | -- | LCD Display GND
-34 | -- | Relay Board GND
-
-Visual of Pin Connections to Relay Board
-
-![Image of connections on Raspberry Pi board](/images/trafficpi/circuitry.jpg)
-
-## Initial Setup
-
-### Install Raspbian
-
-You will need to install Raspbian on your SD. Once you have completed this install,
-Then you can insert the SD card into the Raspberry Pi and power it on.
-
-To install Raspbian using Ubuntu, I made a video tutorial which you can watch
-at [https://www.youtube.com/watch?v=Wy1_MWWlkNI](https://www.youtube.com/watch?v=Wy1_MWWlkNI).
-
-### Install Script
-
-In the ```scripts``` directory, run the ```install.sh``` script
-as root user. This will install of the required software and python packages.
-
-### Update Apache Configuration
-
-Search for the file containing "PrivateTmp=true". This file should be in your /etc
-directory. Change this value to ```PrivateTmp=false```. Then restart Apache.
-You may use
-
-```sh
-cd /etc/
-grep -R "PrivateTmp=true" *
-```
-
-to search for the file that contains this value. Once grep returns the file name,
-edit the file and make the stated change.
-
-## Running The Scripts
-
-To control the traffic light, run the raspitraffic.py script via command line.
-
-```sh
-python raspitraffic.py
-```
-
-Then visit the webpage to your TrafficPi in a web browser. A form will be
-presented with a list of programs to select from. Select the program you wish to
-run and click the "Submit" button.
-
-If a program is already running, the newly selected program will start once the end of
-the current program has been reached. If no program has been selected, the newly
-selected program will start immediately.
-
 ### Pseudocode Program
 
 The Pseudocode Program allows you to write your own program for controlling the traffic
 light. On the Control Panel webpage, enter each command that you want the light
 to perform on a line by itself in the "Pseudocode Commands" textbox. The list of
 commands are listed on the Control Panel webpage below the textbox.
-
-## Move and Run Code on the Pi
-
-### Software to Install on Pi
-
-Run these commands to install the necessary software on the Pi. You only need to do them once.
-
-```sh
-sudo apt-get update
-sudo apt-get install curl libunwind8 gettext apt-transport-https
-```
-
-### Publish Your App
-
-Then run the publish command on your app
-
-```sh
-dotnet publish -r linux-arm
-```
-
-### Copy the Files
-
-Then copy the files from your computer to the Pi. I used SSH for this.
-
-```sh
-scp -pr bin/Debug/netcoreapp3.1/linux-arm/publish/* pi@trafficpi://home/pi/rpidotnet
-```
-
-### Run App On Pi
-
-Run the program by calling the executable. This filename will be the name of your project.
-
-```sh
-./rpidotnet
-```
-
-## Troubleshooting
-
-* If your app does not run, make sure that execute permissions have been set for all roles (755).

@@ -50,7 +50,7 @@ journalctl -u internetmonitor -b -f
 ## Create System Service on Ubuntu 20.04
 
 ```bash
-cp internetmonitor.service /lib/systemd/system
+sudo cp internetmonitor.service /lib/systemd/system
 sudo systemctl daemon-reload
 sudo systemctl enable internetmonitor
 sudo systemctl start internetmonitor
@@ -89,6 +89,7 @@ Jan 29 09:03:53 media Almostengr.InternetMonitor[7251]: Microsoft.Hosting.Lifeti
 sudo systemctl disable internetmonitor
 sudo systemctl stop internetmonitor
 sudo systemctl status internetmonitor
+sudo rm /lib/systemd/system/internetmonitor.service
 ```
 
 Once all of the commands above have been ran, you should see an output similar to the following:

@@ -10,5 +10,3 @@ with others in hopes that that will pass it forward like I have done.
 ### [Drupal 8 Basics Online Course](https://www.youtube.com/watch?v=iujOWWbiUP0&list=PLaAJ0fv0d9WM8E2K_Ke5As-fw626yQ3tu)
 
 ### [Linux Cheatsheet](/resources/linux-cheatsheet)
-
-### [Python Cheatsheet](/resources/python-cheatsheet)

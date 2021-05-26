@@ -31,7 +31,7 @@ Read more about [Christmas Light Show project](/lightshow)
 
 Read more about [Kdenlive to YouTube project](/projects/kdenlivetoyoutube)
 
-## Raspberry Pi Traffic Light Control (2018)
+## Raspberry Pi Traffic Light Controller (TrafficPi) (2018)
 
 Read more about [Raspberry Pi Traffic Light Control project](/trafficpi)
 
@@ -41,33 +41,33 @@ Read more about [Raspberry Pi Traffic Light Control project](/trafficpi)
 
 Read more about [Home Automation with Home Assistant project](/projects/home-automation)
 
-## FarmOS NWS (Drupal Module)
+## FarmOS NWS
 
 Read more about [FarmOS NWS project](/projects/farmos-nws)
 
-## Black Box Operations (Drupal Website) (2011)
+## Black Box Operations (2011)
 
 ![operations.jpg](/images/portfolio_operations.jpg)
 
 Read more about [Black Box Operations (Drupal Website) project](/projects/black-box-operations)
 
-## [Scrap Code Dump Blog (Static Website)](/projects/scrap-code-dump) (2010)
-
-Read more about [Scrap Code Dump Blog project](/projects/scrap-code-dump)
-
-## [NACCP, University of Alabama Chapter Website (Static Website)](/projects/uanaacp) (2011)
+## NACCP, University of Alabama Chapter Website (2011)
 
 ![uanaacp_0.jpg](/images/portfolio_uanaacp.jpg)
 
 Read more about [NACCP, University of Alabama Chapter Website project](/projects/uanaacp)
 
-## Tuscaloosa Area Black Chamber of Commerce (Drupal Website) (2010)
+## Scrap Code Dump Blog (2010)
+
+Read more about [Scrap Code Dump Blog project](/projects/scrap-code-dump)
+
+## Tuscaloosa Area Black Chamber of Commerce (2010)
 
 ![tabcc screenshot.jpg](/images/portfolio_tabcc.jpg)
 
 Read more about [Tuscaloosa Area Black Chamber of Commerce project](/projects/tabcc)
 
-## University of Alabama Chapter of the National Society of Black Engineers (Static Website)
+## University of Alabama Chapter of the National Society of Black Engineers (2009)
 
 ![UA NSBE Screenshot](/images/portfolio_uansbe.jpg)
 

@@ -44,8 +44,8 @@ To read more about the project, select a section below to navigate to.
 
 Here's how I did it...
 
-* Connect the DS18S20 sensor to the Serial to USB Cable
-* Install an operating system of your choosing on your Raspberry Pi (OSMC was installed on mine)
+* Connect the [DS18S20 sensor](https://www.amazon.com/gp/product/B07MR71WVS/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=rhtservicesll-20&creative=9325&linkCode=as2&creativeASIN=B07MR71WVS&linkId=bfd830515da10f922afff9a79cc33e58) to the [Serial to USB Cable](https://www.amazon.com/gp/product/B07D9R5JFK/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=rhtservicesll-20&creative=9325&linkCode=as2&creativeASIN=B07D9R5JFK&linkId=e35fd9d313f055ab778e60783564078b)
+* Install an operating system of your choosing on your Raspberry Pi (<a href="https://osmc.tv/" target="_blank">OSMC</a> was installed on mine)
 * Copy the ThermometerPi files to the Raspberry Pi. They can be downloaded from the 
 [project repo](https://github.com/almostengr/thermometerpi).
 * Configure the appsettings.json file to point to your Home Assistant instance. Also need the HA Token
@@ -56,7 +56,7 @@ Here's how I did it...
 
 Eventually will do a walkthrough video on how I did my setup.
 
-## Code
+## Source Code
 
 The application was build using .NET Core 3.1 Worker Service. The application will run the command to get the
 data from the temperature sensor. After getting the data, then it makes a call to Home Assistant API that
@@ -104,5 +104,7 @@ groups $USER
 replacing $USER with the username that you want to see.
 
 ## Additional Resources
+
+Below are resources that were used in completing the project.
 
 [https://martybugs.net/electronics/tempsensor/usb.cgi](https://martybugs.net/electronics/tempsensor/usb.cgi)

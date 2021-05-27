@@ -68,7 +68,7 @@ theme:
         name: GitHub
         icon: bi bi-github
       - type: instagram
-        url: https://instagram.com/almostengr
+        url: https://www.instagram.com/almostengr
         name: Instagram
         icon: bi bi-instagram
       - type: linkedin
@@ -177,7 +177,7 @@ theme:
       name: GitHub
       icon: bi bi-github
     - type: instagram
-      url: https://instagram.com/almostengr
+      url: https://www.instagram.com/almostengr
       name: Instagram
       icon: bi bi-instagram
     - type: linkedin
@@ -198,7 +198,7 @@ theme:
     - name: Follow Me On Github
       url: https://github.com/almostengr
     - name: Follow Me On Instagram
-      url: https://instagram.com/almostengr
+      url: https://www.instagram.com/almostengr
     - name: Follow Me On Twitter
       url: https://twitter.com/almostengr
     - name: Subscribe To My YouTube Channel

@@ -3,8 +3,16 @@ title: Home Assistant Configuration
 description: Details about how to configure Home Assistant to automate your home.
 ---
 
-The documentation for <a href="https://home-assistant.io" target="_blank">Home Assistant</a> can be somewhat daunting 
-for the beginnger. By providing my
+## Table of Contents
+
+* [Background](#background)
+* [Tutorials](#tutorials)
+* [Components](#components)
+
+## Background
+
+The documentation for <a href="https://home-assistant.io" target="_blank">Home Assistant</a> can be
+somewhat daunting for the beginnger. By providing my
 configuration, hopefully it will assist you and others with their configuraiton of their own instance.
 
 ## Tutorials

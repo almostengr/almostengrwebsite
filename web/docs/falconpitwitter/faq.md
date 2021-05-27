@@ -32,7 +32,7 @@ Vitals are checked every 5 minutes. Alarms are based on the settings that you ha
 
 Any playlist that has "offline" or "testing" (case insensitive) in the name of it, will not post 
 the song information to 
-Twitter. The vitals alarms can still be triggered when "offline" or "testing playlists are active.
+Twitter. The vitals alarms can still be triggered when "offline" or "testing" playlists are active.
 
 ## Where is the source code?
 

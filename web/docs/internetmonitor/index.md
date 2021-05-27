@@ -8,8 +8,8 @@ Reboots the DD-WRT router when there are no WiFi clients connected to it.
 * [Solution](#solution)
 * [Technology](#the-technology)
 * [Checking Job Log](#checking-job-log)
-* [Create System Service on Ubuntu 20.04](#create-system-service-on-ubuntu-2004)
-* [Remove System Service on Ubuntu 20.04](#remove-system-service-on-ubuntu-2004)
+* [Application as System Service](#application-as-system-service)
+* [Troubleshooting](#troubleshooting)
 
 ## Problem
 
@@ -33,21 +33,9 @@ This solution uses Selenium Webdriver to connect to the DD-WRT router web interf
 .NET Core, but it could be done on Python, Java, or one of the other platforms that Webdriver works on.
 I have it set up on server that is always running and it runs as a system service.
 
-## Checking Job Log
+## Application as System Service
 
-To see the log for the job, run the command
-
-```sh
-journalctl -u internetmonitor -b
-```
-
-or
-
-```sh
-journalctl -u internetmonitor -b -f
-```
-
-## Create System Service on Ubuntu 20.04
+### Create System Service
 
 ```bash
 sudo cp internetmonitor.service /lib/systemd/system
@@ -83,7 +71,7 @@ Jan 29 09:03:53 media Almostengr.InternetMonitor[7251]: Almostengr.InternetMonit
 Jan 29 09:03:53 media Almostengr.InternetMonitor[7251]: Microsoft.Hosting.Lifetime[0] Application started. Hosting environment: Production; Content root path>
 ```
 
-## Remove System Service on Ubuntu 20.04
+### Remove System Service
 
 ```sh
 sudo systemctl disable internetmonitor
@@ -107,4 +95,20 @@ Jan 29 11:47:48 media Almostengr.InternetMonitor[7251]: Almostengr.InternetMonit
 Jan 29 11:47:48 media Almostengr.InternetMonitor[7251]: Almostengr.InternetMonitor.Worker[0] Browser has been closed
 Jan 29 11:47:48 media systemd[1]: internetmonitor.service: Succeeded.
 Jan 29 11:47:48 media systemd[1]: Stopped Internet Connectivity Monitor by almostengr.
+```
+
+## Troubleshooting
+
+### Checking Job Log
+
+To see the logs for the application when it is ran as system service, run the command
+
+```sh
+journalctl -u internetmonitor -b
+```
+
+or
+
+```sh
+journalctl -u internetmonitor -b -f
 ```

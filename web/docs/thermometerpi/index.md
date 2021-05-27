@@ -3,6 +3,16 @@ title: Thermometer Pi
 description: Used a Raspberry Pi to be a thermometer that provides data to home automation system
 ---
 
+## Table of Contents
+
+To read more about the project, select a section below to navigate to.
+
+* [Project Background](#project-background)
+* [Components Used](#components-used)
+* [Installation and Setup](#installation-and-setup)
+* [Source Code](#source-code)
+* [Additional Resources](#additional-resources)
+
 ## Project Background
 
 A common problem that exists with US home construction
@@ -20,16 +30,9 @@ I have several Rapsberry Pi that are used in my home and used as television set 
 purchasing additional devices to detect temperature, I decided to get some one-wire temperature sensors that
 can be connected to the Raspberry Pi that is already in the rooms that I want to monitor.
 
-## Table of Contents
-
-To read more about the project, select a section below to navigate to.
-
-* [Project Background](#project-background)
-* [Components Used](#components-used)
-* [Code](#code)
-* [The Setup](#the-setup)
-* [First Run](#first-run)
-* [Additional Resources](#additional-resources)
+The application was build using .NET Core 3.1 Worker Service. The application will run the command to get the
+data from the temperature sensor. After getting the data, then it makes a call to Home Assistant API that
+provides the temperature as a state to a sensor named of your chosing.
 
 ## Components Used
 
@@ -40,9 +43,7 @@ To read more about the project, select a section below to navigate to.
 * [Belkin Wemo Smart Outlet](https://www.amazon.com/gp/product/B0776YH29B/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=rhtservicesll-20&creative=9325&linkCode=as2&creativeASIN=B0776YH29B&linkId=34342060eb6bea8006e0dbbefb376fcf)
 * [Window AC Unit](https://www.amazon.com/gp/product/B085797ZFF/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=rhtservicesll-20&creative=9325&linkCode=as2&creativeASIN=B085797ZFF&linkId=e38e0ec46bdea5e4c32950d147003cc8)
 
-## The Setup
-
-Here's how I did it...
+## Installation and Setup
 
 * Connect the [DS18S20 sensor](https://www.amazon.com/gp/product/B07MR71WVS/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=rhtservicesll-20&creative=9325&linkCode=as2&creativeASIN=B07MR71WVS&linkId=bfd830515da10f922afff9a79cc33e58) to the [Serial to USB Cable](https://www.amazon.com/gp/product/B07D9R5JFK/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=rhtservicesll-20&creative=9325&linkCode=as2&creativeASIN=B07D9R5JFK&linkId=e35fd9d313f055ab778e60783564078b)
 * Install an operating system of your choosing on your Raspberry Pi (<a href="https://osmc.tv/" target="_blank">OSMC</a> was installed on mine)
@@ -56,15 +57,7 @@ Here's how I did it...
 
 Eventually will do a walkthrough video on how I did my setup.
 
-## Source Code
-
-The application was build using .NET Core 3.1 Worker Service. The application will run the command to get the
-data from the temperature sensor. After getting the data, then it makes a call to Home Assistant API that
-provides the temperature as a state to a sensor named of your chosing.
-
-The code is available on my [GitHub repository](https://github.com/almostengr/themometerpi).
-
-## First Run
+### First Run
 
 This is the full output when running the commands that are listed on the external resource website.
 Note that I did have to use sudo as it state that my user ID did not have permission to
@@ -102,6 +95,10 @@ groups $USER
 ```
 
 replacing $USER with the username that you want to see.
+
+## Source Code
+
+The code is available on my [GitHub repository](https://github.com/almostengr/themometerpi).
 
 ## Additional Resources
 

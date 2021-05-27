@@ -9,14 +9,13 @@ description: Project build using a Raspberry Pi to control a retired traffic lig
 
 * [Purpose](#purpose)
 * [Parts List](#parts-list)
-* [Pin Setup](#pin-setup)
-* [Installation Instructions](/trafficpi/install)
-* [Running the Scripts](#running-the-scripts)
+* [Installation and Setup](#installation-and-setup)
+* [Video Demonstration](#video-demonstration)
+* [Controller Technology](#controller-technology)
+* [Uninstall Traffic Pi](#uninstall-traffic-pi)
+* [Acknowledgements](#acknowledgements)
+* [Troubleshooting](#troubleshooting)
 * [Classroom Activity](/trafficpi/activity)
-* [Acknowledgements](/trafficpi/acknowledgements)
-* [Video Demonstration](/trafficpi/demonstration)
-* [Uninstall Instructions](/trafficpi/uninstall)
-* [Controller Technology](/trafficpi/technology)
 
 ## Purpose
 
@@ -59,7 +58,7 @@ getting an actual traffic light.
 * <a href="https://www.amazon.com/gp/product/B07GD25V8D/ref=as_li_tl?ie=UTF8&tag=rhtservicesll-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B07GD25V8D&linkId=ea5fb3393909abe778b518e808e674d5" target="_blank">Breadboard Jumper Cables</a>
 * <a href="https://www.amazon.com/gp/product/B07PCJP9DY/ref=as_li_tl?ie=UTF8&tag=rhtservicesll-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B07PCJP9DY&linkId=dca65d5d374944f5c1d213924d2fb183" target="_blank">Breadboard</a> (optional)
 * Python 2.7.9 (May work with later versions, but has only been tested with 2.7.9)
-* Raspbian Jessie, Stretch, or Buster (May work on other OSs, but has only been tested with Raspbian Jessie)
+* Raspberry Pi OS Jessie, Stretch, or Buster (May work on other OSs, but has only been tested with Raspberry Pi OS Jessie)
 
 ### LED Option
 
@@ -72,9 +71,152 @@ getting an actual traffic light.
 * <a href="https://www.amazon.com/gp/product/B00KTEN3TM/ref=as_li_tl?ie=UTF8&tag=rhtservicesll-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B00KTEN3TM&linkId=581b0fc60dcc9f3ddc5645b8eb20029a" target="_blank">Relay board(s) with at least 3 channels</a>
 * Traffic Light
 
-### Pseudocode Program
+## Installation and Setup
 
-The Pseudocode Program allows you to write your own program for controlling the traffic
-light. On the Control Panel webpage, enter each command that you want the light
-to perform on a line by itself in the "Pseudocode Commands" textbox. The list of
-commands are listed on the Control Panel webpage below the textbox.
+### Install Raspberry Pi OS
+
+You will need to install Raspberry Pi OS on your SD. Once you have completed this install,
+Then you can insert the SD card into the Raspberry Pi and power it on.
+
+To install Raspberry Pi OS using Ubuntu, I made a video tutorial which you can watch
+at [https://www.youtube.com/watch?v=Wy1_MWWlkNI](https://www.youtube.com/watch?v=Wy1_MWWlkNI).
+
+### Pin Setup
+
+Below is the mapping for the connections to the Raspberry Pi. The Pin numbers
+listed are the physical pin numbers on the board, not the GPIO pin numbers. If
+you are not using a relay board, the connections can be made directly to a
+breadboard with LEDs connected.
+
+Pi Pin (Board) | GPIO | Device Connection
+-- |  | -
+2 | -- | LCD Display VCC (+5V)
+3 | -- | LCD Display SDA
+4 | -- | Relay Board VCC (+5V)
+5 | -- | LCD Display SLC
+19 | 11 | Red Signal
+21 | 9 | Yellow Signal
+23 | 10 | Green Signal
+30 | -- | LCD Display GND
+34 | -- | Relay Board GND
+
+#### Visual of Pin Connections to Relay Board
+
+![Image of connections on Raspberry Pi board](/images/trafficpi/circuitry.jpg)
+
+### System Service
+
+To set up the application as a service, run the below commands. If you see error messages
+when running the commands, you may need to run them with "sudo" privileges. See the
+[System Service](/trafficpi/systemservice) page for details on how to add or remove the
+application as a system service.
+
+#### Create System Service
+
+```sh
+sudo cp almostengrtrafficpiweb.service /lib/systemd/system
+sudo systemctl daemon-reload
+sudo systemctl enable almostengrtrafficpiweb.service
+sudo systemctl start almostengrtrafficpiweb.service
+sudo systemctl status almostengrtrafficpiweb.service
+```
+
+#### Run App On Pi
+
+To run the applicatoin via the command line (not using the system service), then you
+can run the commands below.
+
+```sh
+cd trafficpi
+./Almostengr.TrafficPi.Web
+```
+
+To exit the application after running it via command line, press Ctrl+C.
+
+## Video Demonstration
+
+Video demonstration of version 1.0 of the project is available to be watched at
+<a href="https://www.youtube.com/watch?v=lr_ZJNX0viM" target="_blank">https://www.youtube.com/watch?v=lr_ZJNX0viM</a>.
+This version of the demonstration of the traffic light working
+with an LCD screen connected.
+
+Further discussion of the traffic light code can be watched at 
+[https://www.youtube.com/watch?v=ZyBnWOX3wGE](https://www.youtube.com/watch?v=ZyBnWOX3wGE).
+
+## Controller Technology
+
+The controller currently uses .NET Core 3.1. Tt is a multi-project application.
+
+### User Interface (UI) / Front End
+
+The user interface is a .NET Core MVC application. When you select the program that you want to run
+from the application home page, the application then runs a linux command that runs the back
+end program.
+
+When the program is changed on the front end, the back end program is then terminated and the newly
+select program is started.
+
+### Relay Control / Back End
+
+The back end of the application is a .NET Core Worker Service. The program modes are defined within
+this worker service. The worker service will continue running until it is terminated by the front end
+application or by a user via the command line or SSH.
+
+### Source Code
+
+The source code for this project can be downloaded from GitHub at
+<a href="https://github.com/almostengr/trafficpi" target="_blank">
+https://github.com/almostengr/trafficpi</a>.
+
+## Uninstall Traffic Pi
+
+### Remove System Service
+
+To remove the application as a system service, run each of the commands below.
+
+```sh
+sudo systemctl disable almostengrtrafficpiweb.service
+sudo systemctl stop almostengrtrafficpiweb.service
+sudo systemctl status almostengrtrafficpiweb.service
+sudo rm /lib/systemd/system/almostengrtrafficpiweb.service
+```
+
+After running all of the commands above, then reboot the system.
+
+### Application Files
+
+To remove the application files, you can remove the entire trafficpi directory.
+
+```sh
+rm -rf trafficpi
+```
+
+## Acknowledgements
+
+* LCD Display code for controlling the LCD display were provided from
+<a href="https://github.com/the-raspberry-pi-guy/lcd" target="_blank">https://github.com/the-raspberry-pi-guy/lcd</a>.
+* Attempts to replicate the Traffic Light Simulation created by Samuel Vidal
+seen at
+<a href="https://www.youtube.com/watch?v=xqZRDtX64UA" target="_blank">https://www.youtube.com/watch?v=xqZRDtX64UA</a>
+influenced this project.
+* Wifi AP configuration steps provided by
+<a href="https://pimylifeup.com/raspberry-pi-wireless-access-point/"
+target="_blank">https://pimylifeup.com/raspberry-pi-wireless-access-point/</a>
+
+## Troubleshooting 
+
+### System Service Output / Log
+
+To see the logged output from the system service, run the command:
+
+```sh
+journalctl -u almostengrtrafficpiweb.service -b
+```
+
+or
+
+```sh
+journalctl -u almostengrtrafficpiweb.service -b -f
+```
+
+If an error occurs in the application, the exception message will show here.

@@ -11,15 +11,14 @@ may be possible to run it on Beagle Bone Black (BBB).
 
 ## Table of Contents
 
-* [Getting Started](/falconpitwitter/gettingstarted)
+* [Twitter Example](#twitter-example)
+* [Installation and Setup](/falconpitwitter/installation)
 * [Configuration](/falconpitwitter/configuration)
-* [Twitter Examples](#twitter-examples)
-* [Known Bugs](/falconpitwitter/knownbugs)
+* [Troubleshooting](/falconpitwitter/troubleshooting)
 * [Source Code](https://github.com/almostengr/falconpitwitter)
-* [How Does It Work?](/falconpitwitter/faq)
-* [FAQs](/falconpitwitter/faq)
+* [FAQs (Frequently Asked Questions)](/falconpitwitter/faq)
 
-## Twitter Examples
+## Twitter Example
 
 Follow my Light Show account [@hplightshow](https://twitter.com/hplightshow) to see what this 
 application can do.

@@ -7,6 +7,11 @@ Below is a list of some of the projects that I have worked on in the past. Click
 more details about that project. There are more projects listed on
 [my GitHub page](https://github.com/almostengr/).
 
+## Coding Challenges (Ongoing)
+
+Coding challenges are ongoing projects to learn new coding designs and practices. Find out more 
+about my [previous coding challenges](/codingchallenge).
+
 ## Ecobee Status Monitor (2021)
 
 Read more about [Ecobee Status Monitor](/ecobeestatus) project.

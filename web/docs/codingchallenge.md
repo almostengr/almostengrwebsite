@@ -24,18 +24,31 @@ other languages that others insist that they should be done in.
 
 ## Challenge Ideas
 
-I take challenge ideas. If you have an idea for a challenge, you can
-<a href="https://github.com/almostengr/coding-challenge/issues" target="_blank">file an issue</a>
-on my coding challenge repository and I will look into completing it. If the challenge is
-interesting enough, I may even post me working on the challenge on my
-<a href="https://www.youtube.com/channel/UC4HCouBLtXD1j1U_17aBqig?sub_confirmation=1" target="_blank">YouTube Channel</a>.
-
 ### Online Sources
 
 For those of you that struggle to come up with ideas to do for a coding challenge, then look online.
 You can take a homework assignment that someone had for their class and turn that into a coding
 challenge. If someone is doing a challenge in Python and you are learning Java, then do that
 same challenge in Java. You can also check out the coding challenges that I have completed.
+
+### Refactor Code To Another Language
+
+One way that you can better your skills in a certain programming language, is to refactor code in another 
+programming language into the language of your choosing. By doing this, the following will happen: 
+
+* expand your knowledge on the language that you are working in
+* learn another programming language 
+* the differences between programming languages
+
+All of the above will make you a better programmer and expand your knowledge at the same time.
+
+### Submit A Challenge
+
+I take challenge ideas. If you have an idea for a challenge, you can
+<a href="https://github.com/almostengr/coding-challenge/issues" target="_blank">file an issue</a>
+on my coding challenge repository and I will look into completing it. If the challenge is
+interesting enough, I may even post me working on the challenge on my
+<a href="https://www.youtube.com/channel/UC4HCouBLtXD1j1U_17aBqig?sub_confirmation=1" target="_blank">YouTube Channel</a>.
 
 ## Completed Challenges
 

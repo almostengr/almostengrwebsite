@@ -1,5 +1,5 @@
 ---
-title: FarmOS NWS (2017)
+title: FarmOS NWS Drupal 7 Module (2017)
 ---
 
 The purpose of this project is to allow FarmOS to use data from the National Weather Service to allow it

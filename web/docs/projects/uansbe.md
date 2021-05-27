@@ -1,5 +1,5 @@
 ---
-title: University of Alabama Chapter of the National Society of Black Engineers (2009)
+title: University of Alabama Chapter of the National Society of Black Engineers Website (2009)
 ---
 
 ![UA NSBE Screenshot](/images/portfolio_uansbe.jpg)

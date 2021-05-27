@@ -1,5 +1,5 @@
 ---
-title: NAACP, University of Alabama Chapter (2010)
+title: NAACP, University of Alabama Chapter Website (2010)
 ---
 
 ![uanaacp_0.jpg](/images/portfolio_uanaacp.jpg)

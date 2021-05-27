@@ -1,5 +1,5 @@
 ---
-title: Tuscaloosa Area Black Chamber of Commerce (2010)
+title: Tuscaloosa Area Black Chamber of Commerce Website (2010)
 ---
 
 ![tabcc screenshot.jpg](/images/portfolio_tabcc.jpg)

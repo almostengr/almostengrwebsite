@@ -100,7 +100,8 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
   {% if config.google_analytics %}
   <script async src="//www.googletagmanager.com/gtag/js?id={{ config.google_analytics[0] }}"></script>
-  <script async>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', '{{ config.google_analytics[0] }}');</script>
+  <script
+    async>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', '{{ config.google_analytics[0] }}');</script>
   {% endif %}
 </head>
 
@@ -192,12 +193,11 @@
               {% endif %}
             </em>
           </p>
-          
+
           {% if page and ( 'technology' in page.url or 'handyman' in page.url or 'gardening' in page.url or 'lifestyle' in page.url) %}
           <div class="pb-3">
             <a class="a2a_dd" href="https://www.addtoany.com/share">
-              <img src="https://static.addtoany.com/buttons/share_save_171_16.png" height="16"
-                alt="Share">
+              <img src="https://static.addtoany.com/buttons/share_save_171_16.png" height="16" alt="Share">
             </a>
           </div>
           {% endif %}
@@ -235,8 +235,7 @@
 
             <div class="pb-3">
               <a class="a2a_dd" href="https://www.addtoany.com/share">
-                <img src="https://static.addtoany.com/buttons/share_save_171_16.png" height="16"
-                  alt="Share">
+                <img src="https://static.addtoany.com/buttons/share_save_171_16.png" height="16" alt="Share">
               </a>
             </div>
           </div>
@@ -284,33 +283,42 @@
           <div class="gcse-search"></div>
           {% endif %}
 
+          {% if page and ( 'technology' in page.url or 'handyman' in page.url or 'gardening' in page.url or 'lifestyle' in page.url) %}
+          <div class="bg-warning my-3 p-2">
+            I enjoy sharing the content that you find here. Instead of asking donations, I ask that you
+            consider purchasing an item on my
+            <a href="https://www.amazon.com/hz/wishlist/ls/38QKZTVCEAUK3?ref_=wl_share" 
+              target="_blank">Amazon Wish List</a>.
+          </div>
+          {% endif %}
+
           {% include "_googleadsense.html" %}
-        <!-- </div> -->
-      </div><!-- /.blog-main -->
-      <aside class="col-md-3 blog-sidebar">
-        <div class="p-4 mb-3 bg-light rounded">
-          <h4 class="font-italic">Connect With Me</h4>
-          <ol class="list-unstyled">
-            {% for link in config.theme.social %}
-            <li><a href="{{ link.url|url }}" target="_blank"><i class="{{link.icon}}"></i> {{link.name}}</a></li>
-            </svg>
-            {% endfor %}
-          </ol>
-        </div>
-        <div class="p-4 mb-3 bg-light rounded">
-          <a class="a2a_dd" href="https://www.addtoany.com/share">
-            <img src="https://static.addtoany.com/buttons/share_save_171_16.png" width="171" height="16" alt="Share">
-          </a>
-        </div>
-        <div class="p-4 mb-3 bg-light rounded">
-          {% include "_googleadsense.html" %}
-        </div>
-        <div class="p-4 mb-3 bg-light rounded">
-          {% include "_googleadsense.html" %}
-        </div>
-      </aside><!-- /.blog-sidebar -->
-  </div><!-- /.row -->
-  </main><!-- /.container -->
+          <!-- </div> -->
+        </div><!-- /.blog-main -->
+        <aside class="col-md-3 blog-sidebar">
+          <div class="p-4 mb-3 bg-light rounded">
+            <h4 class="font-italic">Connect With Me</h4>
+            <ol class="list-unstyled">
+              {% for link in config.theme.social %}
+              <li><a href="{{ link.url|url }}" target="_blank"><i class="{{link.icon}}"></i> {{link.name}}</a></li>
+              </svg>
+              {% endfor %}
+            </ol>
+          </div>
+          <div class="p-4 mb-3 bg-light rounded">
+            <a class="a2a_dd" href="https://www.addtoany.com/share">
+              <img src="https://static.addtoany.com/buttons/share_save_171_16.png" width="171" height="16" alt="Share">
+            </a>
+          </div>
+          <div class="p-4 mb-3 bg-light rounded">
+            {% include "_googleadsense.html" %}
+          </div>
+          <div class="p-4 mb-3 bg-light rounded">
+            {% include "_googleadsense.html" %}
+          </div>
+        </aside><!-- /.blog-sidebar -->
+      </div><!-- /.row -->
+    </main><!-- /.container -->
   </div>
 
   <footer class="blog-footer bg-black container text-left">

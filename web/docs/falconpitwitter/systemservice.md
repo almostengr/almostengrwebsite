@@ -17,11 +17,11 @@ To install the system service, run the below commands. Note that the commands ar
 the directory that you have copied the application files to.
 
 ```bash
-cp Almostengr.FalconPiTwitter.service /lib/systemd/system
+sudo cp falconpitwitter.service /lib/systemd/system
 sudo systemctl daemon-reload
-sudo systemctl enable Almostengr.FalconPiTwitter
-sudo systemctl start Almostengr.FalconPiTwitter
-sudo systemctl status Almostengr.FalconPiTwitter
+sudo systemctl enable falconpimonitor
+sudo systemctl start falconpimonitor
+sudo systemctl status falconpimonitor
 ```
 
 ## Remove System Service
@@ -29,9 +29,11 @@ sudo systemctl status Almostengr.FalconPiTwitter
 To uninstall the system service, run the below commands
 
 ```sh
-sudo systemctl disable Almostengr.FalconPiTwitter
-sudo systemctl stop Almostengr.FalconPiTwitter
-sudo systemctl status Almostengr.FalconPiTwitter
+sudo systemctl disable falconpimonitor
+sudo systemctl stop falconpimonitor
+sudo systemctl status falconpimonitor
+sudo systemctl daemon-reload
+sudo rm /lib/systemd/system/falconpitwitter.service
 ```
 
 ## System Service Logs

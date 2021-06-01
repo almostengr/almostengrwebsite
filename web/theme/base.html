@@ -233,11 +233,33 @@
             {{ page.content }}
             {%- endblock %}
 
+            {% if page and page.url != "links/" %}
             <div class="pb-3">
               <a class="a2a_dd" href="https://www.addtoany.com/share">
                 <img src="https://static.addtoany.com/buttons/share_save_171_16.png" height="16" alt="Share">
               </a>
             </div>
+            {% endif %}
+
+            <!-- mobile page links -->
+            {% if page and page.url == "links/" %}
+            {% for nav_item in nav %}
+            {% if nav_item.children %}
+            <div id="links" class="tab-pane active">
+              {% for nav_item in nav_item.children | reverse | batch(3) | first %}
+              {% if 'technology' in nav_item.url or 'handyman' in nav_item.url or 'gardening' in nav_item.url or 'lifestyle' in nav_item.url %}
+              {% set category = nav_item.url.split("/") %}
+              <a href="/{{ nav_item.url|url }}">{{ nav_item.title }} ({{ category[0] | title }})</a>
+              {% endif %}
+              {% endfor %}
+            </div>
+            {% endif %}
+            {% endfor %}
+            {% for link in config.theme.mobilelinks %}
+            <a href="{{ link.url|url }}">{{ link.name }}</a>
+            {% endfor %}
+            {% endif %}
+
           </div>
 
           {% if page and page.url == "search2/" %}
@@ -259,25 +281,6 @@
           </p>
           {% endif %}
 
-          <!-- mobile page links -->
-          {% if page and page.url == "links/" %}
-          {% for nav_item in nav %}
-          {% if nav_item.children %}
-          <div id="links" class="tab-pane active">
-            {% for nav_item in nav_item.children | reverse | batch(3) | first %}
-            {% if 'technology' in nav_item.url or 'handyman' in nav_item.url or 'gardening' in nav_item.url or 'lifestyle' in nav_item.url %}
-            {% set category = nav_item.url.split("/") %}
-            <a href="/{{ nav_item.url|url }}">{{ nav_item.title }} ({{ category[0] | title }})</a>
-            {% endif %}
-            {% endfor %}
-          </div>
-          {% endif %}
-          {% endfor %}
-          {% for link in config.theme.mobilelinks %}
-          <a href="{{ link.url|url }}">{{ link.name }}</a>
-          {% endfor %}
-          {% endif %}
-
           {% if page and page.url == "search/" %}
           <script async src="https://cse.google.com/cse.js?cx=000195884435112055355:g2eqfks2ipu"></script>
           <div class="gcse-search"></div>
@@ -287,8 +290,8 @@
           <div class="bg-warning my-3 p-2">
             I enjoy sharing the content that you find here. Instead of asking donations, I ask that you
             consider purchasing an item on my
-            <a href="https://www.amazon.com/hz/wishlist/ls/38QKZTVCEAUK3?ref_=wl_share" 
-              target="_blank">Amazon Wish List</a>.
+            <a href="https://www.amazon.com/hz/wishlist/ls/38QKZTVCEAUK3?ref_=wl_share" target="_blank">Amazon Wish
+              List</a>.
           </div>
           {% endif %}
 

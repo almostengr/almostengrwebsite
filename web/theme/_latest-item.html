@@ -16,7 +16,7 @@
             {% if nav_item.meta.posted %}
             <strong>Posted:</strong> {{ nav_item.meta.posted }}
             {% endif %}
-            <strong>Read Time:</strong> {{ nav_item.content | wordcount // 200 }} minute(s)
+            <strong>Read Time:</strong> <span title="{{ nav_item.content | wordcount }} words">{{ nav_item.content | wordcount // 200 }} minute(s)</span>
             {% for category in nav_item.ancestors | batch(1) | first %}
             <strong>Category: </strong>
             <a href="/{{ category.title | lower }}">{{ category.title | capitalize }}</a>

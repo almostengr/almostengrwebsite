@@ -1,6 +1,8 @@
 ---
 category: gardening
-posted: 2019-03-16 09:30:02
+posted: 2019-03-16
+updated: 2021-06-01
+keywords: gardening, cutting down tree, tree branch, trees, dead limbs, dead tree branch
 title: Manual Tree Branch Tear Down
 author: Kenny Robinson
 ---

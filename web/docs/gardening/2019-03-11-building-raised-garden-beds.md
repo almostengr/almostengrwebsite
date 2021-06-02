@@ -1,8 +1,10 @@
 ---
-posted: 2019-03-11 23:24:22
-updated: 2020-02-02 23:24:22
+posted: 2019-03-11
+updated: 2021-06-01
 keywords: garden beds, gardening, concrete blocks, raised beds, container gardening
 title: Building Raised Garden Beds
+author: Kenny Robinson
+category: gardening
 ---
 
 ![Truck bed full of concrete blocks](/images/2019.03.11-20190309_155432.jpg)

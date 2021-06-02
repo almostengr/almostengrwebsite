@@ -1,8 +1,10 @@
 ---
-posted: 2019-04-10 06:40:42
-updated: 2019-06-26 20:23:35
+posted: 2019-04-10
+updated: 2021-06-01
 title: How to Start A Garden in 8 Steps
 author: Kenny Robinson
+category: gardening
+keywords: starting a garden, how to, gardening, starting garden, start a garden
 ---
 
 ![](/images/2019.04.10-20190409_180534.jpg)

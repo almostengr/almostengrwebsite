@@ -1,8 +1,10 @@
 ---
-posted: 2019-12.22
-updated: 2020-07-14
+posted: 2019-12-22
+updated: 2021-06-01
 author: Kenny Robinson
 title: You Still Rake Leaves?
+category: gardening
+keywords: falling leaves, raking leaves, cleaning up leaves
 ---
 
 It is that time of year. Weather has changed for the cooler and you have a bunch of leaves in your 

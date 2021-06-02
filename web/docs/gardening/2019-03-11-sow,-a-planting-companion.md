@@ -1,8 +1,10 @@
 ---
-posted: 2019-03-11 22:45:26
-updated: 2019-03-11 23:23:43
 title: Sow, A Planting Companion
+posted: 2019-03-11
+updated: 2021-06-01
 author: Kenny Robinson
+category: gardening
+keywords: gardening, gardening apps, gardening technology,
 ---
 
 ## What is the Cooperative Extension?

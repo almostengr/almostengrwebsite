@@ -1,10 +1,10 @@
 ---
-posted: 2019-02-23 17:14:27
-updated: 2019-12-21 22:16:31
-revision_date: 2019-12-21 22:16:31
+title: Every Gardener Needs a Journal
+posted: 2019-02-23
+updated: 2021-06-01
 author: Kenny Robinson
 keywords: journaling, journal, gardening, tracking
-title: Every Gardener Needs a Journal
+category: gardening
 ---
 
 It's important to document your garden observations because humans are forgetful.

@@ -1,10 +1,11 @@
 ---
-posted: 2019-03-04 21:42:16
-updated: 2019-03-10 23:47:57
-keywords: collard greens, winter garden, gardening, collards
+title: Greens From the Winter Garden
+posted: 2019-03-04
+updated: 2021-06-01
+keywords: collard greens, winter garden, gardening, collards, backyard gardening
+author: Kenny Robinson
+category: gardening
 ---
-
-# Greens From the Winter Garden
 
 ![Me holding mustard green leaf](/images/2019.03.04-20190228_071422_0.jpg)
 

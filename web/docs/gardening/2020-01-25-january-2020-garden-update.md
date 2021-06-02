@@ -2,6 +2,9 @@
 title: January 2020 Garden Update
 author: Kenny Robinson
 posted: 2020-01-25
+update: 2021-06-01
+keywords: garden, onions, winter garden
+category: gardening
 ---
 
 ## Red Lettuce

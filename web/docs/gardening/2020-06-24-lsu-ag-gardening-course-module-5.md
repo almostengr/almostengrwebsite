@@ -1,7 +1,9 @@
 ---
 title: LSU AG Gardening Course Module 5
 posted: 2020-06-24
+update: 2021-06-01
 author: Kenny Robinson
+keywords: lus, gardening course, gardening class, how to garden
 categories: gardening
 ---
 

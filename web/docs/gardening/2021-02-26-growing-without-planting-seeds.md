@@ -2,6 +2,7 @@
 title: Growing Without Planting Seeds
 description: There are greens that are growing in the garden and I didn't plant them there.
 author: Kenny Robinson
+category: gardening
 posted: 2021-02-26
 update: 2021-03-01
 keywords: gardening, collard greens, grow your own food, home garden, backyard garden

@@ -1,9 +1,10 @@
 ---
 title: Snowfall Timelapse in Montgomery, AL - January 16-17, 2018
-posted: 2018-01-19 10:31:20
-updated: 2020-02-01 16:46:18
-revision_date: 2018-01-19 10:31:20
+posted: 2018-01-19
+updated: 2021-06-01
+category: gardening
 author: Kenny Robinson
+keywords: snowing, snowfall, montgomery, weather, snow timelapse, snow video
 ---
 
 # Snowfall Timelapse in Montgomery, AL - January 16-17, 2018

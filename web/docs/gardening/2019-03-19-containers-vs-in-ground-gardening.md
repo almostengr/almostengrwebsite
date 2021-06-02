@@ -1,8 +1,10 @@
 ---
-posted: 2019-03-19 20:26:08
-updated: 2019-06-26 20:20:43
+posted: 2019-03-19
+updated: 2021-06-01
 title: Containers vs In Ground Gardening
 author: Kenny Robinson
+category: gardening
+keywords: container gardening, raised bed gardening, in ground gardening, backyard gardening, home garden, garden types
 ---
 
 ![](/images/2019.03.19-42625680_247595219445490_1775194796883580723_n.jpg)

@@ -9,5 +9,5 @@ The first phase of this project, which was to render videos from a queue of
 Kdenlive archive files. I have videos on my YouTube channel that discuss some of the
 aspects of the code.
 
-You can view the source code for this project on GitHub at
-<a href="https://github.com/almostengr/kdenlivetoyoutube" target="_blank">https://github.com/almostengr/kdenlivetoyoutube</a>.
+You can view the source code for this project on 
+<a href="https://github.com/almostengr/kdenlivetoyoutube" target="_blank">my GitHub repo</a>.

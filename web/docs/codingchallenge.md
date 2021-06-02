@@ -9,6 +9,8 @@ problem using a defined set of criteria. Often times, coding challenges that you
 used as interview questions, such as
 <a href="https://github.com/almostengr/coding-challenge/tree/main/fizzbuzz" target="_blank">Fizz-Buzz</a>.
 
+[Back to Top](#)
+
 ## Why Do Challenges
 
 I periodically do coding challenges. The reason that I do challenges is to test my knowledge of the
@@ -21,6 +23,8 @@ post about [getting a tech job without experience](/technology/2021.05.06-tech-j
 I mentioned that you will get better and more opportunities if you are specialist instead of being a
 jack of all trades. Thus why I do all of the challenges presented in C# instead of Python or
 other languages that others insist that they should be done in.
+
+[Back to Top](#)
 
 ## Challenge Ideas
 
@@ -50,7 +54,11 @@ on my coding challenge repository and I will look into completing it. If the cha
 interesting enough, I may even post me working on the challenge on my
 <a href="https://www.youtube.com/channel/UC4HCouBLtXD1j1U_17aBqig?sub_confirmation=1" target="_blank">YouTube Channel</a>.
 
+[Back to Top](#)
+
 ## Completed Challenges
 
 You can find all of the coding challenges in my
 <a href="https://github.com/almostengr/coding-challenge" target="_blank">coding challenge repo</a>.
+
+[Back to Top](#)

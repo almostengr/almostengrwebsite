@@ -12,6 +12,8 @@ image: /images/lightshow/2020 Christmas Light Show 20201211-f000000.jpg
 * [Light Show on Twitter](#light-show-on-twitter)
 * [Other Information](#other-information)
 
+[Back to Top](#)
+
 ## Show Dates and Times
 
 Show will run nightly from November 26, 2021 until January 2, 2022.
@@ -29,6 +31,8 @@ If the show is cancelled, it will be posted on the
 <a href="https://twitter.com/hplightshow" target="_blank">show Twitter page</a> and
 it is asked that you revisit another evening after the weather has cleared.
 
+[Back to Top](#)
+
 ## Listen From Your Car
 
 To listen to the light show, tune your radio to 90.3 FM.
@@ -38,15 +42,21 @@ To listen to the light show, tune your radio to 90.3 FM.
 * Please keep your park lights on while watching the show so that you are visible to other 
 drivers that are passing by.
 
+[Back to Top](#)
+
 ## Show Playlist
 
 The songs for 2021 show have not been decided at this time. The song list will be posted here
 later in the year.
 
+[Back to Top](#)
+
 ## Light Show On Twitter
 
 To see the current song that is playing, visit the 
 [HP Light Show Twitter Page](https://twitter.com/hplightshow).
+
+[Back to Top](#)
 
 ## Other Information
 
@@ -60,3 +70,5 @@ scenes looks, visit one of the pages listed below.
 * [Building A Christmas Light Show Control Box (Presentation 2020-12-20)](/lightshow/20201220presentation)
 * [2019 Christmas Light Show Details](/lightshow/2019christmas)
 * [FAQs (Frequently Asked Questions)](/lightshow/faq)
+
+[Back to Top](#)

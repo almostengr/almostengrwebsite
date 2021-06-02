@@ -25,6 +25,8 @@ configuration, hopefully it will assist you and others with their configuraiton 
 The configuration for my Home Assistant instance is available at
 <a href="https://github.com/almostengr/ha-config" target="_blank">https://github.com/almostengr/ha-config</a>.
 
+[Back to Top](#)
+
 ## Tutorials
 
 I have created tutorials for setting up various items and automations in Home Assistant. 
@@ -33,6 +35,8 @@ Those tutorials are available to watch on my
 [Home Assistant Playlist](https://www.youtube.com/playlist?list=PLaAJ0fv0d9WMOGZmLnghrG321kVueGfuL). 
 There are also
 tutorials available on the <a href="https://home-assistant.io" target="_blank">Home Assistant</a> website.
+
+[Back to Top](#)
 
 ## Components
 
@@ -49,3 +53,5 @@ tutorials available on the <a href="https://home-assistant.io" target="_blank">H
 * [Kodi](https://kodi.tv/)
 * [Plex](https://www.plex.tv)
 * [DD-WRT](https://www.dd-wrt.com/)
+
+[Back to Top](#)

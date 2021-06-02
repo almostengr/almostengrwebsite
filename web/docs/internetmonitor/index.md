@@ -1,15 +1,17 @@
 # Internet Monitor Project
 
-Reboots the DD-WRT router when there are no WiFi clients connected to it.
+Reboots the DD-WRT router when there are no WiFi clients connected to it. Also makes sure that the 
+internet modem is online and can reach external websites. The status is then reported to 
 
 ## Table of Contents
 
 * [Problem](#problem)
 * [Solution](#solution)
 * [Technology](#the-technology)
-* [Checking Job Log](#checking-job-log)
 * [Application as System Service](#application-as-system-service)
+* [Source Code](#source-code)
 * [Troubleshooting](#troubleshooting)
+* [Checking Job Log](#checking-job-log)
 
 ## Problem
 
@@ -17,6 +19,8 @@ My router would occasionally disconnect any of the wireless clients that were co
 I have wired and wireless devices connected, some of the time I would not know that the wifi had
 stopped working until my phone or laptop wouldn't connect or I noticed that a automation did not
 trigger when it should have.
+
+[Back to Top](#)
 
 ## Solution
 
@@ -27,11 +31,15 @@ If there are no connected wireless clients, then there is a great chance that th
 authenticates clients has crashed.  As a result, the process would need to be restarted and the easiest
 way to restart the process would be to reboot the router.
 
+[Back to Top](#)
+
 ## The Technology
 
 This solution uses Selenium Webdriver to connect to the DD-WRT router web interface. I built this using
 .NET Core, but it could be done on Python, Java, or one of the other platforms that Webdriver works on.
 I have it set up on server that is always running and it runs as a system service.
+
+[Back to Top](#)
 
 ## Application as System Service
 
@@ -97,6 +105,15 @@ Jan 29 11:47:48 media systemd[1]: internetmonitor.service: Succeeded.
 Jan 29 11:47:48 media systemd[1]: Stopped Internet Connectivity Monitor by almostengr.
 ```
 
+[Back to Top](#)
+
+## Source Code
+
+To download the source code, visit the 
+<a href="https://github.com/almostengr/internetmonitor" target="_blank">code repository</a>.
+
+[Back to Top](#)
+
 ## Troubleshooting
 
 ### Checking Job Log
@@ -112,3 +129,5 @@ or
 ```sh
 journalctl -u internetmonitor -b -f
 ```
+
+[Back to Top](#)

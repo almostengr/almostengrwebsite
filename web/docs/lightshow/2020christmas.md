@@ -21,6 +21,8 @@ To listen to the light show, tune your radio to 90.3 FM.
 It is asked that you keep your radio volume down to not disturb the neighbors and
 passengers remain in your vehicle to observe social distancing guidelines and for your safety.
 
+[Back to Top](#)
+
 ## Video
 
 Unable to make it to the show in person?
@@ -30,6 +32,8 @@ You can watch this years light show below or
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fs6Lx8ySL9Y" frameborder="0"
 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
+
+[Back to Top](#)
 
 ## More Information
 
@@ -77,6 +81,8 @@ non-show hours.
 * Someday at Christmas - Stevie Wonder
 * Taking Care of Christmas - Randy Bachman
 * What You Want For Christmas - Quad City DJs and K-nock
+
+[Back to Top](#)
 
 ## Other Information
 

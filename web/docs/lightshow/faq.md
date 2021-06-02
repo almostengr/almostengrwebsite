@@ -58,6 +58,8 @@ I wanted to do something different for Christmas. Given that the COVID-19 (Coron
 during this time, I had extra funds on hand since I was not doing much travelling during this time. I decided
 to leverage my tech and Electrical Engineering skills and build a Christmas light show.
 
+[Back to Top](#)
+
 ## Money
 
 ### How much does it cost to run the light show? Your electric bill must be high!
@@ -156,6 +158,8 @@ Total = $332.59
 
 *All prices are listed in USD. Does not include taxes or shipping fees.*
 
+[Back to Top](#)
+
 ## Technology
 
 ### What kind of hardware do you use?
@@ -222,6 +226,8 @@ project by visiting the [project page](/falconpitwitter).
 
 See the [Falcon Pi Twitter](/falconpitwitter) page for more information about
 that project.
+
+[Back to Top](#)
 
 ## Resources
 

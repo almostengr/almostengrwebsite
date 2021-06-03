@@ -25,7 +25,7 @@ namespace Almostengr.Website.YouTubeContent
 
                 foreach (var video in latestVideoFeed.Items)
                 {
-                    if (true)
+                    if (video.Date_Published.Date == currentDate.Date)
                     {
                         await WriteVideoToBlog(video);
                         break;

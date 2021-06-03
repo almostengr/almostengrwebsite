@@ -1,0 +1,44 @@
+name: Blog latest YouTube video
+
+on:
+  schedule:
+    - cron: '15 10 * * *'
+
+jobs:
+  getvideo:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - uses: actions/setup-dotnet@v1
+      name: Setup .NET Core
+      with:
+        dotnet-version: '3.1.x' # SDK Version to use; x will use the latest version of the 3.1 channel
+    
+    - name: Get and Publish Content
+      run: dotnet run Almostengr.Website.YouTubeContent/Almostengr.Website.YouTubeContent.csproj
+
+    # - name: check for changes
+    #   run: git status
+
+    # - name: stage changed files
+    #   run: git add .
+
+    # - name: commit changed files
+    #   run: git commit -m "Auto commit latest YouTube video as blog post"
+
+    # - name: fetch from main
+    #   run: git fetch origin main
+
+    # - name: push code to main
+    #   uses: actions/checkout@v2
+    #   run: git push origin HEAD:main
+
+    - uses: actions/checkout@v2
+      - run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "Auto commit latest YouTube video as blog post"
+          git push

@@ -4,15 +4,14 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "build",
+            "label": "build youtubecontent",
             "command": "dotnet",
             "type": "shell",
             "args": [
                 "build",
-                // Ask dotnet build to generate full paths for file names.
                 "/property:GenerateFullPaths=true",
-                // Do not generate summary otherwise it leads to duplicate errors in Problems panel
-                "/consoleloggerparameters:NoSummary"
+                "/consoleloggerparameters:NoSummary",
+                "Almostengr.Website.YouTubeContent/Almostengr.Website.YouTubeContent.csproj"
             ],
             "group": "build",
             "presentation": {
@@ -27,9 +26,23 @@
             "args": [
                 "serve",
                 "-f",
-                "web/mkdocs.yml",
+                "web/mkdocs.yml"
             ],
             "group": "none"
+        },
+        {
+            "label": "dotnet run youtubecontent",
+            "command": "dotnet",
+            "type": "shell",
+            "args": [
+                "run",
+                "--project",
+                "Almostengr.Website.YouTubeContent"
+            ],
+            "problemMatcher": [
+                "$msCompile"
+            ],
+            "dependsOn": ["build"]
         }
     ]
 }

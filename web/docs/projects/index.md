@@ -7,7 +7,7 @@ Below is a list of some of the projects that I have worked on in the past. Click
 more details about that project. There are more projects listed on
 [my GitHub page](https://github.com/almostengr/).
 
-## Coding Challenges (Ongoing)
+## Coding Challenges (2021-Present)
 
 Coding challenges are ongoing projects to learn new coding designs and practices. Find out more 
 about my [previous coding challenges](/codingchallenge).
@@ -39,6 +39,10 @@ Read more about [Kdenlive to YouTube project](/projects/kdenlivetoyoutube).
 ## Raspberry Pi Traffic Light Controller (TrafficPi) (2018)
 
 Read more about [Raspberry Pi Traffic Light Control project](/trafficpi).
+
+## Ubuntu Automation Scripts(2018-Present)
+
+Read more about [Ubuntu Automation Scripts](/projects/ubuntu-automation).
 
 ## Home Automation with Home Assistant (2017)
 

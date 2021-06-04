@@ -2,7 +2,7 @@ name: Blog latest YouTube video
 
 on:
   schedule:
-    - cron: '15 10 * * *'
+    - cron: '15 15 * * *'
 
 jobs:
   getvideo:
@@ -17,23 +17,7 @@ jobs:
         dotnet-version: '3.1.x' # SDK Version to use; x will use the latest version of the 3.1 channel
     
     - name: Get and Publish Content
-      run: dotnet run Almostengr.Website.YouTubeContent/Almostengr.Website.YouTubeContent.csproj
-
-    # - name: check for changes
-    #   run: git status
-
-    # - name: stage changed files
-    #   run: git add .
-
-    # - name: commit changed files
-    #   run: git commit -m "Auto commit latest YouTube video as blog post"
-
-    # - name: fetch from main
-    #   run: git fetch origin main
-
-    # - name: push code to main
-    #   uses: actions/checkout@v2
-    #   run: git push origin HEAD:main
+      run: dotnet run --project Almostengr.AlmostengrWebsite.YouTubeContent/Almostengr.AlmostengrWebsite.YouTubeContent.csproj
 
     - uses: actions/checkout@v2
     - run: |

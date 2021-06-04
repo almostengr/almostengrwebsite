@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.IO;
 using System.Net.Http;
 using System.Threading.Tasks;
-using Almostengr.Website.YouTubeContent.Models;
+using Almostengr.AlmostengrWebsite.YouTubeContent.Models;
 using Newtonsoft.Json;
 
-namespace Almostengr.Website.YouTubeContent
+namespace Almostengr.AlmostengrWebsite.YouTubeContent
 {
     public class Program
     {

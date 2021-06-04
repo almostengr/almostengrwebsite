@@ -11,7 +11,7 @@
                 "build",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary",
-                "Almostengr.Website.YouTubeContent/Almostengr.Website.YouTubeContent.csproj"
+                "Almostengr.AlmostengrWebsite.YouTubeContent/Almostengr.AlmostengrWebsite.YouTubeContent.csproj"
             ],
             "group": "build",
             "presentation": {
@@ -26,7 +26,7 @@
             "args": [
                 "serve",
                 "-f",
-                "web/mkdocs.yml"
+                "Almostengr.AlmostengrWebsite/mkdocs.yml"
             ],
             "group": "none"
         },
@@ -37,7 +37,7 @@
             "args": [
                 "run",
                 "--project",
-                "Almostengr.Website.YouTubeContent"
+                "Almostengr.AlmostengrWebsite.YouTubeContent"
             ],
             "problemMatcher": [
                 "$msCompile"

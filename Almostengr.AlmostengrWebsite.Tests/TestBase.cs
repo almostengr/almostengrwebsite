@@ -18,17 +18,10 @@ namespace Almostengr.AlmostengrWebsite.Tests
 
 #if RELEASE
                 options.AddArgument("--headless");
-                ChromeDriverPath = "/usr/local/share/chrome_driver"; // path for GH Actions on ubuntu 20.04
+                // ChromeDriverPath = "/usr/local/share/chrome_driver"; // path for GH Actions on ubuntu 20.04
 #endif
 
-                if (ChromeDriverPath != "")
-                {
-                    return new ChromeDriver(ChromeDriverPath);
-                }
-                else
-                {
-                    return new ChromeDriver();
-                }
+                return new ChromeDriver(options);
             }
             catch (Exception ex)
             {

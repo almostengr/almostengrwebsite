@@ -22,14 +22,14 @@ namespace Almostengr.AlmostengrWebsite.Tests
 
             IWebElement pageHeading = _driver.FindElement(By.TagName("h1"));
 
-            Assert.True(pageHeading.Equals("Projects"));
+            Assert.True(pageHeading.Text.Equals("Projects"));
         }
 
         [Test]
         public void CheckProjectList()
         {
             GoToHomePage(_driver);
-            
+
             _driver.FindElement(By.LinkText("PROJECTS")).Click();
 
             Assert.True(_driver.PageSource.Contains("Coding Challenges"));

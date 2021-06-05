@@ -1,6 +1,6 @@
 using System;
 
-namespace Almostengr.Website.YouTubeContent.Models
+namespace Almostengr.AlmostengrWebsite.YouTubeContent.Models
 {
     public class YtVideo
     {

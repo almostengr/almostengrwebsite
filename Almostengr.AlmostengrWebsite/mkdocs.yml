@@ -105,9 +105,6 @@ theme:
       - url: /falconpitwitter
         name: Falcon Pi Twitter
         icon: bi bi-cpu-fill
-      - url: /projects
-        name: Projects (All)
-        icon: bi bi-journal
       - url: /resources
         name: Resources
         icon: bi bi-bookshelf
@@ -117,6 +114,9 @@ theme:
       - url: /trafficpi
         name: Traffic Pi
         icon: bi bi-stoplights
+      - url: /projects
+        name: All Projects
+        icon: bi bi-journal
     - title: LINKS
       links:
       - url: https://www.youtube.com/watch?v=iujOWWbiUP0&list=PLaAJ0fv0d9WM8E2K_Ke5As-fw626yQ3tu

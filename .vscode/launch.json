@@ -9,9 +9,9 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/Almostengr.Website.YouTubeContent/bin/Debug/netcoreapp3.1/Almostengr.Website.YouTubeContent.dll",
+            "program": "${workspaceFolder}/Almostengr.AlmostengrWebsite.YouTubeContent/bin/Debug/netcoreapp3.1/Almostengr.AlmostengrWebsite.YouTubeContent.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/Almostengr.Website.YouTubeContent",
+            "cwd": "${workspaceFolder}/Almostengr.AlmostengrWebsite.YouTubeContent",
             "console": "internalConsole",
             "stopAtEntry": false
         },

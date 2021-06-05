@@ -18,6 +18,8 @@ namespace Almostengr.AlmostengrWebsite.Tests
         {
             GoToHomePage(_driver);
 
+            _driver.FindElement(By.LinkText("PROJECTS")).Click();
+
             IWebElement pageHeading = _driver.FindElement(By.TagName("h1"));
 
             Assert.True(pageHeading.Equals("Projects"));
@@ -27,6 +29,8 @@ namespace Almostengr.AlmostengrWebsite.Tests
         public void CheckProjectList()
         {
             GoToHomePage(_driver);
+            
+            _driver.FindElement(By.LinkText("PROJECTS")).Click();
 
             Assert.True(_driver.PageSource.Contains("Coding Challenges"));
         }

@@ -8,7 +8,7 @@ namespace Almostengr.AlmostengrWebsite.Tests
     public abstract class TestBase
     {
         internal const string WebsiteUrl = "https://thealmostengineer.com";
-        internal const string ChromeDriverPath = "";
+        internal string ChromeDriverPath = "";
 
         public IWebDriver StartBrowser()
         {
@@ -18,6 +18,7 @@ namespace Almostengr.AlmostengrWebsite.Tests
 
 #if RELEASE
                 options.AddArgument("--headless");
+                ChromeDriverPath = "/usr/local/share/chrome_driver"; // path for GH Actions on ubuntu 20.04
 #endif
 
                 if (ChromeDriverPath != "")

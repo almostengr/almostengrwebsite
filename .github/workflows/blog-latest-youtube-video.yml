@@ -20,4 +20,4 @@ jobs:
       run: dotnet run --project Almostengr.AlmostengrWebsite.YouTubeContent/Almostengr.AlmostengrWebsite.YouTubeContent.csproj
 
     - name: Run commit on files
-      run: chmod +x scripts/ghcommit.sh && bash scripts/ghcommit.sh
+      run: bash scripts/ghcommit.sh

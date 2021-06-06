@@ -10,5 +10,6 @@ namespace Almostengr.AlmostengrWebsite.YouTubeContent.Models
         public string VideoId {
             get { return this.Url.Substring(this.Url.IndexOf("?")); }
         }
+        public string Keywords { get; set; }
     }
 }

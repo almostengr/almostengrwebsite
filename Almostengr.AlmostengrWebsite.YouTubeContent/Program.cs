@@ -1,17 +1,20 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Almostengr.AlmostengrWebsite.YouTubeContent.Models;
 using Newtonsoft.Json;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
 
 namespace Almostengr.AlmostengrWebsite.YouTubeContent
 {
     public class Program
     {
         static HttpClient _httpClient;
-        public static async Task Main(string[] args)
+        public static async Task<int> Main(string[] args)
         {
             _httpClient = new HttpClient();
 
@@ -23,24 +26,97 @@ namespace Almostengr.AlmostengrWebsite.YouTubeContent
 
                 DateTime currentDate = DateTime.Now;
 
-                foreach (var video in latestVideoFeed.Items)
+                foreach (YtVideo video in latestVideoFeed.Items)
                 {
                     if (video.Date_Published.Date == currentDate.Date.AddDays(-1))
                     {
-                        await WriteVideoToBlog(video);
+                        // video.Keywords = GetVideoKeywords(video.Url);
+                        WriteVideoToBlog(video);
+                        // StageAndCommitFiles();
                         break;
                     }
                 }
+
+                return 0;
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
+                return 1;
             }
-
-            await Task.CompletedTask;
         }
 
-        private static async Task WriteVideoToBlog(YtVideo blogVideo)
+        private static void StageAndCommitFiles()
+        {
+            Process process;
+
+            List<string> commandsToRun = new List<string>();
+            commandsToRun.Add("config user.name github-actions");
+            commandsToRun.Add("config user.email github-actions@github.com");
+            commandsToRun.Add("add .");
+            commandsToRun.Add("commit -m \"AutocommitGH\"");
+            commandsToRun.Add("push");
+
+            foreach (string singleLine in commandsToRun)
+            {
+                process = new Process()
+                {
+                    StartInfo = new ProcessStartInfo()
+                    {
+                        FileName = "git",
+                        Arguments = singleLine,
+                        RedirectStandardError = true,
+                        RedirectStandardOutput = true,
+                        UseShellExecute = false,
+                        CreateNoWindow = true,
+                    }
+                };
+
+                Console.WriteLine("Running command: {0}", singleLine);
+
+                process.Start();
+                process.WaitForExit();
+
+                Console.WriteLine(process.StandardError.ReadToEnd().ToString()); // print output from process
+            }
+        }
+
+        private static string GetVideoKeywords(string webpageUrl)
+        {
+            string keywords = string.Empty;
+            IWebDriver driver = null;
+
+            try
+            {
+                ChromeOptions options = new ChromeOptions();
+
+#if RELEASE
+            options.AddArgument("--headless");
+#endif
+
+                driver = new ChromeDriver();
+                driver.Navigate().GoToUrl(webpageUrl);
+                keywords = driver.FindElement(By.Name("keywords")).Text;
+                CloseBrowser(driver);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                CloseBrowser(driver);
+            }
+
+            return keywords;
+        }
+
+        private static void CloseBrowser(IWebDriver driver)
+        {
+            if (driver != null)
+            {
+                driver.Quit();
+            }
+        }
+
+        private static void WriteVideoToBlog(YtVideo blogVideo)
         {
             Console.WriteLine("Creating blog post");
 
@@ -58,6 +134,8 @@ namespace Almostengr.AlmostengrWebsite.YouTubeContent
             Console.WriteLine(category);
             textFile.Add(category);
 
+            textFile.Add("keywords: " + blogVideo.Keywords);
+
             textFile.Add("---");
             textFile.Add(string.Empty);
             textFile.Add("## Video");
@@ -65,7 +143,7 @@ namespace Almostengr.AlmostengrWebsite.YouTubeContent
             textFile.Add($"<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/{blogVideo.VideoId}\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen class=\"youtube\"></iframe>");
             textFile.Add(string.Empty);
 
-            var logPath = DateTime.Now.DayOfWeek == DayOfWeek.Saturday ? HandyBlogDirectory : TechBlogDirectory;
+            string logPath = DateTime.Now.DayOfWeek == DayOfWeek.Saturday ? HandyBlogDirectory : TechBlogDirectory;
 
             Console.WriteLine(logPath);
 
@@ -77,15 +155,15 @@ namespace Almostengr.AlmostengrWebsite.YouTubeContent
                     blogVideo.Title.ToLower().Replace(" ", "-").Replace(":", string.Empty),
                     ".md");
 
-                var logFile = File.Create(logPath + fileName);
+                FileStream logFile = File.Create(logPath + fileName);
                 StreamWriter file = new StreamWriter(logFile);
                 foreach (string line in textFile)
                 {
-                    await file.WriteLineAsync(line);
+                    file.WriteLine(line);
                 }
+                
                 file.Close();
-
-                await file.DisposeAsync();
+                file.Dispose();
             }
             catch (Exception ex)
             {

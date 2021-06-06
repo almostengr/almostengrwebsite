@@ -25,7 +25,7 @@ namespace Almostengr.AlmostengrWebsite.YouTubeContent
 
                 foreach (var video in latestVideoFeed.Items)
                 {
-                    if (video.Date_Published.Date == currentDate.Date)
+                    if (video.Date_Published.Date == currentDate.Date.AddDays(-1))
                     {
                         await WriteVideoToBlog(video);
                         break;
@@ -44,8 +44,8 @@ namespace Almostengr.AlmostengrWebsite.YouTubeContent
         {
             Console.WriteLine("Creating blog post");
 
-            const string TechBlogDirectory = "../web/docs/technology/";
-            const string HandyBlogDirectory = "../web/docs/handyman/";
+            const string TechBlogDirectory = "../Almostengr.AlmostengrWebsite/docs/technology/";
+            const string HandyBlogDirectory = "../Almostengr.AlmostengrWebsite/docs/handyman/";
 
             List<string> textFile = new List<string>();
             textFile.Add("---");

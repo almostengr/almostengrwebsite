@@ -16,13 +16,8 @@ jobs:
       with:
         dotnet-version: '3.1.x' # SDK Version to use; x will use the latest version of the 3.1 channel
     
-    - name: Get and Publish Content
+    - name: Get Published Videos
       run: dotnet run --project Almostengr.AlmostengrWebsite.YouTubeContent/Almostengr.AlmostengrWebsite.YouTubeContent.csproj
 
-    - uses: actions/checkout@v2
-    - run: |
-        git config user.name github-actions
-        git config user.email github-actions@github.com
-        git add .
-        git commit -m "Auto commit latest YouTube video as blog post"
-        git push
+    - name: Run commit on files
+      run: chmod +x scripts/ghcommit.sh && bash scripts/ghcommit.sh

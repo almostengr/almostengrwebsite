@@ -16,6 +16,7 @@ description: Project build using a Raspberry Pi to control a retired traffic lig
 * [Acknowledgements](#acknowledgements)
 * [Troubleshooting](#troubleshooting)
 * [Classroom Activity](/trafficpi/activity)
+* [Electrical Theory](/trafficpi/electriclatheory)
 
 ## Purpose
 

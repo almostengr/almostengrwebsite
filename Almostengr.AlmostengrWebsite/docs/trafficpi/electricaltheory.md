@@ -12,7 +12,7 @@ description: Explain various electrical components with the traffic light.
 
 ## Relays
 
-Relays are used when devices of different voltages or amperages are being used together. One common example
+Relays are used when devices of different voltage or amperage are being used together. One common example
 of this is relays that are used to control headlights on a car. The switch inside the vehicle has a lower 
 amperage signal that is ran through it to be used as a signal. When the switch is turned on, a relay is closed 
 which then connects a different circuit to turn on and off the headlights.
@@ -39,7 +39,7 @@ referred to as a service manual, that lists each of the colors of the wire in th
 
 With an AC circuit, there are commonly 3 wires. Black, white, and bare or green. 
 Black wire in AC circuit represents the "hot" or supply voltage.
-White wire in AC Circuit represents the neutral. The netural 
+White wire in AC Circuit represents the neutral. The neutral 
 
 ### DC Circuits
 

@@ -28,7 +28,7 @@ namespace Almostengr.AlmostengrWebsite.YouTubeContent
 
                 foreach (YtVideo video in latestVideoFeed.Items)
                 {
-                    if (video.Date_Published.Date == currentDate.Date.AddDays(-1))
+                    if (video.Date_Published.Date == currentDate.Date)
                     {
                         // video.Keywords = GetVideoKeywords(video.Url);
                         WriteVideoToBlog(video);

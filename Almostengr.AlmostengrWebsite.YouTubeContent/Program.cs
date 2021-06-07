@@ -1,13 +1,13 @@
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Almostengr.AlmostengrWebsite.YouTubeContent.Models;
+using static Almostengr.AlmostengrWebsite.Common.AeSelenium;
+using static Almostengr.AlmostengrWebsite.Common.AeJson;
 using Newtonsoft.Json;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
 
 namespace Almostengr.AlmostengrWebsite.YouTubeContent
 {
@@ -20,7 +20,9 @@ namespace Almostengr.AlmostengrWebsite.YouTubeContent
 
             try
             {
-                YtLatestVideoFeed latestVideoFeed = await GetYtChannelFeed();
+                const string latestVideos =
+                    "https://feed2json.org/convert?url=https%3A%2F%2Fwww.youtube.com%2Ffeeds%2Fvideos.xml%3Fchannel_id%3DUC4HCouBLtXD1j1U_17aBqig";
+                YtLatestVideoFeed latestVideoFeed = await GetRequestAsync<YtLatestVideoFeed>(latestVideos);
 
                 Console.WriteLine($"Found {latestVideoFeed.Items.Count} video items");
 
@@ -46,41 +48,6 @@ namespace Almostengr.AlmostengrWebsite.YouTubeContent
             }
         }
 
-        private static void StageAndCommitFiles()
-        {
-            Process process;
-
-            List<string> commandsToRun = new List<string>();
-            commandsToRun.Add("config user.name github-actions");
-            commandsToRun.Add("config user.email github-actions@github.com");
-            commandsToRun.Add("add .");
-            commandsToRun.Add("commit -m \"AutocommitGH\"");
-            commandsToRun.Add("push");
-
-            foreach (string singleLine in commandsToRun)
-            {
-                process = new Process()
-                {
-                    StartInfo = new ProcessStartInfo()
-                    {
-                        FileName = "git",
-                        Arguments = singleLine,
-                        RedirectStandardError = true,
-                        RedirectStandardOutput = true,
-                        UseShellExecute = false,
-                        CreateNoWindow = true,
-                    }
-                };
-
-                Console.WriteLine("Running command: {0}", singleLine);
-
-                process.Start();
-                process.WaitForExit();
-
-                Console.WriteLine(process.StandardError.ReadToEnd().ToString()); // print output from process
-            }
-        }
-
         private static string GetVideoKeywords(string webpageUrl)
         {
             string keywords = string.Empty;
@@ -88,13 +55,7 @@ namespace Almostengr.AlmostengrWebsite.YouTubeContent
 
             try
             {
-                ChromeOptions options = new ChromeOptions();
-
-#if RELEASE
-            options.AddArgument("--headless");
-#endif
-
-                driver = new ChromeDriver();
+                driver = StartBrowser();
                 driver.Navigate().GoToUrl(webpageUrl);
                 keywords = driver.FindElement(By.Name("keywords")).Text;
                 CloseBrowser(driver);
@@ -106,14 +67,6 @@ namespace Almostengr.AlmostengrWebsite.YouTubeContent
             }
 
             return keywords;
-        }
-
-        private static void CloseBrowser(IWebDriver driver)
-        {
-            if (driver != null)
-            {
-                driver.Quit();
-            }
         }
 
         private static void WriteVideoToBlog(YtVideo blogVideo)
@@ -161,7 +114,7 @@ namespace Almostengr.AlmostengrWebsite.YouTubeContent
                 {
                     file.WriteLine(line);
                 }
-                
+
                 file.Close();
                 file.Dispose();
             }
@@ -171,32 +124,6 @@ namespace Almostengr.AlmostengrWebsite.YouTubeContent
             }
 
             Console.WriteLine("Done creating blog post");
-        }
-
-        private static async Task<YtLatestVideoFeed> GetYtChannelFeed()
-        {
-            try
-            {
-                Console.WriteLine("Getting latest feed");
-
-                const string latestVideos =
-                    "https://feed2json.org/convert?url=https%3A%2F%2Fwww.youtube.com%2Ffeeds%2Fvideos.xml%3Fchannel_id%3DUC4HCouBLtXD1j1U_17aBqig";
-                HttpResponseMessage repsonse = await _httpClient.GetAsync(latestVideos);
-
-                if (repsonse.IsSuccessStatusCode == false)
-                {
-                    Console.WriteLine(repsonse.StatusCode + " " + repsonse.ReasonPhrase);
-                }
-
-                YtLatestVideoFeed latestVideo =
-                    JsonConvert.DeserializeObject<YtLatestVideoFeed>(repsonse.Content.ReadAsStringAsync().Result);
-                return latestVideo;
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-                return null;
-            }
         }
 
     }

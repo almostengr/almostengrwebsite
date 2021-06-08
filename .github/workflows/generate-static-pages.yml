@@ -37,8 +37,8 @@ jobs:
       with:
         ref: main
 
-    - run: git fetch -p
-    # - run: /usr/bin/python3 -m mkdocs gh-deploy -f Almostengr.AlmostengrWebsite/mkdocs.yml -b website
+    # - run: git fetch -p
+    # - run: /usr/bin/python3 -m mkdocs gh-deploy -f Almostengr.AlmostengrWebsite/mkdocs.yml -b website # disabled due to gh-deploy not working
 
     - run: /usr/bin/python3 -m mkdocs build -f Almostengr.AlmostengrWebsite/mkdocs.yml
 
@@ -54,17 +54,7 @@ jobs:
         port: ${{ secrets.PORT_NUMBER }}
         user: ${{ secrets.USERNAME }}
 
-    # - name: copy file via ssh password
-    #   uses: appleboy/scp-action@master
-    #   with:
-    #     host: ${{ secrets.HOSTNAME }}
-    #     username: ${{ secrets.USERNAME }}
-    #     # password: ${{ secrets.PASSWORD }}
-    #     key: ${{ secrets.PRIVATE_KEY }}
-    #     port: ${{ secrets.PORT_NUMBER }}
-    #     source: "Almostengr.AlmostengrWebsite/site/*"
-    #     target: "www"
-
+  ### disabled due to gh-deploy not working
   # deploy:
   #   runs-on: ubuntu-latest
   #   needs: build

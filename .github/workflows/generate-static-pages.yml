@@ -24,9 +24,9 @@ jobs:
     # needs: spelling
     steps:
     - name: Setup Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: 3.7
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.7
     - run: /usr/bin/python3 -m pip install --upgrade pip
     - run: /usr/bin/python3 -m pip install --upgrade setuptools
     - run: /usr/bin/python3 -m pip install --upgrade mkdocs
@@ -36,6 +36,7 @@ jobs:
       uses: actions/checkout@v2
       with:
         ref: main
+
     - run: git fetch -p
     # - run: /usr/bin/python3 -m mkdocs gh-deploy -f Almostengr.AlmostengrWebsite/mkdocs.yml -b website
 

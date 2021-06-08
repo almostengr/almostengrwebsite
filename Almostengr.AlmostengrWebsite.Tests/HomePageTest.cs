@@ -28,6 +28,16 @@ namespace Almostengr.AlmostengrWebsite.Tests
             Assert.True(_driver.PageSource.Contains(currentDate.Year.ToString() + " " + "Kenny Robinson"));
         }
 
+        [Test]
+        public void CheckBuildDate()
+        {
+            DateTime currentDate = DateTime.Now.Date;
+
+            GoToHomePage(_driver);
+
+            Assert.True(_driver.PageSource.Contains("Build Date UTC : " + currentDate));
+        }
+
         [OneTimeTearDown]
         public void TearDown()
         {

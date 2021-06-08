@@ -48,7 +48,7 @@ jobs:
     - name: Deploy to Production
       uses: fifsky/ssh-action@master
       with:
-        command: cd && cd almostengrwebsite && git pull origin main && cd && cp -pr almostengrwebsite/site/* public_html
+        command: unalias cp && cd && cd almostengrwebsite && git pull origin main && cd && cp -pr almostengrwebsite/Almostengr.AlmostengrWebsite/site/* public_html
         host: ${{ secrets.HOSTNAME }}
         key: ${{ secrets.PRIVATE_KEY }}
         port: ${{ secrets.PORT_NUMBER }}

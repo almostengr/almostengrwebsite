@@ -2,7 +2,7 @@ name: Site Map Ping
 
 on:
   schedule:
-    - cron: '15 01 * * 2'
+    - cron: '15 06 * * 2'
 
 jobs:
   sitemapush:

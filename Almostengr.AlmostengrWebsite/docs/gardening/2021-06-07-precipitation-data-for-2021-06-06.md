@@ -3,6 +3,7 @@ title: Precipitation Data for 2021-06-06
 posted: 2021-06-07
 author: Kenny Robinson (via automation)
 category: gardening
+description: Documenting the previous day precipitation. Data provided by the National Weather Service.
 ---
 
 ## Precipitation By Hour

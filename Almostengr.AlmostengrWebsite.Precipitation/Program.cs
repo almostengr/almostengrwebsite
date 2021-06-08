@@ -64,7 +64,11 @@ namespace Almostengr.AlmostengrWebsite.Precipitation
             textFile.Add("posted: " + currentDate.ToString("yyyy-MM-dd"));
             textFile.Add("author: Kenny Robinson (via automation)");
             textFile.Add("category: gardening");
+            textFile.Add("description: Previous days precipitation data from the National Weather Service on " + DateTime.Now);
             textFile.Add("---");
+            textFile.Add(string.Empty);
+            
+            textFile.Add("Data was pulled from the National Weather Service (NWS) at " + DateTime.Now);
             textFile.Add(string.Empty);
 
             textFile.Add("## Precipitation By Hour");

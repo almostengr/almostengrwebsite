@@ -447,7 +447,7 @@ error_log/*
 error_log/
 
 # output folder from mkdocs
-site/
+# site/
 
 # temporary files
 *swp

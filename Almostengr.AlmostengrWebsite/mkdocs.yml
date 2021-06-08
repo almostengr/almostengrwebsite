@@ -3,7 +3,6 @@ site_url: https://thealmostengineer.com
 site_description: The blog of Kenny Robinson
 site_author: Kenny Robinson, @almostengr
 copyright: Kenny Robinson
-google_analytics: ['UA-64643711-1', 'thealmostengineer.com']
 
 # repository information
 repo_url: https://github.com/almostengr/almostengrwebsite

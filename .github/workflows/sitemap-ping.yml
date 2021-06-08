@@ -1,0 +1,16 @@
+name: Site Map Ping
+
+on:
+  schedule:
+    - cron: '15 01 * * 2'
+
+jobs:
+  sitemapush:
+    runs-on: ubuntu-latest
+    needs: shakeout
+    steps:
+    - name: Sitemap Ping to search engines
+      uses: atymic/sitemap-ping-action@1.0.0
+      with:
+        sitemap-url: https://thealmostengineer.com/sitemap.xml
+        

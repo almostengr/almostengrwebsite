@@ -21,7 +21,11 @@ namespace Almostengr.AlmostengrWebsite.Tests
                 // ChromeDriverPath = "/usr/local/share/chrome_driver"; // path for GH Actions on ubuntu 20.04
 #endif
 
-                return new ChromeDriver(options);
+                IWebDriver driver = new ChromeDriver(options);
+
+                driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(15);
+
+                return driver;
             }
             catch (Exception ex)
             {

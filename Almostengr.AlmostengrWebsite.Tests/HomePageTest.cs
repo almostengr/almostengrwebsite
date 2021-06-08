@@ -35,7 +35,7 @@ namespace Almostengr.AlmostengrWebsite.Tests
 
             GoToHomePage(_driver);
 
-            Assert.True(_driver.PageSource.Contains("Build Date UTC : " + currentDate));
+            Assert.True(_driver.PageSource.Contains("Build Date UTC : " + currentDate.ToString("yyyy-MM-dd")));
         }
 
         [OneTimeTearDown]

@@ -66,43 +66,44 @@ namespace Almostengr.AlmostengrWebsite.Precipitation
             textFile.Add("category: gardening");
             textFile.Add("---");
             textFile.Add(string.Empty);
+
             textFile.Add("## Precipitation By Hour");
             textFile.Add(string.Empty);
 
             textFile.Add("|Date|Rainfail|Rainfall Converted|");
             textFile.Add("---|---|---");
 
-            double? valueTotal = 0.0;
+            double? valueTotalM = 0.0;
+            double? valueTotalInches = 0.0;
 
             foreach (var feature in features)
             {
-                valueTotal += feature.Properties.PrecipitationLastHour.Value;
+                valueTotalM += feature.Properties.PrecipitationLastHour.Value;
+
+                double? inches = feature.Properties.PrecipitationLastHour.Value * 39.370078740157;
+                valueTotalInches += inches;
 
                 string line = string.Concat(
                     "|",
                     feature.Properties.Timestamp,
                     "|",
-                    feature.Properties.PrecipitationLastHour.Value,
+                    string.Format("{0:N5}", feature.Properties.PrecipitationLastHour.Value),
                     " ",
-                    feature.Properties.PrecipitationLastHour.UnitCode.Replace("unit:", "")
+                    feature.Properties.PrecipitationLastHour.UnitCode.Replace("unit:", ""),
+                    "|",
+                    string.Format("{0:N5}", inches),
+                    " inches",
+                    "|"
                 );
-
-                if (feature.Properties.PrecipitationLastHour.UnitCode == "unit:m")
-                {
-                    line += string.Concat("|",
-                        string.Format("{0:N5}", feature.Properties.PrecipitationLastHour.Value * 39.370078740157),
-                        " inches");
-                }
-
-                line += "|";
 
                 textFile.Add(line);
             }
 
             textFile.Add(string.Empty);
+
             textFile.Add("## Precipitation By Day");
             textFile.Add(string.Empty);
-            textFile.Add(string.Format("{0:N5}",valueTotal) + " m, " + string.Format("{0:N5}",(valueTotal * 39.370078740157)) + " inches");
+            textFile.Add(string.Format("{0:N5}", valueTotalM) + " m, " + string.Format("{0:N5}", valueTotalInches) + " inches");
             textFile.Add(string.Empty);
 
             try

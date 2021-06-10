@@ -55,7 +55,7 @@ namespace Almostengr.AlmostengrWebsite.Precipitation
                 return;
             }
 
-            const string GardenBlogDirectory = "../Almostengr.AlmostengrWebsite/docs/gardening/";
+            const string GardenBlogDirectory = "Almostengr.AlmostengrWebsite/docs/gardening/";
             string postTitle = "Precipitation Data for " + currentDate.AddDays(-1).Date.ToString("yyyy-MM-dd");
 
             List<string> textFile = new List<string>();

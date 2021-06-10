@@ -2,12 +2,6 @@
 title: System Service
 ---
 
-## Table of Contents
-
-* [Create System Service](#create-system-service)
-* [Remove System Service](#remove-system-service)
-* [System Service Logs](#system-service-logs)
-
 This application is designed to be run as a system service. Below are the steps to install or 
 remove it.
 

@@ -8,11 +8,11 @@ In order to use Falcon Pi Twitter, you will need to have
 
 * an internet connection
 * a <a href="https://developer.twitter.com" target="_blank">Twitter developer account</a>
-* Falcon Pi Player version 4 (confirmed working with version 4.6.1)
+* <a href="https://github.com/FalconChristmas/fpp" target="_blank">Falcon Pi Player</a> version 4 (confirmed working with version 4.6.1)
 
 ## Installation Steps
 
-* Download the latest release from the [project repo](https://github.com/almostengr/falconpitwitter) 
+* Download the latest release from the <a href="https://github.com/almostengr/falconpitwitter" target="_blank">project repo</a>
 that is available in zip or tar format.
 * Copy the archive file to your Falcon Pi Player instance(s).
 * Extract the archive file contents. Ideally extract them to a folder in the /home/fpp directory.

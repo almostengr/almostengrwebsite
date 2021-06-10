@@ -13,12 +13,37 @@ may be possible to run it on Beagle Bone Black (BBB).
 
 * [Twitter Example](#twitter-example)
 * [Installation and Setup](/falconpitwitter/installation)
+    * [System Requirements](/falconpitwitter/installation#system-requirements)
+    * [Installation Steps](/falconpitwitter/installation#installation-steps)
 * [Configuration](/falconpitwitter/configuration)
+* [System Service](/falconpitwitter/systemservice)
+    * [Create System Service](#create-system-service)
+    * [Remove System Service](#remove-system-service)
+    * [System Service Logs](#system-service-logs)
 * [Troubleshooting](/falconpitwitter/troubleshooting)
 * [Source Code](https://github.com/almostengr/falconpitwitter)
 * [FAQs (Frequently Asked Questions)](/falconpitwitter/faq)
 
-## Twitter Example
+## Problem
+
+I wanted to have a way for the visitors to my light show are able to find out the information about the 
+song that was currently playing.
+
+Some other Light Show Creators use screens or equipment that will display the song information on a 
+visitor's radio using RDS (Radio Data System). 
+
+## Solution
+
+I did not want to have to invest heavy into this project, so after I found out that Falcon Pi Player
+came with an API, I decided to build a .NET Core application that would post the song information to Twitter. 
+Then create a PSA (Public Service Announcement) in my show that lets visitors know about the Twitter page
+and that song and show information is available on this page.
+
+While most of the plugins for Falcon Pi Player are written in PHP or Shell (Bash) Script, this application 
+is written in .NET Core 3.1. While I do know how to program in PHP and Bash, C# and .NET Core is what 
+I primarily use. Thus using this language and framework for the application.
+
+### Twitter Example
 
 Follow my Light Show account [@hplightshow](https://twitter.com/hplightshow) to see what this 
 application can do.

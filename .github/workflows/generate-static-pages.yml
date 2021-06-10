@@ -22,14 +22,19 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     # needs: spelling
+    
     steps:
     - name: Setup Python
       uses: actions/setup-python@v2
       with:
         python-version: 3.7
+        
     - run: /usr/bin/python3 -m pip install --upgrade pip
+
     - run: /usr/bin/python3 -m pip install --upgrade setuptools
+    
     - run: /usr/bin/python3 -m pip install mkdocs==1.1.2
+    
     - run: /usr/bin/python3 -m pip install --upgrade mkdocs-minify-plugin
 
     - name: Check out main branch
@@ -62,7 +67,7 @@ jobs:
     - name: Deploy to Production
       uses: fifsky/ssh-action@master
       with:
-        # command: cd && cd www && git pull origin website
+        command: cd && cd www && git pull origin website
         host: ${{ secrets.HOSTNAME }}
         key: ${{ secrets.PRIVATE_KEY }}
         port: ${{ secrets.PORT_NUMBER }}

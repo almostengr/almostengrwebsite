@@ -3,6 +3,7 @@ name: Site Map Ping
 on:
   schedule:
     - cron: '15 06 * * 2'
+    - cron: '15 06 * * 5'
 
 jobs:
   sitemapush:

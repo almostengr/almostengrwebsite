@@ -27,8 +27,6 @@ theme:
       name: Technology
     - url: /handyman
       name: Handyman
-    - url: /gardening
-      name: Gardening
     - url: https://www.youtube.com/channel/UC4HCouBLtXD1j1U_17aBqig?sub_confirmation=1
       name: YouTube
     - url: /projects

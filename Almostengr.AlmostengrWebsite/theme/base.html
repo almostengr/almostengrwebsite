@@ -33,17 +33,17 @@
   <meta property="og:title" content="{{ config.site_name }} | {{ config.site_description }}" />
   <meta name="twitter:title" content="{{ config.site_name }} | {{ config.site_description }}" />
   {% elif page and page.meta and page.meta.title %}
-  <title>{{ page.meta.title }} | {{ config.site_name }}</title>
-  <meta property="og:title" content="{{ page.meta.title }} | {{ config.site_name }}" />
-  <meta name="twitter:title" content="{{ page.meta.title }} | {{ config.site_name }}" />
+  <title>{{ page.meta.title }} | {{ config.site_name }}, {{ config.site_description }}</title>
+  <meta property="og:title" content="{{ page.meta.title }} | {{ config.site_name }}, {{ config.site_description }}" />
+  <meta name="twitter:title" content="{{ page.meta.title }} | {{ config.site_name }}, {{ config.site_description }}" />
   {% elif page and page.title and not page.is_homepage %}
-  <title>{{ page.title | striptags }} | {{ config.site_name }}</title>
-  <meta property="og:title" content="{{ page.title | striptags }} | {{ config.site_name }}" />
-  <meta name="twitter:title" content="{{ page.title | striptags }} | {{ config.site_name }}" />
+  <title>{{ page.title | striptags }} | {{ config.site_name }}, {{ config.site_description }}</title>
+  <meta property="og:title" content="{{ page.title | striptags }} | {{ config.site_name }}, {{ config.site_description }}" />
+  <meta name="twitter:title" content="{{ page.title | striptags }} | {{ config.site_name }}, {{ config.site_description }}" />
   {% else %}
-  <title>{{ config.site_name }}</title>
-  <meta property="og:title" content="{{ config.site_name }}" />
-  <meta name="twitter:title" content="{{ config.site_name }}" />
+  <title>{{ config.site_name }}, {{ config.site_description }}</title>
+  <meta property="og:title" content="{{ config.site_name }}, {{ config.site_description }}" />
+  <meta name="twitter:title" content="{{ config.site_name }}, {{ config.site_description }}" />
   {% endif %}
   {%- endblock %}
 
@@ -287,11 +287,11 @@
           {% endif %}
 
           {% if page and ( 'technology' in page.url or 'handyman' in page.url or 'gardening' in page.url or 'lifestyle' in page.url) %}
-          <div class="bg-warning my-3 p-2">
+          <div class="bg-warning my-3 mx-5 p-2 rounded">
             I enjoy sharing the content that you find here. Instead of asking donations, I ask that you
             consider purchasing an item on my
             <a href="https://www.amazon.com/hz/wishlist/ls/38QKZTVCEAUK3?ref_=wl_share" target="_blank">Amazon Wish
-              List</a>.
+              List</a>. However, I will accept your <a href="/donate">donation here</a>.
           </div>
           {% endif %}
 
@@ -348,11 +348,11 @@
       Website built and maintained by
       <a href="https://rhtservices.net" target="_blank">Robinson Handy and Technology Services LLC</a>
     </p>
-    <p>
+    <p class="">
       Cookies are used on this website to track your visits, provide advertisements specific to you, and
       preferences by a third-party. By continuing to use this site, you agree to the use of cookies unless
       you have disabled them. More information this is available in the
-      <a href="/privacy">Privacy Policy</a>.
+      <a href="/privacy">Privacy Policy</a>.<br />
       Build Date UTC : {{ build_date_utc }}
     </p>
   </footer>

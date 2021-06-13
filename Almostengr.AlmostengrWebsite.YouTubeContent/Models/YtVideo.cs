@@ -8,7 +8,7 @@ namespace Almostengr.AlmostengrWebsite.YouTubeContent.Models
         public string Title { get; set; }
         public DateTime Date_Published { get; set; }
         public string VideoId {
-            get { return this.Url.Substring(this.Url.IndexOf("?")); }
+            get { return this.Url.Substring(this.Url.IndexOf("?v=")); }
         }
         public string Keywords { get; set; }
     }

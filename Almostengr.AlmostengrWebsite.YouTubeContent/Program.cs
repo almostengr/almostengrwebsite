@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using Almostengr.AlmostengrWebsite.YouTubeContent.Models;
 using static Almostengr.AlmostengrWebsite.Common.AeSelenium;
 using static Almostengr.AlmostengrWebsite.Common.AeJson;
-using Newtonsoft.Json;
 using OpenQA.Selenium;
 
 namespace Almostengr.AlmostengrWebsite.YouTubeContent

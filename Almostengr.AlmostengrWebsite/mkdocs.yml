@@ -31,6 +31,8 @@ theme:
       name: YouTube
     - url: /projects
       name: Projects
+    - url: /services
+      name: Services
   # sitemessage:
   #   - heading: heading
   #     detail: detail
@@ -116,6 +118,9 @@ theme:
         icon: bi bi-journal
     - title: LINKS
       links:
+      - url: /services
+        name: Services
+        icon: bi bi-briefcase
       - url: https://www.youtube.com/watch?v=iujOWWbiUP0&list=PLaAJ0fv0d9WM8E2K_Ke5As-fw626yQ3tu
         name: Drupal 8 Basics Course
         icon: bi bi-camera-video-fill

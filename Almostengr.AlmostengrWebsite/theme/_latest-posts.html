@@ -1,60 +1,16 @@
 <h2 class="latest-posts">Latest Blog Posts By Category</h2>
 
+<div class="latest-posts tab-pane active">
 {% for nav_item in nav %}
 {% if nav_item.children and page %}
-<div class="latest-posts tab-pane active">
     <ul class="list-unstyled">
         {% for nav_item in nav_item.children | reverse | batch(1) | first %}
-        {% if 'technology' in nav_item.url %}
+        {% if 'technology' in nav_item.url or 'handyman' in nav_item.url or 'gardening' in nav_item.url or 'lifestyle' in nav_item.url %}
         {% include "_latest-item.html" %}
+        <hr />
         {% endif %}
         {% endfor %}
     </ul>
+    {% endif %}
+    {% endfor %}
 </div>
-{% endif %}
-{% endfor %}
-<hr />
-
-{% for nav_item in nav %}
-{% if nav_item.children and page %}
-<div class="latest-posts tab-pane active">
-    <ul class="list-unstyled">
-        {% for nav_item in nav_item.children | reverse | batch(1) | first %}
-        {% if 'handyman' in nav_item.url %}
-        {% include "_latest-item.html" %}
-        {% endif %}
-        {% endfor %}
-    </ul>
-</div>
-{% endif %}
-{% endfor %}
-<hr />
-
-{% for nav_item in nav %}
-{% if nav_item.children and page %}
-<div class="latest-posts tab-pane active">
-    <ul class="list-unstyled">
-        {% for nav_item in nav_item.children | reverse | batch(1) | first %}
-        {% if 'gardening' in nav_item.url %}
-        {% include "_latest-item.html" %}
-        {% endif %}
-        {% endfor %}
-    </ul>
-</div>
-{% endif %}
-{% endfor %}
-<hr />
-
-{% for nav_item in nav %}
-{% if nav_item.children and page %}
-<div class="latest-posts tab-pane active">
-    <ul class="list-unstyled">
-        {% for nav_item in nav_item.children | reverse | batch(1) | first %}
-        {% if 'lifestyle' in nav_item.url %}
-        {% include "_latest-item.html" %}
-        {% endif %}
-        {% endfor %}
-    </ul>
-</div>
-{% endif %}
-{% endfor %}

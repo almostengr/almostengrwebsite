@@ -13,9 +13,9 @@ the directory that you have copied the application files to.
 ```bash
 sudo cp falconpitwitter.service /lib/systemd/system
 sudo systemctl daemon-reload
-sudo systemctl enable falconpimonitor
-sudo systemctl start falconpimonitor
-sudo systemctl status falconpimonitor
+sudo systemctl enable falconpitwitter
+sudo systemctl start falconpitwitter
+sudo systemctl status falconpitwitter
 ```
 
 ## Remove System Service
@@ -23,9 +23,9 @@ sudo systemctl status falconpimonitor
 To uninstall the system service, run the below commands
 
 ```sh
-sudo systemctl disable falconpimonitor
-sudo systemctl stop falconpimonitor
-sudo systemctl status falconpimonitor
+sudo systemctl disable falconpitwitter
+sudo systemctl stop falconpitwitter
+sudo systemctl status falconpitwitter
 sudo systemctl daemon-reload
 sudo rm /lib/systemd/system/falconpitwitter.service
 ```

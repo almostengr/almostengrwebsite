@@ -46,20 +46,6 @@ jobs:
     
     - run: /usr/bin/python3 -m mkdocs gh-deploy -f Almostengr.AlmostengrWebsite/mkdocs.yml -b website
 
-#     - run: /usr/bin/python3 -m mkdocs build -f Almostengr.AlmostengrWebsite/mkdocs.yml
-
-#     - name: Run commit on files
-#       run: bash scripts/ghcommit.sh
-
-#     - name: Deploy to Production
-#       uses: fifsky/ssh-action@master
-#       with:
-#         command: unalias cp && cd && cd almostengrwebsite && git pull origin main && cd && cp -pr almostengrwebsite/Almostengr.AlmostengrWebsite/site/* public_html
-#         host: ${{ secrets.HOSTNAME }}
-#         key: ${{ secrets.PRIVATE_KEY }}
-#         port: ${{ secrets.PORT_NUMBER }}
-#         user: ${{ secrets.USERNAME }}
-
   deploy:
     runs-on: ubuntu-latest
     needs: build

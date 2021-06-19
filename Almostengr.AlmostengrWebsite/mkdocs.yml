@@ -70,10 +70,6 @@ theme:
         url: https://www.instagram.com/almostengr
         name: Instagram
         icon: bi bi-instagram
-      - type: linkedin
-        url: https://www.linkedin.com/in/krobinsontech
-        name: LinkedIn
-        icon: bi bi-linkedin
       - type: twitter
         url: https://twitter.com/almostengr
         name: Twitter
@@ -183,9 +179,6 @@ theme:
       name: Instagram
       icon: bi bi-instagram
     - type: linkedin
-      url: https://www.linkedin.com/in/krobinsontech
-      name: LinkedIn
-      icon: bi bi-linkedin
     - type: twitter
       url: https://twitter.com/almostengr
       name: Twitter

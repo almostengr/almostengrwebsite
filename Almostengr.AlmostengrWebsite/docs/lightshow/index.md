@@ -27,7 +27,7 @@ Heavy rains and severe weather may cancel the show. See [Rain Delay](#rain-delay
 
 During times of heavy rain or severe weather the light show may be stopped to reduce the
 chance of electrical shorts occurring and for safety of individuals watching.
-If the show is cancelled, it will be posted on the 
+If the show is cancelled, it will be posted on the
 <a href="https://twitter.com/hplightshow" target="_blank">show Twitter page</a> and
 it is asked that you revisit another evening after the weather has cleared.
 
@@ -39,28 +39,36 @@ To listen to the light show, tune your radio to 90.3 FM.
 
 * Please keep your radio volume down to not disturb the neighbors.
 * Please remain in your vehicle for your safety and that of passing vehicles.
-* Please keep your park lights on while watching the show so that you are visible to other 
+* Please keep your park lights on while watching the show so that you are visible to other
 drivers that are passing by.
 
 [Back to Top](#)
 
 ## Show Playlist
 
-The songs for 2021 show have not been decided at this time. The song list will be posted here
-later in the year.
+Songs featured in the 2021 Light Show are:
+
+* 20th Century Fox Theme
+* Christmas Eve-Sarajevo - Trans-Siberian Orchestra
+* Christmas Time Is Party Time - Luke
+* December - Earth, Wind, and Fire
+* Nutrocker - Trans-Siberian Orchestra
+* Uptown Funk - Mark Ranson featuring Bruno Mars
+* WAP - Cardi B and Megan The Stallion
+* What You Want for Christmas - Quad City DJ and K-nock
 
 [Back to Top](#)
 
 ## Light Show On Twitter
 
-To see the current song that is playing, visit the 
+To see the current song that is playing, visit the
 [HP Light Show Twitter Page](https://twitter.com/hplightshow).
 
 [Back to Top](#)
 
 ## Other Information
 
-To find out more about the light show, including previous years show information and behind the 
+To find out more about the light show, including previous years show information and behind the
 scenes looks, visit one of the pages listed below.
 
 * <a href="https://twitter.com/hplightshow" target="_blank">Light Show Twitter Page</a>

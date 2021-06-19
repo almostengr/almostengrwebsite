@@ -6,20 +6,14 @@ title: Troubleshooting
 
 An exception may occur and written in the log if the Wifi connection has not been established before the first run. 
 Confirm in the log that ```HttpRequestException``` is not repeating in the logs after 2 or 3 attempts. If the 
-message continues to appear, double check your Wifi or ethernet connection.
+message continues to appear, double check your Wifi or ethernet connection to the internet.
 
 ## System Service Output / Log
 
-To see the logged output from the system service, run the command: 
+To see the logged output from the system service, login to FPP via SSH and run the command: 
 
 ```sh
-journalctl -u Almostengr.FalconPiTwitter -b
-```
-
-or
-
-```sh
-journalctl -u Almostengr.FalconPiTwitter -b -f
+journalctl -u falconpitwitter -b
 ```
 
 If an error occurs in the application, the exception message will show here.

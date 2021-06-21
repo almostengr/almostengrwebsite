@@ -31,7 +31,7 @@ for explainations and details.
 You should see output similar to the below near the beginning of the log file.
 
 ```
-Connected to Twitter as hplightshow
+Connected to Twitter as HP Light Show
 ```
 
 The "Connected to Twitter" message in the log file, confirms that your account has been properly configured

@@ -92,6 +92,9 @@ theme:
       - url: /lifestyle
         name: Lifestyle
         icon: bi bi-journal-text
+      - url: /cookbook
+        name: Cookbook
+        icon: bi bi-book-fill
     - title: PROJECTS
       links:
       - url: /lightshow

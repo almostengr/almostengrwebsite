@@ -5,10 +5,6 @@
 * whole chicken 
 * seasonings of your choosing
 
-## Tools
-
-* Dutch oven or cast iron pot with lid
-
 ## Directions
 
 * Rinse chicken. Remove the packet in the cavity if there is one
@@ -18,7 +14,7 @@ cavity of the chicken
 * Place chicken and pot in refrigerator at least 2 hours to allow the seasonings to marinate. Leave pot
 uncovered while in refrigerator so that the skin will be more crispy.
 * When ready to cook, remove chicken from refrigerator and place in oven with lid on.
-**Oven should not be pre-heated.**
+* **Oven should not be pre-heated.**
 * Turn on oven to 475 F (246 C)
 * After about 30-45 minutes, turn oven down to 400 F (204 C)
 * Continue to cook for another 1.5 to 2 hours.

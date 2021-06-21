@@ -8,14 +8,9 @@
 * seasonings of your choice
 * water
 
-## Tools
-
-* medium to large pot
-* spoon
-
 ## Directions
 
-* Cook seasoned ground beef until fully browned in pot
+* Cook seasoned ground beef until fully browned in medium or large pot
 * Drain fat from beef
 * Return to stove.
 * Add in pasta sauce and noodles

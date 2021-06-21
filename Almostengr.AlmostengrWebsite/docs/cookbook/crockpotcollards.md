@@ -7,12 +7,7 @@
 * seasonings
 * water
 
-## Tools 
-
-* Crockpot
-* Stirring spoon
-
-## Directions
+## Cooking
 
 * Wash collards (if they are not already washed)
 * Chop collards into smaller pieces or strips

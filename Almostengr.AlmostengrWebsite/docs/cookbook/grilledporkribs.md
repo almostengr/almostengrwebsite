@@ -1,6 +1,7 @@
 # Grilled Pork Ribs
 
 ## Ingredients
+
 * Pork ribs
 * Apple cider vinegar
 * Onions (or granulated onion)
@@ -9,12 +10,8 @@
 * Water
 * Barbeque sauce
 
-## Tools
-* Grill (charcoal or gas)
-* Pot
-* Grill mop (or food brush)
-
 ## Directions
+
 * Heat the grill to cooking temperature, around 250 F (120 C).
 * Combine water, apple cider vinegar, onions, garlic, and salt into a pot
 * Heat the pot until the mixture is close to boiling. Then reduce and maintain heat

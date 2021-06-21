@@ -1,6 +1,6 @@
 # Pot Roast
 
-## Servce 6-10
+Servce 6-10
 
 ## Ingredients
 

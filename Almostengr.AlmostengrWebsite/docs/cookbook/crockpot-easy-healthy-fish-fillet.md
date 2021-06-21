@@ -1,11 +1,11 @@
 ## Easy, Healthy Fish Fillet
 
-serves 4-6
+Serves 4-6
 
 ## Ingredients
 
-Kosher salt and pepper
-2-3 pounds white fish (cod, sea bass, tilapia, or catfish), skilled
+* Kosher salt and pepper
+* 2-3 pounds white fish (cod, sea bass, tilapia, or catfish), skilled
 * fresh herbs (flat-leaf parsley, basil, tarragon, savory, or a combination of all)
 * 2-3 lemons, thinly sliced
 * prepared salsa or olive tapenade to garnish

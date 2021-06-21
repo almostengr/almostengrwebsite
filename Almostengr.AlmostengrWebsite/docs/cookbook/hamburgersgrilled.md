@@ -6,11 +6,6 @@
 * 1 egg
 * Hamburger seasoning (or seasoned salt and pepper)
 
-## Tools
-
-* Grill (charcoal or gas)
-* Grilling utensils
-
 ## Directions
 
 * Heat the grill to cooking temperature.

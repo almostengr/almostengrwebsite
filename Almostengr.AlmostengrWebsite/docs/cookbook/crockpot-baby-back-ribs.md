@@ -4,9 +4,9 @@ Serves 6-10
 
 ## Ingredients 
 
-2-4 racks of baby back ribs, cut into 3-4 pieces each
-2-4 cups barbeque sauce
-2-4 onions, chopped
+* 2-4 racks of baby back ribs, cut into 3-4 pieces each
+* 2-4 cups barbeque sauce
+* 2-4 onions, chopped
 
 ## 
 

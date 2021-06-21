@@ -12,13 +12,9 @@
 * 1 teaspoon vanilla extract
 * 1 (9 inch) graham cracker crust
 
-## Tools
-
-* Stand or handheld mixer
-* Pre-heated oven at 350 F (175 C)
-
 ## Directions
 
+* Pre-heated oven at 350 F (175 C)
 * Boil sweet potato in skin until soft all the way though.
 * Run cold water over the potato and remove the skin.
 * Break apart the potatoes.

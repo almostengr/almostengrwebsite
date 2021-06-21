@@ -5,14 +5,9 @@
 * 1 chicken
 * Lemon pepper seasoning (or another seasoning of your choosing)
 
-## Tools
-
-* Pre-heated oven at 400 F (205 C)
-* Roasting pan or cast iron skillet
-* Refrigerator
-
 ## Directions
 
+* Pre-heated oven at 400 F (205 C)
 * Wash the chicken inside and out. Remove all the internal organs.
 * Season chicken inside and out. Be sure to also season between
 the skin and the meat, especially the breast and thigh areas.
@@ -32,4 +27,3 @@ hours depending on the weight.
 Below is the cooked chicken with the leg cut apart.
 
 [Final Product](https://www.instagram.com/p/Bi5u3UBAyJU/?taken-by=almostengr)
-

@@ -9,10 +9,6 @@
 * seasonings of your choosing
 * sour cream (optional)
 
-## Tools 
-
-* Skillet
-
 ## Directions
 
 * Warm tortilla(s) in skillet

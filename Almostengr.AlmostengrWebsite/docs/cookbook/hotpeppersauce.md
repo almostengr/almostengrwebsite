@@ -7,12 +7,6 @@
 * salt
 * garlic
 
-## Tools
-
-* hot sauce bottle
-* pot
-* refrigerator
-
 ## Directions
 
 * Remove steps from peppers. Wash peppers throughly

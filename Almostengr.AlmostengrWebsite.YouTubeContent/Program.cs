@@ -33,7 +33,6 @@ namespace Almostengr.AlmostengrWebsite.YouTubeContent
                     {
                         // video.Keywords = GetVideoKeywords(video.Url);
                         WriteVideoToBlog(video);
-                        // StageAndCommitFiles();
                         break;
                     }
                 }
@@ -72,9 +71,6 @@ namespace Almostengr.AlmostengrWebsite.YouTubeContent
         {
             Console.WriteLine("Creating blog post");
 
-            // const string TechBlogDirectory = "../Almostengr.AlmostengrWebsite/docs/technology/";
-            // const string HandyBlogDirectory = "../Almostengr.AlmostengrWebsite/docs/handyman/";
-
             List<string> textFile = new List<string>();
             textFile.Add("---");
             textFile.Add("title: " + blogVideo.Title.ToString());
@@ -95,7 +91,6 @@ namespace Almostengr.AlmostengrWebsite.YouTubeContent
             textFile.Add($"<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/{blogVideo.VideoId}\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen class=\"youtube\"></iframe>");
             textFile.Add(string.Empty);
 
-            // string logPath = DateTime.Now.DayOfWeek == DayOfWeek.Saturday ? HandyBlogDirectory : TechBlogDirectory;
             string logPath = "../Almostengr.AlmostengrWebsite/drafts/";
 
             Console.WriteLine(logPath);
@@ -125,6 +120,5 @@ namespace Almostengr.AlmostengrWebsite.YouTubeContent
 
             Console.WriteLine("Done creating blog post");
         }
-
     }
 }

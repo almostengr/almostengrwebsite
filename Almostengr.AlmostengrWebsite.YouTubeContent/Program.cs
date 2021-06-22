@@ -96,7 +96,7 @@ namespace Almostengr.AlmostengrWebsite.YouTubeContent
             textFile.Add(string.Empty);
 
             // string logPath = DateTime.Now.DayOfWeek == DayOfWeek.Saturday ? HandyBlogDirectory : TechBlogDirectory;
-            string logPath = "../Almostengr.AlmostengrWebsite/drafts";
+            string logPath = "../Almostengr.AlmostengrWebsite/drafts/";
 
             Console.WriteLine(logPath);
 

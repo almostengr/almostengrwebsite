@@ -5,6 +5,7 @@ updated: 2021-06-12
 category: lifestyle
 keywords: layover, flight delays, flight times, flight layover, what to do during layover
 author: Kenny Robinson
+description: You can maximize the value of your vacation by also visiting cities that you have a layover in. Just make sure that you have enough layover time.
 ---
 
 ## Background

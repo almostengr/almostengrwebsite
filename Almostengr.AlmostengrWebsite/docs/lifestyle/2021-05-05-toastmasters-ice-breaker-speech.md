@@ -42,6 +42,7 @@ ToastMasters format was:
 English teacher's essay format was:
 
 * Introduction
+    * Thesis statement
 * Bing
 * Bang
 * Bongo
@@ -69,7 +70,9 @@ some of the points in case you run short on time.
 ## Other Details
 
 I titled my speech "Dr. Jekyll and Mr. Hyde" after the novel. Reason being is that I had a coaching 
-call with Ryan Cox earlier in the year. In our discussion, he mentioned that I had a Dr. Jekyll 
+call with 
+<a href="https://twitter.com/ryanleecox" target="_blank">Ryan Cox</a>
+earlier in the year. In our discussion, he mentioned that I had a Dr. Jekyll 
 and Mr. Hyde way of things. That I am known for working with technology, but also known 
 for being a handyman and do it yourselfer. Those are commonly two distinct categories, but I have 
 an unique skillset that merges the both of them together. Following this title, I used those 

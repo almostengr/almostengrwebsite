@@ -30,7 +30,8 @@ a few times in an effort to get my step count up.
 
 I previously wrote an article that describes 7 ways that you can get
 [more steps in your day](/lifestyle/2019-05-09-7-steps-for-more-steps). I would encourage you to read
-that article to get adidtional walking ideas.
+that article to get additional
+walking ideas.
 
 ## Water Intake
 
@@ -42,7 +43,7 @@ you are able to get more [steps in your day](/lifestyle/2019-05-09-7-steps-for-m
 For me, I have noticed that drinking more fluids, especially more water, will motivate my body 
 to have a bowel movement, and thus reducing the dead weight that I am carrying around and losing 
 weight over all. Staying full on water will result in you consuming less calories because your body 
-doesnt feel hungry.
+doesn't feel hungry.
 
 ## Eat When Your Body Says To, Not When The Clock Does
 
@@ -51,7 +52,7 @@ lunch, and dinner - in addition to eating snacks.
 
 Now the recommended daily calorie intake is 2,000 calories. If you are more active than the typical
 American, then you can up that number to 2,500 calories. What if you are not as active, like most of us
-during the quaratine or those of us that work desk jobs? It would make sense that you decrease that
+during the quarantine or those of us that work desk jobs? It would make sense that you decrease that
 number correct? It would. However, when you read the nutrition labels, they do not mention about you eating 
 less than the daily recommended amount.
 
@@ -88,7 +89,7 @@ It is believed that the benefits from fasting are
 
 * Forces your body to burn the fat stores that you have, thus resulting in weight loss.
 * Allows your body to take a break from always digesting food.
-* ALlows your insulin levels to go down, thus preventing or reducing your chance of developing
+* Allows your insulin levels to go down, thus preventing or reducing your chance of developing
 diabetes (which is insulin resistance).
 
 ### My Fasting Method
@@ -96,7 +97,7 @@ diabetes (which is insulin resistance).
 I do the 12:12 method. Where I eat within a 12 hour window and fast for 12 hours. Now in doing this,
 sometimes that 12:12 ends up being a 16:8 or 18:6 because of when I start eating. If I start my
 day off by drinking sufficient amounts of water, then I am able to go for a longer amount of time
-between waking up and eating my first item (not necssarily a meal) of the day.
+between waking up and eating my first item (not necessarily a meal) of the day.
 It took about a week or two for my body to get in the fasting habit. Once it did, did not have to 
 worry about eating so much.
 
@@ -134,6 +135,6 @@ environment, activity level, and your genetics.
 
 ## Conclusion
 
-Doing a combiation of these strategies and methods have allowed me to maintain my current weight.
+Doing a combination of these strategies and methods have allowed me to maintain my current weight.
 I have been able to lose some weight by increasing my water intake. Consider giving these strategies
 if you are wanting to lose weight.

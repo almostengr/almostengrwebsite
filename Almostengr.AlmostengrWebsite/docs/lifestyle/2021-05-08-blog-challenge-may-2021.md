@@ -33,7 +33,7 @@ Some of the content that I wrote, was for project documentation. Since I keep my
 
 If you did not see the posts that I made this week, here is a summary of them below.
 
-* Sunday: Updated [Light Show documentation](/lightshow), the [About](/about) pages, and the [Projects](/projects) pages
+* Sunday: Updated [Light Show documentation](/lightshow), the [About](/about), and the [Projects](/projects) pages
 * Monday: [Garden Update: May 3, 2021](/gardening/2021-05-03-garden-update)
 * Tuesday: [Ecobee Status Monitor Documentation](/ecobeestatus)
 * Wednesday: [ToastMasters Ice Breaker Speech](/lifestyle/2021-05-05-toastmasters-ice-breaker-speech)
@@ -66,7 +66,7 @@ I create and merge a pull request on my
 <a href="https://github.com/almostengr/almostengrwebsite" target="_blank">blog's repository</a>
 and the CI/CD process takes care of generating the files and pushing them to the website. Since the CI/CD
 is doing the bulk of the work, I can initiate and complete the pull request from any device that allows
-me to access GitHub.
+me to access <a href="https://github.com/almostengr" target="_blank">GitHub</a>.
 
 ## Conclusion 
 

@@ -1,5 +1,5 @@
 {% for keyword in keywordlist %}
-<a href='https://www.google.com/search?q=site:thealmostengineer.com "{{ keyword | trim }}"'
+<a href='https://www.google.com/search?q=site:thealmostengineer.com "{{ keyword | trim }}"' class="text-muted"
     target="_self">{{ keyword | trim }}</a>
 {%- if not loop.last -%},{%- endif -%}
 {% endfor %}

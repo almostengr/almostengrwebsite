@@ -1,0 +1,20 @@
+<p class="text-center blog-post-meta text-secondary font-italic">
+    {% if page and page.meta.author and page.meta.posted %}
+    a {%- set num_of_words = page.content | wordcount // 200 -%}
+    {% if num_of_words <= 1 %} 1 {% else %} {{ num_of_words }} {% endif %} minute read
+    {% endif %}
+    {% if page and page.meta.posted %}
+    posted on {{ page.meta.posted }}
+    {% endif %}
+    {% if page and page.meta.updated %}
+    last updated on {{ page.meta.updated }}
+    {% endif %}
+    {% if page and page.meta.author and page.meta.authorurl %}
+    by <a href="{{ page.meta.authorurl|url }}" target="_blank">{{ page.meta.author | striptags }}</a>
+    {% elif page and page.meta.author %}
+    by {{ page.meta.author | striptags }}
+    {% endif %}
+    {% if page and page.meta.category %}
+    in <a href="/{{page.meta.category|lower}}">{{ page.meta.category|capitalize }}</a>
+    {% endif %}
+</p>

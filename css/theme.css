@@ -28,6 +28,7 @@
 /** NAVBAR FIXED TO TOP **/
 
 body {
+  background-color: white;
   min-height: 75rem;
   padding-top: 4.5rem;
 }
@@ -190,9 +191,6 @@ img {
   background-color: #ffffff;
 }
 
-body {
-  background-color: var(--black);
-}
 
 .blog-sidebar h4 {
   border-bottom: solid 4px var(--dark-red);
@@ -212,4 +210,12 @@ h2.latest-posts {
 
 .jumbotext a {
   color: var(--dark-gray);
+}
+
+a.keywords, a:hover.keywords {
+  background-color: var(--dark-red);
+  color: #ffffff !important;
+  font-weight: bold;
+  padding: 3px;
+  text-decoration: none;
 }

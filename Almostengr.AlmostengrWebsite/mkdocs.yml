@@ -94,7 +94,7 @@ theme:
         icon: bi bi-journal-text
       - url: /cookbook
         name: Cookbook
-        icon: bi bi-book-fill
+        icon: bi bi-journal-text
     - title: PROJECTS
       links:
       - url: /lightshow
@@ -171,7 +171,7 @@ theme:
       icon: bi bi-stoplights
   courses:
     - url: https://www.youtube.com/watch?v=iujOWWbiUP0&list=PLaAJ0fv0d9WM8E2K_Ke5As-fw626yQ3tu
-      name: Drupal 8 Basics
+      name: Drupal 8 Basics<br />FREE COURSE!
   social:
     - type: github
       url: https://github.com/almostengr

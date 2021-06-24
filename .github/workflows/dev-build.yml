@@ -5,6 +5,7 @@ on:
     branches:
       - '*'
       - '!main'
+      - '!website'
 
 jobs:
   # spelling:
@@ -38,9 +39,9 @@ jobs:
 
     - run: /usr/bin/python3 -m pip install --upgrade setuptools
 
-    - run: /usr/bin/python3 -m pip install --upgrade mkdocs
+    - run: /usr/bin/python3 -m pip install mkdocs==1.1.2
 
     - run: /usr/bin/python3 -m pip install --upgrade mkdocs-minify-plugin
 
     - name: Build website files
-      run: /usr/bin/python3 -m mkdocs build -f web/mkdocs.yml
+      run: /usr/bin/python3 -m mkdocs build -f Almostengr.AlmostengrWebsite/mkdocs.yml

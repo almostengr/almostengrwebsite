@@ -1,0 +1,55 @@
+{% for nav_item in nav %}
+{% if nav_item.children and page and page.url == category_url %}
+{% for nav_item in nav_item.children | reverse %}
+{% if category_url in nav_item.url and nav_item.title != category_title %}
+<div class="row py-2 my-2 border-bottom">
+    {% if nav_item.meta.image %}
+    <div class="col-4">
+        <a href="{{ nav_item.url|url }}">
+            {% if nav_item.meta.imagealt %}
+            <img src="{{ nav_item.meta.image }}" alt="{{nav_item.meta.imagealt}}" />
+            {% else %}
+            <img src="{{ nav_item.meta.image }}" alt="No alternate text was provided" />
+            {% endif %}
+        </a>
+    </div>
+    {% endif %}
+    <div class="col">
+        <h2 class="text-decoration-none" style="border: 0px;">
+            <a href="{{ nav_item.url|url }}" class="text-dark text-decoration-none">
+                {% if nav_item.meta.title %}
+                {{ nav_item.meta.title }}
+                {% else %}
+                {{ nav_item.title }}
+                {% endif %}
+            </a>
+        </h2>
+        <div>
+            {% if nav_item.meta.description %}
+            {{ nav_item.meta.description | striptags }}
+            {% else %}
+            {{ nav_item.content | striptags | truncate(150, false) }}
+            {% endif %}
+        </div>
+        <div class="text-secondary font-italic">
+            A
+            <span title="{{ nav_item.content | wordcount }} words">
+                {%- set num_of_words = nav_item.content | wordcount // 200 -%}
+                {% if num_of_words <= 1 %}1 {% else %}{{ num_of_words }} {% endif %}
+            </span> minute read
+            {% if nav_item.meta.posted %}
+            posted on {{ nav_item.meta.posted }}
+            {% endif %}
+        </div>
+        <div class="text-secondary">
+            {% if nav_item.meta.keywords %}
+            {% set keywordlist = nav_item.meta.keywords.split(',') %}
+            {%- include "_keywords.html" -%}
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endif %}
+{% endfor %}
+{% endif %}
+{% endfor %}

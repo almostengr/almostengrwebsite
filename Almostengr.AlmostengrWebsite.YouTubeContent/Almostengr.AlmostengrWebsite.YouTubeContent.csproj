@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>dotnet-Almostengr.AlmostengrWebsite.YouTubeContent-3C674D90-3343-4DAB-83E1-1843ED6F731A</UserSecretsId>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="90.0.4430.2400"/>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1"/>
+    <PackageReference Include="Selenium.WebDriver" Version="3.141.0"/>
+    <ProjectReference Include="../Almostengr.AlmostengrWebsite.Common/Almostengr.AlmostengrWebsite.Common.csproj" />
+  </ItemGroup>
+</Project>

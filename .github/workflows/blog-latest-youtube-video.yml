@@ -1,0 +1,23 @@
+name: Blog latest YouTube video
+
+on:
+  schedule:
+    - cron: '15 15 * * *'
+
+jobs:
+  getvideo:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - uses: actions/setup-dotnet@v1
+      name: Setup .NET Core
+      with:
+        dotnet-version: '3.1.x' # SDK Version to use; x will use the latest version of the 3.1 channel
+    
+    - name: Get Published Videos
+      run: dotnet run --project Almostengr.AlmostengrWebsite.YouTubeContent/Almostengr.AlmostengrWebsite.YouTubeContent.csproj
+
+    - name: Run commit on files
+      run: bash scripts/ghcommit.sh

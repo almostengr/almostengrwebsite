@@ -24,4 +24,16 @@ namespace Almostengr.AlmostengrWebsite.Precipitation
         public double? Value { get; set; }
         public string UnitCode { get; set; }
     }
+    
+    public class Temperature
+    {   
+        public double? Value { get; set; }
+        public string UnitCode { get; set; }
+    }
+    
+    public class RelativeHumidity
+    {
+        public double? Value { get; set; }
+        public string UnitCode { get; set; }
+    }
 }

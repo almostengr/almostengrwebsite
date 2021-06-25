@@ -20,6 +20,22 @@
             "problemMatcher": "$msCompile"
         },
         {
+            "label": "build Garden Weather",
+            "command": "dotnet",
+            "type": "shell",
+            "args": [
+                "build",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary",
+                "Almostengr.AlmostengrWebsite.GardenWeather/Almostengr.AlmostengrWebsite.GardenWeather.csproj"
+            ],
+            "group": "build",
+            "presentation": {
+                "reveal": "silent"
+            },
+            "problemMatcher": "$msCompile"
+        },
+        {
             "label": "mkdocs serve",
             "command": "mkdocs",
             "type": "shell",

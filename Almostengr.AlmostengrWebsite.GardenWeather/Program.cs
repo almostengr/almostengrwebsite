@@ -129,7 +129,7 @@ namespace Almostengr.AlmostengrWebsite.GardenWeather
             output.Add("Weather data as reported from the National Weather Service for the weather station ");
             output.Add("that is cloest to my garden.");
             output.Add(string.Empty);
-            output.Add("|Date|Min Temp|Max Temp|Avg Temp|Min Humidity|Max Humidity|Avg Humidity|Precip (M)|Precip (Inches)|Avg Precip / Hr|");
+            output.Add("|Date|Min Temp C (F)|Max Temp C (F)|Avg Temp C (F)|Min HR|Max RH|Avg RH|Precip M (In)|Avg Precip/Hr|");
             output.Add("|---|---|---|---|---|---|---|---|---|");
 
             Console.WriteLine("Done building blog post header");
@@ -200,16 +200,14 @@ namespace Almostengr.AlmostengrWebsite.GardenWeather
 
                 maxHumidity = (maxHumidity == null || feature.Properties.RelativeHumidity.Value > maxHumidity) ?
                     feature.Properties.RelativeHumidity.Value : maxHumidity;
-                minHumidity = (minHumidity == null || feature.Properties.RelativeHumidity.Value < minTemperature) ?
+                minHumidity = (minHumidity == null || feature.Properties.RelativeHumidity.Value < minHumidity) ?
                     feature.Properties.RelativeHumidity.Value : minHumidity;
                 sumHumidity += feature.Properties.RelativeHumidity.Value;
 
                 // precipitation
 
-                sumPrecipM += feature.Properties.PrecipitationLastHour.Value;
+                sumPrecipM += feature.Properties.PrecipitationLastHour.Value > 0 ? feature.Properties.PrecipitationLastHour.Value : 0;
             }
-
-            sumPrecipM = sumPrecipM == null ? 0 : sumPrecipM;
 
             double? sumPrecipInch = sumPrecipM * 39.370078740157;
 
@@ -217,10 +215,13 @@ namespace Almostengr.AlmostengrWebsite.GardenWeather
             line += reportDate;
             line += "|";
             line += string.Format("{0:N1}", minTemperature);
+            line += " (" + string.Format("{0:N1}",((minTemperature * 1.8) + 32)) + ")";
             line += "|";
             line += string.Format("{0:N1}", maxTemperature);
+            line += " (" + string.Format("{0:N1}",((maxTemperature * 1.8) + 32)) + ")";
             line += "|";
             line += string.Format("{0:N1}", sumTemperature / features.Count);
+            line += " (" + string.Format("{0:N1}",(((sumTemperature / features.Count) * 1.8) + 32)) + ")";
             line += "|";
             line += string.Format("{0:N0}", minHumidity);
             line += "|";
@@ -228,11 +229,11 @@ namespace Almostengr.AlmostengrWebsite.GardenWeather
             line += "|";
             line += string.Format("{0:N0}", sumHumidity / features.Count);
             line += "|";
-            line += string.Format("{0:N5}", sumPrecipM);
+            line += string.Format("{0:N3}", sumPrecipM);
+            line += " (" + string.Format("{0:N3}", sumPrecipInch) + ")";
             line += "|";
-            line += string.Format("{0:N5}", sumPrecipInch);
-            line += "|";
-            line += string.Format("{0:N5}", sumPrecipInch / features.Count);
+            line += string.Format("{0:N3}", sumPrecipInch / features.Count);
+            line += " (" + string.Format("{0:N3}", sumPrecipInch / features.Count) + ")";
             line += "|";
 
             text.Add(line);

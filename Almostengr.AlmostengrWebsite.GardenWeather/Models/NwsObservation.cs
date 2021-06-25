@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Almostengr.AlmostengrWebsite.Precipitation
+namespace Almostengr.AlmostengrWebsite.GardenWeather
 {
     public class NwsObservation
     {
@@ -17,23 +17,25 @@ namespace Almostengr.AlmostengrWebsite.Precipitation
     {
         public DateTime Timestamp { get; set; }
         public PrecipitationLastHour PrecipitationLastHour { get; set; }
+        public Temperature Temperature { get; set; }
+        public RelativeHumidity RelativeHumidity { get; set; }
     }
 
     public class PrecipitationLastHour
     {
-        public double? Value { get; set; }
+        public double? Value { get; set; } = 0.0;
         public string UnitCode { get; set; }
     }
-    
+
     public class Temperature
-    {   
-        public double? Value { get; set; }
+    {
+        public double? Value { get; set; } = 0.0;
         public string UnitCode { get; set; }
     }
-    
+
     public class RelativeHumidity
     {
-        public double? Value { get; set; }
+        public double? Value { get; set; } = 0.0;
         public string UnitCode { get; set; }
     }
 }

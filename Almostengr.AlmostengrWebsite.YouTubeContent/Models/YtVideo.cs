@@ -16,7 +16,7 @@ namespace Almostengr.AlmostengrWebsite.YouTubeContent.Models
         public DateTime Date_Published { get; set; }
         public string VideoId
         {
-            get { return this.Url.Substring(this.Url.IndexOf("?v=")); }
+            get { return this.Url.Substring(this.Url.IndexOf("?v=")).Replace("?v=", ""); }
         }
         public string Keywords { get; set; }
     }

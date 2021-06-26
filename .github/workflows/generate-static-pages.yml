@@ -3,9 +3,6 @@ name: Deploy to Production
 on:
   schedule:
     - cron: '15 15 * * *'
-  # push:
-  #   branches:
-  #     - main
 
 jobs:
   getcontent:
@@ -23,6 +20,18 @@ jobs:
 
     - name: Get Weather Data
       run: dotnet run --project Almostengr.AlmostengrWebsite.GardenWeather/Almostengr.AlmostengrWebsite.GardenWeather.csproj
+
+    - run: find Almostengr.AlmostengrWebsite/docs/images/ -iname *png -exec convert {} {}.jpg \;
+      name: Converting PNG images to JPG
+
+    - run: find Almostengr.AlmostengrWebsite/docs/images/ -iname *png -exec git rm {} \;
+      name: Removing PNG images
+
+    - run: find Almostengr.AlmostengrWebsite/docs/images/ -iname *jpg -iname *jpeg -exec cp {} Almostengr.AlmostengrWebsite/docs/img/ \;
+      name: Copying images to img directory
+
+    - run: find Almostengr.AlmostengrWebsite/docs/img -iname *jpg -iname *jpeg -exec convert -resize 45% {} {} \;
+      name: Convert images to thumbnails
 
     - name: Run commit on files
       run: bash scripts/ghcommit.sh

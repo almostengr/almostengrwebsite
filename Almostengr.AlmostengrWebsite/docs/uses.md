@@ -16,6 +16,7 @@ you can check out [the blog post](/technology/2020.02.01-developer-uses-page) ab
 * [Handyman Tools](#handyman-tools)
 * [Technology Tools](#technology-tools)
 * [Gardening Tools](#gardening-tools)
+* [Home Assistant](#home-assistant)
 * [Other Uses Pages](#other-uses-pages)
 
 ## Handyman Tools
@@ -106,6 +107,22 @@ that I post on my YouTube channel.
 ## Gardening Tools
 
 * [Greenhouse Exhaust Calculator](http://www.littlegreenhouse.com/fan-calc.shtml)
+
+## Home Assistant
+
+### Hardware
+
+* [Ubuntu Server Virtual Machine (VM)](http://www.ubuntu.com) running on Oracle VirtualBox VM
+* Belkin WeMo Smart Plug
+* MyQ Garage Opener
+* Roku 
+
+### Software
+
+* <a href="https://home-assistant.io" target="_blank">Home Assistant</a>
+* [Kodi](https://kodi.tv/)
+* [Plex](https://www.plex.tv)
+* [DD-WRT](https://www.dd-wrt.com/)
 
 ## Other Uses Pages
 

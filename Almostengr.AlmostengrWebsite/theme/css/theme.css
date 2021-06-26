@@ -191,7 +191,6 @@ img {
   background-color: #ffffff;
 }
 
-
 .blog-sidebar h4 {
   border-bottom: solid 4px var(--dark-red);
 }
@@ -218,4 +217,22 @@ a.keywords, a:hover.keywords {
   font-weight: bold;
   padding: 3px;
   text-decoration: none;
+}
+
+table, td, th {
+  border: solid 1px black;
+}
+
+th {
+  background-color: var(--dark-red);
+  color: #ffffff;
+  text-align: center;
+}
+
+td {
+  text-align: center;
+}
+
+tr:nth-child(even){
+  background-color: var(--gray);
 }

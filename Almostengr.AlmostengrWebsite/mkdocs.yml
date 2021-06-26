@@ -120,14 +120,11 @@ theme:
       - url: /services
         name: Services
         icon: bi bi-briefcase
-      - url: https://www.youtube.com/watch?v=iujOWWbiUP0&list=PLaAJ0fv0d9WM8E2K_Ke5As-fw626yQ3tu
-        name: Drupal 8 Basics Course
-        icon: bi bi-camera-video-fill
       - url: /about
         name: About
         icon: bi bi-file-person-fill
       - url: /uses
-        name: Uses
+        name: Uses (Tools Used)
         icon: bi bi-tools
       - url: /contact
         name: Contact

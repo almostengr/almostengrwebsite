@@ -8,4 +8,5 @@ robots: index,follow
 
 Redirecting...
 
-If you are not automatically redirected, [click here](https://thealmostengineer.com/lightshow).
+If you are not automatically redirected,
+go to [https://thealmostengineer.com/lightshow](https://thealmostengineer.com/lightshow).

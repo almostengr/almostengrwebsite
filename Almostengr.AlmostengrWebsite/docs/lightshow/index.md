@@ -16,7 +16,7 @@ image: /images/lightshow/2020 Christmas Light Show 20201211-f000000.jpg
 
 ## Show Dates and Times
 
-Show will run nightly from November 26, 2021 until January 1, 2022.
+Show will run nightly from November 26, 2021 until December 25, 2021.
 
 * Sunday-Thursday, 5:00 PM (17:00) until 9:30 PM (21:30)
 * Friday and Saturday, 5:00 PM (17:00) until 10:30 PM (22:30)

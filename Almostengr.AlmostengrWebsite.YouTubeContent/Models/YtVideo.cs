@@ -19,5 +19,9 @@ namespace Almostengr.AlmostengrWebsite.YouTubeContent.Models
             get { return this.Url.Substring(this.Url.IndexOf("?v=")).Replace("?v=", ""); }
         }
         public string Keywords { get; set; }
+        public string ThumbNailUri
+        {
+            get { return $"https://i.ytimg.com/vi/{VideoId}/maxresdefault.jpg"; }
+        }
     }
 }

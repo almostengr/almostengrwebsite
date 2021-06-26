@@ -7,6 +7,7 @@ using Almostengr.AlmostengrWebsite.YouTubeContent.Models;
 using static Almostengr.AlmostengrWebsite.Common.AeSelenium;
 using static Almostengr.AlmostengrWebsite.Common.AeJson;
 using OpenQA.Selenium;
+using System.Net;
 
 namespace Almostengr.AlmostengrWebsite.YouTubeContent
 {
@@ -32,6 +33,7 @@ namespace Almostengr.AlmostengrWebsite.YouTubeContent
                     if (video.Date_Published.Date == currentDate.Date)
                     {
                         // video.Keywords = GetVideoKeywords(video.Url);
+                        // await SaveVideoThumbnailAsync(video);
                         WriteVideoToBlog(video);
                         break;
                     }
@@ -43,6 +45,16 @@ namespace Almostengr.AlmostengrWebsite.YouTubeContent
             {
                 Console.WriteLine(ex.Message);
                 return 1;
+            }
+        }
+
+        private static async Task SaveVideoThumbnailAsync(YtVideo video)
+        {
+            using (WebClient webClient = new WebClient())
+            {
+                webClient.DownloadFileAsync(
+                    new Uri(video.ThumbNailUri), 
+                    $"Almostengr.AlmostengrWebsite/docs/images/{video.VideoId}.jpg");
             }
         }
 
@@ -77,6 +89,7 @@ namespace Almostengr.AlmostengrWebsite.YouTubeContent
             textFile.Add("posted: " + blogVideo.Date_Published.ToString("yyyy-MM-dd"));
             textFile.Add("author: Kenny Robinson");
             textFile.Add("youtube: " + blogVideo.Url);
+            textFile.Add("image: /img/" + blogVideo.VideoId + ".jpg");
 
             string category = DateTime.Now.DayOfWeek == DayOfWeek.Saturday ? "category: handyman" : "category: technology";
             Console.WriteLine(category);

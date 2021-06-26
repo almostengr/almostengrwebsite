@@ -48,12 +48,12 @@ namespace Almostengr.AlmostengrWebsite.GardenWeather
                         new DateTime(feature.Properties.Timestamp.Year, feature.Properties.Timestamp.Month, 01).ToString("yyyy-MM-dd"),
                         "-",
                         new DateTime(feature.Properties.Timestamp.Year, feature.Properties.Timestamp.Month, 01).ToString("MMMM-yyyy").ToLower(),
-                        "-precipitation.md"
+                        "-weather.md"
                         );
 
                     csvFilename = string.Concat(
                         new DateTime(feature.Properties.Timestamp.Year, feature.Properties.Timestamp.Month, 01).ToString("yyyyMMMM").ToLower(),
-                        "-precipitation.csv"
+                        "-weather.csv"
                         );
 
                     break;
@@ -119,15 +119,16 @@ namespace Almostengr.AlmostengrWebsite.GardenWeather
             List<string> output = new List<string>();
 
             output.Add("---");
-            output.Add("title: Precipitation Data for " + monthYear);
+            output.Add("title: Weather Data for " + monthYear);
             output.Add("posted: " + currentDate.ToString("yyyy-MM-dd"));
-            output.Add("author: Kenny Robinson (via automation)");
+            output.Add("author: automation");
             output.Add("category: gardening");
-            output.Add("description: Weather data from the National Weather Service for  " + monthYear);
+            output.Add("description: Weather data from the National Weather Service for " + monthYear);
             output.Add("---");
             output.Add(string.Empty);
             output.Add("Weather data as reported from the National Weather Service for the weather station ");
-            output.Add("that is cloest to my garden.");
+            output.Add("that is cloest to my garden. Data is pulled via API from the NWS and saved to this ");
+            output.Add("blog post daily.");
             output.Add(string.Empty);
             output.Add("|Date|Min Temp C (F)|Max Temp C (F)|Avg Temp C (F)|Min HR|Max RH|Avg RH|Precip M (In)|Avg Precip/Hr|");
             output.Add("|---|---|---|---|---|---|---|---|---|");

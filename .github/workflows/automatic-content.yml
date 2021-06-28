@@ -1,0 +1,25 @@
+name: Get Automated Content
+
+on:
+  schedule:
+    - cron: '15 15 * * *'
+
+jobs:
+  getcontent:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - uses: actions/setup-dotnet@v1
+      name: Setup .NET Core
+      with:
+        dotnet-version: '3.1.x' # SDK Version to use; x will use the latest version of the 3.1 channel
+    
+    - name: Get Published Videos
+      run: dotnet run --project Almostengr.AlmostengrWebsite.YouTubeContent/Almostengr.AlmostengrWebsite.YouTubeContent.csproj
+
+    - name: Get Weather Data
+      run: dotnet run --project Almostengr.AlmostengrWebsite.GardenWeather/Almostengr.AlmostengrWebsite.GardenWeather.csproj
+
+    - name: Run commit on files
+      run: bash scripts/ghcommit.sh

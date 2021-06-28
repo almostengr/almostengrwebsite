@@ -27,7 +27,7 @@ theme:
       name: Technology
     - url: /handyman
       name: Handyman
-    - url: https://www.youtube.com/channel/UC4HCouBLtXD1j1U_17aBqig?sub_confirmation=1
+    - url: https://www.youtube.com/channel/kennythealmostengineer?sub_confirmation=1
       name: YouTube
     - url: /projects
       name: Projects
@@ -75,7 +75,7 @@ theme:
         name: Twitter
         icon: bi bi-twitter
       - type: youtube
-        url: https://www.youtube.com/channel/UC4HCouBLtXD1j1U_17aBqig?sub_confirmation=1
+        url: https://www.youtube.com/channel/KennyTheAlmostEngineer?sub_confirmation=1
         name: YouTube
         icon: bi bi-youtube
     - title: BLOG
@@ -184,7 +184,7 @@ theme:
       name: Twitter
       icon: bi bi-twitter
     - type: youtube
-      url: https://www.youtube.com/channel/UC4HCouBLtXD1j1U_17aBqig?sub_confirmation=1
+      url: https://www.youtube.com/channel/KennyTheAlmostEngineer?sub_confirmation=1
       name: YouTube
       icon: bi bi-youtube"
   mobilelinks:
@@ -197,7 +197,7 @@ theme:
     - name: Follow Me On Twitter
       url: https://twitter.com/almostengr
     - name: Subscribe To My YouTube Channel
-      url: https://www.youtube.com/channel/UC4HCouBLtXD1j1U_17aBqig?sub_confirmation=1
+      url: https://www.youtube.com/channel/KennyTheAlmostEngineer?sub_confirmation=1
     - name: The Almost Engineer Website (Home Page)
       url: /
 

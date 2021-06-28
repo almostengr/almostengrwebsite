@@ -142,7 +142,7 @@ namespace Almostengr.AlmostengrWebsite.GardenWeather
         {
             foreach (Feature feature in features)
             {
-                string line = feature.Properties.Timestamp.ToString("yyyy-MM-dd hh:mm:ss");
+                string line = feature.Properties.Timestamp.ToString("yyyy-MM-dd HH:mm:ss");
                 line += ",";
                 line += feature.Properties.Temperature.Value;
                 line += ",";

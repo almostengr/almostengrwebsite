@@ -1,10 +1,10 @@
 ---
-title: Table Topics Questions for June 29 Toastmasters Meeting
+title: Summer Table Topics Questions for Toastmasters Meeting
 description: I signed up to be the table topics master for the upcoming Toastmasters meeting. Here are the questions that I came up with.
 author: Kenny Robinson
 posted: 2021-06-29
 category: lifestyle
-keywords: table topics, toastmasters, public speaking, table topic ideas
+keywords: table topics, toastmasters, public speaking, table topic ideas, discussion topics
 ---
 
 Table Topics are a portion of the Toastmasters meeting where individuals are asked a question and have
@@ -13,6 +13,9 @@ to improve their improptu speaking skills.
 
 Given that this meeting was taking place in the middle of the summer, I decided to make the topics
 all summer related.
+
+I did not use all of these questions as we did not have enough time to go through all of them. When it comes
+to preparing for Toastmasters meetings, it is better to have more questions that what you will actually need.
 
 ## The Topics
 
@@ -47,10 +50,10 @@ you planting and why that particular type of tree?
 * The air conditioner is broken and the repair man won't be available until next week.
 How would you keep your house cool until it is fixed?
 
-* Summer means that the kids are usually at home. Would it be better that they were in school during the summer or to have the summer vacation off?
+* Summer means that the kids are usually at home. Would it be better that they were in school during the 
+summer or to have the summer vacation off?
 
 * With summer time comes hot temperatures. 
-
 How hot is too hot when it comes to outdoor summer temperatures? What do you do on these too hot days?
 
 * Name something, other than air conditioning, that you would not want to break during the summer?

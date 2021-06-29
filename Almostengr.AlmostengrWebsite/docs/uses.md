@@ -51,7 +51,7 @@ handymen and handywomen.
 ## Technology Tools
 
 These are the tools that I use to create websites, software, and videos on my
-<a href="https://www.youtube.com/channel/KennyTheAlmostEngineer?sub_confirmation=1" 
+<a href="https://www.youtube.com/c/kennythealmostengineer?sub_confirmation=1" 
     target="_blank">YouTube Channel</a>.
 
 ### Linux Software

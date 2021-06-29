@@ -68,7 +68,7 @@ are. Demonstrating leadership can help you get to the top.
 ### Create
 
 As you may know, I have a
-[YouTube channel](https://www.youtube.com/channel/KennyTheAlmostEngineer?sub_confirmation=1)
+[YouTube channel](https://www.youtube.com/c/kennythealmostengineer?sub_confirmation=1)
 where I show viewers how to do
 projects that they might be considering or how to do something when it comes
 to technology (after all I do work in IT). However, my channel has not been

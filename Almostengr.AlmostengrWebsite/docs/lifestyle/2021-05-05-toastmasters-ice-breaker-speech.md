@@ -55,7 +55,7 @@ but did not realize you would really need it in the future, except in college.
 ### Fully Written Speech vs Outline
 
 When I first started doing
-<a href="https://www.youtube.com/channel/KennyTheAlmostEngineer" target="_blank">YouTube videos</a>,
+<a href="https://www.youtube.com/c/kennythealmostengineer" target="_blank">YouTube videos</a>,
 I would write out a script for the video. I quickly realized that wrtiing a script was time consuming
 and did not allow you to adjust things on the fly. You had to have your entire speech fully thought out
 before giving it.

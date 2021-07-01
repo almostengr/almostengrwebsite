@@ -5,7 +5,7 @@ author: Kenny Robinson
 posted: 2019-12-26
 ---
 
-![](/images/2019.12.26-mcgil university.png)
+![](/images/2019.12.26-mcgil university.png.jpg)
 
 A friend on social media posted about this online financial course that is available for free from McGill University
 in Canada. As you can imagine, the course is designed for Canadians, but I found that the concepts, ideas, and

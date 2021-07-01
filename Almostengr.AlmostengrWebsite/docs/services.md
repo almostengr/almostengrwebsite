@@ -1,7 +1,7 @@
 ---
 title: Services
 description: List of services offered
-image: /images/robinson_services_snap.png
+image: /images/robinson_services_snap.png.jpg
 imagealt: "Get it done without the headaches"
 ---
 

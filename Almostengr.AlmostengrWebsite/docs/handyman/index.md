@@ -1,4 +1,5 @@
 ---
 title: Handyman
-description: Articles thatand videos discussing on to do things around the house and car yourself.
+description: Articles and videos discussing on to do things around the house and car yourself.
+hidepostinfo: true
 ---

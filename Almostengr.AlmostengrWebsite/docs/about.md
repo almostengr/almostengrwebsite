@@ -1,7 +1,7 @@
 ---
 title: About
 description: Information about Kenny Robinson and his blog
-image: /images/SAM_2423-f008473.png
+image: /images/SAM_2423-f008473.png.jpg
 imagealt: Kenny being silly
 ---
 

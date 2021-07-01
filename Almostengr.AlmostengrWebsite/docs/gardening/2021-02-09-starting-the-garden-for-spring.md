@@ -4,7 +4,7 @@ description: Talk about what is done after giving the garden a break for the win
 author: Kenny Robinson
 keywords: garden, gardening, backyard garden
 category: gardening
-image: /images/20210208_120152.jpg
+image: /img/20210208_120152.jpg
 imagealt: Collard greens from years past are still growing in the garden.
 posted: 2020-02-09
 ---

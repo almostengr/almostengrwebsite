@@ -37,15 +37,15 @@ dates and information may be incorrect if you live outside of the USDA growing z
 
 1) Initial set up has to be done. You have to enter the county that you are located in to begin using the app.
 
-![](/images/2019.03.11-Screenshot_2019-03-06-10-09-07.png)
+![](/images/2019.03.11-Screenshot_2019-03-06-10-09-07.png.jpg)
 
 2) A number of options are available with this app including contacting the Alabama Cooperative Extension System.
 
-![](/images/Screenshot_2019-03-06-10-09-13.png)
+![](/images/Screenshot_2019-03-06-10-09-13.png.jpg)
 
 3) SOW App recommends what plants to plant and when it can be planted.
 
-![](/images/Screenshot_2019-03-06-10-09-13.png)
+![](/images/Screenshot_2019-03-06-10-09-13.png.jpg)
 
 ## Conclusion
 

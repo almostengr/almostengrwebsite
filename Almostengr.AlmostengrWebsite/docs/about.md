@@ -1,7 +1,7 @@
 ---
 title: About
 description: Information about Kenny Robinson and his blog
-image: /images/SAM_2423-f008473.png
+image: /images/SAM_2423-f008473.png.jpg
 imagealt: Kenny being silly
 ---
 
@@ -41,11 +41,13 @@ The Almost Engineer name. Kenny works (and according to some live in) in the eng
 of Computer Science, has great problem solving skills, and enjoys fixing things instead of paying 
 someone else to do it for him. However Kenny has a Business degree from the University of Alabama 
 (Roll Tide!) instead of an engineering degree, thus almost being an engineer.
+This is explained further 
+<a href="https://www.youtube.com/watch?v=h5o7KND-gFM" target='_blank'>in a video</a> 
+on his <a href="https://youtube.com/c/kennythealmostengineer" target="_blank">YouTube channel</a>.
 
 ## Blog Technology
 
 Originally, Kenny started blogging on Blogger in 2010.
-
 After several years of a having the blog there, the blog was converted to
 Drupal 7. At the time of this switch, Kenny was using Drupal 7 on a number
 of websites that Kenny was building and maintaining. So it made sense to use
@@ -55,3 +57,21 @@ In 2019, Kenny converted the blog again from Drupal 7 over to MKDocs. The reason
 for this conversion was because he found myself spending more time performing
 maintenance updates than writing content. He outlines this more in his post on
 [switching from Drupal to MkDocs](/technology/2019.12.21-switched-blog-from-drupal-to-mkdocs).
+
+## Blogs I Read
+
+In addition to writing here, I also read the blogs of others. Here are the most common ones that I read.
+Before you ask, they do not provide any kickbacks or monetary support for me listing their links on 
+my blog.
+
+<ul>
+<li><a href="https://ardalis.com/" target="_blank">Ardalis is Steve Smith</a></li>
+<li><a href="https://atishay.me" target="_blank">Atishay Jain</a></li>
+<li><a href="https://dotnetplaybook.com" target="_blank">Dotnet Playbook</a></li>
+<li><a href="https://gkdba.wordpress.com/" target="_blank">Goal Keeping DBA</a></li>
+<li><a href="https://hanselman.com" target='_blank'>Scott Hanselman</a></li>
+<li><a href="https://wildermuth.com" target='_blank'>Shawn Wildermuth</a></li>
+<li><a href="https://simpleprogrammer.com" target='_blank'>Simple Programmer</a></li>
+<li><a href="https://thebipolarbuzz.com" target='_blank'>The Bipolar Buzz</a></li>
+<li><a href="https://thereformedprogrammer.net" target="_blank">The Reformed Programmer</a></li>
+</ul>

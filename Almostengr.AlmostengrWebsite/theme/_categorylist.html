@@ -4,7 +4,7 @@
 {% if category_url in nav_item.url and nav_item.title != category_title %}
 <div class="row py-2 my-2 border-bottom">
     {% if nav_item.meta.image %}
-    <div class="col-4">
+    <div class="col-sm-12 col-md-4" id="postimage">
         <a href="{{ nav_item.url|url }}">
             {% if nav_item.meta.imagealt %}
             <img src="{{ nav_item.meta.image }}" alt="{{nav_item.meta.imagealt}}" />
@@ -14,7 +14,7 @@
         </a>
     </div>
     {% endif %}
-    <div class="col">
+    <div class="col" id="postinfo">
         <h2 class="text-decoration-none" style="border: 0px;">
             <a href="{{ nav_item.url|url }}" class="text-dark text-decoration-none">
                 {% if nav_item.meta.title %}

@@ -120,7 +120,7 @@ starting virtual machines, and automatically commiting files. When you run the s
 and over again, it is often best to put them into a script and then just call the script when you need it.
 I have created a playlist that contains some of the scripts used. You can 
 on my 
-<a href="https://www.youtube.com/channel/UC4HCouBLtXD1j1U_17aBqig?sub_confirmation=1" target="_blank">Youtube channel</a>.
+<a href="https://www.youtube.com/c/kennythealmostengineer?sub_confirmation=1" target="_blank">Youtube channel</a>.
 </p>
 <p>Technologies: Bash Scripts</p>
 <p>

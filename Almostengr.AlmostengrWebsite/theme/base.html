@@ -191,11 +191,7 @@
         </h1>
         {% endif %}
 
-        {% if not page.is_homepage %}
-        {% include "_blogmetadatafull.html" %}
-        {% endif %}
-
-        {% if page and ( 'technology' in page.url or 'handyman' in page.url or 'gardening' in page.url or 'lifestyle' in page.url) %}
+        {% if page and ( 'technology' in page.url or 'handyman' in page.url or 'gardening' in page.url or 'lifestyle' in page.url) and 'index' not in page.url %}
         <div class="pb-3">
           {% include "_sharewidget.html" %}
         </div>
@@ -254,13 +250,13 @@
         {%- include "_search.html" -%}
         {% endif %}
 
-        {% if page and page.meta.keywords %}
-        <p class="text-muted">
-          <strong>Keywords: </strong>
-          {% set keywordlist = page.meta.keywords.split(',') %}
-          {%- include "_keywords.html" -%}
-        </p>
-        {% endif %}
+          <!-- {% if page and page.meta.keywords %}
+          <p class="text-muted">
+            <strong>Keywords: </strong>
+            {% set keywordlist = page.meta.keywords.split(',') %}
+            {%- include "_keywords.html" -%}
+          </p>
+          {% endif %} -->
 
         {% if page and ( 'technology' in page.url or 'handyman' in page.url or 'gardening' in page.url or 'lifestyle' in page.url) %}
         <div class="bg-warning my-3 mx-5 p-2 rounded">
@@ -273,19 +269,16 @@
         {% include "_googleadsense.html" %}
       </div><!-- /.blog-main -->
       <aside class="col-md-3 blog-sidebar">
-        <!-- <div class="card mb-3">
+        {% if page and ( 'technology' in page.url or 'handyman' in page.url or 'gardening' in page.url or 'lifestyle' in page.url) and page.meta.hidepostinfo != true %}
+        <div class="card mb-3">
           <div class="card-header bg-black text-white text-center">
-            <h4 style="border: 0px;">Connect With Me</h4>
+            <h4 style="border: 0px;">Information</h4>
           </div>
           <div class="card-body bg-light">
-            <ul class="list-unstyled">
-              {% for link in config.theme.social %}
-              <li><a class="text-decoration-none" href="{{ link.url|url }}" target="_blank">
-                  <i class="{{link.icon}}"></i> {{link.name}}</a></li>
-              {% endfor %}
-            </ul>
+            {% include "_blogmetadatafull.html" %}
           </div>
-        </div> -->
+        </div>
+        {% endif %}
         <div class="card mb-3">
           <div class="card-header bg-black text-white text-center">
             <h4 style="border: 0px;">Online Courses</h4>
@@ -297,6 +290,14 @@
                   <i class="{{link.icon}}"></i> {{link.name}}</a></li>
               {% endfor %}
             </ul>
+          </div>
+        </div>
+        <div class="card mb-3">
+          <div class="card-header bg-black text-white text-center">
+            <h4 style="border: 0px;">Share This</h4>
+          </div>
+          <div class="card-body bg-light">
+              {% include "_sharewidget.html" %}
           </div>
         </div>
         <div class="p-1 mb-3">

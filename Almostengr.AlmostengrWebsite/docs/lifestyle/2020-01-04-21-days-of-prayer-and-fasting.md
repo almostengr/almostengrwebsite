@@ -5,7 +5,7 @@ category: Lifestyle
 author: Kenny Robinson
 ---
 
-![Post about using social media more intently](/images/2020.01.04-21-days-of-prayer-and-fasting.png)
+![Post about using social media more intently](/images/2020.01.04-21-days-of-prayer-and-fasting.png.jpg)
 
 ## Background
 

@@ -191,10 +191,6 @@
         </h1>
         {% endif %}
 
-        {% if not page.is_homepage %}
-        <!-- {% include "_blogmetadatafull.html" %} -->
-        {% endif %}
-
         {% if page and ( 'technology' in page.url or 'handyman' in page.url or 'gardening' in page.url or 'lifestyle' in page.url) and 'index' not in page.url %}
         <div class="pb-3">
           {% include "_sharewidget.html" %}

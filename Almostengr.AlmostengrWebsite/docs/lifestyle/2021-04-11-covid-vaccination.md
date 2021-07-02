@@ -99,4 +99,3 @@ This was an interesting experience. I figured that I would share mine as others 
 of what they could experience if they choose to get vaccinated. There are a number of factors that come
 into play such as your current health condition and lifestyle, that determine whether you will have very
 few or a lot of side effects from the vaccine.
-

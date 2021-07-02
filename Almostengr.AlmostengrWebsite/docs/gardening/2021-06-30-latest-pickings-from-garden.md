@@ -5,6 +5,8 @@ posted: 2021-06-30
 author: Kenny Robinson
 category: Gardening
 keywords: gardening, vegetables, cucumbers, tomatoes 
+image: /img/206391646_10110530947952955_5813291480221355741_n.jpg
+imagealt: Cucumber picked from the garden.
 ---
 
 This month, there were 3 cucumbers that I was able to pick from the garden. A number of flowers 

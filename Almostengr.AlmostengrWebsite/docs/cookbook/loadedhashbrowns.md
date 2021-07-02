@@ -1,5 +1,8 @@
 ---
 title: Loaded Hash Browns
+image: /images/cookbook/20210627_121518.jpg
+imagealt: Photo of hashbrowns after cooking still on the waffle iron
+keywords: cooking, hash browns, breakfast, brunch, what to eat
 ---
 
 ## Ingredients
@@ -20,3 +23,8 @@ title: Loaded Hash Browns
 * Close waffle iron lid and let cook for 10-15 minutes. The thicker the layer of hash browns, the 
 longer it will take to cook. 
 * Once the hash browns are done cooking, remove them from the waffle iron.
+
+## Other Notes
+
+* Hash browns were difficult to remove from the waffle iron because of the grooves in the waffle iron. 
+* Be sure to use cooking spray before adding the food. It will make removing the cooked items easier.

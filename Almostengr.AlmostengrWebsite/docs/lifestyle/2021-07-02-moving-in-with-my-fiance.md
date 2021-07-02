@@ -1,16 +1,16 @@
 ---
-title: Moving in with My Fiancee
+title: Moving in with My Fiance
 category: lifestyle
 author: Alaina Wrencher
 authorurl: https://thebipolarbuzz.com
 posted: 2021-07-02
-description: My fiancee was given an opporunity to post on my blog. She shared how things were going with us living together.
+description: My fiance was given an opporunity to post on my blog. She shared how things were going with us living together.
 keywords: moving, couples living together, living together, couples life,
 image: /img/20210508_065942.jpg
 imagealt: Items being moved in boxes
 ---
 
-Hi! Kenny’s better half here :) My now fiancee and I dated for a little over a year before he popped the question in January. In May I moved in, and in December, we will be married. There are varying opinions regarding when couples should begin living together. Some might argue that moving in together before marriage jeopardizes the relationship, while others might argue that doing so allows the couple to adjust to one another and iron out the kinks before tying the knot. I don’t think that this is a one-size-fits-all answer; the couple has to do what’s best for them.
+Hi! Kenny’s better half here :) My now fiance and I dated for a little over a year before he popped the question in January. In May I moved in, and in December, we will be married. There are varying opinions regarding when couples should begin living together. Some might argue that moving in together before marriage jeopardizes the relationship, while others might argue that doing so allows the couple to adjust to one another and iron out the kinks before tying the knot. I don’t think that this is a one-size-fits-all answer; the couple has to do what’s best for them.
 
 A little history before I continue: In my adult life I have lived alone, with a roommate, and with my immediate family. There are pros and cons to each, and I bring to my romantic relationship a little from each of those types of living arrangements.
 

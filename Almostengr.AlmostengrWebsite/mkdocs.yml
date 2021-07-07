@@ -117,6 +117,9 @@ theme:
         icon: bi bi-journal
     - title: LINKS
       links:
+      - url: /search2
+        name: Search
+        icon: bi bi-search
       - url: /services
         name: Services
         icon: bi bi-briefcase
@@ -168,7 +171,8 @@ theme:
       icon: bi bi-stoplights
   courses:
     - url: https://www.youtube.com/watch?v=iujOWWbiUP0&list=PLaAJ0fv0d9WM8E2K_Ke5As-fw626yQ3tu
-      name: Drupal 8 Basics<br />FREE COURSE!
+      body: Learning the basics of Drupal 8 is easy. Watch the free course now!
+      title: Drupal 8 Course
   social:
     - type: github
       url: https://github.com/almostengr

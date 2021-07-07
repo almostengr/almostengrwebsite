@@ -109,23 +109,25 @@
 
 <body class="bg-white">
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark-red">
-    <a class="navbar-brand font-weight-bold text-uppercase" href="/"
-      title="{{ config.site_name }}, {{ config.site_description }}">{{ config.site_name }}</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-      <ul class="navbar-nav mr-auto">
-        {% for nav_item in config.theme.mainnav %}
-        <li class="nav-item">
-          <a class="nav-link text-white text-uppercase" href="{{ nav_item.url | url }}">{{ nav_item.name }}</a>
-        </li>
-        {% endfor %}
-      </ul>
-      <form class="form-inline mt-2 mt-md-0" action="/search2">
+    <div class="container">
+      <a class="navbar-brand font-weight-bold text-uppercase" href="/"
+        title="{{ config.site_name }}, {{ config.site_description }}">{{ config.site_name }}</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse flex-grow-0" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          {% for nav_item in config.theme.mainnav %}
+          <li class="nav-item">
+            <a class="nav-link text-white text-uppercase" href="{{ nav_item.url | url }}">{{ nav_item.name }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+        <!-- <form class="form-inline mt-2 mt-md-0" action="/search2">
         <button class="btn btn-outline-light my-sm-0" type="submit">Search</button>
-      </form>
+      </form> -->
+      </div>
     </div>
   </nav>
 
@@ -232,7 +234,8 @@
           {% if nav_item.children %}
           <div id="links" class="tab-pane active">
             {% for nav_item in nav_item.children | reverse | batch(3) | first %}
-            {% if 'technology' in nav_item.url or 'handyman' in nav_item.url or 'gardening' in nav_item.url or 'lifestyle' in nav_item.url %}
+            {% if 'technology' in nav_item.url or 'handyman' in nav_item.url or 'gardening' in nav_item.url or
+            'lifestyle' in nav_item.url %}
             {% set category = nav_item.url.split("/") %}
             <a href="/{{ nav_item.url|url }}">{{ nav_item.title }} ({{ category[0] | title }})</a>
             {% endif %}
@@ -250,15 +253,8 @@
         {%- include "_search.html" -%}
         {% endif %}
 
-          <!-- {% if page and page.meta.keywords %}
-          <p class="text-muted">
-            <strong>Keywords: </strong>
-            {% set keywordlist = page.meta.keywords.split(',') %}
-            {%- include "_keywords.html" -%}
-          </p>
-          {% endif %} -->
-
-        {% if page and ( 'technology' in page.url or 'handyman' in page.url or 'gardening' in page.url or 'lifestyle' in page.url) %}
+        {% if page and ( 'technology' in page.url or 'handyman' in page.url or 'gardening' in page.url or 'lifestyle' in
+        page.url) %}
         <div class="bg-warning my-3 mx-5 p-2 rounded">
           I enjoy sharing the content that you find here. I ask that you consider purchasing an item on my
           <a href="https://www.amazon.com/hz/wishlist/ls/38QKZTVCEAUK3?ref_=wl_share" target="_blank">Amazon Wish
@@ -269,7 +265,8 @@
         {% include "_googleadsense.html" %}
       </div><!-- /.blog-main -->
       <aside class="col-md-3 blog-sidebar">
-        {% if page and ( 'technology' in page.url or 'handyman' in page.url or 'gardening' in page.url or 'lifestyle' in page.url) and page.meta.hidepostinfo != true %}
+        {% if page and ( 'technology' in page.url or 'handyman' in page.url or 'gardening' in page.url or 'lifestyle' in
+        page.url) and page.meta.hidepostinfo != true %}
         <div class="card mb-3">
           <div class="card-header bg-black text-white text-center">
             <h4 style="border: 0px;">Information</h4>
@@ -279,31 +276,34 @@
           </div>
         </div>
         {% endif %}
-        <div class="card mb-3">
-          <div class="card-header bg-black text-white text-center">
-            <h4 style="border: 0px;">Online Courses</h4>
-          </div>
-          <div class="card-body bg-light">
-            <ul class="list-unstyled">
-              {% for link in config.theme.courses %}
-              <li><a class="text-decoration-none" href="{{ link.url|url }}" target="_blank">
-                  <i class="{{link.icon}}"></i> {{link.name}}</a></li>
-              {% endfor %}
-            </ul>
-          </div>
-        </div>
+        
         <div class="card mb-3">
           <div class="card-header bg-black text-white text-center">
             <h4 style="border: 0px;">Share This</h4>
           </div>
           <div class="card-body bg-light">
-              {% include "_sharewidget.html" %}
+            {% include "_sharewidget.html" %}
           </div>
         </div>
-        <div class="p-1 mb-3">
+        
+        {% for link in config.theme.courses %}
+        <div class="card mb-3">
+          <div class="card-header bg-black text-white text-center">
+            <h4 style="border: 0px;">{{link.title}}</h4>
+          </div>
+          <div class="card-body bg-light">
+            <ul class="list-unstyled">
+              <li><a class="text-decoration-none" href="{{ link.url|url }}" target="_blank">
+                  <i class="{{link.icon}}"></i> {{link.body}}</a></li>
+            </ul>
+          </div>
+        </div>
+        {% endfor %}
+
+        <div class="mb-3">
           {% include "_googleadsense.html" %}
         </div>
-        <div class="p-1 mb-3">
+        <div class="mb-3">
           {% include "_googleadsense.html" %}
         </div>
       </aside><!-- /.blog-sidebar -->
@@ -332,13 +332,8 @@
       <p class="text-center">
         Copyright &copy; {{ build_date_utc.strftime("%Y") }} {{ config.copyright }} |
         Website built and maintained by
-        <a href="https://rhtservices.net" target="_blank">Robinson Handy and Technology Services LLC</a>
-      </p>
-      <p class="text-center">
-        Cookies are used on this website to track your visits, provide advertisements specific to you, and
-        preferences by a third-party. By continuing to use this site, you agree to the use of cookies unless
-        you have disabled them. More information this is available in the
-        <a href="/privacy">Privacy Policy</a>.<br />
+        <a href="https://rhtservices.net" target="_blank">Robinson Handy and Technology Services LLC</a><br />
+        The opinions expressed here are of my own and do not represent my employer in any way.<br />
         Build Date UTC : {{ build_date_utc }}
       </p>
     </div>

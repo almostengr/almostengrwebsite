@@ -3,11 +3,13 @@ title: Projects
 description: List of projects that I have worked on.
 ---
 
-Below is a list of some of the projects that I have worked on in the past. Click the project below to see 
-more details about that project. There are more projects listed on
-[my GitHub page](https://github.com/almostengr/).
+Below is a list of some of the projects that I have worked on in the past.
+All of my public projects are listed on [my GitHub page](https://github.com/almostengr/).
 
-## Coding Challenges (2021-Present)
+Have a project in mind? You may request my services by contacting me through my business, 
+<a href="https://rhtservices.net" target="_blank">Robinson Handy and Technology Services</a>.
+
+## Coding Challenges (2021)
 
 Coding challenges are ongoing projects to learn new coding designs and practices. 
 I periodically do coding challenges. The reason that I do challenges is to test my knowledge of the
@@ -48,7 +50,7 @@ Read more about <a href="/falconpitwitter">Falcon Pi Twitter project</a>.
 </div>
 <div class="col">
 Read more about <a href="/lightshow">Christmas Light Show project</a>.
-<p>Technologies: C#</p>
+<p>Technologies: C#, Raspberry Pi, Xlights</p>
 </div>
 </div>
 
@@ -94,11 +96,14 @@ The first phase of this project, which was to render videos from a queue of
 Kdenlive archive files. I have videos on my YouTube channel that discuss some of the
 aspects of the code.
 <br /><br />
+<p>Technologies: Java</p>
+<p>
 <a href="https://github.com/almostengr/kdenlivetoyoutube" target="_blank">Source Code</a>
+</p>
 </div>
 </div>
 
-## Raspberry Pi Traffic Light Controller (TrafficPi) (2018)
+## Raspberry Pi Traffic Light Controller aka TrafficPi (2018)
 
 <div class="row mb-3">
 <div class="col-4">
@@ -106,11 +111,11 @@ aspects of the code.
 </div>
 <div class="col">
 <p>Read more about <a href="/trafficpi">Raspberry Pi Traffic Light Control project</a>.</p>
-<p>Technologies: C#</p>
+<p>Technologies: Bash, CSS, C#, HTML</p>
 </div>
 </div>
 
-## Ubuntu Automation Scripts (2018-Present)
+## Ubuntu Automation Scripts (2018)
 
 <div class="row mb-3">
 <div class="col">
@@ -151,7 +156,7 @@ configuration, hopefully it will assist you and others with their configuraiton 
 </div>
 </div>
 
-## FarmOS NWS Drupal 7 Module
+## FarmOS NWS (National Weather Service) Drupal 7 Module (2017)
 
 <div class="row mb-3">
 <div class="col">

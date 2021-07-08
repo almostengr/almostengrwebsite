@@ -1,9 +1,20 @@
 ---
 title: About
 description: Information about Kenny Robinson and his blog
-image: /images/SAM_2423-f008473.png.jpg
-imagealt: Kenny being silly
 ---
+
+## "The Almost Engineer" Explanation
+
+You probably are wondering how did Kenny come up with 
+The Almost Engineer name. Kenny works (and according to some live in) in the engineering-related field
+of Computer Science, has great problem solving skills, and enjoys fixing things instead of paying 
+someone else to do it for him. However Kenny has a Business degree from the University of Alabama 
+(Roll Tide!) instead of an engineering degree, thus almost being an engineer.
+This is explained further in the video below.
+
+<div class="text-center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/h5o7KND-gFM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ## IT (Information Technology) Professional
 
@@ -34,17 +45,6 @@ Kenny has been blogging his gardening, technology experiences, and mishaps for s
 * others can learn from your mistakes before they make them
 * you will forget what you previously did, but a quick search of the blog will provide the refresher that you need to keep going.
 
-## "The Almost Engineer" Explanation
-
-If you have read this far down the page, you probably are wondering how did Kenny come up with 
-The Almost Engineer name. Kenny works (and according to some live in) in the engineering-related field
-of Computer Science, has great problem solving skills, and enjoys fixing things instead of paying 
-someone else to do it for him. However Kenny has a Business degree from the University of Alabama 
-(Roll Tide!) instead of an engineering degree, thus almost being an engineer.
-This is explained further 
-<a href="https://www.youtube.com/watch?v=h5o7KND-gFM" target='_blank'>in a video</a> 
-on his <a href="https://youtube.com/c/kennythealmostengineer" target="_blank">YouTube channel</a>.
-
 ## Blog Technology
 
 Originally, Kenny started blogging on Blogger in 2010.
@@ -60,9 +60,9 @@ maintenance updates than writing content. He outlines this more in his post on
 
 ## Blogs I Read
 
-In addition to writing here, I also read the blogs of others. Here are the most common ones that I read.
-Before you ask, they do not provide any kickbacks or monetary support for me listing their links on 
-my blog.
+In addition to writing here, I also read the blogs of others. Below are the most common ones that I read.
+Before you ask, they do not provide any kickbacks or monetary support for me listing links to
+their blog on my blog.
 
 <ul>
 <li><a href="https://ardalis.com/" target="_blank">Ardalis is Steve Smith</a></li>
@@ -75,3 +75,8 @@ my blog.
 <li><a href="https://thebipolarbuzz.com" target='_blank'>The Bipolar Buzz</a></li>
 <li><a href="https://thereformedprogrammer.net" target="_blank">The Reformed Programmer</a></li>
 </ul>
+
+## Have Questions
+
+Have questions for me? You can reach me via one of the methods listed on the 
+[Contact page](/contact)

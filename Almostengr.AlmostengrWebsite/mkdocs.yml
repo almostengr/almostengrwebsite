@@ -33,6 +33,8 @@ theme:
       name: Projects
     - url: /services
       name: Services
+    - url: /about
+      name: About
   # sitemessage:
   #   - heading: heading
   #     detail: detail

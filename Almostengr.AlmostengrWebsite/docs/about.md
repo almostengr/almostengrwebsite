@@ -21,8 +21,15 @@ This is explained further in the video below.
 Kenny's day job is working as an IT professional. He has years of experience in building web based 
 applications and providing software support. When you create or maintain software for a living, 
 often times you will reuse the same code over in multiple projects. By using a blog, you can search for
-that code snippet and copy and paste it in. In addition, it assists other developers with their coding
+that [code snippet](/technology/2020.08.25-select-list-of-times) 
+and copy and paste it in. In addition, it assists other developers with their coding
 projects, as it may be exactly what they are looking for.
+
+## Handyman
+
+Growing up, Kenny enjoyed playing with Legos as they allowed him to create whatever his mind could come 
+up with based on the parts that he had. As an adult, he does have some Lego sets that are for decoration 
+and not much for play. 
 
 ## Gardening
 
@@ -39,7 +46,8 @@ please do feel free to experiment in your garden and share your experiences.
 
 ## Why Does Kenny Blog?
 
-Kenny has been blogging his gardening, technology experiences, and mishaps for several reasons:
+Kenny has been blogging his [gardening](/gardening), [technology experiences](/technology),
+and mishaps for several reasons:
 
 * you learn from your past mistakes
 * others can learn from your mistakes before they make them
@@ -53,16 +61,15 @@ Drupal 7. At the time of this switch, Kenny was using Drupal 7 on a number
 of websites that Kenny was building and maintaining. So it made sense to use
 it for his personal use.
 
-In 2019, Kenny converted the blog again from Drupal 7 over to MKDocs. The reason
+In 2019, Kenny converted the blog again from Drupal 7 over to MkDocs. The reason
 for this conversion was because he found myself spending more time performing
 maintenance updates than writing content. He outlines this more in his post on
 [switching from Drupal to MkDocs](/technology/2019.12.21-switched-blog-from-drupal-to-mkdocs).
 
 ## Blogs I Read
 
-In addition to writing here, I also read the blogs of others. Below are the most common ones that I read.
-Before you ask, they do not provide any kickbacks or monetary support for me listing links to
-their blog on my blog.
+In addition to writing here, Kenny also reads the blogs of others. Below are the most common ones that he reads.
+Before you ask, they do not provide any kickbacks or monetary support for him listing links to their blog.
 
 <ul>
 <li><a href="https://ardalis.com/" target="_blank">Ardalis is Steve Smith</a></li>

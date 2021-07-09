@@ -109,26 +109,21 @@
 
 <body class="bg-white">
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark-red">
-    <!-- <div class="container"> -->
-      <a class="navbar-brand font-weight-bold text-uppercase" href="/"
-        title="{{ config.site_name }}, {{ config.site_description }}">{{ config.site_name }}</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav ml-auto">
-          {% for nav_item in config.theme.mainnav %}
-          <li class="nav-item">
-            <a class="nav-link text-white text-uppercase" href="{{ nav_item.url | url }}">{{ nav_item.name }}</a>
-          </li>
-          {% endfor %}
-        </ul>
-        <!-- <form class="form-inline mt-2 mt-md-0" action="/search2">
-        <button class="btn btn-outline-light my-sm-0" type="submit">Search</button>
-      </form> -->
-      </div>
-    <!-- </div> -->
+    <a class="navbar-brand font-weight-bold text-uppercase" href="/"
+      title="{{ config.site_name }}, {{ config.site_description }}">{{ config.site_name }}</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav ml-auto">
+        {% for nav_item in config.theme.mainnav %}
+        <li class="nav-item">
+          <a class="nav-link text-white text-uppercase" href="{{ nav_item.url | url }}">{{ nav_item.name }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
   </nav>
 
   {% if page and page.is_homepage and config.theme.homemessage %}
@@ -193,40 +188,10 @@
         </h1>
         {% endif %}
 
-        {% if page and ( 'technology' in page.url or 'handyman' in page.url or 'gardening' in page.url or 'lifestyle' in page.url) and 'index' not in page.url %}
-        <div class="pb-3">
-          {% include "_sharewidget.html" %}
-        </div>
-        {% endif %}
-
-        {% if page and page.is_homepage %}
-        {% include "_latest-posts.html" %}
-        {% endif %}
-        <!-- home page listing -->
-
-        {% if page and page.meta.image %}
-        <p><img src="{{ page.meta.image }}" alt="{{ page.meta.imagealt }}" /></p>
-        {% endif %}
-
-        <p>
-          {%- for category in config.theme.homepagecategory -%}
-          {%- set category_url = category.url_filter -%}
-          {%- set category_title = category.name -%}
-          {%- include "_categorylist.html" -%}
-          {%- endfor -%}
-        </p>
         <div class="content">
           {%- block content %}
           {{ page.content }}
           {%- endblock %}
-
-          {% if page and page.url != "links/" %}
-          <div class="pb-3">
-            <a class="a2a_dd" href="https://www.addtoany.com/share">
-              <img src="https://static.addtoany.com/buttons/share_save_171_16.png" height="16" alt="Share">
-            </a>
-          </div>
-          {% endif %}
 
           <!-- mobile page links -->
           {% if page and page.url == "links/" %}
@@ -249,8 +214,33 @@
           {% endif %}
         </div>
 
+        {% if page and page.is_homepage %}
+        {% include "_latest-posts.html" %}
+        {% endif %}
+        <!-- home page listing -->
+
+        {% if page and page.meta.image %}
+        <p><img src="{{ page.meta.image }}" alt="{{ page.meta.imagealt }}" /></p>
+        {% endif %}
+
+        <p>
+          {%- for category in config.theme.homepagecategory -%}
+          {%- set category_url = category.url_filter -%}
+          {%- set category_title = category.name -%}
+          {%- include "_categorylist.html" -%}
+          {%- endfor -%}
+        </p>
+
         {% if page and page.url == "search2/" %}
         {%- include "_search.html" -%}
+        {% endif %}
+
+        {% if page and page.url != "links/" %}
+        <div class="pb-3">
+          <a class="a2a_dd" href="https://www.addtoany.com/share">
+            <img src="https://static.addtoany.com/buttons/share_save_171_16.png" height="16" alt="Share">
+          </a>
+        </div>
         {% endif %}
 
         {% if page and ( 'technology' in page.url or 'handyman' in page.url or 'gardening' in page.url or 'lifestyle' in
@@ -276,7 +266,7 @@
           </div>
         </div>
         {% endif %}
-        
+
         <div class="card mb-3">
           <div class="card-header bg-black text-white text-center">
             <h4 style="border: 0px;">Share This</h4>
@@ -285,7 +275,7 @@
             {% include "_sharewidget.html" %}
           </div>
         </div>
-        
+
         {% for link in config.theme.courses %}
         <div class="card mb-3">
           <div class="card-header bg-black text-white text-center">

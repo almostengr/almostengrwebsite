@@ -130,7 +130,7 @@ namespace Almostengr.AlmostengrWebsite.GardenWeather
             output.Add("that is cloest to my garden. Data is pulled via API from the NWS and saved to this ");
             output.Add("blog post daily.");
             output.Add(string.Empty);
-            output.Add("|Date|Min Temp C (F)|Max Temp C (F)|Avg Temp C (F)|Min HR|Max RH|Avg RH|Precip M (In)|Avg Precip/Hr|");
+            output.Add("|Date|Min Temp C (F)|Max Temp C (F)|Avg Temp C (F)|Min RH|Max RH|Avg RH|Precip M (In)|Avg Precip/Hr|");
             output.Add("|---|---|---|---|---|---|---|---|---|");
 
             Console.WriteLine("Done building blog post header");

@@ -17,6 +17,8 @@ namespace Almostengr.AlmostengrWebsite.Tests
         public void ShowProjects()
         {
             GoToHomePage(_driver);
+            
+            _driver.FindElement(By.ClassName("navbar-toggler")).Click();
 
             _driver.FindElement(By.LinkText("PROJECTS")).Click();
 
@@ -30,6 +32,8 @@ namespace Almostengr.AlmostengrWebsite.Tests
         {
             GoToHomePage(_driver);
 
+            _driver.FindElement(By.ClassName("navbar-toggler")).Click();
+            
             _driver.FindElement(By.LinkText("PROJECTS")).Click();
 
             Assert.True(_driver.PageSource.Contains("Coding Challenges"));

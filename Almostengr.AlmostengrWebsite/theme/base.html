@@ -276,6 +276,17 @@
           </div>
         </div>
 
+        {% if page and ('lightshow' in page.url) %}
+        <div class="card mb-3">
+          <div class="card-header bg-black text-white text-center">
+            <h4 style="border: 0px;">Current Show Info</h4>
+          </div>
+          <div class="card-body bg-light">
+          {% include "_hplightshowtimeline.html" %}
+          </div>
+        </div>
+        {% endif %}
+
         {% for link in config.theme.courses %}
         <div class="card mb-3">
           <div class="card-header bg-black text-white text-center">

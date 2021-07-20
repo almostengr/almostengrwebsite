@@ -79,6 +79,7 @@ Before you ask, they do not provide any kickbacks or monetary support for him li
 <li><a href="https://hanselman.com" target='_blank'>Scott Hanselman</a></li>
 <li><a href="https://wildermuth.com" target='_blank'>Shawn Wildermuth</a></li>
 <li><a href="https://simpleprogrammer.com" target='_blank'>Simple Programmer</a></li>
+<li><a href="https://thebestcsharpprogrammerintheworld.com" target="_blank">The Best C# Programmer In The World</a></li>
 <li><a href="https://thebipolarbuzz.com" target='_blank'>The Bipolar Buzz</a></li>
 <li><a href="https://thereformedprogrammer.net" target="_blank">The Reformed Programmer</a></li>
 </ul>

@@ -3,8 +3,8 @@ title: FAQ (Frequently Asked Questions)
 description: Frequently asked questions about this and other light shows.
 ---
 
-Here are the most common questions that are asked about the light show. Please use the navigation to jump
-to the question that you are looking for or use the search feature.
+Here are the most common questions that are asked about the light show. Please use the Table of Contents 
+to jump to the question that you are looking for or use the search feature.
 
 ## Table of Contents
 
@@ -17,16 +17,11 @@ to the question that you are looking for or use the search feature.
 
 ### How do you keep the lights from shorting or tripping breakers during wet weather?
 
-Each connection that is on the ground is wrapped in electrical tape. That prevents water from
-reaching the connections, which would result in an electrical short, thus tripping the breaker and
-shutting down the show.
+Each connection that is in contact with the ground is wrapped in electrical tape. That prevents water from
+reaching the connections, which would result in an electrical short, thus tripping the breaker.
 
 Outlets and plugs that are not on the ground, are pointed downwards so that water cannot enter the
 socket and taped to prevent water from getting in.
-
-### What have you done in previous years?
-
-For previous year show information, see the [Resources](#resources) section.
 
 ### Are there other residential light shows?
 
@@ -55,8 +50,8 @@ Yes, there are many that exist. See the list below.
 ### Why did you start doing this?
 
 I wanted to do something different for Christmas. Given that the COVID-19 (Coronavirus) pandemic was happening
-during this time, I had extra funds on hand since I was not doing much travelling during this time. I decided
-to leverage my tech and Electrical Engineering skills and build a Christmas light show.
+during 2020, I had extra funds on hand since I was not doing much travelling during this time. I decided
+to leverage my Technology and Electrical Engineering skills and build a Christmas light show.
 
 [Back to Top](#)
 
@@ -66,8 +61,9 @@ to leverage my tech and Electrical Engineering skills and build a Christmas ligh
 
 #### Short Answer
 
-Since LEDs are used for the light show, it is not high at all. To run the show for 5 weeks,
-with all the lights on (2,130 LEDs) would cost a maximum of $38.90.  Given that all the lights are not all the entire time and
+Since LEDs are used for the entire light show, it is not high at all. To run the show for 5 weeks,
+with all the lights on (2,130 LEDs used in 2020) would cost a maximum of $38.90.
+Given that all the lights are not all the entire time and
 the equipment is not running at max capacity (which hardly ever happens), the actual cost is less than this.
 
 See [Do The Math](#long-answer-do-the-math) for the breakout and how this cost was derived.
@@ -179,14 +175,14 @@ All of the relays are Solid State Relays (SSR). SSRs were used because they have
 parts and having greater reliability for being switched on and off frequently.
 
 Mechanical relays heat up from switching on an off. When done repeatedly, like during a song, the relay can
-actually over heat and weld itself closed.
+actually over heat and weld itself together.
 
 #### FM Radio Transmitter
 
 Music is transmitted over radio via a low-power FM transmitter. Music goes into the transmitter directly from
-the Raspberry Pi and broadcasted on an open frequency. Radio Locator
+the Raspberry Pi and broadcasted on 90.3 FM. Radio Locator
 [mentioned below](/lightshow/faq#where-can-i-find-out-more-information-or-ask-questions)
-was used to locate the best frequency.
+was used to locate the best frequency based on the area.
 
 ### What kind of software do you use?
 
@@ -206,7 +202,7 @@ show data files, music files, and scheduling are all connected within this softw
 the latest release <a href="https://github.com/FalconChristmas/fpp" target="_blank">from the repository</a>.
 
 For assistance with configuring or issues with Falcon Pi Player, you can post in the
-<a href="https://www.facebook.com/groups/FalconPlayer/" target="_blank">FPP, Falcon Player</a>.
+<a href="https://www.facebook.com/groups/FalconPlayer/" target="_blank">FPP, Falcon Player</a> group.
 
 #### Kdenlive
 
@@ -233,11 +229,8 @@ that project.
 
 ### Where can I find out more information or ask questions?
 
-Below are resources to additional information about various products and tools.
+Below are resources to additional information about various products and tools that were not mentioned above.
 
 * <a href="https://www.youtube.com/channel/UCby1v6Kbi8AHMkV2yMyF1MQ" target="_blank">Canispater Christmas</a>
 * <a href="https://www.falconchristmas.com" target="_blank">Falcon Christmas</a>
-* <a href="https://www.facebook.com/groups/FalconPlayer/" target="_blank">FPP, Falcon Player Group</a>
-* <a href="https://www.facebook.com/groups/xLights" target="_blank">Official xLights Support Group</a>
-* <a href="https://radio-locator.com/cgi-bin/vacant" target="_blank">Radio Locator, find vacant radio channels</a>
 * <a href="https://ttstool.com" target="_blank">TTS Tool, for text to speech recordings</a>

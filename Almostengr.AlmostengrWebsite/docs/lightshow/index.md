@@ -16,14 +16,10 @@ image: /images/lightshow/2020 Christmas Light Show 20201211-f000000.jpg
 
 ## Show Dates and Times
 
-Show will run nightly from November 26, 2021 until December 25, 2021.
+Show will run nightly from November 25, 2021 until December 25, 2021.
 
 * Sunday-Thursday, 5:00 PM (17:00) until 9:30 PM (21:30)
 * Friday and Saturday, 5:00 PM (17:00) until 10:30 PM (22:30)
-
-Heavy rains and severe weather may cancel the show. See [Rain Delay](#rain-delay) for more information.
-
-### Rain Delay
 
 During times of heavy rain or severe weather the light show may be stopped to reduce the
 chance of electrical shorts occurring and for safety of individuals watching.
@@ -44,7 +40,7 @@ drivers that are passing by.
 
 [Back to Top](#)
 
-## Show Playlist
+## 2021 Song List 
 
 Songs featured in the 2021 Light Show are:
 
@@ -53,16 +49,10 @@ Songs featured in the 2021 Light Show are:
 * Christmas Time Is Party Time - Luke
 * December - Earth, Wind, and Fire
 * Nutrocker - Trans-Siberian Orchestra
-* Uptown Funk - Mark Ranson featuring Bruno Mars
+* The Polar Express - Tom Hanks
+* Uptown Funk - Mark Ronson featuring Bruno Mars
 * WAP - Cardi B and Megan The Stallion
-* What You Want for Christmas - Quad City DJ and K-nock
-
-[Back to Top](#)
-
-## Light Show On Twitter
-
-To see the current song that is playing, visit the
-<a href="https://twitter.com/hplightshow" target="_blank">HP Light Show</a> Twitter page.
+* What You Want for Christmas - 69 Boyz featuring Quad City DJs and K-nock
 
 [Back to Top](#)
 

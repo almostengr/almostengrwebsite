@@ -17,21 +17,21 @@ To read more about the project, select a section below to navigate to.
 ## Project Background
 
 A common problem that exists with US home construction
-is that multiple story homes were built with a single zoned system.
+is that multiple story homes were built with a single zoned HVAC system.
 Often times, that thermostat is on the first floor and can properly manage the temperature on the first
 floor. However, the second floor often times gets too hot because heat rises and cold air sinks.
 
 Several houses in the neighborhood have window AC units installed in the rooms on the upper floor of their
-house and so do I. The thing about the window units is that they do not have thermometers on them that will
-accurately keep the room cool. Thus I built a .NET Core application that will read the temperature
-from a sensor connected to a Raspberry Pi and post it to the Home Assistant API. Home Assistant will then
-use that data to trigger automations, like turning on an off the window AC unit.
+house and so do I. The thing about the window units is that they have basic thermometers on them. 
+Thus I built a .NET Core application that will read the temperature
+from a temperatture sensor connected to a Raspberry Pi and post it to the Home Assistant API. Home Assistant will then
+use that data to trigger automations, like turning on and off the window AC unit.
 
-I have several Rapsberry Pi that are used in my home and used as television set top boxes. Instead of
+I have several Rapsberry Pi (or Raspberry Pis) that are used in my home and used as television set top boxes. Instead of
 purchasing additional devices to detect temperature, I decided to get some one-wire temperature sensors that
 can be connected to the Raspberry Pi that is already in the rooms that I want to monitor.
 
-The application was build using .NET Core 3.1 Worker Service. The application will run the command to get the
+The application was build using .NET Core 3.1 Worker Service template. The application will run the command to get the
 data from the temperature sensor. After getting the data, then it makes a call to Home Assistant API that
 provides the temperature as a state to a sensor named of your chosing.
 

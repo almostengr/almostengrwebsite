@@ -1,0 +1,3 @@
+DateTime,Temperature,TempUnit,Precipitation,PrecipUnit,Humidity,HumidityUnit,
+2021-08-01 20:00:00,,degC,0,m,,percent,
+2021-08-01 19:53:00,32.8,degC,0,m,52.146765406653,percent,

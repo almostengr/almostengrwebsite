@@ -30,6 +30,8 @@ Yes, there are many that exist. See the list below.
 *Those with "MGM" in parenthesis are located in or near the Montgomery, Alabama area.*
 *Visit their respective pages for details about their show.*
 
+* <a href="https://broomfieldlights.com/" target="_blank">Broomfield Lights</a>
+* <a href="https://www.youtube.com/c/CanispaterChristmas" target="_blank">Canispater Christmas</a>
 * <a href="https://www.cityofwetumpka.com/Default.asp?ID=452&pg=Decorations+Contest" target="_blank">Christmas on the Coosa (MGM)</a>
 * <a href="http://www.lightinguppaxton.com/" target="_blank">Lighting Up Paxton</a>
 * <a href="https://www.lightstoabeat.com" target="_blank">Lights To A Beat</a>

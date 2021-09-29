@@ -24,16 +24,17 @@ floor. However, the second floor often times gets too hot because heat rises and
 Several houses in the neighborhood have window AC units installed in the rooms on the upper floor of their
 house and so do I. The thing about the window units is that they have basic thermometers on them. 
 Thus I built a .NET Core application that will read the temperature
-from a temperatture sensor connected to a Raspberry Pi and post it to the Home Assistant API. Home Assistant will then
-use that data to trigger automations, like turning on and off the window AC unit.
+from a temperatture sensor connected to a Raspberry Pi. Home Assistant has been configured to connect to the 
+Raspberry Pi via API to get the current temperature. Then based on automation rules, will either turn on or 
+off the window air conditioner units.
 
 I have several Rapsberry Pi (or Raspberry Pis) that are used in my home and used as television set top boxes. Instead of
 purchasing additional devices to detect temperature, I decided to get some one-wire temperature sensors that
 can be connected to the Raspberry Pi that is already in the rooms that I want to monitor.
 
-The application was build using .NET Core 3.1 Worker Service template. The application will run the command to get the
-data from the temperature sensor. After getting the data, then it makes a call to Home Assistant API that
-provides the temperature as a state to a sensor named of your chosing.
+The application was build using .NET 5.0 Web API template. The way it works is that a GET call is made to the 
+API. The API runs a process to get the current temperature from the temperature sensor and then returns it 
+back to the caller as a JSON object. That JSON object returns the Fahrenheit and Celsuis temperature readings.
 
 [Back to Top](#)
 
@@ -52,11 +53,11 @@ provides the temperature as a state to a sensor named of your chosing.
 
 * Connect the [DS18S20 sensor](https://www.amazon.com/gp/product/B07MR71WVS/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=rhtservicesll-20&creative=9325&linkCode=as2&creativeASIN=B07MR71WVS&linkId=bfd830515da10f922afff9a79cc33e58) to the [Serial to USB Cable](https://www.amazon.com/gp/product/B07D9R5JFK/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=rhtservicesll-20&creative=9325&linkCode=as2&creativeASIN=B07D9R5JFK&linkId=e35fd9d313f055ab778e60783564078b)
 * Install an operating system of your choosing on your Raspberry Pi (<a href="https://osmc.tv/" target="_blank">OSMC</a> was installed on mine)
-* Copy the ThermometerPi files to the Raspberry Pi. They can be downloaded from the 
+* Copy the Thermometer Pi files to the Raspberry Pi. They can be downloaded from the 
 [project repo](https://github.com/almostengr/thermometerpi).
 * Configure the appsettings.json file to point to your Home Assistant instance. Also need the HA Token
 * Perform the [first run steps](#first-run) to configure the temperature sensor
-* Set up the ThermometerPi as a system service
+* Set up the ThermometerAPI as a system service
 * Start the service
 * Set up automations in Home Assistant using the sensor
 
@@ -110,34 +111,47 @@ replacing $USER with the username that you want to see.
 ### Create System Service
 
 ```bash
-sudo cp thermometerpi.service /lib/systemd/system
+sudo cp thermometerapi.service /lib/systemd/system
 sudo systemctl daemon-reload
-sudo systemctl enable thermometerpi
-sudo systemctl start thermometerpi
-sudo systemctl status thermometerpi
+sudo systemctl enable thermometerapi
+sudo systemctl start thermometerapi
+sudo systemctl status thermometerapi
 ```
 
 ### Remove System Service
 
 ```sh
-sudo systemctl disable thermometerpi
-sudo systemctl stop thermometerpi
-sudo systemctl status thermometerpi
-sudo rm /lib/systemd/system/thermometerpi.service
+sudo systemctl disable thermometerapi
+sudo systemctl stop thermometerapi
+sudo systemctl status thermometerapi
+sudo rm /lib/systemd/system/thermometerapi.service
 ```
 
 ### Application Logs
 
+To view the application logs, run the following command
+
+```sh
+sudo journalctl -u thermometerapi -b
+```
+
 Application logs will look similar to the below to show what the application is doing.
 
 ```sh
-Jun 01 17:50:42 osmc Almostengr.ThermometerPi.Worker[380]: Almostengr.ThermometerPi.Worker.ThermometerWorker[0] Updated: 2021-06-01T22:50:42.086745+00:00
-Jun 01 17:55:43 osmc Almostengr.ThermometerPi.Worker[380]: Almostengr.ThermometerPi.Worker.ThermometerWorker[0] OK
-Jun 01 17:55:43 osmc Almostengr.ThermometerPi.Worker[380]: Almostengr.ThermometerPi.Worker.ThermometerWorker[0] Updated: 2021-06-01T22:55:43.415774+00:00
-Jun 01 18:00:44 osmc Almostengr.ThermometerPi.Worker[380]: Almostengr.ThermometerPi.Worker.ThermometerWorker[0] OK
-Jun 01 18:00:44 osmc Almostengr.ThermometerPi.Worker[380]: Almostengr.ThermometerPi.Worker.ThermometerWorker[0] Updated: 2021-06-01T23:00:44.755279+00:00
-Jun 01 18:05:46 osmc Almostengr.ThermometerPi.Worker[380]: Almostengr.ThermometerPi.Worker.ThermometerWorker[0] OK
-Jun 01 18:05:46 osmc Almostengr.ThermometerPi.Worker[380]: Almostengr.ThermometerPi.Worker.ThermometerWorker[0] Updated: 2021-06-01T23:05:46.085342+00:00
+info: Microsoft.Hosting.Lifetime[0]
+      Now listening on: http://[::]:8005
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /home/osmc/thermometerpi
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+info: Almostengr.ThermometerPi.Api.Controllers.ThermometerController[0]
+      At 9/28/2021 9:09:14 PM temperature is 78.57,25.88
+info: Almostengr.ThermometerPi.Api.Controllers.ThermometerController[0]
+      At 9/28/2021 9:09:28 PM temperature is 78.57,25.88
 ```
 
 [Back to Top](#)

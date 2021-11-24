@@ -11,201 +11,221 @@ remote_name: origin
 remote_branch: website
 
 # Development server details
-dev_addr: 192.168.57.125:8000
+dev_addr: 192.168.1.103:8000
 
 # Appearance
 theme:
-  name: null
-  custom_dir: 'theme'
+  name: material
+  custom_dir: 'theme-overrides'
+  # custom_dir: 'mkdocs-material/material'
   language: en
-  social_user: "@almostengr"
   static_templates:
     - 404.html
-    - 500.html
-  mainnav:
-    - url: /technology
-      name: Technology
-    - url: /handyman
-      name: Handyman
-    - url: https://www.youtube.com/c/kennythealmostengineer?sub_confirmation=1
-      name: YouTube
-    - url: /projects
-      name: Projects
-    - url: /services
-      name: Services
-    - url: /about
-      name: About
-  # sitemessage:
-  #   - heading: heading
-  #     detail: detail
-  #     bgcolor: bg-primary
-  #     textcolor: text-light
-  # homemessage:
-  #   - heading: heading
-  #     detail: detail
-  #     bgcolor: bg-danger
-  #     textcolor: text-light
-  homepagecategory:
-    - name: Technology
-      url: /technology
-      url_filter: technology/
-    - name: Handyman
-      url: /handyman
-      url_filter: handyman/
-    - name: Gardening
-      url: /gardening
-      url_filter: gardening/
-    - name: Speaking
-      url: /speaking
-      url_filter: speaking/
-    - name: Lifestyle
-      url: /lifestyle
-      url_filter: lifestyle/
-  footernav:
-    - title: SOCIAL
-      links:
-      - type: github
-        url: https://github.com/almostengr
-        name: GitHub
-        icon: bi bi-github
-      - type: instagram
-        url: https://www.instagram.com/almostengr
-        name: Instagram
-        icon: bi bi-instagram
-      - type: twitter
-        url: https://twitter.com/almostengr
-        name: Twitter
-        icon: bi bi-twitter
-      - type: youtube
-        url: https://www.youtube.com/c/kennythealmostengineer?sub_confirmation=1
-        name: YouTube
-        icon: bi bi-youtube
-    - title: BLOG
-      links:
-      - url: /technology
-        name: Technology
-        icon: bi bi-journal-text
-      - url: /handyman
-        name: Handyman
-        icon: bi bi-journal-text
-      - url: /gardening
-        name: Gardening
-        icon: bi bi-journal-text
-      - url: /lifestyle
-        name: Lifestyle
-        icon: bi bi-journal-text
-      - url: /cookbook
-        name: Cookbook
-        icon: bi bi-journal-text
-    - title: PROJECTS
-      links:
-      - url: /lightshow
-        name: Christmas Light Show  
-        icon: bi bi-lightbulb
-      - url: /falconpitwitter
-        name: Falcon Pi Twitter
-        icon: bi bi-cpu-fill
-      - url: /resources
-        name: Resources
-        icon: bi bi-bookshelf
-      - url: /speaking
-        name: Speaking
-        icon: bi bi-megaphone-fill
-      - url: /trafficpi
-        name: Traffic Pi
-        icon: bi bi-stoplights
-      - url: /projects
-        name: All Projects
-        icon: bi bi-journal
-    - title: LINKS
-      links:
-      - url: /search2
-        name: Search
-        icon: bi bi-search
-      - url: /services
-        name: Services
-        icon: bi bi-briefcase
-      - url: /about
-        name: About
-        icon: bi bi-file-person-fill
-      - url: /uses
-        name: Uses (Tools Used)
-        icon: bi bi-tools
-      - url: /contact
-        name: Contact
-        icon: bi bi-person-lines-fill
-      - url: /sitemap.xml
-        name: Sitemap
-        icon: bi bi-diagram-3
-      - url: /privacy
-        name: Privacy
-        icon: bi bi-shield-shaded
-  topics:
-    - url: /lightshow
-      name: Christmas Light Show  
-      icon: bi bi-lightbulb
-    - url: /falconpitwitter
-      name: Falcon Pi Twitter
-      icon: bi bi-cpu-fill
-    - url: /gardening
-      name: Gardening
-      icon: bi bi-flower1
-    - url: /handyman
-      name: Handyman
-      icon: bi bi-wrench
-    - url: /lifestyle
-      name: Lifestyle
-      icon: bi bi-person
-    - url: /projects
-      name: Projects
-      icon: bi bi-journal
-    - url: /resources
-      name: Resources
-      icon: bi bi-bookshelf
-    - url: /speaking
-      name: Speaking
-      icon: bi bi-megaphone-fill
-    - url: /technology
-      name: Technology
-      icon: bi bi-laptop
-    - url: /trafficpi
-      name: Traffic Pi
-      icon: bi bi-stoplights
-  courses:
-    - url: https://www.youtube.com/watch?v=iujOWWbiUP0&list=PLaAJ0fv0d9WM8E2K_Ke5As-fw626yQ3tu
-      body: Learning the basics of Drupal 8 is easy. Watch the free course now!
-      title: Drupal 8 Course
-  social:
-    - type: github
-      url: https://github.com/almostengr
-      name: GitHub
-      icon: bi bi-github
-    - type: instagram
-      url: https://www.instagram.com/almostengr
-      name: Instagram
-      icon: bi bi-instagram
-    - type: linkedin
-    - type: twitter
-      url: https://twitter.com/almostengr
-      name: Twitter
-      icon: bi bi-twitter
-    - type: youtube
-      url: https://www.youtube.com/c/kennythealmostengineer?sub_confirmation=1
-      name: YouTube
-      icon: bi bi-youtube"
-  mobilelinks:
-    - name: Robinson Handy and Technology (RHT) Services LLC
-      url: https://rhtservices.net
-    - name: Follow Me On Github
-      url: https://github.com/almostengr
-    - name: Follow Me On Instagram
-      url: https://www.instagram.com/almostengr
-    - name: Follow Me On Twitter
-      url: https://twitter.com/almostengr
-    - name: Subscribe To My YouTube Channel
-      url: https://www.youtube.com/c/kennythealmostengineer?sub_confirmation=1
-    - name: The Almost Engineer Website (Home Page)
-      url: /
+    # - 500.html
+
+  font:
+    text: Ubuntu
+    code: Ubuntu Mono
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+  favicon: /images/favicon-32x32.png
+  features:
+      - navigation.tabs
+      # - navigation.tabs.sticky
+      # - navigation.sections
+      - navigation.indexes
+      - toc.integrate
+  # social_user: "@almostengr"
+# nav:
+#   - Technology: /technology
+#   - YouTube: https://www.youtube.com/c/kennythealmostengineer?sub_confirmation=1
+#   - Projects: /projects
+#   - Services: /services
+#   - About: /about
+  # mainnav:
+  #   - url: /technology
+  #     name: Technology
+  #   - url: https://www.youtube.com/c/kennythealmostengineer?sub_confirmation=1
+  #     name: YouTube
+  #   - url: /projects
+  #     name: Projects
+  #   - url: /services
+  #     name: Services
+  #   - url: /about
+  #     name: About
+  # # sitemessage:
+  # #   - heading: heading
+  # #     detail: detail
+  # #     bgcolor: bg-primary
+  # #     textcolor: text-light
+  # # homemessage:
+  # #   - heading: heading
+  # #     detail: detail
+  # #     bgcolor: bg-danger
+  # #     textcolor: text-light
+  # homepagecategory:
+  #   - name: Technology
+  #     url: /technology
+  #     url_filter: technology/
+  #   - name: Handyman
+  #     url: /handyman
+  #     url_filter: handyman/
+  #   - name: Gardening
+  #     url: /gardening
+  #     url_filter: gardening/
+  #   - name: Speaking
+  #     url: /speaking
+  #     url_filter: speaking/
+  #   - name: Lifestyle
+  #     url: /lifestyle
+  #     url_filter: lifestyle/
+  # footernav:
+  #   - title: SOCIAL
+  #     links:
+  #     - type: github
+  #       url: https://github.com/almostengr
+  #       name: GitHub
+  #       icon: bi bi-github
+  #     - type: instagram
+  #       url: https://www.instagram.com/almostengr
+  #       name: Instagram
+  #       icon: bi bi-instagram
+  #     - type: twitter
+  #       url: https://twitter.com/almostengr
+  #       name: Twitter
+  #       icon: bi bi-twitter
+  #     - type: youtube
+  #       url: https://www.youtube.com/c/RobinsonHandyandTechnologyServices?sub_confirmation=1
+  #       name: YouTube
+  #       icon: bi bi-youtube
+  #   - title: BLOG
+  #     links:
+  #     - url: /technology
+  #       name: Technology
+  #       icon: bi bi-journal-text
+  #     - url: /handyman
+  #       name: Handyman
+  #       icon: bi bi-journal-text
+  #     - url: /gardening
+  #       name: Gardening
+  #       icon: bi bi-journal-text
+  #     - url: /lifestyle
+  #       name: Lifestyle
+  #       icon: bi bi-journal-text
+  #     - url: /cookbook
+  #       name: Cookbook
+  #       icon: bi bi-journal-text
+  #   - title: PROJECTS
+  #     links:
+  #     - url: /lightshow
+  #       name: Christmas Light Show  
+  #       icon: bi bi-lightbulb
+  #     - url: /falconpitwitter
+  #       name: Falcon Pi Twitter
+  #       icon: bi bi-cpu-fill
+  #     - url: /resources
+  #       name: Resources
+  #       icon: bi bi-bookshelf
+  #     - url: /speaking
+  #       name: Speaking
+  #       icon: bi bi-megaphone-fill
+  #     - url: /trafficpi
+  #       name: Traffic Pi
+  #       icon: bi bi-stoplights
+  #     - url: /projects
+  #       name: All Projects
+  #       icon: bi bi-journal
+  #   - title: LINKS
+  #     links:
+  #     - url: /search2
+  #       name: Search
+  #       icon: bi bi-search
+  #     - url: /services
+  #       name: Services
+  #       icon: bi bi-briefcase
+  #     - url: /about
+  #       name: About
+  #       icon: bi bi-file-person-fill
+  #     - url: /uses
+  #       name: Uses (Tools Used)
+  #       icon: bi bi-tools
+  #     - url: /contact
+  #       name: Contact
+  #       icon: bi bi-person-lines-fill
+  #     - url: /sitemap.xml
+  #       name: Sitemap
+  #       icon: bi bi-diagram-3
+  #     - url: /privacy
+  #       name: Privacy
+  #       icon: bi bi-shield-shaded
+  # topics:
+  #   - url: /lightshow
+  #     name: Christmas Light Show  
+  #     icon: bi bi-lightbulb
+  #   - url: /falconpitwitter
+  #     name: Falcon Pi Twitter
+  #     icon: bi bi-cpu-fill
+  #   - url: /gardening
+  #     name: Gardening
+  #     icon: bi bi-flower1
+  #   - url: /handyman
+  #     name: Handyman
+  #     icon: bi bi-wrench
+  #   - url: /lifestyle
+  #     name: Lifestyle
+  #     icon: bi bi-person
+  #   - url: /projects
+  #     name: Projects
+  #     icon: bi bi-journal
+  #   - url: /resources
+  #     name: Resources
+  #     icon: bi bi-bookshelf
+  #   - url: /speaking
+  #     name: Speaking
+  #     icon: bi bi-megaphone-fill
+  #   - url: /technology
+  #     name: Technology
+  #     icon: bi bi-laptop
+  #   - url: /trafficpi
+  #     name: Traffic Pi
+  #     icon: bi bi-stoplights
+  # courses:
+  #   - url: https://www.youtube.com/watch?v=iujOWWbiUP0&list=PLaAJ0fv0d9WM8E2K_Ke5As-fw626yQ3tu
+  #     body: Learning the basics of Drupal 8 is easy. Watch the free course now!
+  #     title: Drupal 8 Course
+  # social:
+  #   - type: github
+  #     url: https://github.com/almostengr
+  #     name: GitHub
+  #     icon: bi bi-github
+  #   - type: instagram
+  #     url: https://www.instagram.com/almostengr
+  #     name: Instagram
+  #     icon: bi bi-instagram
+  #   - type: linkedin
+  #   - type: twitter
+  #     url: https://twitter.com/almostengr
+  #     name: Twitter
+  #     icon: bi bi-twitter
+  #   - type: youtube
+  #     url: https://www.youtube.com/c/RobinsonHandyandTechnologyServices?sub_confirmation=1
+  #     name: YouTube
+  #     icon: bi bi-youtube"
+  # mobilelinks:
+  #   - name: Robinson Handy and Technology (RHT) Services LLC
+  #     url: https://rhtservices.net
+  #   - name: Follow Me On Github
+  #     url: https://github.com/almostengr
+  #   - name: Follow Me On Instagram
+  #     url: https://www.instagram.com/almostengr
+  #   - name: Follow Me On Twitter
+  #     url: https://twitter.com/almostengr
+  #   - name: Subscribe To My YouTube Channel
+  #     url: https://www.youtube.com/c/RobinsonHandyandTechnologyServices?sub_confirmation=1
+  #   - name: The Almost Engineer Website (Home Page)
+  #     url: /
 
 use_directory_urls: true
 strict: false

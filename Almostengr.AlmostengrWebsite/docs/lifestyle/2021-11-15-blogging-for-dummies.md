@@ -7,12 +7,14 @@ category: lifestyle
 keywords: blogging, blogging for dummies, learning technology
 ---
 
+# Blogging for Dummies
+
 It has been months since I have posted something here. You are probably wondering why there 
 has been a drought in content. Well, when running a business, working full time, and having other 
 projects happening at the same time, something has to drop off the burner. In this case, that 
 which was dropped off was me posting content here. 
 
-# Background
+## Background
 
 I have had a blog for many of years now. When you combine the stuff that I have hear, plus the stuff 
 that I have on Facebook before I set up this blog, that's over 10 years worth of content.  My goal is

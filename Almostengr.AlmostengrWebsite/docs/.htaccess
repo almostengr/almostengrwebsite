@@ -33,6 +33,20 @@ Redirect 301 /use-twitter-and-rules-farmos-notifications /technology/2018.02.13-
 Redirect 301 /use-twitter-and-rules-farmos-notifications-almost-engineered-tech /technology/2018.02.13-use-twitter-and-rules-for-farmos-notifications
 Redirect 301 /drupal-8-tutorial-series-0 /technology/2019.02.27-drupal-8-tutorial-series
 
+# redirects for 2021-11-24 update
+Redirect 301 /speaking /technology
+Redirect 301 /speaking/2017.09.21-build-web-application-without-coding-using-drupal-7 /technology/2017.09.21-build-web-application-without-coding-using-drupal-7
+Redirect 301 /speaking/2020.02.29-linux-training-session /technology/2020.02.29-linux-training-session
+Redirect 301 /speaking/2020.03.06-linux-training-session-april-2020 /technology/2020.03.06-linux-training-session-april-2020
+Redirect 301 /speaking/2020.03.22-coding-session-with-java-and-selenium-webdriver.md /technology/2020.03.22-coding-session-with-java-and-selenium-webdriver
+Redirect 301 /update-static-website /technology/2020.10.04-update-static-website
+Redirect 301 /ecobeestatus /projects/ecobeestatus
+Redirect 301 /thermometerpi /projects/thermometerpi
+Redirect 301 /trafficpi /projects/trafficpi
+Redirect 301 /internetmonitor /projects/internetmonitor
+Redirect 301 /services /about
+Redirect 301 /resources /free%20resources
+
 # Prevent Apache from serving .htaccess files:
 <FilesMatch "^\.htaccess">
     Order allow,deny

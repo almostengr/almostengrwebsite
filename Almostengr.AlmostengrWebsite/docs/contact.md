@@ -9,4 +9,4 @@ Have a question, comment, or just want to say hi? Reach out to me using one of t
 
 <a href="https://instagram.com/almostengr" target="_blank">@almostengr on Instagram</a>
 
-<a href="https://www.youtube.com/c/kennythealmostengineer?sub_confirmation=1" target="_blank">Kenny The Almost Engineer YouTube Channel</a>
+<a href="https://www.youtube.com/c/robinsonhandyandtechnologyservices?sub_confirmation=1" target="_blank">Robinson Handy and Technology Services YouTube Channel</a>

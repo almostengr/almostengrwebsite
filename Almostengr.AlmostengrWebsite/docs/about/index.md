@@ -3,6 +3,8 @@ title: About
 description: Information about Kenny Robinson and his blog
 ---
 
+# About
+
 ## "The Almost Engineer" Explanation
 
 You probably are wondering how did Kenny come up with
@@ -24,25 +26,6 @@ often times you will reuse the same code over in multiple projects. By using a b
 that [code snippet](/technology/2020.08.25-select-list-of-times)
 and copy and paste it in. In addition, it assists other developers with their coding
 projects, as it may be exactly what they are looking for.
-
-## Handyman
-
-Growing up, Kenny enjoyed playing with Legos as they allowed him to create whatever his mind could come
-up with based on the parts that he had. As an adult, he does have some Lego sets that are for decoration
-and not much for play.
-
-## Gardening
-
-Gardening started as a hobby for Kenny. After having some seasons of little success and being able to
-literately taste the fruits of my labor, Kenny decided to expand his green thumb skill set. Thanks to
-social media, Kenny found other that some friends and former classmates also had an interest in
-gardening and they were looking for help. After attending a class at a local urban farm about
-gardening, it occurred to him that a blog could be used as a journal to track my successes and failures.
-
-Information about the garden is based on conditions of USDA growing Zone 8a, located in the
-southeastern United States. That being said, the recommendations and suggestions that are made on
-this blog are for this growing zone and are not guaranteed to work in other growing zones. However,
-please do feel free to experiment in your garden and share your experiences.
 
 ## Why Does Kenny Blog?
 
@@ -72,24 +55,21 @@ I offer custom software solutions and handyman work through my business
 <a href="https://rhtservices.net" target="_blank">Robinson Handy and Technology Services</a>. To
 make an appointment or discuss business, please visit the website.
 
-
 ## Blogs I Read
 
 In addition to writing here, Kenny also reads the blogs of others. Below are the most common ones that he reads.
 Before you ask, they do not provide any kickbacks or monetary support for him listing links to their blog.
 
-<ul>
-<li><a href="https://ardalis.com/" target="_blank">Ardalis is Steve Smith</a></li>
-<li><a href="https://atishay.me" target="_blank">Atishay Jain</a></li>
-<li><a href="https://dotnetplaybook.com" target="_blank">Dotnet Playbook</a></li>
-<li><a href="https://gkdba.wordpress.com/" target="_blank">Goal Keeping DBA</a></li>
-<li><a href="https://hanselman.com" target='_blank'>Scott Hanselman</a></li>
-<li><a href="https://wildermuth.com" target='_blank'>Shawn Wildermuth</a></li>
-<li><a href="https://simpleprogrammer.com" target='_blank'>Simple Programmer</a></li>
-<li><a href="https://thebestcsharpprogrammerintheworld.com" target="_blank">The Best C# Programmer In The World</a></li>
-<li><a href="https://thebipolarbuzz.com" target='_blank'>The Bipolar Buzz</a></li>
-<li><a href="https://thereformedprogrammer.net" target="_blank">The Reformed Programmer</a></li>
-</ul>
+* <a href="https://ardalis.com/" target="_blank">Ardalis is Steve Smith</a>
+* <a href="https://atishay.me" target="_blank">Atishay Jain</a>
+* <a href="https://dotnetplaybook.com" target="_blank">Dotnet Playbook</a>
+* <a href="https://gkdba.wordpress.com/" target="_blank">Goal Keeping DBA</a>
+* <a href="https://hanselman.com" target='_blank'>Scott Hanselman</a>
+* <a href="https://wildermuth.com" target='_blank'>Shawn Wildermuth</a>
+* <a href="https://simpleprogrammer.com" target='_blank'>Simple Programmer</a>
+* <a href="https://thebestcsharpprogrammerintheworld.com" target="_blank">The Best C# Programmer In The World</a>
+* <a href="https://thebipolarbuzz.com" target='_blank'>The Bipolar Buzz</a>
+* <a href="https://thereformedprogrammer.net" target="_blank">The Reformed Programmer</a>
 
 ## Have Questions
 

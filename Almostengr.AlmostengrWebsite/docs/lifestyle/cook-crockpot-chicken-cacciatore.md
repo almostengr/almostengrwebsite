@@ -1,3 +1,7 @@
+---
+category: Cooking
+---
+
 # Chicken Cacciatore
 
 Serves 4-8

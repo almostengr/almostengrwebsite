@@ -1,3 +1,7 @@
+---
+category: Cooking
+---
+
 # Beef Bourguignon
 
 Serves 6-8

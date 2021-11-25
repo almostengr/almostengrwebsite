@@ -1,3 +1,7 @@
+---
+category: Cooking
+---
+
 # Beef Stew
 
 Serves 6-8

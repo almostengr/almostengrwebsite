@@ -1,3 +1,7 @@
+---
+category: Cooking
+---
+
 # Hot Pepper Sauce
 
 ## Ingredients

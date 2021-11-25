@@ -3,16 +3,6 @@
 Reboots the DD-WRT router when there are no WiFi clients connected to it. Also makes sure that the 
 internet modem is online and can reach external websites. The status is then reported to 
 
-## Table of Contents
-
-* [Problem](#problem)
-* [Solution](#solution)
-* [Technology](#the-technology)
-* [Application as System Service](#application-as-system-service)
-* [Source Code](#source-code)
-* [Troubleshooting](#troubleshooting)
-* [Checking Job Log](#checking-job-log)
-
 ## Problem
 
 My router would occasionally disconnect any of the wireless clients that were connected to it. Since

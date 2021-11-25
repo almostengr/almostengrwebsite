@@ -1,3 +1,7 @@
+---
+category: Cooking
+---
+
 # No Pre-Heat Whole Chicken
 
 ## Ingredients

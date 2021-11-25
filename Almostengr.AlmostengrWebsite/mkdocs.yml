@@ -2,11 +2,11 @@ site_name: The Almost Engineer
 site_url: https://thealmostengineer.com
 site_description: The blog of Kenny Robinson
 site_author: Kenny Robinson, @almostengr
-copyright: Kenny Robinson
+copyright: Copyright &copy; 2010-2021 Kenny Robinson
 
 # repository information
 repo_url: https://github.com/almostengr/almostengrwebsite
-repo_name: Github
+repo_name: almostengrwebsite
 remote_name: origin
 remote_branch: website
 
@@ -17,26 +17,23 @@ dev_addr: 192.168.1.103:8000
 theme:
   name: material
   custom_dir: 'theme-overrides'
-  # custom_dir: 'mkdocs-material/material'
   language: en
   static_templates:
     - 404.html
-    # - 500.html
-
   font:
     text: Ubuntu
     code: Ubuntu Mono
   palette:
     - scheme: default
-      primary: indigo
-      accent: indigo
+      primary: black
+      accent: red
   favicon: /images/favicon-32x32.png
   features:
       - navigation.tabs
-      # - navigation.tabs.sticky
-      # - navigation.sections
       - navigation.indexes
       - toc.integrate
+      - navigation.top
+
   # social_user: "@almostengr"
 # nav:
 #   - Technology: /technology
@@ -236,3 +233,22 @@ plugins:
   - search:
       lang: en
       min_search_length: 3
+
+extra: 
+  analytics:
+    provider: google  
+    property: 
+  social: 
+    - icon: fontawesome/brands/github 
+      link: https://github.com/almostengr
+      name: almostengr on Github
+    - icon: fontawesome/brands/instagram
+      link: https://instagram.com/almostengr
+      name: "@almostengr on Instagram"
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/almostengr
+      name: "@almostengr on Twitter"
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/c/RobinsonHandyandTechnologyServices?sub_confirmation=1
+      name: Robinson Handy and Technology Services on YouTube
+      

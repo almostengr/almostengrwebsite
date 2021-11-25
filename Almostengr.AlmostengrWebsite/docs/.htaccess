@@ -2,16 +2,16 @@
 
 # Handle any server errors
 ErrorDocument 404 /404.html
-ErrorDocument 500 /500.html
+ErrorDocument 500 /404.html
 
 # Do permanent redirects
-Redirect 301 /archive/(.*) /blog/index.html
-Redirect 301 /category/(.*) /blog/index.html
+Redirect 301 /archive/(.*) /
+Redirect 301 /category/(.*) /
 Redirect 301 /events/(.*) /
 Redirect 301 /keywords/(.*) /
-Redirect 301 /latest-articles /blog/index.html
+Redirect 301 /latest-articles /
 Redirect 301 /taxonomy/(.*) /
-Redirect 301 /recent-posts /blog/index.html
+Redirect 301 /recent-posts /technology
 
 Redirect 301 /contact-me /contact
 Redirect 301 /7-reasons-i-can-do-without-app /lifestyle/2019.06.16-7-reasons-i-can-do-that-without-the-app
@@ -34,18 +34,96 @@ Redirect 301 /use-twitter-and-rules-farmos-notifications-almost-engineered-tech 
 Redirect 301 /drupal-8-tutorial-series-0 /technology/2019.02.27-drupal-8-tutorial-series
 
 # redirects for 2021-11-24 update
+Redirect 301 /cookbook/2020-09-07-dutch-oven-chicken /lifestyle/cook-2020-09-07-dutch-oven-chicken
+Redirect 301 /cookbook/bakedbacon /lifestyle/cook-bakedbacon
+Redirect 301 /cookbook/cheesedip /lifestyle/cook-cheesedip
+Redirect 301 /cookbook/crockpot-baby-back-ribs /lifestyle/cook-crockpot-baby-back-ribs
+Redirect 301 /cookbook/crockpot-bbq-pulled-pork /lifestyle/cook-crockpot-bbq-pulled-pork
+Redirect 301 /cookbook/crockpot-beef-bourguignon /lifestyle/cook-crockpot-beef-bourguignon
+Redirect 301 /cookbook/crockpot-beef-stew /lifestyle/cook-crockpot-beef-stew
+Redirect 301 /cookbook/crockpot-chicken-cacciatore /lifestyle/cook-crockpot-chicken-cacciatore
+Redirect 301 /cookbook/crockpot-chili /lifestyle/cook-crockpot-chili
+Redirect 301 /cookbook/crockpotcollards /lifestyle/cook-crockpotcollards
+Redirect 301 /cookbook/crockpot-easy-healthy-fish-fillet /lifestyle/cook-crockpot-easy-healthy-fish-fillet
+Redirect 301 /cookbook/crockpot-lemon-herb-roasted-chicken /lifestyle/cook-crockpot-lemon-herb-roasted-chicken
+Redirect 301 /cookbook/crockpot-pot-roast /lifestyle/cook-crockpot-pot-roast
+Redirect 301 /cookbook/crockpot-sausage-and-meatballs /lifestyle/cook-crockpot-sausage-and-meatballs
+Redirect 301 /cookbook/diyhamburgerhelper /lifestyle/cook-diyhamburgerhelper
+Redirect 301 /cookbook/eggtacos /lifestyle/cook-eggtacos
+Redirect 301 /cookbook/grilledcorn /lifestyle/cook-grilledcorn
+Redirect 301 /cookbook/grilledporkribs /lifestyle/cook-grilledporkribs
+Redirect 301 /cookbook/hamburgersgrilled /lifestyle/cook-hamburgersgrilled
+Redirect 301 /cookbook/hotpeppersauce /lifestyle/cook-hotpeppersauce
+Redirect 301 /cookbook/loadedhashbrowns /lifestyle/cook-loadedhashbrowns
+Redirect 301 /cookbook/nopreheatchicken /lifestyle/cook-nopreheatchicken
+Redirect 301 /cookbook/sweetpotatopie /lifestyle/cook-sweetpotatopie
+Redirect 301 /cookbook/tzatzikisauce /lifestyle/cook-tzatzikisauce
+Redirect 301 /cookbook/wholebakedchicken /lifestyle/cook-wholebakedchicken
+Redirect 301 /ecobeestatus /projects/ecobeestatus
+Redirect 301 /gardening/2018-01-19-snowfall-timelapse-in-montgomery,-al-january-16-17,-2018 /lifestyle/2018-01-19-snowfall-timelapse-in-montgomery,-al-january-16-17,-2018
+Redirect 301 /gardening/2019-02-23-every-gardener-needs-a-journal /lifestyle/2019-02-23-every-gardener-needs-a-journal
+Redirect 301 /gardening/2019-03-04-greens-from-the-winter-garden /lifestyle/2019-03-04-greens-from-the-winter-garden
+Redirect 301 /gardening/2019-03-11-building-raised-garden-beds /lifestyle/2019-03-11-building-raised-garden-beds
+Redirect 301 /gardening/2019-03-11-sow,-a-planting-companion /lifestyle/2019-03-11-sow,-a-planting-companion
+Redirect 301 /gardening/2019-03-16-manual-tree-branch-tear-down /lifestyle/2019-03-16-manual-tree-branch-tear-down
+Redirect 301 /gardening/2019-03-19-containers-vs-in-ground-gardening /lifestyle/2019-03-19-containers-vs-in-ground-gardening
+Redirect 301 /gardening/2019-04-10-how-to-start-a-garden-in-8-steps /lifestyle/2019-04-10-how-to-start-a-garden-in-8-steps
+Redirect 301 /gardening/2019-12-22-you-still-rake-leaves /lifestyle/2019-12-22-you-still-rake-leaves
+Redirect 301 /gardening/2019-12-29-greens-in-grass /lifestyle/2019-12-29-greens-in-grass
+Redirect 301 /gardening/2020-01-25-january-2020-garden-update /lifestyle/2020-01-25-january-2020-garden-update
+Redirect 301 /gardening/2020-06-24-lsu-ag-gardening-course-module-5 /lifestyle/2020-06-24-lsu-ag-gardening-course-module-5
+Redirect 301 /gardening/2021-02-09-starting-the-garden-for-spring /lifestyle/2021-02-09-starting-the-garden-for-spring
+Redirect 301 /gardening/2021-02-26-growing-without-planting-seeds /lifestyle/2021-02-26-growing-without-planting-seeds
+Redirect 301 /gardening/2021-05-03-garden-update /lifestyle/2021-05-03-garden-update
+Redirect 301 /gardening/2021-06-01-june-2021-weather /lifestyle/2021-06-01-june-2021-weather
+Redirect 301 /gardening/2021-06-30-latest-pickings-from-garden /lifestyle/2021-06-30-latest-pickings-from-garden
+Redirect 301 /gardening/2021-07-01-july-2021-weather /lifestyle/2021-07-01-july-2021-weather
+Redirect 301 /gardening/2021-08-01-august-2021-weather /lifestyle/2021-08-01-august-2021-weather
+Redirect 301 /gardening/2021-09-01-september-2021-weather /lifestyle/2021-09-01-september-2021-weather
+Redirect 301 /gardening/2021-10-01-october-2021-weather /lifestyle/2021-10-01-october-2021-weather
+Redirect 301 /gardening/2021-11-01-november-2021-weather /lifestyle/2021-11-01-november-2021-weather
+Redirect 301 /gardening/2021august-weather.csv /lifestyle/2021august-weather.csv
+Redirect 301 /gardening/2021july-weather.csv /lifestyle/2021july-weather.csv
+Redirect 301 /gardening/2021june-weather.csv /lifestyle/2021june-weather.csv
+Redirect 301 /gardening/2021november-weather.csv /lifestyle/2021november-weather.csv
+Redirect 301 /gardening/2021october-weather.csv /lifestyle/2021october-weather.csv
+Redirect 301 /gardening/2021september-weather.csv /lifestyle/2021september-weather.csv
+Redirect 301 /handyman/2018.01.20-1-year-review-of-liftmaster-8500-with-myq-internet-gateway /lifestyle/handyman-2018.01.20-1-year-review-of-liftmaster-8500-with-myq-internet-gateway
+Redirect 301 /handyman/2018.07.21-how-to-replace-toilet-gasket-and-bolts /lifestyle/handyman-2018.07.21-how-to-replace-toilet-gasket-and-bolts
+Redirect 301 /handyman/2018.10.27-change-air-filter-on-2013-2018-5th-generation-nissan-altima /lifestyle/handyman-2018.10.27-change-air-filter-on-2013-2018-5th-generation-nissan-altima
+Redirect 301 /handyman/2018.11.03-make-your-crockpot-smarter-with-a-timer /lifestyle/handyman-2018.11.03-make-your-crockpot-smarter-with-a-timer
+Redirect 301 /handyman/2019.02.09-remove-water-from-car-trunk /lifestyle/handyman-2019.02.09-remove-water-from-car-trunk
+Redirect 301 /handyman/2019.04.27-weber-charcoal-chimney-review-and-first-use /lifestyle/handyman-2019.04.27-weber-charcoal-chimney-review-and-first-use
+Redirect 301 /handyman/2019.05.02-4-steps-to-change-the-battery-in-nissan-altima-intelligent-key /lifestyle/handyman-2019.05.02-4-steps-to-change-the-battery-in-nissan-altima-intelligent-key
+Redirect 301 /handyman/2019.06.11-identify-electrical-circuits-and-label-breaker-panel /lifestyle/handyman-2019.06.11-identify-electrical-circuits-and-label-breaker-panel
+Redirect 301 /handyman/2019.07.30-reinforce-bookcase-with-plywood /lifestyle/handyman-2019.07.30-reinforce-bookcase-with-plywood
+Redirect 301 /handyman/2020.03.15-8-steps-to-replace-a-toilet-fill-valve /lifestyle/handyman-2020.03.15-8-steps-to-replace-a-toilet-fill-valve
+Redirect 301 /handyman/2020.05.02-replacing-exterior-trim /lifestyle/handyman-2020.05.02-replacing-exterior-trim
+Redirect 301 /handyman/2020.07.12-ceiling-fan-installation-with-downrod /lifestyle/handyman-2020.07.12-ceiling-fan-installation-with-downrod
+Redirect 301 /handyman/2020.07.21-front-yard-landscaping /lifestyle/handyman-2020.07.21-front-yard-landscaping
+Redirect 301 /handyman/2020.08.08-build-firewood-stand /lifestyle/handyman-2020.08.08-build-firewood-stand
+Redirect 301 /handyman/2020.08.08-replacing-contactor-on-air-conditioner /lifestyle/handyman-2020.08.08-replacing-contactor-on-air-conditioner
+Redirect 301 /handyman/2020.08.15-what-is-a-contactor-how-does-a-contactor-work /lifestyle/handyman-2020.08.15-what-is-a-contactor-how-does-a-contactor-work
+Redirect 301 /handyman/2021.01.30-monitor-stand-build /lifestyle/handyman-2021.01.30-monitor-stand-build
+Redirect 301 /handyman/2021.02.20-diy-honeywell-wifi-thermostat-installation /lifestyle/handyman-2021.02.20-diy-honeywell-wifi-thermostat-installation
+Redirect 301 /handyman/2021.03.06-tv-mounting-for-handy /lifestyle/handyman-2021.03.06-tv-mounting-for-handy
+Redirect 301 /handyman/2021.03.20-painting-doorbell-cover-for-better-appearance /lifestyle/handyman-2021.03.20-painting-doorbell-cover-for-better-appearance
+Redirect 301 /handyman/2021.04.03-trex-and-tomcat-rat-trap-product-review /lifestyle/handyman-2021.04.03-trex-and-tomcat-rat-trap-product-review
+Redirect 301 /handyman/2021.04.17-installing-ecobee-3-lite-thermostat,-uninstall-and-reinstall /lifestyle/handyman-2021.04.17-installing-ecobee-3-lite-thermostat,-uninstall-and-reinstall
+Redirect 301 /handyman/2021.05.01-grass-cutting-job-as-handy-pro /lifestyle/handyman-2021.05.01-grass-cutting-job-as-handy-pro
+Redirect 301 /handyman/2021.06.05-star-space-executive-office-chair-review-and-assembly /lifestyle/handyman-2021.06.05-star-space-executive-office-chair-review-and-assembly
+Redirect 301 /handyman/2021.06.12-pro-tower-machine-assembly /lifestyle/handyman-2021.06.12-pro-tower-machine-assembly
+Redirect 301 /internetmonitor /projects/internetmonitor
+Redirect 301 /resources /free%20resources
+Redirect 301 /services /about
 Redirect 301 /speaking /technology
 Redirect 301 /speaking/2017.09.21-build-web-application-without-coding-using-drupal-7 /technology/2017.09.21-build-web-application-without-coding-using-drupal-7
 Redirect 301 /speaking/2020.02.29-linux-training-session /technology/2020.02.29-linux-training-session
 Redirect 301 /speaking/2020.03.06-linux-training-session-april-2020 /technology/2020.03.06-linux-training-session-april-2020
-Redirect 301 /speaking/2020.03.22-coding-session-with-java-and-selenium-webdriver.md /technology/2020.03.22-coding-session-with-java-and-selenium-webdriver
-Redirect 301 /update-static-website /technology/2020.10.04-update-static-website
-Redirect 301 /ecobeestatus /projects/ecobeestatus
+Redirect 301 /speaking/2020.03.22-coding-session-with-java-and-selenium-webdriver /technology/2020.03.22-coding-session-with-java-and-selenium-webdriver
 Redirect 301 /thermometerpi /projects/thermometerpi
 Redirect 301 /trafficpi /projects/trafficpi
-Redirect 301 /internetmonitor /projects/internetmonitor
-Redirect 301 /services /about
-Redirect 301 /resources /free%20resources
+Redirect 301 /update-static-website /technology/2020.10.04-update-static-website
 
 # Prevent Apache from serving .htaccess files:
 <FilesMatch "^\.htaccess">
@@ -84,7 +162,7 @@ Redirect 301 /resources /free%20resources
   # redirect to HTTPS if HTTP
   # RewriteCond %{SERVER_PORT} 80
   # RewriteRule ^(.*)$ https://thealmostengineer.com [L,R=301]
-  RewriteCond %{https} off  
+  RewriteCond %{https} off
   RewriteRule ^(.*)$ https://thealmostengineer.com/$1 [R=301,L]
 </IfModule>
 

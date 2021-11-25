@@ -1,3 +1,7 @@
+---
+category: Cooking
+---
+
 # Lemon Herb Roasted Chicken
 
 Serves 4-6

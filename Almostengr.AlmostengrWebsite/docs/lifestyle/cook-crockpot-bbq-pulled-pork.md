@@ -1,3 +1,7 @@
+---
+category: Cooking
+---
+
 # BBQ Pulled Pork
 
 Serves 6-8

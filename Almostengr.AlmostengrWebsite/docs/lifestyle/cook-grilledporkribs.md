@@ -1,3 +1,7 @@
+---
+category: Cooking
+---
+
 # Grilled Pork Ribs
 
 ## Ingredients

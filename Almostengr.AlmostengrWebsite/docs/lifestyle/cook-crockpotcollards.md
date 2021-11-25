@@ -1,3 +1,7 @@
+---
+category: Cooking
+---
+
 # Crock Pot Collard Greens
 
 ## Ingredients

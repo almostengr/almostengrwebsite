@@ -3,6 +3,7 @@ title: Loaded Hash Browns
 image: /images/cookbook/20210627_121518.jpg
 imagealt: Photo of hashbrowns after cooking still on the waffle iron
 keywords: cooking, hash browns, breakfast, brunch, what to eat
+category: Cooking
 ---
 
 ## Ingredients

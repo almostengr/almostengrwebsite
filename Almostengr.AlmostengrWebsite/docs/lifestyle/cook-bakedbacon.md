@@ -1,3 +1,7 @@
+---
+category: Cooking
+---
+
 # Baked Bacon
 
 ## Ingredients

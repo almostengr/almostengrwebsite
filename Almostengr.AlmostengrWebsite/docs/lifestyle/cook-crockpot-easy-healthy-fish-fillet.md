@@ -1,4 +1,8 @@
-## Easy, Healthy Fish Fillet
+---
+category: Cooking
+---
+
+# Easy, Healthy Fish Fillet
 
 Serves 4-6
 

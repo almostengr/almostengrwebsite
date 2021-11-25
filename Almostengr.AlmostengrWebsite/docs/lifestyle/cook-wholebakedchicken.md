@@ -1,3 +1,7 @@
+---
+category: Cooking
+---
+
 # Whole Baked Chicken with Lemon Pepper Seasoning
 
 ## Ingredients

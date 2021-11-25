@@ -1,3 +1,7 @@
+---
+category: Cooking
+---
+
 # Sweet Potato Pie
 
 ## Ingredients

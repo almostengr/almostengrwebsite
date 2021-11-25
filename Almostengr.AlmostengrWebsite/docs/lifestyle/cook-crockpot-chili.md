@@ -1,3 +1,7 @@
+---
+category: Cooking
+---
+
 # Chili
 
 Serves 6-8

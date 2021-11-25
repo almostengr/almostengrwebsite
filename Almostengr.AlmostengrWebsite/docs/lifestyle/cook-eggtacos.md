@@ -1,3 +1,7 @@
+---
+category: Cooking
+---
+
 # Egg Tacos
 
 ## Ingredients

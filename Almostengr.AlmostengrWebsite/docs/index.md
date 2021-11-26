@@ -11,10 +11,6 @@ description: Information about this blog and Kenny Robinson.
 A prgorammer that does not talk (or in this case write) about technology probably is not a good programmer. 
 I share my code snippets, difficulties with coding, and all things technology here.
 
-## Latest Post
-
-[Jquery Validator with Parameter](/technology/2021.08.12-jquery-validator-with-parameter/)
-
 [Read the Tech Blog](/technology)
 
 ## Lifestyle

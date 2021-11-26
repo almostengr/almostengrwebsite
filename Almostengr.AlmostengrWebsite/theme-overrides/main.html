@@ -57,11 +57,9 @@
 {% endif %}
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
-{% if config.google_analytics %}
 <script async src="//www.googletagmanager.com/gtag/js?id={{ config.google_analytics[0] }}"></script>
 <script
   async>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'UA-64643711-1');</script>
-{% endif %}
 {% endblock %}
 
 {% block htmltitle %}
@@ -144,5 +142,10 @@ page.meta.updated
 {%- if not loop.last -%},{%- endif -%}
 {% endfor %}
 {% endif %}
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4218270188842097"
+  data-ad-slot="5189305512" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 
 {% endblock %}

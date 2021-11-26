@@ -41,6 +41,7 @@
             "type": "shell",
             "args": [
                 "serve",
+                "--watch-theme",
                 "-f",
                 "Almostengr.AlmostengrWebsite/mkdocs.yml"
             ],

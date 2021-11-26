@@ -26,6 +26,8 @@ jobs:
 
     - run: /usr/bin/python3 -m pip install --upgrade mkdocs-minify-plugin
 
+    - run: /usr/bin/python3 -m pip install mkdocs-material
+
     - name: Build website files
       run: /usr/bin/python3 -m mkdocs build -f Almostengr.AlmostengrWebsite/mkdocs.yml
 

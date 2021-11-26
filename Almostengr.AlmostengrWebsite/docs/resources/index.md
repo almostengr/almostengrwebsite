@@ -37,7 +37,7 @@ platforms and are noted accordingly.
 * <a href="https://blackgirlshack.org/" target="_blank">Black Girls Hack</a>
 * <a href="https://blacksincyberconf.com" target="_blank">Black In Cyber Security</a>
 * <a href="https://foundation.blacksintechnology.net/" target="_blank">Blacks In Technology Foundation</a>
-* <a href="https://www.facebook.com/groups/BlackInformationTechnology/" target='_blank'>Black Information Technology (B.I.T)</a>
+* <a href="https://www.facebook.com/groups/BlackInformationTechnology/" target="_blank">Black Information Technology (B.I.T)</a>
 * <a href="https://blacktechalabama.com" target="_blank">Black Tech Alabama</a>
 * <a href="https://blacktechpipeline.com/" target="_blank">Black Tech Pipeline</a>
 * <a href="https://blacktechunplugged.com/" target="_blank">Black Tech Unplugged</a>
@@ -61,7 +61,7 @@ platforms and are noted accordingly.
 * <a href="https://thebeanpath.org" target="_blank">The Bean Path</a>
 * <a href="https://www.youtube.com/channel/UC7O2ES7xKv35EPtga6OtLHg" target="_blank">The Test Lead</a>
 * <a href="https://ukblacktech.com" target="_blank">UK Black Tech</a>
-* <a href="https://www.youtube.com/c/WomenInLinux" target='_blank'>Women in Linux</a>
+* <a href="https://www.youtube.com/c/WomenInLinux" target="_blank">Women in Linux</a>
 
 ## Linux
 
@@ -82,16 +82,16 @@ face when working on websites or software.
 * <a href="https://ardalis.com/" target="_blank">Ardalis is Steve Smith</a>
 * <a href="https://atishay.me" target="_blank">Atishay Jain</a>
 * <a href="https://dotnetplaybook.com" target="_blank">Dotnet Playbook</a>
-* <a href="https://www.youtube.com/watch?v=iujOWWbiUP0&list=PLaAJ0fv0d9WM8E2K_Ke5As-fw626yQ3tu" target='_blank'>Drupal 8 Basics Online Course</a>
+* <a href="https://www.youtube.com/watch?v=iujOWWbiUP0&list=PLaAJ0fv0d9WM8E2K_Ke5As-fw626yQ3tu" target="_blank">Drupal 8 Basics Online Course</a>
 * <a href="https://www.youtube.com/c/FKnight" target="_blank">Forrest Knight</a>
 * [Git Cheatsheet](/resources/git-cheatsheet)
 * <a href="https://gkdba.wordpress.com/" target="_blank">Goal Keeping DBA</a>
 * <a href="https://www.youtube.com/c/binarythistle" target="_blank">Les Jackson</a>
 * <a href="https://docs.microsoft.com/en-us/" target="_blank">Microsoft Technical Documentation</a>
 * <a href="https://www.youtube.com/c/RobinsonHandyandTechnologyServices?sub_confirmation=1" target="_blank">Robinson Handy and Technology Services</a>
-* <a href="https://hanselman.com" target='_blank'>Scott Hanselman</a>
-* <a href="https://wildermuth.com" target='_blank'>Shawn Wildermuth</a>
-* <a href="https://simpleprogrammer.com" target='_blank'>Simple Programmer</a>
+* <a href="https://hanselman.com" target="_blank">Scott Hanselman</a>
+* <a href="https://wildermuth.com" target="_blank">Shawn Wildermuth</a>
+* <a href="https://simpleprogrammer.com" target="_blank">Simple Programmer</a>
 * <a href="https://www.techonthenet.com" target="_blank">Tech On The Net</a>
 * <a href="https://thebestcsharpprogrammerintheworld.com" target="_blank">The Best C# Programmer In The World</a>
 * <a href="https://thereformedprogrammer.net" target="_blank">The Reformed Programmer</a>
@@ -100,4 +100,4 @@ face when working on websites or software.
 
 ## Non-Tech Resources
 
-* <a href="https://thebipolarbuzz.com" target='_blank'>The Bipolar Buzz</a>
+* <a href="https://thebipolarbuzz.com" target="_blank">The Bipolar Buzz</a>

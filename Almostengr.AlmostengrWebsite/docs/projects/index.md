@@ -46,7 +46,7 @@ Read more about <a href="/falconpitwitter">Falcon Pi Twitter project</a>.
 
 **Technologies:** C#
 
-<a href="https://github.com/almostengr/falconpitwitter" target='_blank'>Source Code</a>
+<a href="https://github.com/almostengr/falconpitwitter" target="_blank">Source Code</a>
 
 
 ## Christmas Light Show (2020)

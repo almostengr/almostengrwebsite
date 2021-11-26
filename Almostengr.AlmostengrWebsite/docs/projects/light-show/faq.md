@@ -183,7 +183,7 @@ actually over heat and weld itself together.
 
 Music is transmitted over radio via a low-power FM transmitter. Music goes into the transmitter directly from
 the Raspberry Pi and broadcasted on 90.3 FM. Radio Locator
-[mentioned below](/lightshow/faq#where-can-i-find-out-more-information-or-ask-questions)
+[mentioned below](/projects/light-show/faq#where-can-i-find-out-more-information-or-ask-questions)
 was used to locate the best frequency based on the area.
 
 ### What kind of software do you use?
@@ -214,15 +214,15 @@ the latest version from <a href="https://kdenlive.org/" target="_blank">its webs
 
 #### Falcon Pi Twitter
 
-[Falcon Pi Twitter](/falconpitwitter)
+[Falcon Pi Twitter](/projects/falcon-pi-twitter)
 is a custom .NET Core application written in C#. The application serves as a bridge
 between the Falcon Pi Player and Twitter. As the show plays, the song information is pulled from the
 Falcon Pi Player and then posted as a tweet on Twitter. You can find out more information about this
-project by visiting the [project page](/falconpitwitter).
+project by visiting the [project page](/projects/falcon-pi-twitter).
 
 ### Song updates are posted to Twitter. How does that work?
 
-See the [Falcon Pi Twitter](/falconpitwitter) page for more information about
+See the [Falcon Pi Twitter](/projects/falcon-pi-twitter) page for more information about
 that project.
 
 [Back to Top](#)

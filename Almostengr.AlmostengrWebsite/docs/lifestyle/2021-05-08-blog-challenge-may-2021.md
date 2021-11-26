@@ -33,9 +33,9 @@ Some of the content that I wrote, was for project documentation. Since I keep my
 
 If you did not see the posts that I made this week, here is a summary of them below.
 
-* Sunday: Updated [Light Show documentation](/lightshow), the [About](/about), and the [Projects](/projects) pages
+* Sunday: Updated [Light Show documentation](/projects/light-show), the [About](/about), and the [Projects](/projects) pages
 * Monday: [Garden Update: May 3, 2021](/gardening/2021-05-03-garden-update)
-* Tuesday: [Ecobee Status Monitor Documentation](/ecobeestatus)
+* Tuesday: [Ecobee Status Monitor Documentation](/projects/ecobeestatus)
 * Wednesday: [ToastMasters Ice Breaker Speech](/lifestyle/2021-05-05-toastmasters-ice-breaker-speech)
 * Thursday: [Get A Tech Job with No Experience](/technology/2021.05.06-tech-job-with-no-experience)
 * Friday: [How Can Programmers Stay In Shape](/lifestyle/2021-05-07-how-can-programmers-stay-in-shape)

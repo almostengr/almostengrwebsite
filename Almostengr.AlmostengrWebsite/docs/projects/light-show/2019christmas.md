@@ -15,4 +15,4 @@ All of the lights were connected to a single timer. That timer was set to run fr
 
 To find out more about the light show, visit one of the pages listed below.
 
-* [FAQs (Frequently Asked Questions)](/lightshow/faq)
+* [FAQs (Frequently Asked Questions)](/projects/light-show/faq)

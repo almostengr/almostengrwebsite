@@ -4,10 +4,12 @@ description: List of projects that I have worked on.
 ---
 
 Below is a list of some of the projects that I have worked on in the past.
-All of my public projects are listed on [my GitHub page](https://github.com/almostengr/).
+All of my public projects are listed on 
+<a href="https://github.com/almostengr/" target="_blank">my GitHub page</a>.
 
 Have a project in mind? You may request my services by contacting me through my business, 
 <a href="https://rhtservices.net" target="_blank">Robinson Handy and Technology Services</a>.
+
 
 ## Coding Challenges (2021)
 
@@ -16,52 +18,50 @@ I periodically do coding challenges. The reason that I do challenges is to test 
 programming language and expose myself to different aspects of the language.
 I elaborate further about why I suggest that others do coding challenges in a blog post titled
 [Why Do Coding Challenges](/technology/2021.06.25-why-do-coding-challenges).
-<p>Technologies: C#</p>
-<p><a href="https://github.com/almostengr/coding-challenge" target="_blank">Source Code</a></p>
+
+**Technologies:** C#
+
+<a href="https://github.com/almostengr/coding-challenge" target="_blank">Source Code</a>
+
 
 ## Ecobee Status Monitor (2021)
 
-Read more about [Ecobee Status Monitor](/ecobeestatus) project.
-<p>Technologies: C#</p>
+Read more about [Ecobee Status Monitor](/projects/ecobeestatus) project.
+
+**Technologies:** C#
+
 
 ## Themometer Pi (2021)
 
-Read more about [Thermometer Pi](/thermometerpi).
-<p>Technologies: C#</p>
+Read more about [Thermometer Pi](/projects/thermometer-pi).
+
+**Technologies:** C#
+
 
 ## Falcon Pi Twitter (2020)
 
-<div class="row mb-3">
-<div class="col-4">
 <img src="/images/lightshow/20201220presentation/twittertweets.jpg" alt="Falcon Pi Tweets">
-</div>
-<div class="col">
+
 Read more about <a href="/falconpitwitter">Falcon Pi Twitter project</a>.
-<p>Technologies: C#</p>
-<p><a href="https://github.com/almostengr/falconpitwitter" target='_blank'>Source Code</a></p>
-</div>
-</div>
+
+**Technologies:** C#
+
+<a href="https://github.com/almostengr/falconpitwitter" target='_blank'>Source Code</a>
+
 
 ## Christmas Light Show (2020)
 
-<div class="row mb-3">
-<div class="col-4">
 <img src="/images/lightshow/2020 Christmas Light Show 20201211-f000000.jpg" alt="Light show animation">
-</div>
-<div class="col">
-Read more about <a href="/lightshow">Christmas Light Show project</a>.
-<p>Technologies: C#, Raspberry Pi, Xlights</p>
-</div>
-</div>
+
+Read more about <a href="/projects/light-show">Christmas Light Show project</a>.
+
+**Technologies:** C#, Falcon Pi Player, Raspberry Pi, Xlights
+
 
 ## NSBE Montgomery Professionals Website (2020)
 
-<div class="row mb-3">
-<div class="col-4">
 <img src="/images/projects/nsbemp.jpg" alt="NSBE Montgomery Professionals website">
-</div>
-<div class="col">
-<p>
+
 The National Society of Black Engineers, Montgomery Professionals (NSBE-MP) is a chapter of NSBE. This
 project consisted of redesigning the previous version website to the current version.
 
@@ -76,136 +76,105 @@ are created and automatically deployed to the production environment when update
 GitHub serves as the content management system for this website. As part up this update, the website was
 updated to use
 <a href="https://getbootstrap.com" target="_blank">Bootstrap 4</a> so that it would be mobile friendly.
-</p>
-<p>Technologies: Bootstrap 4, CSS, Github Actions, HTML, JavaScript, MkDocs</p>
-<p>
+
+**Technologies:** Bootstrap 4, CSS, Github Actions, HTML, JavaScript, MkDocs
+
 <a href="https://github.com/almostengr/nsbe-mp.org" target="_blank">Source Code</a> 
 <a href="https://nsbe-mp.org" target="_blank">Visit Website</a>
-</p>
-</div>
-</div>
+
 
 ## Kdenlive to YouTube (2019)
 
-<div class="row mb-3">
-<div class="col">
 This project was to build an automation that would take video projects that I have created
 with Kdenlive, generate them, and then upload them to YouTube automatically.
 
 The first phase of this project, which was to render videos from a queue of
 Kdenlive archive files. I have videos on my YouTube channel that discuss some of the
 aspects of the code.
-<br /><br />
-<p>Technologies: Java</p>
-<p>
+
+**Technologies:** Java
+
 <a href="https://github.com/almostengr/kdenlivetoyoutube" target="_blank">Source Code</a>
-</p>
-</div>
-</div>
+
 
 ## Raspberry Pi Traffic Light Controller aka TrafficPi (2018)
 
-<div class="row mb-3">
-<div class="col-4">
 <img src="/images/portfolio_trafficlight2.jpg" alt="Traffic light used for the Traffic Pi">
-</div>
-<div class="col">
-<p>Read more about <a href="/trafficpi">Raspberry Pi Traffic Light Control project</a>.</p>
-<p>Technologies: Bash, CSS, C#, HTML</p>
-</div>
-</div>
+
+Read more about <a href="/projects/traffic-pi">Raspberry Pi Traffic Light Control project</a>.
+
+**Technologies:** Bash, CSS, C#, HTML
+
 
 ## Ubuntu Automation Scripts (2018)
 
-<div class="row mb-3">
-<div class="col">
-<p>
 The purpose of this repository is to hold scripts that use for routine tasks, such as updating packages,
 starting virtual machines, and automatically commiting files. When you run the same commands over
 and over again, it is often best to put them into a script and then just call the script when you need it.
 I have created a playlist that contains some of the scripts used. You can 
 on my 
-<a href="https://www.youtube.com/c/kennythealmostengineer?sub_confirmation=1" target="_blank">Youtube channel</a>.
-</p>
-<p>Technologies: Bash Scripts</p>
-<p>
+<a href="https://www.youtube.com/c/RobinsonHandyandTechnologyServices?sub_confirmation=1" target="_blank">Youtube channel</a>.
+
+**Technologies:** Bash Scripts
+
 <a href="https://github.com/almostengr/ubuntu-automation" target="_blank">Source Code</a>
 <a href="https://www.youtube.com/playlist?list=PLaAJ0fv0d9WPLAng19RpS1Q3jjMoG6eno" target="_blank">Video Tutorials</a>
-</p>
-</div>
-</div>
+
 
 ## Home Automation with Home Assistant (2017)
 
-<div class="row mb-3">
-<div class="col-4">
 <img src="/images/portfolio_homeassistant.jpg" alt="Screenshot of Home Assistant dashboard">
-</div>
-<div class="col">
+
 Home automation is one of the latest trends in technology.
 Using Home Assistant, I have been able to automate several repetitive tasks within my home.
 I will continue to add more automations and share those with the community.
 The documentation for <a href="https://home-assistant.io" target="_blank">Home Assistant</a> can be
 somewhat daunting for the beginnger. By providing my
 configuration, hopefully it will assist you and others with their configuraiton of their own instance.
-<p>
+
 <a href="https://github.com/almostengr/ha-config" target="_blank">Configuration</a> | 
 <a href="https://www.youtube.com/playlist?list=PLaAJ0fv0d9WMOGZmLnghrG321kVueGfuL" target="_blank">Tutorials</a> | 
 <a href="/uses/#home-assistant">Components</a>
-</p>
-</div>
-</div>
+
 
 ## FarmOS NWS (National Weather Service) Drupal 7 Module (2017)
 
-<div class="row mb-3">
-<div class="col">
-<p>
 The purpose of this project is to allow FarmOS to use data from the National Weather Service to allow it
 to make better decisions as well as to log data from a trusted weather source.
 Using data from the National Weather Service reduces the cost to get a FarmOS installation going as
 temperature, rain, humidity and other sensors do not have to be purchased. Furthermore, it reduces the
 maintenance costs by reducing the amount of infrastructure required to maintain the farm or garden.
-</p>
-<p>Technologies: Bash, Drupal, PHP</p>
-<p><a href="https://github.com/almostengr/farmosnws" target="_blank">Source Code</a></p>
-</div>
-</div>
+
+**Technologies:** Bash, Drupal, PHP
+
+<a href="https://github.com/almostengr/farmosnws" target="_blank">Source Code</a>
+
 
 ## Black Box Operations (2011)
 
-<div class="row mb-3">
-<div class="col-4">
 <img src="/images/portfolio_operations.jpg" alt="screenshot of Operations System">
-</div>
-<div class="col">
-<p>
+
 Black Box Operations is a project management, help desk, and invoicing system all rolled into one. This
 web application allows BBIT staff and BBIT clients to stay up-to-date with the status of their project and
 submit maintenance requests for their website(s). The system also emails invoices to clients and allows
 clients to login to pay their invoices. By having all of the information located in a central location,
 BBIT is able to produce quality work, in a timely fashion.
-<p>
-<p>Technologies: Drupal, PHP</p>
-</div>
-</div>
+
+**Technologies:** Drupal, PHP
+
 
 ## NACCP, University of Alabama Chapter Website (2011)
 
-<div class="row mb-3">
-<div class="col-4">
 <img src="/images/portfolio_uanaacp.jpg" alt="UANAACP website">
-</div>
-<div class="col">
-<p>
+
 University of Alabama Chapter of the National Association for the Advancement of Colored People (UA NAACP)
 is a student organization at University of Alabama, in Tuscaloosa, Alabama. The website allowed UA NAACP to
 recruit prospective and current students to attend organization meetings, events, and functions.
-</p>
-<p>Technologies: CSS, HTML, JavaScript</p>
-<p><a href="https://github.com/almostengr/" target="_blank">Source Code</a></p>
-</div>
-</div>
+
+**Technologies:** CSS, HTML, JavaScript
+
+<a href="https://github.com/almostengr/" target="_blank">Source Code</a>
+
 
 ## Scrap Code Dump Blog (2010)
 
@@ -214,37 +183,29 @@ to a dedicated site for a business that I was starting. That business idea did n
 so I decided to take the existing content and make it part of my personal blog. Thus the current
 website, The Almost Engineer, has this content.
 
+
 ## Tuscaloosa Area Black Chamber of Commerce (2010)
 
-<div class="row mb-3">
-<div class="col-4">
 <img src="/images/portfolio_tabcc.jpg" alt="TABCC website screenshot">
-</div>
-<div class="col">
-<p>
+
 The Tuscaloosa Area Black Chamber of Commerce (TABCC) serves to promote Black and minority-owned
 businesses in the 7th congressional district of Alabama and the West Alabama areas. TABCC now has an
 informational website for current and prospective members, upcoming events, and community and TABCC news bulletins.
-</p>
-<p>Technologies: Bootstrap 4, CSS, Github Actions, HTML, JavaScript, MkDocs</p>
-<p>
+
+**Technologies:** Bootstrap 4, CSS, Github Actions, HTML, JavaScript, MkDocs
+
 <a href="https://github.com/almostengr/tabcc" target="_blank">Source Code</a> 
 <a href="http://tuscblackchamber.org" target="_blank">Visit Website</a>
-</p>
-</div>
-</div>
+
 
 ## University of Alabama Chapter of the National Society of Black Engineers (2009)
 
-<div class="row mb-3">
-<div class="col-4">
 <img src="/images/portfolio_uansbe.jpg" alt="UA NSBE Screenshot">
-</div>
-<div class="col">
-<p>University of Alabama Chapter of the National Society of Black Engineers (UA NSBE) is a student organization at
+
+University of Alabama Chapter of the National Society of Black Engineers (UA NSBE) is a student organization at
 University of Alabama, in Tuscaloosa, Alabama. A website was created to allow UA NSBE to recruit prospective and
-current students to attend organization meetings, events, and conferences.</p>
-<p>Technologies: CSS, HTML, JavaScript</p>
-<p><a href="https://github.com/almostengr/uansbe-website" target="_blank">Source Code</a></p>
-</div>
-</div>
+current students to attend organization meetings, events, and conferences.
+
+**Technologies:** CSS, HTML, JavaScript
+
+<a href="https://github.com/almostengr/uansbe-website" target="_blank">Source Code</a>

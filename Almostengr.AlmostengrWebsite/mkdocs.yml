@@ -35,19 +35,21 @@ theme:
     - toc.integrate
     - navigation.top
     # - navigation.expand
+    - navigation.tracking
+
 
 
   # social_user: "@almostengr"
 # nav:
 #   - Technology: /technology
-#   - YouTube: https://www.youtube.com/c/kennythealmostengineer?sub_confirmation=1
+#   - YouTube: https://www.youtube.com/c/RobinsonHandyandTechnologyServices?sub_confirmation=1
 #   - Projects: /projects
 #   - Services: /services
 #   - About: /about
   # mainnav:
   #   - url: /technology
   #     name: Technology
-  #   - url: https://www.youtube.com/c/kennythealmostengineer?sub_confirmation=1
+  #   - url: https://www.youtube.com/c/RobinsonHandyandTechnologyServices?sub_confirmation=1
   #     name: YouTube
   #   - url: /projects
   #     name: Projects

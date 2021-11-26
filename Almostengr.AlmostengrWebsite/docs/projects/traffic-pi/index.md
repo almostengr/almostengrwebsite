@@ -15,8 +15,8 @@ description: Project build using a Raspberry Pi to control a retired traffic lig
 * [Uninstall Traffic Pi](#uninstall-traffic-pi)
 * [Acknowledgements](#acknowledgements)
 * [Troubleshooting](#troubleshooting)
-* [Classroom Activity](/trafficpi/activity)
-* [Electrical Theory](/trafficpi/electriclatheory)
+* [Classroom Activity](/projects/traffic-pi/activity)
+* [Electrical Theory](/projects/traffic-pi/electriclatheory)
 
 ## Purpose
 
@@ -113,7 +113,7 @@ Pi Pin (Board) | GPIO | Device Connection
 
 To set up the application as a service, run the below commands. If you see error messages
 when running the commands, you may need to run them with "sudo" privileges. See the
-[System Service](/trafficpi/systemservice) page for details on how to add or remove the
+[System Service](/projects/traffic-pi/systemservice) page for details on how to add or remove the
 application as a system service.
 
 #### Create System Service

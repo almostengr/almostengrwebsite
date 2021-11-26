@@ -4,5 +4,6 @@ description: Sharing experiences and journey through life.
 hidepostinfo: true
 ---
 
-In this section of the blog, I share experiences and details about other non-tech projects that 
-I am working on.
+In this section of the blog, I share experiences and details about other non-tech aspects of life including
+gardening, carpentry and building projects, and recipes for good food. Use the sub-navigation menu 
+or search to find the post of your choosing.

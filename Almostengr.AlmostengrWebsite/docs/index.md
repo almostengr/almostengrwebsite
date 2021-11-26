@@ -4,16 +4,24 @@ description: Information about this blog and Kenny Robinson.
 
 # Welcome!
 
+![Kenny with traffic light](/img/jumbotron_kenny.jpg)
+
 ## Technology Blog
 
 A prgorammer that does not talk (or in this case write) about technology probably is not a good programmer. 
 I share my code snippets, difficulties with coding, and all things technology here.
 
-### Featured Posts
+## Latest Post
+
+[Jquery Validator with Parameter](/technology/2021.08.12-jquery-validator-with-parameter/)
+
+[Read the Tech Blog](/technology)
 
 ## Lifestyle
 
 Here I share other aspects of life, including by hobbies and other thoughts that are not related to tech. 
+
+[Read the Lifestyle Blog](/lifestyle)
 
 ## Projects
 
@@ -28,7 +36,9 @@ so that others may learn from my previous work.
 A traffic light is something that most understand even before they start driving. In 2018, I purchased a 
 real, retired traffic light from a salvage company to teach programming concepts to grade school students. 
 
-[Read more about Traffic Pi project](/projects/trafficpi)
+[Read more about Traffic Pi project](/projects/traffic-pi)
+
+[See All Projects](/projects)
 
 ## Resources
 

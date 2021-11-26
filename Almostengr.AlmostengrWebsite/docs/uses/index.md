@@ -54,7 +54,7 @@ handymen and handywomen.
 ## Technology Tools
 
 These are the tools that I use to create websites, software, and videos on my
-<a href="https://www.youtube.com/c/kennythealmostengineer?sub_confirmation=1" 
+<a href="https://www.youtube.com/c/RobinsonHandyandTechnologyServices?sub_confirmation=1" 
     target="_blank">YouTube Channel</a>.
 
 ### Linux Software
@@ -62,7 +62,6 @@ These are the tools that I use to create websites, software, and videos on my
 * [.Net Core SDK](https://dotnet.microsoft.com/download) for building .Net Core applications
 * [Audacity](https://www.audacityteam.org/) for editing audio
 * Bash Terminal for running commands on Linux and connecting to remote servers
-* [Eclipse](https://eclipse.org) for coding in Java and PHP
 * [Filezilla](https://filezilla-project.org/) for transferring files
 * [GIMP](https://www.gimp.org) for editing images
 * [Git](https://git-scm.com/) for version control
@@ -74,8 +73,8 @@ Stack for building applications locally
 * [Mozilla Firefox](https://www.mozilla.org/en-us/firefox) for browsing and building websites
 * [Oracle Virtual Box](https://virtualbox.org) for running development and home automation virtual servers
 * [PHPMyAdmin](https://phpmyadmin.net) for performing database tasks
-* [OBS (Open Broadcast Studio)](https://obsproject.com/) for recording tutorials
-that I post on my YouTube channel.
+* [OBS (Open Broadcast Studio)](https://obsproject.com/) for recording tutorials that I post on my 
+<a href="https://www.youtube.com/c/RobinsonHandyandTechnologyServices?sub_confirmation=1" target="_blank">YouTube channel</a>.
 * [Thunderbird](https://thunderbird.net/en-us) for email
 * Vim for text editing
 * [Visual Studio Code](https://code.visualstudio.com/download) for text editing and coding

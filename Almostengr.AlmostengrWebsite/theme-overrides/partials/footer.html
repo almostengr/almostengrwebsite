@@ -1,6 +1,6 @@
-  {% import "partials/language.html" as lang with context %}
-  <footer class="md-footer">
-    <!-- {% if page.previous_page or page.next_page %}
+{% import "partials/language.html" as lang with context %}
+<footer class="md-footer">
+  <!-- {% if page.previous_page or page.next_page %}
       <nav class="md-footer__inner md-grid" aria-label="{{ lang.t('footer.title') }}">
         {% if page.previous_page %}
           {% set direction = lang.t("footer.previous") %}
@@ -36,29 +36,35 @@
         {% endif %}
       </nav>
     {% endif %} -->
-    <div class="md-footer-meta md-typeset">
-      <div class="md-footer-meta__inner md-grid">
-        <div class="md-footer-copyright">
-            <div class="p-2">
-                <a href="#top">Back to Top</a>
-            </div>
-          {% if config.copyright %}
-            <div class="md-footer-copyright__highlight">
-              {{ config.copyright }}
-            </div>
-          {% endif %}
-            <div>
-                Created by <a href="https://rhtservices.net" target="_blank">Robinson Handy and Technology Services</a>
-            </div>
-          {% if not config.extra.generator == false %}
-            Made with
-            <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-              Material for MkDocs
-            </a>
-          {% endif %}
-          {{ extracopyright }}
-        </div>
-        {% include "partials/social.html" %}
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4218270188842097"
+          data-ad-slot="5189305512" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
       </div>
+      <div class="md-footer-copyright">
+        <div class="p-2">
+          <a href="#top">Back to Top</a>
+        </div>
+        {% if config.copyright %}
+        <div class="md-footer-copyright__highlight">
+          {{ config.copyright }}
+        </div>
+        {% endif %}
+        <div>
+          Created by <a href="https://rhtservices.net" target="_blank">Robinson Handy and Technology Services</a>
+        </div>
+        {% if not config.extra.generator == false %}
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        {% endif %}
+        {{ extracopyright }}
+      </div>
+      {% include "partials/social.html" %}
     </div>
-  </footer>
+  </div>
+</footer>

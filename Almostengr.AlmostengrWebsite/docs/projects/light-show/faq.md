@@ -55,7 +55,7 @@ I wanted to do something different for Christmas. Given that the COVID-19 (Coron
 during 2020, I had extra funds on hand since I was not doing much travelling during this time. I decided
 to leverage my Technology and Electrical Engineering skills and build a Christmas light show.
 
-[Back to Top](#)
+ 
 
 ## Money
 
@@ -156,7 +156,7 @@ Total = $332.59
 
 *All prices are listed in USD. Does not include taxes or shipping fees.*
 
-[Back to Top](#)
+ 
 
 ## Technology
 
@@ -225,7 +225,7 @@ project by visiting the [project page](/projects/falcon-pi-twitter).
 See the [Falcon Pi Twitter](/projects/falcon-pi-twitter) page for more information about
 that project.
 
-[Back to Top](#)
+ 
 
 ## Resources
 

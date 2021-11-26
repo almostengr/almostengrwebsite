@@ -26,7 +26,7 @@ via Github.
 
 ## Black In Tech
 
-People, groups, or content targeted for or created by Black people in the IT industry. Some of the resources 
+Groups or content targeted for or created by Black people in the IT industry. Some of the resources 
 apply to mutliple areas of tech, while others are specific. Some groups may have a presence on multiple
 platforms and are noted accordingly.
 
@@ -46,7 +46,6 @@ platforms and are noted accordingly.
 * <a href="https://blacktechalabama.com" target="_blank">Black Tech Alabama</a>
 * <a href="https://blacktechpipeline.com/" target="_blank">Black Tech Pipeline</a>
 * <a href="https://blacktechunplugged.com/" target="_blank">Black Tech Unplugged</a>
-* <a href="https://twitter.com/BlackTIDES1" target="_blank">BlackTIDES</a>
 * <a href="https://www.facebook.com/groups/1256932777983630/" target="_blank">Black Women Do eDiscovery and Litigation Support Too</a>
 * <a href="https://blackwomenhack.com/" target="_blank">Black Women Hack</a>
 * <a href="https://www.blackwomentalktech.com/" target="_blank">Black Women Talk Tech</a>
@@ -64,9 +63,10 @@ platforms and are noted accordingly.
 * <a href="https://www.youtube.com/c/JeremyFieldingSr/" target="_blank">Jeremy Felding</a>
 * <a href="https://nolavateblack.com/" target="_blank">NOLAvate Black - New Orleans Black Tech Collective</a>
 * <a href="https://peopleofcolorintech.com/" target="_blank">People Of Color In Tech</a>
+* <a href="https://www.youtube.com/c/RobinsonHandyandTechnologyServices?sub_confirmation=1" target="_blank">Robinson Handy and Technology Services</a>
 * <a href="https://www.facebook.com/groups/scbwit/" target="_blank">Sista Circle: Black Women In Tech</a>
-* <a href="https://www.youtube.com/c/TechGee" target="_blank">Tech Gee</a>
 * <a href="https://www.techbychoice.org/" target="_blank">Tech By Choice</a>
+* <a href="https://www.youtube.com/c/TechGee" target="_blank">Tech Gee</a>
 * <a href="https://youtube.com/channel/UC3eR3DZ8G1O2jl98mFOpwIw" target="_blank">Tech with Glamtechy</a>
 * <a href="https://thebeanpath.org" target="_blank">The Bean Path</a>
 * <a href="https://www.thestemhouse.org/" target="_blank">The STEM House</a>
@@ -85,6 +85,7 @@ you on the way to learning Linux and what all it has to offer.
 * [Linux Training Session 2020](/technology/2020.03.01-linux-training-session)
 * <a href="https://www.youtube.com/c/NetworkChuck" target="_blank">Network Chuck</a>
 * <a href="https://www.youtube.com/c/NixiePixel/" target="_blank">Nixie Pixel</a>
+* <a href="https://www.youtube.com/c/WomenInLinux" target="_blank">Women in Linux</a>
 
 ## Web and Software Development
 

@@ -5,6 +5,8 @@ keywords: uses, uses page, tools used
 image: /images/2020.02.01-uses-entry.jpg
 ---
 
+# Uses
+
 ## Background
 
 Browsing around on GitHub, I found that developers create "uses" (or /uses) pages that
@@ -13,6 +15,7 @@ the job done. For more detail about what is a Uses page and how you can create y
 you can check out [the blog post](/technology/2020.02.01-developer-uses-page) about this topic.
 
 ## Table of Contents
+
 * [Handyman Tools](#handyman-tools)
 * [Technology Tools](#technology-tools)
 * [Gardening Tools](#gardening-tools)

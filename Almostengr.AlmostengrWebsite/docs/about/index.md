@@ -12,15 +12,10 @@ The Almost Engineer name. Kenny works (and according to some live in) in the eng
 of Computer Science, has great problem solving skills, and enjoys fixing things instead of paying
 someone else to do it for him. However Kenny has a Business degree from the University of Alabama
 (Roll Tide!) instead of an engineering degree, thus almost being an engineer.
-This is explained further in the video below.
 
-<div class="text-center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/h5o7KND-gFM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+## Programmer in IT (Information Technology)
 
-## IT (Information Technology) Professional
-
-Kenny's day job is working as an IT professional. He has years of experience in building web based
+Kenny's day job is working as a programmer. He has years of experience in building web based
 applications and providing software support. When you create or maintain software for a living,
 often times you will reuse the same code over in multiple projects. By using a blog, you can search for
 that [code snippet](/technology/2020.08.25-select-list-of-times)
@@ -29,7 +24,7 @@ projects, as it may be exactly what they are looking for.
 
 ## Why Does Kenny Blog?
 
-Kenny has been blogging his [gardening](/gardening), [technology experiences](/technology),
+Kenny has been blogging his gardening, [technology experiences](/technology),
 and mishaps for several reasons:
 
 * you learn from your past mistakes
@@ -51,30 +46,23 @@ maintenance updates than writing content. He outlines this more in his post on
 
 ## Services
 
-I offer custom software solutions and handyman work through my business
+Kenny offers custom software solutions and handyman work through my business
 <a href="https://rhtservices.net" target="_blank">Robinson Handy and Technology Services</a>. To
 make an appointment or discuss business, please visit the website.
 
 ## Blogs I Read
 
-In addition to writing here, Kenny also reads the blogs of others. Below are the most common ones that he reads.
+In addition to writing here, Kenny also reads the blogs of others.
 Before you ask, they do not provide any kickbacks or monetary support for him listing links to their blog.
-
-* <a href="https://ardalis.com/" target="_blank">Ardalis is Steve Smith</a>
-* <a href="https://atishay.me" target="_blank">Atishay Jain</a>
-* <a href="https://dotnetplaybook.com" target="_blank">Dotnet Playbook</a>
-* <a href="https://gkdba.wordpress.com/" target="_blank">Goal Keeping DBA</a>
-* <a href="https://hanselman.com" target='_blank'>Scott Hanselman</a>
-* <a href="https://wildermuth.com" target='_blank'>Shawn Wildermuth</a>
-* <a href="https://simpleprogrammer.com" target='_blank'>Simple Programmer</a>
-* <a href="https://thebestcsharpprogrammerintheworld.com" target="_blank">The Best C# Programmer In The World</a>
-* <a href="https://thebipolarbuzz.com" target='_blank'>The Bipolar Buzz</a>
-* <a href="https://thereformedprogrammer.net" target="_blank">The Reformed Programmer</a>
+Tech related blogs and resources can be found on the [Resources](/resources) page.
 
 ## Have Questions
 
-Have questions for me? You can reach me via one of the methods listed on the
-[Contact page](/contact)
+Have a question, comment, or just want to say hi? Reach out to me using one of the methods below.
+
+* <a href="https://twitter.com/almostengr" target="_blank">@almostengr on Twitter</a>
+* <a href="https://instagram.com/almostengr" target="_blank">@almostengr on Instagram</a>
+* <a href="https://www.youtube.com/c/robinsonhandyandtechnologyservices?sub_confirmation=1" target="_blank">Robinson Handy and Technology Services YouTube Channel</a>
 
 ## Donations
 

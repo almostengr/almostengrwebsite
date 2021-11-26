@@ -57,6 +57,8 @@ jobs:
     
     - run: /usr/bin/python3 -m pip install --upgrade mkdocs-minify-plugin
 
+    - run: /usr/bin/python3 -m pip install mkdocs-material
+
     - name: Check out main branch
       uses: actions/checkout@v2
       with:

@@ -6,6 +6,8 @@ image: /images/lightshow/2020 Christmas Light Show 20201211-f000000.jpg
 
 ## Show Details
 
+![Image of 2020 Light Show](/images/lightshow/2020 Christmas Light Show 20201211-f000000.jpg)
+
 ### Show Dates and Times
 
 Show will run nightly from November 27, 2020 until January 2, 2021.

@@ -6,10 +6,12 @@ image: /images/lightshow/2020 Christmas Light Show 20201211-f000000.jpg
 
 ## Show Dates and Times
 
+![Image of 2020 Light Show](/images/lightshow/2020 Christmas Light Show 20201211-f000000.jpg)
+
 Show will run nightly from November 25, 2021 until December 25, 2021.
 
-* Sunday-Thursday, 5:00 PM (17:00) until 9:30 PM (21:30)
-* Friday and Saturday, 5:00 PM (17:00) until 10:30 PM (22:30)
+* Pre-show (static lights) starts at 5:00 PM (17:00)
+* Nightly, 5:30 PM (17:30) until 10:00 PM (22:00)
 
 During times of heavy rain or severe weather the light show may be stopped to reduce the
 chance of electrical shorts occurring and for safety of individuals watching.
@@ -38,6 +40,12 @@ Songs featured in the 2021 Light Show are:
 * The Polar Express - Tom Hanks
 * The Song That Doesn't End - Shari Lewis
 * What You Want for Christmas - 69 Boyz featuring Quad City DJs and K-nock
+
+## Twitter Feed
+
+<a class="twitter-timeline" data-lang="en" data-height="500" data-theme="dark"
+    href="https://twitter.com/hplightshow?ref_src=twsrc%5Etfw">Tweets by HP Light Show</a>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## Other Information
 

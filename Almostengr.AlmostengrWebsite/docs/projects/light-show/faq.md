@@ -3,8 +3,7 @@ title: FAQ (Frequently Asked Questions)
 description: Frequently asked questions about this and other light shows.
 ---
 
-Here are the most common questions that are asked about the light show. Please use the Table of Contents 
-to jump to the question that you are looking for or use the search feature.
+Here are the most common questions that are asked about the light show.
 
 ## Table of Contents
 
@@ -26,7 +25,6 @@ socket and taped to prevent water from getting in.
 ### Are there other residential light shows?
 
 Yes, there are many that exist. See the list below.
-
 *Those with "MGM" in parenthesis are located in or near the Montgomery, Alabama area.*
 *Visit their respective pages for details about their show.*
 

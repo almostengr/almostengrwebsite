@@ -5,12 +5,6 @@ description: Frequently asked questions about this and other light shows.
 
 Here are the most common questions that are asked about the light show.
 
-## Table of Contents
-
-* [Basics](#basics)
-* [Money](#money)
-* [Technology](#technology)
-* [Resources](#resources)
 
 ## Basics
 
@@ -53,7 +47,6 @@ I wanted to do something different for Christmas. Given that the COVID-19 (Coron
 during 2020, I had extra funds on hand since I was not doing much travelling during this time. I decided
 to leverage my Technology and Electrical Engineering skills and build a Christmas light show.
 
- 
 
 ## Money
 
@@ -181,7 +174,7 @@ actually over heat and weld itself together.
 
 Music is transmitted over radio via a low-power FM transmitter. Music goes into the transmitter directly from
 the Raspberry Pi and broadcasted on 90.3 FM. Radio Locator
-[mentioned below](/projects/light-show/faq#where-can-i-find-out-more-information-or-ask-questions)
+[mentioned below](/projects/christmas-light-show/faq#where-can-i-find-out-more-information-or-ask-questions)
 was used to locate the best frequency based on the area.
 
 ### What kind of software do you use?

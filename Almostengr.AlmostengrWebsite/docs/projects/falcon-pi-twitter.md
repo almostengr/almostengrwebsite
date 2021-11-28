@@ -2,24 +2,28 @@
 
 ![](/images/20201220presentation/twittertweets.jpg)
 
-This project is designed for Falcon Pi Player to provide updates via Twitter on the light show that 
+This project is designed for Falcon Pi Player to provide updates via 
+<a href="https://twitter.com/hplightshow" target="_blank">Twitter</a> on the light show that 
 you are running. Those updates include posting the current song and providing alerts when problems
 are detected.
 
 This application is ONLY designed to run on Falcon Pi Players that are installed on Raspberry Pi, but it 
 may be possible to run it on Beagle Bone Black (BBB).
 
+* Technologies: C#, Twitter
+* Year Started: 2020
+
 ## Problem
 
 I wanted to have a way for the visitors to my light show are able to find out the information about the 
 song that was currently playing.
-
 Some other Light Show Creators use screens or equipment that will display the song information on a 
 visitor's radio using RDS (Radio Data System). 
 
 ## Solution
 
-I did not want to have to invest heavy into this project, so after I found out that Falcon Pi Player
+I did not want to have to invest heavy into this project, so after I found out that 
+<a href="https://github.com/FalconChristmas/fpp" target="_blank">Falcon Pi Player</a>
 came with an API, I decided to build a .NET Core application that would post the song information to Twitter. 
 Then create a PSA (Public Service Announcement) in my show that lets visitors know about the Twitter page
 and that song and show information is available on this page.
@@ -40,9 +44,9 @@ In order to use Falcon Pi Twitter, you will need to have
 
 * an internet connection
 * a <a href="https://developer.twitter.com" target="_blank">Twitter developer account</a>
-* <a href="https://github.com/FalconChristmas/fpp" target="_blank">Falcon Pi Player</a> version 4 (confirmed working with version 4.6.1)
+* <a href="https://github.com/FalconChristmas/fpp" target="_blank">Falcon Pi Player</a> version 4 (confirmed working and tested with version 4.6.1)
 
-### Installation Steps
+## Installation Steps
 
 * Download the latest release from the <a href="https://github.com/almostengr/falconpitwitter" target="_blank">project repo</a>
 that is available in zip or tar format.
@@ -166,7 +170,8 @@ When no value is provided for any of the properties, the application will displa
 ],
 ```
 
-List each of the Falcon Pi Players that you want to be monitored. If you are using a master-remote setup,
+List each of the <a href="https://github.com/FalconChristmas/fpp" target="_blank">Falcon Pi Player</a> 
+that you want to be monitored. If you are using a master-remote setup,
 then the master instance, which has the music and sequence files, needs to be listed first. All remote
 instances need to be listed after. The URLs can be the hostname or the IP address to each player.
 If your FPP does not have an
@@ -230,7 +235,9 @@ Once you have finished updating the appsettings.json file, it should look simila
         }
     }
 }
-```## Troubleshooting 
+```
+
+## Troubleshooting 
 
 ### Exception on First Run
 
@@ -251,7 +258,7 @@ If an error occurs in the application, the exception message will show here.
 ### Issue Queue
 
 Additional bugs that you discover should be reported to the project
-[Issues Queue](https://github.com/almostengr/falconpitwitter/issues).
+<a href="https://github.com/almostengr/falconpitwitter/issues" target="_blank">Issues Queue</a>.
 
 
 ## FAQs (Frequently Asked Questions)
@@ -261,7 +268,8 @@ Additional bugs that you discover should be reported to the project
 This application calls the Falcon Pi Player API to get the meta data for the song that is current playing. 
 Then it uses that information to compose a tweet. If the song that is playing does not have ID3 tag 
 information entered, then will not display part or all of the song data. If you need to add the song 
-meta data to the file, you can use a program like [Audacity](https://www.audacityteam.org/) to do so.
+meta data to the file, you can use a program like 
+<a href="https://www.audacityteam.org/" target="_blank">Audacity</a> to do so.
 
 ### Tweeting Alarms (or Alerts)
 
@@ -308,7 +316,6 @@ expand them by applying them to something different than what I am used to.
 
 ### I have a question not answered. Where do I ask it?
 
-Please file an [Issue on the repo](https://github.com/almostengr/falconpitwitter/issues)
-with your comment, question, or bug report.
-You may also reach out to the developer via Twitter [@almostengr](https://twitter.com/almostengr) or 
-[@hplightshow](https://twitter.com/hplightshow).
+Please file an 
+<a href="https://github.com/almostengr/falconpitwitter/issues" target="_blank">Issue on the repo</a>
+with your comment, question, or bug report. You may also contact the developer.

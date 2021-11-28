@@ -5,19 +5,6 @@ description: Project build using a Raspberry Pi to control a retired traffic lig
 
 ![Traffic light](/images/portfolio_trafficlight2.jpg)
 
-## Table of Contents
-
-* [Purpose](#purpose)
-* [Parts List](#parts-list)
-* [Installation and Setup](#installation-and-setup)
-* [Video Demonstration](#video-demonstration)
-* [Controller Technology](#controller-technology)
-* [Uninstall Traffic Pi](#uninstall-traffic-pi)
-* [Acknowledgements](#acknowledgements)
-* [Troubleshooting](#troubleshooting)
-* [Classroom Activity](/projects/traffic-pi/activity)
-* [Electrical Theory](/projects/traffic-pi/electriclatheory)
-
 ## Purpose
 
 The purpose of this project is to educate children about the STEM (Science, Technology,
@@ -46,7 +33,7 @@ and turn off each light as well as include a delay in between each light change.
 
 ![Image of Versioning](/images/trafficpi/versioning.jpg)
 
-[Back to Top](#)
+
 
 ## Parts List
 
@@ -74,7 +61,7 @@ getting an actual traffic light.
 * <a href="https://www.amazon.com/gp/product/B00KTEN3TM/ref=as_li_tl?ie=UTF8&tag=rhtservicesll-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B00KTEN3TM&linkId=581b0fc60dcc9f3ddc5645b8eb20029a" target="_blank">Relay board(s) with at least 3 channels</a>
 * Traffic Light
 
-[Back to Top](#)
+
 
 ## Installation and Setup
 
@@ -138,7 +125,7 @@ cd trafficpi
 
 To exit the application after running it via command line, press Ctrl+C.
 
-[Back to Top](#)
+
 
 ## Video Demonstration
 
@@ -150,7 +137,7 @@ with an LCD screen connected.
 Further discussion of the traffic light code can be watched at 
 [https://www.youtube.com/watch?v=ZyBnWOX3wGE](https://www.youtube.com/watch?v=ZyBnWOX3wGE).
 
-[Back to Top](#)
+
 
 ## Controller Technology
 
@@ -177,7 +164,7 @@ The source code for this project can be downloaded from GitHub at
 <a href="https://github.com/almostengr/trafficpi" target="_blank">
 https://github.com/almostengr/trafficpi</a>.
 
-[Back to Top](#)
+
 
 ## Uninstall Traffic Pi
 
@@ -202,7 +189,7 @@ To remove the application files, you can remove the entire trafficpi directory.
 rm -rf trafficpi
 ```
 
-[Back to Top](#)
+
 
 ## Acknowledgements
 
@@ -216,7 +203,7 @@ influenced this project.
 <a href="https://pimylifeup.com/raspberry-pi-wireless-access-point/"
 target="_blank">https://pimylifeup.com/raspberry-pi-wireless-access-point/</a>
 
-[Back to Top](#)
+
 
 ## Troubleshooting 
 
@@ -236,4 +223,4 @@ journalctl -u almostengrtrafficpiweb.service -b -f
 
 If an error occurs in the application, the exception message will show here.
 
-[Back to Top](#)
+

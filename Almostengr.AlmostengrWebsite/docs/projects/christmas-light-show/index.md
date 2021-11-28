@@ -4,9 +4,11 @@ imagealt: 2021 Christmas Light Show
 image: /images/lightshow/2020 Christmas Light Show 20201211-f000000.jpg
 ---
 
-## Show Dates and Times
+# 2021 Christmas Light Show
 
 ![Image of 2020 Light Show](/images/lightshow/2020 Christmas Light Show 20201211-f000000.jpg)
+
+## Show Dates and Times
 
 Show will run nightly from November 25, 2021 until December 25, 2021.
 
@@ -54,10 +56,10 @@ scenes looks, visit one of the pages listed below.
 
 * <a href="https://twitter.com/hplightshow" target="_blank">Light Show Twitter Page</a>
 * [Falcon Pi Twitter](/projects/falcon-pi-twitter) which reads the song data from FPP and posts it to Twitter
-* [2020 Christmas Light Show Details](/projects/light-show/2020christmas)
+* [2020 Christmas Light Show Details](/projects/christmas-light-show/2020christmas)
 * <a href="https://www.youtube.com/watch?v=5sm_wmnRPDs" target="_blank">Behind The Scenes of the 2020 Christmas Light Show</a>
-* [Building A Christmas Light Show Control Box (Presentation 2020-12-20)](/projects/light-show/20201220presentation)
-* [2019 Christmas Light Show Details](/projects/light-show/2019christmas)
-* [FAQs (Frequently Asked Questions)](/projects/light-show/faq)
+* [Building A Christmas Light Show Control Box (Presentation 2020-12-20)](/projects/christmas-light-show/presentation20201220)
+* [2019 Christmas Light Show Details](/projects/christmas-light-show/2019christmas)
+* [FAQs (Frequently Asked Questions)](/projects/christmas-light-show/faq)
 
-[Back to Top](#)
+

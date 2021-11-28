@@ -3,13 +3,6 @@ title: Electrical Theory
 description: Explain various electrical components with the traffic light.
 ---
 
-## Table of Contents
-
-* [Relays](#relays)
-* [Wire Gauge](#wire-gauge)
-* [Wire Color Standards](#wire-color-standards)
-* [AC vs DC](#ac-vs-dc)
-
 ## Relays
 
 Relays are used when devices of different voltages or amperages are being used together. One common example

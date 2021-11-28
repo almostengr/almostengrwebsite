@@ -1,4 +1,4 @@
-# Black Box Operations (2011)
+# Black Box Operations
 
 <img src="/images/portfolio_operations.jpg" alt="screenshot of Operations System">
 
@@ -8,4 +8,5 @@ submit maintenance requests for their website(s). The system also emails invoice
 clients to login to pay their invoices. By having all of the information located in a central location,
 BBIT is able to produce quality work, in a timely fashion.
 
-**Technologies:** Drupal, PHP
+* Technologies: Drupal, PHP
+* Year Started: 2011

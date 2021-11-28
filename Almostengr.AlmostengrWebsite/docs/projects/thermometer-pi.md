@@ -3,17 +3,6 @@ title: Thermometer Pi
 description: Used a Raspberry Pi to be a thermometer that provides data to home automation system
 ---
 
-## Table of Contents
-
-To read more about the project, select a section below to navigate to.
-
-* [Project Background](#project-background)
-* [Components Used](#components-used)
-* [Installation and Setup](#installation-and-setup)
-* [Application as System Service](#application-as-system-service)
-* [Source Code](#source-code)
-* [Additional Resources](#additional-resources)
-
 ## Project Background
 
 A common problem that exists with US home construction
@@ -36,7 +25,8 @@ The application was build using .NET 5.0 Web API template. The way it works is t
 API. The API runs a process to get the current temperature from the temperature sensor and then returns it 
 back to the caller as a JSON object. That JSON object returns the Fahrenheit and Celsuis temperature readings.
 
-[Back to Top](#)
+* Year Started: 2021
+* Technologies: C#
 
 ## Components Used
 
@@ -47,7 +37,7 @@ back to the caller as a JSON object. That JSON object returns the Fahrenheit and
 * [Belkin Wemo Smart Outlet](https://www.amazon.com/gp/product/B0776YH29B/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=rhtservicesll-20&creative=9325&linkCode=as2&creativeASIN=B0776YH29B&linkId=34342060eb6bea8006e0dbbefb376fcf)
 * [Window AC Unit](https://www.amazon.com/gp/product/B085797ZFF/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=rhtservicesll-20&creative=9325&linkCode=as2&creativeASIN=B085797ZFF&linkId=e38e0ec46bdea5e4c32950d147003cc8)
 
-[Back to Top](#)
+
 
 ## Installation and Setup
 
@@ -63,7 +53,7 @@ back to the caller as a JSON object. That JSON object returns the Fahrenheit and
 
 Eventually will do a walkthrough video on how I did my setup.
 
-[Back to Top](#)
+
 
 ### First Run
 
@@ -104,7 +94,7 @@ groups $USER
 
 replacing $USER with the username that you want to see.
 
-[Back to Top](#)
+
 
 ## Application as System Service
 
@@ -154,19 +144,15 @@ info: Almostengr.ThermometerPi.Api.Controllers.ThermometerController[0]
       At 9/28/2021 9:09:28 PM temperature is 78.57,25.88
 ```
 
-[Back to Top](#)
 
 ## Source Code
 
 The source code is available on my 
 <a href="https://github.com/almostengr/themometerpi" target="_blank">GitHub Repository</a>.
 
-[Back to Top](#)
 
 ## Additional Resources
 
 Below are resources that were used in completing the project.
 
 [https://martybugs.net/electronics/tempsensor/usb.cgi](https://martybugs.net/electronics/tempsensor/usb.cgi)
-
-[Back to Top](#)

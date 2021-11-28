@@ -89,7 +89,8 @@
 {% if nav_item.children and page %}
 {% for nav_item in nav_item.children | reverse %}
 
-{% if page.url in nav_item.url and nav_item.url != "technology/links/" and nav_item.url != "technology/" and nav_item.url != "lifestyle/" %}
+{% if page.url in nav_item.url and nav_item.url != "technology/links/" and nav_item.url != "technology/" and
+nav_item.url != "lifestyle/" %}
 <div>
   <h2><a href="/{{ nav_item.url }}">{{ nav_item.title }}</a></h2>
   <p>
@@ -103,14 +104,13 @@
       A
       <span title="{{ nav_item.content | wordcount }} words">
         {%- set num_of_words = nav_item.content | wordcount // 200 -%}
-        {% if num_of_words <= 1 %}1 {% else %}{{ num_of_words }} {% endif %} 
-      </span> minute read
-      {% if nav_item.meta.posted %}
-      | posted on {{ nav_item.meta.posted }}
-      {% endif %}
-      {% if nav_item.meta.updated %}
-      | updated on {{ nav_item.meta.updated }}
-      {% endif %}
+        {% if num_of_words <= 1 %}1 {% else %}{{ num_of_words }} {% endif %} </span> minute read
+          {% if nav_item.meta.posted %}
+          | posted on {{ nav_item.meta.posted }}
+          {% endif %}
+          {% if nav_item.meta.updated %}
+          | updated on {{ nav_item.meta.updated }}
+          {% endif %}
     </small>
   </p>
 </div>
@@ -121,6 +121,25 @@
 {% endfor %}
 {% endif %}
 
+
+{% if page and page.url == "technology/links/" %}
+<ul>
+  {% for nav_item in nav %}
+  {% if nav_item.children %}
+  {% for nav_item in nav_item.children | reverse | batch(8) | first %}
+  {% if 'technology' in nav_item.url and nav_item.url != "technology/links/" %}
+  {% set category = nav_item.url.split("/") %}
+  <li><a href="/{{ nav_item.url }}">{{ nav_item.title }}</a></li>
+  {% endif %}
+  {% endfor %}
+  {% endif %}
+  {% endfor %}
+  <li><a href="/">thealmostengineer.com Website</a></li>
+  <li><a href="https://github.com/almostengr" target="_blank">My Github</a></li>
+  <li><a href="https://www.instagram.com/almostengr" target="_blank">My Instagram @almostengr</a></li>
+  <li><a href="https://twitter.com/almostengr" target="_blank">My Twitter @almostengr</a></li>
+</ul>
+{% endif %}
 
 
 {% if page and page.meta %}
@@ -143,8 +162,8 @@ page.meta.updated
 {% endif %}
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4218270188842097"
-  data-ad-slot="5189305512" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4218270188842097" data-ad-slot="5189305512"
+  data-ad-format="auto" data-full-width-responsive="true"></ins>
 <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 
 {% endblock %}

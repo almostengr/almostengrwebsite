@@ -217,6 +217,30 @@ See the [Falcon Pi Twitter](/projects/falcon-pi-twitter) page for more informati
 that project.
 
  
+### What is the legality of using an FM transmitter for light shows?
+
+The answers will vary depending on who you ask in the light show community. From my understanding and 
+online research regarding the matter, it breaks down to following these guidelines:
+
+#### Don't broadcast on a frequency that another station is already broadcasting on in your area. 
+
+This will get 
+you in immediate trouble as those who listen to the licensed station will report the interference. If an 
+investigation is done and you are caught, you will be in hot water with the FCC and subject to fines 
+and/or imprisonment.
+
+#### Don't broadcast further than necessary
+
+Nobody is going to be watching your light show 1/2 mile
+away from your house, especially if you live inside of city limits or in a subdivision.
+When you set up your transmitter, drive around and see how far the signal reaches. If you are 
+two streets over and can still hear it clearly, but cannot see your house, then you need to lower the
+amplification of your signal or position your antenna so that the signal does not travel as far.
+
+#### Turn it off when not being used (non-light show season)
+
+It does not make sense to leave a light on in 
+a room with nobody in it. The same goes for your FM transmitter. When it is not being used, turn it off.
 
 ## Resources
 
@@ -227,3 +251,4 @@ Below are resources to additional information about various products and tools t
 * <a href="https://www.youtube.com/channel/UCby1v6Kbi8AHMkV2yMyF1MQ" target="_blank">Canispater Christmas</a>
 * <a href="https://www.falconchristmas.com" target="_blank">Falcon Christmas</a>
 * <a href="https://ttstool.com" target="_blank">TTS Tool, for text to speech recordings</a>
+

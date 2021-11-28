@@ -13,7 +13,7 @@ Have a project that you need completed? You may request my services by contactin
 * [Black Box Operations](/projects-black-box-operations)
 * [Christmas Light Show](/projects/light-show)
 * [Coding Challenges](/projects/coding-challenges)
-* [Ecobee Status Monitor](/projects/ecobee-status-monitor)
+* [Ecobee Status Monitor](/projects/ecobeestatus)
 * [Falcon Pi Twitter](/projects/falcon-pi-twitter)
 * [FarmOS NWS](/projects/farmos-nws)
 * [Home Assistant](/projects/home-assistant)

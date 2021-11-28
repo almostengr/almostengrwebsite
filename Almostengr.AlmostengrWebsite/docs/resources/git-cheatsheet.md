@@ -3,7 +3,9 @@ title: Git Cheatsheet
 ---
 
 # Git Cheat Sheet
-Cheatsheet of commands to use when working with git. This is a quick reference for the commands that are most commonly used when working with Git.
+
+Cheatsheet of commands to use when working with git. This is a quick reference for the commands that 
+are most commonly used when working with Git.
 
 A description of what each command does if executed, is provided under each command.
 
@@ -103,7 +105,8 @@ Deletes the local files that have already been removed from the git repo.
 ```bash
 git branch | grep -v master | xargs git branch -D 
 ```
-Deletes all of the local branches except master. Useful for when multiple remote branches have been removed and you need to remove the local corresponding branches.
+Deletes all of the local branches except master. Useful for when multiple remote branches have been removed 
+and you need to remove the local corresponding branches.
 
 ## Definitions
 

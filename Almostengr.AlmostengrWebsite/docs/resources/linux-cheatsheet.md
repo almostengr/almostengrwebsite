@@ -15,27 +15,6 @@ These commands have been tested and confirmed to work on Ubuntu-based systems. T
 but are not guaranteed to work on Debian-based systems. For other Linux-bsed systems, these commands 
 may work, but are not guaranteed to do so.
 
-## Table of Contents
-
-### File System Navigation
-
-* [List All Files in Current Directory](#list-all-files-in-current-directory)
-* [List All Files in Current Directory in Reverse Order](#list-all-files-in-current-directory-in-reverse-order)
-* [List All Files In Current Directory and Filter with Grep](#list-all-files-in-current-directory-and-filter-with-grep)
-
-### Bash
-
-* [View Command Execution History](#view-command-execution-history)
-* [Run Command From History](#run-command-from-history)
-
-### Sending Emails
-
-* [Email A File To User](#email-a-file-to-user)
-
-### System Maintenance
-
-* [Remove Old Linux Kernels (Ubuntu and Debian Based Systems)](#remove-old-linux-kernels-ubuntu-and-debian-based-systems)
-
 ----
 
 ## File System Navigation

@@ -114,4 +114,7 @@ face when working on websites or software.
 
 ## Non-Tech Resources
 
+While I primarily do programming and work in IT (Information Technology), I do read or watch 
+content that is not related to programming and the field of IT. 
+
 * <a href="https://thebipolarbuzz.com" target="_blank">The Bipolar Buzz</a>

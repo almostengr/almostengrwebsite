@@ -14,14 +14,6 @@ detail the tools that they use do their work. Below are a list of tools that are
 the job done. For more detail about what is a Uses page and how you can create your own,
 you can check out [the blog post](/technology/2020.02.01-developer-uses-page) about this topic.
 
-## Table of Contents
-
-* [Handyman Tools](#handyman-tools)
-* [Technology Tools](#technology-tools)
-* [Gardening Tools](#gardening-tools)
-* [Home Assistant](#home-assistant)
-* [Other Uses Pages](#other-uses-pages)
-
 ## Handyman Tools
 
 Below are the tools that would make up the handyman toolbox or tool set. 

@@ -95,11 +95,15 @@ face when working on websites or software.
 * [.NET Core Cheatsheet](/resources/dotnet-core-cheatsheet)
 * <a href="https://ardalis.com/" target="_blank">Ardalis is Steve Smith</a>
 * <a href="https://atishay.me" target="_blank">Atishay Jain</a>
+* <a href="https://getbootstrap.com/" target="_blank">Bootstrap - responsive theming library</a>
+* <a href="https://davidwalsh.name" target="_blank">David Walsh Blog</a>
 * <a href="https://dotnetplaybook.com" target="_blank">Dotnet Playbook</a>
 * <a href="https://www.youtube.com/watch?v=iujOWWbiUP0&list=PLaAJ0fv0d9WM8E2K_Ke5As-fw626yQ3tu" target="_blank">Drupal 8 Basics Online Course</a>
 * <a href="https://www.youtube.com/c/FKnight" target="_blank">Forrest Knight</a>
+* <a href="https://exceptionnotfound.net" target="_blank">Exception Not Found</a>
 * [Git Cheatsheet](/resources/git-cheatsheet)
 * <a href="https://gkdba.wordpress.com/" target="_blank">Goal Keeping DBA</a>
+* <a href="https://api.jquery.com/" target="_blank">Jquery API Documentation</a>
 * <a href="https://www.youtube.com/c/binarythistle" target="_blank">Les Jackson</a>
 * <a href="https://docs.microsoft.com/en-us/" target="_blank">Microsoft Technical Documentation</a>
 * <a href="https://www.youtube.com/c/RobinsonHandyandTechnologyServices?sub_confirmation=1" target="_blank">Robinson Handy and Technology Services</a>
@@ -118,3 +122,4 @@ While I primarily do programming and work in IT (Information Technology), I do r
 content that is not related to programming and the field of IT. 
 
 * <a href="https://thebipolarbuzz.com" target="_blank">The Bipolar Buzz</a>
+* <a href="http://www.mentalmatterspod.com/" target="_blank">Mental Matters Podcast</a>

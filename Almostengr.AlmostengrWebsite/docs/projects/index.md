@@ -10,8 +10,8 @@ All of my public projects are listed on
 Have a project that you need completed? You may request my services by contacting me through my business, 
 <a href="https://rhtservices.net" target="_blank">Robinson Handy and Technology Services</a>.
 
-* [Black Box Operations](/projects-black-box-operations)
-* [Christmas Light Show](/projects/light-show)
+* [Black Box Operations](/projects/black-box-operations)
+* [Christmas Light Show](/projects/christmas-light-show)
 * [Coding Challenges](/projects/coding-challenges)
 * [Ecobee Status Monitor](/projects/ecobeestatus)
 * [Falcon Pi Twitter](/projects/falcon-pi-twitter)

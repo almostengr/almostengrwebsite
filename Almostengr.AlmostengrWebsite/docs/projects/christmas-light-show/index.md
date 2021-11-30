@@ -12,7 +12,7 @@ image: /images/lightshow/2020 Christmas Light Show 20201211-f000000.jpg
 
 Show will run nightly from November 25, 2021 until December 25, 2021.
 
-* Pre-show (static lights) starts at 5:00 PM (17:00)
+* Nightly, Pre-show (static lights) starts at 4:30 PM (16:30)
 * Nightly, 5:30 PM (17:30) until 10:00 PM (22:00)
 
 During times of heavy rain or severe weather the light show may be stopped to reduce the

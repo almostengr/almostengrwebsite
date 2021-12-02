@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Almostengr.AlmostengrWebsit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Almostengr.AlmostengrWebsite.GardenWeather", "Almostengr.AlmostengrWebsite.GardenWeather\Almostengr.AlmostengrWebsite.GardenWeather.csproj", "{7F4D06A5-16E3-4B09-8C6A-4F44F90C665A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Almostengr.AlmostengrWebsite.YouTubeContent", "Almostengr.AlmostengrWebsite.YouTubeContent\Almostengr.AlmostengrWebsite.YouTubeContent.csproj", "{9336DC03-521F-4FCD-9FCA-27572FBB0CF9}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

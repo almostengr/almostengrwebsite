@@ -276,6 +276,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://thealmostengineer.com/lifestyle/2021-12-02-be-productive-when-you-cant-sleep/</loc>
+         <lastmod>2021-12-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://thealmostengineer.com/lifestyle/cook-2020-09-07-dutch-oven-chicken/</loc>
          <lastmod>2021-12-02</lastmod>
          <changefreq>daily</changefreq>
@@ -552,6 +557,11 @@
     </url>
     <url>
          <loc>https://thealmostengineer.com/projects/farmos-nws/</loc>
+         <lastmod>2021-12-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://thealmostengineer.com/projects/greenhouse-controller/</loc>
          <lastmod>2021-12-02</lastmod>
          <changefreq>daily</changefreq>
     </url>

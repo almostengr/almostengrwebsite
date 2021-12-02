@@ -1,0 +1,67 @@
+---
+title: Be Productive When You Can't Sleep 
+posted: 2021-12-02 
+category: lifestyle
+keywords: insomnia, sleeping, resting, mind racing
+---
+
+# Be Productive When You Can't Sleep
+
+Sometimes I wake up in the middle of the night. For example, right now as I am writing this post, it is 1:59 AM. 
+I have been awake for probably the last 30 minutes, but physically got out of bed about 3 minutes ago. 
+Most of the time I can sleep through the night, but at times I am wide awake because of a dream, heard something 
+go bump in the night, or some other reason. 
+
+## Mind on Full Speed
+
+In the past, I would just lay in the bed in hopes that I would fall back asleep in a timely manner. Only problem
+is that my mind would start running at full sped about what tasks I need to accomplish or how to solve some 
+problem that I could not have seem to come up with a solution when I was at work. Having your mind run 
+at full speed when you are trying to go back to sleep is counterproductive.
+
+
+## Do Something 
+
+What I was advised to do by a medical professional is to read a book. Reason being is that for some people, myself
+included, will put you to sleep because it is rather relaxing and does not require much physical effort and 
+depending on the book, can leave you bored to the point that you bore yourself to sleep. 
+
+Of course I do not do was is advised. Instead I use this insomnia moments to get stuff done. I try to find tasks 
+that do not result in me making a bunch of noise as I do not want to wake other members of the household. Thus 
+no running of saws or banging of hammers. That leads me to working on other hobbies, like doing stuff on the computer.
+
+### Resist The Phone
+
+You are probably asking just do something on your phone? The reason I avoid using my phone in the middle of the 
+night is because I will be more inclined to get on social media and "mindlessly scroll". Knowing what I know about 
+cell phones, the blue light from the phone is known to mimmic daylight, which in turn, your eyes sends signals
+to your brain (and probably the rest of your body) that it is daytime, thus further making it harder for you 
+to go back asleep.
+
+Now what I have done is enabled my phone to go into a night mode between 9 PM and 7 AM. My
+computer is configured to do the same but at a different time. The "night mode" turns the screen an orange-ish 
+color to counteract the blue color that most screens produce, thus reducing the strain on your eyes during 
+the night time hours and that the screen is not as bright.
+
+### Writing Code
+
+For those that are not programmers, I will be honest with you. Programming is a mentally draining activity. 
+Sometimes when I leave work, I have done so much coding in a day, that I feel the "brain fog" that some people 
+describe that they have.
+
+Because I know that this is a mentally draining task, when I cannot sleep, I will get up and do some coding on 
+whatever project that I have in progress or work on the issues that I have previously created for an existing 
+project. Depending on the intensity of the coding, this will usually lead me to be sleepy again in about an 
+hour or two. 
+
+At a later point when I am well rested, I do go back and review the code that I wrote when I should have been 
+sleepy. Speaking from experience, you are more likely to make mistakes when you are exhausted, both mentally 
+and physically. Thus why I try to refrain from publishing code in the middle of the night
+unless I know that I have gotten it correct. 
+
+## Conclusion
+
+It is now 2:27 AM. I am starting to feel sleepy again, but not tired enough that I would immediately go 
+to sleep if I laid down. Now that I have completed this post about not sleeping, I am going to do some coding 
+as I have previously mentioned and hopefully will be able to get back to sleep soon.
+ 

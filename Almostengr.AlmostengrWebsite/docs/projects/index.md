@@ -16,6 +16,7 @@ Have a project that you need completed? You may request my services by contactin
 * [Ecobee Status Monitor](/projects/ecobeestatus)
 * [Falcon Pi Twitter](/projects/falcon-pi-twitter)
 * [FarmOS NWS](/projects/farmos-nws)
+* [Greenhouse Controller](/projects/greenhouse-controller)
 * [Home Assistant](/projects/home-assistant)
 * [Internet Montior](/projects/internet-monitor)
 * [KdenLive To YouTube](/projects/kdenlive-to-youtube)

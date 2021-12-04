@@ -8,7 +8,7 @@ description: Information about this blog and Kenny Robinson.
 
 ## Technology Blog
 
-A prgorammer that does not talk (or in this case write) about technology probably is not a good programmer. 
+A programmer that does not talk (or in this case write) about technology probably is not a good programmer. 
 I share my code snippets, difficulties with coding, and all things technology here.
 
 [Read the Tech Blog](/technology)
@@ -22,7 +22,7 @@ Here I share other aspects of life, including by hobbies and other thoughts that
 ## Projects
 
 When you do work that solves a problem, show it off. I have done many projects over the years. Each project
-had a challenge with an end goal in mind. I share my personal projects here and the source code on Github, 
+had a challenge with an end goal in mind. I share my personal projects here and the source code on GitHub, 
 so that others may learn from my previous work.
 
 ### Featured Project - Traffic Pi
@@ -42,3 +42,4 @@ What's better than learning to advance your career? Learning for free! In this s
 that offer valuable resources and content. Topics include Linux, software development, and more! 
 
 [Go to Resources page](/resources)
+

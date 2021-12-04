@@ -82,6 +82,8 @@
 <h1>{{ page.title | d(config.site_name, true)}}</h1>
 {% endif %}
 
+{% include "partials/_sharewidget.html" %}
+
 {{ page.content }}
 
 {% if page.url == "technology/" or page.url == "lifestyle/" %}
@@ -105,44 +107,44 @@ nav_item.url != "lifestyle/" %}
       <span title="{{ nav_item.content | wordcount }} words">
         {%- set num_of_words = nav_item.content | wordcount // 200 -%}
         {% if num_of_words <= 1 %}1 {% else %}{{ num_of_words }} {% endif %} </span> minute read
-          {% if nav_item.meta.posted %}
-          | posted on {{ nav_item.meta.posted }}
-          {% endif %}
-          {% if nav_item.meta.updated %}
-          | updated on {{ nav_item.meta.updated }}
-          {% endif %}
-    </small>
-  </p>
-</div>
-{% endif %}
-
-{% endfor %}
-{% endif %}
-{% endfor %}
-{% endif %}
-
-
-{% if page and page.url == "technology/links/" %}
-<ul>
-  {% for nav_item in nav %}
-  {% if nav_item.children %}
-  {% for nav_item in nav_item.children | reverse | batch(8) | first %}
-  {% if 'technology' in nav_item.url and nav_item.url != "technology/links/" %}
-  {% set category = nav_item.url.split("/") %}
-  <li><a href="/{{ nav_item.url }}">{{ nav_item.title }}</a></li>
+        {% if nav_item.meta.posted %}
+        | posted on {{ nav_item.meta.posted }}
+        {% endif %}
+        {% if nav_item.meta.updated %}
+        | updated on {{ nav_item.meta.updated }}
+        {% endif %}
+      </small>
+    </p>
+  </div>
   {% endif %}
+  
   {% endfor %}
   {% endif %}
   {% endfor %}
-</ul>
-<ul>
-  <li><a href="/resources#black-in-tech">Black In Tech Resources</a></li>
-  <li><a href="/">thealmostengineer.com Website</a></li>
-  <li><a href="https://github.com/almostengr" target="_blank">My Github</a></li>
-  <li><a href="https://www.instagram.com/almostengr" target="_blank">My Instagram @almostengr</a></li>
-  <li><a href="https://twitter.com/almostengr" target="_blank">My Twitter @almostengr</a></li>
-</ul>
-{% endif %}
+  {% endif %}
+  
+  
+  {% if page and page.url == "technology/links/" %}
+  <ul>
+    {% for nav_item in nav %}
+    {% if nav_item.children %}
+    {% for nav_item in nav_item.children | reverse | batch(8) | first %}
+    {% if 'technology' in nav_item.url and nav_item.url != "technology/links/" %}
+    {% set category = nav_item.url.split("/") %}
+    <li><a href="/{{ nav_item.url }}">{{ nav_item.title }}</a></li>
+    {% endif %}
+    {% endfor %}
+    {% endif %}
+    {% endfor %}
+  </ul>
+  <ul>
+    <li><a href="/resources#black-in-tech">Black In Tech Resources</a></li>
+    <li><a href="/">thealmostengineer.com Website</a></li>
+    <li><a href="https://github.com/almostengr" target="_blank">My Github</a></li>
+    <li><a href="https://www.instagram.com/almostengr" target="_blank">My Instagram @almostengr</a></li>
+    <li><a href="https://twitter.com/almostengr" target="_blank">My Twitter @almostengr</a></li>
+  </ul>
+  {% endif %}
 
 
 {% if page and page.meta %}
@@ -163,6 +165,8 @@ page.meta.updated
 {%- if not loop.last -%},{%- endif -%}
 {% endfor %}
 {% endif %}
+
+{% include "partials/_sharewidget.html" %}
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4218270188842097" data-ad-slot="5189305512"

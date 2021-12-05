@@ -23,12 +23,14 @@ Yes, there are many that exist. See the list below.
 *Visit their respective pages for details about their show.*
 
 * <a href="https://broomfieldlights.com/" target="_blank">Broomfield Lights</a>
+* <a href="https://www.facebook.com/Burtonfamilylightshow" target="_blank">Burton Family Light Show</a>
 * <a href="https://www.youtube.com/c/CanispaterChristmas" target="_blank">Canispater Christmas</a>
 * <a href="https://www.cityofwetumpka.com/Default.asp?ID=452&pg=Decorations+Contest" target="_blank">Christmas on the Coosa (MGM)</a>
 * <a href="http://www.lightinguppaxton.com/" target="_blank">Lighting Up Paxton</a>
 * <a href="https://www.lightstoabeat.com" target="_blank">Lights To A Beat</a>
 * <a href="https://sites.google.com/site/listentoourlights/home" target="_blank">Listen To Our Lights</a>
 * <a href="https://www.zeemaps.com/map?group=3242152" target="_blank">Map of Light Displays</a>
+* <a href="https://www.facebook.com/LocateMGMLights" target="_blank">Montgomery Christmas Lights (MGM)</a>
 * <a href="http://www.mosslights.com" target="_blank">Moss Lights</a>
 * <a href="https://www.christmaslightfinder.com/displays/display-details/?id=2529" target="_blank">Percivals Christmas Lights and Santaland & Clark Wannabe (MGM)</a>
 * <a href="https://riparianlights.com/" target="_blank">Riparian Lights</a>
@@ -246,9 +248,15 @@ a room with nobody in it. The same goes for your FM transmitter. When it is not 
 
 ### Where can I find out more information or ask questions?
 
-Below are resources to additional information about various products and tools that were not mentioned above.
+Below are resources to additional information about various products and tools that were not 
+previously mentioned.
 
-* <a href="https://www.youtube.com/channel/UCby1v6Kbi8AHMkV2yMyF1MQ" target="_blank">Canispater Christmas</a>
+* <a href="https://www.facebook.com/groups/189136458482844" target="_blank">Alabama Christmas Light Enthusiasts</a> (Facebook Group)
+* <a href="https://www.youtube.com/channel/UCby1v6Kbi8AHMkV2yMyF1MQ" target="_blank">Canispater Christmas</a>, YouTube tutorials
+* <a href="https://www.facebook.com/groups/233516775330" target="_blank">Do It Yourself Christmas</a> (Facebook Group)
 * <a href="https://www.falconchristmas.com" target="_blank">Falcon Christmas</a>
-* <a href="https://ttstool.com" target="_blank">TTS Tool, for text to speech recordings</a>
+* <a href="https://www.facebook.com/groups/FalconPlayer" target="_blank">FPP, Falcon Player</a> (Facebook Group)
+* <a href="https://www.facebook.com/groups/628061113896314" target="_blank">Official Xlights Support Group</a> (Facebook Group)
+* <a href="https://ttstool.com" target="_blank">TTS Tool</a>, for text to speech recordings
+* <a href="https://www.facebook.com/groups/351083649266539/" target="_blank">Xlights Wireless Support Group</a> (Facebook Group)
 

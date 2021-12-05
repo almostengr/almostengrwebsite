@@ -30,7 +30,7 @@ To listen to the light show, tune your radio to 90.3 FM.
 * Please keep your park lights on while watching the show so that you are visible to other
 drivers that are passing by.
 
-## 2021 Song List 
+## Song List 
 
 Songs featured in the 2021 Light Show are:
 
@@ -48,6 +48,16 @@ Songs featured in the 2021 Light Show are:
 <a class="twitter-timeline" data-lang="en" data-height="500" data-theme="dark"
     href="https://twitter.com/hplightshow?ref_src=twsrc%5Etfw">Tweets by HP Light Show</a>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+## Fun Facts
+
+* 19 channels
+* 3520 LED lights
+* 1 15-Amp Circuit
+* 3 8-channel Relay Boards
+* 1 Raspberry Pi 3B+
+* Numerous hours of programming
+* Over 200 Feet of extension cords
 
 ## Other Information
 

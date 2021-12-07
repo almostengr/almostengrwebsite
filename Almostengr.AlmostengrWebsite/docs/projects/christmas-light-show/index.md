@@ -41,6 +41,7 @@ Songs featured in the 2021 Light Show are:
 * Nutrocker - Trans-Siberian Orchestra
 * The Polar Express - Tom Hanks
 * The Song That Doesn't End - Shari Lewis
+* Uptown Funk - Mark Ronson
 * What You Want for Christmas - 69 Boyz featuring Quad City DJs and K-nock
 
 ## Twitter Feed

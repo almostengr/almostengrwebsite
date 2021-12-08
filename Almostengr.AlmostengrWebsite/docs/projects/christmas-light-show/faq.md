@@ -18,7 +18,7 @@ socket and taped to prevent water from getting in.
 
 ### Are there other residential light shows?
 
-Yes, there are many that exist. See the list below.
+Yes, there are many that exist. There are also commercial light shows. See the list below.
 *Those with "MGM" in parenthesis are located in or near the Montgomery, Alabama area.*
 *Visit their respective pages for details about their show.*
 
@@ -26,6 +26,7 @@ Yes, there are many that exist. See the list below.
 * <a href="https://www.facebook.com/Burtonfamilylightshow" target="_blank">Burton Family Light Show</a>
 * <a href="https://www.youtube.com/c/CanispaterChristmas" target="_blank">Canispater Christmas</a>
 * <a href="https://www.cityofwetumpka.com/Default.asp?ID=452&pg=Decorations+Contest" target="_blank">Christmas on the Coosa (MGM)</a>
+* <a href="https://www.facebook.com/ChristmasWonderlandAlabama/" target="_blank">Christmas Wonderland</a>
 * <a href="http://www.lightinguppaxton.com/" target="_blank">Lighting Up Paxton</a>
 * <a href="https://www.lightstoabeat.com" target="_blank">Lights To A Beat</a>
 * <a href="https://sites.google.com/site/listentoourlights/home" target="_blank">Listen To Our Lights</a>

@@ -1,5 +1,7 @@
 # 2019 Christmas Light Show
 
+![2019 Lights](/projects/christmas-light-show/2019.jpg)
+
 ## Hardware
 
 ### Christmas Lights
@@ -10,6 +12,10 @@ All of the lights are LED. Only two colors are used for the light show, white an
 
 All of the lights were connected to a single timer. That timer was set to run from about 5:00 PM until 
 10:30 PM each evening.
+
+## Software 
+
+No software was used as the display was static lights.
 
 ## Other Information
 

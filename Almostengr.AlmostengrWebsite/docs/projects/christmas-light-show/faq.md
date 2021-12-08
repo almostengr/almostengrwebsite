@@ -256,6 +256,7 @@ previously mentioned.
 * <a href="https://www.facebook.com/groups/233516775330" target="_blank">Do It Yourself Christmas</a> (Facebook Group)
 * <a href="https://www.falconchristmas.com" target="_blank">Falcon Christmas</a>
 * <a href="https://www.facebook.com/groups/FalconPlayer" target="_blank">FPP, Falcon Player</a> (Facebook Group)
+* <a href="https://www.facebook.com/groups/985841198231733/" target="_blank">Holiday Lighting Think Tank</a> (Facebook Group)
 * <a href="https://www.facebook.com/groups/628061113896314" target="_blank">Official Xlights Support Group</a> (Facebook Group)
 * <a href="https://ttstool.com" target="_blank">TTS Tool</a>, for text to speech recordings
 * <a href="https://www.facebook.com/groups/351083649266539/" target="_blank">Xlights Wireless Support Group</a> (Facebook Group)

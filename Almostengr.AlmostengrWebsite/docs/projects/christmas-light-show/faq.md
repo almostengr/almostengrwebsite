@@ -31,6 +31,7 @@ Yes, there are many that exist. There are also commercial light shows. See the l
 * <a href="https://www.lightstoabeat.com" target="_blank">Lights To A Beat</a>
 * <a href="https://sites.google.com/site/listentoourlights/home" target="_blank">Listen To Our Lights</a>
 * <a href="https://www.zeemaps.com/map?group=3242152" target="_blank">Map of Light Displays</a>
+* <a href="https://mkelights.com/" target="_blank">MKE Lights</a>
 * <a href="https://www.facebook.com/LocateMGMLights" target="_blank">Montgomery Christmas Lights (MGM)</a>
 * <a href="http://www.mosslights.com" target="_blank">Moss Lights</a>
 * <a href="https://www.christmaslightfinder.com/displays/display-details/?id=2529" target="_blank">Percivals Christmas Lights and Santaland & Clark Wannabe (MGM)</a>

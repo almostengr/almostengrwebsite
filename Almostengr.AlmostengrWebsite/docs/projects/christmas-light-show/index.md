@@ -60,6 +60,11 @@ Songs featured in the 2021 Light Show are:
 * Numerous hours of programming
 * Over 200 Feet of extension cords
 
+## Watch The Show
+
+Show has been uploaded to 
+<a href="https://www.facebook.com/rhtservicesllc/videos/2073498876141462" target="_blank">my business Facebook page</a>.
+
 ## Other Information
 
 To find out more about the light show, including previous years show information and behind the

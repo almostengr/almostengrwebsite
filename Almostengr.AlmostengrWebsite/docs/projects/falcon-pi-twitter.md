@@ -29,7 +29,8 @@ Then create a PSA (Public Service Announcement) in my show that lets visitors kn
 and that song and show information is available on this page.
 
 While most of the plugins for Falcon Pi Player are written in PHP or Shell (Bash) Script, this application 
-is written in .NET Core 3.1. While I do know how to program in PHP and Bash, C# and .NET Core is what 
+was originally written in .NET Core 3.1 and now uses .NET 5. 
+While I do know how to program in PHP and Bash, C# and .NET Core is what 
 I primarily use. Thus using this language and framework for the application.
 
 ### Twitter Example
@@ -241,7 +242,7 @@ Once you have finished updating the appsettings.json file, it should look simila
 
 ### Exception on First Run
 
-An exception may occur and written in the log if the Wifi connection has not been established before the first run. 
+An exception may occur and written in the log if the Wifi or ethernet connection has not been established before the first run. 
 Confirm in the log that ```HttpRequestException``` is not repeating in the logs after 2 or 3 attempts. If the 
 message continues to appear, double check your Wifi or ethernet connection to the internet.
 
@@ -317,5 +318,7 @@ expand them by applying them to something different than what I am used to.
 ### I have a question not answered. Where do I ask it?
 
 Please file an 
-<a href="https://github.com/almostengr/falconpitwitter/issues" target="_blank">Issue on the repo</a>
-with your comment, question, or bug report. You may also contact the developer.
+<a href="https://github.com/almostengr/falconpitwitter/issues" target="_blank">issue on the repo</a>
+with your comment, question, or bug report. You may also send a message to 
+<a href="https://twitter.com/almostengr" target='_blank'>the developer</a> or the
+<a href="https://twitter.com/hplightshow" target='_blank'>HP Light Show</a> account.

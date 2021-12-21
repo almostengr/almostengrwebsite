@@ -45,7 +45,7 @@ namespace Almostengr.AlmostengrWebsite.GardenWeather
                 foreach (var feature in yesterdayData)
                 {
                     blogFilename = string.Concat(
-                        new DateTime(feature.Properties.Timestamp.Year, feature.Properties.Timestamp.Month, 01).ToString("yyyy-MM-dd"),
+                        new DateTime(feature.Properties.Timestamp.Year, feature.Properties.Timestamp.Month, 01).ToString("yyyy.MM.dd"),
                         "-",
                         new DateTime(feature.Properties.Timestamp.Year, feature.Properties.Timestamp.Month, 01).ToString("MMMM-yyyy").ToLower(),
                         "-weather.md"

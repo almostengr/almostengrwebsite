@@ -17,7 +17,7 @@ namespace Almostengr.AlmostengrWebsite.Tests
                 ChromeOptions options = new ChromeOptions();
 
 #if RELEASE
-                options.AddArgument("--headless");
+                options.AddArgument(Constants.HeadlessArgument);
 #endif
 
                 IWebDriver driver = new ChromeDriver(options);

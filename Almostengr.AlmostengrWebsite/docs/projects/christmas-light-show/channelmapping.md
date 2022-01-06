@@ -5,7 +5,7 @@ title: Channel Mapping
 It can be difficult what wire connects to what. I create this channel mapping page so that I do not have 
 to remember how my channels are mapped and that all my documentation is in a single location.
 
-## Controller 1
+## Exterior Controller
 
 | Device/Output     | Channel   | Plug  | GPIO  |
 |-------------------|-----------|-------|-------|
@@ -46,3 +46,13 @@ to remember how my channels are mapped and that all my documentation is in a sin
 | ROOF2             | 701-703   | null  | null  |
 | ROOF3             | 701-703   | null  | null  |
 | ROOF4             | 701-703   | null  | null  |
+
+## Indoor Tree Controller
+
+| Device              | Channel   | Plug  | Pin   |
+|---------------------|-----------|-------|-------|
+| LEVEL1              | NULL      | NULL  | NULL  |
+| LEVEL2              | NULL      | NULL  | NULL  |
+| LEVEL3              | NULL      | NULL  | NULL  |
+| LEVEL4              | NULL      | NULL  | NULL  |
+

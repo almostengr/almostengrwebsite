@@ -28,11 +28,7 @@
 <meta name="keywords" content="{{ page.meta.keywords }}" />
 {% endif %}
 
-{% if page and page.meta.ogtype %}
-<meta property="og:type" content="{{ page.meta.ogtype }}" />
-{% else %}
 <meta property="og:type" content="website" />
-{% endif %}
 
 {% if page and page.meta.youtube %}
 <meta property="og:video" content="{{ page.meta.youtube | url }}" />

@@ -127,7 +127,7 @@ sudo journalctl -u thermometerapi -b
 
 Application logs will look similar to the below to show what the application is doing.
 
-```sh
+```txt
 info: Microsoft.Hosting.Lifetime[0]
       Now listening on: http://[::]:8005
 info: Microsoft.Hosting.Lifetime[0]
@@ -148,7 +148,7 @@ info: Almostengr.ThermometerPi.Api.Controllers.ThermometerController[0]
 ## Source Code
 
 The source code is available on my 
-<a href="https://github.com/almostengr/themometerpi" target="_blank">GitHub Repository</a>.
+<a href="https://github.com/almostengr/thermometerpi" target="_blank">GitHub Repository</a>.
 
 
 ## Additional Resources

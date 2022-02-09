@@ -26,6 +26,12 @@ keywords: raspberry pi, c-sharp, .net 5, programming, coding
 
 * <a href="https://github.com/almostengr/thermometerpi" target="_blank">Source Code</a>
 
+* [http://osmc:8005/api/v1/thermometer](http://osmc:8005/api/v1/thermometer)
+* Returns JSON data 
+```json
+{"fahrenheit":72.95,"celsius":22.75}
+```
+
 ## Home Automation Review
 
 * Automation rules 

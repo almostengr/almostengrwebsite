@@ -93,6 +93,7 @@ hide:
 ### @almostengr
 ### [thealmostengineer.com](/)
 ### <a href="https://www.linkedin.com/in/krobinsontech" target="_blank">https://www.linkedin.com/in/krobinsontech</a>
+### <a href="https://github.com/almostengr" target="_blank">https://github.com/almostengr</a>
 
 <p>&nbsp;</p>
 <p>&nbsp;</p>

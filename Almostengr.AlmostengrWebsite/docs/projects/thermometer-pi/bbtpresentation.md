@@ -39,6 +39,25 @@ hide:
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 
+## Hardware
+
+### DS18S20 temperature sensor
+### Raspberry Pi (used Pi 3B+)
+### Window AC
+### Belkin Wemo Smart Plug
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+## Software
+
+### Custom .NET 5 Web API
+### Home Assistant
+### Linux
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
 ## Code Review
 
 ### <a href="https://github.com/almostengr/thermometerpi" target="_blank">Source Code</a>

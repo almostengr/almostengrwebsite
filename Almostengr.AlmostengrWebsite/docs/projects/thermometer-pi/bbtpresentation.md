@@ -36,6 +36,9 @@ hide:
 ### Home automation to control outlets based on temperature
 ### Only runs when needed; lower power bill
 
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
 ## Code Review
 
 ### <a href="https://github.com/almostengr/thermometerpi" target="_blank">Source Code</a>
@@ -45,6 +48,9 @@ hide:
 ```json
 {"fahrenheit":72.95,"celsius":22.75}
 ```
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 
 ## Home Automation Review
 
@@ -68,6 +74,9 @@ hide:
 ### @almostengr
 ### [thealmostengineer.com](/)
 ### <a href="https://www.linkedin.com/in/krobinsontech" target="_blank">https://www.linkedin.com/in/krobinsontech</a>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 
 ## Notes
 

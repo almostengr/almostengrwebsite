@@ -1,5 +1,0 @@
----
-title: Gardening
-hidepostinfo: true
----
-

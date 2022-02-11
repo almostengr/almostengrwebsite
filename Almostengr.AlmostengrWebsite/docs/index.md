@@ -4,7 +4,7 @@ description: Information about this blog and Kenny Robinson.
 
 # Welcome!
 
-![Kenny with traffic light](/img/jumbotron_kenny.jpg)
+![Kenny with traffic light](/images/jumbotron_kenny.jpg)
 
 ## Technology Blog
 
@@ -27,7 +27,7 @@ so that others may learn from my previous work.
 
 ### Featured Project - Traffic Pi
 
-![Traffic light with Raspberry Pi controller](/images/portfolio_trafficlight2.jpg)
+![Traffic light with Raspberry Pi controller](/projects/traffic-pi/portfolio_trafficlight2.jpg)
 
 A traffic light is something that most understand even before they start driving. In 2018, I purchased a 
 real, retired traffic light from a salvage company to teach programming concepts to grade school students. 

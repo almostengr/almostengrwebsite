@@ -1,12 +1,12 @@
 ---
 title: 2021 Christmas Light Show
 imagealt: 2021 Christmas Light Show
-image: /images/lightshow/2020 Christmas Light Show 20201211-f000000.jpg
+image: /images/2020 Christmas Light Show 20201211-f000000.jpg
 ---
 
 # 2021 Christmas Light Show
 
-![Image of 2020 Light Show](/images/lightshow/2020 Christmas Light Show 20201211-f000000.jpg)
+![Image of 2020 Light Show](/images/2020 Christmas Light Show 20201211-f000000.jpg)
 
 ## Show Dates and Times
 

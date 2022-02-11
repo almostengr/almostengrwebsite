@@ -126,7 +126,7 @@ or the AC lights that I already had on hand.
 
 ### What are the parts that I need to build my own control box?
 
-![Photo of control box](/images/lightshow/20201220presentation/20201204_120013.jpg)
+![Photo of control box](/images/20201220presentation/20201204_120013.jpg)
 
 This is the list of the electrical related components. The full list of components will vary depending
 upon how to you choose to design your control box. The prices were how much the items costed in 2020.

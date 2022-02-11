@@ -31,7 +31,7 @@ psuedocode for a normal traffic cycle. As shown in the first version, all of the
 on but never turned off.  In the final version, they figured out that they had to turn on
 and turn off each light as well as include a delay in between each light change.
 
-![Image of Versioning](/images/trafficpi/versioning.jpg)
+![Image of Versioning](/projects/traffic-pi/versioning.jpg)
 
 
 
@@ -94,7 +94,7 @@ Pi Pin (Board) | GPIO | Device Connection
 
 #### Visual of Pin Connections to Relay Board
 
-![Image of connections on Raspberry Pi board](/images/trafficpi/circuitry.jpg)
+![Image of connections on Raspberry Pi board](/projects/traffic-pi//circuitry.jpg)
 
 ### System Service
 

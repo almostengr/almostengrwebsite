@@ -7,6 +7,8 @@ image: /images/2020.02.01-uses-entry.jpg
 
 # Uses
 
+![My uses entry](/images/2020.02.01-uses-entry.jpg)
+
 ## Background
 
 Browsing around on GitHub, I found that developers create "uses" (or /uses) pages that

@@ -18,7 +18,7 @@ others significantly.
 
 ## Placement of People
 
-![Positioning of voluters](/projects/traffic-pi//positioning.jpg)
+![Positioning of voluters](/images/positioning.jpg)
 
 * Blue is programmers (control box). Audience should positioned so that they see both traffic lights.
 * Red is Traffic Light 1

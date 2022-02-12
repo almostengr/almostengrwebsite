@@ -1,6 +1,6 @@
 # 2019 Christmas Light Show
 
-![2019 Lights](/projects/christmas-light-show/2019.jpg)
+![2019 Lights](/images/2019-christmas-light-show.jpg)
 
 ## Hardware
 

@@ -1,6 +1,6 @@
 # Falcon Pi Twitter
 
-![](/images/20201220presentation/twittertweets.jpg)
+![Tweets from @hplightshow on Twitter](/images/20201220presentation/twittertweets.jpg)
 
 This project is designed for Falcon Pi Player to provide updates via 
 <a href="https://twitter.com/hplightshow" target="_blank">Twitter</a> on the light show that 

@@ -2,10 +2,6 @@
 title: Birmingham Black Techies Presentation
 posted: 2022-02-09
 keywords: raspberry pi, c-sharp, .net 5, programming, coding
-hide:
-  - navigation
-  - toc
-  - 
 ---
 
 

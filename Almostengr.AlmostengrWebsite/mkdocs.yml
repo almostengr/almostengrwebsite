@@ -27,7 +27,7 @@ theme:
     - scheme: default
       primary: black
       accent: red
-  favicon: /images/favicon-32x32.png
+  # favicon: /images/favicon-32x32.png
   features:
     - navigation.tabs
     - navigation.tabs.sticky

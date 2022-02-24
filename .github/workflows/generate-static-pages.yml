@@ -6,26 +6,6 @@ on:
       - 'main'
 
 jobs:
-#   resizeimages:
-#     runs-on: ubuntu-latest
-#     steps:
-#     - uses: actions/checkout@v2
-
-#     - run: find Almostengr.AlmostengrWebsite/docs/images/ -iname *png -exec convert {} {}.jpg \;
-#       name: Converting PNG images to JPG
-
-#     - run: find Almostengr.AlmostengrWebsite/docs/images/ -iname *png -exec git rm {} \;
-#       name: Removing PNG images
-
-#     - run: find Almostengr.AlmostengrWebsite/docs/images/ -iname *jpg -exec cp {} Almostengr.AlmostengrWebsite/docs/img/ \;
-#       name: Copying images to img directory
-
-#     - run: find Almostengr.AlmostengrWebsite/docs/img -iname *jpg -exec convert -resize 45% {} {} \;
-#       name: Convert images to thumbnails
-
-#     - name: Run commit on files
-#       run: bash scripts/ghcommit.sh
-
   # spelling:
   #   name: Check Spelling
   #   runs-on: ubuntu-latest
@@ -79,15 +59,3 @@ jobs:
         key: ${{ secrets.PRIVATE_KEY }}
         port: ${{ secrets.PORT_NUMBER }}
         user: ${{ secrets.USERNAME }}
-
-  # shakeout:
-  #   runs-on: ubuntu-latest
-  #   needs: deploy
-  #   steps:
-  #   - uses: actions/checkout@v2
-  #   - uses: actions/setup-dotnet@v1
-  #     name: Setup .NET Core
-  #     with:
-  #       dotnet-version: '3.1.x' # SDK Version to use; x will use the latest version of the 3.1 channel
-  #   - name: Running tests
-  #     run: dotnet test -c RELEASE Almostengr.AlmostengrWebsite.Tests/Almostengr.AlmostengrWebsite.Tests.csproj

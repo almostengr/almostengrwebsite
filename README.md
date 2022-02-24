@@ -10,4 +10,4 @@ You may read up on why I swtiched my blog from Drupal to MkDocs in my
 To find out the full information about the technology used on my website, you can visit the
 [uses page](https://thealmostengineer.com/uses).
 
-Build, tests, and deployment are done by GitHub Actions.
+Build and deployment are done by GitHub Actions.

@@ -1,6 +1,9 @@
 ---
 title: Resources
 description: Tech and non-tech resources that can provide additional information or support.
+posted: 2021-11-26
+updated: 2022-02-25
+keywords: black in tech, black tech twitter, tech resources, online learning
 ---
 
 # Resources

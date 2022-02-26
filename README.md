@@ -1,7 +1,5 @@
 # thealmostengineer.com
 
-## Description
-
 Source code for my blog, [thealmostengineer.com](https://thealmostengineer.com).
 
 You may read up on why I swtiched my blog from Drupal to MkDocs in my

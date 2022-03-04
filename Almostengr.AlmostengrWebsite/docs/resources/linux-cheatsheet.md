@@ -1,19 +1,17 @@
 ---
 title: Linux CheatSheet
+updated: 2022-03-04
+author: Kenny Robinson
 ---
 
 Cheatsheet of commands to use when working on Linux-based systems. Here the commands that I use
 most frequently.
 
-I'm currently working on a YouTube tutorial series that will describe the commands listed and the 
-multiple ways that they can be used.
-
 Submissions or issues identified can be submitted via issue on this 
 [project's repository](https://github.com/almostengr/almostengrwebsite/issues).
 
 These commands have been tested and confirmed to work on Ubuntu-based systems. They also should, 
-but are not guaranteed to work on Debian-based systems. For other Linux-bsed systems, these commands 
-may work, but are not guaranteed to do so.
+but are not guaranteed to work on Debian-based and Linux-based systems.
 
 ----
 

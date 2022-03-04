@@ -1,6 +1,7 @@
 ---
 title: Git Cheatsheet
 updated: 2022-03-04
+author: Kenny Robinson
 description: A list of the most common commands to use with Git and explaination of each.
 ---
 

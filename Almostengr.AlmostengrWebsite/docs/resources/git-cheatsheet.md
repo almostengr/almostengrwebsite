@@ -148,10 +148,23 @@ and you need to remove the local corresponding branches.
 
 ## Definitions
 
+### branch
+
+A version of code in the repository. Changes to the code are normally done in another branch and then 
+merged into the master branch of the repository.
+
+### clone 
+
+To make a copy of the repository from the central repository (server) to the local machine.
+
 ### commit
 
 A commit is a revision (create, update, or delete), made to one or more files. This is the equivalent
 of taking a snapshot of the files that have changed since the previous snapshot that was taken.
+
+### fetch
+
+To get the latest versions of all the branches and update local references of those branches.
 
 ### fork
 
@@ -167,23 +180,11 @@ referred to as a "ticket" or "change request".
 
 Combines changes from two branches into a single branch.
 
-### branch
+### pull 
 
-A version of code in the repository. Changes to the code are normally done in another branch and then 
-merged into the master branch of the repository.
+To get the latest code from the central repository (server) to your local machine.
 
 ### push
 
 To send the code from your local machine to the central repository (server).
 
-### pull 
-
-To get the latest code from the central repository (server) to your local machine.
-
-### clone 
-
-To make a copy of the repository from the central repository (server) to the local machine.
-
-### fetch
-
-To get the latest versions of all the branches and update local references of those branches.

@@ -31,7 +31,7 @@ Lists all of the branches that are in the current branch.
 ```bash
 git add .
 ```
-Stages all of the files for commit in the current and subirectories.
+Stages all of the files (both untracked and tracked) for commit in the current and subirectories.
 
 ---
 
@@ -45,7 +45,7 @@ Stages all of the previously commited files in the current and subdirectories.
 ```bash
 git commit -m "MESSAGE"
 ```
-Commits the changes made to files, removal of files from the repo, and addition of files to the repo. 
+Commits (saves) the changes made to files, removal of files from the repo, and addition of files to the repo. 
 ```MESSAGE``` should be replaced with a details of the changes made since the last commit.
 
 ---
@@ -70,7 +70,7 @@ committed, files that have not been staged for committing.
 git rm FILENAME
 ```
 Removes files from the repository. If removing directories, "-r" option needs to be used. Replace 
-```FILENAME``` with the name of the actual file. 
+```FILENAME``` with the name of the actual file(s). 
 
 ---
 
@@ -87,7 +87,7 @@ If no files have been staged for commit, then this command will not return any o
 git diff --cached $(git log | head -1 | awk '{print $2}')
 ```
 Performs the same command above, but automatically gets the latest commit from the ```git log``` 
-command. This command will only work on Unix or Linux based systems.
+command.
 
 ---
 
@@ -187,4 +187,3 @@ To get the latest code from the central repository (server) to your local machin
 ### push
 
 To send the code from your local machine to the central repository (server).
-

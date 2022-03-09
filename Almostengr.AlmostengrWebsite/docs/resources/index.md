@@ -127,5 +127,6 @@ While I primarily do programming and work in IT (Information Technology), I do r
 content that is not related to programming and the field of IT. 
 
 * <a href="https://thebipolarbuzz.com" target="_blank">The Bipolar Buzz</a>
+* <a href="https://sumo.com/kickass-headline-generator/" target="_blank">Headline Generator</a>
 * <a href="http://www.mentalmatterspod.com/" target="_blank">Mental Matters Podcast</a>
 * <a href="https://www.almanac.com/gardening/planting-calendar/AL/Montgomery" target="_blank">Planting Calendar</a>

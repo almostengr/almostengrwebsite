@@ -1,8 +1,8 @@
 ---
 title: Resources
-description: Tech and non-tech resources that can provide additional information or support.
+description: Tech and non-tech resources that can provide additional information or support
 posted: 2021-11-26
-updated: 2022-02-25
+updated: 2022-03-14
 keywords: black in tech, black tech twitter, tech resources, online learning
 ---
 
@@ -35,9 +35,9 @@ platforms and are noted accordingly.
 
 * <a href="https://www.afrotech.com" target="_blank">Afro Tech</a>
 * Birmingham Black Techies - <a href="https://www.facebook.com/groups/590555561689700" target="_blank">Facebook</a>,
-<a href="https://www.birminghamblacktechies.com/" target="_blank">Website</a>
+<a href="https://www.birminghamblacktechies.com/" target="_blank">Website</a> (Community)
 * Black Cloud Geeks - <a href="https://www.facebook.com/groups/blackcloudgeeks/" target="_blank">Facebook</a>,
-<a href="https://www.linkedin.com/groups/9077941/" target="_blank">LinkedIn</a>
+<a href="https://www.linkedin.com/groups/9077941/" target="_blank">LinkedIn</a> (Community)
 * <a href="https://blackcodecollective.com/" target="_blank">Black Code Collective</a> (Community)
 * <a href="https://blackfemalefounders.org" target="_blank">Black Female Founders</a> (Community)
 * <a href="https://www.blackgirlscode.com/" target="_blank">Black Girls Code</a> (Organization, Youth)
@@ -45,7 +45,7 @@ platforms and are noted accordingly.
 * <a href="https://blacksincyberconf.com" target="_blank">Black In Cyber Security</a> (Community)
 * <a href="https://blacksintechnology.net/" target="_blank">Blacks In Technology</a> (Community, Organization)
 * <a href="https://www.facebook.com/groups/BlackInformationTechnology/" target="_blank">Black Information Technology (B.I.T)</a> (Facebook)
-* <a href="http://blackistechconference.com/" target="_blank">Black Is Tech Conference</a> (Event)
+* <a href="https://blackistechconference.com/" target="_blank">Black Is Tech Conference</a> (Event)
 * <a href="https://blacktechalabama.com" target="_blank">Black Tech Alabama</a> (Organization)
 * <a href="https://blacktechpipeline.com/" target="_blank">Black Tech Pipeline</a> (Jobs)
 * <a href="https://blacktechunplugged.com/" target="_blank">Black Tech Unplugged</a> (Podcast)
@@ -126,9 +126,9 @@ face when working on websites or software.
 While I primarily do programming and work in IT (Information Technology), I do read or watch 
 content that is not related to programming and the field of IT. 
 
-* <a href="https://thebipolarbuzz.com" target="_blank">The Bipolar Buzz</a>
 * <a href="https://sumo.com/kickass-headline-generator/" target="_blank">Headline Generator</a>
 * <a href="http://www.mentalmatterspod.com/" target="_blank">Mental Matters Podcast</a>
 * <a href="https://www.almanac.com/gardening/planting-calendar/AL/Montgomery" target="_blank">Planting Calendar</a>
 * <a href="https://rogueengineer.com/" target="_blank">Rouge Engineer</a>
+* <a href="https://thebipolarbuzz.com" target="_blank">The Bipolar Buzz</a>
 

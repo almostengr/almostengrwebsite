@@ -107,7 +107,8 @@ To see the output from the logs, visit the [Troubleshooting](#troubleshooting) s
 ## Configuration
 
 To get started, copy the ```appsettings.template.json``` file to a file named ```appsettings.json```.
-Then update the JSON file to have the values that you would like. 
+Then update the JSON file to have the values that you would like. Failure to copy 
+this file, will result in the application not running and errors being logged.
 The appsettings.json file has multiple configuration values in it. Each of the sections below describe
 what values are expected in the file and how to configure them accordingly.
 
@@ -118,13 +119,11 @@ only Information or higher severity messages are logged. We suggest that Debug l
 on unless you are experiencing a recurring problem.
 
 ```json
-"Logging": {
-        "LogLevel": {
-            "Default": "Information",
-            "Microsoft": "Warning",
-            "Microsoft.Hosting.Lifetime": "Information"
-        }
-    },
+"LogLevel": {
+    "Default": "Information",
+    "Microsoft": "Warning",
+    "Microsoft.Hosting.Lifetime": "Information"
+}
 ```
 
 ### Twitter Credentials
@@ -159,7 +158,6 @@ stop running. Errors will show up in the application log.
 },
 ```
 
-
 ```AlarmUsernames``` should be the name of the Twitter account(s) that can be mentioned if
 there is an issue with the show (e.g. Raspberry Pi having high CPU temperature). Value needs to include
 the at (@) symbol. Each Twitter handle should be listed as a separate item in this file. 
@@ -175,6 +173,7 @@ When no value has been provided, this will default to 60.0 degrees.
 has been reached, you will not be notified again until the next hour. The alarms will still be reported
 in the application log. To receive infinite alerts, set this value to ```0```.
 When no value has been provided, this will default to 3 alerts per hour.
+
 
 ### Example appsettings.json File
 
@@ -258,7 +257,7 @@ current temperature.
 Songs are checked every 15 seconds to see if it has changed. If the same song is playing from the
 previous check, then no tweet is posted. 
 
-Vitals are checked every 5 minutes. Alarms are based on the settings that you have defined in the
+Vitals are checked every 15 minutes. Alarms are based on the settings that you have defined in the
 [configuration file](#configuration).
 
 ### I don't want certain playlists to post song information. How do I accomplish this? 

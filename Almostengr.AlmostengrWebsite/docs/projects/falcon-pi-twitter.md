@@ -146,26 +146,6 @@ for this section.
 When no value is provided for any of the properties, the application will experience issues and 
 stop running. Errors will show up in the application log.
 
-```json
-"FalconPiPlayerUrls": [
-    "http://localhost"
-],
-```
-
-List each of the <a href="https://github.com/FalconChristmas/fpp" target="_blank">Falcon Pi Player</a> 
-that you want to be monitored. If you are using a master-remote setup,
-then the master instance, which has the music and sequence files, needs to be listed first. All remote
-instances need to be listed after. The URLs can be the hostname or the IP address to each player.
-If your FPP does not have an
-assigned or static IP address, then it is recommended to use the hostname.
-
-```json
-"Alarm": {
-    "TwitterAlarmUser": "@XrGOEz2Wc7",
-    "MaxTemperature": 55.0,
-    "MaxAlarms": 5
-}
-```
 
 ### Monitoring
 

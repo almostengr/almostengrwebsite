@@ -10,7 +10,7 @@ are detected.
 This application is ONLY designed to run on Falcon Pi Players that are installed on Raspberry Pi, but it 
 may be possible to run it on Beagle Bone Black (BBB).
 
-* Technologies: C#, Twitter, Falcon Player
+* Technologies: C# (.NET 5), Twitter, Falcon Player, Raspberry Pi
 * Year Started: 2020
 
 ## Problem

@@ -112,6 +112,19 @@ this file, will result in the application not running and errors being logged.
 The appsettings.json file has multiple configuration values in it. Each of the sections below describe
 what values are expected in the file and how to configure them accordingly.
 
+### FppHosts
+
+List each of the Falcon Player instances that you want to be monitored. The first instance is considered
+to the primary instance. This instance should be set to ```master``` or ```standalone``` within 
+the Falcon Player settings. Each additional instance will be treated as a remote instance.
+When no hosts are listed in this section, this will default to "http://localhost". 
+
+```json
+"FppHosts": [
+    "http://localhost/"
+],
+```
+
 ### Logging
 
 To change the logging done by the application, you may lower or raise the logging level. By default, 

@@ -167,29 +167,33 @@ assigned or static IP address, then it is recommended to use the hostname.
 }
 ```
 
-### Twitter Users To Mention For Alarms
+### Monitoring
+
+```json
+"Monitoring": {
+    "AlarmUserNames": [
+        "@twitteruser"
+    ],
+    "MaxAlarmsPerHour": 3,
+    "MaxCpuTemperatureC": 62.0
+},
+```
+
 
 ```AlarmUsernames``` should be the name of the Twitter account(s) that can be mentioned if
 there is an issue with the show (e.g. Raspberry Pi having high CPU temperature). Value needs to include
 the at (@) symbol. Each Twitter handle should be listed as a separate item in this file. 
-
 When no value has been provided, then alerts will show up as public tweets instead of mentions.
-
-### Maximum CPU Temperature
 
 ```MaxCpuTemperatureC``` should be the threshold that has to be reached before a high temperature alert is triggered.
 In warmer climates, you will want to set this value higher to prevent false alerts.
 This value needs to be in degrees Celsius. Per the Raspberry Pi documentation, 60 to 65
 degrees Celsius is close to the safe upper operating limit of the Pi.
-
 When no value has been provided, this will default to 60.0 degrees.
-
-### Maximum Alarms
 
 ```MaxAlarmsPerHour``` is the number alarms that you will be notified about within an hour. Once this threshold
 has been reached, you will not be notified again until the next hour. The alarms will still be reported
 in the application log. To receive infinite alerts, set this value to ```0```.
-
 When no value has been provided, this will default to 3 alerts per hour.
 
 ### Example appsettings.json File

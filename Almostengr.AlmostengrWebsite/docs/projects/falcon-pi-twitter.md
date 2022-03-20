@@ -10,7 +10,7 @@ are detected.
 This application is ONLY designed to run on Falcon Pi Players that are installed on Raspberry Pi, but it 
 may be possible to run it on Beagle Bone Black (BBB).
 
-* Technologies: C#, Twitter
+* Technologies: C#, Twitter, Falcon Player
 * Year Started: 2020
 
 ## Problem
@@ -65,15 +65,7 @@ for explainations and details.
 * Create a [system service](#system-service) that will run the applicaton on startup.
 * Reboot your Raspberry Pi
 * Once the Pi has come back online, log in and check the log file to confirm that the monitor has started. 
-You should see output similar to the below near the beginning of the log file.
-
-```
-Connected to Twitter as HP Light Show
-```
-
-The "Connected to Twitter" message in the log file, confirms that your account has been properly configured
-to access Twitter. If there are exception messages in the log, double check the configuration file and your 
-internet connection.
+If there any messages that state "400 error" or similar, double check that your Twitter credentials are correct.
 
 ## System Service
 

@@ -219,7 +219,6 @@ project by visiting the [project page](/projects/falcon-pi-twitter).
 
 See the [Falcon Pi Twitter](/projects/falcon-pi-twitter) page for more information about
 that project.
-
  
 ### What is the legality of using an FM transmitter for light shows?
 
@@ -245,6 +244,17 @@ amplification of your signal or position your antenna so that the signal does no
 
 It does not make sense to leave a light on in 
 a room with nobody in it. The same goes for your FM transmitter. When it is not being used, turn it off.
+
+#### How do you store backups of the show files and music?
+
+Backups are done automatically using Shell Scripts that run periodically via Cron Jobs. The same scripts 
+are done for both the Xlights directory files on the computer and the Falcon Pi Player files on the 
+Raspberry Pi. 
+What the shell script does is commits the files that have changed in the specified location, commits 
+those files to a git repository, and then pushes the latest commit to Github. If a previous version
+of a file needs to be restored, a checkout of a previous commit can be done to restore that file to a 
+previous state. I provide the steps to set up automatic backup of your Falcon Pi Player in a 
+<a href="https://www.youtube.com/watch?v=l-xUcvMyn2Q" target='_blank'>YouTube video I created</a>.
 
 ## Resources
 

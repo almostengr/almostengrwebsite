@@ -164,9 +164,15 @@ Total = $332.59
 
 ### What kind of hardware do you use?
 
+#### 120 Volt Outlets
+
+Relays control the flow of power to the outlets. In turn, each outlet is mapped to a channel of lights and
+is connected to the 120 Volt lights that are used in the show.
+
 #### Christmas Lights
 
-All of the lights are LED. Only two colors are used for the light show, white and red.
+All of the lights are LED, 120 volt strings. Only two colors are used for the light show, white and red. 
+Lights used are the same ones that you can get at a big box retailer.
 
 #### FM Radio Transmitter
 
@@ -175,7 +181,12 @@ the Raspberry Pi and broadcasted on 90.3 FM. Radio Locator
 [mentioned below](/projects/christmas-light-show/faq#where-can-i-find-out-more-information-or-ask-questions)
 was used to locate the best frequency based on the area.
 
-#### Raspberry Pi
+#### GFCI (Ground Fault Circuit Interrupter)
+
+Because the lights are replaced outside in the weather elements, a GFCI outlet is used inside the control box. 
+This outlet provides protection to the entire box and if a fault is detected, will shut off the entire show.
+
+#### Raspberry Pi 3B+
 
 The Falcon Pi Player is installed on the Raspberry Pi. The Rasberry Pi controls the relays, which in turn
 controls all of the lights. The Pi controls each of the 24 channels of relays via the GPIO pins that it has.
@@ -184,6 +195,7 @@ controls all of the lights. The Pi controls each of the 24 channels of relays vi
 
 All of the relays are Solid State Relays (SSR). SSRs are used because they have no mechanical or moving
 parts and having greater reliability for being switched on and off frequently.
+Each relay is protected from overcurrent by a 2 Amp fuse between the wall outlet and the relay.
 
 Mechanical relays heat up from switching on an off. When done repeatedly, like during a song, the relay can
 actually over heat and weld itself together, which is the equivalent of self-destructing and would 

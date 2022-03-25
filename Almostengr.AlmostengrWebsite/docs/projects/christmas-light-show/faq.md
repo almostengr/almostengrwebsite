@@ -102,20 +102,20 @@ E(kWh lights) = P(W) × t(hr) / 1000 = 130 Watts * 33.5 hours / 1000 = 4.355 kWh
 E(kWh controller) = P(W) × t(hr) / 1000 = 435 Watts * 168 hours / 1000 = 73.08 kWh
 ```
 
-The rate for electricity (in 2020) during the winter months (Oct-May) is $0.100511 per kWh.
+The rate for electricity (in 2020) during the winter months (Oct-May) is $0.100511 USD per kWh.
 
 ```text
-Cost for lights = 0.100511 * 4.355 kWh = 0.44
+Cost for lights = USD per kWh * kWh = 0.100511 USD per kWh * 4.355 kWh = 0.44 USD
 
-Cost for controller = 0.100511 * 73.08 kWh = 7.34
+Cost for controller = USD per kWh * kWh = 0.100511 USD per kWh * 73.08 kWh = 7.34 USD
 ```
 
 Since we have the cost for each group of components, we can compute the cost per week and per season.
 
 ```text
-Cost per week = $0.44 + $7.34 = $7.78
+Cost per week = $0.44 + $7.34 = $7.78 USD per week
 
-Cost per season (5 weeks) = $7.78 * 5 = $38.90
+Cost per season (5 weeks) = $7.78 USD per week * 5 weeks = $38.90 USD
 ```
 
 That means the maximum total cost of the show per week is $7.78 and cost for the season is $38.90.

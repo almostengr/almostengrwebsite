@@ -74,7 +74,6 @@ scenes looks, visit one of the pages listed below.
 * [Falcon Pi Twitter](/projects/falcon-pi-twitter) which reads the song data from FPP and posts it to Twitter
 * [2020 Christmas Light Show Details](/projects/christmas-light-show/2020christmas)
 * <a href="https://www.youtube.com/watch?v=5sm_wmnRPDs" target="_blank">Behind The Scenes of the 2020 Christmas Light Show</a>
-* [Building A Christmas Light Show Control Box (Presentation 2020-12-20)](/projects/christmas-light-show/presentation20201220)
 * [2019 Christmas Light Show Details](/projects/christmas-light-show/2019christmas)
 * [FAQs (Frequently Asked Questions)](/projects/christmas-light-show/faq)
 

@@ -197,9 +197,10 @@ All of the relays are Solid State Relays (SSR). SSRs are used because they have 
 parts and having greater reliability for being switched on and off frequently.
 Each relay is protected from overcurrent by a 2 Amp fuse between the wall outlet and the relay.
 
-Mechanical relays heat up from switching on an off. When done repeatedly, like during a song, the relay can
-actually over heat and weld itself together, which is the equivalent of self-destructing and would 
-have to be replaced.
+Mechanical relays heat up from switching on an off. When done repeatedly and rapidly, like during a song, 
+the relay can
+actually over heat and weld itself together. Once welded shut, the relay will no longer function and 
+will have to be replaced.
 
 
 ### What kind of software do you use?

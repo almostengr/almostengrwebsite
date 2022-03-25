@@ -164,22 +164,9 @@ Total = $332.59
 
 ### What kind of hardware do you use?
 
-#### Raspbery Pi
-
-The Falcon Pi Player is installed on the Raspberry Pi. The Rasberry Pi controls the relays, which in turn
-controls all of the lights. The Pi controls each of the 24 channels of relays via the GPIO pins that it has.
-
 #### Christmas Lights
 
 All of the lights are LED. Only two colors are used for the light show, white and red.
-
-#### Solid State Relays
-
-All of the relays are Solid State Relays (SSR). SSRs were used because they have no mechanical or moving
-parts and having greater reliability for being switched on and off frequently.
-
-Mechanical relays heat up from switching on an off. When done repeatedly, like during a song, the relay can
-actually over heat and weld itself together.
 
 #### FM Radio Transmitter
 
@@ -187,6 +174,21 @@ Music is transmitted over radio via a low-power FM transmitter. Music goes into 
 the Raspberry Pi and broadcasted on 90.3 FM. Radio Locator
 [mentioned below](/projects/christmas-light-show/faq#where-can-i-find-out-more-information-or-ask-questions)
 was used to locate the best frequency based on the area.
+
+#### Solid State Relays
+
+All of the relays are Solid State Relays (SSR). SSRs are used because they have no mechanical or moving
+parts and having greater reliability for being switched on and off frequently.
+
+Mechanical relays heat up from switching on an off. When done repeatedly, like during a song, the relay can
+actually over heat and weld itself together, which is the equivalent of self-destructing and would 
+have to be replaced.
+
+#### Raspberry Pi
+
+The Falcon Pi Player is installed on the Raspberry Pi. The Rasberry Pi controls the relays, which in turn
+controls all of the lights. The Pi controls each of the 24 channels of relays via the GPIO pins that it has.
+
 
 ### What kind of software do you use?
 
@@ -208,19 +210,23 @@ the latest release <a href="https://github.com/FalconChristmas/fpp" target="_bla
 For assistance with configuring or issues with Falcon Pi Player, you can post in the
 <a href="https://www.facebook.com/groups/FalconPlayer/" target="_blank">FPP, Falcon Player</a> group.
 
-#### Kdenlive
-
-Kdenlive is a video editing tool. It can also be used to modify audio files. The show intro audio file was
-modified with Kdenlive to have the voice over and background music on the same track. You can download
-the latest version from <a href="https://kdenlive.org/" target="_blank">its website</a>.
-
 #### Falcon Pi Twitter
 
 [Falcon Pi Twitter](/projects/falcon-pi-twitter)
 is a custom .NET Core application written in C#. The application serves as a bridge
 between the Falcon Pi Player and Twitter. As the show plays, the song information is pulled from the
-Falcon Pi Player and then posted as a tweet on Twitter. You can find out more information about this
+Falcon Pi Player and then posted as a tweet on Twitter. 
+This custom application was created to read the show and song data from Falcon Pi Player and post it 
+as a tweet on Twitter. When a show is not running, it posts tweets with the remaining time until 
+Christmas day. 
+You can find out more information about this
 project by visiting the [project page](/projects/falcon-pi-twitter).
+
+#### Kdenlive
+
+Kdenlive is a video editing tool. It can also be used to modify audio files. The show intro audio file was
+modified with Kdenlive to have the voice over and background music on the same track. You can download
+the latest version from <a href="https://kdenlive.org/" target="_blank">its website</a>.
 
 ### Song updates are posted to Twitter. How does that work?
 

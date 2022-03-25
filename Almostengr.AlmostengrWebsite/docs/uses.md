@@ -1,11 +1,9 @@
-﻿---
+---
 title: Uses
 description: Page describes the tools used for various tasks.
 keywords: uses, uses page, tools used
 image: /images/2020.02.01-uses-entry.jpg
 ---
-
-# Uses
 
 ![My uses entry](/images/2020.02.01-uses-entry.jpg)
 

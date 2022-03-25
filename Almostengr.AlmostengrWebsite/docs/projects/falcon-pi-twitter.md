@@ -10,7 +10,7 @@ are detected.
 This application is ONLY designed to run on Falcon Pi Players that are installed on Raspberry Pi, but it 
 may be possible to run it on Beagle Bone Black (BBB).
 
-* Technologies: C#, Twitter
+* Technologies: C# (.NET 5), Twitter, Falcon Player, Raspberry Pi
 * Year Started: 2020
 
 ## Problem
@@ -47,6 +47,7 @@ In order to use Falcon Pi Twitter, you will need to have
 * a <a href="https://developer.twitter.com" target="_blank">Twitter developer account</a>
 * <a href="https://github.com/FalconChristmas/fpp" target="_blank">Falcon Pi Player</a> version 4 (confirmed working and tested with version 4.6.1)
 
+
 ## Installation Steps
 
 * Download the latest release from the <a href="https://github.com/almostengr/falconpitwitter" target="_blank">project repo</a>
@@ -65,15 +66,8 @@ for explainations and details.
 * Create a [system service](#system-service) that will run the applicaton on startup.
 * Reboot your Raspberry Pi
 * Once the Pi has come back online, log in and check the log file to confirm that the monitor has started. 
-You should see output similar to the below near the beginning of the log file.
+If there any messages that state "400 error" or similar, double check that your Twitter credentials are correct.
 
-```
-Connected to Twitter as HP Light Show
-```
-
-The "Connected to Twitter" message in the log file, confirms that your account has been properly configured
-to access Twitter. If there are exception messages in the log, double check the configuration file and your 
-internet connection.
 
 ## System Service
 
@@ -109,45 +103,48 @@ sudo rm /lib/systemd/system/falconpitwitter.service
 
 To see the output from the logs, visit the [Troubleshooting](#troubleshooting) section.
 
-### CronJob
-
-This application is designed to run as a system service. However, it can run as a cronjob. See the
-[Creating System Service](#system-service) page for details.
-
-Create a cronjob that runs on reboot. On your FPP, open a SSH session. Once logged in, enter
-
-```sh
-crontab -e
-```
-
-When the text editor opens, add the following to the bottom of the file. Change the directory to match 
-where you extracted the FP Monitor.
-
-```
-@reboot /home/fpp/fpmonitor/falconpitwitter > /home/fpp/media/logs/falconpitwitter.log 2>&1
-```
-
-Then save and exit the text editor.
 
 ## Configuration
 
 To get started, copy the ```appsettings.template.json``` file to a file named ```appsettings.json```.
-Then update the JSON file to have the values that you would like. The details for each setting are
-mentioned below.
-
-### appsettings.json File Breakdown
-
+Then update the JSON file to have the values that you would like. Failure to copy 
+this file, will result in the application not running and errors being logged.
 The appsettings.json file has multiple configuration values in it. Each of the sections below describe
 what values are expected in the file and how to configure them accordingly.
 
+### Logging
+
+To change the logging done by the application, you may lower or raise the logging level. By default, 
+only Information or higher severity messages are logged. We suggest that Debug logging not be turned
+on unless you are experiencing a recurring problem.
+
 ```json
-"MonitorOnly": false,
+"LogLevel": {
+    "Default": "Information",
+    "Microsoft": "Warning",
+    "Microsoft.Hosting.Lifetime": "Information"
+}
 ```
 
-* When set to ```false```, this will tweet out song information in addition to alerts.
-* When set to ```true```, this will **only** tweet out alerts. (no song information)
+### FppHosts
 
-When no value is provided, the application will default to ```false```.
+List each of the Falcon Player instances that you want to be monitored. The first instance is considered
+to the primary instance. This instance should be set to ```master``` or ```standalone``` within 
+the Falcon Player settings. Each additional instance will be treated as a remote instance.
+When no hosts are listed in this section, this will default to "http://localhost". 
+
+```json
+"FppHosts": [
+    "http://localhost/"
+],
+```
+
+### Twitter Credentials
+
+This section holds the values to access the Twitter API. Visit the
+[Twitter for Developers](https://developer.twitter.com) page to sign up and get the needed keys and tokens.
+You will need to get a Consumer Key (aka API Key), Consumer Secret (aka API Secret), Access Token and Access Secret
+for this section.
 
 ```json
 "Twitter": {
@@ -158,52 +155,38 @@ When no value is provided, the application will default to ```false```.
 },
 ```
 
-This section holds the values to access the Twitter API. Visit the
-[Twitter for Developers](https://developer.twitter.com) page to sign up and get the needed keys an tokens.
-You will need to get a Consumer Key (aka API Key), Consumer Secret (aka API Secret), Access Token and Access Secret
-for this section.
+When no value is provided for any of the properties, the application will experience issues and 
+stop running. Errors will show up in the application log.
 
-When no value is provided for any of the properties, the application will display and error and will not run.
 
-```json
-"FalconPiPlayerUrls": [
-    "http://localhost"
-],
-```
-
-List each of the <a href="https://github.com/FalconChristmas/fpp" target="_blank">Falcon Pi Player</a> 
-that you want to be monitored. If you are using a master-remote setup,
-then the master instance, which has the music and sequence files, needs to be listed first. All remote
-instances need to be listed after. The URLs can be the hostname or the IP address to each player.
-If your FPP does not have an
-assigned or static IP address, then it is recommended to use the hostname.
+### Monitoring
 
 ```json
-"Alarm": {
-    "TwitterAlarmUser": "@XrGOEz2Wc7",
-    "MaxTemperature": 55.0,
-    "MaxAlarms": 5
-}
+"Monitoring": {
+    "AlarmUserNames": [
+        "@twitteruser"
+    ],
+    "MaxAlarmsPerHour": 3,
+    "MaxCpuTemperatureC": 62.0
+},
 ```
 
-```TwitterAlarmUser``` should be the name of the Twitter account(s) that can be mentioned if
+```AlarmUsernames``` should be the name of the Twitter account(s) that can be mentioned if
 there is an issue with the show (e.g. Raspberry Pi having high CPU temperature). Value needs to include
-the at (@) symbol.
-
+the at (@) symbol. Each Twitter handle should be listed as a separate item in this file. 
 When no value has been provided, then alerts will show up as public tweets instead of mentions.
 
-```MaxTemperature``` should be the threshold that has to be reached before a high temperature alert is triggered.
+```MaxCpuTemperatureC``` should be the threshold that has to be reached before a high temperature alert is triggered.
 In warmer climates, you will want to set this value higher to prevent false alerts.
 This value needs to be in degrees Celsius. Per the Raspberry Pi documentation, 60 to 65
 degrees Celsius is close to the safe upper operating limit of the Pi.
+When no value has been provided, this will default to 60.0 degrees.
 
-When no value has been provided, this will default to 55.0 degrees.
-
-```MaxAlarms``` is the number alarms that you will be notified about within an hour. Once this threshold
+```MaxAlarmsPerHour``` is the number alarms that you will be notified about within an hour. Once this threshold
 has been reached, you will not be notified again until the next hour. The alarms will still be reported
 in the application log. To receive infinite alerts, set this value to ```0```.
+When no value has been provided, this will default to 3 alerts per hour.
 
-When no value has been provided, this will default to 5 alerts per hour.
 
 ### Example appsettings.json File
 
@@ -219,20 +202,21 @@ Once you have finished updating the appsettings.json file, it should look simila
         }
     },
     "AppSettings": {
-        "MonitorOnly": false,
+        "FppHosts": [
+            "http://localhost/"
+        ],
+        "Monitoring": {
+            "AlarmUserNames": [
+                "@twitteruser"
+            ],
+            "MaxAlarmsPerHour": 3,
+            "MaxCpuTemperatureC": 62.0
+        },
         "Twitter": {
             "ConsumerKey": "8W4tZQ6xp7",
             "ConsumerSecret": "qJz6nDw2T7",
             "AccessToken": "KBiEB6jn28",
             "AccessSecret": "8nftJzHOAI",
-        },
-        "FalconPiPlayerUrls": [
-            "http://localhost"
-        ],
-        "Alarm": {
-            "TwitterAlarmUser": "@XrGOEz2Wc7",
-            "MaxTemperature": 55.0,
-            "MaxAlarms": 5
         }
     }
 }
@@ -286,7 +270,7 @@ current temperature.
 Songs are checked every 15 seconds to see if it has changed. If the same song is playing from the
 previous check, then no tweet is posted. 
 
-Vitals are checked every 5 minutes. Alarms are based on the settings that you have defined in the
+Vitals are checked every 15 minutes. Alarms are based on the settings that you have defined in the
 [configuration file](#configuration).
 
 ### I don't want certain playlists to post song information. How do I accomplish this? 

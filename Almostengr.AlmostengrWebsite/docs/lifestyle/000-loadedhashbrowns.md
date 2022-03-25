@@ -1,4 +1,3 @@
-
 ---
 title: Loaded Hash Browns
 image: /images/loadedHashBrowns20210627_121518.jpg

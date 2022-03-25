@@ -1,10 +1,10 @@
 ---
 title: FAQ (Frequently Asked Questions)
 description: Frequently asked questions about this and other light shows.
+updated: 2022-03-25
 ---
 
 Here are the most common questions that are asked about the light show.
-
 
 ## Basics
 
@@ -50,6 +50,14 @@ Yes, there are many that exist. There are also commercial light shows. See the l
 I wanted to do something different for Christmas. Given that the COVID-19 (Coronavirus) pandemic was happening
 during 2020, I had extra funds on hand since I was not doing much travelling during this time. I decided
 to leverage my Technology and Electrical Engineering skills and build a Christmas light show.
+
+### What does your HOA say about the show?
+
+I do not live in a neighborhood with an HOA. From what I have seen though, those that do live in neighborhoods
+with HOAs, when their show gains too much popularity or causes traffic issues, the HOA usually issue 
+"cease and desist letters" or threaten the owners with fines if they continue with their animated displays. 
+Thus they either stop doing their show or they move their show to another location that does not have an HOA 
+or do not have close neighbors.
 
 
 ## Money
@@ -151,7 +159,6 @@ Total = $332.59
 
 *All prices are listed in USD. Does not include taxes or shipping fees.*
 
- 
 
 ## Technology
 
@@ -230,7 +237,7 @@ online research regarding the matter, it breaks down to following these guidelin
 This will get 
 you in immediate trouble as those who listen to the licensed station will report the interference. If an 
 investigation is done and you are caught, you will be in hot water with the FCC and subject to fines 
-and/or imprisonment.
+and imprisonment.
 
 #### Don't broadcast further than necessary
 
@@ -245,16 +252,19 @@ amplification of your signal or position your antenna so that the signal does no
 It does not make sense to leave a light on in 
 a room with nobody in it. The same goes for your FM transmitter. When it is not being used, turn it off.
 
-#### How do you store backups of the show files and music?
+### How do you store backups of the show files and music?
 
 Backups are done automatically using Shell Scripts that run periodically via Cron Jobs. The same scripts 
 are done for both the Xlights directory files on the computer and the Falcon Pi Player files on the 
 Raspberry Pi. 
 What the shell script does is commits the files that have changed in the specified location, commits 
-those files to a git repository, and then pushes the latest commit to Github. If a previous version
+those files to a git repository, and then pushes the latest commit to Github. 
+
+If a previous version
 of a file needs to be restored, a checkout of a previous commit can be done to restore that file to a 
 previous state. I provide the steps to set up automatic backup of your Falcon Pi Player in a 
 <a href="https://www.youtube.com/watch?v=l-xUcvMyn2Q" target='_blank'>YouTube video I created</a>.
+
 
 ## Resources
 
@@ -272,4 +282,3 @@ previously mentioned.
 * <a href="https://www.facebook.com/groups/628061113896314" target="_blank">Official Xlights Support Group</a> (Facebook Group)
 * <a href="https://ttstool.com" target="_blank">TTS Tool</a>, for text to speech recordings
 * <a href="https://www.facebook.com/groups/351083649266539/" target="_blank">Xlights Wireless Support Group</a> (Facebook Group)
-

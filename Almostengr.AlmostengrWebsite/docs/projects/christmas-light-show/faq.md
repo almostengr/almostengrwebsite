@@ -175,6 +175,11 @@ the Raspberry Pi and broadcasted on 90.3 FM. Radio Locator
 [mentioned below](/projects/christmas-light-show/faq#where-can-i-find-out-more-information-or-ask-questions)
 was used to locate the best frequency based on the area.
 
+#### Raspberry Pi
+
+The Falcon Pi Player is installed on the Raspberry Pi. The Rasberry Pi controls the relays, which in turn
+controls all of the lights. The Pi controls each of the 24 channels of relays via the GPIO pins that it has.
+
 #### Solid State Relays
 
 All of the relays are Solid State Relays (SSR). SSRs are used because they have no mechanical or moving
@@ -184,22 +189,8 @@ Mechanical relays heat up from switching on an off. When done repeatedly, like d
 actually over heat and weld itself together, which is the equivalent of self-destructing and would 
 have to be replaced.
 
-#### Raspberry Pi
-
-The Falcon Pi Player is installed on the Raspberry Pi. The Rasberry Pi controls the relays, which in turn
-controls all of the lights. The Pi controls each of the 24 channels of relays via the GPIO pins that it has.
-
 
 ### What kind of software do you use?
-
-#### Xlights
-
-The music and light sequences are timed together using Xlights. This software is open source
-and runs on most operating systems, including Windows, Linux, and Mac. You can download the latest
-release <a href="https://github.com/smeighan/xLights" target="_blank">from the repository</a>.
-
-For assistance with configuring or issues with xLights, you can post in the
-<a href="https://www.facebook.com/groups/xLights" target="_blank">Official xLights Support Group</a>.
 
 #### Falcon Pi Player (FPP)
 
@@ -227,6 +218,15 @@ project by visiting the [project page](/projects/falcon-pi-twitter).
 Kdenlive is a video editing tool. It can also be used to modify audio files. The show intro audio file was
 modified with Kdenlive to have the voice over and background music on the same track. You can download
 the latest version from <a href="https://kdenlive.org/" target="_blank">its website</a>.
+
+#### Xlights
+
+The music and light sequences are timed together using Xlights. This software is open source
+and runs on most operating systems, including Windows, Linux, and Mac. You can download the latest
+release <a href="https://github.com/smeighan/xLights" target="_blank">from the repository</a>.
+
+For assistance with configuring or issues with xLights, you can post in the
+<a href="https://www.facebook.com/groups/xLights" target="_blank">Official xLights Support Group</a>.
 
 ### Song updates are posted to Twitter. How does that work?
 

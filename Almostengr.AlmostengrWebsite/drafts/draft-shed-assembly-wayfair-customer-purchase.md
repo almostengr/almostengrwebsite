@@ -1,1 +1,0 @@
-https://www.handy.com/pr/KENNETH0645

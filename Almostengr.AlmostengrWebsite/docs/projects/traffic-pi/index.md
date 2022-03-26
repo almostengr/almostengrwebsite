@@ -65,7 +65,7 @@ getting an actual traffic light.
 
 ## Installation and Setup
 
-### Install Raspberry Pi OS
+### Install Raspberry Pi Operating System (OS)
 
 You will need to install Raspberry Pi OS on your SD. Once you have completed this install,
 Then you can insert the SD card into the Raspberry Pi and power it on.

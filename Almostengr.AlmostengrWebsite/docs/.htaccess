@@ -9,11 +9,11 @@ Redirect 301 /archive/(.*) /
 Redirect 301 /category/(.*) /
 Redirect 301 /events/(.*) /
 Redirect 301 /keywords/(.*) /
-Redirect 301 /latest-articles /
+Redirect 301 /latest-articles /technology
 Redirect 301 /taxonomy/(.*) /
 Redirect 301 /recent-posts /technology
 
-Redirect 301 /contact-me /contact
+Redirect 301 /contact-me /about
 Redirect 301 /7-reasons-i-can-do-without-app /lifestyle/2019.06.16-7-reasons-i-can-do-that-without-the-app
 Redirect 301 /change-air-filter-2013-2018-5th-generation-nissan-altima /handyman/2018.10.27-change-air-filter-on-2013-2018-5th-generation-nissan-altima
 Redirect 301 /configure-etckeeper-gitlab /technology/2018.05.15-configure-etckeeper-with-gitlab

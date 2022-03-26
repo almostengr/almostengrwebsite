@@ -27,20 +27,12 @@ theme:
     - scheme: default
       primary: black
       accent: red
-  # favicon: /images/favicon-32x32.png
   features:
     - navigation.tabs
     - navigation.tabs.sticky
-    - navigation.indexes
     - toc.integrate
     - navigation.top
-    # - navigation.expand
     - navigation.tracking
-
-  # courses:
-  #   - url: https://www.youtube.com/watch?v=iujOWWbiUP0&list=PLaAJ0fv0d9WM8E2K_Ke5As-fw626yQ3tu
-  #     body: Learning the basics of Drupal 8 is easy. Watch the free course now!
-  #     title: Drupal 8 Course
 
 use_directory_urls: true
 strict: false

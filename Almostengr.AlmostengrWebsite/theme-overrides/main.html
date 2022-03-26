@@ -82,13 +82,13 @@
 
 {{ page.content }}
 
-{% if page.url == "technology/" or page.url == "lifestyle/" %}
+{% if page.url == "technology/" or page.url == "lifestyle/" or page.url == "courses/" %}
 {% for nav_item in nav %}
 {% if nav_item.children and page %}
 {% for nav_item in nav_item.children | reverse %}
 
 {% if page.url in nav_item.url and nav_item.url != "technology/links/" and nav_item.url != "technology/" and
-nav_item.url != "lifestyle/" %}
+nav_item.url != "lifestyle/" and nav_item.url != "courses/" %}
 <div>
   <h2><a href="/{{ nav_item.url }}">{{ nav_item.title }}</a></h2>
   <p>

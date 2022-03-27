@@ -1,10 +1,10 @@
 ---
 title: FAQ (Frequently Asked Questions)
 description: Frequently asked questions about this and other light shows.
+updated: 2022-03-25
 ---
 
 Here are the most common questions that are asked about the light show.
-
 
 ## Basics
 
@@ -51,6 +51,14 @@ I wanted to do something different for Christmas. Given that the COVID-19 (Coron
 during 2020, I had extra funds on hand since I was not doing much travelling during this time. I decided
 to leverage my Technology and Electrical Engineering skills and build a Christmas light show.
 
+### What does your HOA say about the show?
+
+I do not live in a neighborhood with an HOA. From what I have seen though, those that do live in neighborhoods
+with HOAs, when their show gains too much popularity or causes traffic issues, the HOA usually issue 
+"cease and desist letters" or threaten the owners with fines if they continue with their animated displays. 
+Thus they either stop doing their show or they move their show to another location that does not have an HOA 
+or do not have close neighbors.
+
 
 ## Money
 
@@ -94,20 +102,20 @@ E(kWh lights) = P(W) × t(hr) / 1000 = 130 Watts * 33.5 hours / 1000 = 4.355 kWh
 E(kWh controller) = P(W) × t(hr) / 1000 = 435 Watts * 168 hours / 1000 = 73.08 kWh
 ```
 
-The rate for electricity (in 2020) during the winter months (Oct-May) is $0.100511 per kWh.
+The rate for electricity (in 2020) during the winter months (Oct-May) is $0.100511 USD per kWh.
 
 ```text
-Cost for lights = 0.100511 * 4.355 kWh = 0.44
+Cost for lights = USD per kWh * kWh = 0.100511 USD per kWh * 4.355 kWh = 0.44 USD
 
-Cost for controller = 0.100511 * 73.08 kWh = 7.34
+Cost for controller = USD per kWh * kWh = 0.100511 USD per kWh * 73.08 kWh = 7.34 USD
 ```
 
 Since we have the cost for each group of components, we can compute the cost per week and per season.
 
 ```text
-Cost per week = $0.44 + $7.34 = $7.78
+Cost per week = $0.44 + $7.34 = $7.78 USD per week
 
-Cost per season (5 weeks) = $7.78 * 5 = $38.90
+Cost per season (5 weeks) = $7.78 USD per week * 5 weeks = $38.90 USD
 ```
 
 That means the maximum total cost of the show per week is $7.78 and cost for the season is $38.90.
@@ -151,28 +159,20 @@ Total = $332.59
 
 *All prices are listed in USD. Does not include taxes or shipping fees.*
 
- 
 
 ## Technology
 
 ### What kind of hardware do you use?
 
-#### Raspbery Pi
+#### 120 Volt Outlets
 
-The Falcon Pi Player is installed on the Raspberry Pi. The Rasberry Pi controls the relays, which in turn
-controls all of the lights. The Pi controls each of the 24 channels of relays via the GPIO pins that it has.
+Relays control the flow of power to the outlets. In turn, each outlet is mapped to a channel of lights and
+is connected to the 120 Volt lights that are used in the show.
 
 #### Christmas Lights
 
-All of the lights are LED. Only two colors are used for the light show, white and red.
-
-#### Solid State Relays
-
-All of the relays are Solid State Relays (SSR). SSRs were used because they have no mechanical or moving
-parts and having greater reliability for being switched on and off frequently.
-
-Mechanical relays heat up from switching on an off. When done repeatedly, like during a song, the relay can
-actually over heat and weld itself together.
+All of the lights are LED, 120 volt strings. Only two colors are used for the light show, white and red. 
+Lights used are the same ones that you can get at a big box retailer.
 
 #### FM Radio Transmitter
 
@@ -181,16 +181,29 @@ the Raspberry Pi and broadcasted on 90.3 FM. Radio Locator
 [mentioned below](/projects/christmas-light-show/faq#where-can-i-find-out-more-information-or-ask-questions)
 was used to locate the best frequency based on the area.
 
+#### GFCI (Ground Fault Circuit Interrupter)
+
+Because the lights are replaced outside in the weather elements, a GFCI outlet is used inside the control box. 
+This outlet provides protection to the entire box and if a fault is detected, will shut off the entire show.
+
+#### Raspberry Pi 3B+
+
+The Falcon Pi Player is installed on the Raspberry Pi. The Rasberry Pi controls the relays, which in turn
+controls all of the lights. The Pi controls each of the 24 channels of relays via the GPIO pins that it has.
+
+#### Solid State Relays
+
+All of the relays are Solid State Relays (SSR). SSRs are used because they have no mechanical or moving
+parts and having greater reliability for being switched on and off frequently.
+Each relay is protected from overcurrent by a 2 Amp fuse between the wall outlet and the relay.
+
+Mechanical relays heat up from switching on an off. When done repeatedly and rapidly, like during a song, 
+the relay can
+actually over heat and weld itself together. Once welded shut, the relay will no longer function and 
+will have to be replaced.
+
+
 ### What kind of software do you use?
-
-#### Xlights
-
-The music and light sequences are timed together using Xlights. This software is open source
-and runs on most operating systems, including Windows, Linux, and Mac. You can download the latest
-release <a href="https://github.com/smeighan/xLights" target="_blank">from the repository</a>.
-
-For assistance with configuring or issues with xLights, you can post in the
-<a href="https://www.facebook.com/groups/xLights" target="_blank">Official xLights Support Group</a>.
 
 #### Falcon Pi Player (FPP)
 
@@ -201,25 +214,37 @@ the latest release <a href="https://github.com/FalconChristmas/fpp" target="_bla
 For assistance with configuring or issues with Falcon Pi Player, you can post in the
 <a href="https://www.facebook.com/groups/FalconPlayer/" target="_blank">FPP, Falcon Player</a> group.
 
+#### Falcon Pi Twitter
+
+[Falcon Pi Twitter](/projects/falcon-pi-twitter)
+is a custom .NET Core application written in C#. The application serves as a bridge
+between the Falcon Pi Player and Twitter. As the show plays, the song information is pulled from the
+Falcon Pi Player and then posted as a tweet on Twitter. 
+This custom application was created to read the show and song data from Falcon Pi Player and post it 
+as a tweet on Twitter. When a show is not running, it posts tweets with the remaining time until 
+Christmas day. 
+You can find out more information about this
+project by visiting the [project page](/projects/falcon-pi-twitter).
+
 #### Kdenlive
 
 Kdenlive is a video editing tool. It can also be used to modify audio files. The show intro audio file was
 modified with Kdenlive to have the voice over and background music on the same track. You can download
 the latest version from <a href="https://kdenlive.org/" target="_blank">its website</a>.
 
-#### Falcon Pi Twitter
+#### Xlights
 
-[Falcon Pi Twitter](/projects/falcon-pi-twitter)
-is a custom .NET Core application written in C#. The application serves as a bridge
-between the Falcon Pi Player and Twitter. As the show plays, the song information is pulled from the
-Falcon Pi Player and then posted as a tweet on Twitter. You can find out more information about this
-project by visiting the [project page](/projects/falcon-pi-twitter).
+The music and light sequences are timed together using Xlights. This software is open source
+and runs on most operating systems, including Windows, Linux, and Mac. You can download the latest
+release <a href="https://github.com/smeighan/xLights" target="_blank">from the repository</a>.
+
+For assistance with configuring or issues with xLights, you can post in the
+<a href="https://www.facebook.com/groups/xLights" target="_blank">Official xLights Support Group</a>.
 
 ### Song updates are posted to Twitter. How does that work?
 
 See the [Falcon Pi Twitter](/projects/falcon-pi-twitter) page for more information about
 that project.
-
  
 ### What is the legality of using an FM transmitter for light shows?
 
@@ -231,7 +256,7 @@ online research regarding the matter, it breaks down to following these guidelin
 This will get 
 you in immediate trouble as those who listen to the licensed station will report the interference. If an 
 investigation is done and you are caught, you will be in hot water with the FCC and subject to fines 
-and/or imprisonment.
+and imprisonment.
 
 #### Don't broadcast further than necessary
 
@@ -245,6 +270,20 @@ amplification of your signal or position your antenna so that the signal does no
 
 It does not make sense to leave a light on in 
 a room with nobody in it. The same goes for your FM transmitter. When it is not being used, turn it off.
+
+### How do you store backups of the show files and music?
+
+Backups are done automatically using Shell Scripts that run periodically via Cron Jobs. The same scripts 
+are done for both the Xlights directory files on the computer and the Falcon Pi Player files on the 
+Raspberry Pi. 
+What the shell script does is commits the files that have changed in the specified location, commits 
+those files to a git repository, and then pushes the latest commit to Github. 
+
+If a previous version
+of a file needs to be restored, a checkout of a previous commit can be done to restore that file to a 
+previous state. I provide the steps to set up automatic backup of your Falcon Pi Player in a 
+<a href="https://www.youtube.com/watch?v=l-xUcvMyn2Q" target='_blank'>YouTube video I created</a>.
+
 
 ## Resources
 
@@ -262,4 +301,3 @@ previously mentioned.
 * <a href="https://www.facebook.com/groups/628061113896314" target="_blank">Official Xlights Support Group</a> (Facebook Group)
 * <a href="https://ttstool.com" target="_blank">TTS Tool</a>, for text to speech recordings
 * <a href="https://www.facebook.com/groups/351083649266539/" target="_blank">Xlights Wireless Support Group</a> (Facebook Group)
-

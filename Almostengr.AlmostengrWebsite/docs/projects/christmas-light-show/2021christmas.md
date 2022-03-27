@@ -44,6 +44,10 @@ Songs featured in the 2021 Light Show are:
 * Uptown Funk - Mark Ronson
 * What You Want for Christmas - 69 Boyz featuring Quad City DJs and K-nock
 
+You may 
+<a href="https://www.youtube.com/watch?v=sbbEQJ80q0I&list=PLaAJ0fv0d9WM96AeA_ERG7BR3zKr75r45" target="_blank">watch videos</a>
+from the 2021 Christmas Light Show on YouTube.
+
 ## Twitter Feed
 
 <a class="twitter-timeline" data-lang="en" data-height="500" data-theme="dark"
@@ -74,8 +78,6 @@ scenes looks, visit one of the pages listed below.
 * [Falcon Pi Twitter](/projects/falcon-pi-twitter) which reads the song data from FPP and posts it to Twitter
 * [2020 Christmas Light Show Details](/projects/christmas-light-show/2020christmas)
 * <a href="https://www.youtube.com/watch?v=5sm_wmnRPDs" target="_blank">Behind The Scenes of the 2020 Christmas Light Show</a>
-* [Building A Christmas Light Show Control Box (Presentation 2020-12-20)](/projects/christmas-light-show/presentation20201220)
 * [2019 Christmas Light Show Details](/projects/christmas-light-show/2019christmas)
 * [FAQs (Frequently Asked Questions)](/projects/christmas-light-show/faq)
-
-
+* <a href="https://www.youtube.com/watch?v=sbbEQJ80q0I&list=PLaAJ0fv0d9WM96AeA_ERG7BR3zKr75r45" target="_blank">Watch 2021 Light Show</a>

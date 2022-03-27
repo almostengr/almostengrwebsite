@@ -42,10 +42,10 @@ Songs for this year have not been decided at this time.
 
 ## Fun Facts
 
-* 19 channels
+* 22 channels
 * 3520 LED lights
 * 1 15-Amp Circuit
-* 3 8-channel Relay Boards
+* 3 8-channel Solid State Relay Boards
 * 1 Raspberry Pi 3B+
 * Numerous hours of programming
 * Over 200 Feet of extension cords
@@ -60,7 +60,4 @@ scenes looks, visit one of the pages listed below.
 * [2021 Christmas Light Show Details](/projects/christmas-light-show/2021christmas)
 * [2020 Christmas Light Show Details](/projects/christmas-light-show/2020christmas)
 * <a href="https://youtu.be/sbbEQJ80q0I" target="_blank">Behind The Scenes of the 2021 Christmas Light Show</a>
-* [Building A Christmas Light Show Control Box (Presentation 2020-12-20)](/projects/christmas-light-show/presentation20201220)
 * [FAQs (Frequently Asked Questions)](/projects/christmas-light-show/faq)
-
-

@@ -116,6 +116,16 @@ to get the light without the controller as I was going to build my own using the
 The source code for this project is available on GitHub at
 <a href="https://github.com/almostengr/trafficpi" target="_blank">https://github.com/almostengr/trafficpi</a>.
 
+### Is the traffic light heavy?
+
+This one is made from plastic and weighs 25 pounds. Metal traffic lights weigh between 50 and 75 pounds.
+
+### How big is the traffic light?
+
+Traffic lights come in two common sizes. 12 inch (30.48 centimeters) and 8 inch (20.32 centimeters). 
+This is a 12 inch traffic light. It is about 14 inches wide and about 38 inches tall (with the base 
+attached). 
+
 ----
 ----
 
@@ -145,14 +155,10 @@ breadboard with LEDs connected.
 
 Pi Pin (Board) | GPIO | Device Connection
 -- |  | -
-2 | -- | LCD Display VCC (+5V)
-3 | -- | LCD Display SDA
 4 | -- | Relay Board VCC (+5V)
-5 | -- | LCD Display SLC
 19 | 11 | Red Signal
 21 | 9 | Yellow Signal
 23 | 10 | Green Signal
-30 | -- | LCD Display GND
 34 | -- | Relay Board GND
 
 #### Visual of Pin Connections to Relay Board

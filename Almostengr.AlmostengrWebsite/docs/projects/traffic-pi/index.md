@@ -116,6 +116,8 @@ to get the light without the controller as I was going to build my own using the
 The source code for this project is available on GitHub at
 <a href="https://github.com/almostengr/trafficpi" target="_blank">https://github.com/almostengr/trafficpi</a>.
 
+----
+----
 
 ## Technical Information
 

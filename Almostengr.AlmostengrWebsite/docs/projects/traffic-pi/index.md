@@ -1,7 +1,7 @@
 ---
 title: Raspberry Pi Traffic Light Controller (TrafficPi)
 description: Project build using a Raspberry Pi to control a retired traffic light.
-updated: 2022-03-27
+updated: 2022-03-28
 ---
 
 ![Traffic light](/images/portfolio_trafficlight2.jpg)
@@ -35,7 +35,6 @@ and turn off each light as well as include a delay in between each light change.
 ![Image of Versioning](/images/versioning.jpg)
 
 
-
 ## Parts List
 
 Below are the list of parts used for this project. You'll need to choose one of
@@ -62,6 +61,70 @@ getting an actual traffic light.
 * <a href="https://www.amazon.com/gp/product/B00KTEN3TM/ref=as_li_tl?ie=UTF8&tag=rhtservicesll-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B00KTEN3TM&linkId=581b0fc60dcc9f3ddc5645b8eb20029a" target="_blank">Relay board(s) with at least 3 channels</a>
 * Traffic Light
 
+
+## Video Demonstration
+
+Video demonstration of version 1.0 of the project is available to be watched at
+<a href="https://www.youtube.com/watch?v=lr_ZJNX0viM" target="_blank">https://www.youtube.com/watch?v=lr_ZJNX0viM</a>.
+This version of the demonstration of the traffic light working
+with an LCD screen connected.
+
+Further discussion of the traffic light code can be watched at 
+[https://www.youtube.com/watch?v=ZyBnWOX3wGE](https://www.youtube.com/watch?v=ZyBnWOX3wGE).
+
+
+## Controller Technology
+
+The controller currently uses .NET 5. It is divided into two projects.
+
+### User Interface (UI) / Front End
+
+The user interface is a .NET MVC application. When you select the program that you want to run
+from the application home page, the application then runs a linux command that runs the back
+end program.
+When the program is changed on the front end, the back end program is then terminated and the newly
+select program is started.
+
+### Relay Control / Back End
+
+The back end of the application is a .NET Worker Service. The program modes are defined within
+this worker service. The worker service will continue running until it is terminated by the front end
+application or by a user via the command line or SSH.
+
+
+## Acknowledgements
+
+* LCD Display code for controlling the LCD display were provided from
+<a href="https://github.com/the-raspberry-pi-guy/lcd" target="_blank">https://github.com/the-raspberry-pi-guy/lcd</a>.
+* Attempts to replicate the Traffic Light Simulation created by Samuel Vidal
+seen at
+<a href="https://www.youtube.com/watch?v=xqZRDtX64UA" target="_blank">https://www.youtube.com/watch?v=xqZRDtX64UA</a>
+influenced this project.
+* Wifi AP configuration steps provided by
+<a href="https://pimylifeup.com/raspberry-pi-wireless-access-point/"
+target="_blank">https://pimylifeup.com/raspberry-pi-wireless-access-point/</a>
+
+
+## Frequently Asked Questions (FAQs) 
+
+### Where did you get the traffic light from? 
+
+Ebay. Found a seller that ran a salvage company that was selling it in 2018. The item that he 
+had listed, included a controller, but the controller only had like 5 programs. I opted 
+to get the light without the controller as I was going to build my own using the Raspberry Pi.
+
+### Will you share the source code for the application?
+
+The source code for this project can be downloaded from GitHub at
+<a href="https://github.com/almostengr/trafficpi" target="_blank">
+https://github.com/almostengr/trafficpi</a>.
+
+
+## Technical Information
+
+The sections below this one, get into the technical details of the project. Those that are interested
+in setting up their own traffic light with a Raspberry Pi using the code that I have built, can 
+follow the instructions below.
 
 
 ## Installation and Setup
@@ -127,46 +190,6 @@ cd trafficpi
 To exit the application after running it via command line, press Ctrl+C.
 
 
-
-## Video Demonstration
-
-Video demonstration of version 1.0 of the project is available to be watched at
-<a href="https://www.youtube.com/watch?v=lr_ZJNX0viM" target="_blank">https://www.youtube.com/watch?v=lr_ZJNX0viM</a>.
-This version of the demonstration of the traffic light working
-with an LCD screen connected.
-
-Further discussion of the traffic light code can be watched at 
-[https://www.youtube.com/watch?v=ZyBnWOX3wGE](https://www.youtube.com/watch?v=ZyBnWOX3wGE).
-
-
-
-## Controller Technology
-
-The controller currently uses .NET Core 3.1. Tt is a multi-project application.
-
-### User Interface (UI) / Front End
-
-The user interface is a .NET Core MVC application. When you select the program that you want to run
-from the application home page, the application then runs a linux command that runs the back
-end program.
-
-When the program is changed on the front end, the back end program is then terminated and the newly
-select program is started.
-
-### Relay Control / Back End
-
-The back end of the application is a .NET Core Worker Service. The program modes are defined within
-this worker service. The worker service will continue running until it is terminated by the front end
-application or by a user via the command line or SSH.
-
-### Source Code
-
-The source code for this project can be downloaded from GitHub at
-<a href="https://github.com/almostengr/trafficpi" target="_blank">
-https://github.com/almostengr/trafficpi</a>.
-
-
-
 ## Uninstall Traffic Pi
 
 ### Remove System Service
@@ -192,20 +215,6 @@ rm -rf trafficpi
 
 
 
-## Acknowledgements
-
-* LCD Display code for controlling the LCD display were provided from
-<a href="https://github.com/the-raspberry-pi-guy/lcd" target="_blank">https://github.com/the-raspberry-pi-guy/lcd</a>.
-* Attempts to replicate the Traffic Light Simulation created by Samuel Vidal
-seen at
-<a href="https://www.youtube.com/watch?v=xqZRDtX64UA" target="_blank">https://www.youtube.com/watch?v=xqZRDtX64UA</a>
-influenced this project.
-* Wifi AP configuration steps provided by
-<a href="https://pimylifeup.com/raspberry-pi-wireless-access-point/"
-target="_blank">https://pimylifeup.com/raspberry-pi-wireless-access-point/</a>
-
-
-
 ## Troubleshooting 
 
 ### System Service Output / Log
@@ -223,5 +232,3 @@ journalctl -u almostengrtrafficpiweb.service -b -f
 ```
 
 If an error occurs in the application, the exception message will show here.
-
-

@@ -107,7 +107,7 @@ target="_blank">https://pimylifeup.com/raspberry-pi-wireless-access-point/</a>
 
 ### Where did you get the traffic light from? 
 
-Ebay. Found a seller that ran a salvage company that was selling it in 2018. The item that he 
+Ebay. Found a seller that own a salvage company that was selling it in 2018. The item that he 
 had listed, included a controller, but the controller only had like 5 programs. I opted 
 to get the light without the controller as I was going to build my own using the Raspberry Pi.
 
@@ -122,7 +122,7 @@ This one is made from plastic and weighs 25 pounds. Metal traffic lights weigh b
 
 ### How big is the traffic light?
 
-Traffic lights come in two common sizes. 12 inch (30.48 centimeters) and 8 inch (20.32 centimeters). 
+Traffic lights come in two common sizes, 12 inch (30.48 centimeters) and 8 inch (20.32 centimeters). 
 This is a 12 inch traffic light. It is about 14 inches wide and about 38 inches tall (with the base 
 attached). 
 

@@ -1,6 +1,7 @@
 ---
 title: Raspberry Pi Traffic Light Controller (TrafficPi)
 description: Project build using a Raspberry Pi to control a retired traffic light.
+updated: 2022-03-27
 ---
 
 ![Traffic light](/images/portfolio_trafficlight2.jpg)

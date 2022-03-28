@@ -18,8 +18,6 @@ society. This project targets the "T, E, and M" of "STEM" by using electronic ci
 for controlling the lights, software for controlling the electronic circuits, and
 mathematical calculations for making timing decisions.
 
-### Teach Software Versioning
-
 One of the goals of this project is to be able to teach the next generation of
 engineers about the programming, software versioning, and how valuable engineers and
 technologists are to society and the impact that they have.
@@ -115,9 +113,8 @@ to get the light without the controller as I was going to build my own using the
 
 ### Will you share the source code for the application?
 
-The source code for this project can be downloaded from GitHub at
-<a href="https://github.com/almostengr/trafficpi" target="_blank">
-https://github.com/almostengr/trafficpi</a>.
+The source code for this project is available on GitHub at
+<a href="https://github.com/almostengr/trafficpi" target="_blank">https://github.com/almostengr/trafficpi</a>.
 
 
 ## Technical Information

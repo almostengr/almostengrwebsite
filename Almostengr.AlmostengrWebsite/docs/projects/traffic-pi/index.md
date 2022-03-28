@@ -114,14 +114,10 @@ For example, if you look a wiring harness on a car, you will notice that it has 
 bundled together. Each of those wires has a purpose. The vehicle manufacturers create a document, often
 referred to as a service manual, that lists each of the colors of the wire in the harness and their purpose.
 
-#### AC Circuits Wire Color
-
 With an AC circuit, there are commonly 3 wires. Black, white, and bare copper or green.
 Black wire in AC circuit represents the "hot" or supply voltage.
 White wire in AC Circuit represents the neutral.
 Green or bare copper wire in AC Circuit represents the ground.
-
-#### DC Circuits Wire Color
 
 With a DC Circuit, there are two wires. Red and black.
 Red wire in DC circuit represents the positive. This is the voltage that comes from the power source.
@@ -129,17 +125,12 @@ Black wire in DC circuits represents the negative. This is the voltage that goes
 
 ### AC vs DC
 
-#### Alternating Current (AC)
-
 The current in an AC
 system alternates between the hot and neutral wires. The frequency at which this occurs varies. In
 North America (including the United States), the alternation takes place at 60 Hertz (Hz) or 60 times per second.
 In other parts of the world, this alternation takes place at 50 Hz per second.
-
 AC circuits are commonly used for items that require a lot of power to operate. These include large motors,
 like the ones used in AC refrigeration and industrial machines.
-
-#### Direct Current (DC)
 
 DC circuits are commonly used for battery powered systems, electronics, and other devices
 that do not require a lot of power to operate. If a device, such as a cell phone or streaming player, 

@@ -247,6 +247,7 @@ Pi Pin (Board) | GPIO | Device Connection
 21 | 9 | Yellow Signal
 23 | 10 | Green Signal
 34 | -- | Relay Board GND
+15 | 22 | Button (Car Sensor)
 
 #### Visual of Pin Connections to Relay Board
 

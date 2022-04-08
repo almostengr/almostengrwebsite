@@ -129,6 +129,13 @@ graphical interface because the GUI takes up additional system resources that co
 database, firewall, or something else. In addition, by not having the GUI available, it will force you to 
 learn how to do things only using the terminal or command line.
 
+### I hate using vi or vim. I prefer nano or gedit.
+
+I always tell people that while vi or vim can be difficult to use, every Linux and Unix based system that I have 
+used either had vi or vim. All of them did not have nano or gedit or any other text editing program. While you 
+can have your favorite, having basic knowledge of how to edit a text file in vi or vim will allow you edit files 
+on any Linux based system even if your favorite editor is not available.
+
 ## Programming 
 
 ### What programming language should I learn first? 

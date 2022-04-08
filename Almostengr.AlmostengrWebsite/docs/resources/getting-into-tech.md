@@ -77,15 +77,24 @@ work to suffer or you to miss deadlines.
 
 #### Suggestions
 
-* Have a dedicated work space. When you "clock out" for the day, leave that work space and power off your computer.
+* Have a dedicated work space (e.g. home office). When you "clock out" for the day, leave that work space and power off your computer.
 * Take walks or exercise outside when weather permits. Lack of sunlight is known to contribute to depression and Vitamin D deficiency.
 * Do not work in the same clothes that you sleep in. This is easy to do, especially if your company culture 
 is to not turn on cameras in meetings, but refrain from doing this as mentally it blurs the lines between 
 work and non-work times.
 * Let other members of your household know that when you are in your work space, to keep interruptions 
 to a minimum.
-* If you get to a point where always being 
-at home is having a negative impact physically or mentally, then seek help or find a role that requires you to leave home.
+* If you get to a point where always being at home is having a negative impact physically or mentally, 
+then seek professional help or find a role that requires you to leave the home.
+
+### I want to get into tech, but have prior convictions. What can I do?
+
+<a href="https://underdogdevs.org/" target="_blank">Underdog Devs</a> 
+is a program that is designed for those 
+who have prior convictions or come from disadvantaged backgrounds and are trying to get into tech. You are 
+partnered with a mentor and given tasks to complete each week. I know someone personally that signed up 
+for this program and he said that it has helped him a lot, in particular with his confidence with him 
+getting a job in tech and motivated him to work on his tech skills.
 
 ## Certifications
 
@@ -123,6 +132,16 @@ the company a profit.
 Yes, if they are relevant to the work to the job that you have or want to have. Your food handler certification 
 is irrelevant to being a network engineer, thus would not make sense to list this on your resume or LinkedIn.
 
+### I don't have the money to spend on a certification or practice materials? What should I do?
+
+Consider the money that you spend on getting a certification as an investment on yourself. That being said, 
+do not go cheap on yourself. Any investment that you make in yourself, will get you better opportunities if 
+done correctly.
+
+Depending on which certification that you are going for, sometimes there are vouchers available that will reduce 
+or eliminate the cost of the exam and/or study materials. Check with the certificate issuer about any 
+vouchers or other offers they have to reduce the expenditure for taking the certification exams.
+
 ## Degrees
 
 ### Do I need to have a Computer Science or tech degree to get into tech? 
@@ -148,6 +167,8 @@ require that you present information (e.g. project progress, design features, qu
 product owner or customer. 
 * Individual has a Nursing degree (Bachelors). I suggested that the individual consider working as a technician  
 repairing and maintaining medical equipment (e.g. heart monitors, blood pressure machines, MRI machine, etc). 
+Also suggested that this individual consider working for an MSP (Managed Service Provider) that contracts or 
+provides services to hospitals. 
 Having a medical background would give them an advantage because they know how those machines should work and 
 would only have to learn the technical aspect of the machines. In addition, having previously worked in a
 hospital environment, they would already be familiar with hospital procedures and protocols. 

@@ -23,7 +23,7 @@ via Github.
 ## Categories
 
 * [Black In Tech](#black-in-tech)
-* [Get Into Tech](/resources/get-into-tech)
+* [Getting Into Tech](/resources/get-into-tech)
 * [Git Cheatsheet](/resources/git-cheatsheet)
 * [Linux](#linux)
 * [Linux Cheatsheet](/resources/linux-cheatsheet)

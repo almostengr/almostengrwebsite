@@ -35,15 +35,26 @@ is most relevant to the information you would like to know.
 Tech is a big, wide industry. Like big as the ocean wide.
 There are so many different types of roles and way to get into tech, that there is no one answer to this 
 question. My suggestion is that you look to see what interests you the most. 
-Then from there, you narrow those down, look at YouTubers that do that line of work and find people on LinkedIn
-about the work that they do. From that point, you can then narrow your list down further to one option. 
-Once you have that final option, then you can find online resources (online courses, YouTube series), 
-books, conference workshops, and groups that relate to the work that you are interested in.
+Once you have narrowed those down, watch YouTubers or discuss with individuals on LinkedIn or Twitter 
+that do that work and what their typical work day is like.
+From that point, you can then narrow your list down further to one option. 
+Once you have that final option, find online resources (online courses, YouTube series), 
+books, conferences, workshops, and groups that relate to the work that you are interested in and be an 
+active participant in each of those.
+
+### I heard that you can make a lot of money in tech. I want...
+
+Stop right there. If you are trying to get into tech solely for the money and not because you have a
+passion, it will show through your habits and lack of knowledge, and nobody will hire you. Find a part 
+of tech that you can be passionate about and then go from there. When you are passionate about what you 
+do, the money will follow and you will not have to chase it. See the question below for 
+a longer explaination.
 
 ### What's the fastest way to get a job in tech?
 
 Anytime someone asks this question or similar, it is clearly obvious that they have no real interest in tech 
-and are only trying to get in for the money. That being said, I tell people up front that if you are 
+and are only trying to get in for the money. See the question above.
+That being said, I tell people up front that if you are 
 wanting to get into tech solely for the money and not because you have a passion for it, you will easily be 
 found out and will not get hired. Having sat on the interviewer's side of the desk, these type of people are 
 relatively easy to identify as they all have similar patterns or attributes. What are those patterns? 
@@ -51,7 +62,9 @@ relatively easy to identify as they all have similar patterns or attributes. Wha
 * They are more concerned about how much money they will be paid and not really interested in the job duties.
 * They do not have deep knowledge about the area of tech that they want to get into.
 * They fail at technical interviews (e.g. unable to answer basic questions relating to databases, or the 
-difference between an int an double)
+difference between an int an double).
+
+Once an intervier sniffs these things out about you, you'll get rejected and resume placed in the archive.
 
 ### I want a work from home (WFH) role.
 
@@ -163,6 +176,21 @@ done correctly.
 Depending on which certification that you are going for, sometimes there are vouchers available that will reduce 
 or eliminate the cost of the exam and/or study materials. Check with the certificate issuer about any 
 vouchers or other offers they have to reduce the expenditure for taking the certification exams.
+
+### I have Google and AWS (or other multiple non-related) certifications and cannot get a job. Why is this?
+
+As an interviewer explained to me once... you have a lot of in a lot of areas. You will have greater success 
+if you specialize in a few areas than trying to know it all. 
+
+In other words, if you have several certifications in AWS and none in Google or Azure, then you will 
+be better qualified for and more likely to get hired for an AWS role, because you would be considered
+as a specialist in AWS.
+
+For example, you have an issue with your car. Would you take to the mechanic that also is a paralegal 
+or would you take it to the mechanic that works at two different car dealerships? It is obvious that you 
+would take it to the latter because s/he has more experience with cars than the former. The same applies 
+when it comes to tech. Specialize in one technology stack and you will have a greater chance 
+of getting opportunities that you apply for.
 
 ## Degrees
 

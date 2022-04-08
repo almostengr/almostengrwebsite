@@ -96,6 +96,28 @@ partnered with a mentor and given tasks to complete each week. I know someone pe
 for this program and he said that it has helped him a lot, in particular with his confidence with him 
 getting a job in tech and motivated him to work on his tech skills.
 
+### Is it more important to have a experience, degree, or certification?
+
+Experience is far more important than a degree or certification. Having experience in a particular field 
+will get you hired more than a degree or certification will. Reason being is that if you have the 
+experience in the field, then the company will spend less in training you on their particular systems, 
+thus you become an asset to them sooner than later. 
+
+Speaking from personal experience, I was not the best college student academically. "Cs get degrees" is 
+what I jokingly say when it comes to my collegiate career. By having experience in tech, in particular
+before graduating college, overshadowed the fact that my GPA was below the ideal level, yet I was 
+still able to get the job upon graduation.
+
+While in college, one of my professors explained that if he had to choose between two candidates, 
+one that had a 3.0 GPA and 1 year of work experience and one that a 4.0 GPA and no work experience, 
+that he would hire the 3.0 candidate. His reasons for this were
+
+* 3.0 student has experience and therefore has had the opportunity to apply the knowledge they have learned to real situations
+* 3.0 student has made some mistakes (because their GPA isn't perfect) and those mistakes have become learning experiences
+* 4.0 student is book smart, but has not demostrated what they have learned and applied it accordingly
+* 4.0 student probably does not have a social life and may be difficult to work with in team environments; 
+whereas the 3.0 student probably has failed a test or two because they chose to socialize over studying
+
 ## Certifications
 
 ### I don't have a degree. Can I get into tech with only certifications?

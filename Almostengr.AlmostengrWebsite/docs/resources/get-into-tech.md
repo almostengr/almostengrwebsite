@@ -21,7 +21,8 @@ Information provided here is broken down into categories. Click the category bel
 are most relevant to the information you would like to know.
 
 ### [General](#general)
-### [Degrees and Certifications](#degrees-and-certiifcations)
+### [Certifications](#certifications)
+### [Degrees](#degrees)
 ### [Programming](#programming)
 
 ## General
@@ -81,6 +82,21 @@ the interviewer side of the desk, the reason that degrees are required, but not 
 is because a degree is proof that you have a certain level of compentencies to be able to do the job. In 
 addition, those with degrees, regardless of the level of degree, are considered to be more mature, less likely 
 to commit crime, and are more established than those who are not.
+
+### I have a degree in a non-tech subject. How can I get a tech job?
+
+This depends on what your degree is in. I have listed some examples below of people that have asked this question
+and the positions that I thought would be best where they could use their existing degree but work in tech.
+
+* Individual has a Communications degrees (Bachelors and Masters). I suggested to her was to look into 
+Business Analyst or Project Management roles. Reason being is both of these roles are usually customer facing and 
+require that you present information (e.g. project progress, design features, questions from developers) to the 
+product owner or customer. 
+* Individual has a Nursing degree (Bachelors). I suggested that the individual consider working as a technican 
+repairing and maintaining medical equipment (e.g. heart monitors, blood pressure machines, MRI machine, etc). 
+Having a medical background would give them an advantage because they know how those machines should work and 
+would only have to learn the technical aspect of the machines. In addition, having previously worked in a
+hospital environment, they would already be familar with hospital procedures and protocols. 
 
 ## Programming 
 

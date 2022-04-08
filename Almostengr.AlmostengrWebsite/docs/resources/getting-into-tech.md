@@ -60,18 +60,21 @@ difference between an int an double)
 While work from home roles sprung up a lot more during the COVID-19 Pandemic, working from home can be 
 worse for some people. Below are my pros, cons, and suggestions for working from home:
 
-Pros
+#### Pros
 
 * Save money on gas, car maintenance by not having a commute
 * Do not have to spend money on work-specific clothes
+* Gives you more time to do other things because you are not sitting in traffic
+* Allows your kids to remain a home during the day instead of sending them off to daycare, thus saving money
 
-Cons
+#### Cons
 
-* Extroverts can become depressed due to the lack of social interaction, especially if they live alone
-* More distractions (e.g. kids crying, tv on, making dinner, midday naps) can cause your work to suffer or 
-you miss deadlines
+* Extroverts can become depressed due to the lack of social interaction, especially if they live alone.
+* More distractions (e.g. kids crying, tv on, making dinner, convenience for midday naps) can cause your
+work to suffer or you to miss deadlines.
+* Increased electrical usage. Since you are home more, your utilities are more than likely to go up.
 
-Suggestions
+#### Suggestions
 
 * Have a dedicated work space. When you "clock out" for the day, leave that work space and power off your computer.
 * Do not work in the same clothes that you sleep in. This is easy to do, especially if your company culture 

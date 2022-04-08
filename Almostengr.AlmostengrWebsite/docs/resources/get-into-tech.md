@@ -61,13 +61,24 @@ the knowledge that was on that exam into practice. If you cannot, then you will 
 Read the [previous question](#do-i-need-to-have-a-computer-science-or-tech-degree-to-get-into-tech) for 
 further explaination.
 
-### Which cloud certifications should I get?
+### Which cloud certification(s) should I get?
 
 That will vary. The certifications offered by the big three (AWS, Google Cloud, Microsft Azure) are all similar in nature, but 
 specific to their particular implementation. What I tell people is, if you already have a job and your employer
 has stuff in the cloud, then get the certification with whatever cloud provider(s) that they are using. If you 
 do not have a job in tech, then find an employer that you want to work for, see what cloud technologies that they 
 are using, and then get the certifications for that cloud provider.
+
+### I have a certification(s) but I am not getting job offers or interviews. What can I do?
+
+If you have a certification and do not have experience or have knowledge of IT concepts and best practices, 
+then you will not get hired. The lack of these things are often evident based on your resume or based on
+how well (or bad) you answer technical questions in an interview. One thing that I always tell people is that 
+people who have experience, both on the job and personal projects, will get hired before those that do not 
+have any experience. The reason is that if you have expeirence, then that demostrates and validates to the 
+interviewer that you know what you are talking about. Companies are less likely to hire people that they 
+will have to train, because training people does not add value to the company nor does it help make 
+the company a profit.
 
 ## Degrees
 

@@ -86,7 +86,7 @@ to commit crime, and are more established than those who are not.
 ### I have a degree in a non-tech subject. How can I get a tech job?
 
 This depends on what your degree is in. I have listed some examples below of people that have asked this question
-and the positions that I thought would be best where they could use their existing degree but work in tech.
+and the positions that I thought would be best where they get a job in tech and leverage their existing degree.
 
 * Individual has a Communications degrees (Bachelors and Masters). I suggested to her was to look into 
 Business Analyst or Project Management roles. Reason being is both of these roles are usually customer facing and 

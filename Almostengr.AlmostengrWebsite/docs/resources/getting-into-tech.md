@@ -113,17 +113,18 @@ hospital environment, they would already be familiar with hospital procedures an
 
 ## Linux
 
-### There are multiple versions of Linux like Red Hat, Ubuntu, and Fedora. Which one should I pick to learn with?
+### There are multiple distributions of Linux like Red Hat, Ubuntu, and Fedora. Which one should I pick to learn with?
 
 It does not matter, but do pick one that is free and not paid.
-Some versions of Linux, like Red Hat, require that you pay for them, simliar to how Microsoft requires that you 
-pay for a Windows OS license. I do not recommend paying for any version of Linux that you will be practicing with. 
-Majority of Linux versions, do not require that you pay for them and are open source.
+Some distributions of Linux, like Red Hat, require that you pay for them, simliar to how Microsoft requires that you 
+pay for a Windows OS license. I do not recommend paying for any distribution of Linux that you will be practicing with. 
+Majority of Linux distributions, do not require that you pay for them as they are open source.
 From my experience, Ubuntu is one of the easiest to install a on system or virtual machine.
 
-### I have installed a Linux VM and use the GUI (graphical user interface) to practice the terminal with.
+### I have installed a Linux VM (Virtual Machine) and use the GUI (graphical user interface) to practice with.
 
-You are doing it wrong. I suggest that you install the server edition of Linux which does not have a graphical 
+You are doing it wrong. I suggest that you install the server edition of Linux (does not matter what 
+distribution of Linux) which does not have a graphical 
 user interface (GUI). Reason being is that servers that are used by AWS and any enterprise, do not have a 
 graphical interface because the GUI takes up additional system resources that could be used by the application, 
 database, firewall, or something else. In addition, by not having the GUI available, it will force you to 
@@ -132,7 +133,7 @@ learn how to do things only using the terminal or command line.
 ### I hate using vi or vim. I prefer nano or gedit.
 
 I always tell people that while vi or vim can be difficult to use, every Linux and Unix based system that I have 
-used either had vi or vim. All of them did not have nano or gedit or any other text editing program. While you 
+used either had vi or vim. All of them **did not** have nano or gedit or any other text editing program. While you 
 can have your favorite, having basic knowledge of how to edit a text file in vi or vim will allow you edit files 
 on any Linux based system even if your favorite editor is not available.
 

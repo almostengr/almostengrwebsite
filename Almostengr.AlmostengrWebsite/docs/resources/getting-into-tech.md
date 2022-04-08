@@ -77,14 +77,14 @@ work to suffer or you to miss deadlines.
 #### Suggestions
 
 * Have a dedicated work space. When you "clock out" for the day, leave that work space and power off your computer.
+* Take walks or exercise outside when weather permits. Lack of sunlight is known to contribute to depression and Vitamin D deficiency.
 * Do not work in the same clothes that you sleep in. This is easy to do, especially if your company culture 
 is to not turn on cameras in meetings, but refrain from doing this as mentally it blurs the lines between 
 work and non-work times.
 * Let other members of your household know that when you are in your work space, to keep interruptions 
 to a minimum.
-
-Keep these things in mind when wanting a work from home role. If you get to a point where always being 
-at home is having a negative impact, the seek help or find a role that requires you to leave home.
+* If you get to a point where always being 
+at home is having a negative impact physically or mentally, then seek help or find a role that requires you to leave home.
 
 ## Certifications
 

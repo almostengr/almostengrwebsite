@@ -20,10 +20,10 @@ a question that is not answered here, you can reach out to me on
 Information provided here is broken down into categories. Click the category below to jump to the question that 
 are most relevant to the information you would like to know.
 
-[General](#general)
-[Certifications](#certifications)
-[Degrees](#degrees)
-[Programming](#programming)
+* [General](#general)
+* [Certifications](#certifications)
+* [Degrees](#degrees)
+* [Programming](#programming)
 
 ## General
 

@@ -100,7 +100,7 @@ to commit crime, and are more established than those who are not.
 This depends on what your degree is in. I have listed some examples below of people that have asked this question
 and the positions that I thought would be best where they get a job in tech and leverage their existing degree.
 
-* Individual has a Communications degrees (Bachelors and Masters). I suggested to her was to look into 
+* Individual has a Communications degrees (Bachelors and Masters). I suggested that she look into 
 Business Analyst or Project Management roles. Reason being is both of these roles are usually customer facing and 
 require that you present information (e.g. project progress, design features, questions from developers) to the 
 product owner or customer. 
@@ -126,3 +126,15 @@ integer (int) and try to set that variable to a string, the application will thr
 it will allow you to set a string to variable that originally had an integer as a variable. Thus your application can 
 end up with a bug that would later have to be fixed.
 
+### Python is talked about so much. I should learn that because it has a lot of uses right?
+
+While it is true that a lot of YouTubers talk about how they have built programs and automations with Python, 
+from my experience, I have never ever have had to use Python in my career. That being said, do not 
+believe the hype about Python because it could lead you down the wrong path. Python does have its use case 
+in certain environments and use cases, 
+but larger corporations and governments are not going to convert all of their enterprise applications
+to Python because a number of people are talking about Python. 
+
+What I tell people is that larger, more established companies do not use Python in their applications. They are
+most likely using C# or Java for those. Smaller companies and start ups are more likely to use Python because
+it is easier to code with and is not as rigid as strongly typed languages like C# and Java.

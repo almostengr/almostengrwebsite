@@ -55,6 +55,34 @@ relatively easy to identify as they all have similar patterns or attributes. Wha
 * They fail at technical interviews (e.g. unable to answer basic questions relating to databases, or the 
 difference between an int an double)
 
+### I want a work from home (WFH) role.
+
+While work from home roles sprung up a lot more during the COVID-19 Pandemic, working from home can be 
+worse for some people. Below are my pros, cons, and suggestions for working from home:
+
+Pros
+
+* Save money on gas, car maintenance by not having a commute
+* Do not have to spend money on work-specific clothes
+
+Cons
+
+* Extroverts can become depressed due to the lack of social interaction, especially if they live alone
+* More distractions (e.g. kids crying, tv on, making dinner, midday naps) can cause your work to suffer or 
+you miss deadlines
+
+Suggestions
+
+* Have a dedicated work space. When you "clock out" for the day, leave that work space and power off your computer.
+* Do not work in the same clothes that you sleep in. This is easy to do, especially if your company culture 
+is to not turn on cameras in meetings, but refrain from doing this as mentally it blurs the lines between 
+work and non-work times.
+* Let other members of your household know that when you are in your work space, to keep interruptions 
+to a minimum.
+
+Keep these things in mind when wanting a work from home role. If you get to a point where always being 
+at home is having a negative impact, the seek help or find a role that requires you to leave home.
+
 ## Certifications
 
 ### I don't have a degree. Can I get into tech with only certifications?

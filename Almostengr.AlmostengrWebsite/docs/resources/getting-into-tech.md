@@ -158,6 +158,16 @@ is because a degree is proof that you have a certain level of competencies to be
 addition, those with degrees, regardless of the level of degree, are considered to be more mature, less likely 
 to commit crime, and are more established than those who are not.
 
+Speaking from personal experience, I have a Business degree and have been working in tech years 
+before I got my degree. 
+The problem that I have encountered is that the HR recruiter will see my resume has Business degree listed
+on it and almost immediately disqualify me because the job requirements are for a Computer Science, Information Systems, 
+Mathematics, or engineering-related degree. Since my degree does not align with my work experience, some 
+assume that my experience is bogus or that I do not have the knowledge needed for the job (solely based on the degree)
+and disqualify me accordingly. On the contrary, I can talk to anybody in tech
+and have a full blown tech conversation or post about my projects on LinkedIn, and it is obvious that I am 
+good in tech, especially to those that are and have already been in tech.
+
 ### I have a degree in a non-tech subject. How can I get a tech job?
 
 This depends on what your degree is in. I have listed some examples below of people that have asked this question
@@ -240,3 +250,14 @@ that are universal.
 * Programming language - HTML, CSS, JavaScript for web development; Java, C# for desktop applications
 * SCRUM and Agile concepts
 * Version control - Git is the most popular source control system
+
+### Do I need to have a portfolio of my projects?
+
+Need to, no. Would it help you be a better canidate if you did, yes. I suggest that potentional programmers 
+or developers have a Github or Jira account with their projects uploaded to it. Projects forked from another 
+users account do not count as your project. Thus do not create an account, fork a number of projects, and then 
+claim that you are experienced a coding. The commit history will prove that you are lying and you will 
+not get the job. 
+
+In addition, have a portfolio of your own projects, demonstrates the knowledge (or lack thereof)
+that you have about programming, regardless of what programming language you use.

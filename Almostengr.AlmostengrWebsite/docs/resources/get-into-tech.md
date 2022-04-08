@@ -5,6 +5,12 @@ I see or get asked questions about how to get into tech. For some, they want to 
 career. For others, they are trying to get into tech and have little to no work experience. Below are a list of 
 questions that I have been asked and the answers that I provide to people.
 
+## Categories
+
+### [General](#general)
+### [Degrees and Certifications](#degrees-and-certiifcations)
+### [Programming](#programming)
+
 ## General
 
 ### I want to get into tech. What role should I take?
@@ -16,10 +22,14 @@ about the work that they do. From that point, you can then narrow your list down
 Once you have that final option, then you can find online resources (online courses, YouTube series), 
 books, conference workshops, and groups that relate to the work that you are interested in.
 
-## Do I need to have a Computer Science or tech degree to get into tech? 
+## Degrees and Certifications
+
+### Do I need to have a Computer Science or tech degree to get into tech? 
 
 Short answer is no. I will say that having a Computer Science, Information Systems, or similar degree will 
 grant you more employment opportunities than having a non-tech degree. 
+
+
 
 ## Programming 
 

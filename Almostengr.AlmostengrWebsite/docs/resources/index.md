@@ -125,15 +125,3 @@ face when working on websites or software.
 * <a href="https://www.underdogdevs.org/" target="_blank">Underdog Devs</a> (for formerly incarcerated or economically disadvantaged individuals who want to get into tech)
 * <a href="https://www.wakeupandcode.com/" target="_blank">Wake Up and Code</a>
 * <a href="https://www.w3schools.com" target="_blank">W3 Schools</a>
-
-## Non-Tech Resources
-
-While I primarily do programming and work in IT (Information Technology), I do read or watch 
-content that is not related to programming and the field of IT. 
-
-* <a href="https://sumo.com/kickass-headline-generator/" target="_blank">Headline Generator</a>
-* <a href="http://www.mentalmatterspod.com/" target="_blank">Mental Matters Podcast</a>
-* <a href="https://www.almanac.com/gardening/planting-calendar/AL/Montgomery" target="_blank">Planting Calendar</a>
-* <a href="https://rogueengineer.com/" target="_blank">Rouge Engineer</a>
-* <a href="https://thebipolarbuzz.com" target="_blank">The Bipolar Buzz</a>
-

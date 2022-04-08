@@ -48,19 +48,7 @@ relatively easy to identify as they all have similar patterns or attributes. Wha
 * They fail at doing technical interviews (e.g. answering basic questions relating to databases, or the 
 difference between an int an double)
 
-## Degrees and Certifications
-
-### Do I need to have a Computer Science or tech degree to get into tech? 
-
-No. I will say that having a Computer Science, Information Systems, or similar degree will 
-grant you more employment opportunities than having a non-tech degree. Having a degree, regardless of what 
-kind of degree, will make you better qualified for a tech job than having no degree at all.
-
-A lot of jobs are requiring that you have a degree, and not necessarily a tech degree. Having been on
-the interviewer side of the desk, the reason that degrees are required, but not necessarily a tech degree, 
-is because a degree is proof that you have a certain level of compentencies to be able to do the job. In 
-addition, those with degrees, regardless of the level of degree, are considered to be more mature, less likely 
-to commit crime, and are more established than those who are not.
+## Certifications
 
 ### I don't have a degree. Can I get into tech with only certifications?
 
@@ -79,6 +67,20 @@ specific to their particular implementation. What I tell people is, if you alrea
 has stuff in the cloud, then get the certification with whatever cloud provider(s) that they are using. If you 
 do not have a job in tech, then find an employer that you want to work for, see what cloud technologies that they 
 are using, and then get the certifications for that cloud provider.
+
+## Degrees
+
+### Do I need to have a Computer Science or tech degree to get into tech? 
+
+No. I will say that having a Computer Science, Information Systems, or similar degree will 
+grant you more employment opportunities than having a non-tech degree. Having a degree, regardless of what 
+kind of degree, will make you better qualified for a tech job than having no degree at all.
+
+A lot of jobs are requiring that you have a degree, and not necessarily a tech degree. Having been on
+the interviewer side of the desk, the reason that degrees are required, but not necessarily a tech degree, 
+is because a degree is proof that you have a certain level of compentencies to be able to do the job. In 
+addition, those with degrees, regardless of the level of degree, are considered to be more mature, less likely 
+to commit crime, and are more established than those who are not.
 
 ## Programming 
 

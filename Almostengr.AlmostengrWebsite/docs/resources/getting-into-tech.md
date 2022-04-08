@@ -9,9 +9,7 @@ Since first learning how to code in 2002, holding various part- and full-time pa
 a follower of #BlackTechTwitter on 
 <a href="https://twitter.com/almostengr" target="_blank">Twitter</a>, 
 and participating in a number of tech related groups on Facebook, sometimes 
-I see or get asked questions about how to get into tech. For some, they want to change careers from a non-tech 
-career. For others, they are trying to get into tech and have little to no work experience. 
-
+I see or get asked questions about how to get into tech.
 I decided to compile the questions that I get asked about getting into tech or changing from non-tech role 
 to a tech role into the resource that you see here.
 As I get asked more questions, I will update this page with my answers to those questions. If you have

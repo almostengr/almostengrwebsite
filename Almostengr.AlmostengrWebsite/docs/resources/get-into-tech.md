@@ -30,6 +30,19 @@ about the work that they do. From that point, you can then narrow your list down
 Once you have that final option, then you can find online resources (online courses, YouTube series), 
 books, conference workshops, and groups that relate to the work that you are interested in.
 
+### What's the fastest way to get a job in tech?
+
+Anytime someone asks this question or similar, it is blaintly obvious that they have no real interest in tech 
+and are only trying to get in for the money. That being said, I tell people up front that if you are 
+wanting to get into tech solely for the money and not because you have a passion for it, you will easily be 
+found out and will not get hired. Having sat on the interviewer's side of the desk, these type of people are 
+relatively easy to identify as they all have similar patterns or attributes. What are those patterns? 
+
+* They are more concerned about how much money they will be paid and not really interested in the job duties.
+* They do not have deep knowledge about the area of tech that they want to get into.
+* They fail at doing technical interviews (e.g. answering basic questions relating to databases, or the 
+difference between an int an double)
+
 ## Degrees and Certifications
 
 ### Do I need to have a Computer Science or tech degree to get into tech? 

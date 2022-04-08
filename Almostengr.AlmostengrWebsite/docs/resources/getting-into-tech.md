@@ -20,17 +20,18 @@ a question that is not answered here, you can reach out to me on
 Information provided here is broken down into categories. Click the category below to jump to the question that 
 are most relevant to the information you would like to know.
 
-### [General](#general)
-### [Certifications](#certifications)
-### [Degrees](#degrees)
-### [Programming](#programming)
+[General](#general)
+[Certifications](#certifications)
+[Degrees](#degrees)
+[Programming](#programming)
 
 ## General
 
 ### I want to get into tech. What role should I take?
 
-Tech is a wide, like the ocean wide, industry. There are so many different types of roles that it is not possible
-to advise one on which they should take. My suggestion is that you look to see what interests you the most. 
+Tech is a big, wide industry. Like big as the ocean wide.
+There are so many different types of roles and way to get into tech, that there is no one answer to this 
+question. My suggestion is that you look to see what interests you the most. 
 Then from there, you narrow those down, look at YouTubers that do that line of work and find people on LinkedIn
 about the work that they do. From that point, you can then narrow your list down further to one option. 
 Once you have that final option, then you can find online resources (online courses, YouTube series), 

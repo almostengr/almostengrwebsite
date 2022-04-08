@@ -82,6 +82,11 @@ interviewer that you know what you are talking about. Companies are less likely 
 will have to train, because training people does not add value to the company nor does it help make 
 the company a profit.
 
+### Should I list my certifications on my resume and LinkedIn?
+
+Yes, if they are relevant to the work to the job that you have or want to have. Your safe food certification 
+is irrelevant to being a network engineer, thus would not make sense to list this on your resume or LinkedIn.
+
 ## Degrees
 
 ### Do I need to have a Computer Science or tech degree to get into tech? 

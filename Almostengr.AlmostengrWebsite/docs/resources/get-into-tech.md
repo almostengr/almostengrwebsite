@@ -72,6 +72,14 @@ the knowledge that was on that exam into practice. If you cannot, then you will 
 Read the [previous question](#do-i-need-to-have-a-computer-science-or-tech-degree-to-get-into-tech) for 
 further explaination.
 
+### Which cloud certifications should I get?
+
+That will vary. The certifications offered by the big three (AWS, Google Cloud, Microsft Azure) are all similar in nature, but 
+specific to their particular implementation. What I tell people is, if you already have a job and your employer
+has stuff in the cloud, then get the certification with whatever cloud provider(s) that they are using. If you 
+do not have a job in tech, then find an employer that you want to work for, see what cloud technologies that they 
+are using, and then get the certifications for that cloud provider.
+
 ## Programming 
 
 ### What programming language should I learn first? 

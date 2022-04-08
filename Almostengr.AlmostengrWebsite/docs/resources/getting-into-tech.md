@@ -165,3 +165,14 @@ to Python because a number of people are talking about Python.
 What I tell people is that larger, more established companies do not use Python in their applications. They are
 most likely using C# or Java for those. Smaller companies and start ups are more likely to use Python because
 it is easier to code with and is not as rigid as strongly typed languages like C# and Java.
+
+### What all do I need to know as a programmer?
+
+This will vary depending on who you work for, but there are some core compentencies that you will need to know
+that are universal. 
+
+* CI/CD - Continuous Integration, Continuous Development
+* Programming best practices and concepts - clean code, SOLID, DRY
+* Programming language - HTML, CSS, JavaScript for web development; Java, C# for desktop applications
+* SCRUM and Agile concepts
+* Version control - Git is the most popular source control system

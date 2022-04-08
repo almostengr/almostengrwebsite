@@ -129,10 +129,12 @@ the company a profit.
 
 ### Should I list my certifications on my resume and LinkedIn?
 
-Yes, if they are relevant to the work to the job that you have or want to have. Your food handler certification 
+Yes, if they are relevant to the work to the job that you have or want to have. Having a food handler certification 
 is irrelevant to being a network engineer, thus would not make sense to list this on your resume or LinkedIn.
+Having AWS certification listed when going for a Azure cloud position is relevant, although they are 
+different technologies, and should be listed on your resume.
 
-### I don't have the money to spend on a certification or practice materials? What should I do?
+### I don't have the money to spend on a certification or practice materials. What should I do?
 
 Consider the money that you spend on getting a certification as an investment on yourself. That being said, 
 do not go cheap on yourself. Any investment that you make in yourself, will get you better opportunities if 

@@ -12,6 +12,9 @@ a question that is not answered here, you can reach out to me on
 
 ## Categories
 
+Information provided here is broken down into categories. Click the category below to jump to the question that 
+are most relevant to the information you would like to know.
+
 ### [General](#general)
 ### [Degrees and Certifications](#degrees-and-certiifcations)
 ### [Programming](#programming)

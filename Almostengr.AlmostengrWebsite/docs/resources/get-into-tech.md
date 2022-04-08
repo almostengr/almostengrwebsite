@@ -5,6 +5,11 @@ I see or get asked questions about how to get into tech. For some, they want to 
 career. For others, they are trying to get into tech and have little to no work experience. Below are a list of 
 questions that I have been asked and the answers that I provide to people.
 
+As I get asked more questions, I will update this page according with my answers to those questions. If you have
+a question that is not answered here, you can reach out to me on 
+<a href="https://twitter.com/almostengr" target="_blank">Twitter</a> or
+<a href="https://www.instagram.com/almostengr" target="_blank">Instagram</a>.
+
 ## Categories
 
 ### [General](#general)
@@ -26,10 +31,25 @@ books, conference workshops, and groups that relate to the work that you are int
 
 ### Do I need to have a Computer Science or tech degree to get into tech? 
 
-Short answer is no. I will say that having a Computer Science, Information Systems, or similar degree will 
-grant you more employment opportunities than having a non-tech degree. 
+No. I will say that having a Computer Science, Information Systems, or similar degree will 
+grant you more employment opportunities than having a non-tech degree. Having a degree, regardless of what 
+kind of degree, will make you better qualified for a tech job than having no degree at all.
 
+A lot of jobs are requiring that you have a degree, and not necessarily a tech degree. Having been on
+the interviewer side of the desk, the reason that degrees are required, but not necessarily a tech degree, 
+is because a degree is proof that you have a certain level of compentencies to be able to do the job. In 
+addition, those with degrees, regardless of the level of degree, are considered to be more mature, less likely 
+to commit crime, and are more established than those who are not.
 
+### I don't have a degree. Can I get into tech with only certifications?
+
+Yes you can, but your path to getting a job may be more difficult. Common misconception is that you can get 
+a tech certification (Security+, AWS, Google Cloud, Azure Cloud) and it will automatically get them 
+qualified for the job. This is never the case. What I share with people is that when you interview, you have 
+to demonstrate the knowledge that comes with the certification. Yes you can study for an exam, but can you put 
+the knowledge that was on that exam into practice. If you cannot, then you will not get hired. 
+Read the [previous question](#do-i-need-to-have-a-computer-science-or-tech-degree-to-get-into-tech) for 
+further explaination.
 
 ## Programming 
 

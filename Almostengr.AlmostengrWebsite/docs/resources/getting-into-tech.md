@@ -58,7 +58,8 @@ difference between an int an double)
 ### I want a work from home (WFH) role.
 
 While work from home roles sprung up a lot more during the COVID-19 Pandemic, working from home can be 
-worse for some people. Below are my pros, cons, and suggestions for working from home:
+worse for some people. Below are my pros, cons, and suggestions for working from home. Consider these before
+accepting a role that allows you to work from home full-time.
 
 #### Pros
 

@@ -25,12 +25,12 @@ submitting an
 Information provided here is grouped into categories. Click the category below to jump to the question that 
 is most relevant to the information you would like to know.
 
-* [General](#general)
 * [Certifications](#certifications)
 * [Cyber Security](#cyber-security)
 * [Degrees](#degrees)
+* [General](#general)
 * [Linux](#linux)
-* [Programming](#programming)
+* [Software Development](#software-development)
 * [Web Development](#web-development)
 
 ## General
@@ -215,7 +215,7 @@ depending on the area of cyber security that you want to be a part of.
 
 ## Degrees
 
-### Do I need to have a Computer Science or tech degree to get into tech? 
+### Do I need to have a Computer Science, Information Systems, or other tech degree to get into tech? 
 
 No. I will say that having a Computer Science, Information Systems, or similar degree will 
 grant you more employment opportunities than having a non-tech degree. Having a degree, regardless of what 
@@ -290,7 +290,7 @@ all of the functions on that system. The major difference is that Docker will us
 than a virtual machine will. Thus if you are using an older computer, I would suggest going with Docker 
 container that runs Linux over a virtual machine.
 
-## Programming 
+## Software Development
 
 ### What programming language should I learn first? 
 

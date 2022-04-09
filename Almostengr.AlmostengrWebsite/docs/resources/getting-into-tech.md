@@ -6,7 +6,8 @@ keywords: "#BlackTechTwitter, getting into tech, transitioning into tech, how to
 ---
 
 Since first learning how to code in 2002, holding various part- and full-time paid positions since 2008, 
-a follower of #BlackTechTwitter on 
+a follower of 
+<a href="https://twitter.com/search?q=%23BlackTechTwitter" target="_blank">#BlackTechTwitter</a> on 
 <a href="https://twitter.com/almostengr" target="_blank">Twitter</a>, 
 and participating in a number of tech related groups on Facebook, sometimes 
 I see or get asked questions about how to get into tech.
@@ -276,8 +277,8 @@ on any Linux based system even if your favorite editor is not available.
 ### What programming language should I learn first? 
 
 I suggest that people who are new to programming learn either C++, C#, or Java. I do not suggest that people start
-learning Python or JavaScript as their first programming language. The reason being is that most large, enterprise
-level organizations, are running applications that use C++, Java, or C# for their systems and back ends. Furthermore,
+learning Python or JavaScript as their first programming language. The reason being is that most enterprise
+organizations, are running applications that use C++, Java, or C# for their systems and back ends. Furthermore,
 these three languages require that you learn the object-oriented programming techniques and the data types. Python, 
 JavaScript, and PHP don't require that you use data types when setting variables and allow you to get away with 
 a lot of things that are not allowed in other languages. 

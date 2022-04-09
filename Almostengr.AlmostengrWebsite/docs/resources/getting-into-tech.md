@@ -341,6 +341,11 @@ not get the job.
 In addition, have a portfolio of your own projects, demonstrates the knowledge (or lack thereof)
 that you have about programming, regardless of what programming language you use.
 
+As a programmer and tech enthusiast, I have the source code for my projects on 
+<a href="https://github.com/almostengr" target="_blank">Github</a> 
+and the project documentation for each project on 
+[my website](/projects).
+
 ### Which IDE (Integrated Development Environment) do you recommend?
 
 In my opinion, it depends on the programming language that you are coding with. 

@@ -1,8 +1,7 @@
-﻿---
+---
+title: Welcome!
 description: Information about this blog and Kenny Robinson.
 ---
-
-# Welcome!
 
 ![Kenny with traffic light](/images/jumbotron_kenny.jpg)
 
@@ -37,5 +36,8 @@ real, retired traffic light from a salvage company to teach programming concepts
 ## Resources
 
 What's better than learning to advance your career? Learning for free! In this section, a collection of websites
-that offer valuable resources and content. Topics include Linux, software development, and more! 
+that offer valuable resources and content. Topics include 
+[Linux](/resources#linux), 
+[software development](/resources#web-and-software-development), 
+[getting a tech career](/resources/getting-into-tech), and more! 
 [Go to Resources page](/resources)

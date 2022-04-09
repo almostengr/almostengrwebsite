@@ -248,19 +248,20 @@ hospital environment, she would already be familiar with hospital procedures and
 
 ### There are multiple distributions of Linux like Red Hat, Ubuntu, and Fedora. Which one should I pick to learn with?
 
-It does not matter, but do pick one that is free and not paid.
+It does not matter, but do pick a distribution that is free and not paid.
 Some distributions of Linux, like Red Hat, require that you pay for them, simliar to how Microsoft requires that you 
 pay for a Windows OS license. I do not recommend paying for any distribution of Linux that you will be practicing with. 
-Majority of Linux distributions, do not require that you pay for them as they are open source.
+Majority of Linux distributions, do not require that you pay for them as they are fully open source and free.
 From my experience, Ubuntu is one of the easiest to install a on system or virtual machine.
 
 ### I have installed a Linux VM (Virtual Machine) and use the GUI (graphical user interface) to practice with.
 
 You are doing it wrong. I suggest that you install the server edition of Linux (does not matter what 
-distribution of Linux) which does not have a graphical 
-user interface (GUI). Reason being is that servers that are used by AWS and any enterprise, do not have a 
-graphical interface because the GUI takes up additional system resources that could be used by the application, 
-database, firewall, or something else. In addition, by not having the GUI available, it will force you to 
+distribution of Linux) which does not have a graphical user interface (GUI). 
+Reason being is that servers that are used in the cloud and any enterprise organization, do not have a 
+graphical interface because the GUI takes up additional system resources (memory, disk space, etc) 
+that could be used by the application, database, firewall, or something else. 
+In addition, by not having the GUI available, it will force you to 
 learn how to do things only using the terminal or command line.
 
 ### I hate using vi or vim. I prefer nano or gedit.

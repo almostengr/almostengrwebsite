@@ -40,5 +40,5 @@ What's better than learning to advance your career? Learning for free! In this s
 that offer valuable resources and content. Topics include 
 [Linux](/resources#linux), 
 [software development](/resources#web-and-software-development), 
-[getting a tech career](/resources/getting-into-tech) and more! 
+[getting a tech career](/resources/getting-into-tech), and more! 
 [Go to Resources page](/resources)

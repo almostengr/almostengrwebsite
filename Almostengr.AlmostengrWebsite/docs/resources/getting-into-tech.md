@@ -1,6 +1,7 @@
 ---
 title: Getting Into Tech - Questions and Answers
 posted: 2022-04-08
+updated: 2022-04-09
 author: Kenny Robinson, @almostengr
 keywords: "#BlackTechTwitter, getting into tech, transitioning into tech, how to get into tech"
 ---
@@ -25,11 +26,13 @@ submitting an
 Information provided here is grouped into categories. Click the category below to jump to the question that 
 is most relevant to the information you would like to know.
 
-* [General](#general)
 * [Certifications](#certifications)
+* [Cyber Security](#cyber-security)
 * [Degrees](#degrees)
+* [General](#general)
 * [Linux](#linux)
-* [Programming](#programming)
+* [Software Development](#software-development)
+* [Web Development](#web-development)
 
 ## General
 
@@ -202,9 +205,18 @@ would take it to the latter because s/he has more experience with cars than the 
 when it comes to tech. Specialize in one technology stack and you will have a greater chance 
 of getting opportunities that you apply for.
 
+## Cyber Security
+
+### I want to get into cyber security. How do I get started?
+
+I would suggest that you first work on getting your CompTIA Security+ certification, as that is usually 
+a minimum requirement for cyber security roles. Then from there, you can get addition certifications 
+such as CEH (Certified Ethical Hacker) or CISSP (Certified Information Systems Security Professional) 
+depending on the area of cyber security that you want to be a part of.
+
 ## Degrees
 
-### Do I need to have a Computer Science or tech degree to get into tech? 
+### Do I need to have a Computer Science, Information Systems, or other tech degree to get into tech? 
 
 No. I will say that having a Computer Science, Information Systems, or similar degree will 
 grant you more employment opportunities than having a non-tech degree. Having a degree, regardless of what 
@@ -272,7 +284,14 @@ used either had vi or vim. All of them **did not** have nano or gedit or any oth
 can have your favorite, having basic knowledge of how to edit a text file in vi or vim will allow you edit files 
 on any Linux based system even if your favorite editor is not available.
 
-## Programming 
+### Should I learn Linux using Docker or a virtual machine?
+
+do not matter. Both methods will give you the full operating system and the ability to be able to perform 
+all of the functions on that system. The major difference is that Docker will use much less resources
+than a virtual machine will. Thus if you are using an older computer, I would suggest going with Docker 
+container that runs Linux over a virtual machine.
+
+## Software Development
 
 ### What programming language should I learn first? 
 
@@ -322,3 +341,47 @@ not get the job.
 
 In addition, have a portfolio of your own projects, demonstrates the knowledge (or lack thereof)
 that you have about programming, regardless of what programming language you use.
+
+As a programmer and tech enthusiast, I have the source code for my projects on 
+<a href="https://github.com/almostengr" target="_blank">Github</a> 
+and the project documentation for each project on 
+[my website](/projects).
+
+### Which IDE (Integrated Development Environment) do you recommend?
+
+In my opinion, it depends on the programming language that you are coding with. 
+
+For Java, I would recommend 
+<a href="https://eclipse.org" target="_blank">Eclipse</a> as it has been the go to for Java applications
+for well over a decade. 
+
+When it comes to C# or any other programming language, I recommend 
+<a href="https://code.visualstudio.com" target="_blank">Visual Studio Code</a> as it has a number 
+of plugins available for the programming language that you are coding with and is designed in a way that 
+you do not have to move your hands between the keyboard and mouse to navigate the application.
+
+As an alternative, you can use Notepad++ for coding. A number of developers used this before VS Code
+was released because it does syntax highlighting for a number of languages.
+
+## Web Development
+
+### Do I need to learn Bootstrap?
+
+Need to, not necessarily. Would I recommend that you do so, yes. The reason being is that Bootstrap 
+framework is used on a number of websites because it is mobile first and takes less time to
+style a website with its pre-defined classes.
+
+### Do I have to learn a JavaScript based framework? 
+
+No you don't. A number of developers, myself included, do not build web applications that are heavy
+with JavaScript code. While I do know how to program with JavaScript, I do not have experience 
+working with React, Angular, or other JavaScript based frameworks.
+
+### Heard that PHP (Pre-Hypertext Processor) was a dying language. Should I still learn it? 
+
+While usage of PHP has declined, it will still be around for a while. Content Management Systems
+including WordPress and Drupal use it. 
+In addition, most web hosting providers support it without an additional charge. There is 
+no licensing cost to use PHP, so beginner programmers and businesses that have limited budgets 
+use it for their websites to save money. Frameworks such as Laravel, CakePHP, and Symfony
+exist that help reduce the amount of time required to develop a PHP-based website or application.

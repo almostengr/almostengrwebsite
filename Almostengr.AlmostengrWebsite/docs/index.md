@@ -1,8 +1,7 @@
-﻿---
+---
+title: Welcome!
 description: Information about this blog and Kenny Robinson.
 ---
-
-# Welcome!
 
 ![Kenny with traffic light](/images/jumbotron_kenny.jpg)
 

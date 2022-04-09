@@ -27,6 +27,7 @@ is most relevant to the information you would like to know.
 
 * [General](#general)
 * [Certifications](#certifications)
+* [Cyber Security](#cyber-security)
 * [Degrees](#degrees)
 * [Linux](#linux)
 * [Programming](#programming)
@@ -201,6 +202,15 @@ or would you go with the mechanic that works at two different car dealerships? I
 would take it to the latter because s/he has more experience with cars than the former. The same applies 
 when it comes to tech. Specialize in one technology stack and you will have a greater chance 
 of getting opportunities that you apply for.
+
+## Cyber Security
+
+### I want to get into cyber security. How do I get started?
+
+I would suggest that you first work on getting your CompTIA Security+ certification, as that is usually 
+a minimum requirement for cyber security roles. Then from there, you can get addition certifications 
+such as CEH (Certified Ethical Hacker) or CISSP (Certified Information Systems Security Professional) 
+depending on the area of cyber security that you want to be a part of.
 
 ## Degrees
 

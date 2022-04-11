@@ -14,7 +14,7 @@ and have created this resource to share those details. They are in no particular
 * [During](#during)
 * [After](#after)
 
-## Preparation
+## Before
 
 ### Make sure your entire outfit matches, including your socks.
 

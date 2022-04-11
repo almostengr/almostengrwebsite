@@ -15,7 +15,7 @@ and have created this resource to share those details. They are in no particular
 
 ## Preparation
 
-### Do make sure your entire outfit matches, including your socks.
+### Make sure your entire outfit matches, including your socks.
 
 I once did a mock interview session for some students. I went into the waiting room, called 
 the next interviewee, and as he got up something stood out to me about his attire. 
@@ -40,15 +40,37 @@ Now this indicates the possibility of one or more things about the interviewee
 * was told to put that on the resume because it looks good
 
 What you do not want to do is to convey any of the reasons above to the interviewer. If you 
-do so, then you will appear less qualified for the position that you are interviewing for. 
+do so, then you will appear less qualified for the position that you are interviewing for.
+
+### Your resume does not need your full address
+
+While this was important back in the day, your resume does not need your full address. No employer
+is going to contact you via postal mail to schedule an interview.
+With Google Maps Street View, they can see exactly where you live and that can get you disqualified for 
+the job because preconceived notions about you and the neighborhood that you live in.
+If an employer does need you to mail 
+you something, they will ask for your address at that time. I suggest that people put the city and 
+state that they are currently living in. 
 
 ## The Interview
 
-## I don't know the answer to a question. Should I wing it or should I say that I don't know?
+### I don't know the answer to a question. Should I wing it or should I say that I don't know?
 
 It is best for you to say that you don't know. You are probably thinking that it is bad that 
-you don't know something, but 
+you don't know something, but look at it this way.
 
 If you wing the answer, and wing it incorrectly, 
 then it becomes more evident that you do not know what you are talking about or lack the 
 knowledge in the subject being asked. 
+
+If you admit that you don't know, then you are being truthful about not having knowledge and 
+would be better trusted.
+
+### Be consistent with your answers. 
+
+Did an interview once where the interviewees did 3 interviews on site on the same day. One of the 
+interviewees, was asked the same or similar question in 2 of the 3 interviews. In the post-interview
+meeting where all the interviewers get together and discuss about each candidate, this one 
+interviewee told the first interviewer one answer and gave the second one a different answer. 
+That along with a couple of other sketchy details got him disqualified from moving on to the 
+next round of interviews.

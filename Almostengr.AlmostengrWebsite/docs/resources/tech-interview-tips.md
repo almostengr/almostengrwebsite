@@ -27,7 +27,22 @@ I mentioned that his socks were ready to go to the gym or play sports but the re
 was ready for an interview. He explained why that was the case, but I shared with him that those 
 minor things could result in him not getting the job because it demonstrates a lack of detail.
 
-## Questions
+### Know what is on your resume.
+
+I did an interview where I asked the interviewee a question about a particular technology that he 
+had listed on his resume. Initially he wasn't sure about what I was talking about, so I showed him 
+the resume and where it was listed and he immediately recalled what I was talking about. 
+
+Now this indicates the possibility of one or more things about the interviewee
+
+* did not write or proofread the resume to see what was on it
+* does not have actual knowledge of the technology and the answers s/he is giving is what they have memorized
+* was told to put that on the resume because it looks good
+
+What you do not want to do is to convey any of the reasons above to the interviewer. If you 
+do so, then you will appear less qualified for the position that you are interviewing for. 
+
+## The Interview
 
 ## I don't know the answer to a question. Should I wing it or should I say that I don't know?
 

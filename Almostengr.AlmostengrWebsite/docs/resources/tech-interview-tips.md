@@ -10,8 +10,9 @@ and have created this resource to share those details. They are in no particular
 
 ## Categories
 
-* [Preparation](#preparation)
-* [The Interview](#the-interview)
+* [Before](#before)
+* [During](#during)
+* [After](#after)
 
 ## Preparation
 
@@ -50,9 +51,9 @@ With Google Maps Street View, they can see exactly where you live and that can g
 the job because preconceived notions about you and the neighborhood that you live in.
 If an employer does need you to mail 
 you something, they will ask for your address at that time. I suggest that people put the city and 
-state that they are currently living in. 
+state that they are currently living in on their resume. You may optionally include the zip code.
 
-## The Interview
+## During
 
 ### I don't know the answer to a question. Should I wing it or should I say that I don't know?
 
@@ -74,3 +75,25 @@ meeting where all the interviewers get together and discuss about each candidate
 interviewee told the first interviewer one answer and gave the second one a different answer. 
 That along with a couple of other sketchy details got him disqualified from moving on to the 
 next round of interviews.
+
+### Ask questions
+
+At the end of interview, the interviewer usually ask the interviewee if s/he has any questions. 
+This is the time to further demonstrate that you are really interested in the job. Some questions
+that you can ask are
+
+* What is your (the interviewer) typical day like? 
+* What is the company culture like? 
+* What opportunities are there for training or for me to advance my skills?
+* What are the work hours like? Any on-call duties
+* 
+
+## After
+
+### Continue the job search 
+
+While you have completed the job interview and believed that the interview went well, continue searching 
+and applying for jobs. Often I see people do interviews and stop looking for jobs because they got an 
+interview. Then months go by, they don't hear anything or they get a rejection letter and then have 
+to pick back up where they left off in their search. By the time they've picked back up, they market 
+may have changed some and thus the old strategy no longer works. 

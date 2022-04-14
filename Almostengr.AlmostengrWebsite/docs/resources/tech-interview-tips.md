@@ -16,7 +16,7 @@ and have created this resource to share those details. They are in no particular
 
 ## Before
 
-### Make sure your entire outfit matches, including your socks.
+### Make sure your entire outfit matches, including your socks
 
 I once did a mock interview session for some students. I went into the waiting room, called 
 the next interviewee, and as he got up something stood out to me about his attire. 
@@ -28,7 +28,7 @@ I mentioned that his socks were ready to go to the gym or play sports but the re
 was ready for an interview. He explained why that was the case, but I shared with him that those 
 minor things could result in him not getting the job because it demonstrates a lack of detail.
 
-### Know what is on your resume.
+### Know what is on your resume
 
 I did an interview where I asked the interviewee a question about a particular technology that he 
 had listed on his resume. Initially he wasn't sure about what I was talking about, so I showed him 
@@ -55,6 +55,22 @@ state that they are currently living in on their resume. You may optionally incl
 
 ## During
 
+### What's the difference between a technical and functional interview? 
+
+Technical interview assesses your technical skills. 
+You will get questions like
+
+* what is the difference between an integer and floating point number? 
+* <a href="https://github.com/almostengr/coding-challenges/fizzbuzz" target="_blank">Fizz Buzz challenge</a>
+* Live coding
+
+Functional interview assesses the behaviorial and situational aspects. 
+You will get questions like 
+
+* Tell me about a time where you had a challenge and what did you do to fix it? 
+* What is your greatest weakness? 
+* What is your greatest strength?
+
 ### I don't know the answer to a question. Should I wing it or should I say that I don't know?
 
 It is best for you to say that you don't know. You are probably thinking that it is bad that 
@@ -67,7 +83,7 @@ knowledge in the subject being asked.
 If you admit that you don't know, then you are being truthful about not having knowledge and 
 would be better trusted.
 
-### Be consistent with your answers. 
+### Be consistent with your answers
 
 Did an interview once where the interviewees did 3 interviews on site on the same day. One of the 
 interviewees, was asked the same or similar question in 2 of the 3 interviews. In the post-interview
@@ -82,11 +98,18 @@ At the end of interview, the interviewer usually ask the interviewee if s/he has
 This is the time to further demonstrate that you are really interested in the job. Some questions
 that you can ask are
 
-* What is your (the interviewer) typical day like? 
+* What is your (the interviewer) typical work day like? 
 * What is the company culture like? 
 * What opportunities are there for training or for me to advance my skills?
-* What are the work hours like? Any on-call duties
-* 
+* What are the work hours like? Any on-call duties?
+
+### Take notes
+
+The interviewer is going to take notes about what was said, their observations, and more. It would be 
+in your best interest to do the same. For me, I have a tendency to forget a person's name. Thus in the 
+interview, will write down the names of each person that is interviewing me and if I need to, reference 
+that while in the interview. Same could be done for salary ranges, things that you want to follow up 
+on after the interview, and more. 
 
 ## After
 

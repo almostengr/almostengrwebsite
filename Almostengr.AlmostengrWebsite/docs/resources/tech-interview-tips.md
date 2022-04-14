@@ -61,7 +61,8 @@ Technical interview assesses your technical skills.
 You will get questions like
 
 * what is the difference between an integer and floating point number? 
-* <a href="https://github.com/almostengr/coding-challenges/fizzbuzz" target="_blank">Fizz Buzz challenge</a>
+* <a href="https://github.com/almostengr/coding-challenge/tree/main/fizzbuzz" target="_blank">Fizz Buzz challenge</a>
+* <a href="https://github.com/almostengr/coding-challenge/tree/main/fibonacci" target="_blank">Fibonacci Sequence</a>
 * Live coding
 
 Functional interview assesses the behaviorial and situational aspects. 

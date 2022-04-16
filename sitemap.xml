@@ -1406,11 +1406,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://thealmostengineer.com/technology/2021.04.16-apply-for-that-job/</loc>
-         <lastmod>2022-04-16</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://thealmostengineer.com/technology/2021.05.04-coding-challenge-generate-random-passwords/</loc>
          <lastmod>2022-04-16</lastmod>
          <changefreq>daily</changefreq>
@@ -1492,6 +1487,11 @@
     </url>
     <url>
          <loc>https://thealmostengineer.com/technology/2022.04.07-automate-youtube-video-creation/</loc>
+         <lastmod>2022-04-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://thealmostengineer.com/technology/2022.04.16-apply-for-that-job/</loc>
          <lastmod>2022-04-16</lastmod>
          <changefreq>daily</changefreq>
     </url>

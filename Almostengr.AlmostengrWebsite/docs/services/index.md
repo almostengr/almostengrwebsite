@@ -3,8 +3,8 @@ title: Services
 descriptions: Technical services offered
 ---
 
-Need a technology solution created or problem solved? 
-
+I offer technology services to individuals and businesses that technology work done 
+in a timely manner. 
 All services are offered through my business 
 <a href="https://rhtservices.net/services" target="_blank">Robinson Handy and Technology Services</a>.
 

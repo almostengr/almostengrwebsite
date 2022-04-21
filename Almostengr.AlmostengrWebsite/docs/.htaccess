@@ -117,8 +117,7 @@ Redirect 301 /handyman/2021.06.12-pro-tower-machine-assembly /lifestyle/2021.06.
 Redirect 301 /internetmonitor /projects/internet-monitor
 Redirect 301 /lightshow /projects/christmas-light-show
 Redirect 301 /links /technology/links
-Redirect 301 /services /about
-Redirect 301 /speaking /technology
+Redirect 301 /speaking /
 Redirect 301 /speaking/2017.09.21-build-web-application-without-coding-using-drupal-7 /technology/2017.09.21-build-web-application-without-coding-using-drupal-7
 Redirect 301 /speaking/2020.02.29-linux-training-session /technology/2020.02.29-linux-training-session
 Redirect 301 /speaking/2020.03.06-linux-training-session-april-2020 /technology/2020.03.06-linux-training-session-april-2020

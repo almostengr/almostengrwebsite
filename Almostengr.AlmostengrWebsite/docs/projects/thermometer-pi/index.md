@@ -64,8 +64,10 @@ sudo apt-get install digitemp
 ```
 
 ```sh
-almostengineer@aeoffice:/tmp$ sudo   digitemp_DS9097 -i -s /dev/ttyUSB0 -c /etc/digitemp.conf
+sudo digitemp_DS9097 -i -s /dev/ttyUSB0 -c /etc/digitemp.conf
 ```
+
+produces output
 
 ```sh
 DigiTemp v3.7.2 Copyright 1996-2018 by Brian C. Lane
@@ -79,8 +81,10 @@ Wrote /etc/digitemp.conf
 ```
 
 ```sh
-almostengineer@aeoffice:/tmp$ sudo   digitemp_DS9097 -a -q -c /etc/digitemp.conf
+sudo digitemp_DS9097 -a -q -c /etc/digitemp.conf
 ```
+
+produces output
 
 ```sh
 Apr 10 13:05:42 Sensor 0 C: 29.81 F: 85.66

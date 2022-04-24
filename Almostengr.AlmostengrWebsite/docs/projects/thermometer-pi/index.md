@@ -60,6 +60,10 @@ Note that I did have to use sudo as it state that my user ID did not have permis
 access /dev/ttyUSB0
 
 ```sh
+sudo apt-get install digitemp
+```
+
+```sh
 almostengineer@aeoffice:/tmp$ sudo   digitemp_DS9097 -i -s /dev/ttyUSB0 -c /etc/digitemp.conf
 DigiTemp v3.7.2 Copyright 1996-2018 by Brian C. Lane
 GNU General Public License v2.0 - http://www.digitemp.com

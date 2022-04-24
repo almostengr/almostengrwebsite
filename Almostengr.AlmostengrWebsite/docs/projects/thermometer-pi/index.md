@@ -59,15 +59,20 @@ This is the full output when running the commands that are listed on the externa
 Note that I did have to use sudo as it state that my user ID did not have permission to
 access /dev/ttyUSB0
 
+
+Install the digitemp software
+
 ```sh
 sudo apt-get install digitemp
 ```
+
+After the installation has completed, then run the the command below for the configuration file to be created.
 
 ```sh
 sudo digitemp_DS9097 -i -s /dev/ttyUSB0 -c /etc/digitemp.conf
 ```
 
-produces output
+This command above will produce the below output.
 
 ```sh
 DigiTemp v3.7.2 Copyright 1996-2018 by Brian C. Lane
@@ -80,11 +85,13 @@ ROM #0 : 28711E92070000F3
 Wrote /etc/digitemp.conf
 ```
 
+Confirm that the sensor is readable with the configuration file.
+
 ```sh
 sudo digitemp_DS9097 -a -q -c /etc/digitemp.conf
 ```
 
-produces output
+This will produce the below output.
 
 ```sh
 Apr 10 13:05:42 Sensor 0 C: 29.81 F: 85.66

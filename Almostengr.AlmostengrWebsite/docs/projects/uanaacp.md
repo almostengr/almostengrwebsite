@@ -1,4 +1,4 @@
-# NACCP, University of Alabama Chapter Website
+i# NACCP, University of Alabama Chapter Website
 
 <img src="/images/portfolio_uanaacp.jpg" alt="UANAACP website">
 

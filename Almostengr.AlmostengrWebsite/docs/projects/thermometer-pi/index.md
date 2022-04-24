@@ -28,31 +28,29 @@ back to the caller as a JSON object. That JSON object returns the Fahrenheit and
 * Year Started: 2021
 * Technologies: C#
 
+
 ## Components Used
 
-* [Raspberry Pi](https://www.amazon.com/gp/product/B07BC7BMHY/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=rhtservicesll-20&creative=9325&linkCode=as2&creativeASIN=B07BC7BMHY&linkId=eae8899ccbef0eb26acf71cb65bef39a)
-* [DS18S20 Temperature Sensor](https://www.amazon.com/gp/product/B07MR71WVS/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=rhtservicesll-20&creative=9325&linkCode=as2&creativeASIN=B07MR71WVS&linkId=bfd830515da10f922afff9a79cc33e58)
-* [Serial to USB Cable](https://www.amazon.com/gp/product/B07D9R5JFK/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=rhtservicesll-20&creative=9325&linkCode=as2&creativeASIN=B07D9R5JFK&linkId=e35fd9d313f055ab778e60783564078b)
+* Raspberry Pi
+* DS18S20 Temperature Sensor
+* Serial to USB Cable
 * [Home Assistant (on same or different device)](https://homeassistant.io)
-* [Belkin Wemo Smart Outlet](https://www.amazon.com/gp/product/B0776YH29B/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=rhtservicesll-20&creative=9325&linkCode=as2&creativeASIN=B0776YH29B&linkId=34342060eb6bea8006e0dbbefb376fcf)
-* [Window AC Unit](https://www.amazon.com/gp/product/B085797ZFF/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=rhtservicesll-20&creative=9325&linkCode=as2&creativeASIN=B085797ZFF&linkId=e38e0ec46bdea5e4c32950d147003cc8)
-
+* Belkin Wemo Smart Outlet
+* Window AC Unit
+* 16x2 LCD Display
 
 
 ## Installation and Setup
 
-* Connect the [DS18S20 sensor](https://www.amazon.com/gp/product/B07MR71WVS/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=rhtservicesll-20&creative=9325&linkCode=as2&creativeASIN=B07MR71WVS&linkId=bfd830515da10f922afff9a79cc33e58) to the [Serial to USB Cable](https://www.amazon.com/gp/product/B07D9R5JFK/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=rhtservicesll-20&creative=9325&linkCode=as2&creativeASIN=B07D9R5JFK&linkId=e35fd9d313f055ab778e60783564078b)
-* Install an operating system of your choosing on your Raspberry Pi (<a href="https://osmc.tv/" target="_blank">OSMC</a> was installed on mine)
+* Connect the DS18S20 sensor to the Serial to USB Cable
+* Install an operating system of your choosing on your Raspberry Pi
 * Copy the Thermometer Pi files to the Raspberry Pi. They can be downloaded from the 
 [project repo](https://github.com/almostengr/thermometerpi).
-* Configure the appsettings.json file to point to your Home Assistant instance. Also need the HA Token
 * Perform the [first run steps](#first-run) to configure the temperature sensor
 * Set up the ThermometerAPI as a system service
 * Start the service
-* Set up automations in Home Assistant using the sensor
-
-Eventually will do a walkthrough video on how I did my setup.
-
+* Set up a REST sensor in Home Assistant
+* Set up automations in Home Assistant
 
 
 ### First Run
@@ -93,7 +91,6 @@ groups $USER
 ```
 
 replacing $USER with the username that you want to see.
-
 
 
 ## Application as System Service
@@ -139,9 +136,9 @@ info: Microsoft.Hosting.Lifetime[0]
 warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
       Failed to determine the https port for redirect.
 info: Almostengr.ThermometerPi.Api.Controllers.ThermometerController[0]
-      At 9/28/2021 9:09:14 PM temperature is 78.57,25.88
+      At 9/28/2021 9:09:14 PM temperature is 25.88
 info: Almostengr.ThermometerPi.Api.Controllers.ThermometerController[0]
-      At 9/28/2021 9:09:28 PM temperature is 78.57,25.88
+      At 9/28/2021 9:09:28 PM temperature is 25.88
 ```
 
 

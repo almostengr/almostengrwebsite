@@ -3,6 +3,8 @@ title: Thermometer Pi
 description: Used a Raspberry Pi to be a thermometer that provides data to home automation system
 ---
 
+![Themometer with Raspberry PI](/images/20220424_203539.jpg)
+
 ## Project Background
 
 A common problem that exists with US home construction

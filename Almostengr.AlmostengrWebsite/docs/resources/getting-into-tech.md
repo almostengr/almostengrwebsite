@@ -1,9 +1,9 @@
 ---
 title: Getting Into Tech - Questions and Answers
 posted: 2022-04-08
-updated: 2022-04-09
+updated: 2022-05-02
 author: Kenny Robinson, @almostengr
-keywords: "#BlackTechTwitter, getting into tech, transitioning into tech, how to get into tech"
+keywords: "#BlackTechTwitter, #BlackInTech, getting into tech, transitioning into tech, how to get into tech"
 ---
 
 Since first learning how to code in 2002, holding various part- and full-time paid positions since 2008, 
@@ -59,7 +59,7 @@ a longer explaination.
 ### What's the fastest way to get a job in tech?
 
 Anytime someone asks this question or similar, it is clearly obvious that they have no real interest in tech 
-and are only trying to get in for the money. See the question above.
+and are only trying to get in for the money. See the answer to the question above.
 That being said, I tell people up front that if you are 
 wanting to get into tech solely for the money and not because you have a passion for it, you will easily be 
 found out and will not get hired. Having sat on the interviewer's side of the desk, these type of people are 
@@ -68,16 +68,18 @@ relatively easy to identify as they all have similar patterns or attributes. Wha
 * They are more concerned about how much money they will be paid and not really interested in the job duties.
 * They do not have deep knowledge about the area of tech that they want to get into.
 * They fail at technical interviews (e.g. unable to answer basic questions relating to databases, or the 
-difference between an int an double).
+difference between an int and double).
 
-Once an interviewer sniffs these things out about you, you'll get rejected and resume placed in 
+Once an interviewer sniffs these things out about you, you will most likely get rejected and resume placed in 
 the archive or trash.
 
 ### I want a work from home (WFH) role.
 
 While work from home roles sprung up a lot more during the COVID-19 Pandemic, working from home can be 
-worse for some people. Below are my pros, cons, and suggestions for working from home. Consider these before
-accepting a role that allows you to work from home full-time.
+worse for some people. I talk more about this in my article 
+about the [Great Resignation](/technology/2022.04.20-great-resignation-thoughts).
+Below are my pros, cons, and suggestions for working from home. Consider these before
+accepting a role that allows you to work from home full-time. 
 
 #### Pros
 
@@ -92,6 +94,9 @@ accepting a role that allows you to work from home full-time.
 * More distractions (e.g. kids crying, tv on, making dinner, convenience for midday naps) can cause your
 work to suffer or you to miss deadlines.
 * Increased electrical usage. Since you are home more, your utilities are more than likely to go up.
+* Exceeding internet usage limits. Some ISPs (Internet Service Providers) have a cap on the amount of data they will let
+you use per month. Exceed that limit and you will be charged more for internet or having your service terminated
+for excessive usage.
 
 #### Suggestions
 
@@ -133,12 +138,17 @@ While in college, one of my professors explained that if he had to choose betwee
 one that had a 3.0 GPA and 1 year of work experience and one that a 4.0 GPA and no work experience, 
 that he would hire the 3.0 candidate. His reasons for this were
 
-* 3.0 student has experience and therefore has had the opportunity to apply their education to real world situations
-* 3.0 student has made some mistakes (because their GPA isn't perfect) and those mistakes have become learning experiences
-* 4.0 student is book smart, but has not demonstrated what they have learned in a real world situation
+* 3.0 student has experience and therefore has had the opportunity to apply their education to real world situations;
+4.0 student is book smart, but has not demonstrated what they have learned in a real world situation
+* 3.0 student has made some mistakes (because their GPA isn't perfect) and those mistakes have become learning experiences.
 * 4.0 student probably does not have a social life (because they spend a lot of time studying) 
 and may be difficult to work with in team environments; 
 whereas the 3.0 student probably has failed a test or two because they chose to socialize over studying
+
+### Are there communities with people that are in or trying to get into tech?
+
+Yes there are several. Check out the [Resources](/resources) page for a list of people and communities
+that exist.
 
 ## Certifications
 
@@ -286,7 +296,7 @@ on any Linux based system even if your favorite editor is not available.
 
 ### Should I learn Linux using Docker or a virtual machine?
 
-do not matter. Both methods will give you the full operating system and the ability to be able to perform 
+Does not matter. Both methods will give you the full operating system and the ability to be able to perform 
 all of the functions on that system. The major difference is that Docker will use much less resources
 than a virtual machine will. Thus if you are using an older computer, I would suggest going with Docker 
 container that runs Linux over a virtual machine.
@@ -302,19 +312,21 @@ these three languages require that you learn the object-oriented programming tec
 JavaScript, and PHP don't require that you use data types when setting variables and allow you to get away with 
 a lot of things that are not allowed in other languages. 
 
-For example, in C, if you define a variable to be an 
+For example, in C#, if you define a variable to be an 
 integer (int) and try to set that variable to a string, the application will throw an error. In Python and JavaScript, 
 it will allow you to set a string to variable that originally had an integer as a variable. Thus your application can 
 end up with a bug that would later have to be fixed.
 
 ### Python is talked about so much. I should learn that because it has a lot of uses right?
 
-While it is true that a lot of YouTubers talk about how they have built programs and automations with Python, 
+While it is true that a lot of 
+<a href="https://www.youtube.com/c/RobinsonHandyandTechnologyServices?sub_confirmation=1" target="_blank">YouTubers</a>
+talk about how they have built programs and automations with Python, 
 from my experience, I have never ever have had to use Python in my career. That being said, do not 
 believe the hype about Python because it could lead you down the wrong path. Python does have its use case 
-in certain environments and use cases, 
-but larger corporations and governments are not going to convert all of their enterprise applications
-to Python because a number of people are talking about Python. 
+in certain environments, 
+but governments and large corporations are not going to convert all of their enterprise applications
+to Python because a number of people are talking about Python.
 
 What I tell people is that larger, more established companies do not use Python in their applications. They are
 most likely using C# or Java for those. Smaller companies and start ups are more likely to use Python because
@@ -334,12 +346,14 @@ that are universal.
 ### Do I need to have a portfolio of my projects?
 
 Need to, no. Would it help you be a better canidate if you did, yes. I suggest that potentional programmers 
-or developers have a Github or Jira account with their projects uploaded to it. Projects forked from another 
+or developers have a 
+<a href="https://github.com/almostengr" target="_blank">Github</a>
+or Jira account with their projects uploaded to it. Projects forked from another 
 users account do not count as your project. Thus do not create an account, fork a number of projects, and then 
-claim that you are experienced a coding. The commit history will prove that you are lying and you will 
+claim that you are experienced in programming. The commit history will prove that you are lying and you will 
 not get the job. 
 
-In addition, have a portfolio of your own projects, demonstrates the knowledge (or lack thereof)
+Having a portfolio of your own projects, demonstrates the knowledge (or lack thereof)
 that you have about programming, regardless of what programming language you use.
 
 As a programmer and tech enthusiast, I have the source code for my projects on 
@@ -360,7 +374,9 @@ When it comes to C# or any other programming language, I recommend
 of plugins available for the programming language that you are coding with and is designed in a way that 
 you do not have to move your hands between the keyboard and mouse to navigate the application.
 
-As an alternative, you can use Notepad++ for coding. A number of developers used this before VS Code
+As an alternative, you can use 
+<a href="https://notepad-plus-plus.org/" target="_blank">Notepad++</a>
+for coding. A number of developers used this before VS Code
 was released because it does syntax highlighting for a number of languages.
 
 ## Web Development

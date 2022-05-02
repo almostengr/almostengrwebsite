@@ -138,9 +138,9 @@ While in college, one of my professors explained that if he had to choose betwee
 one that had a 3.0 GPA and 1 year of work experience and one that a 4.0 GPA and no work experience, 
 that he would hire the 3.0 candidate. His reasons for this were
 
-* 3.0 student has experience and therefore has had the opportunity to apply their education to real world situations
-* 3.0 student has made some mistakes (because their GPA isn't perfect) and those mistakes have become learning experiences
-* 4.0 student is book smart, but has not demonstrated what they have learned in a real world situation
+* 3.0 student has experience and therefore has had the opportunity to apply their education to real world situations;
+4.0 student is book smart, but has not demonstrated what they have learned in a real world situation
+* 3.0 student has made some mistakes (because their GPA isn't perfect) and those mistakes have become learning experiences.
 * 4.0 student probably does not have a social life (because they spend a lot of time studying) 
 and may be difficult to work with in team environments; 
 whereas the 3.0 student probably has failed a test or two because they chose to socialize over studying

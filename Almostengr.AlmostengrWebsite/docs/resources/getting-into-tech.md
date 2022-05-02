@@ -59,7 +59,7 @@ a longer explaination.
 ### What's the fastest way to get a job in tech?
 
 Anytime someone asks this question or similar, it is clearly obvious that they have no real interest in tech 
-and are only trying to get in for the money. See the question above.
+and are only trying to get in for the money. See the answer to the question above.
 That being said, I tell people up front that if you are 
 wanting to get into tech solely for the money and not because you have a passion for it, you will easily be 
 found out and will not get hired. Having sat on the interviewer's side of the desk, these type of people are 
@@ -68,16 +68,18 @@ relatively easy to identify as they all have similar patterns or attributes. Wha
 * They are more concerned about how much money they will be paid and not really interested in the job duties.
 * They do not have deep knowledge about the area of tech that they want to get into.
 * They fail at technical interviews (e.g. unable to answer basic questions relating to databases, or the 
-difference between an int an double).
+difference between an int and double).
 
-Once an interviewer sniffs these things out about you, you'll get rejected and resume placed in 
+Once an interviewer sniffs these things out about you, you will most likely get rejected and resume placed in 
 the archive or trash.
 
 ### I want a work from home (WFH) role.
 
 While work from home roles sprung up a lot more during the COVID-19 Pandemic, working from home can be 
-worse for some people. Below are my pros, cons, and suggestions for working from home. Consider these before
-accepting a role that allows you to work from home full-time.
+worse for some people. I talk more about this in my article 
+about the [Great Resignation](/technology/2022.04.20-great-resignation-thoughts).
+Below are my pros, cons, and suggestions for working from home. Consider these before
+accepting a role that allows you to work from home full-time. 
 
 #### Pros
 
@@ -286,7 +288,7 @@ on any Linux based system even if your favorite editor is not available.
 
 ### Should I learn Linux using Docker or a virtual machine?
 
-do not matter. Both methods will give you the full operating system and the ability to be able to perform 
+Does not matter. Both methods will give you the full operating system and the ability to be able to perform 
 all of the functions on that system. The major difference is that Docker will use much less resources
 than a virtual machine will. Thus if you are using an older computer, I would suggest going with Docker 
 container that runs Linux over a virtual machine.
@@ -302,17 +304,19 @@ these three languages require that you learn the object-oriented programming tec
 JavaScript, and PHP don't require that you use data types when setting variables and allow you to get away with 
 a lot of things that are not allowed in other languages. 
 
-For example, in C, if you define a variable to be an 
+For example, in C#, if you define a variable to be an 
 integer (int) and try to set that variable to a string, the application will throw an error. In Python and JavaScript, 
 it will allow you to set a string to variable that originally had an integer as a variable. Thus your application can 
 end up with a bug that would later have to be fixed.
 
 ### Python is talked about so much. I should learn that because it has a lot of uses right?
 
-While it is true that a lot of YouTubers talk about how they have built programs and automations with Python, 
+While it is true that a lot of 
+<a href="https://www.youtube.com/c/RobinsonHandyandTechnologyServices?sub_confirmation=1" target="_blank">YouTubers</a>
+talk about how they have built programs and automations with Python, 
 from my experience, I have never ever have had to use Python in my career. That being said, do not 
 believe the hype about Python because it could lead you down the wrong path. Python does have its use case 
-in certain environments and use cases, 
+in certain environments, 
 but larger corporations and governments are not going to convert all of their enterprise applications
 to Python because a number of people are talking about Python. 
 

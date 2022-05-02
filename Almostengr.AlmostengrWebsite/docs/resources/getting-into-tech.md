@@ -1,9 +1,9 @@
 ---
 title: Getting Into Tech - Questions and Answers
 posted: 2022-04-08
-updated: 2022-04-09
+updated: 2022-05-02
 author: Kenny Robinson, @almostengr
-keywords: "#BlackTechTwitter, getting into tech, transitioning into tech, how to get into tech"
+keywords: "#BlackTechTwitter, #BlackInTech, getting into tech, transitioning into tech, how to get into tech"
 ---
 
 Since first learning how to code in 2002, holding various part- and full-time paid positions since 2008, 
@@ -94,6 +94,9 @@ accepting a role that allows you to work from home full-time.
 * More distractions (e.g. kids crying, tv on, making dinner, convenience for midday naps) can cause your
 work to suffer or you to miss deadlines.
 * Increased electrical usage. Since you are home more, your utilities are more than likely to go up.
+* Exceeding internet usage limits. Some ISPs (Internet Service Providers) have a cap on the amount of data they will let
+you use per month. Exceed that limit and you will be charged more for internet or having your service terminated
+for excessive usage.
 
 #### Suggestions
 
@@ -141,6 +144,11 @@ that he would hire the 3.0 candidate. His reasons for this were
 * 4.0 student probably does not have a social life (because they spend a lot of time studying) 
 and may be difficult to work with in team environments; 
 whereas the 3.0 student probably has failed a test or two because they chose to socialize over studying
+
+### Are there communities with people that are in or trying to get into tech?
+
+Yes there are several. Check out the [Resources](/resources) page for a list of people and communities
+that exist.
 
 ## Certifications
 

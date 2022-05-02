@@ -346,12 +346,14 @@ that are universal.
 ### Do I need to have a portfolio of my projects?
 
 Need to, no. Would it help you be a better canidate if you did, yes. I suggest that potentional programmers 
-or developers have a Github or Jira account with their projects uploaded to it. Projects forked from another 
+or developers have a 
+<a href="https://github.com/almostengr" target="_blank">Github</a>
+or Jira account with their projects uploaded to it. Projects forked from another 
 users account do not count as your project. Thus do not create an account, fork a number of projects, and then 
-claim that you are experienced a coding. The commit history will prove that you are lying and you will 
+claim that you are experienced in programming. The commit history will prove that you are lying and you will 
 not get the job. 
 
-In addition, have a portfolio of your own projects, demonstrates the knowledge (or lack thereof)
+Having a portfolio of your own projects, demonstrates the knowledge (or lack thereof)
 that you have about programming, regardless of what programming language you use.
 
 As a programmer and tech enthusiast, I have the source code for my projects on 
@@ -372,7 +374,9 @@ When it comes to C# or any other programming language, I recommend
 of plugins available for the programming language that you are coding with and is designed in a way that 
 you do not have to move your hands between the keyboard and mouse to navigate the application.
 
-As an alternative, you can use Notepad++ for coding. A number of developers used this before VS Code
+As an alternative, you can use 
+<a href="https://notepad-plus-plus.org/" target="_blank">Notepad++</a>
+for coding. A number of developers used this before VS Code
 was released because it does syntax highlighting for a number of languages.
 
 ## Web Development

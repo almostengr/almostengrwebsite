@@ -325,8 +325,8 @@ talk about how they have built programs and automations with Python,
 from my experience, I have never ever have had to use Python in my career. That being said, do not 
 believe the hype about Python because it could lead you down the wrong path. Python does have its use case 
 in certain environments, 
-but larger corporations and governments are not going to convert all of their enterprise applications
-to Python because a number of people are talking about Python. 
+but governments and large corporations are not going to convert all of their enterprise applications
+to Python because a number of people are talking about Python.
 
 What I tell people is that larger, more established companies do not use Python in their applications. They are
 most likely using C# or Java for those. Smaller companies and start ups are more likely to use Python because

@@ -345,7 +345,7 @@ that are universal.
 
 ### Do I need to have a portfolio of my projects?
 
-Need to, no. Would it help you be a better canidate if you did, yes. I suggest that potentional programmers 
+Need to, no. Would it help you be a better candidate if you did, yes. I suggest that potentional programmers 
 or developers have a 
 <a href="https://github.com/almostengr" target="_blank">Github</a>
 or Jira account with their projects uploaded to it. Projects forked from another 

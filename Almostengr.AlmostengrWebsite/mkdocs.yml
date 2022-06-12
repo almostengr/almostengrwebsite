@@ -55,6 +55,9 @@ extra:
     - icon: fontawesome/brands/instagram
       link: https://instagram.com/almostengr
       name: "@almostengr on Instagram"
+    - icon: fontawesome/brands/stack-overflow
+      link: https://stackoverflow.com/users/12875554/almostengr
+      name: almostengr on StackOverflow
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/almostengr
       name: "@almostengr on Twitter"

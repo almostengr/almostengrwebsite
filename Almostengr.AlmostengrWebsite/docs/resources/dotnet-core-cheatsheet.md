@@ -1,5 +1,5 @@
 ---
-title: .NET Core CheatSheet
+title: .NET / .NET Core CheatSheet
 description: Useful commands and code snippets when working with .NET Core and C# (c-sharp)
 ---
 

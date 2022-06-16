@@ -1,7 +1,7 @@
 ---
 title: Getting Into Tech - Questions and Answers
 posted: 2022-04-08
-updated: 2022-05-02
+updated: 2022-06-15
 author: Kenny Robinson, @almostengr
 keywords: "#BlackTechTwitter, #BlackInTech, getting into tech, transitioning into tech, how to get into tech"
 ---

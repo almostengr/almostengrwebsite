@@ -67,6 +67,7 @@ platforms and are noted accordingly.
 * <a href="https://www.frauvis.com/" target="_blank">Frauvis Community and Job Board for Black Women</a> (Jobs)
 * <a href="https://www.hackthehood.org/" target="_blank">Hack The Hood</a> (Community, Youth)
 * <a href="https://www.youtube.com/c/JeremyFieldingSr/" target="_blank">Jeremy Felding</a> (Learning)
+* <a href="https://mentormesh.io/" target="_blank">Mentor Mesh</a> (Community)
 * <a href="https://www.nsbe.org" target="_blank">National Society of Black Engineers</a> (Organization)
 * <a href="https://nolavateblack.com/" target="_blank">NOLAvate Black - New Orleans Black Tech Collective</a> (Organization)
 * <a href="https://peopleofcolorintech.com/" target="_blank">People Of Color In Tech</a> (Community, Jobs)

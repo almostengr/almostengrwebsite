@@ -1,7 +1,7 @@
 ---
 title: Tech Interview Tips
 posted: 2022-04-11
-updated: 2022-04-14
+updated: 2022-06-15
 author: Kenny Robinson, @almostengr
 description: Advice on how to succeed with tech and functional interviews.
 ---
@@ -54,6 +54,34 @@ the job because preconceived notions about you and the neighborhood that you liv
 If an employer does need you to mail 
 you something, they will ask for your address at that time. I suggest that people put the city and 
 state that they are currently living in on their resume. You may optionally include the zip code.
+
+### Be active on LinkedIn
+
+Join groups. Post about the work that you are doing. Comment, not just like, to the posts 
+made by others. By doing these things and more, you'll be an active history on LinkedIn. Being 
+active helps you before more visible on the platform, and thus more likely to be seen by 
+recruiters and hiring managers.
+
+THe reaosn that I state about comment and not just likeinyg or reacting to posts made by others, 
+is because most people will not scroll through to see who liked the post. However, they will 
+scroll to see who has commented on an post, and in some cases will reply back to the comments 
+that you have left on a post. Thus commenting on a post will give you greater visibilty on the 
+website.
+
+### Have a blog or vlog
+
+Having a blog or vlog that talks about what you are or have done in the field will help 
+with your credibility in the subject. In addition to, you build up a repository of information
+that others can use to their benefit if they have the same issues or challenges that you have faced. 
+
+Now your blog does not have ot be set up exactly like this one is, but it does need to have 
+contact that you contribute to on a regular basis and that shares information about your 
+field of expertise. 
+
+If you include your blog on your resume, but sure that it does not have any derogatory or 
+inflamatory content about previous employers or groups of individuals (including racial, 
+political).
+
 
 ## During
 

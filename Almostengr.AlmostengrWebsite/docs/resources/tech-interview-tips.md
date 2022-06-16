@@ -57,12 +57,12 @@ state that they are currently living in on their resume. You may optionally incl
 
 ### Be active on LinkedIn
 
-Join groups. Post about the work that you are doing. Comment, not just like, to the posts 
-made by others. By doing these things and more, you'll be an active history on LinkedIn. Being 
-active helps you before more visible on the platform, and thus more likely to be seen by 
+Join groups. Post about the work that you are doing. Comment, not just like, on the posts 
+made by others. By doing these things and more, you'll be an active participant on LinkedIn. Being 
+active helps you be more visible on the platform, and thus more likely to be seen by 
 recruiters and hiring managers.
 
-THe reaosn that I state about comment and not just likeinyg or reacting to posts made by others, 
+The reason that I state about comment and not just likeinyg or reacting to posts made by others, 
 is because most people will not scroll through to see who liked the post. However, they will 
 scroll to see who has commented on an post, and in some cases will reply back to the comments 
 that you have left on a post. Thus commenting on a post will give you greater visibilty on the 
@@ -74,14 +74,14 @@ Having a blog or vlog that talks about what you are or have done in the field wi
 with your credibility in the subject. In addition to, you build up a repository of information
 that others can use to their benefit if they have the same issues or challenges that you have faced. 
 
-Now your blog does not have ot be set up exactly like this one is, but it does need to have 
-contact that you contribute to on a regular basis and that shares information about your 
-field of expertise. 
+Now your blog does not have to be set up exactly like [this one is](/), but it does need to have 
+content that you contribute to on a regular basis and that shares information about your 
+field of expertise. For those that have patient-client agreements or NDAs, be sure to 
+share what is acceptable by those agreements, as you want to avoid legal trouble. 
 
 If you include your blog on your resume, but sure that it does not have any derogatory or 
 inflamatory content about previous employers or groups of individuals (including racial, 
 political).
-
 
 ## During
 
@@ -151,3 +151,9 @@ and applying for jobs. Often I see people do interviews and stop looking for job
 interview. Then months go by, they don't hear anything or they get a rejection letter and then have 
 to pick back up where they left off in their search. By the time they've picked back up, they market 
 may have changed some and thus the old strategy no longer works. 
+
+### See the Before steps
+
+Continue to do the things listed in the [Before](#before) section of this page even after the 
+interview. Why? Employers are always looking for good talent to hire. If you start slipping when 
+they start looking, you'll get passed over and wondering why you are struggling to make moves.

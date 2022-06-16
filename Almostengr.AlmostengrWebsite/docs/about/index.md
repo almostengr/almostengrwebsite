@@ -60,11 +60,8 @@ Tech related blogs and resources can be found on the [Resources](/resources) pag
 
 ## Have Questions
 
-Have a question, comment, or just want to say hi? Reach out to me using one of the methods below.
-
-* <a href="https://twitter.com/almostengr" target="_blank">@almostengr on Twitter</a>
-* <a href="https://instagram.com/almostengr" target="_blank">@almostengr on Instagram</a>
-* <a href="https://www.youtube.com/c/robinsonhandyandtechnologyservices?sub_confirmation=1" target="_blank">Robinson Handy and Technology Services YouTube Channel</a>
+Have a question, comment, or just want to say hi? Reach out to me by visiting the 
+[contact page](/contact).
 
 ## Donations
 

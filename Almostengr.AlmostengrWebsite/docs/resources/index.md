@@ -27,7 +27,7 @@ via Github.
 * [Git Cheatsheet](/resources/git-cheatsheet)
 * [Linux](#linux)
 * [Linux Cheatsheet](/resources/linux-cheatsheet)
-* [.NET Core 3.1 / .NET 5 Cheatsheet](/resources/dotnet-core-cheatsheet)
+* [.NET Core / .NET CLI Cheatsheet](/resources/dotnet-core-cheatsheet)
 * [Web and Software Development](#web-and-software-development)
 
 ## Black In Tech

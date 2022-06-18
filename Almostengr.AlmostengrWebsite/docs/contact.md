@@ -1,5 +1,5 @@
 ---
-title: Contact Me
+title: Contact
 description: Ways to contact me
 ---
 

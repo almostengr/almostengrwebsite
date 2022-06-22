@@ -2,7 +2,7 @@
 title: Resources
 description: Tech and non-tech resources that can provide additional information or support
 posted: 2021-11-26
-updated: 2022-06-15
+updated: 2022-06-22
 keywords: black in tech, black tech twitter, tech resources, online learning
 ---
 
@@ -27,7 +27,7 @@ via Github.
 * [Git Cheatsheet](/resources/git-cheatsheet)
 * [Linux](#linux)
 * [Linux Cheatsheet](/resources/linux-cheatsheet)
-* [.NET Core / .NET CLI Cheatsheet](/resources/dotnet-core-cheatsheet)
+* [.NET (Core) CLI Cheatsheet](/resources/dotnet-core-cheatsheet)
 * [Web and Software Development](#web-and-software-development)
 
 ## Black In Tech
@@ -36,7 +36,7 @@ Groups or content targeted for or created by Black people in the IT industry. So
 apply to mutliple areas of tech, while others are specific. Some groups may have a presence on multiple
 platforms and are noted accordingly.
 
-* <a href="https://www.afrotech.com" target="_blank">Afro Tech</a>
+* <a href="https://www.afrotech.com" target="_blank">Afro Tech</a> (Community)
 * Birmingham Black Techies - <a href="https://www.facebook.com/groups/590555561689700" target="_blank">Facebook</a>,
 <a href="https://www.birminghamblacktechies.com/" target="_blank">Website</a> (Community)
 * Black Cloud Geeks - <a href="https://www.facebook.com/groups/blackcloudgeeks/" target="_blank">Facebook</a>,

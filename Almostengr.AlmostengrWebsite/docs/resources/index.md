@@ -100,7 +100,7 @@ you on the way to learning Linux and what all it has to offer.
 Whether you are a seasoned programmer or beginner, these resources will help you with challenges that you may 
 face when working on websites or software.
 
-* [.NET Core Cheatsheet](/resources/dotnet-core-cheatsheet)
+* [.NET (.NET Core) Cheatsheet](/resources/dotnet-core-cheatsheet)
 * <a href="https://ardalis.com/" target="_blank">Ardalis is Steve Smith</a>
 * <a href="https://atishay.me" target="_blank">Atishay Jain</a>
 * <a href="https://getbootstrap.com/" target="_blank">Bootstrap - responsive theming library</a>
@@ -123,7 +123,7 @@ face when working on websites or software.
 * <a href="https://thebestcsharpprogrammerintheworld.com" target="_blank">The Best C# Programmer In The World</a>
 * <a href="https://thereformedprogrammer.net" target="_blank">The Reformed Programmer</a>
 * <a href="https://www.traversymedia.com/" target="_blank">Traversy Media</a>
-* <a href="https://www.underdogdevs.org/" target="_blank">Underdog Devs</a> (for formerly incarcerated or economically disadvantaged individuals who want to get into tech)
+* <a href="https://www.underdogdevs.org/" target="_blank">Underdog Devs</a> (for formerly incarcerated or economically disadvantaged individuals)
 * <a href="https://www.wakeupandcode.com/" target="_blank">Wake Up and Code</a>
 * <a href="https://www.w3schools.com" target="_blank">W3 Schools</a>
 

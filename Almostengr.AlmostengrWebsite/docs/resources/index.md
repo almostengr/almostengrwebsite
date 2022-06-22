@@ -113,6 +113,7 @@ face when working on websites or software.
 * <a href="https://gkdba.wordpress.com/" target="_blank">Goal Keeping DBA</a>
 * <a href="https://api.jquery.com/" target="_blank">Jquery API Documentation</a>
 * <a href="https://www.youtube.com/c/binarythistle" target="_blank">Les Jackson</a>
+* <a href="https://martinfowler.com/" target="_blank">Martin Fowler</a>
 * <a href="https://docs.microsoft.com/en-us/" target="_blank">Microsoft Technical Documentation</a>
 * <a href="https://www.youtube.com/c/RobinsonHandyandTechnologyServices?sub_confirmation=1" target="_blank">Robinson Handy and Technology Services</a>
 * <a href="https://hanselman.com" target="_blank">Scott Hanselman</a>

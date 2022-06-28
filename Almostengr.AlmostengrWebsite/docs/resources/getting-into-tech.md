@@ -1,7 +1,7 @@
 ---
 title: Getting Into Tech - Questions and Answers
 posted: 2022-04-08
-updated: 2022-05-02
+updated: 2022-06-15
 author: Kenny Robinson, @almostengr
 keywords: "#BlackTechTwitter, #BlackInTech, getting into tech, transitioning into tech, how to get into tech"
 ---
@@ -149,6 +149,14 @@ whereas the 3.0 student probably has failed a test or two because they chose to 
 
 Yes there are several. Check out the [Resources](/resources) page for a list of people and communities
 that exist.
+
+### Other Resources
+
+I wrote a 
+[blog post](/technology/2022.02.02-breaking-into-tech)
+about a session that I attended that talked about how to 
+get into tech. You can read about it in the 
+[Technology section](/technology/2022.02.02-breaking-into-tech) of this website.
 
 ## Certifications
 

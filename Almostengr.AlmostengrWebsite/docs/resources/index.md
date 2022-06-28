@@ -2,7 +2,7 @@
 title: Resources
 description: Tech and non-tech resources that can provide additional information or support
 posted: 2021-11-26
-updated: 2022-06-15
+updated: 2022-06-22
 keywords: black in tech, black tech twitter, tech resources, online learning
 ---
 
@@ -27,7 +27,7 @@ via Github.
 * [Git Cheatsheet](/resources/git-cheatsheet)
 * [Linux](#linux)
 * [Linux Cheatsheet](/resources/linux-cheatsheet)
-* [.NET Core 3.1 / .NET 5 Cheatsheet](/resources/dotnet-core-cheatsheet)
+* [.NET (Core) CLI Cheatsheet](/resources/dotnet-core-cheatsheet)
 * [Web and Software Development](#web-and-software-development)
 
 ## Black In Tech
@@ -36,7 +36,7 @@ Groups or content targeted for or created by Black people in the IT industry. So
 apply to mutliple areas of tech, while others are specific. Some groups may have a presence on multiple
 platforms and are noted accordingly.
 
-* <a href="https://www.afrotech.com" target="_blank">Afro Tech</a>
+* <a href="https://www.afrotech.com" target="_blank">Afro Tech</a> (Community)
 * Birmingham Black Techies - <a href="https://www.facebook.com/groups/590555561689700" target="_blank">Facebook</a>,
 <a href="https://www.birminghamblacktechies.com/" target="_blank">Website</a> (Community)
 * Black Cloud Geeks - <a href="https://www.facebook.com/groups/blackcloudgeeks/" target="_blank">Facebook</a>,
@@ -100,7 +100,7 @@ you on the way to learning Linux and what all it has to offer.
 Whether you are a seasoned programmer or beginner, these resources will help you with challenges that you may 
 face when working on websites or software.
 
-* [.NET Core Cheatsheet](/resources/dotnet-core-cheatsheet)
+* [.NET (.NET Core) Cheatsheet](/resources/dotnet-core-cheatsheet)
 * <a href="https://ardalis.com/" target="_blank">Ardalis is Steve Smith</a>
 * <a href="https://atishay.me" target="_blank">Atishay Jain</a>
 * <a href="https://getbootstrap.com/" target="_blank">Bootstrap - responsive theming library</a>
@@ -113,6 +113,7 @@ face when working on websites or software.
 * <a href="https://gkdba.wordpress.com/" target="_blank">Goal Keeping DBA</a>
 * <a href="https://api.jquery.com/" target="_blank">Jquery API Documentation</a>
 * <a href="https://www.youtube.com/c/binarythistle" target="_blank">Les Jackson</a>
+* <a href="https://martinfowler.com/" target="_blank">Martin Fowler</a>
 * <a href="https://docs.microsoft.com/en-us/" target="_blank">Microsoft Technical Documentation</a>
 * <a href="https://www.youtube.com/c/RobinsonHandyandTechnologyServices?sub_confirmation=1" target="_blank">Robinson Handy and Technology Services</a>
 * <a href="https://hanselman.com" target="_blank">Scott Hanselman</a>
@@ -122,7 +123,7 @@ face when working on websites or software.
 * <a href="https://thebestcsharpprogrammerintheworld.com" target="_blank">The Best C# Programmer In The World</a>
 * <a href="https://thereformedprogrammer.net" target="_blank">The Reformed Programmer</a>
 * <a href="https://www.traversymedia.com/" target="_blank">Traversy Media</a>
-* <a href="https://www.underdogdevs.org/" target="_blank">Underdog Devs</a> (for formerly incarcerated or economically disadvantaged individuals who want to get into tech)
+* <a href="https://www.underdogdevs.org/" target="_blank">Underdog Devs</a> (for formerly incarcerated or economically disadvantaged individuals)
 * <a href="https://www.wakeupandcode.com/" target="_blank">Wake Up and Code</a>
 * <a href="https://www.w3schools.com" target="_blank">W3 Schools</a>
 

@@ -62,7 +62,7 @@ made by others. By doing these things and more, you'll be an active participant 
 active helps you be more visible on the platform, and thus more likely to be seen by 
 recruiters and hiring managers.
 
-The reason that I state about comment and not just likeinyg or reacting to posts made by others, 
+The reason that I state about comment and not just liking or reacting to posts made by others, 
 is because most people will not scroll through to see who liked the post. However, they will 
 scroll to see who has commented on an post, and in some cases will reply back to the comments 
 that you have left on a post. Thus commenting on a post will give you greater visibilty on the 

@@ -8,15 +8,15 @@ description: Advice on how to succeed with tech and functional interviews.
 
 Having sat on both sides of the interview desk, there are certain things that I have learned 
 and have created this resource to share those details. They are in no particular order.
-This will be a living document. Meaning that it will be updated as time goes on.
+This will be a living resource, meaning that it will be updated as time goes on.
 
 ## Categories
 
-* [Before](#before)
-* [During](#during)
-* [After](#after)
+* [Before](#before-the-interview)
+* [During](#during-the-interview)
+* [After](#after-the-interview)
 
-## Before
+## Before The Interview
 
 ### Make sure your entire outfit matches, including your socks
 
@@ -33,7 +33,7 @@ minor things could result in him not getting the job because it demonstrates a l
 ### Know what is on your resume
 
 I did an interview where I asked the interviewee a question about a particular technology that he 
-had listed on his resume. Initially he wasn't sure about what I was talking about, so I showed him 
+had listed on his resume. Initially he was not sure about what I was talking about, so I showed him 
 the resume and where it was listed and he immediately recalled what I was talking about. 
 
 Now this indicates the possibility of one or more things about the interviewee
@@ -48,7 +48,7 @@ do so, then you will appear less qualified for the position that you are intervi
 ### Your resume does not need your full address
 
 While this was important back in the day, your resume does not need your full address. No employer
-is going to contact you via postal mail to schedule an interview.
+is going to contact you via postal mail to schedule an interview or to ask questions.
 With Google Maps Street View, they can see exactly where you live and that can get you disqualified for 
 the job because preconceived notions about you and the neighborhood that you live in.
 If an employer does need you to mail 

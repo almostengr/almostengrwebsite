@@ -2,7 +2,7 @@
 title: Resources
 description: Tech and non-tech resources that can provide additional information or support
 posted: 2021-11-26
-updated: 2022-06-22
+updated: 2022-07-08
 keywords: black in tech, black tech twitter, tech resources, online learning
 ---
 
@@ -102,7 +102,6 @@ face when working on websites or software.
 
 * [.NET (.NET Core) Cheatsheet](/resources/dotnet-core-cheatsheet)
 * <a href="https://ardalis.com/" target="_blank">Ardalis is Steve Smith</a>
-* <a href="https://atishay.me" target="_blank">Atishay Jain</a>
 * <a href="https://getbootstrap.com/" target="_blank">Bootstrap - responsive theming library</a>
 * <a href="https://davidwalsh.name" target="_blank">David Walsh Blog</a>
 * <a href="https://dotnetplaybook.com" target="_blank">Dotnet Playbook</a>
@@ -115,8 +114,10 @@ face when working on websites or software.
 * <a href="https://www.youtube.com/c/binarythistle" target="_blank">Les Jackson</a>
 * <a href="https://martinfowler.com/" target="_blank">Martin Fowler</a>
 * <a href="https://docs.microsoft.com/en-us/" target="_blank">Microsoft Technical Documentation</a>
+* <a href="https://www.youtube.com/c/Elfocrash" target="_blank">Nick Chapsas</a>
 * <a href="https://www.youtube.com/c/RobinsonHandyandTechnologyServices?sub_confirmation=1" target="_blank">Robinson Handy and Technology Services</a>
 * <a href="https://hanselman.com" target="_blank">Scott Hanselman</a>
+* <a href="https://www.youtube.com/c/Matlus" target="_blank">Shiv Kumar</a>
 * <a href="https://wildermuth.com" target="_blank">Shawn Wildermuth</a>
 * <a href="https://simpleprogrammer.com" target="_blank">Simple Programmer</a>
 * <a href="https://www.techonthenet.com" target="_blank">Tech On The Net</a>
@@ -126,4 +127,3 @@ face when working on websites or software.
 * <a href="https://www.underdogdevs.org/" target="_blank">Underdog Devs</a> (for formerly incarcerated or economically disadvantaged individuals)
 * <a href="https://www.wakeupandcode.com/" target="_blank">Wake Up and Code</a>
 * <a href="https://www.w3schools.com" target="_blank">W3 Schools</a>
-

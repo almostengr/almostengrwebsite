@@ -1,7 +1,7 @@
 ---
 title: Tech Interview Tips
 posted: 2022-04-11
-updated: 2022-06-15
+updated: 2022-07-08
 author: Kenny Robinson, @almostengr
 description: Advice on how to succeed with tech and functional interviews.
 ---

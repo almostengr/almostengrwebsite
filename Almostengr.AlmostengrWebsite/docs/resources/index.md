@@ -15,8 +15,6 @@ links are resources that I have used myself. Each of the links go to a person in
 or tech related organization.
 
 I accept suggestions to be added this list. Share your suggestions by 
-<a href="https://github.com/almostengr/almostengrwebsite/edit/master/docs/resources/index.md" target="_blank">editing this page</a>
-or by 
 <a href="https://github.com/almostengr/almostengrwebsite/issues" target="_blank">opening an issue</a>
 via Github.
 

@@ -6,22 +6,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://thealmostengineer.com/contact/</loc>
-         <lastmod>2022-08-07</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://thealmostengineer.com/uses/</loc>
-         <lastmod>2022-08-07</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://thealmostengineer.com/about/</loc>
          <lastmod>2022-08-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thealmostengineer.com/about/privacy/</loc>
+         <lastmod>2022-08-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://thealmostengineer.com/contact/</loc>
          <lastmod>2022-08-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -1597,6 +1592,11 @@
     </url>
     <url>
          <loc>https://thealmostengineer.com/technology/links/</loc>
+         <lastmod>2022-08-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://thealmostengineer.com/uses/</loc>
          <lastmod>2022-08-07</lastmod>
          <changefreq>daily</changefreq>
     </url>

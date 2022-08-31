@@ -1,7 +1,7 @@
 ---
 title: Getting Into Tech - Questions and Answers
 posted: 2022-04-08
-updated: 2022-06-15
+updated: 2022-08-30
 author: Kenny Robinson, @almostengr
 keywords: "#BlackTechTwitter, #BlackInTech, getting into tech, transitioning into tech, how to get into tech"
 ---
@@ -47,6 +47,9 @@ From that point, you can then narrow your list down further to one option.
 Once you have that final option, find online resources (online courses, YouTube series), 
 books, conferences, workshops, and groups that relate to the work that you are interested in and be an 
 active participant in each of those.
+
+A wrote a [blog post](/technology/2022.02.02-breaking-into-tech/) based on a presentation that I 
+attended. This is an additional perspective that I share with people that ask this question.
 
 ### I heard that you can make a lot of money in tech. I want to...
 
@@ -158,6 +161,10 @@ about a session that I attended that talked about how to
 get into tech. You can read about it in the 
 [Technology section](/technology/2022.02.02-breaking-into-tech) of this website.
 
+Also wrote a [blog post about applying for a job](/technology/2022.04.16-apply-for-that-job/) even when you 
+do not meet all of the requirements. THe rationale is that it is not your responsibility to disqualify 
+yourself from the job, but the responsibility of the recruiter or HR person to do this.
+
 ## Certifications
 
 ### I don't have a degree. Can I get into tech with only certifications?
@@ -266,7 +273,7 @@ and the positions that I thought would be best where they get a job in tech and 
 * Individual has a Communications degrees (Bachelors and Masters). I suggested that she look into 
 Business Analyst or Project Management roles. Reason being is both of these roles are usually customer facing and 
 require that you present information (e.g. project progress, design features, questions from developers) to the 
-product owner or customer and being in Commications field means a lot of talking and proper use of the language.
+product owner or customer and being in Communications field means a lot of talking and proper use of the language.
 * Individual has a Nursing degree (Bachelors). I suggested that she consider working as a technician  
 repairing and maintaining medical equipment (e.g. heart monitors, blood pressure machines, MRI machine, etc). 
 Also suggested that this individual consider working for an MSP (Managed Service Provider) that contracts or 
@@ -283,7 +290,7 @@ It does not matter, but do pick a distribution that is free and not paid.
 Some distributions of Linux, like Red Hat, require that you pay for them, simliar to how Microsoft requires that you 
 pay for a Windows OS license. I do not recommend paying for any distribution of Linux that you will be practicing with. 
 Majority of Linux distributions, do not require that you pay for them as they are fully open source and free.
-From my experience, Ubuntu is one of the easiest to install a on system or virtual machine.
+From my experience, Ubuntu is one of the easiest to install on a system or virtual machine.
 
 ### I have installed a Linux VM (Virtual Machine) and use the GUI (graphical user interface) to practice with.
 
@@ -404,7 +411,7 @@ working with React, Angular, or other JavaScript based frameworks.
 ### Heard that PHP (Pre-Hypertext Processor) was a dying language. Should I still learn it? 
 
 While usage of PHP has declined, it will still be around for a while. Content Management Systems
-including WordPress and Drupal use it. 
+(CMS) including WordPress and Drupal use it. 
 In addition, most web hosting providers support it without an additional charge. There is 
 no licensing cost to use PHP, so beginner programmers and businesses that have limited budgets 
 use it for their websites to save money. Frameworks such as Laravel, CakePHP, and Symfony

@@ -26,6 +26,7 @@ via Github.
 * [Linux](#linux)
 * [Linux Cheatsheet](/resources/linux-cheatsheet)
 * [.NET (Core) CLI Cheatsheet](/resources/dotnet-core-cheatsheet)
+* [Toastmasters Table Topics](/resources/toastmasters-table-topics)
 * [Web and Software Development](#web-and-software-development)
 
 ## Black In Tech

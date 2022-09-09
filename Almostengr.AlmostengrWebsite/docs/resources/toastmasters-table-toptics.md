@@ -6,3 +6,6 @@ category: resources
 keywords: toastmasters, table topics, questions, public speaking, tower toastmasters
 ---
 
+1. What makes you who you are?
+1. Will your next car be an EV, hybrid, or gasoline powered?
+2. 

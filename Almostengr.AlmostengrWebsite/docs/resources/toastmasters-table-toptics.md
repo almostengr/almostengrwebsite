@@ -6,6 +6,14 @@ category: resources
 keywords: toastmasters, table topics, questions, public speaking, tower toastmasters
 ---
 
+## Themed Table Topics
+
+* [School Table Topics](/lifestyle/2022.08.02-table-topics-related-to-school)
+* [Summer Table Topics](/lifestyle/2021.06.29-table-topics-questions)
+* 
+
+## Miscellaneous Table Topic Questions
+
 1. What makes you who you are?
 2. The wheels on the bus go round and round. Will your next vehicle be fully electric?
 3. Will your next car be an EV (electric vehicle), hybrid, or gasoline powered?
@@ -18,9 +26,3 @@ keywords: toastmasters, table topics, questions, public speaking, tower toastmas
 10. Santa Claus typically lands his sled on the roof of houses. Where does he park if you live in an apartment or condo?
 11. In your opinion, why does America does not use the Metric System as the default unit of measurement?
 12. 
-
-## Themed Table Topics
-
-* [School Table Topics](/lifestyle/2022.08.02-table-topics-related-to-school)
-* [Summer Table Topics](/lifestyle/2021.06.29-table-topics-questions)
-* 

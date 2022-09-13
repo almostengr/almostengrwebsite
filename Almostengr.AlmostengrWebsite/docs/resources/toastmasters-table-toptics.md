@@ -15,4 +15,6 @@ keywords: toastmasters, table topics, questions, public speaking, tower toastmas
 7. What is one thing that you would fix about schools in America?
 8. You are a modern day Robin Hood. Name some things you take from the rich and give to the poor?
 9. Name a restaurant that you refuse to eat at and why their food is so bad. 
-
+10. Santa Claus typically lands his sled on the roof of houses. Where does he park if you live in an apartment or condo?
+11. In your opinion, why does America does not use the Metric System as the default unit of measurement?
+12. 

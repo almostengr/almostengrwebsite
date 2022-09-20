@@ -68,7 +68,7 @@ scroll to see who has commented on an post, and in some cases will reply back to
 that you have left on a post. Thus commenting on a post will give you greater visibilty on the 
 website.
 
-### Keep Your LinkedIn Updated
+### Keep your LinkedIn updated
 
 Some people keep their resumes updated because that is what they send to employers when they apply 
 for a position. However, most do not keep their LinkedIn updated when they do resume updates. I 

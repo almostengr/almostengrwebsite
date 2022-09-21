@@ -10,7 +10,7 @@ image: /images/2020 Christmas Light Show 20201211-f000000.jpg
 
 ## Show Dates and Times
 
-Show will run nightly from November 24, 2022 until December 31, 2022.
+Show will run nightly from November 25, 2022 until January 1, 2023.
 
 * Nightly, Pre-show (static lights) starts at 4:30 PM (16:30)
 * Nightly, 5:30 PM (17:30) until 10:00 PM (22:00)

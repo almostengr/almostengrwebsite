@@ -1,7 +1,7 @@
 ---
 title: Tech Interview Tips
 posted: 2022-04-11
-updated: 2022-07-08
+updated: 2022-09-20
 author: Kenny Robinson, @almostengr
 description: Advice on how to succeed with tech and functional interviews.
 ---
@@ -10,7 +10,7 @@ Having sat on both sides of the interview desk, there are certain things that I 
 and have created this resource to share those details. They are in no particular order.
 This will be a living resource, meaning that it will be updated as time goes on.
 
-## Categories
+## Sections
 
 * [Before](#before-the-interview)
 * [During](#during-the-interview)
@@ -67,6 +67,19 @@ is because most people will not scroll through to see who liked the post. Howeve
 scroll to see who has commented on an post, and in some cases will reply back to the comments 
 that you have left on a post. Thus commenting on a post will give you greater visibilty on the 
 website.
+
+### Keep your LinkedIn updated
+
+Some people keep their resumes updated because that is what they send to employers when they apply 
+for a position. However, most do not keep their LinkedIn updated when they do resume updates. I 
+recommend that you update both at the same time.
+
+When done correctly, your LinkedIn can get you jobs even when you are not actively looking for jobs 
+or when you have not submitted your resume. Part of keeping your LinkedIn up to date, is posting about 
+what you have learned recently or what you are currently working on (assuming that it does not 
+violate any NDAs that you have signed for your work). Another part is commenting, not just liking
+the posts of other individuals that you have connections with and in groups that are related to 
+your field of expertise.
 
 ### Have a blog or vlog
 

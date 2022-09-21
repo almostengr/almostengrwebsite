@@ -14,9 +14,9 @@ and create resources related to programming and working in IT (Information Techn
 links are resources that I have used myself. Each of the links go to a person in tech, tech related group, 
 or tech related organization.
 
-I accept suggestions to be added this list. Share your suggestions by 
-<a href="https://github.com/almostengr/almostengrwebsite/issues" target="_blank">opening an issue</a>
-via Github.
+Additional resources nad suggestions can be added to this list by messaging me on 
+<a href="https://www.instagram.com/almostengr" target="_blank">Instagram</a> or
+<a href="https://twitter.com/almostengr" target="_blank">Twitter</a>.
 
 ## Categories
 
@@ -26,6 +26,7 @@ via Github.
 * [Linux](#linux)
 * [Linux Cheatsheet](/resources/linux-cheatsheet)
 * [.NET (Core) CLI Cheatsheet](/resources/dotnet-core-cheatsheet)
+* [Toastmasters Table Topics](/resources/toastmasters-table-topics)
 * [Web and Software Development](#web-and-software-development)
 
 ## Black In Tech

@@ -58,6 +58,9 @@ extra:
     - icon: fontawesome/brands/stack-overflow
       link: https://stackoverflow.com/users/12875554/almostengr
       name: almostengr on StackOverflow
+    - icon: fontawesome/brands/tiktok
+      name: almostengr on TikTok
+      link: https://www.tiktok.com/@almostengr
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/almostengr
       name: "@almostengr on Twitter"

@@ -1,7 +1,7 @@
 ---
 title: Getting Into Tech - Questions and Answers
 posted: 2022-04-08
-updated: 2022-08-30
+updated: 2022-09-20
 author: Kenny Robinson, @almostengr
 keywords: "#BlackTechTwitter, #BlackInTech, getting into tech, transitioning into tech, how to get into tech"
 ---
@@ -17,9 +17,7 @@ or changing from non-tech career to a tech career into the resource that you see
 As I get asked more questions, I will update this page with my answers to those questions. If you have
 a question that is not answered here, you can reach out to me on 
 <a href="https://twitter.com/almostengr" target="_blank">Twitter</a> or
-<a href="https://www.instagram.com/almostengr" target="_blank">Instagram</a> or by 
-submitting an 
-<a href="https://github.com/almostengr/almostengrwebsite/issues" target="_blank">issue on the website repo</a>.
+<a href="https://www.instagram.com/almostengr" target="_blank">Instagram</a>.
 
 ## Categories
 
@@ -162,7 +160,7 @@ get into tech. You can read about it in the
 [Technology section](/technology/2022.02.02-breaking-into-tech) of this website.
 
 Also wrote a [blog post about applying for a job](/technology/2022.04.16-apply-for-that-job/) even when you 
-do not meet all of the requirements. THe rationale is that it is not your responsibility to disqualify 
+do not meet all of the requirements. The rationale is that it is not your responsibility to disqualify 
 yourself from the job, but the responsibility of the recruiter or HR person to do this.
 
 ## Certifications

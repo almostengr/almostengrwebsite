@@ -1,7 +1,7 @@
 ---
 title: Getting Into Tech - Questions and Answers
 posted: 2022-04-08
-updated: 2022-09-20
+updated: 2022-09-27
 author: Kenny Robinson, @almostengr
 keywords: "#BlackTechTwitter, #BlackInTech, getting into tech, transitioning into tech, how to get into tech"
 ---
@@ -350,7 +350,9 @@ it is easier to code with and is not as rigid as strongly typed languages like C
 This will vary depending on who you work for, but there are some core compentencies that you will need to know
 that are universal. 
 
+* Change Management (ITIL)
 * CI/CD - Continuous Integration, Continuous Development
+* Incident management (ITIL)
 * Programming best practices and concepts - clean code, SOLID, DRY
 * Programming language - HTML, CSS, JavaScript for web development; Java, C# for desktop applications
 * SCRUM and Agile concepts

@@ -2,7 +2,7 @@
 title: Resources
 description: Tech and non-tech resources that can provide additional information or support
 posted: 2021-11-26
-updated: 2022-07-08
+updated: 2022-09-27
 keywords: black in tech, black tech twitter, tech resources, online learning
 ---
 
@@ -102,6 +102,7 @@ face when working on websites or software.
 * [.NET (.NET Core) Cheatsheet](/resources/dotnet-core-cheatsheet)
 * <a href="https://ardalis.com/" target="_blank">Ardalis is Steve Smith</a>
 * <a href="https://getbootstrap.com/" target="_blank">Bootstrap - responsive theming library</a>
+* <a href="https://blog.cleancoder.com/" target="_blank">Clean Coder</a>
 * <a href="https://davidwalsh.name" target="_blank">David Walsh Blog</a>
 * <a href="https://dotnetplaybook.com" target="_blank">Dotnet Playbook</a>
 * <a href="https://www.youtube.com/watch?v=iujOWWbiUP0&list=PLaAJ0fv0d9WM8E2K_Ke5As-fw626yQ3tu" target="_blank">Drupal 8 Basics Online Course</a>

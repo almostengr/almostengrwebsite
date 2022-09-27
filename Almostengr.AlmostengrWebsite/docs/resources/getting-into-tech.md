@@ -27,6 +27,7 @@ is most relevant to the information you would like to know.
 * [Certifications](#certifications)
 * [Cyber Security](#cyber-security)
 * [Degrees](#degrees)
+* [DevOps](#devops)
 * [General](#general)
 * [Linux](#linux)
 * [Software Development](#software-development)
@@ -280,6 +281,12 @@ Having a medical background would give her an advantage because she knows how th
 would only have to learn the technical aspect of the machines. In addition, having previously worked in a
 hospital environment, she would already be familiar with hospital procedures and protocols. 
 
+## DevOps
+
+### Do I need to have a certification in a cloud platform before interviewing?
+
+No you don't. Now if you have one, then it will help better qualify you to get the job.
+
 ## Linux
 
 ### There are multiple distributions of Linux like Red Hat, Ubuntu, and Fedora. Which one should I pick to learn with?
@@ -350,9 +357,9 @@ it is easier to code with and is not as rigid as strongly typed languages like C
 This will vary depending on who you work for, but there are some core compentencies that you will need to know
 that are universal. 
 
-* Change Management (ITIL)
+* Change Management (ITIL certification)
 * CI/CD - Continuous Integration, Continuous Development
-* Incident management (ITIL)
+* Incident management (ITIL certification)
 * Programming best practices and concepts - clean code, SOLID, DRY
 * Programming language - HTML, CSS, JavaScript for web development; Java, C# for desktop applications
 * SCRUM and Agile concepts

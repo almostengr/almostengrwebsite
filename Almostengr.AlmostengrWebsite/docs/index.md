@@ -1,5 +1,5 @@
 ---
-title: Welcome!
+title: 
 description: Information about this blog and Kenny Robinson.
 ---
 

@@ -5,7 +5,7 @@ description: Information about this blog and Kenny Robinson.
 
 ![Kenny with traffic light](/images/jumbotron_kenny.jpg)
 
-## Featured Projects
+## Featured Project - Christmas Light Show
 
 Each year, I do a animated [Christmas light show](/projects/christmas-light-show). The show posts song 
 countdown to Christmas and posts song information 

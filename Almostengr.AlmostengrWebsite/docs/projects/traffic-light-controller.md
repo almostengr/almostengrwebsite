@@ -12,6 +12,6 @@ Pis are known for having issues when they are not properly shut down. To reduce 
 having an unexpected failure, I decided to change replace the Pi with a controller that 
 ran on an ESP32.
 
-This controller will be sold as a product that model railroad and traffic light enthusaiasts
+This controller will be sold as a product that model railroad and traffic light enthusiasts
 will enjoy. To purchase, visit 
 <a href="https://rhtservices.net" target="_blank">rhtservices.net</a>.

@@ -8,7 +8,10 @@ description: Information about this blog and Kenny Robinson.
 ## Technology Blog
 
 A programmer that does not talk (or in this case write) about technology probably is not a good programmer. 
-I share my code snippets, difficulties with coding, and  things technology here.
+I share 
+[my code snippets](/technology/2022.09.17-length-of-shell-variable/), 
+[difficulties with coding](/technology/2021.08.12-jquery-validator-with-parameter/), 
+and other things technology here.
 [Read the Tech Blog](/technology)
 
 ## Lifestyle Blog

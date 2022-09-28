@@ -5,6 +5,14 @@ description: Information about this blog and Kenny Robinson.
 
 ![Kenny with traffic light](/images/jumbotron_kenny.jpg)
 
+## Featured Projects
+
+Each year, I do a animated [Christmas light show](/projects/christmas-light-show). The show posts song 
+countdown to Christmas and posts song information 
+<a href="https://twitter.com/hplightshow" target="_blank">Twitter</a> via a custom software application.
+More information about the project, including song information, show times, and links to previous 
+years show videos, are avaiable on the [project page](/project/christmas-light-show).
+
 ## Technology Blog
 
 A programmer that does not talk (or in this case write) about technology probably is not a good programmer. 

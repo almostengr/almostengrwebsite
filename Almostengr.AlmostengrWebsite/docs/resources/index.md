@@ -1,8 +1,6 @@
 ---
 title: Resources
 description: Tech and non-tech resources that can provide additional information or support
-posted: 2021-11-26
-updated: 2022-09-30
 keywords: black in tech, black tech twitter, tech resources, online learning
 ---
 
@@ -26,5 +24,7 @@ Additional resources nad suggestions can be added to this list by messaging me o
 * [Git Cheatsheet](/resources/git-cheatsheet)
 * [Linux](/resources/linux)
 * [Linux Cheatsheet](/resources/linux-cheatsheet)
+* [Non-Tech Resources](/resources/non-tech)
+* [Tech Interview Tips](/resources/tech-interview-tips)
 * [Toastmasters Table Topics](/resources/toastmasters-table-topics)
 * [Web and Software Development](/resources/web-and-software-development)

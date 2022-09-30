@@ -1,0 +1,8 @@
+<div class="container p-3">
+    <h1 id="title">{{ page.meta.title }}</h1>
+    {% for link in config.theme.links %}
+    <a href="{{ link.url }}" 
+    {% if "http" in link.url %} target="_blank" {% endif %}
+    class="btn btn-secondary w-100 my-2 p-3 font-weight-bold lead">{{ link.name }}</a>
+    {% endfor %}
+</div>    

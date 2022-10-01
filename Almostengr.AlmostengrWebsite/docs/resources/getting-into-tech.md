@@ -1,7 +1,7 @@
 ---
 title: Getting Into Tech - Questions and Answers
 posted: 2022-04-08
-updated: 2022-09-20
+updated: 2022-09-27
 author: Kenny Robinson, @almostengr
 keywords: "#BlackTechTwitter, #BlackInTech, getting into tech, transitioning into tech, how to get into tech"
 ---
@@ -27,6 +27,7 @@ is most relevant to the information you would like to know.
 * [Certifications](#certifications)
 * [Cyber Security](#cyber-security)
 * [Degrees](#degrees)
+* [DevOps](#devops)
 * [General](#general)
 * [Linux](#linux)
 * [Software Development](#software-development)
@@ -280,6 +281,43 @@ Having a medical background would give her an advantage because she knows how th
 would only have to learn the technical aspect of the machines. In addition, having previously worked in a
 hospital environment, she would already be familiar with hospital procedures and protocols. 
 
+## DevOps
+
+### Do I need to have a certification in a cloud platform before interviewing?
+
+No you don't. Now if you have one, then it will help better qualify you to get the job.
+
+### Do I need to know about incident management?
+
+Yes you do. That is one of the main aspects of Operations side of DevOps is dealing with incidents. Incidents 
+are issues that occur with the infrastructure or application that requires attention. This could be a data 
+process that has failed to complete, an application is unable to reach an downstream or interfacing application, 
+or hardware issue.
+
+Incidents have different level of severities. Most severe incidents will require immediate attention and usually 
+have significant impact (e.g., customers cannot buying items from online store), and require immediate attention.
+Least severe incidents do not have as big of an impact (e.g., one customer having issues resetting his/her 
+password) and can take back seat to more pressing issues.
+
+The book "The Phoenix Project" provides a perspective of what can happen when incidents are not properly 
+addressed in a timely manner. In the book, it mentions that stores were not able to complete transactions because 
+a fix was put in and not properly documented.
+
+### Do I need to know about change management?
+
+Yes you do. Change management is the process to track changes that are made within a given organization, the 
+scope of work that is to be done, and who will be impacted by the change being made. From my experience, 
+one of main benefits of having change management and CAB (Change Approval Board) meetings, is to prevent 
+conflicting changes from occurring at the same time. 
+
+For example, if an application has a release scheduled at the same time or during the same window as the 
+operating system update, that would be bad because the application could end up with a partial deployment 
+if the server is rebooted to apply operating system updates.
+
+The book "The Phoenix Project" talks about change management and the outcome when CAB members do not 
+participate in it. The result is more issues and chaos. I would recommend that you read this book about 
+the issues that an organization can face.
+
 ## Linux
 
 ### There are multiple distributions of Linux like Red Hat, Ubuntu, and Fedora. Which one should I pick to learn with?
@@ -308,7 +346,6 @@ can have your favorite, having basic knowledge of how to edit a text file in vi 
 on any Linux based system even if your favorite editor is not available.
 
 ### Should I learn Linux using Docker or a virtual machine?
-
 Does not matter. Both methods will give you the full operating system and the ability to be able to perform 
 all of the functions on that system. The major difference is that Docker will use much less resources
 than a virtual machine will. Thus if you are using an older computer, I would suggest going with Docker 
@@ -350,7 +387,9 @@ it is easier to code with and is not as rigid as strongly typed languages like C
 This will vary depending on who you work for, but there are some core compentencies that you will need to know
 that are universal. 
 
+* Change Management (ITIL certification)
 * CI/CD - Continuous Integration, Continuous Development
+* Incident management (ITIL certification)
 * Programming best practices and concepts - clean code, SOLID, DRY
 * Programming language - HTML, CSS, JavaScript for web development; Java, C# for desktop applications
 * SCRUM and Agile concepts
@@ -391,6 +430,19 @@ As an alternative, you can use
 <a href="https://notepad-plus-plus.org/" target="_blank">Notepad++</a>
 for coding. A number of developers used this before VS Code
 was released because it does syntax highlighting for a number of languages.
+
+### Architecture Patterns... is it necessary to learn all of them?
+
+No it is not. You do need to be familiar with some of them and to be able to learn a new pattern.
+Often times, each company will have their own way of building their applications. Some of it may 
+follow convention, and some of it may not. Ideally, an organization would follow convention for the 
+programming languages that they use.
+
+When changing companies or organizations, be open to learning new ways of structuring your code. 
+There are many tutorials that talk about Clean Architecture, Domain Driven Design, 
+Event Driven Architecture, MVC, and more. There are courses on 
+<a href="https://www.youtube.com/c/RobinsonHandyandTechnologyServices?sub_confirmation=1" target="_blank">YouTube</a>
+and other platforms that will explain those to you.
 
 ## Web Development
 

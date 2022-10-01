@@ -1,4 +1,6 @@
-# Tuscaloosa Area Black Chamber of Commerce
+---
+title: Tuscaloosa Area Black Chamber of Commerce
+---
 
 <img src="/images/portfolio_tabcc.jpg" alt="TABCC website screenshot">
 

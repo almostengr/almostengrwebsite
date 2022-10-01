@@ -1,4 +1,6 @@
-# FarmOS NWS (National Weather Service) Drupal 7 Module
+---
+title: FarmOS NWS (National Weather Service) Drupal 7 Module
+---
 
 ## Purpose
 
@@ -11,6 +13,6 @@ Using data from the National Weather Service reduces the cost to get a FarmOS in
 temperature, rain, humidity and other sensors do not have to be purchased. Furthermore, it reduces the
 maintenance costs by reducing the amount of infrastructure required to maintain the farm or garden.
 
-* Technologies: Bash, Drupal, PHP
+* Technologies: Bash, Drupal 7, PHP
 * Year Started: 2017
 * <a href="https://github.com/almostengr/farmosnws" target="_blank">Source Code</a>

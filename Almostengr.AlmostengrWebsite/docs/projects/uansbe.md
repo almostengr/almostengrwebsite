@@ -1,4 +1,6 @@
-# University of Alabama Chapter of the National Society of Black Engineers
+---
+title: University of Alabama Chapter of the National Society of Black Engineers
+---
 
 <img src="/images/portfolio_uansbe.jpg" alt="UA NSBE Screenshot">
 

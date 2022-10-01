@@ -15,3 +15,6 @@ ran on an ESP32.
 This controller will be sold as a product that model railroad and traffic light enthusiasts
 will enjoy. To purchase, visit 
 <a href="https://rhtservices.net" target="_blank">rhtservices.net</a>.
+
+* Technology: C++, ESP32
+

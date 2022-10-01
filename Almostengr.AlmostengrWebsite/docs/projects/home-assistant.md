@@ -1,4 +1,6 @@
-# Home Automation with Home Assistant
+---
+title: Home Automation with Home Assistant
+---
 
 <img src="/images/portfolio_homeassistant.jpg" alt="Screenshot of Home Assistant dashboard">
 
@@ -10,6 +12,6 @@ somewhat daunting for the beginnger. By providing my
 configuration, hopefully it will assist you and others with their configuraiton of their own instance.
 
 * Year Started: 2017
-* <a href="https://github.com/almostengr/ha-config" target="_blank">Configuration</a> | 
-* <a href="https://www.youtube.com/playlist?list=PLaAJ0fv0d9WMOGZmLnghrG321kVueGfuL" target="_blank">Tutorials</a> | 
+* <a href="https://github.com/almostengr/ha-config" target="_blank">Configuration</a> 
+* <a href="https://www.youtube.com/playlist?list=PLaAJ0fv0d9WMOGZmLnghrG321kVueGfuL" target="_blank">Tutorials</a> 
 * <a href="/uses/#home-assistant">Components</a>

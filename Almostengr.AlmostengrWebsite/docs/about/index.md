@@ -3,8 +3,6 @@ title: About
 description: Information about Kenny Robinson and his blog
 ---
 
-# About
-
 ## "The Almost Engineer" Explanation
 
 You probably are wondering how did I come up with

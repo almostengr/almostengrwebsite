@@ -152,6 +152,25 @@ whereas the 3.0 student probably has failed a test or two because they chose to 
 Yes there are several. Check out the [Resources](/resources) page for a list of people and communities
 that exist.
 
+### I want to get a job in the United States, but getting constantly rejected. What is the reason?
+
+The reason for rejections may be due to immigration and not your work skills. The immigration process, 
+in particular for a company to sponsor you, is an expensive one. 
+From previous conversations with a former
+coworker, the filing and attorney fees can easily run about $15,000 USD. Also visas have to be renewed 
+every 5 to 10 years depending on your status, elgibility, and other requirements. 
+
+For that reason, some companies do not hire people that require sponsorship. Other companies do hire 
+people that require sponsorship, because they have in house teams that are familiar with the immigration 
+process and have large number of sponsored employees.
+
+Those that are coming to the US trying to get a work visa and sponsorship, I advise that while they are 
+applying for jobs in the US, to become familiar with the work visa and immigration process of the US. 
+Immigration is a very touchy subject and one missed deadline or wrong paperwork being filed could
+result in you getting deported or no longer being able to work in the US. More informaiton 
+about this can be found on the 
+<a href="https://www.uscis.gov/working-in-the-united-states" target="_blank">USCIS website</a>.
+
 ### Other Resources
 
 I wrote a 

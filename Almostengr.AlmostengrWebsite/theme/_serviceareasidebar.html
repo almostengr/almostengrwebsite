@@ -1,0 +1,22 @@
+<h3 class="text-center text-light font-weight-bold pb-2">SERVICES WE OFFER</h3>
+
+{% for nav_item in nav %}
+{% if nav_item.children and page %}
+{% for nav_item in nav_item.children %}
+{% if "services" in nav_item.url and nav_item.title != "Services We Offer" %}
+<div class="row text-white">
+    <div class="col-2 text-right">
+        <i class="bi bi-hammer"></i>
+    </div>
+    <div class="col">
+        {% if nav_item.url %}
+        <a href="{{ nav_item.url | url }}" class="text-white">{{ nav_item.title }}</a>
+        {% else %}
+        {{ nav_item.title }}
+        {% endif %}
+    </div>
+</div>
+{% endif %}
+{% endfor %}
+{% endif %}
+{% endfor %}

@@ -1,4 +1,6 @@
-# Kdenlive to YouTube
+---
+title: Kdenlive to YouTube
+---
 
 This project was to build an automation that would take video projects that I have created
 with Kdenlive, generate them, and then upload them to YouTube automatically.

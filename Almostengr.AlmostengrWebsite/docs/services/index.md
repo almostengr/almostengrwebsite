@@ -29,5 +29,5 @@ is mobile friendly and is compatible with Google best practices.
 ## To Get Started
 
 To get started, you amy reach out to me via 
-<a href="https://rhtservices.net/services" target="_blank">my business wesite</a>. Any questions 
+<a href="https://rhtservices.net/services" target="_blank">my business website</a>. Any questions 
 regarding services, billing, and more can be found and asked from there.

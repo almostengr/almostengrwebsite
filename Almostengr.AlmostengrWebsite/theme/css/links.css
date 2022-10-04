@@ -1,0 +1,9 @@
+#pagecontent a{
+    text-decoration: none;
+    /* border: solid 3px var(--black);
+    width: 100%; */
+}
+
+#pagecontent h2 {
+    width: 100%;
+}

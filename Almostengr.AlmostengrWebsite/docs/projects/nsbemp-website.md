@@ -1,4 +1,6 @@
-# NSBE Montgomery Professionals Website
+---
+title: NSBE Montgomery Professionals Website
+---
 
 <img src="/images/projects/nsbemp.jpg" alt="NSBE Montgomery Professionals website">
 

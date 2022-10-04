@@ -1,0 +1,27 @@
+<h2>What all services do we offer?</h2>
+<div class="row pr-3">
+    {% for nav_item in nav %}
+    {% if nav_item.children and page %}
+    {% for nav_item in nav_item.children %}
+    {% if "services" in nav_item.url and nav_item.title != "Services We Offer" %}
+    <div class="col-sm-12 col-md-6 col-lg-4 my-2">
+        <div class="card h-100 w-100">
+            <div class="card-body p-0 m-1">
+                <a href="{{ nav_item.url | url }}" class="text-decoration-none">
+                    {% if nav_item.meta.image %}
+                    <img src="{{ nav_item.meta.thumbnail }}" class="card-img-top" alt="{{ nav_item.meta.imagealt }}">
+                    {% else %}
+                    <img src="/images/logo.jpg" class="card-img-top" alt="Robinson Handy and Technology Services Logo">
+                    {% endif %}
+                </a>
+            </div>
+            <div class="card-footer bg-warning text-center">
+                <a href="{{ nav_item.url | url }}" class="text-decoration-none">{{ nav_item.title }}</a>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+    {% endif %}
+    {% endfor %}
+</div>

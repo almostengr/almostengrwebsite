@@ -1,4 +1,6 @@
-# Internet Monitor Project
+---
+title: Internet Monitor Project
+---
 
 Reboots the 
 <a href="https://dd-wrt.com" target="_blank">DD-WRT</a> 

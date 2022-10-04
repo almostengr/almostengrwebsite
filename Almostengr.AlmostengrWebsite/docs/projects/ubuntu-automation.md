@@ -1,4 +1,6 @@
-# Ubuntu Automation Scripts
+---
+title: Ubuntu Automation Scripts
+---
 
 The purpose of this repository is to hold scripts that use for routine tasks, such as updating packages,
 starting virtual machines, and automatically commiting files. When you run the same commands over

@@ -17,8 +17,8 @@ if [[ ${STATUSOUTPUT} != *"nothing to commit, working tree clean"* ]]; then
     git add .
     git commit -m "Auto commit latest content"
     git push
-
+    exit 0
 else
     echo "No updates were found"
-    exit 0
+    exit 1
 fi

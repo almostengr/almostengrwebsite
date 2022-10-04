@@ -9,6 +9,7 @@ Table Topics are a portion of the Toastmasters meeting where individuals are ask
 
 ## Themed Table Topics
 
+* [Miscellaneous Table Topics](#miscellaneous-table-topic-questions)
 * [School Table Topics](/lifestyle/2022.08.02-table-topics-related-to-school)
 * [Summer Table Topics](/lifestyle/2021.06.29-table-topics-questions)
 

@@ -167,6 +167,6 @@ may have changed some and thus the old strategy no longer works.
 
 ### See the Before steps
 
-Continue to do the things listed in the [Before](#before) section of this page even after the 
+Continue to do the things listed in the [Before](#before-the-interview) section of this page even after the 
 interview. Why? Employers are always looking for good talent to hire. If you start slipping when 
 they start looking, you'll get passed over and wondering why you are struggling to make moves.

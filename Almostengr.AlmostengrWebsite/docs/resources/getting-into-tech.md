@@ -1,7 +1,7 @@
 ---
 title: Getting Into Tech - Questions and Answers
 posted: 2022-04-08
-updated: 2022-09-27
+updated: 2022-10-05
 author: Kenny Robinson, @almostengr
 keywords: "#BlackTechTwitter, #BlackInTech, getting into tech, transitioning into tech, how to get into tech"
 ---
@@ -256,6 +256,34 @@ I would suggest that you first work on getting your CompTIA Security+ certificat
 a minimum requirement for cyber security roles. Then from there, you can get addition certifications 
 such as CEH (Certified Ethical Hacker) or CISSP (Certified Information Systems Security Professional) 
 depending on the area of cyber security that you want to be a part of.
+
+### I have a degree in Cyber Security, but cannot get hired. What do I do?
+
+I advise people that run into this wall to set up a home lab and start publicizing their craft. Your home 
+lab can consist of physical or virtual devices. With the home lab, you practice doing the various aspects
+that a cyber security professional would do. This includes, but is not limited to setting up firewalls, 
+penetration testing, and defending against DOS and DDOS attacks. One person that has done this is 
+the <a href="https://dfirdiva.com/the-evolution-of-my-home-lab/" target="_blank">DFIR Diva</a>. 
+
+As you perform these various tasks in your home lab, blog, make videos, or post about your activities 
+on LinkedIn. Be consistent about doing this as well. Wtihin a few months of consistent activity, you will 
+begin to get recognized by recruiters and the opportunities for interviews will roll in. 
+
+I will also suggest that you find and be an active (not passive) participant in groups on LinkedIn,
+Facebook, and other platforms that are related and discuss CyberSecurity. Recruiters are often lurking 
+in these groups, and do pay attention to those who are active participants. It is the active participants
+that get contacted on a regular basis for speaking and job opportunities, even when they are not 
+interested or looking for them (speaking from experience about this).
+
+Once you start getting interviews, you still need to continue posting and practicing in your lab. Only 
+once you have gotten hired and started working, should you then consider (but not necessarily do) reduce
+the amount you practice in your lab.
+
+Why does this work? The reason is that companies look for proof that you are good at the work that you do. 
+How do you prove that? With experience. In particular documented experience. A [blog](/), 
+<a href="https://www.youtube.com/c/RobinsonHandyandTechnologyServices?sub_confirmation=1" target="_blank">YouTube channel</a>, 
+and posting on your social media platforms are
+all good ways to show that you know what you are talking about and are good at the work that you do.
 
 ## Degrees
 

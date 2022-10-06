@@ -12,9 +12,9 @@ This will be a living resource, meaning that it will be updated as time goes on.
 
 ## Sections
 
-* [Before](#before-the-interview)
-* [During](#during-the-interview)
-* [After](#after-the-interview)
+* [Before The Interview](#before-the-interview)
+* [During The Interview](#during-the-interview)
+* [After The Interview](#after-the-interview)
 
 ## Before The Interview
 
@@ -96,7 +96,7 @@ If you include your blog on your resume, but sure that it does not have any dero
 inflamatory content about previous employers or groups of individuals (including racial, 
 political).
 
-## During
+## During The Interview
 
 ### What's the difference between a technical and functional interview? 
 
@@ -155,7 +155,7 @@ interview, will write down the names of each person that is interviewing me and 
 that while in the interview. Same could be done for salary ranges, things that you want to follow up 
 on after the interview, and more. 
 
-## After
+## After The Interview
 
 ### Continue the job search 
 

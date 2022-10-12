@@ -10,6 +10,7 @@ Whether you are a seasoned programmer or beginner, these resources will help you
 face when working on websites or software.
 
 * [.NET (.NET Core) Cheatsheet](/resources/dotnet-core-cheatsheet)
+* <a href="https://www.youtube.com/c/amigoscode" target="_blank">AmigosCode</a>
 * <a href="https://ardalis.com/" target="_blank">Ardalis is Steve Smith</a>
 * <a href="https://awesome-architecture.com/" target="_blank">Awesome Architecture</a>
 * <a href="https://getbootstrap.com/" target="_blank">Bootstrap - responsive theming library</a>

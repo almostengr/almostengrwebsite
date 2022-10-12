@@ -340,7 +340,7 @@ or being a consultant for building automation.
 
 ### Do I need to have a certification in a cloud platform before interviewing?
 
-No you don't. Now if you have one, then it will help better qualify you to get the job.
+No, you do not. Now if you have one, then it will help better qualify you to get the job.
 
 ### Do I need to know about incident management?
 
@@ -360,7 +360,7 @@ a fix was put in and not properly documented.
 
 ### Do I need to know about change management?
 
-Yes you do. Change management is the process to track changes that are made within a given organization, the 
+Yes, you do. Change management is the process to track changes that are made within a given organization, the 
 scope of work that is to be done, and who will be impacted by the change being made. From my experience, 
 one of main benefits of having change management and CAB (Change Approval Board) meetings, is to prevent 
 conflicting changes from occurring at the same time. 
@@ -401,6 +401,7 @@ can have your favorite, having basic knowledge of how to edit a text file in vi 
 on any Linux based system even if your favorite editor is not available.
 
 ### Should I learn Linux using Docker or a virtual machine?
+
 Does not matter. Both methods will give you the full operating system and the ability to be able to perform 
 all of the functions on that system. The major difference is that Docker will use much less resources
 than a virtual machine will. Thus if you are using an older computer, I would suggest going with Docker 
@@ -445,7 +446,7 @@ that are universal.
 * Change Management (ITIL certification)
 * CI/CD - Continuous Integration, Continuous Development
 * Incident management (ITIL certification)
-* Programming best practices and concepts - clean code, SOLID, DRY
+* Programming best practices, architecture patterns, and concepts - clean code, SOLID, DRY
 * Programming language - HTML, CSS, JavaScript for web development; Java, C# for desktop applications
 * SCRUM and Agile concepts
 * Version control - Git is the most popular source control system
@@ -501,6 +502,9 @@ and other platforms that will explain those to you.
 
 ## Web Development
 
+In addition to the questions and answers below, also check out the question and answers in the 
+[Software Development](#software-development) section of this page.
+
 ### Do I need to learn Bootstrap?
 
 Need to, not necessarily. Would I recommend that you do so, yes. The reason being is that Bootstrap 
@@ -509,7 +513,7 @@ style a website with its pre-defined classes.
 
 ### Do I have to learn a JavaScript based framework? 
 
-No you don't. A number of developers, myself included, do not build web applications that are heavy
+No, you do not. A number of developers, myself included, do not build web applications that are heavy
 with JavaScript code. While I do know how to program with JavaScript, I do not have experience 
 working with React, Angular, or other JavaScript based frameworks.
 

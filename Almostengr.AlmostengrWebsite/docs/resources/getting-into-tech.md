@@ -327,6 +327,12 @@ provides services to hospitals and health care facilities.
 Having a medical background would give her an advantage because she knows how those machines should work and 
 would only have to learn the technical aspect of the machines. In addition, having previously worked in a
 hospital environment, she would already be familiar with hospital procedures and protocols. 
+* Individual has worked decades in automotive maintenance and currently works in facilities maintenance. He does 
+did not have a degree, nor did he want to go back to college to get a degree. However, he did want to make 
+a change over to a tech role. What I advised was that he look into smart buildings and building automation. 
+This would allow him to leverage his existing skills of maintaining buildings and other mechanical equipment, 
+while adding on the technology aspect of monitoring that equipment for potentional failures, energy consumption, 
+and other variables.
 
 ## DevOps
 

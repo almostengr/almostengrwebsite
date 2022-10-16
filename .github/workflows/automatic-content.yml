@@ -16,7 +16,7 @@ jobs:
         dotnet-version: '6.x' # SDK Version to use; x will use the latest version of the specified channel
     
     - name: Get Weather Data
-      run: dotnet run --project Almostengr.AlmostengrWebsite.GardenWeather/Almostengr.AlmostengrWebsite.GardenWeather.csproj
+      run: dotnet run --project source/Almostengr.AlmostengrWebsite.GardenWeather/Almostengr.AlmostengrWebsite.GardenWeather.csproj
 
     - name: Run commit on files
       run: bash scripts/ghcommit.sh

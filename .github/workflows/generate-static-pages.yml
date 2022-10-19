@@ -45,7 +45,7 @@ jobs:
 
     - run: git fetch -p
     
-    - run: /usr/bin/python3 -m mkdocs gh-deploy -f Almostengr.AlmostengrWebsite/mkdocs.yml -b website
+    - run: /usr/bin/python3 -m mkdocs gh-deploy -f website/mkdocs.yml -b website
 
   deploy:
     runs-on: ubuntu-latest

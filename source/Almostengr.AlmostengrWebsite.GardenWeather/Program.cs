@@ -73,7 +73,7 @@ namespace Almostengr.AlmostengrWebsite.GardenWeather
 
         private static void WriteDataToFile(List<string> fileText, string filename)
         {
-            const string GardenBlogDirectory = "Almostengr.AlmostengrWebsite/docs/lifestyle/";
+            const string GardenBlogDirectory = "website/docs/lifestyle/";
             string logFile = GardenBlogDirectory + filename;
 
             Console.WriteLine("Writing data to " + logFile);

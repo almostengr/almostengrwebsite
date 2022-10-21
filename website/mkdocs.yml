@@ -36,6 +36,8 @@ theme:
         name: Switch to dark mode
     - media: "(prefers-color-scheme: light)"
       scheme: slate
+      primary: blue gray
+      accent: green
       toggle:
         icon: material/brightness-4
         name: Switch to light mode

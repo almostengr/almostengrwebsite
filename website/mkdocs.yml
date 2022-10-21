@@ -24,9 +24,21 @@ theme:
     text: Ubuntu
     code: Ubuntu Mono
   palette:
-    - scheme: default
+#     - scheme: default
+#       primary: black
+#       accent: red
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
       primary: black
       accent: red
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
   features:
     - navigation.tabs
     - navigation.tabs.sticky

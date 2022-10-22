@@ -1,6 +1,6 @@
 using System.Runtime.Serialization;
 
-namespace Almostengr.AlmostengrWebsite.WeatherObservation
+namespace Almostengr.AlmostengrWebsite.WeatherObservation.Exceptions
 {
     [Serializable]
     internal class NwsObservationDtoIsNullException : Exception

@@ -1,8 +1,19 @@
-namespace Almostengr.AlmostengrWebsite;
+using System.Text.Json;
+using Almostengr.AlmostengrWebsite.WeatherObservation.Exceptions;
+// using Newtonsoft.Json;
+
+namespace Almostengr.AlmostengrWebsite.Common;
 
 public abstract class BaseService
 {
-    public static async Task<T> GetRequestAsync<T>(string url) where T : class
+    private readonly HttpClient _httpClient;
+
+    protected BaseService()
+    {
+        _httpClient = new HttpClient();
+    }
+
+    public async Task<T> GetRequestAsync<T>(string url) where T : BaseDto
     {
         _httpClient.DefaultRequestHeaders.Clear();
         _httpClient.DefaultRequestHeaders.UserAgent.ParseAdd("(blog, tharam04@yahoo.com)");
@@ -10,14 +21,16 @@ public abstract class BaseService
 
         Console.WriteLine("Getting requested data");
 
-        HttpResponseMessage repsonse = await _httpClient.GetAsync(url);
+        // HttpResponseMessage response = await _httpClient.GetAsync(url);
+        var response = await _httpClient.GetAsync(url);
 
-        if (repsonse.IsSuccessStatusCode == false)
+        if (response.IsSuccessStatusCode == false)
         {
-            throw new BadRequestException(repsonse.StatusCode + " " + repsonse.ReasonPhrase);
+            throw new BadRequestException(response.StatusCode + " " + response.ReasonPhrase);
         }
 
-        T? result = JsonConvert.DeserializeObject<T>(repsonse.Content.ReadAsStringAsync().Result);
+        // T? result = JsonConvert.DeserializeObject<T>(response.Content.ReadAsStringAsync().Result);
+        T? result = JsonSerializer.Deserialize<T>(response.Content.ReadAsStringAsync().Result);
 
         if (result == null)
         {

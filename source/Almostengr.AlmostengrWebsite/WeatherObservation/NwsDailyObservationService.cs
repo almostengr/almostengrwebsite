@@ -1,62 +1,52 @@
 using System.Text;
+using Almostengr.AlmostengrWebsite.Common;
 using Almostengr.AlmostengrWebsite.WeatherObservation.Exceptions;
-using Newtonsoft.Json;
 
 namespace Almostengr.AlmostengrWebsite.WeatherObservation;
 
-internal sealed class NwsObservationService :BaseService
+internal sealed class NwsDailyObservationService : BaseService
 {
-    private static HttpClient _httpClient;
-    private static DateTime _currentDate;
-
-    internal NwsObservationService()
-    {
-        _httpClient = new HttpClient();
-        _currentDate = DateTime.Now;
-    }
-
     internal async Task<int> GetWeatherDataAsync()
     {
         try
         {
-            const string weatherObservationsUri = "https://api.weather.gov/stations/kmgm/observations";
-            NwsDailyObservationDto observation = await GetRequestAsync<NwsDailyObservationDto>(weatherObservationsUri);
+            NwsDailyObservationDto observation =
+                await GetRequestAsync<NwsDailyObservationDto>("https://api.weather.gov/stations/kmgm/observations");
 
             if (observation == null)
             {
                 throw new NwsObservationIsNullException();
             }
 
-            DateTime observationDate = observation.Features.First().Properties.Timestamp;
+            // DateTime observationDate = observation.Features.First().Properties.Timestamp;
+            // StringBuilder blogPostText = new();
+            // StringBuilder csvFileText = new();
 
-            StringBuilder blogPostText = new();
-            StringBuilder csvFileText = new();
+            // if (observationDate.Day == 2)
+            // {
+            //     blogPostText.Append(CreateBlogPostHeader(observationDate));
+            //     csvFileText.Append(CreateCsvHeader());
+            // }
 
-            if (_currentDate.Day == 2)
-            {
-                blogPostText.Append(CreateBlogPostHeader(observationDate));
-                csvFileText.Append(CreateCsvHeader());
-            }
+            // blogPostText.Append(observation.ProcessBlogPostData());
+            // csvFileText.Append(observation.ProcessCsvData());
 
-            blogPostText.Append(observation.ProcessBlogPostData());
-            csvFileText.Append(observation.ProcessCsvData());
+            // DateTime firstOfTheMonth = new DateTime(observationDate.Year, observationDate.Month, 01);
 
-            DateTime firstOfTheMonth = new DateTime(observationDate.Year, observationDate.Month, 01);
+            // string blogFilename = string.Concat(
+            //     firstOfTheMonth.ToString("yyyy.MM.dd"),
+            //     "-",
+            //     firstOfTheMonth.ToString("MMMM-yyyy").ToLower(),
+            //     "-weather.md"
+            //     );
 
-            string blogFilename = string.Concat(
-                firstOfTheMonth.ToString("yyyy.MM.dd"),
-                "-",
-                firstOfTheMonth.ToString("MMMM-yyyy").ToLower(),
-                "-weather.md"
-                );
+            // string csvFilename = string.Concat(
+            //     firstOfTheMonth.ToString("yyyyMMMM").ToLower(),
+            //     "-weather.csv"
+            //     );
 
-            string csvFilename = string.Concat(
-                firstOfTheMonth.ToString("yyyyMMMM").ToLower(),
-                "-weather.csv"
-                );
-
-            WriteDataToFile(blogPostText.ToString(), blogFilename);
-            WriteDataToFile(csvFileText.ToString(), csvFilename);
+            // WriteDataToFile(blogPostText.ToString(), blogFilename);
+            // WriteDataToFile(csvFileText.ToString(), csvFilename);
 
             return 0;
         }
@@ -67,10 +57,11 @@ internal sealed class NwsObservationService :BaseService
         }
     }
 
-    private static void WriteDataToFile(string fileText, string filename)
+    private void WriteDataToFile(string fileText, string fileName)
     {
-        const string GardenBlogDirectory = "website/docs/lifestyle/";
-        string logFile = GardenBlogDirectory + filename;
+        const string GardenBlogDirectory = "";
+        // const string GardenBlogDirectory = "website/docs/lifestyle/";
+        string logFile = GardenBlogDirectory + fileName;
 
         Console.WriteLine("Writing data to " + logFile);
 
@@ -79,7 +70,7 @@ internal sealed class NwsObservationService :BaseService
             file.Write(fileText);
         }
 
-        Console.WriteLine("Done writing data to " + filename);
+        Console.WriteLine("Done writing data to " + fileName);
     }
 
     private string CreateCsvHeader()
@@ -103,14 +94,14 @@ internal sealed class NwsObservationService :BaseService
         StringBuilder output = new StringBuilder();
         output.Append("---");
         output.Append("title: Weather Data for " + monthYear);
-        output.Append("posted: " + _currentDate.ToString("yyyy-MM-dd"));
+        output.Append("posted: " + dateTime.ToString("yyyy-MM-dd"));
         output.Append("author: automation");
         output.Append("category: gardening");
         output.Append("description: Weather data from the National Weather Service for " + monthYear);
         output.Append("---");
         output.Append(string.Empty);
         output.Append("Weather data as reported from the National Weather Service for the weather station ");
-        output.Append("that is cloest to my garden. Data is pulled via API from the NWS and saved to this ");
+        output.Append("that is closest to my garden. Data is pulled via API from the NWS and saved to this ");
         output.Append("blog post daily.");
         output.Append(string.Empty);
         output.Append("|Date|Min Temp C (F)|Max Temp C (F)|Avg Temp C (F)|Min RH|Max RH|Avg RH|Precip M (In)|Avg Precip/Hr|");

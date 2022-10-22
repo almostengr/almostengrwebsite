@@ -1,6 +1,6 @@
 using System.Runtime.Serialization;
 
-namespace Almostengr.AlmostengrWebsite;
+namespace Almostengr.AlmostengrWebsite.WeatherObservation.Exceptions;
 
 [Serializable]
 internal class BadRequestException : Exception

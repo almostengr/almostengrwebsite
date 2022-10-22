@@ -18,3 +18,11 @@ will enjoy. To purchase, visit
 
 * Technology: C++, ESP32
 
+## Components Used
+
+* ESP32-WROOM-32
+* breadboard wires
+* 4-channel mechanical relay board
+* 14 gauge wire
+* Econolite 12 inch traffic signal
+

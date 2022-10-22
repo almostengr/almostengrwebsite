@@ -15,5 +15,9 @@
         {% elif page.meta.updated %}
         {{ label }}: {{ page.meta.updated }}
         {% endif %}
+
+	{% if page.meta.author %}
+	{{ label }}: {{ page.meta.author }}
+	{% endif %}
     </small>
 </div>

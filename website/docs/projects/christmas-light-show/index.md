@@ -32,7 +32,14 @@ drivers that are passing by.
 
 ## Song List 
 
-Songs for this year have not been decided at this time.
+* About Damn Time - Lizzo
+* Christmas Eve-Sarajevo - Trans-Siberian Orchestra
+* Christmas Time Is Party Time - Luke
+* December - Earth, Wind, and Fire
+* Nutrocker - Trans-Siberian Orchestra
+* The Polar Express - Tom Hanks
+* The Song That Doesn't End - Shari Lewis
+* Uptown Funk - Mark Ronson
 
 ## Twitter Feed
 

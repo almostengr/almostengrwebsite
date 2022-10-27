@@ -731,6 +731,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://thealmostengineer.com/projects/esp32radiosign/</loc>
+         <lastmod>2022-10-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://thealmostengineer.com/projects/falcon-pi-twitter/</loc>
          <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>

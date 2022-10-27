@@ -21,6 +21,15 @@ is used for Christmas, it has been programmed to cycle through red, green, and w
 To change the random interval for color changing, the ESP32 needs to be power cycled. This is done by the 
 light show controller and is programmed in as part of the songs that play.
 
+### Materials
+
+* ESP32-WROOM development board
+* 4 channel solid state relays
+* custom Tune To sign made from wood
+* custom stencils for radio station information
+* 18/2 lamp wire
+* 120VAC outlet with 5VDC USB connection
+
 ## Technology
 
 This project uses an ESP32 with relays to control the colors of the lights. 

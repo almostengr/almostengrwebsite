@@ -80,5 +80,7 @@ extra:
       name: "@almostengr on Twitter"
     - icon: fontawesome/brands/youtube
       link: https://www.youtube.com/c/RobinsonHandyandTechnologyServices?sub_confirmation=1
-      name: Robinson Handy and Technology Services on YouTube
-      
+      name: Home Improvement with RHT Services on YouTube
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/channel/UC4xp-TEEIAL-4XtMVvfRaQw?sub_confirmation=1
+      name: Tech Talk with RHT Services on YouTube

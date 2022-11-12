@@ -38,21 +38,12 @@ to remember how my channels are mapped and that all my documentation is in a sin
 | Nothing           | 996       | 07    | 13    |
 | Nothing           | 997       | 07    | 27    |
 
-## Controller 2
-
-| Device            | Channel   | Plug  | Pin   |
-|-------------------|-----------|-------|-------|
-| ROOF1             | 701-703   | null  | null  |
-| ROOF2             | 701-703   | null  | null  |
-| ROOF3             | 701-703   | null  | null  |
-| ROOF4             | 701-703   | null  | null  |
-
 ## Indoor Tree Controller
 
 | Device              | Channel   | Plug  | Pin   |
 |---------------------|-----------|-------|-------|
-| LEVEL1              | NULL      | NULL  | NULL  |
-| LEVEL2              | NULL      | NULL  | NULL  |
-| LEVEL3              | NULL      | NULL  | NULL  |
-| LEVEL4              | NULL      | NULL  | NULL  |
+| LEVEL1              | NULL      | 01    | NULL  |
+| LEVEL2              | NULL      | 02    | NULL  |
+| LEVEL3              | NULL      | 03    | NULL  |
+| LEVEL4              | NULL      | 04    | NULL  |
 

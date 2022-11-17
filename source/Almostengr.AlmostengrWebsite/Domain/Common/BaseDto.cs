@@ -1,5 +1,5 @@
 namespace Almostengr.AlmostengrWebsite.Common;
 
-public abstract record BaseDto
+public abstract class BaseDto
 {
 }

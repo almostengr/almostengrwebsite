@@ -1,35 +1,35 @@
 using Almostengr.AlmostengrWebsite.Common;
 
-namespace Almostengr.AlmostengrWebsite.WeatherObservation;
+namespace Almostengr.AlmostengrWebsite.Domain.WeatherObservation;
 
-internal sealed record NwsDailyObservationDto : BaseDto
+public sealed class NwsDailyObservationDto : BaseDto
 {
-    internal List<Feature> Features { get; private set; } = new();
+    public List<Feature>? features { get; set; } 
 
-    // internal double? AverageTemperatureC()
+    // public double? AverageTemperatureC()
     // {
     //     return Features.Where(f => f.Properties.Temperature.Value != null)
     //         .Sum(f => f.Properties.Temperature.Value);
     // }
 
-    // internal double? AverageTemperatureF()
+    // public double? AverageTemperatureF()
     // {
     //     return ConvertCelsiusToFahrenheit(AverageTemperatureC());
     // }
 
-    // internal double? MaxTemperatureC()
+    // public double? MaxTemperatureC()
     // {
     //     return Features.Where(f => f.Properties.Temperature.Value != null)
     //         .Max(f => f.Properties.Temperature.Value);
     // }
 
-    // internal double? MinTemperatureC()
+    // public double? MinTemperatureC()
     // {
     //     return Features.Where(f => f.Properties.Temperature.Value != null)
     //         .Min(f => f.Properties.Temperature.Value);
     // }
 
-    // internal double? MaxTemperatureF()
+    // public double? MaxTemperatureF()
     // {
     //     return ConvertCelsiusToFahrenheit(MaxTemperatureC());
     // }
@@ -44,39 +44,39 @@ internal sealed record NwsDailyObservationDto : BaseDto
     //     return (temperature * 1.8) + 32;
     // }
 
-    // internal double? PrecipitationSumMeters()
+    // public double? PrecipitationSumMeters()
     // {
     //     return Features.Where(f => f.Properties.PrecipitationLastHour.Value != null)
     //         .Sum(f => f.Properties.PrecipitationLastHour.Value);
     // }
 
-    // internal double? PrecipitationSumInches()
+    // public double? PrecipitationSumInches()
     // {
     //     return PrecipitationSumMeters() * Constants.MetersToInchesFactor;
     // }
 
-    // internal double? MinHumidity()
+    // public double? MinHumidity()
     // {
     //     return Features.Where(f => f.Properties.RelativeHumidity.Value != null)
     //         .Min(f => f.Properties.RelativeHumidity.Value);
     // }
 
-    // internal double? MaxHumidity()
+    // public double? MaxHumidity()
     // {
     //     return Features.Where(f => f.Properties.RelativeHumidity.Value != null)
     //         .Max(f => f.Properties.RelativeHumidity.Value);
     // }
 
-    // internal List<Feature> GetYesterdayWeatherData()
+    // public List<Feature> GetYesterdayWeatherData()
     // {
     //     return Features.Where(f => f.Properties.Timestamp.Date == DateTime.Now.AddDays(-1)).ToList();
     // }
 
-    // internal string ProcessCsvData()
+    // public string ProcessCsvData()
     // {
     //     const string unit = "unit:";
     //     const string separator = ",";
-    //     StringBuilder sb = new();
+    //     StringBuilder sb = new(); 
 
     //     foreach (Feature feature in Features)
     //     {
@@ -99,7 +99,7 @@ internal sealed record NwsDailyObservationDto : BaseDto
     //     return sb.ToString();
     // }
 
-    // internal string ProcessBlogPostData()
+    // public string ProcessBlogPostData()
     // {
     //     string reportDate = Features.First().Properties.Timestamp.ToString("yyyy-MM-dd");
     //     const string separator = "|";
@@ -133,56 +133,56 @@ internal sealed record NwsDailyObservationDto : BaseDto
     //     return text.ToString();
     // }
 
-    // internal double? PrecipitationAveragePerHourInches()
+    // public double? PrecipitationAveragePerHourInches()
     // {
     //     return PrecipitationAveragePerHourMeters() * Constants.MetersToInchesFactor;
     // }
 
-    // internal double? PrecipitationAveragePerHourMeters()
+    // public double? PrecipitationAveragePerHourMeters()
     // {
     //     return Features.Where(f => f.Properties.PrecipitationLastHour.Value != null)
     //         .Average(f => f.Properties.PrecipitationLastHour.Value);
     // }
 
-    // internal double? AverageHumidity()
+    // public double? AverageHumidity()
     // {
     //     return Features.Where(f => f.Properties.RelativeHumidity.Value != null)
     //         .Average(f => f.Properties.RelativeHumidity.Value);
     // }
 
-    // internal double? MinTemperatureF()
+    // public double? MinTemperatureF()
     // {
     //     return ConvertCelsiusToFahrenheit(MinTemperatureC());
     // }
 }
 
-internal sealed record Feature
+public sealed class Feature
 {
-    public Properties Properties { get; private set; } = new();
+    public Properties properties { get; set; } 
 }
 
-internal sealed record Properties
+public sealed class Properties
 {
-    public DateTime Timestamp { get; private set; }
-    public PrecipitationLastHour PrecipitationLastHour { get; private set; } = new();
-    public Temperature Temperature { get; private set; } = new();
-    public RelativeHumidity RelativeHumidity { get; private set; } = new();
+    public DateTime Timestamp { get; set; }
+    public PrecipitationLastHour PrecipitationLastHour { get; set; } 
+    public Temperature Temperature { get; set; } 
+    public RelativeHumidity RelativeHumidity { get; set; } 
 }
 
-internal sealed record PrecipitationLastHour
+public sealed class PrecipitationLastHour
 {
-    public double? Value { get; private set; } = 0.0;
-    public string UnitCode { get; private set; } = "m";
+    public double? Value { get; set; } = 0.0;
+    public string UnitCode { get; set; } = "m";
 }
 
-internal sealed record Temperature
+public sealed class Temperature
 {
-    public double? Value { get; private set; } = null;
-    public string UnitCode { get; private set; } = "C";
+    public double? Value { get; set; }
+    public string UnitCode { get; set; } = "C";
 }
 
-internal sealed record RelativeHumidity
+public sealed class RelativeHumidity
 {
-    public double? Value { get; private set; } = 0.0;
-    public string UnitCode { get; private set; } = string.Empty;
+    public double? Value { get; set; }
+    public string UnitCode { get; set; }
 };

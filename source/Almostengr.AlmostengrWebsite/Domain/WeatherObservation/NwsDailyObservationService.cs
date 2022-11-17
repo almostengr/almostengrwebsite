@@ -1,57 +1,66 @@
 using System.Text;
-using Almostengr.AlmostengrWebsite.Common;
-using Almostengr.AlmostengrWebsite.WeatherObservation.Exceptions;
+using Almostengr.AlmostengrWebsite.Domain.WeatherObservation.Exceptions;
+using Almostengr.AlmostengrWebsite.Domain.WeatherObservation.Interfaces;
+using Almostengr.AlmostengrWebsite.Infrastructure.Interfaces;
 
-namespace Almostengr.AlmostengrWebsite.WeatherObservation;
+namespace Almostengr.AlmostengrWebsite.Domain.WeatherObservation;
 
-internal sealed class NwsDailyObservationService : BaseService
+internal sealed class NwsDailyObservationService : INwsDailyObservationService
 {
-    internal async Task<int> GetWeatherDataAsync()
+    private readonly INwsObservationHttpClient _httpClient;
+
+    public NwsDailyObservationService(INwsObservationHttpClient nwsObservationHttpClient)
+    {
+        _httpClient = nwsObservationHttpClient;
+    }
+
+    public async Task<int> GetWeatherDataAsync()
     {
         try
         {
             NwsDailyObservationDto observation =
-                await GetRequestAsync<NwsDailyObservationDto>("https://api.weather.gov/stations/kmgm/observations");
+                await _httpClient.GetAsync<NwsDailyObservationDto>("https://api.weather.gov/stations/kmgm/observations");
 
             if (observation == null)
             {
                 throw new NwsObservationIsNullException();
             }
 
-            // DateTime observationDate = observation.Features.First().Properties.Timestamp;
-            // StringBuilder blogPostText = new();
-            // StringBuilder csvFileText = new();
+            DateTime observationDate = observation.features.First().properties.Timestamp;
+            StringBuilder blogPostText = new();
+            StringBuilder csvFileText = new();
 
-            // if (observationDate.Day == 2)
-            // {
-            //     blogPostText.Append(CreateBlogPostHeader(observationDate));
-            //     csvFileText.Append(CreateCsvHeader());
-            // }
+            if (observationDate.Day == 2)
+            {
+                blogPostText.Append(CreateBlogPostHeader(observationDate));
+                csvFileText.Append(CreateCsvHeader());
+            }
 
             // blogPostText.Append(observation.ProcessBlogPostData());
             // csvFileText.Append(observation.ProcessCsvData());
 
-            // DateTime firstOfTheMonth = new DateTime(observationDate.Year, observationDate.Month, 01);
+            DateTime firstOfTheMonth = new DateTime(observationDate.Year, observationDate.Month, 01);
 
-            // string blogFilename = string.Concat(
-            //     firstOfTheMonth.ToString("yyyy.MM.dd"),
-            //     "-",
-            //     firstOfTheMonth.ToString("MMMM-yyyy").ToLower(),
-            //     "-weather.md"
-            //     );
+            string blogFilename = string.Concat(
+                firstOfTheMonth.ToString("yyyy.MM.dd"),
+                "-",
+                firstOfTheMonth.ToString("MMMM-yyyy").ToLower(),
+                "-weather.md"
+                );
 
-            // string csvFilename = string.Concat(
-            //     firstOfTheMonth.ToString("yyyyMMMM").ToLower(),
-            //     "-weather.csv"
-            //     );
+            string csvFilename = string.Concat(
+                firstOfTheMonth.ToString("yyyyMMMM").ToLower(),
+                "-weather.csv"
+                );
 
-            // WriteDataToFile(blogPostText.ToString(), blogFilename);
-            // WriteDataToFile(csvFileText.ToString(), csvFilename);
+            WriteDataToFile(blogPostText.ToString(), blogFilename);
+            WriteDataToFile(csvFileText.ToString(), csvFilename);
 
             return 0;
         }
         catch (Exception ex)
         {
+            Console.WriteLine(ex.InnerException);
             Console.WriteLine(ex.Message);
             return 1;
         }
@@ -59,7 +68,7 @@ internal sealed class NwsDailyObservationService : BaseService
 
     private void WriteDataToFile(string fileText, string fileName)
     {
-        const string GardenBlogDirectory = "";
+        const string GardenBlogDirectory = "/var/tmp";
         // const string GardenBlogDirectory = "website/docs/lifestyle/";
         string logFile = GardenBlogDirectory + fileName;
 

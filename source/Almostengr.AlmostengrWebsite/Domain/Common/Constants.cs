@@ -1,4 +1,4 @@
-namespace Almostengr.AlmostengrWebsite.Common;
+namespace Almostengr.AlmostengrWebsite.Domain.Common;
 
 public static class Constants 
 {

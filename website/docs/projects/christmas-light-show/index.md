@@ -10,10 +10,8 @@ image: /images/2020 Christmas Light Show 20201211-f000000.jpg
 
 ## Show Dates and Times
 
-Show will run nightly from November 25, 2022 until January 1, 2023.
-
-* Nightly, Pre-show (static lights) starts at 4:30 PM (16:30)
-* Nightly, 5:30 PM (17:30) until 10:00 PM (22:00)
+Show will run nightly from November 25, 2022 until January 1, 2023
+from 4:30 PM (16:30) until 10:00 PM (22:00).
 
 During times of heavy rain or severe weather the light show may be stopped to reduce the
 chance of electrical shorts occurring and for safety of individuals watching.
@@ -40,6 +38,8 @@ drivers that are passing by.
 * The Polar Express - Tom Hanks
 * The Song That Doesn't End - Shari Lewis
 * Uptown Funk - Mark Ronson
+* What You Want For Christmas - 69 Boyz
+* Wizards in Winter - Trans-Siberian Orchestra
 
 ## Twitter Feed
 
@@ -49,13 +49,12 @@ drivers that are passing by.
 
 ## Fun Facts
 
-* 22 channels
-* 3520 LED lights
-* 1 15-Amp Circuit
-* 3 8-channel Solid State Relay Boards
-* 1 Raspberry Pi 3B+
+* 3600 LED lights
 * Numerous hours of programming
 * Over 200 Feet of extension cords
+* 20 channels
+* 4 8-channel Solid State Relay Boards
+* 2 Raspberry Pi 3B+
 
 ## Other Information
 

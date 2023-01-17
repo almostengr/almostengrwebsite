@@ -1,3 +1,0 @@
-<meta http-equiv="refresh" content="1; url=https://youtube.com/playlist?list=PL-2Gq36JYvvFjqc3_p25we7IpfvU3IDCG" />
-
-Redirecting...

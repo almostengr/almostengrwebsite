@@ -1,4 +1,4 @@
-namespace Almostengr.AlmostengrWebsite.Domain.WeatherObservation.Interfaces;
+namespace Almostengr.AlmostengrWebsite.Domain.WeatherObservation;
 
 public interface INwsDailyObservationService
 {

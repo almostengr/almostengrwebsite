@@ -4,7 +4,7 @@ namespace Almostengr.AlmostengrWebsite.Domain.WeatherObservation;
 
 public sealed class NwsDailyObservationDto : BaseDto
 {
-    public List<Feature>? features { get; set; } 
+    public List<Feature>? Features { get; set; } 
 
     // public double? AverageTemperatureC()
     // {
@@ -158,15 +158,15 @@ public sealed class NwsDailyObservationDto : BaseDto
 
 public sealed class Feature
 {
-    public Properties properties { get; set; } 
+    public Properties? properties { get; set; } 
 }
 
 public sealed class Properties
 {
     public DateTime Timestamp { get; set; }
-    public PrecipitationLastHour PrecipitationLastHour { get; set; } 
-    public Temperature Temperature { get; set; } 
-    public RelativeHumidity RelativeHumidity { get; set; } 
+    public PrecipitationLastHour? PrecipitationLastHour { get; set; } 
+    public Temperature? Temperature { get; set; } 
+    public RelativeHumidity? RelativeHumidity { get; set; } 
 }
 
 public sealed class PrecipitationLastHour
@@ -184,5 +184,5 @@ public sealed class Temperature
 public sealed class RelativeHumidity
 {
     public double? Value { get; set; }
-    public string UnitCode { get; set; }
+    public string? UnitCode { get; set; }
 };

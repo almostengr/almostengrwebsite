@@ -1,6 +1,6 @@
 using Almostengr.AlmostengrWebsite.Common;
 
-namespace Almostengr.AlmostengrWebsite.Infrastructure.Interfaces;
+namespace Almostengr.AlmostengrWebsite.Domain.Common.Interfaces;
 
 public interface INwsObservationHttpClient
 {

@@ -1,7 +1,6 @@
 ﻿using Almostengr.AlmostengrWebsite.Domain.WeatherObservation;
-using Almostengr.AlmostengrWebsite.Domain.WeatherObservation.Interfaces;
 using Almostengr.AlmostengrWebsite.Infrastructure;
-using Almostengr.AlmostengrWebsite.Infrastructure.Interfaces;
+using Almostengr.AlmostengrWebsite.Domain.Common.Interfaces;
 
 namespace Almostengr.AlmostengrWebsite;
 

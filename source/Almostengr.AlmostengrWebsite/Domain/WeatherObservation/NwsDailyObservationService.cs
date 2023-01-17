@@ -1,7 +1,6 @@
 using System.Text;
+using Almostengr.AlmostengrWebsite.Domain.Common.Interfaces;
 using Almostengr.AlmostengrWebsite.Domain.WeatherObservation.Exceptions;
-using Almostengr.AlmostengrWebsite.Domain.WeatherObservation.Interfaces;
-using Almostengr.AlmostengrWebsite.Infrastructure.Interfaces;
 
 namespace Almostengr.AlmostengrWebsite.Domain.WeatherObservation;
 
@@ -26,7 +25,13 @@ internal sealed class NwsDailyObservationService : INwsDailyObservationService
                 throw new NwsObservationIsNullException();
             }
 
-            DateTime observationDate = observation.features.First().properties.Timestamp;
+            DateTime observationDate = observation.Features.First().properties.Timestamp;
+
+            if (observationDate == null)
+            {
+                throw new ObservationDateInvalidException();
+            }
+
             StringBuilder blogPostText = new();
             StringBuilder csvFileText = new();
 

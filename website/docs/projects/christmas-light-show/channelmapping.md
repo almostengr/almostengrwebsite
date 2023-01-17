@@ -14,7 +14,7 @@ to remember how my channels are mapped and that all my documentation is in a sin
 | Cane3White        | 103       | 12    | 24    |
 | Cane4White        | 104       | 10    | 25    |
 | Cane5White        | 105       | 18    | 09    |
-| Tree1Red          | 201       | 09    | 12    |
+| TuneToSign        | 201       | 09    | 12    |
 | Tree1White        | 202       | 03    | 08    |
 | Tree2Red          | 203       | 24    | 17    |
 | Tree2White        | 204       | 17    | 19    |
@@ -47,3 +47,6 @@ to remember how my channels are mapped and that all my documentation is in a sin
 | LEVEL3              | NULL      | 03    | NULL  |
 | LEVEL4              | NULL      | 04    | NULL  |
 
+## Notes
+
+Tree1Red previously Plug 09

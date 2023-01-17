@@ -1,7 +1,7 @@
 ---
-title: FAQ (Frequently Asked Questions)
+title: Christmas Light Show FAQ (Frequently Asked Questions)
 description: Frequently asked questions about this and other light shows.
-updated: 2022-03-25
+updated: 2022-10-23
 ---
 
 Here are the most common questions that are asked about the light show.
@@ -27,6 +27,7 @@ Yes, there are many that exist. There are also commercial light shows. See the l
 * <a href="https://www.youtube.com/c/CanispaterChristmas" target="_blank">Canispater Christmas</a>
 * <a href="https://www.cityofwetumpka.com/Default.asp?ID=452&pg=Decorations+Contest" target="_blank">Christmas on the Coosa (MGM)</a>
 * <a href="https://www.facebook.com/ChristmasWonderlandAlabama/" target="_blank">Christmas Wonderland</a>
+* <a href="https://www.davislights.org/" target="_blank">Davis Family Christmas Light Show</a>
 * <a href="http://www.lightinguppaxton.com/" target="_blank">Lighting Up Paxton</a>
 * <a href="https://www.lightstoabeat.com" target="_blank">Lights To A Beat</a>
 * <a href="https://sites.google.com/site/listentoourlights/home" target="_blank">Listen To Our Lights</a>
@@ -49,12 +50,12 @@ Yes, there are many that exist. There are also commercial light shows. See the l
 
 I wanted to do something different for Christmas. Given that the COVID-19 (Coronavirus) pandemic was happening
 during 2020, I had extra funds on hand since I was not doing much travelling during this time. I decided
-to leverage my Technology and Electrical Engineering skills and build a Christmas light show.
+to leverage my technology and Electrical Engineering skills and build a Christmas light show.
 
 ### What does your HOA say about the show?
 
 I do not live in a neighborhood with an HOA. From what I have seen though, those that do live in neighborhoods
-with HOAs, when their show gains too much popularity or causes traffic issues, the HOA usually issue 
+with HOAs, when their show gains too much popularity or causes traffic issues, the HOA usually issues 
 "cease and desist letters" or threaten the owners with fines if they continue with their animated displays. 
 Thus they either stop doing their show or they move their show to another location that does not have an HOA 
 or do not have close neighbors.
@@ -118,7 +119,7 @@ Cost per week = $0.44 + $7.34 = $7.78 USD per week
 Cost per season (5 weeks) = $7.78 USD per week * 5 weeks = $38.90 USD
 ```
 
-That means the maximum total cost of the show per week is $7.78 and cost for the season is $38.90.
+That means the **maximum** total cost of the show per week is $7.78 and cost for the season is $38.90.
 
 Now given that the light show does not have all of the lights on at any given point during the show and
 the controller is not running at maximum capacity all of the time, the
@@ -226,11 +227,12 @@ Christmas day.
 You can find out more information about this
 project by visiting the [project page](/projects/falcon-pi-twitter).
 
-#### Kdenlive
+#### Ffmpeg
 
-Kdenlive is a video editing tool. It can also be used to modify audio files. The show intro audio file was
-modified with Kdenlive to have the voice over and background music on the same track. You can download
-the latest version from <a href="https://kdenlive.org/" target="_blank">its website</a>.
+<a href="https://ffmpeg.org/" target="_blank">Ffmpeg</a>
+is a multimedia editing software application. Using the command line, it is used to merge and sync the 
+audio to the video for the songs in the Christmas Light Show. It is also used to display the graphic 
+overlays that are used to display the song information and channel branding information.
 
 #### Xlights
 

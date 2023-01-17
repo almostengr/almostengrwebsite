@@ -16,6 +16,14 @@ Need an automation built for a routine process? We build those too. Whether it i
 from a website to processing files as they are received, I can build a custom solution that 
 will have improve your workflow and save you time.
 
+## Courses
+
+I offer courses in a variety of subjects. Some of the content from these courses can be found on my 
+<a href="https://www.youtube.com/c/RobinsonHandyandTechnologyServices" target="_blank">YouTube Channel</a>. 
+Additional materials that are related to the course
+can be found and purchased from 
+<a href="https://rhtservices.net" target="_blank">business website</a>.
+
 ## Web Applications 
 
 Have a need for a custom application? I build custom applications that solve business problems and 

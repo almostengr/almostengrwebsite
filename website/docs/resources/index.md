@@ -21,6 +21,7 @@ Additional resources and suggestions can be added to this list by messaging me o
 * [.NET (Core) CLI Cheatsheet](/resources/dotnet-core-cheatsheet)
 * [Black In Tech](/resources/black-in-tech)
 * [Getting Into Tech](/resources/getting-into-tech)
+* [Getting Tech Job With No Experience](/technology/2021.05.06-tech-job-with-no-experience)
 * [Git Cheatsheet](/resources/git-cheatsheet)
 * [Linux](/resources/linux)
 * [Linux Cheatsheet](/resources/linux-cheatsheet)

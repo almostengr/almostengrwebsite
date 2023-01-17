@@ -45,7 +45,7 @@ platforms and are noted accordingly.
 * <a href="https://www.nsbe.org" target="_blank">National Society of Black Engineers</a> (Organization)
 * <a href="https://nolavateblack.com/" target="_blank">NOLAvate Black - New Orleans Black Tech Collective</a> (Organization)
 * <a href="https://peopleofcolorintech.com/" target="_blank">People Of Color In Tech</a> (Community, Jobs)
-* <a href="https://www.youtube.com/c/RobinsonHandyandTechnologyServices?sub_confirmation=1" target="_blank">Robinson Handy and Technology Services</a> (Programming, Automation, Linux)
+* <a href="https://www.youtube.com/channel/UC4xp-TEEIAL-4XtMVvfRaQw?sub_confirmation=1" target="_blank">Tech Talk with RHT Services</a> (Programming, Automation, Linux)
 * <a href="https://www.facebook.com/groups/scbwit/" target="_blank">Sista Circle: Black Women In Tech</a> (Facebook Group)
 * <a href="https://www.techbychoice.org/" target="_blank">Tech By Choice</a> (Organization)
 * <a href="https://www.youtube.com/c/TechGee" target="_blank">Tech Gee</a> (Learning)

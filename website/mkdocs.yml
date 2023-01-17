@@ -11,7 +11,7 @@ remote_name: origin
 remote_branch: website
 
 # Development server details
-dev_addr: 192.168.1.103:8000
+dev_addr: 192.168.2.103:8000
 
 # Appearance
 theme:
@@ -78,9 +78,15 @@ extra:
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/almostengr
       name: "@almostengr on Twitter"
+    - icon: fontawesome/brands/facebook
+      link: https://facebook.com/rhtservicesllc
+      name: "Home Improvement (Facebook)"
     - icon: fontawesome/brands/youtube
       link: https://www.youtube.com/c/RobinsonHandyandTechnologyServices?sub_confirmation=1
-      name: Home Improvement with RHT Services on YouTube
+      name: Home Improvement with RHT Services (YouTube)
+    - icon: fontawesome/brands/facebook
+      link: "https://www.facebook.com/profile.php?id=100089303142244"
+      name: "Tech Talk (Facebook)"
     - icon: fontawesome/brands/youtube
       link: https://www.youtube.com/channel/UC4xp-TEEIAL-4XtMVvfRaQw?sub_confirmation=1
-      name: Tech Talk with RHT Services on YouTube
+      name: Tech Talk with RHT Services (YouTube)

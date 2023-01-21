@@ -2,6 +2,8 @@
 title: Ubuntu Automation Scripts
 ---
 
+## Solution
+
 The purpose of this repository is to hold scripts that use for routine tasks, such as updating packages,
 starting virtual machines, and automatically commiting files. When you run the same commands over
 and over again, it is often best to put them into a script and then just call the script when you need it.
@@ -11,6 +13,8 @@ on my
 These scripts are designed to run on
 <a href="https://ubuntu.com/" target="_blank">Ubuntu</a> 
 systems. They have not been tested on other Linux-based operating systems.
+
+## Technology
 
 * Technologies: Bash Scripts
 * Year Started: 2018

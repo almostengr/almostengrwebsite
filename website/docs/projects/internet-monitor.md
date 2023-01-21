@@ -2,15 +2,6 @@
 title: Internet Monitor Project
 ---
 
-Reboots the 
-<a href="https://dd-wrt.com" target="_blank">DD-WRT</a> 
-router when there are no WiFi clients connected to it. Also makes sure that the 
-internet modem is online and can reach external websites. The status is then reported to Home Assistant via 
-API.
-
-* Year Started: 2020
-* Technologies: C#
-
 ## Problem
 
 My router would occasionally disconnect any of the wireless clients that were connected to it. Since
@@ -20,14 +11,16 @@ trigger when it should have.
 
 ## Solution
 
-After updating to the latest DD-WRT firmware, the problem persisted.  Given that I work building
+After updating to the latest 
+<a href="https://dd-wrt.com" target="_blank">DD-WRT</a>
+ firmware, the problem persisted.  Given that I work building
 automations to improve business processes, I decided that I would build and automation that would
 connect to the router’s web interface and see if there are any wireless clients connected to it.
 If there are no connected wireless clients, then there is a great chance that the wifi process that
 authenticates clients has crashed.  As a result, the process would need to be restarted and the easiest
 way to restart the process would be to reboot the router.
 
-## The Technology
+## Technology
 
 This solution uses 
 <a href="https://www.selenium.dev/" target="_blank">Selenium Webdriver</a>
@@ -37,7 +30,10 @@ router web interface. I built this using
 .NET Core, but it could be done on Python, Java, or one of the other platforms that Webdriver works on.
 I have it set up on server that is always running and it runs as a system service.
 
-## Application as System Service
+* Year Started: 2020
+* Technologies: C#
+
+## Documentation
 
 ### Create System Service
 
@@ -77,7 +73,7 @@ Jan 29 09:03:53 media Almostengr.InternetMonitor[7251]: Microsoft.Hosting.Lifeti
 
 ### Remove System Service
 
-```sh
+```bash
 sudo systemctl disable internetmonitor
 sudo systemctl stop internetmonitor
 sudo systemctl status internetmonitor
@@ -112,12 +108,12 @@ To download the source code, visit the
 
 To see the logs for the application when it is ran as system service, run the command
 
-```sh
+```bash
 journalctl -u internetmonitor -b
 ```
 
 or
 
-```sh
+```bash
 journalctl -u internetmonitor -b -f
 ```

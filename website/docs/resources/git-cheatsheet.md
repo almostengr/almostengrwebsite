@@ -47,7 +47,7 @@ Stages all of the previously commited files in the current and subdirectories.
 git commit -m "MESSAGE"
 ```
 Commits (saves) the changes made to files, removal of files from the repo, and addition of files to the repo. 
-```MESSAGE``` should be replaced with a details of the changes made since the last commit.
+```MESSAGE```bashould be replaced with a details of the changes made since the last commit.
 
 ---
 
@@ -55,7 +55,7 @@ Commits (saves) the changes made to files, removal of files from the repo, and a
 git clone REPOURL
 ```
 Makes a copy of the repository from Github to your local computer. This allows for changes to be made 
-from your local computer. ```REPOURL``` should be replaced with the URL from the remote repository.
+from your local computer. ```REPOURL```bashould be replaced with the URL from the remote repository.
 
 ---
 
@@ -80,7 +80,7 @@ git diff --cached COMMITHASH
 ```
 Shows the changes that have been made between a previous commit and the files pending commitment. 
 If no files have been staged for commit, then this command will not return any output.  
-```COMMITHASH``` should be replaced with the unique identifer of a previous commit.
+```COMMITHASH```bashould be replaced with the unique identifer of a previous commit.
 
 ---
 
@@ -117,7 +117,7 @@ Removes files that are not being tracked.
 ```bash
 git push origin BRANCH
 ```
-Pushes files from the origin branch to the git server that hosts the repository.  ```BRANCH``` should 
+Pushes files from the origin branch to the git server that hosts the repository.  ```BRANCH```bashould 
 be replaced with the name of the branch, although it does not have to be specified. if ```BRANCH``` is 
 not entered, then the current branch will be pushed.
 
@@ -126,7 +126,7 @@ not entered, then the current branch will be pushed.
 ```bash
 git pull origin BRANCH
 ```
-Pulls the latest version of the branch from your git server. ```BRANCH``` should be replaced with the 
+Pulls the latest version of the branch from your git server. ```BRANCH```bashould be replaced with the 
 name of the branch, although it does not have to be specified.
 
 ---

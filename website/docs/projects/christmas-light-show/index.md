@@ -1,17 +1,17 @@
 ---
-title: 2022 Christmas Light Show
-imagealt: 2022 Christmas Light Show
+title: 2023 Christmas Light Show
+imagealt: 2023 Christmas Light Show
 image: /images/2020 Christmas Light Show 20201211-f000000.jpg
 ---
 
-# 2022 Christmas Light Show
+# 2023 Christmas Light Show
 
 ![Image of 2020 Light Show](/images/2020 Christmas Light Show 20201211-f000000.jpg)
 
 ## Show Dates and Times
 
-Show will run nightly from November 25, 2022 until January 1, 2023
-from 4:30 PM (16:30) until 10:00 PM (22:00).
+Show will run nightly from November 24, 2023 until December 31, 2023
+from 5:00 PM (17:30) until 10:00 PM (22:00).
 
 During times of heavy rain or severe weather the light show may be stopped to reduce the
 chance of electrical shorts occurring and for safety of individuals watching.
@@ -30,17 +30,7 @@ drivers that are passing by.
 
 ## Song List 
 
-* About Damn Time - Lizzo
-* All I Really Want For Christmas - Lil Jon feat. Kool-Aid Man
-* Christmas Eve-Sarajevo - Trans-Siberian Orchestra
-* Christmas Time Is Party Time - Luke
-* December - Earth, Wind, and Fire
-* Nutrocker - Trans-Siberian Orchestra
-* The Polar Express - Tom Hanks
-* The Song That Doesn't End - Shari Lewis
-* Uptown Funk - Mark Ronson
-* What You Want For Christmas - 69 Boyz
-* Wizards in Winter - Trans-Siberian Orchestra
+Songs for this years show have not been decided at this time.
 
 ## Twitter Feed
 
@@ -64,6 +54,7 @@ scenes looks, visit one of the pages listed below.
 
 * <a href="https://twitter.com/hplightshow" target="_blank">Light Show Twitter Page</a>
 * [Falcon Pi Twitter](/projects/falcon-pi-twitter) which reads the song data from FPP and posts it to Twitter
+* [2022 Christmas Light Show Details](/projects/christmas-light-show/2022christmas)
 * [2021 Christmas Light Show Details](/projects/christmas-light-show/2021christmas)
 * [2020 Christmas Light Show Details](/projects/christmas-light-show/2020christmas)
 * <a href="https://youtu.be/sbbEQJ80q0I" target="_blank">Behind The Scenes of the 2021 Christmas Light Show</a>

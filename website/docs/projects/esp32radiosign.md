@@ -3,9 +3,6 @@ title: ESP32 Radio Sign Controller
 description: Tune To sign LED controller
 ---
 
-* Technologies: C++
-* Year Started: 2022
-
 ## Problem
 
 In years past, I have used Christmas lights on the border of the Tune To sign for my Christmas Light Show. 
@@ -21,6 +18,13 @@ is used for Christmas, it has been programmed to cycle through red, green, and w
 To change the random interval for color changing, the ESP32 needs to be power cycled. This is done by the 
 light show controller and is programmed in as part of the songs that play.
 
+## Technology
+
+This project uses an ESP32 with relays to control the colors of the lights. 
+
+* Technologies: C++
+* Year Started: 2022
+
 ### Materials
 
 * ESP32-WROOM development board
@@ -29,10 +33,6 @@ light show controller and is programmed in as part of the songs that play.
 * custom stencils for radio station information
 * 18/2 lamp wire
 * 120VAC outlet with 5VDC USB connection
-
-## Technology
-
-This project uses an ESP32 with relays to control the colors of the lights. 
 
 ## Source Code
 

@@ -6,7 +6,7 @@ updated: 2022-03-28
 
 ![Traffic light](/images/portfolio_trafficlight2.jpg)
 
-## Purpose
+## Solution
 
 The purpose of this project is to educate children about the STEM (Science, Technology,
 Engineering, and Mathematics) fields. Through the use of low cost devices and effective
@@ -33,7 +33,7 @@ and turn off each light as well as include a delay in between each light change.
 ![Image of Versioning](/images/versioning.jpg)
 
 
-## Software and Hardware Used
+## Technology
 
 Below are the list of parts used for this project. You'll need to choose one of
 the mentioned options below depending on your budget. Using LEDs is cheaper than
@@ -262,7 +262,7 @@ application as a system service.
 
 #### Create System Service
 
-```sh
+```bash
 sudo cp almostengrtrafficpiweb.service /lib/systemd/system
 sudo systemctl daemon-reload
 sudo systemctl enable almostengrtrafficpiweb.service
@@ -275,7 +275,7 @@ sudo systemctl status almostengrtrafficpiweb.service
 To run the applicatoin via the command line (not using the system service), then you
 can run the commands below.
 
-```sh
+```bash
 cd trafficpi
 ./Almostengr.TrafficPi.Web
 ```
@@ -289,7 +289,7 @@ To exit the application after running it via command line, press Ctrl+C.
 
 To remove the application as a system service, run each of the commands below.
 
-```sh
+```bash
 sudo systemctl disable almostengrtrafficpiweb.service
 sudo systemctl stop almostengrtrafficpiweb.service
 sudo systemctl status almostengrtrafficpiweb.service
@@ -302,7 +302,7 @@ After running all of the commands above, then reboot the system.
 
 To remove the application files, you can remove the entire trafficpi directory.
 
-```sh
+```bash
 rm -rf trafficpi
 ```
 
@@ -314,13 +314,13 @@ rm -rf trafficpi
 
 To see the logged output from the system service, run the command:
 
-```sh
+```bash
 journalctl -u almostengrtrafficpiweb.service -b
 ```
 
 or
 
-```sh
+```bash
 journalctl -u almostengrtrafficpiweb.service -b -f
 ```
 

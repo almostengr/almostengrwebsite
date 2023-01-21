@@ -4,6 +4,8 @@ title: NSBE Montgomery Professionals Website
 
 <img src="/images/projects/nsbemp.jpg" alt="NSBE Montgomery Professionals website">
 
+## Problem
+
 The 
 <a href="https://nsbe-mp.org" target="_blank">National Society of Black Engineers, Montgomery Professionals</a>
 (NSBE-MP) is a chapter of NSBE. This
@@ -16,12 +18,16 @@ to be made. Either upgrade to Drupal 8 or change to a different website platform
 to change to a static generated website because using a traditional content management system could
 put the website at risk if it was not kept up to date.
 
+## Solution
+
 The current website is a static generated website. With the use of
 <a href="https://github.com/features/actions" target="_blank">GitHub Actions</a> the static website files
 are created and automatically deployed to the production environment when updates are made. Effectively
 GitHub serves as the content management system for this website. As part up this update, the website was
 updated to use
 <a href="https://getbootstrap.com" target="_blank">Bootstrap 4</a> so that it would be mobile friendly.
+
+## Technology
 
 * Technologies: Bootstrap 4, CSS, Github Actions, HTML, JavaScript, MkDocs
 * Year Started: 2020

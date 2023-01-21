@@ -4,17 +4,6 @@ title: Falcon Pi Twitter
 
 ![Tweets from @hplightshow on Twitter](/images/20201220presentation/twittertweets.jpg)
 
-This project is designed for Falcon Pi Player to provide updates via 
-<a href="https://twitter.com/hplightshow" target="_blank">Twitter</a> on the light show that 
-you are running. Those updates include posting the current song and providing alerts when problems
-are detected.
-
-This application is ONLY designed to run on Falcon Pi Players that are installed on Raspberry Pi, but it 
-may be possible to run it on Beagle Bone Black (BBB).
-
-* Technologies: C# (.NET 5), Twitter, Falcon Player, Raspberry Pi
-* Year Started: 2020
-
 ## Problem
 
 I wanted to have a way for the visitors to my light show are able to find out the information about the 
@@ -37,8 +26,21 @@ I primarily use. Thus using this language and framework for the application.
 
 ### Twitter Example
 
+This project is designed for Falcon Pi Player to provide updates via 
+<a href="https://twitter.com/hplightshow" target="_blank">Twitter</a> on the light show that 
+you are running. Those updates include posting the current song and providing alerts when problems
+are detected.
+
+This application is ONLY designed to run on Falcon Pi Players that are installed on Raspberry Pi, but it 
+may be possible to run it on Beagle Bone Black (BBB).
+
+* Technologies: C# (.NET 5), Twitter, Falcon Player, Raspberry Pi
+* Year Started: 2020
+
 Follow my Light Show account [@hplightshow](https://twitter.com/hplightshow) to see what this 
 application can do.
+
+## Technology
 
 ## Documentation
 

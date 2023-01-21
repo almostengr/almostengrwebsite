@@ -6,7 +6,7 @@ updated: 2022-03-28
 
 ![Traffic light](/images/portfolio_trafficlight2.jpg)
 
-## Purpose
+## Solution
 
 The purpose of this project is to educate children about the STEM (Science, Technology,
 Engineering, and Mathematics) fields. Through the use of low cost devices and effective
@@ -33,7 +33,7 @@ and turn off each light as well as include a delay in between each light change.
 ![Image of Versioning](/images/versioning.jpg)
 
 
-## Software and Hardware Used
+## Technology
 
 Below are the list of parts used for this project. You'll need to choose one of
 the mentioned options below depending on your budget. Using LEDs is cheaper than

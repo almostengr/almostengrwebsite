@@ -262,7 +262,7 @@ application as a system service.
 
 #### Create System Service
 
-```sh
+```bash
 sudo cp almostengrtrafficpiweb.service /lib/systemd/system
 sudo systemctl daemon-reload
 sudo systemctl enable almostengrtrafficpiweb.service
@@ -275,7 +275,7 @@ sudo systemctl status almostengrtrafficpiweb.service
 To run the applicatoin via the command line (not using the system service), then you
 can run the commands below.
 
-```sh
+```bash
 cd trafficpi
 ./Almostengr.TrafficPi.Web
 ```
@@ -289,7 +289,7 @@ To exit the application after running it via command line, press Ctrl+C.
 
 To remove the application as a system service, run each of the commands below.
 
-```sh
+```bash
 sudo systemctl disable almostengrtrafficpiweb.service
 sudo systemctl stop almostengrtrafficpiweb.service
 sudo systemctl status almostengrtrafficpiweb.service
@@ -302,7 +302,7 @@ After running all of the commands above, then reboot the system.
 
 To remove the application files, you can remove the entire trafficpi directory.
 
-```sh
+```bash
 rm -rf trafficpi
 ```
 
@@ -314,13 +314,13 @@ rm -rf trafficpi
 
 To see the logged output from the system service, run the command:
 
-```sh
+```bash
 journalctl -u almostengrtrafficpiweb.service -b
 ```
 
 or
 
-```sh
+```bash
 journalctl -u almostengrtrafficpiweb.service -b -f
 ```
 

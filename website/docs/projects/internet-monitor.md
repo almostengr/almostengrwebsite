@@ -73,7 +73,7 @@ Jan 29 09:03:53 media Almostengr.InternetMonitor[7251]: Microsoft.Hosting.Lifeti
 
 ### Remove System Service
 
-```sh
+```bash
 sudo systemctl disable internetmonitor
 sudo systemctl stop internetmonitor
 sudo systemctl status internetmonitor
@@ -108,12 +108,12 @@ To download the source code, visit the
 
 To see the logs for the application when it is ran as system service, run the command
 
-```sh
+```bash
 journalctl -u internetmonitor -b
 ```
 
 or
 
-```sh
+```bash
 journalctl -u internetmonitor -b -f
 ```

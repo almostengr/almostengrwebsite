@@ -7,26 +7,26 @@ Cheatsheets have useful commands to do tasks that you may forget. This cheatshee
 consisits of commands that I use when buidling .NET Core applications using Visual
 Studio Code and .NET Core via the command line.
 
-```sh
+```bash
 dotnet watch run
 ```
 
 Runs the application. It will also watch the files to see if they have been modified.
 If they have been modified, the application will be rebuilt automatically.
 
-```sh
+```bash
 dotnet run
 ```
 
 Runs the application.
 
-```sh
+```bash
 dotnet tool install --global dotnet-ef
 ```
 
 Installs the Entity Framework for the selected project
 
-```sh
+```bash
 dotnet tool install -g dotnet-aspnet-codegenerator
 ```
 

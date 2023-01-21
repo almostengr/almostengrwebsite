@@ -64,19 +64,19 @@ access /dev/ttyUSB0
 
 Install the digitemp software
 
-```sh
+```bash
 sudo apt-get install digitemp
 ```
 
 After the installation has completed, then run the the command below for the configuration file to be created.
 
-```sh
+```bash
 sudo digitemp_DS9097 -i -s /dev/ttyUSB0 -c /etc/digitemp.conf
 ```
 
 This command above will produce the below output.
 
-```sh
+```bash
 DigiTemp v3.7.2 Copyright 1996-2018 by Brian C. Lane
 GNU General Public License v2.0 - http://www.digitemp.com
 Turning off all DS2409 Couplers
@@ -89,20 +89,20 @@ Wrote /etc/digitemp.conf
 
 Confirm that the sensor is readable with the configuration file.
 
-```sh
+```bash
 sudo digitemp_DS9097 -a -q -c /etc/digitemp.conf
 ```
 
 This will produce the below output.
 
-```sh
+```bash
 Apr 10 13:05:42 Sensor 0 C: 29.81 F: 85.66
 ```
 
 To be able to read the sensor data without using sudo, then you will need to add the user(s)
 to the dialout group.
 
-```sh
+```bash
 sudo usermod -a -G dialout $USER
 ```
 
@@ -111,7 +111,7 @@ restart the system for the changes to take effect.
 
 To check to see what groups that the user has been added to, you can run the command
 
-```sh
+```bash
 groups $USER
 ```
 
@@ -132,7 +132,7 @@ sudo systemctl status thermometerapi
 
 ### Remove System Service
 
-```sh
+```bash
 sudo systemctl disable thermometerapi
 sudo systemctl stop thermometerapi
 sudo systemctl status thermometerapi
@@ -143,7 +143,7 @@ sudo rm /lib/systemd/system/thermometerapi.service
 
 To view the application logs, run the following command
 
-```sh
+```bash
 sudo journalctl -u thermometerapi -b
 ```
 

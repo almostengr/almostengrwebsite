@@ -27,9 +27,21 @@ GitHub serves as the content management system for this website. As part up this
 updated to use
 <a href="https://getbootstrap.com" target="_blank">Bootstrap 4</a> so that it would be mobile friendly.
 
+Project was started in 2020
+
 ## Technology
 
-* Technologies: Bootstrap 4, CSS, Github Actions, HTML, JavaScript, MkDocs
-* Year Started: 2020
-* <a href="https://github.com/almostengr/nsbe-mp.org" target="_blank">Source Code</a> 
+* Bootstrap 4
+* CSS
+* Github Actions
+* HTML
+* JavaScript
+* MkDocs
+
+## Source Code
+
+* <a href="https://github.com/almostengr/nsbe-mp.org" target="_blank">Github Repository</a> 
+
+## Live Website
+
 * <a href="https://nsbe-mp.org" target="_blank">Visit Website</a>

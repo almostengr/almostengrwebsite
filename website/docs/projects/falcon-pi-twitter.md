@@ -24,6 +24,8 @@ was originally written in .NET Core 3.1 and now uses .NET 5.
 While I do know how to program in PHP and Bash, C# and .NET Core is what 
 I primarily use. Thus using this language and framework for the application.
 
+Project was started in 2020.
+
 ### Twitter Example
 
 This project is designed for Falcon Pi Player to provide updates via 
@@ -31,16 +33,15 @@ This project is designed for Falcon Pi Player to provide updates via
 you are running. Those updates include posting the current song and providing alerts when problems
 are detected.
 
-This application is ONLY designed to run on Falcon Pi Players that are installed on Raspberry Pi, but it 
-may be possible to run it on Beagle Bone Black (BBB).
-
-* Technologies: C# (.NET 5), Twitter, Falcon Player, Raspberry Pi
-* Year Started: 2020
-
 Follow my Light Show account [@hplightshow](https://twitter.com/hplightshow) to see what this 
 application can do.
 
 ## Technology
+
+* TWitter
+* .NET 6 C#
+* Falcon Pi Player
+* Raspberry Pi
 
 ## Documentation
 

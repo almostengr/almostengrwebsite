@@ -10,7 +10,6 @@ All of my public projects are listed on
 Have a project that you need completed? You may request my services by contacting me through my business, 
 <a href="https://rhtservices.net" target="_blank">Robinson Handy and Technology Services</a>.
 
-* [ESP32 Radio Sign Controller (2022)](/projects/esp32radiosign)
 * [Traffic Controller with ESP32 (2022)](/projects/traffic-light-controller)
 * [Ecobee Status Monitor (2021)](/projects/ecobeestatus)
 * [Home Automation with C# (2021)](/projects/home-automation-with-csharp)
@@ -21,6 +20,7 @@ Have a project that you need completed? You may request my services by contactin
 * [NSBE-MP Website (2020)](/projects/nsbemp-website)
 * [Thermometer Pi (2020)](/projects/thermometer-pi)
 * [Ubuntu Automation Scripts (2018)](/projects/ubuntu-automation)
+* [thealmostengineer.com](/projects/the-almost-engineer)
 * [Traffic Pi (2018)](/projects/traffic-pi)
 * [KdenLive To YouTube (2018)](/projects/kdenlive-to-youtube)
 * [Home Assistant (2017)](/projects/home-assistant)

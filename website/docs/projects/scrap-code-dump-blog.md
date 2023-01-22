@@ -9,7 +9,8 @@ to a dedicated site for a business that I was starting. That business idea did n
 so I decided to take the existing content and make it part of my personal blog. Thus the current
 website, [The Almost Engineer](/), has this content.
 
+Project was started in 2010
+
 ## Technology
 
-* Year Started: 2010
-* Technologies: Blogger
+* Blogger

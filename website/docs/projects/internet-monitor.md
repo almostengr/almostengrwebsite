@@ -20,7 +20,11 @@ If there are no connected wireless clients, then there is a great chance that th
 authenticates clients has crashed.  As a result, the process would need to be restarted and the easiest
 way to restart the process would be to reboot the router.
 
+Project was started in 2020.
+
 ## Technology
+
+* C#
 
 This solution uses 
 <a href="https://www.selenium.dev/" target="_blank">Selenium Webdriver</a>
@@ -29,9 +33,6 @@ to connect to the
 router web interface. I built this using
 .NET Core, but it could be done on Python, Java, or one of the other platforms that Webdriver works on.
 I have it set up on server that is always running and it runs as a system service.
-
-* Year Started: 2020
-* Technologies: C#
 
 ## Documentation
 

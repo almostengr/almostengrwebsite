@@ -21,6 +21,7 @@ Have a project that you need completed? You may request my services by contactin
 * [NSBE-MP Website (2020)](/projects/nsbemp-website)
 * [Thermometer Pi (2020)](/projects/thermometer-pi)
 * [Ubuntu Automation Scripts (2018)](/projects/ubuntu-automation)
+* [thealmostengineer.com](/projects/the-almost-engineer)
 * [Traffic Pi (2018)](/projects/traffic-pi)
 * [KdenLive To YouTube (2018)](/projects/kdenlive-to-youtube)
 * [Home Assistant (2017)](/projects/home-assistant)

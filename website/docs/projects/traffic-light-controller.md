@@ -18,9 +18,7 @@ ran on an ESP32. Microcontrollers are less likely to fail as they do not have th
 Pi. That main flaw with a Raspberry Pi is that they have been known to corrupt the SD cards when a 
 power failure occurs.
 
-This controller will be sold as a product that model railroad and traffic light enthusiasts
-will enjoy. To purchase, visit 
-<a href="https://rhtservices.net" target="_blank">rhtservices.net</a>.
+This project is used to tech students about software development, electrical engineering, and STEM.
 
 ## Technology 
 

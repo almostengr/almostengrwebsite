@@ -14,9 +14,13 @@ These scripts are designed to run on
 <a href="https://ubuntu.com/" target="_blank">Ubuntu</a> 
 systems. They have not been tested on other Linux-based operating systems.
 
+Project was started in 2018
+
 ## Technology
 
-* Technologies: Bash Scripts
-* Year Started: 2018
+* Bash Scripts
+
+## Other Information
+
 * <a href="https://github.com/almostengr/ubuntu-automation" target="_blank">Source Code</a>
 * <a href="https://www.youtube.com/playlist?list=PLaAJ0fv0d9WPLAng19RpS1Q3jjMoG6eno" target="_blank">Video Tutorials</a>

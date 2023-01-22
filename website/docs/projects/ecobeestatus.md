@@ -25,7 +25,8 @@ sensor will show true.
 
 ## Technology
 
-This application was written with .NET Core 3.1 and Selenium WebDriver.
+* .NET Core 3.1  C#
+* Selenium WebDriver
 
 Using Webdriver, it goes to the Ecobee API Status website and checks the text on the page. Then it updates
 the local Home Assistant instance based on whether it is true or false. This automation runs

@@ -4,13 +4,13 @@ title: FarmOS NWS (National Weather Service) Drupal 7 Module
 
 ## Problem
 
-FarmOS is a good garden and farm tracking software. One thing that I noticed with it is that it 
-required that users buy sensors for tracking of data. 
+FarmOS is a good garden and farm tracking software. One thing that I noticed with it is that it
+required that users buy sensors for tracking of data.
 
 ## Solution
 
-The purpose of this project is to allow 
-<a href="https://farmos.org/" target="_blank">FarmOS</a> to use data from the 
+The purpose of this project is to allow
+<a href="https://farmos.org/" target="_blank">FarmOS</a> to use data from the
 <a href="https://www.weather.gov" target="_blank">National Weather Service</a> to allow it
 to make better decisions as well as to log data from a trusted weather source.
 
@@ -20,6 +20,10 @@ maintenance costs by reducing the amount of infrastructure required to maintain 
 
 ## Technology
 
-* Technologies: Bash, Drupal 7, PHP
-* Year Started: 2017
-* <a href="https://github.com/almostengr/farmosnws" target="_blank">Source Code</a>
+* Bash
+* Drupal 7
+* PHP
+
+## Source Code
+
+<a href="https://github.com/almostengr/farmosnws" target="_blank">Code Repository</a>

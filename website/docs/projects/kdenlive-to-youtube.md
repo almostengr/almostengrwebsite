@@ -17,8 +17,12 @@ The first phase of this project, which was to render videos from a queue of
 Kdenlive archive files. I have videos on my YouTube channel that discuss some of the
 aspects of the code.
 
+Project was started in 2019.
+
 ## Technology
 
-* Technologies: Java
-* Year Started: 2019
-* <a href="https://github.com/almostengr/kdenlivetoyoutube" target="_blank">Source Code</a>
+* Java
+
+## Source Code
+
+* <a href="https://github.com/almostengr/kdenlivetoyoutube" target="_blank">Github Repository</a>

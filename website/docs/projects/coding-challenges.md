@@ -16,8 +16,8 @@ programming language and expose myself to different aspects and concepts of the 
 I elaborate further about why I suggest that others do coding challenges in a blog post titled
 [Why Do Coding Challenges](/technology/2021.06.25-why-do-coding-challenges).
 
+Project was started in 2021.
+
 ## Technology
 
-* Technologies: C#
-* <a href="https://github.com/almostengr/coding-challenge" target="_blank">Source Code</a>
-* Year Started: 2021
+* C#

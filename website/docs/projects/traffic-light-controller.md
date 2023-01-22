@@ -22,7 +22,8 @@ This project is used to tech students about software development, electrical eng
 
 ## Technology 
 
-* Technology: C++, ESP32
+* C++
+* ESP32
 
 ### Components Used
 

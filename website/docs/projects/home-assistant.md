@@ -15,9 +15,15 @@ The documentation for <a href="https://home-assistant.io" target="_blank">Home A
 somewhat daunting for the beginnger. By providing my
 configuration, hopefully it will assist you and others with their configuraiton of their own instance.
 
+Project was started in 2017.
+
 ## Technology
 
-* Year Started: 2017
+* Home Assistant
+* Docker
+
+## Documentation
+
 * <a href="https://github.com/almostengr/ha-config" target="_blank">Configuration</a> 
 * <a href="https://www.youtube.com/playlist?list=PLaAJ0fv0d9WMOGZmLnghrG321kVueGfuL" target="_blank">Tutorials</a> 
 * <a href="/uses/#home-assistant">Components</a>

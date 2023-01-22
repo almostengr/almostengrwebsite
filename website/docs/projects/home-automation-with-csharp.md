@@ -22,7 +22,9 @@ language that I am familiar with. Then the application can send a API response b
 <a href="https://home-assistant.io" target="_blank">Home Assistant</a>
 to perform the appropriate action.
 
+Project was started in 2021
+
 ## Technology
 
-* Technology: C#, Selenium WebDriver
-* Year Started: 2021
+* C#
+* Selenium WebDriver

@@ -59,3 +59,17 @@ jobs:
         key: ${{ secrets.PRIVATE_KEY }}
         port: ${{ secrets.PORT_NUMBER }}
         user: ${{ secrets.USERNAME }}
+    
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+#     - uses: actions/checkout@v3
+
+    - uses: actions/setup-dotnet@v3
+      name: Setup .NET Core
+      with:
+        dotnet-version: '6.x' # SDK Version to use; x will use the latest version of the specified channel
+    
+    - name: Run automated tests
+      run: dotnet test -c RELEASE --project tests/Almostengr.AlmostengrWebsite.Tests/Almostengr.AlmostengrWebsite.Tests.csproj
+      

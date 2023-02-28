@@ -11,7 +11,7 @@ image: /images/2020 Christmas Light Show 20201211-f000000.jpg
 ## Show Dates and Times
 
 Show will run nightly from November 24, 2023 until December 31, 2023
-from 5:00 PM (17:30) until 10:00 PM (22:00).
+from 5:00 PM (17:00) until 10:00 PM (22:00). Static lights turn on at 4:30 PM (16:30).
 
 During times of heavy rain or severe weather the light show may be stopped to reduce the
 chance of electrical shorts occurring and for safety of individuals watching.

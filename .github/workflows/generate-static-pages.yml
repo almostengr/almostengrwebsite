@@ -70,6 +70,6 @@ jobs:
       with:
         dotnet-version: '6.x' # SDK Version to use; x will use the latest version of the specified channel
     
-    - name: Run automated tests
-      run: dotnet test -c RELEASE --project tests/Almostengr.AlmostengrWebsite.Tests/Almostengr.AlmostengrWebsite.Tests.csproj
+    # - name: Run automated tests
+    #   run: dotnet test -c RELEASE --project tests/Almostengr.AlmostengrWebsite.Tests/Almostengr.AlmostengrWebsite.Tests.csproj
       

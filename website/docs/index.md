@@ -7,11 +7,11 @@ description: Information about this blog and Kenny Robinson.
 
 ## Featured Project - Christmas Light Show
 
-Each year, I do a animated [Christmas light show](/projects/christmas-light-show). The show posts song
+Each year, I do a animated [Christmas light show](/projects/light-show). The show posts song
 countdown to Christmas and posts song information
 <a href="https://twitter.com/hplightshow" target="_blank">Twitter</a> via a custom software application.
 More information about the project, including song information, show times, and links to previous
-years show videos, are avaiable on the [project page](/project/christmas-light-show).
+years show videos, are avaiable on the [project page](/project/light-show).
 
 ## Technology Blog
 

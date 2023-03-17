@@ -15,7 +15,7 @@ Have a project that you need completed? You may request my services by contactin
 * [Ecobee Status Monitor (2021)](/projects/ecobeestatus)
 * [Home Automation with C# (2021)](/projects/home-automation-with-csharp)
 * [Coding Challenges (2021)](/projects/coding-challenges)
-* [Christmas Light Show (2020)](/projects/christmas-light-show)
+* [Christmas Light Show (2020)](/projects/light-show)
 * [Falcon Pi Twitter (2020)](/projects/falcon-pi-twitter)
 * [Internet Monitor (2020)](/projects/internet-monitor)
 * [NSBE-MP Website (2020)](/projects/nsbemp-website)

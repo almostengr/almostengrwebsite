@@ -1,5 +1,5 @@
 ---
-title: Christmas Light Show FAQ (Frequently Asked Questions)
+title: Light Show FAQ (Frequently Asked Questions)
 description: Frequently asked questions about this and other light shows.
 updated: 2022-10-23
 ---
@@ -179,7 +179,7 @@ Lights used are the same ones that you can get at a big box retailer.
 
 Music is transmitted over radio via a low-power FM transmitter. Music goes into the transmitter directly from
 the Raspberry Pi and broadcasted on 90.3 FM. Radio Locator
-[mentioned below](/projects/christmas-light-show/faq#where-can-i-find-out-more-information-or-ask-questions)
+[mentioned below](/projects/light-show/faq#where-can-i-find-out-more-information-or-ask-questions)
 was used to locate the best frequency based on the area.
 
 #### GFCI (Ground Fault Circuit Interrupter)

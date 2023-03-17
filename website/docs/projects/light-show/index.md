@@ -1,19 +1,17 @@
 ---
-title: 2021 Christmas Light Show
-imagealt: 2021 Christmas Light Show
+title: 2023 Christmas Light Show
+imagealt: 2023 Christmas Light Show
 image: /images/2020 Christmas Light Show 20201211-f000000.jpg
 ---
 
-# 2021 Christmas Light Show
+# 2023 Christmas Light Show
 
 ![Image of 2020 Light Show](/images/2020 Christmas Light Show 20201211-f000000.jpg)
 
 ## Show Dates and Times
 
-Show will run nightly from November 25, 2021 until December 25, 2021.
-
-* Nightly, Pre-show (static lights) starts at 4:30 PM (16:30)
-* Nightly, 5:30 PM (17:30) until 10:00 PM (22:00)
+Show will run nightly from November 24, 2023 until December 31, 2023
+from 5:00 PM (17:00) until 10:00 PM (22:00). Static lights turn on at 4:30 PM (16:30).
 
 During times of heavy rain or severe weather the light show may be stopped to reduce the
 chance of electrical shorts occurring and for safety of individuals watching.
@@ -32,21 +30,7 @@ drivers that are passing by.
 
 ## Song List 
 
-Songs featured in the 2021 Light Show are:
-
-* 20th Century Fox Theme
-* Christmas Eve-Sarajevo - Trans-Siberian Orchestra
-* Christmas Time Is Party Time - Luke
-* December - Earth, Wind, and Fire
-* Nutrocker - Trans-Siberian Orchestra
-* The Polar Express - Tom Hanks
-* The Song That Doesn't End - Shari Lewis
-* Uptown Funk - Mark Ronson
-* What You Want for Christmas - 69 Boyz featuring Quad City DJs and K-nock
-
-You may 
-<a href="https://www.youtube.com/watch?v=sbbEQJ80q0I&list=PLaAJ0fv0d9WM96AeA_ERG7BR3zKr75r45" target="_blank">watch videos</a>
-from the 2021 Christmas Light Show on YouTube.
+Songs for this years show have not been decided at this time.
 
 ## Twitter Feed
 
@@ -56,18 +40,12 @@ from the 2021 Christmas Light Show on YouTube.
 
 ## Fun Facts
 
-* 19 channels
-* 3520 LED lights
-* 1 15-Amp Circuit
-* 3 8-channel Relay Boards
-* 1 Raspberry Pi 3B+
+* 3600 LED lights
 * Numerous hours of programming
 * Over 200 Feet of extension cords
-
-## Watch The Show
-
-Show has been uploaded to 
-<a href="https://www.facebook.com/rhtservicesllc/videos/2073498876141462" target="_blank">my business Facebook page</a>.
+* 20 channels
+* 4 8-channel Solid State Relay Boards
+* 2 Raspberry Pi 3B+
 
 ## Other Information
 
@@ -76,8 +54,8 @@ scenes looks, visit one of the pages listed below.
 
 * <a href="https://twitter.com/hplightshow" target="_blank">Light Show Twitter Page</a>
 * [Falcon Pi Twitter](/projects/falcon-pi-twitter) which reads the song data from FPP and posts it to Twitter
-* [2020 Christmas Light Show Details](/projects/christmas-light-show/2020christmas)
-* <a href="https://www.youtube.com/watch?v=5sm_wmnRPDs" target="_blank">Behind The Scenes of the 2020 Christmas Light Show</a>
-* [2019 Christmas Light Show Details](/projects/christmas-light-show/2019christmas)
-* [FAQs (Frequently Asked Questions)](/projects/christmas-light-show/faq)
-* <a href="https://www.youtube.com/watch?v=sbbEQJ80q0I&list=PLaAJ0fv0d9WM96AeA_ERG7BR3zKr75r45" target="_blank">Watch 2021 Light Show</a>
+* [2022 Christmas Light Show Details](/projects/light-show/2022christmas)
+* [2021 Christmas Light Show Details](/projects/light-show/2021christmas)
+* [2020 Christmas Light Show Details](/projects/light-show/2020christmas)
+* <a href="https://youtu.be/sbbEQJ80q0I" target="_blank">Behind The Scenes of the 2021 Christmas Light Show</a>
+* [FAQs (Frequently Asked Questions)](/projects/light-show/faq)

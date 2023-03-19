@@ -11,7 +11,7 @@ Each year, I do a animated [Christmas light show](/projects/light-show). The sho
 countdown to Christmas and posts song information
 <a href="https://twitter.com/hplightshow" target="_blank">Twitter</a> via a custom software application.
 More information about the project, including song information, show times, and links to previous
-years show videos, are avaiable on the [project page](/project/light-show).
+years show videos, are avaiable on the [project page](/projects/light-show).
 
 ## Technology Blog
 

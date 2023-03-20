@@ -37,7 +37,20 @@ final class JukeboxResponse
 // REQUEST
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-final class SongRequest extends BaseRequest
+final interface BaseRequestInterface
+{
+    public function HandleRequest(); 
+}
+
+abstract class BaseRequest implements BaseRequestInterface
+{
+    public function getMysqlDbConnection(DB_HOST, DB_USER, DB_PASS, DB_NAME)
+    {
+
+    }
+}
+
+final class AddSongRequest extends BaseRequest
 {
     private string $sequenceName;
     private string $code;
@@ -85,6 +98,21 @@ final class SongRequest extends BaseRequest
     }
 }
 
+final class NextSongInQueueRequest extends BaseRequest
+{
+
+}
+
+final class JukeboxEnabledRequest extends BaseRequest
+{
+
+}
+
+final class ClearQueueRequest extends BaseRequest
+{
+
+}
+
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // EXCEPTIONS
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -104,7 +132,7 @@ final class BadRequestException extends Exception
 
 // process request 
 
-switch ($_GET['endpoint']) {
+switch ($_POST['endpoint']) {
     case "newrequest":
         $sequence = $_POST['sequenceName'] ?? '';
         $code = $_POST['code'] ?? '';
@@ -113,12 +141,18 @@ switch ($_GET['endpoint']) {
 
         break;
 
-    case 'get_data':
+    case 'getnext':
         // Code to handle GET request to retrieve data
         break;
 
-    case 'update_data':
+    case 'clearrequests':
         // Code to handle POST request to update data
+        break;
+
+    case 'enable':
+        break;
+
+    case 'disable':
         break;
 
     // Additional cases for other API endpoints

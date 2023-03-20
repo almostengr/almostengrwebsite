@@ -1,0 +1,3 @@
+<?php
+
+final interface JukeboxRepositoryInterface

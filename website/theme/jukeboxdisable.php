@@ -3,6 +3,23 @@
 // Import the configuration file
 require_once('config.php');
 
+final class JukeboxEnableRequest
+{
+    private bool $showActive;
+
+    public function __construct(bool $showActive)
+    {
+        $this->showActive = $showActive;
+    }
+
+    public function getShowActive()
+    {
+        return $this->showActive;
+    }
+}
+
+
+
 // Import the SequenceResponse and JukeboxApi classes
 require_once('SequenceResponse.php');
 require_once('JukeboxApi.php');

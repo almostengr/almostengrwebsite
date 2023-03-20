@@ -22,3 +22,19 @@ if (mysqli_query($conn, $sql)) {
 
 // Close connection
 mysqli_close($conn);
+
+
+
+final class ClearJukeboxQueueRequest extends BaseRequest
+{
+    public function __construct(string $apiKey)
+    {
+        $this->apiKey = $apiKey;        
+    }
+
+    public function clearQueue()
+    {
+
+    }
+
+}

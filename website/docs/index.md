@@ -3,15 +3,15 @@ title: Welcome
 description: Information about this blog and Kenny Robinson.
 ---
 
-![Kenny with traffic light](/images/jumbotron_kenny.jpg)
+## Featured Project - Musical Light Show
 
-## Featured Project - Christmas Light Show
-
-Each year, I do a animated [Christmas light show](/projects/light-show). The show posts song
-countdown to Christmas and posts song information
+Each year, I do a musical [light show](/projects/light-show). 
+The show posts song information and does a countdown to Christmas using 
 <a href="https://twitter.com/hplightshow" target="_blank">Twitter</a> via a custom software application.
 More information about the project, including song information, show times, and links to previous
 years show videos, are avaiable on the [project page](/projects/light-show).
+
+To pick a song for the Light Show, go to the [Jukebox page](/jukebox).
 
 ## Technology Blog
 
@@ -22,7 +22,7 @@ I share
 and other things technology here.
 [Read the Tech Blog](/technology)
 
-## Resources
+## Tech Resources
 
 What's better than learning to advance your career? Learning for free! In this section, a collection of websites
 that offer valuable resources and content. Topics include

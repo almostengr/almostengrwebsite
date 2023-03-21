@@ -1,4 +1,5 @@
 <?php
+
 require_once('../config.php');
 
 function connectToDatabase()
@@ -27,7 +28,6 @@ function validateApiKey()
     }
 }
 
-// Define the function to handle GET requests
 function handleGetRequest()
 {
     // Check API key
@@ -38,12 +38,11 @@ function handleGetRequest()
     // }
     validateApiKey();
 
-    // Connect to the database
     $mysqli = connectToDatabase();
-    if ($mysqli->connect_errno) {
-        http_response_code(500);
-        die("Failed to connect to MySQL: " . $mysqli->connect_error);
-    }
+    // if ($mysqli->connect_errno) {
+    //     http_response_code(500);
+    //     die("Failed to connect to MySQL: " . $mysqli->connect_error);
+    // }
 
     // Get the first unplayed song
     $query = "SELECT * FROM SongRequest WHERE played = 0 ORDER BY createdTime ASC LIMIT 1";
@@ -135,7 +134,8 @@ function handlePostRequest($sequenceName, $code)
     }
 
     // Check if the sequence name already exists and has not been played
-    $conn = new mysqli("localhost", "username", "password", "database_name");
+    // $conn = new mysqli("localhost", "username", "password", "database_name");
+    $conn = connectToDatabase();
     $stmt = $conn->prepare("SELECT * FROM SongRequest WHERE sequenceName = ? AND played = 0");
     $stmt->bind_param("s", $sequenceName);
     $stmt->execute();
@@ -143,13 +143,13 @@ function handlePostRequest($sequenceName, $code)
     if ($result->num_rows > 0) {
         // Redirect to error page after 5 seconds
         header("refresh:5;url=https://thealmostengineer.com/jukebox");
-        die("Error: Song has already been requested.");
+        die("Error: Song has already been requested. Please wait for the song to play.");
     }
 
     // Insert the new request into the database
     $ipAddress = $_SERVER['REMOTE_ADDR'];
-    $stmt = $conn->prepare("INSERT INTO SongRequest (sequenceName, createdIpAddress) VALUES (?, ?)");
-    $stmt->bind_param("ss", $sequenceName, $ipAddress);
+    $stmt = $conn->prepare("INSERT INTO SongRequest (sequenceName, createdIpAddress, modifiedIpAddress) VALUES (?, ?,?)");
+    $stmt->bind_param("sss", $sequenceName, $ipAddress, $ipAddress);
     $stmt->execute();
 
     // Redirect to success page after 5 seconds

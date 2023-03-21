@@ -15,78 +15,15 @@ dev_addr: 192.168.2.103:8000
 
 # Appearance
 theme:
-  name: material
-  custom_dir: 'theme-overrides'
+  name: null
+  custom_dir: 'theme'
   language: en
   static_templates:
     - 404.html
-  font:
-    text: Ubuntu
-    code: Ubuntu Mono
-  palette:
-#     - scheme: default
-#       primary: black
-#       accent: red
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: black
-      accent: red
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: slate
-      primary: blue gray
-      accent: green
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
-  features:
-    - navigation.tabs
-    - navigation.tabs.sticky
-    - toc.integrate
-    - navigation.top
-    - navigation.tracking
-
+    - jukeboxapi.php
 use_directory_urls: true
 strict: false
 
 plugins:
   - minify:
       minify_html: true
-  - search:
-      lang: en
-      min_search_length: 3
-
-extra: 
-  analytics:
-    provider: google  
-    property: 
-  social: 
-    - icon: fontawesome/brands/github 
-      link: https://github.com/almostengr
-      name: almostengr on Github
-    - icon: fontawesome/brands/instagram
-      link: https://instagram.com/almostengr
-      name: "@almostengr on Instagram"
-    - icon: fontawesome/brands/stack-overflow
-      link: https://stackoverflow.com/users/12875554/almostengr
-      name: almostengr on StackOverflow
-    - icon: fontawesome/brands/tiktok
-      name: almostengr on TikTok
-      link: https://www.tiktok.com/@almostengr
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/almostengr
-      name: "@almostengr on Twitter"
-    - icon: fontawesome/brands/facebook
-      link: https://facebook.com/rhtservicesllc
-      name: "Home Improvement (Facebook)"
-    - icon: fontawesome/brands/youtube
-      link: https://www.youtube.com/c/RobinsonHandyandTechnologyServices?sub_confirmation=1
-      name: Home Improvement with RHT Services (YouTube)
-    - icon: fontawesome/brands/facebook
-      link: "https://www.facebook.com/profile.php?id=100089303142244"
-      name: "Tech Talk (Facebook)"
-    - icon: fontawesome/brands/youtube
-      link: https://www.youtube.com/channel/UC4xp-TEEIAL-4XtMVvfRaQw?sub_confirmation=1
-      name: Tech Talk with RHT Services (YouTube)

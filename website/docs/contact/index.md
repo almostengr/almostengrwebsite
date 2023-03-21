@@ -12,4 +12,4 @@ That said, you can reach me by the below listed methods.
 * <a href="https://tiktok.com/@almostengr" target="_blank">@almostengr on TikTok</a>
 * <a href="https://twitter.com/almostengr" target="_blank">@almostengr on Twitter</a>
 * <a href="https://www.youtube.com/c/robinsonhandyandtechnologyservices?sub_confirmation=1" target="_blank">Robinson Handy and Technology Services YouTube Channel</a>
-* <a href="https://www.youtube.com/channel/UC4xp-TEEIAL-4XtMVvfRaQw?sub_confirmation=1" target="_blank">Tech Talk with RHT Services</a>
+* <a href="https://www.youtube.com/channel/UC4xp-TEEIAL-4XtMVvfRaQw?sub_confirmation=1" target="_blank">Tech Talk with RHT Services YouTube Channel</a>

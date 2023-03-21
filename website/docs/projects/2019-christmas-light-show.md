@@ -21,4 +21,4 @@ No software was used as the display was static lights.
 
 To find out more about the light show, visit one of the pages listed below.
 
-* [FAQs (Frequently Asked Questions)](/projects/light-show/faq)
+* [FAQs (Frequently Asked Questions)](/projects/light-show-faq)

@@ -25,6 +25,7 @@ Yes, there are many that exist. There are also commercial light shows. See the l
 * <a href="https://broomfieldlights.com/" target="_blank">Broomfield Lights</a>
 * <a href="https://www.facebook.com/Burtonfamilylightshow" target="_blank">Burton Family Light Show</a>
 * <a href="https://www.youtube.com/c/CanispaterChristmas" target="_blank">Canispater Christmas</a>
+* <a href="https://www.christmaslightfinder.com/" target="_blank">Christmas Light Finder</a>
 * <a href="https://www.cityofwetumpka.com/Default.asp?ID=452&pg=Decorations+Contest" target="_blank">Christmas on the Coosa (MGM)</a>
 * <a href="https://www.facebook.com/ChristmasWonderlandAlabama/" target="_blank">Christmas Wonderland</a>
 * <a href="https://www.davislights.org/" target="_blank">Davis Family Christmas Light Show</a>
@@ -35,7 +36,6 @@ Yes, there are many that exist. There are also commercial light shows. See the l
 * <a href="https://mkelights.com/" target="_blank">MKE Lights</a>
 * <a href="https://www.facebook.com/LocateMGMLights" target="_blank">Montgomery Christmas Lights (MGM)</a>
 * <a href="http://www.mosslights.com" target="_blank">Moss Lights</a>
-* <a href="https://www.christmaslightfinder.com/displays/display-details/?id=2529" target="_blank">Percivals Christmas Lights and Santaland & Clark Wannabe (MGM)</a>
 * <a href="https://riparianlights.com/" target="_blank">Riparian Lights</a>
 * <a href="http://sjlights.com" target="_blank">San Jose Lights</a>
 * <a href="https://taralights.com" target="_blank">Tara Lights (MGM)</a>
@@ -179,7 +179,7 @@ Lights used are the same ones that you can get at a big box retailer.
 
 Music is transmitted over radio via a low-power FM transmitter. Music goes into the transmitter directly from
 the Raspberry Pi and broadcasted on 90.3 FM. Radio Locator
-[mentioned below](/projects/light-show/faq#where-can-i-find-out-more-information-or-ask-questions)
+[mentioned below](/projects/light-show-faq#where-can-i-find-out-more-information-or-ask-questions)
 was used to locate the best frequency based on the area.
 
 #### GFCI (Ground Fault Circuit Interrupter)
@@ -286,6 +286,18 @@ of a file needs to be restored, a checkout of a previous commit can be done to r
 previous state. I provide the steps to set up automatic backup of your Falcon Pi Player in a 
 <a href="https://www.youtube.com/watch?v=l-xUcvMyn2Q" target='_blank'>YouTube video I created</a>.
 
+## Jukebox
+
+### How does the jukebox work?
+
+When you submit your request on the [jukebox page](/jukebox), the request is placed in 
+a queue. As a song is finishing, the light show system will check to see if a new request has been submitted. 
+If a new song has been requested, it will then prepare to and play that song.
+
+### What technology runs the jukebox?
+
+This portion of the show uses HTML, CSS, PHP, and MySQL. This group of technologies are often used for 
+small to medium scale websites and applications because free and easy to set up.
 
 ## Resources
 

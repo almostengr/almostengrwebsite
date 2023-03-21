@@ -4,8 +4,6 @@ imagealt: 2023 Christmas Light Show
 image: /images/2020 Christmas Light Show 20201211-f000000.jpg
 ---
 
-# 2023 Christmas Light Show
-
 ![Image of 2020 Light Show](/images/2020 Christmas Light Show 20201211-f000000.jpg)
 
 ## Show Dates and Times
@@ -18,6 +16,11 @@ chance of electrical shorts occurring and for safety of individuals watching.
 If the show is cancelled, it will be posted on the
 <a href="https://twitter.com/hplightshow" target="_blank">show Twitter page</a> and
 it is asked that you revisit another evening after the weather has cleared.
+
+## Pick The Song
+
+This year, we are allowing viewers to pick the song that they want to see played. To select a song, 
+visit the [Jukebox page](/jukebox).
 
 ## Listen From Your Car
 
@@ -54,8 +57,6 @@ scenes looks, visit one of the pages listed below.
 
 * <a href="https://twitter.com/hplightshow" target="_blank">Light Show Twitter Page</a>
 * [Falcon Pi Twitter](/projects/falcon-pi-twitter) which reads the song data from FPP and posts it to Twitter
-* [2022 Christmas Light Show Details](/projects/light-show/2022christmas)
-* [2021 Christmas Light Show Details](/projects/light-show/2021christmas)
-* [2020 Christmas Light Show Details](/projects/light-show/2020christmas)
+* [2022 Christmas Light Show Details](/projects/2022-christmas-light-show)
 * <a href="https://youtu.be/sbbEQJ80q0I" target="_blank">Behind The Scenes of the 2021 Christmas Light Show</a>
-* [FAQs (Frequently Asked Questions)](/projects/light-show/faq)
+* [FAQs (Frequently Asked Questions)](/projects/light-show-faq)

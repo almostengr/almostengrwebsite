@@ -1,0 +1,34 @@
+<p>
+    Are you currently watching the light show? Pick the song that you would like to hear next!
+</p>
+<form method="post" action="/jukeboxapi.php">
+    <div class="form-group">
+        <label for="sequenceName" class="required">Select A Song</label>
+        <select name="sequenceName" class="form-control" required>
+            <option value="">-Select A Song-</option>
+            <option value='20th Century Fox.fseq'>20th Century Fox</option>
+            <option value='About Damn Time (Clean) - Lizzo.fseq'>About Damn Time (Clean) - Lizzo</option>
+            <option value='All I Really Want For Christmas-Lil Jon featuring Kool-Aid Man.fseq'>All I Really Want For Christmas-Lil Jon featuring Kool-Aid Man</option>
+            <option value='Christmas Eve-Sarajevo.fseq'>Christmas Eve-Sarajevo</option>
+            <option value='Christmas Time Is Party Time_Luke.fseq'>Christmas Time Is Party Time_Luke</option>
+            <option value='December - Earth Wind and Fire.fseq'>December - Earth Wind and Fire</option>
+            <option value='Nutrocker_Trans-Siberian Orchestra.fseq'>Nutrocker_Trans-Siberian Orchestra</option>
+            <option value='The Polar Express-Tom Hanks.fseq'>The Polar Express-Tom Hanks</option>
+            <option value='The Song That Doesnt End - Shari Lewis.fseq'>The Song That Doesnt End - Shari Lewis</option>
+            <option value='Uptown Funk - Mark Ronson.fseq'>Uptown Funk - Mark Ronson</option>
+            <option value='WAP (Interlude).fseq'>WAP (Interlude)</option>
+            <option value='What You Want for Christmas_Quad City DJs and K-nock.fseq'>What You Want for Christmas_Quad City DJs and K-nock</option>
+            <option value='Wizards In Winter_Trans-Siberian Orchestra.fseq'>Wizards In Winter_Trans-Siberian Orchestra</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="code" class="required">Code</label>
+        <input class="form-control" type="text" name="code" required />
+        <small class="form-text  text-muted">
+            The code will be mentioned during the show announcements.
+        </small>
+    </div>
+    <div class="form-group">
+        <button class="btn btn-dark" type="submit">Request Song</button>
+    </div>
+</form>

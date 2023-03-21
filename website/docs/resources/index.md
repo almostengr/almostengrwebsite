@@ -4,8 +4,6 @@ description: Tech and non-tech resources that can provide additional information
 keywords: black in tech, black tech twitter, tech resources, online learning
 ---
 
-# Resources
-
 Here are some resources that you may find beneficial. My goal is to share the knowledge that I have 
 with others in hopes that that will pass it forward like I have done. This list will be updated as I find 
 and create resources related to programming and working in IT (Information Technology). Some of the 
@@ -25,7 +23,7 @@ Additional resources and suggestions can be added to this list by messaging me o
 * [Git Cheatsheet](/resources/git-cheatsheet)
 * [Linux](/resources/linux)
 * [Linux Cheatsheet](/resources/linux-cheatsheet)
-* [Non-Tech Resources](/resources/non-tech)
+* [Non-Tech Resources](/resources/non-tech-resources)
 * [Tech Interview Tips](/resources/tech-interview-tips)
 * [Toastmasters Table Topics](/resources/toastmasters-table-topics)
 * [Web and Software Development](/resources/web-and-software-development)

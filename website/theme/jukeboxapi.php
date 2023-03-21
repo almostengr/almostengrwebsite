@@ -154,7 +154,7 @@ function handlePostRequest($sequenceName, $code)
 
     // Redirect to success page after 5 seconds
     header("refresh:5;url=https://thealmostengineer.com/jukebox");
-    die("Success: Song request has been submitted.");
+    die("Success: Your song request has been submitted.");
 }
 
 function handleDeleteRequest()
@@ -193,6 +193,28 @@ function handleDeleteRequest()
     $conn->close();
 }
 
+function handlePutRequest()
+{
+    validateApiKey();
+    $conn  = connectToDatabase();
+
+    // get the body of the request
+    $requestBody = json_decode(file_get_contents('php://input'));
+    
+    switch($requestBody["status"])
+    {
+        // if the request turn on show, then remove the disabling row from the database
+        case "on":
+            break;
+
+        // if the request turn off the show, then insert the disabling row into the database
+        case "off":
+            break;
+
+            default:
+                die("Bad request.");
+        }
+}
 
 // Route the request based on the request method
 switch ($_SERVER['REQUEST_METHOD']) {
@@ -201,6 +223,9 @@ switch ($_SERVER['REQUEST_METHOD']) {
         break;
     case 'POST':
         handlePostRequest($_POST["sequenceName"], $_POST["code"]);
+        break;
+    case 'PUT':
+        // handlePutRequest();
         break;
     case 'DELETE':
         handleDeleteRequest();

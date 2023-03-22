@@ -1,5 +1,5 @@
 ---
-title: Light Show Jukeboxp
+title: Light Show Jukebox
 ---
 
 ## Problem

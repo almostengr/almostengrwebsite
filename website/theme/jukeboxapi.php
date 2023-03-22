@@ -152,8 +152,21 @@ function handlePostRequest($sequenceName, $code)
         (new WebUserRequest(400, "Error: Invalid code. Please listen to the show announcement for today's code."))->toResponse();
     }
     
-    // Check if the sequence name already exists and has not been played
     $mysqli = connectToDatabase();
+
+    // flood control and spam prevention
+    $ipAddress = $_SERVER['REMOTE_ADDR'];
+    $stmt = $mysqli->prepare("SELECT * FROM SongRequest WHERE createdIpaddress = ? AND played = 0");
+    $stmt->bind_param("s", $ipAddress);
+    $stmt->execute();
+    $result = $stmt->get_result();
+    if ($result->num_rows >= 3)
+    {
+        $mysqli->close();
+        (new WebUserRequest(500, "Error: Unexpected error"))->toResponse();
+    }
+
+    // Check if the sequence name already exists and has not been played
     $stmt = $mysqli->prepare("SELECT * FROM SongRequest WHERE sequenceName = ? AND played = 0");
     $stmt->bind_param("s", $sequenceName);
     $stmt->execute();
@@ -171,7 +184,6 @@ function handlePostRequest($sequenceName, $code)
     $result = $stmt->get_result();
     $songsAhead = $result->num_rows;
 
-    $ipAddress = $_SERVER['REMOTE_ADDR'];
     $stmt = $mysqli->prepare("INSERT INTO SongRequest (sequenceName, createdIpAddress, modifiedIpAddress) VALUES (?, ?,?)");
     $stmt->bind_param("sss", $sequenceName, $ipAddress, $ipAddress);
     $stmt->execute();
@@ -226,6 +238,7 @@ function handlePutRequest()
     }
 }
 
+/// main
 
 switch ($_SERVER['REQUEST_METHOD']) {
     case 'GET':

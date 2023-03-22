@@ -15,5 +15,5 @@ define('TUEDAY_CODE', '');
 define('WEDNESDAY_CODE', '');
 define('THURSDAY_CODE', '');
 define('FRIDAY_CODE', '');
-define('SATURDAYDAY_CODE', '');
+define('SATURDAY_CODE', '');
 define('SUNDAY_CODE', '');

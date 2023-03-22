@@ -3,9 +3,6 @@ title: Ecobee Status Monitor
 description: Provide project details about the Ecobee status automation
 ---
 
-* Technologies: C#
-* Year Started: 2021
-
 ## Problem
 
 Home Assistant would report that there was a problem connecting to the Ecobee servers when a change

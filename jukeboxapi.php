@@ -1,73 +1,96 @@
 <?php
+
 require_once('../config.php');
+
+date_default_timezone_set("America/Chicago");
+
+final class JsonResponse
+{
+    private int $responseCode;
+    private string $errorMessage;
+    private array $data;
+
+    public function __construct(int $responseCode, string $errorMessage, array $data = array())
+    {
+        $this->responseCode = $responseCode;
+        $this->errorMessage = $errorMessage;
+        $this->data = $data;
+    }
+
+    public function toJsonEncode()
+    {
+        header('Content-Type: application/json');
+        http_response_code($this->responseCode);
+        echo json_encode(
+            array(
+                "code" => $this->responseCode,
+                "error" => $this->errorMessage,
+                "data" => $this->data
+            )
+        );
+        exit();
+    }
+}
+
+final class WebUserRequest
+{
+    private int $code;
+    private string $message;
+
+    public function __construct(int $code, string $message)
+    {
+        $this->code = $code;
+        $this->message = $message;
+    }
+
+    public function toResponse()
+    {
+        http_response_code($this->code);
+        header("refresh:5;url=https://thealmostengineer.com/jukebox");
+        exit($this->message);
+    }
+}
 
 function connectToDatabase()
 {
-    $conn = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+    $mysqli = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
 
     if (mysqli_connect_errno()) {
-        http_response_code(500);
-        echo json_encode(array('error' => 'Failed to connect to database: ' . mysqli_connect_error()));
-        exit();
+        (new JsonResponse(500, 'Failed to connect to database: ' . mysqli_connect_error()))->toJsonEncode();
     }
 
-    return $conn;
+    return $mysqli;
 }
 
 function validateApiKey()
 {
     $headers = apache_request_headers();
-
-    if (!isset($headers['api_key']) || $headers['api_key'] !== API_KEY) {
-        http_response_code(401);
-        echo json_encode(array('error' => 'Invalid API key'));
-        // exit();
-        //   http_response_code(401);
-        die("Unauthorized");
+    if (!isset($headers['X-Auth-Token']) || $headers['X-Auth-Token'] !== API_KEY) {
+        (new JsonResponse(401, "Unauthorized"))->toJsonEncode();
     }
 }
 
-// Define the function to handle GET requests
 function handleGetRequest()
 {
-    // Check API key
-    // $headers = apache_request_headers();
-    // if (!isset($headers['Authorization']) || $headers['Authorization'] !== API_KEY) {
-    //     http_response_code(401);
-    //     die("Unauthorized");
-    // }
     validateApiKey();
-
-    // Connect to the database
     $mysqli = connectToDatabase();
-    if ($mysqli->connect_errno) {
-        http_response_code(500);
-        die("Failed to connect to MySQL: " . $mysqli->connect_error);
-    }
 
     // Get the first unplayed song
-    $query = "SELECT * FROM SongRequest WHERE played = 0 ORDER BY createdTime ASC LIMIT 1";
+    $query = "SELECT id, sequencename, createdtime FROM SongRequest WHERE played = 0 ORDER BY createdTime ASC LIMIT 1";
     $stmt = $mysqli->prepare($query);
     if (!$stmt) {
-        http_response_code(500);
-        die("Error preparing statement: " . $mysqli->error);
+        (new JsonResponse(500, "Error preparing statement"))->toJsonEncode();
     }
 
     if (!$stmt->execute()) {
-        http_response_code(500);
-        die("Error executing statement: " . $stmt->error);
+        (new JsonResponse(500, "Error executing statement"))->toJsonEncode();
     }
 
-    // Check if there's a result
     $result = $stmt->get_result();
     if ($result->num_rows == 0) {
-        // http_response_code(404);
-        // die("No unplayed songs found");
-        http_response_code(200);
-        return json_encode("");
+        (new JsonResponse(200, ""))->toJsonEncode();
     }
 
-    // Fetch the row as an associative array
     $row = $result->fetch_assoc();
 
     // Update the song as played
@@ -76,22 +99,17 @@ function handleGetRequest()
     $updateQuery = "UPDATE SongRequest SET played = 1, modifiedTime = ?, modifiedIpAddress = ? WHERE id = ?";
     $updateStmt = $mysqli->prepare($updateQuery);
     if (!$updateStmt) {
-        http_response_code(500);
-        die("Error preparing statement: " . $mysqli->error);
+        (new JsonResponse(500, "Error preparing statement"))->toJsonEncode();
     }
 
     $updateStmt->bind_param('ssi', $now, $ipAddress, $row['id']);
     if (!$updateStmt->execute()) {
-        http_response_code(500);
-        die("Error updating song: " . $updateStmt->error);
+        (new JsonResponse(500, "Error updating song"))->toJsonEncode();
     }
 
-    // Close the database connection
     $mysqli->close();
 
-    // Return the song as a JSON object
-    header('Content-Type: application/json');
-    echo json_encode($row);
+    (new JsonResponse(200, "", $row))->toJsonEncode();
 }
 
 function getCodeForToday()
@@ -108,7 +126,7 @@ function getCodeForToday()
         case 'Friday':
             return FRIDAY_CODE;
         case 'Saturday':
-            return SATURDAYDAY_CODE;
+            return SATURDAY_CODE;
         case 'Sunday':
             return SUNDAY_CODE;
         default:
@@ -118,83 +136,97 @@ function getCodeForToday()
 
 function handlePostRequest($sequenceName, $code)
 {
-    // Check if both fields are present
     if (empty($sequenceName) || empty($code)) {
-        // Redirect to error page after 5 seconds
-        header("refresh:5;url=https://thealmostengineer.com/jukebox");
-        die("Error: Sequence name and code are required.");
+        // http_response_code(400);
+        // header("refresh:5;url=https://thealmostengineer.com/jukebox");
+        // exit("Error: Sequence Name and Code are required.");
+        (new WebUserRequest(400, "Error: Sequence Name and code are required."))->toResponse();
     }
-
+    
     // Check if the code is valid for the current day of the week
-    // $validCodeForToday = $validCodes[date('N')];
     $validCodeForToday = getCodeForToday();
     if ($code !== $validCodeForToday) {
-        // Redirect to error page after 5 seconds
-        header("refresh:5;url=https://thealmostengineer.com/jukebox");
-        die("Error: Invalid code for today.");
+        // http_response_code(400);
+        // header("refresh:5;url=https://thealmostengineer.com/jukebox");
+        // exit("Error: Invalid code. Please listen to the show announcement for today's code.");
+        (new WebUserRequest(400, "Error: Invalid code. Please listen to the show announcement for today's code."))->toResponse();
     }
-
+    
     // Check if the sequence name already exists and has not been played
-    $conn = new mysqli("localhost", "username", "password", "database_name");
-    $stmt = $conn->prepare("SELECT * FROM SongRequest WHERE sequenceName = ? AND played = 0");
+    $mysqli = connectToDatabase();
+    $stmt = $mysqli->prepare("SELECT * FROM SongRequest WHERE sequenceName = ? AND played = 0");
     $stmt->bind_param("s", $sequenceName);
     $stmt->execute();
     $result = $stmt->get_result();
     if ($result->num_rows > 0) {
-        // Redirect to error page after 5 seconds
-        header("refresh:5;url=https://thealmostengineer.com/jukebox");
-        die("Error: Song has already been requested.");
+        $mysqli->close();
+        // http_response_code(400);
+        // header("refresh:5;url=https://thealmostengineer.com/jukebox");
+        // exit("Error: Song has already been requested. Please wait for the song to play.");
+        (new WebUserRequest(400, "Error: Song has already been requested. Please wait for the song to play."))->toResponse();
     }
-
-    // Insert the new request into the database
-    $ipAddress = $_SERVER['REMOTE_ADDR'];
-    $stmt = $conn->prepare("INSERT INTO SongRequest (sequenceName, createdIpAddress) VALUES (?, ?)");
-    $stmt->bind_param("ss", $sequenceName, $ipAddress);
+    
+    $stmt = $mysqli->prepare("SELECT * FROM SongRequest WHERE played = 0");
     $stmt->execute();
+    $result = $stmt->get_result();
+    $songsAhead = $result->num_rows;
 
-    // Redirect to success page after 5 seconds
-    header("refresh:5;url=https://thealmostengineer.com/jukebox");
-    die("Success: Song request has been submitted.");
+    $ipAddress = $_SERVER['REMOTE_ADDR'];
+    $stmt = $mysqli->prepare("INSERT INTO SongRequest (sequenceName, createdIpAddress, modifiedIpAddress) VALUES (?, ?,?)");
+    $stmt->bind_param("sss", $sequenceName, $ipAddress, $ipAddress);
+    $stmt->execute();
+    $mysqli->close();
+
+    // http_response_code(201);
+    // header("refresh:5;url=https://thealmostengineer.com/jukebox");
+    // exit("Success: Your song request has been submitted. There are " . $songsAhead . " song(s) ahead of your request.");
+    (new WebUserRequest(201, "Success: Your song request has been submitted. There are " . $songsAhead . " song(s) ahead of your request."))->toResponse();
 }
 
 function handleDeleteRequest()
 {
-    // Get user's IP address
-    $userIpAddress = $_SERVER['REMOTE_ADDR'];
+    validateApiKey();
+    $mysqli = connectToDatabase();
 
-    // // Create a connection to the database
-    // $conn = new mysqli("localhost", "username", "password", "database_name");
-
-    // // Check connection
-    // if ($conn->connect_error) {
-    //     http_response_code(500);
-    //     die("Connection failed: " . $conn->connect_error);
-    // }
-    $conn = connectToDatabase();
-
-    // Prepare the SQL statement
-    $stmt = $conn->prepare("UPDATE SongRequest SET played = true, modifiedIpAddress = ?");
-
-    // Bind parameters
-    $stmt->bind_param("s", $userIpAddress);
-
-    // Execute the statement
-    if ($stmt->execute()) {
-        http_response_code(200);
-        // echo "All requests have been marked as played.";
-        echo "Ok";
-    } else {
-        http_response_code(500);
-        echo "Error: " . $stmt->error;
+    $now = date('Y-m-d H:i:s');
+    $ipAddress = $_SERVER['REMOTE_ADDR'];
+    $updateQuery = "UPDATE SongRequest SET played = 1, modifiedTime = ?, modifiedIpAddress = ? where played = 0";
+    $updateStmt = $mysqli->prepare($updateQuery);
+    if (!$updateStmt) {
+        (new JsonResponse(500, "Error updating data"))->toJsonEncode();
     }
 
-    // Close the statement and the database connection
-    $stmt->close();
-    $conn->close();
+    $updateStmt->bind_param('ss', $now, $ipAddress);
+    if (!$updateStmt->execute()) {
+        (new JsonResponse(500, "Error updating data"))->toJsonEncode();
+    }
+
+    $updateStmt->close();
+    $mysqli->close();
+
+    (new JsonResponse(200, ""))->toJsonEncode();
+}
+
+function handlePutRequest()
+{
+    validateApiKey();
+    $mysqli = connectToDatabase();
+
+    $requestBody = json_decode(file_get_contents('php://input'));
+
+    switch ($requestBody["status"]) {
+        case "on":
+            break;
+
+        case "off":
+            break;
+
+        default:
+            exit("Bad request.");
+    }
 }
 
 
-// Route the request based on the request method
 switch ($_SERVER['REQUEST_METHOD']) {
     case 'GET':
         handleGetRequest();
@@ -206,7 +238,5 @@ switch ($_SERVER['REQUEST_METHOD']) {
         handleDeleteRequest();
         break;
     default:
-        http_response_code(405);
-        echo json_encode(array('error' => 'Method not allowed'));
-        exit();
+        (new JsonResponse(405, "Method not allowed"))->toJsonEncode();
 }

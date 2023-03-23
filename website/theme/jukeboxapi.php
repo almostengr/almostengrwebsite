@@ -32,7 +32,7 @@ final class JsonResponse
     }
 }
 
-final class WebUserRequest
+final class WebUserResponse
 {
     private int $responseCode;
     private string $message;
@@ -144,7 +144,7 @@ final class PostRequestService extends BaseRequestService
     public function __construct(string $sequenceName, string $code)
     {
         if (empty($sequenceName) || empty($code)) {
-            (new WebUserRequest(400, "Error: Sequence Name and Code are required."))->toResponse();
+            (new WebUserResponse(400, "Error: Sequence Name and Code are required."))->toResponse();
         }
 
         $this->sequenceName = $sequenceName;
@@ -173,7 +173,7 @@ final class PostRequestService extends BaseRequestService
 
         if ($result->num_rows >= 2) {
             $this->mysqli->close();
-            (new WebUserRequest(500, "Error: Unexpected error"))->toResponse();
+            (new WebUserResponse(500, "Error: Unexpected error"))->toResponse();
         }
     }
 
@@ -203,7 +203,7 @@ final class PostRequestService extends BaseRequestService
     {
         $validCodeForToday = $this->getCodeForToday();
         if ($this->code !== $validCodeForToday) {
-            (new WebUserRequest(400, "Error: Invalid code. Please listen to the show announcement for today's code."))->toResponse();
+            (new WebUserResponse(400, "Error: Invalid code. Please listen to the show announcement for today's code."))->toResponse();
         }
     }
 
@@ -215,7 +215,7 @@ final class PostRequestService extends BaseRequestService
         $result = $stmt->get_result();
         if ($result->num_rows > 0) {
             $this->mysqli->close();
-            (new WebUserRequest(400, "Error: Song has already been requested. Please wait for the song to play."))->toResponse();
+            (new WebUserResponse(400, "Error: Song has already been requested. Please wait for the song to play."))->toResponse();
         }
     }
 
@@ -233,7 +233,7 @@ final class PostRequestService extends BaseRequestService
         $stmt->bind_param("sss", $this->sequenceName, $ipAddress, $ipAddress);
         $stmt->execute();
         $this->mysqli->close();
-        (new WebUserRequest(201, "Success: Your song request has been submitted. There are " . $songsAhead . " song(s) ahead of your request."))->toResponse();
+        (new WebUserResponse(201, "Success: Your song request has been submitted. There are " . $songsAhead . " song(s) ahead of your request."))->toResponse();
     }
 }
 

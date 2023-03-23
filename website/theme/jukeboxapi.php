@@ -26,7 +26,8 @@ final class JsonResponse
                 "code" => $this->responseCode,
                 "error" => $this->errorMessage,
                 "data" => $this->data
-            ));
+            )
+        );
         exit();
     }
 }
@@ -46,7 +47,7 @@ final class WebUserRequest
     {
         http_response_code($this->responseCode);
         header("refresh:5;url=https://thealmostengineer.com/jukebox");
-        exit($this->message);
+        exit($this->message . " Redirecting in 5 seconds...");
     }
 }
 
@@ -71,6 +72,16 @@ abstract class BaseRequestService
         if (!isset($headers['X-Auth-Token']) || $headers['X-Auth-Token'] !== API_KEY) {
             (new JsonResponse(401, "Unauthorized"))->toJsonEncode();
         }
+    }
+
+    function getVisitorIpAddress()
+    {
+        return $_SERVER['REMOTE_ADDR'];
+    }
+
+    function getCurrentDateTime()
+    {
+        return date('Y-m-d H:i:s');
     }
 }
 
@@ -112,7 +123,7 @@ final class GetRequestService extends BaseRequestService
         }
 
         $now = date('Y-m-d H:i:s');
-        $ipAddress = $_SERVER['REMOTE_ADDR'];
+        $ipAddress = $this->getVisitorIpAddress();
         $updateStmt->bind_param('ssi', $now, $ipAddress, $row['id']);
         if (!$updateStmt->execute()) {
             (new JsonResponse(500, "Error updating song"))->toJsonEncode();
@@ -133,7 +144,7 @@ final class PostRequestService extends BaseRequestService
     public function __construct(string $sequenceName, string $code)
     {
         if (empty($sequenceName) || empty($code)) {
-            (new WebUserRequest(400, "Error: Sequence Name and code are required."))->toResponse();
+            (new WebUserRequest(400, "Error: Sequence Name and Code are required."))->toResponse();
         }
 
         $this->sequenceName = $sequenceName;
@@ -144,13 +155,26 @@ final class PostRequestService extends BaseRequestService
     {
         $this->validateCode();
         $this->mysqli = $this->connectToDatabase();
+        $this->preventSpamAndFloodRequests();
         $this->validateSequenceNotAlreadyInQueue();
         $songsAhead = $this->getNumberOfSongsInQueue();
+        $ipAddress = $this->getVisitorIpAddress();
+        $this->addSongToQueue($ipAddress, $songsAhead);
+    }
 
-        $ipAddress = $_SERVER['REMOTE_ADDR'];
-        $this->addSongToQueue($ipAddress);
+    private function preventSpamAndFloodRequests()
+    {
+        $stmt = $this->mysqli->prepare("SELECT * FROM SongRequest WHERE createdIpaddress = ? AND played = 0");
 
-        (new WebUserRequest(201, "Success: Your song request has been submitted. There are " . $songsAhead . " song(s) ahead of your request."))->toResponse();
+        $ipAddress = $this->getVisitorIpAddress();
+        $stmt->bind_param("s", $ipAddress);
+        $stmt->execute();
+        $result = $stmt->get_result();
+
+        if ($result->num_rows >= 2) {
+            $this->mysqli->close();
+            (new WebUserRequest(500, "Error: Unexpected error"))->toResponse();
+        }
     }
 
     private function getCodeForToday(): string
@@ -203,12 +227,13 @@ final class PostRequestService extends BaseRequestService
         return $result->num_rows;
     }
 
-    private function addSongToQueue(string $ipAddress): void
+    private function addSongToQueue(string $ipAddress, int $songsAhead): void
     {
         $stmt = $this->mysqli->prepare("INSERT INTO SongRequest (sequenceName, createdIpAddress, modifiedIpAddress) VALUES (?, ?,?)");
         $stmt->bind_param("sss", $this->sequenceName, $ipAddress, $ipAddress);
         $stmt->execute();
         $this->mysqli->close();
+        (new WebUserRequest(201, "Success: Your song request has been submitted. There are " . $songsAhead . " song(s) ahead of your request."))->toResponse();
     }
 }
 
@@ -232,7 +257,7 @@ final class DeleteRequestService extends BaseRequestService
         }
 
         $now = date('Y-m-d H:i:s');
-        $ipAddress = $_SERVER['REMOTE_ADDR'];
+        $ipAddress = $this->getVisitorIpAddress();
         $updateStmt->bind_param('ss', $now, $ipAddress);
         if (!$updateStmt->execute()) {
             (new JsonResponse(500, "Error updating data"))->toJsonEncode();
@@ -244,7 +269,6 @@ final class DeleteRequestService extends BaseRequestService
         (new JsonResponse(200, ""))->toJsonEncode();
     }
 }
-
 
 switch ($_SERVER['REQUEST_METHOD']) {
     case 'GET':

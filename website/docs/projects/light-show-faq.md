@@ -22,6 +22,7 @@ Yes, there are many that exist. There are also commercial light shows. See the l
 *Those with "MGM" in parenthesis are located in or near the Montgomery, Alabama area.*
 *Visit their respective pages for details about their show.*
 
+* <a href="https://blinkygeek.com/" target="_blank">Blinky Geek</a>
 * <a href="https://broomfieldlights.com/" target="_blank">Broomfield Lights</a>
 * <a href="https://www.facebook.com/Burtonfamilylightshow" target="_blank">Burton Family Light Show</a>
 * <a href="https://www.youtube.com/c/CanispaterChristmas" target="_blank">Canispater Christmas</a>

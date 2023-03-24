@@ -454,7 +454,6 @@ error_log/
 *tmp
 
 # other files 
-*sql
 nohup.out
 bootstrap-4.5.0-examples*
 

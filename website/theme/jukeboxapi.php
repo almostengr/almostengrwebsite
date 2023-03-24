@@ -1,7 +1,6 @@
 <?php
 
 require_once('../config.php');
-
 date_default_timezone_set("America/Chicago");
 
 final class JsonResponse
@@ -54,19 +53,24 @@ final class WebUserResponse
 abstract class BaseRequestService
 {
     protected mysqli $mysqli;
+    protected string $currentDateTime;
+    protected string $visitorIpAddress;
+
+    public function __construct()
+    {
+        $this->currentDateTime = date('Y-m-d H:i:s');
+        $this->visitorIpAddress = $_SERVER['REMOTE_ADDR'];
+    }
 
     abstract function processRequest(): void;
 
     protected function connectToDatabase()
     {
-        // $mysqli = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
         $this->mysqli = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
 
         if (mysqli_connect_errno()) {
             (new JsonResponse(500, 'Failed to connect to database: ' . mysqli_connect_error()))->toJsonEncode();
         }
-
-        // return $mysqli;
     }
 
     protected function validateApiKey()
@@ -76,26 +80,13 @@ abstract class BaseRequestService
             (new JsonResponse(401, "Unauthorized"))->toJsonEncode();
         }
     }
-
-    protected function getVisitorIpAddress()
-    {
-        return $_SERVER['REMOTE_ADDR'];
-    }
-
-    protected function getCurrentDateTime()
-    {
-        return date('Y-m-d H:i:s');
-    }
 }
 
 final class GetRequestService extends BaseRequestService
 {
-    // private mysqli $mysqli;
-
     public function processRequest(): void
     {
         $this->validateApiKey();
-        // $this->mysqli = $this->connectToDatabase();
         $this->connectToDatabase();
         $song = $this->getFirstUnplayedSong();
         $this->updateSongAsPlayed($song);
@@ -122,18 +113,11 @@ final class GetRequestService extends BaseRequestService
     {
         $updateQuery = "UPDATE SongRequest SET played = 1, modifiedTime = ?, modifiedIpAddress = ? WHERE id = ?";
         $updateStmt = $this->mysqli->prepare($updateQuery);
-        // if (!$updateStmt) {
-        //     (new JsonResponse(500, "Error preparing statement"))->toJsonEncode();
-        // }
 
-        // $now = date('Y-m-d H:i:s');
-        // $ipAddress = $this->getVisitorIpAddress();
-        $updateStmt->bind_param('ssi', $this->getCurrentDateTime(), $this->getVisitorIpAddress(), $row['id']);
+        $updateStmt->bind_param('ssi', $this->currentDateTime, $this->visitorIpAddress, $row['id']);
         if (!$updateStmt->execute()) {
             (new JsonResponse(500, "Error updating song"))->toJsonEncode();
         }
-
-        $this->mysqli->close();
 
         (new JsonResponse(200, "", $row))->toJsonEncode();
     }
@@ -143,8 +127,7 @@ final class PostRequestService extends BaseRequestService
 {
     private string $sequenceName;
     private string $code;
-    // private mysqli $mysqli;
-    private const int MAX_UNPLAYED_SONGS_PER_DEVICE = 2;
+    private const MAX_UNPLAYED_SONGS_PER_DEVICE = 2;
 
     public function __construct(string $sequenceName, string $code)
     {
@@ -159,26 +142,22 @@ final class PostRequestService extends BaseRequestService
     public function processRequest(): void
     {
         $this->validateCode();
-        // $this->mysqli = $this->connectToDatabase();
         $this->connectToDatabase();
         $this->preventSpamAndFloodRequests();
         $this->validateSequenceNotAlreadyInQueue();
         $songsAhead = $this->getNumberOfSongsInQueue();
-        // $ipAddress = $this->getVisitorIpAddress();
         $this->addSongToQueue($songsAhead);
     }
 
-    private function preventSpamAndFloodRequests() : void
+    private function preventSpamAndFloodRequests(): void
     {
         $stmt = $this->mysqli->prepare("SELECT * FROM SongRequest WHERE createdIpaddress = ? AND played = 0");
 
-        // $ipAddress = $this->getVisitorIpAddress();
-        $stmt->bind_param("s", $this->getVisitorIpAddress());
-        // $stmt->execute();
+        $stmt->bind_param("s", $this->visitorIpAddress);
         if (!$stmt->execute()) {
             (new WebUserResponse(500, "Error: Unexpected error"))->toResponse();
         }
-        
+
         $result = $stmt->get_result();
 
         if ($result->num_rows >= $this->MAX_UNPLAYED_SONGS_PER_DEVICE) {
@@ -239,9 +218,8 @@ final class PostRequestService extends BaseRequestService
 
     private function addSongToQueue(int $songsAhead): void
     {
-        $stmt = $this->mysqli->prepare("INSERT INTO SongRequest (sequenceName, createdIpAddress, modifiedIpAddress) VALUES (?, ?,?)");
-        // $stmt->bind_param("sss", $this->sequenceName, $ipAddress, $ipAddress);
-        $stmt->bind_param("sss", $this->sequenceName, $this->getVisitorIpAddress(), $this->getVisitorIpAddress());
+        $stmt = $this->mysqli->prepare("INSERT INTO SongRequest (sequenceName, createdIpAddress, modifiedIpAddress) VALUES (?, ?, ?)");
+        $stmt->bind_param("sss", $this->sequenceName, $this->visitorIpAddress, $this->visitorIpAddress);
         $stmt->execute();
         $this->mysqli->close();
         (new WebUserResponse(201, "Success: Your song request has been submitted. There are " . $songsAhead . " song(s) ahead of your request."))->toResponse();
@@ -250,12 +228,9 @@ final class PostRequestService extends BaseRequestService
 
 final class DeleteRequestService extends BaseRequestService
 {
-    // private mysqli $mysqli;
-
     public function processRequest(): void
     {
         $this->validateApiKey();
-        // $this->mysqli = $this->connectToDatabase();
         $this->connectToDatabase();
         $this->markAllRequestsAsPlayed();
     }
@@ -264,19 +239,11 @@ final class DeleteRequestService extends BaseRequestService
     {
         $updateQuery = "UPDATE SongRequest SET played = 1, modifiedTime = ?, modifiedIpAddress = ? where played = 0";
         $updateStmt = $this->mysqli->prepare($updateQuery);
-        // if (!$updateStmt) {
-        //     (new JsonResponse(500, "Error updating data"))->toJsonEncode();
-        // }
 
-        // $now = date('Y-m-d H:i:s');
-        // $ipAddress = $this->getVisitorIpAddress();
-        $updateStmt->bind_param('ss', $this->getCurrentDateTime(), $this->getVisitorIpAddress());
+        $updateStmt->bind_param('ss', $this->currentDateTime, $this->visitorIpAddress);
         if (!$updateStmt->execute()) {
             (new JsonResponse(500, "Error updating data"))->toJsonEncode();
         }
-
-        $updateStmt->close();
-        $this->mysqli->close();
 
         (new JsonResponse(200, ""))->toJsonEncode();
     }

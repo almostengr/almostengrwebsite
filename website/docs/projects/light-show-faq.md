@@ -30,6 +30,7 @@ Yes, there are many that exist. There are also commercial light shows. See the l
 * <a href="https://www.cityofwetumpka.com/Default.asp?ID=452&pg=Decorations+Contest" target="_blank">Christmas on the Coosa (MGM)</a>
 * <a href="https://www.facebook.com/ChristmasWonderlandAlabama/" target="_blank">Christmas Wonderland</a>
 * <a href="https://www.davislights.org/" target="_blank">Davis Family Christmas Light Show</a>
+* <a href="http://thehormanns.net/" target="_blank">The Hormanns</a>
 * <a href="http://www.lightinguppaxton.com/" target="_blank">Lighting Up Paxton</a>
 * <a href="https://www.lightstoabeat.com" target="_blank">Lights To A Beat</a>
 * <a href="https://sites.google.com/site/listentoourlights/home" target="_blank">Listen To Our Lights</a>
@@ -286,6 +287,12 @@ If a previous version
 of a file needs to be restored, a checkout of a previous commit can be done to restore that file to a 
 previous state. I provide the steps to set up automatic backup of your Falcon Pi Player in a 
 <a href="https://www.youtube.com/watch?v=l-xUcvMyn2Q" target='_blank'>YouTube video I created</a>.
+
+### The music is a few seconds behind the lights. Why is that?
+
+Some radios buffer the radio signal or do additional processing of the audio that is being played before 
+you hear it. This causes the delay between the lights and sound. Some radios have a way that you can disable 
+this feature by turning on "live mode". Check your vehicle's owners manual for how to do this.
 
 ## Jukebox
 

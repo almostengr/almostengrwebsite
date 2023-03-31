@@ -24,24 +24,24 @@ The Basic Tools are
 relatively common because they are used as fasteners on number of items including ceiling fans, 
 electrical outlets, and furniture, just to name a few.
 
-* <a target="_blank" href="https://www.amazon.com/gp/product/B07RRNSFY4/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B07RRNSFY4&linkCode=as2&tag=rhtservicesll-20&linkId=6a4a1d82a26dc714cfc3d28a6395b041">Hammer</a>
-* <a target="_blank" href="https://www.amazon.com/gp/product/B07QK2PFKY/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B07QK2PFKY&linkCode=as2&tag=rhtservicesll-20&linkId=e7bbb831f151cd93e7ebef0ab9422c74">Screwdriver Set</a>
-* <a href="https://www.amazon.com/gp/product/B00002N5JF/ref=as_li_tl?ie=UTF8&tag=rhtservicesll-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B00002N5JF&linkId=983a13ab385a83c2688f60f05b1ca95a">Tongue and Groove Pliers</a>
+* Hammer
+* Screwdriver Set
+* Tongue and Groove Pliers
 
 ### Additional Tools
 
 The Advanced Tools are more for the hardcore DIY-er, those that enjoy doing Saturday Projects, and
 handymen and handywomen.
 
-* <a href="https://www.amazon.com/gp/product/B01BD81BLO/ref=as_li_tl?ie=UTF8&tag=rhtservicesll-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B01BD81BLO&linkId=25a2224e8727a314dd9deeb1bb6853c2" target="_blank">Circular Saw</a>
-* <a href="https://www.amazon.com/gp/product/B00ET5VMTU/ref=as_li_tl?ie=UTF8&tag=rhtservicesll-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B00ET5VMTU&linkId=6fbe220e94d5d925dfa8a0b141033242" target="_blank">Drill</a>
-* <a href="https://www.amazon.com/gp/product/B07QGL8BLY/ref=as_li_tl?ie=UTF8&tag=rhtservicesll-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B07QGL8BLY&linkId=ae3274696c4eb05feaba08fed4881444" target="_blank">Impact Driver</a>
-* <a href="https://www.amazon.com/gp/product/B07NW8SP6H/ref=as_li_tl?ie=UTF8&tag=rhtservicesll-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B07NW8SP6H&linkId=084e430b04f5de1d83fe152ba02891a5" target="_blank">    Lawn Mower</a>
-* <a href="https://www.amazon.com/gp/product/B07P8QTFRC/ref=as_li_tl?ie=UTF8&tag=rhtservicesll-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B07P8QTFRC&linkId=192614c14da6831f8122fde60ebdd5c0" target="_blank">Miter Saw</a>
-* <a href="https://www.amazon.com/gp/product/B007NVSTCK/ref=as_li_tl?ie=UTF8&tag=rhtservicesll-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B007NVSTCK&linkId=c61f58518dd8d66dd316f24d0ae49dd4" target="_blank">Reciprocating Saw</a>
-* <a href="https://www.amazon.com/gp/product/B004N8526C/ref=as_li_tl?ie=UTF8&tag=rhtservicesll-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B004N8526C&linkId=6c529a4c1fe22640ec5829a48747e2a3" target="_blank">Shovel</a>
-* <a href="https://www.amazon.com/gp/product/B00WLVV2YE/ref=as_li_tl?ie=UTF8&tag=rhtservicesll-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B00WLVV2YE&linkId=9f118e9a141f1f2595bcbed6263db159" target="_blank">Socket Wrench Set</a>
-* <a href="https://www.amazon.com/gp/product/B01BNMP5JY/ref=as_li_tl?ie=UTF8&tag=rhtservicesll-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B01BNMP5JY&linkId=dd4394c76c089138ea027c8169686a17" target="_blank">Weed Trimmer</a>
+* Circular Saw
+* Drill
+* Impact Driver
+* Lawn Mower
+* Miter Saw
+* Reciprocating Saw
+* Shovel
+* Socket Wrench Set
+* Weed Trimmer
 
 ## Technology Tools
 

@@ -13,6 +13,9 @@ years show videos, are avaiable on the [project page](/projects/light-show).
 
 To pick a song for the Light Show, go to the [Jukebox page](/jukebox).
 
+To see the current song information, visit the 
+<a href="https://twitter.com/hplightshow" target="_blank">Light Show Twitter page</a>.
+
 ## Technology Blog
 
 A programmer that does not talk (or in this case write) about technology probably is not a good programmer.

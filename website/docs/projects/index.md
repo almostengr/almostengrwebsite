@@ -10,8 +10,9 @@ All of my public projects are listed on
 Have a project that you need completed? You may request my services by contacting me through my business, 
 <a href="https://rhtservices.net" target="_blank">Robinson Handy and Technology Services</a>.
 
-* [Light Show Jukebox (2023)](/projects/light-show-jukebox)
 * [Christmas Light Show (2023)](/projects/light-show)
+* [FPP Weather Monitor Plugin (2023)](/projects/fpp-weather-monitor-plugin)
+* [Light Show Jukebox (2023)](/projects/light-show-jukebox)
 * [Video Processor Application (2023)](/projects/video-processor-application)
 * [Christmas Light Show (2022)](/projects/2022-christmas-light-show)
 * [Traffic Controller with ESP32 (2022)](/projects/traffic-light-controller)

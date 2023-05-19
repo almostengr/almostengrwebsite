@@ -5,16 +5,12 @@ description: Information about this blog and Kenny Robinson.
 
 ## Featured Project - Musical Light Show
 
-Each year, I do a musical [light show](/projects/light-show). 
-The show posts song information and does a countdown to Christmas using 
-<a href="https://twitter.com/hplightshow" target="_blank">Twitter</a> via a custom software application.
+Each year, I do a musical [light show](/projects/light-show). The show consists of synchronizing
+lights to music. 
 More information about the project, including song information, show times, and links to previous
 years show videos, are avaiable on the [project page](/projects/light-show).
 
 To pick a song for the Light Show, go to the [Jukebox page](/jukebox).
-
-To see the current song information, visit the 
-<a href="https://twitter.com/hplightshow" target="_blank">Light Show Twitter page</a>.
 
 ## Technology Blog
 
@@ -25,7 +21,7 @@ I share
 and other things technology here.
 [Read the Tech Blog](/technology)
 
-## Tech Resources
+## Tech Career Resources
 
 What's better than learning to advance your career? Learning for free! In this section, a collection of websites
 that offer valuable resources and content. Topics include

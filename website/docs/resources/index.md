@@ -22,7 +22,7 @@ Additional resources and suggestions can be added to this list by messaging me o
 * [Getting Tech Job With No Experience](/technology/2021.05.06-tech-job-with-no-experience)
 * [Git Cheatsheet](/resources/git-cheatsheet)
 * [Linux](/resources/linux)
-* [Linux Cheatsheet](/resources/linux-cheatsheet)
+* [Linux Cheatsheet](/technology/2020.03.01-linux-training-session)
 * [Non-Tech Resources](/resources/non-tech-resources)
 * [Tech Interview Tips](/resources/tech-interview-tips)
 * [Toastmasters Table Topics](/resources/toastmasters-table-topics)

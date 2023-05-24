@@ -167,6 +167,15 @@ info: Almostengr.ThermometerPi.Api.Controllers.ThermometerController[0]
 ```
 
 
+## LCD Connections
+
+Below are which pins should be connected to the I2c LCD.
+
+Pin 2 - Power
+Pin 6 - Ground
+Pin 3 - Data
+Pin 5 - Clock
+
 ## Source Code
 
 The source code is available on my 

@@ -1,4 +1,6 @@
-# Black Box Operations
+---
+title: Black Box Operations
+---
 
 <img src="/images/portfolio_operations.jpg" alt="screenshot of Operations System">
 

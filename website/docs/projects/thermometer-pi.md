@@ -147,6 +147,12 @@ To view the application logs, run the following command
 sudo journalctl -u thermometerapi -b
 ```
 
+or by tailing the system log 
+
+```bash
+tail -f /var/log/syslog
+```
+
 Application logs will look similar to the below to show what the application is doing.
 
 ```txt
@@ -166,24 +172,22 @@ info: Almostengr.ThermometerPi.Api.Controllers.ThermometerController[0]
       At 9/28/2021 9:09:28 PM temperature is 25.88
 ```
 
-
 ## LCD Connections
 
 Below are which pins should be connected to the I2c LCD.
 
-Pin 2 - Power
-Pin 6 - Ground
-Pin 3 - Data
-Pin 5 - Clock
+* Pin 2 - Power
+* Pin 6 - Ground
+* Pin 3 - Data
+* Pin 5 - Clock
 
 ## Source Code
 
 The source code is available on my 
 <a href="https://github.com/almostengr/thermometerpi" target="_blank">GitHub Repository</a>.
 
-
 ## Additional Resources
 
 Below are resources that were used in completing the project.
 
-[https://martybugs.net/electronics/tempsensor/usb.cgi](https://martybugs.net/electronics/tempsensor/usb.cgi)
+<a href="https://martybugs.net/electronics/tempsensor/usb.cgi" target="_blank">https://martybugs.net/electronics/tempsensor/usb.cgi</a>

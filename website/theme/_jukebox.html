@@ -1,14 +1,20 @@
+<div id="currentSong" class="alert" role="alert"></div>
+
 <p>
     Are you currently watching the light show? Pick the song that you would like to hear next!
 </p>
-<form method="post" action="/jukeboxapi.php">
+<div id="alert" class="alert d-none" role="alert"></div>
+
+<!-- <form method="post" action="/jukeboxapi.php"> -->
+<form class="jukeboxform">
     <div class="form-group">
         <label for="sequenceName" class="required">Select A Song</label>
         <select name="sequenceName" class="form-control" required>
             <option value="">-Select A Song-</option>
             <option value='20th Century Fox.fseq'>20th Century Fox</option>
             <option value='About Damn Time (Clean) - Lizzo.fseq'>About Damn Time (Clean) - Lizzo</option>
-            <option value='All I Really Want For Christmas-Lil Jon featuring Kool-Aid Man.fseq'>All I Really Want For Christmas-Lil Jon featuring Kool-Aid Man</option>
+            <option value='All I Really Want For Christmas-Lil Jon featuring Kool-Aid Man.fseq'>All I Really Want For Christmas-Lil Jon featuring
+                Kool-Aid Man</option>
             <option value='Christmas Eve-Sarajevo.fseq'>Christmas Eve-Sarajevo</option>
             <option value='Christmas Time Is Party Time_Luke.fseq'>Christmas Time Is Party Time_Luke</option>
             <option value='December - Earth Wind and Fire.fseq'>December - Earth Wind and Fire</option>
@@ -32,3 +38,45 @@
         <button class="btn btn-dark" type="submit">Request Song</button>
     </div>
 </form>
+<script type="text/javascript">
+    const form = document.querySelector("jukeboxform");
+    const alertMsg = document.getElementById("alert");
+    const dNone = "d-none";
+    const successClass = "alert-success";
+    const dangerClass = "alert-danger";
+
+    form.addEventListener('submit', event => {
+        event.preventDefault();
+        const formData = new FormData(form);
+        const data = Object.fromEntries(formData);
+
+        try {
+            alertMsg.classList.add(dNone);
+
+            const response = await fetch('/jukeboxapi.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data),
+            });
+
+            if (!response.ok) {
+                throw new Error("Unable to submit your song request.");
+            }
+
+            const result = response.json();
+
+            alertMsg.innerText = result;
+            alertMsg.classList
+            alertMsg.classList.add(successClass);
+            alertMsg.classList.remove(dangerClass);
+            alertMsg.classList.remove(dNone);
+        } catch (error) {
+            alertMsg.innerText = error;
+            alertMsg.classList.add(dangerClass);
+            alertMsg.classList.remove(successClass);
+            alertMsg.classList.remove(dNone);
+        }
+    });
+</script>

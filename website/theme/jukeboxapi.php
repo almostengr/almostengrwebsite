@@ -46,8 +46,9 @@ final class WebUserResponse extends BaseResponse
     public function toResponse()
     {
         http_response_code($this->responseCode);
-        header("refresh:5;url=https://thealmostengineer.com/jukebox");
-        exit($this->message . " Redirecting in 5 seconds...");
+        // header("refresh:5;url=https://thealmostengineer.com/jukebox");
+        // exit($this->message . " Redirecting in 5 seconds...");
+        exit($this->message);
     }
 }
 
@@ -76,8 +77,9 @@ abstract class BaseRequestService
 
     protected function validateApiKey()
     {
+        $xAuthToken = 'X-Auth-Token';
         $headers = apache_request_headers();
-        if (!isset($headers['X-Auth-Token']) || $headers['X-Auth-Token'] !== API_KEY) {
+        if (!isset($headers[$xAuthToken]) || $headers[$xAuthToken] !== API_KEY) {
             (new JsonResponse(401, "Unauthorized"))->toJsonEncode();
         }
     }

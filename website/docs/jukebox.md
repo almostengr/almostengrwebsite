@@ -13,5 +13,4 @@ Additional information about how the light show works can be found on the pages 
 
 * [Show Information](/projects/light-show)
 * [Frequently Asked Questions](/projects/light-show-faq)
-* <a href="https://twitter.com/hplightshow" target="_blank">Light Show Twitter Page</a>
 * <a href="https://youtu.be/sbbEQJ80q0I" target="_blank">Behind The Scenes of the 2021 Christmas Light Show</a>

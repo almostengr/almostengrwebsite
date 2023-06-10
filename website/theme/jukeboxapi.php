@@ -46,9 +46,14 @@ final class WebUserResponse extends BaseResponse
     public function toResponse()
     {
         http_response_code($this->responseCode);
-        // header("refresh:5;url=https://thealmostengineer.com/jukebox");
-        // exit($this->message . " Redirecting in 5 seconds...");
-        exit($this->message);
+        exit(
+            json_encode(
+                array(
+                    'message' => $this->message,
+                    'responseCode' => $this->responseCode
+                )
+            )
+        );
     }
 }
 
@@ -56,12 +61,10 @@ abstract class BaseRequestService
 {
     protected mysqli $mysqli;
     protected string $currentDateTime;
-    protected string $visitorIpAddress;
 
     public function __construct()
     {
         $this->currentDateTime = date('Y-m-d H:i:s');
-        $this->visitorIpAddress = $_SERVER['REMOTE_ADDR'];
     }
 
     abstract function processRequest(): void;
@@ -83,6 +86,11 @@ abstract class BaseRequestService
             (new JsonResponse(401, "Unauthorized"))->toJsonEncode();
         }
     }
+
+    protected function visitorIpAddress()
+    {
+        return $_SERVER['REMOTE_ADDR'];
+    }
 }
 
 final class GetRequestService extends BaseRequestService
@@ -97,7 +105,7 @@ final class GetRequestService extends BaseRequestService
 
     private function getFirstUnplayedSong(): array
     {
-        $query = "SELECT id, sequencename, createdtime FROM song_request WHERE played = 0 ORDER BY createdTime ASC LIMIT 1";
+        $query = "SELECT id, sequencename, createdtime FROM SongRequest WHERE played = 0 ORDER BY createdTime ASC LIMIT 1";
         $stmt = $this->mysqli->prepare($query);
 
         if (!$stmt->execute()) {
@@ -114,7 +122,7 @@ final class GetRequestService extends BaseRequestService
 
     private function updateSongAsPlayed(array $row): void
     {
-        $updateQuery = "UPDATE song_request SET played = 1, modifiedTime = ?, modifiedIpAddress = ? WHERE id = ?";
+        $updateQuery = "UPDATE SongRequest SET played = 1, modifiedTime = ?, modifiedIpAddress = ? WHERE id = ?";
         $updateStmt = $this->mysqli->prepare($updateQuery);
 
         $updateStmt->bind_param('ssi', $this->currentDateTime, $this->visitorIpAddress, $row['id']);
@@ -130,17 +138,18 @@ final class PostRequestService extends BaseRequestService
 {
     private string $sequenceName;
     private string $code;
-    private int $MAX_UNPLAYED_SONGS_PER_DEVICE = 2;
-    private string $UNEXPECTED_ERROR_MESSAGE = "Error: Unexpected error";
+    private string $ipAddress;
 
-    public function __construct(string $sequenceName, string $code)
+    public function __construct(string $json)
     {
-        if (empty($sequenceName) || empty($code)) {
+        if (empty($json)) {
             (new WebUserResponse(400, "Error: Sequence Name and Code are required."))->toResponse();
         }
 
-        $this->sequenceName = $sequenceName;
-        $this->code = $code;
+        $decodedJson = json_decode($json, false);
+        $this->sequenceName = $decodedJson->sequenceName;
+        $this->code = $decodedJson->code;
+        $this->ipAddress = $_SERVER['REMOTE_ADDR'];
     }
 
     public function processRequest(): void
@@ -153,18 +162,23 @@ final class PostRequestService extends BaseRequestService
         $this->addSongToQueue($songsAhead);
     }
 
+    private function maxUnplayedSongsPerDevice(): int
+    {
+        return 2;
+    }
+
     private function preventSpamAndFloodRequests(): void
     {
-        $stmt = $this->mysqli->prepare("SELECT * FROM song_request WHERE createdIpaddress = ? AND played = 0");
-        $stmt->bind_param("s", $this->visitorIpAddress);
+        $stmt = $this->mysqli->prepare("SELECT * FROM SongRequest WHERE createdIpaddress = ? AND played = 0");
+        $stmt->bind_param("s", $this->ipAddress);
         if (!$stmt->execute()) {
-            (new WebUserResponse(500, $this->UNEXPECTED_ERROR_MESSAGE))->toResponse();
+            (new WebUserResponse(500, "Error: Unexpected error"))->toResponse();
         }
 
         $result = $stmt->get_result();
-        if ($result->num_rows >= $this->MAX_UNPLAYED_SONGS_PER_DEVICE) {
+        if ($result->num_rows >= $this->maxUnplayedSongsPerDevice()) {
             $this->mysqli->close();
-            (new WebUserResponse(500, $this->UNEXPECTED_ERROR_MESSAGE))->toResponse();
+            (new WebUserResponse(400, "Whoa there! Let someone else pick songs. Once your requests have been played, you may pick more songs."))->toResponse();
         }
     }
 
@@ -183,10 +197,8 @@ final class PostRequestService extends BaseRequestService
                 return FRIDAY_CODE;
             case 'Saturday':
                 return SATURDAY_CODE;
-            case 'Sunday':
-                return SUNDAY_CODE;
             default:
-                return "";
+                return SUNDAY_CODE;
         }
     }
 
@@ -200,7 +212,7 @@ final class PostRequestService extends BaseRequestService
 
     private function validateSequenceNotAlreadyInQueue(): void
     {
-        $stmt = $this->mysqli->prepare("SELECT * FROM song_request WHERE sequenceName = ? AND played = 0");
+        $stmt = $this->mysqli->prepare("SELECT * FROM SongRequest WHERE sequenceName = ? AND played = 0");
         $stmt->bind_param("s", $sequenceName);
         $stmt->execute();
         $result = $stmt->get_result();
@@ -212,7 +224,7 @@ final class PostRequestService extends BaseRequestService
 
     private function getNumberOfSongsInQueue(): int
     {
-        $stmt = $this->mysqli->prepare("SELECT * FROM song_request WHERE played = 0");
+        $stmt = $this->mysqli->prepare("SELECT * FROM SongRequest WHERE played = 0");
         $stmt->execute();
         $result = $stmt->get_result();
         return $result->num_rows;
@@ -220,8 +232,8 @@ final class PostRequestService extends BaseRequestService
 
     private function addSongToQueue(int $songsAhead): void
     {
-        $stmt = $this->mysqli->prepare("INSERT INTO song_request (sequenceName, createdIpAddress, modifiedIpAddress) VALUES (?, ?, ?)");
-        $stmt->bind_param("sss", $this->sequenceName, $this->visitorIpAddress, $this->visitorIpAddress);
+        $stmt = $this->mysqli->prepare("INSERT INTO SongRequest (sequenceName, createdIpAddress, modifiedIpAddress) VALUES (?, ?, ?)");
+        $stmt->bind_param("sss", $this->sequenceName, $this->ipAddress, $this->ipAddress);
         $stmt->execute();
         (new WebUserResponse(201, "Success: Your song request has been submitted. There are " . $songsAhead . " song(s) ahead of your request."))->toResponse();
     }
@@ -238,7 +250,7 @@ final class DeleteRequestService extends BaseRequestService
 
     private function markAllRequestsAsPlayed(): void
     {
-        $updateQuery = "UPDATE song_request SET played = 1, modifiedTime = ?, modifiedIpAddress = ? where played = 0";
+        $updateQuery = "UPDATE SongRequest SET played = 1, modifiedTime = ?, modifiedIpAddress = ? where played = 0";
         $updateStmt = $this->mysqli->prepare($updateQuery);
         $updateStmt->bind_param('ss', $this->currentDateTime, $this->visitorIpAddress);
         if (!$updateStmt->execute()) {
@@ -254,7 +266,8 @@ switch ($_SERVER['REQUEST_METHOD']) {
         (new GetRequestService())->processRequest();
         break;
     case 'POST':
-        $postRequest = new PostRequestService($_POST["sequenceName"], $_POST["code"]);
+        $json = file_get_contents("php://input");
+        $postRequest = new PostRequestService($json);
         $postRequest->processRequest();
         break;
     case 'DELETE':

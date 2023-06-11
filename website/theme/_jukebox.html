@@ -1,10 +1,8 @@
-<div id="currentSong" class="alert" role="alert"></div>
-
+<div id="currentSong" class="alert alert-primary" role="alert">Getting show details...</div>
+<div id="alert" class="alert d-none alert-dismissible fade show" role="alert"></div>
 <p>
     Are you currently watching the light show? Pick the song that you would like to hear next!
 </p>
-<div id="alert" class="alert d-none" role="alert"></div>
-
 <form id="jukeboxForm" onsubmit="event.preventDefault(); submitJukeboxRequest();">
     <div class="form-group">
         <label for="sequenceName" class="required">Select A Song</label>
@@ -29,7 +27,7 @@
     <div class="form-group">
         <label for="code" class="required">Code</label>
         <input class="form-control" type="text" name="code" required />
-        <small class="form-text  text-muted">
+        <small class="form-text text-muted">
             The code will be mentioned during the show announcements.
         </small>
     </div>
@@ -37,3 +35,6 @@
         <button class="btn btn-dark" type="submit">Request Song</button>
     </div>
 </form>
+<script type="text/javascript">
+    window.onload = updateCurrentSong();
+</script>

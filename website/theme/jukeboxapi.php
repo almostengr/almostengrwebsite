@@ -97,13 +97,13 @@ final class PutRequestService extends BaseRequestService
     public function getFirstUnplayedRequest(): array
     {
         $query = "SELECT id, sequencename, createdtime FROM SongRequest WHERE played = 0 ORDER BY createdTime ASC LIMIT 1";
-        $stmt = $this->mysqli->prepare($query);
+        $statement = $this->mysqli->prepare($query);
 
-        if (!$stmt->execute()) {
+        if (!$statement->execute()) {
             throw new Exception("Error getting song.", 500);
         }
 
-        $result = $stmt->get_result();
+        $result = $statement->get_result();
         if ($result->num_rows == 0) {
             (new JsonResponse(200, ""))->toJsonEncode();
         }
@@ -124,11 +124,11 @@ final class PutRequestService extends BaseRequestService
 
     public function updateRequestToPlaying(array $row): void
     {
-        $updateQuery = "UPDATE SongRequest SET played = 1, modifiedTime = ?, modifiedIpAddress = ? WHERE id = ?";
-        $updateStmt = $this->mysqli->prepare($updateQuery);
+        $query = "UPDATE SongRequest SET played = 1, modifiedTime = ?, modifiedIpAddress = ? WHERE id = ?";
+        $statement = $this->mysqli->prepare($query);
 
-        $updateStmt->bind_param('ssi', $this->currentDateTime, $this->visitorIpAddress, $row['id']);
-        if (!$updateStmt->execute()) {
+        $statement->bind_param('ssi', $this->currentDateTime, $this->visitorIpAddress, $row['id']);
+        if (!$statement->execute()) {
             throw new Exception("Error updating song.", 500);
         }
 
@@ -137,10 +137,10 @@ final class PutRequestService extends BaseRequestService
 
     public function markAllRequestsAsPlayed(): void
     {
-        $updateQuery = "UPDATE SongRequest SET played = 2, modifiedTime = ?, modifiedIpAddress = ? where played = 0 or played = 1";
-        $updateStmt = $this->mysqli->prepare($updateQuery);
-        $updateStmt->bind_param('ss', $this->currentDateTime, $this->visitorIpAddress);
-        if (!$updateStmt->execute()) {
+        $query = "UPDATE SongRequest SET played = 2, modifiedTime = ?, modifiedIpAddress = ? where played = 0 or played = 1";
+        $statement = $this->mysqli->prepare($query);
+        $statement->bind_param('ss', $this->currentDateTime, $this->visitorIpAddress);
+        if (!$statement->execute()) {
             throw new Exception("Error updating song.", 500);
         }
 
@@ -173,13 +173,13 @@ final class PostRequestService extends BaseRequestService
 
     public function preventSpamAndFloodRequests(): void
     {
-        $stmt = $this->mysqli->prepare("SELECT * FROM SongRequest WHERE createdIpaddress = ? AND played = 0");
-        $stmt->bind_param("s", $this->ipAddress);
-        if (!$stmt->execute()) {
+        $statement = $this->mysqli->prepare("SELECT * FROM SongRequest WHERE createdIpaddress = ? AND played = 0");
+        $statement->bind_param("s", $this->ipAddress);
+        if (!$statement->execute()) {
             throw new Exception("Unexpected error.", 500);
         }
 
-        $result = $stmt->get_result();
+        $result = $statement->get_result();
         if ($result->num_rows >= $this->maxUnplayedSongsPerDevice()) {
             $this->mysqli->close();
             throw new Exception("Whoa there! Let someone else pick a song. Once your requests have been played, you may pick more songs.", 400);
@@ -216,10 +216,11 @@ final class PostRequestService extends BaseRequestService
 
     public function validateRequestNotAlreadyInQueue(): void
     {
-        $stmt = $this->mysqli->prepare("SELECT * FROM SongRequest WHERE sequenceName = ? AND played = 0");
-        $stmt->bind_param("s", $sequenceName);
-        $stmt->execute();
-        $result = $stmt->get_result();
+        $query = "SELECT * FROM SongRequest WHERE sequenceName = ? AND played in (0, 1)";
+        $statement = $this->mysqli->prepare($query);
+        $statement->bind_param("s", $this->sequenceName);
+        $statement->execute();
+        $result = $statement->get_result();
         if ($result->num_rows > 0) {
             $this->mysqli->close();
             throw new Exception("Song has already been requested. Please wait for the song to play.", 400);
@@ -228,18 +229,18 @@ final class PostRequestService extends BaseRequestService
 
     public function getNumberOfRequestsInQueue(): int
     {
-        $stmt = $this->mysqli->prepare("SELECT * FROM SongRequest WHERE played = 0");
-        $stmt->execute();
-        $result = $stmt->get_result();
+        $statement = $this->mysqli->prepare("SELECT * FROM SongRequest WHERE played = 0");
+        $statement->execute();
+        $result = $statement->get_result();
         return $result->num_rows;
     }
 
     public function addRequestToQueue(int $songsAhead): void
     {
-        $stmt = $this->mysqli->prepare("INSERT INTO SongRequest (sequenceName, createdIpAddress, modifiedIpAddress) VALUES (?, ?, ?)");
-        $stmt->bind_param("sss", $this->sequenceName, $this->ipAddress, $this->ipAddress);
-        $stmt->execute();
-        (new JsonResponse("Your request has been submitted. There are " . $songsAhead . " song(s) ahead of your request.", 201))->toJsonEncode();
+        $statement = $this->mysqli->prepare("INSERT INTO SongRequest (sequenceName, createdIpAddress, modifiedIpAddress) VALUES (?, ?, ?)");
+        $statement->bind_param("sss", $this->sequenceName, $this->ipAddress, $this->ipAddress);
+        $statement->execute();
+        (new JsonResponse(201, "Your request has been submitted. There are " . $songsAhead . " song(s) ahead of your request."))->toJsonEncode();
     }
 }
 
@@ -247,10 +248,10 @@ final class DeleteRequestService extends BaseRequestService
 {
     public function markAllRequestsAsPlayed(): void
     {
-        $updateQuery = "UPDATE SongRequest SET played = 2, modifiedTime = ?, modifiedIpAddress = ? where played = 0 or played = 1";
-        $updateStmt = $this->mysqli->prepare($updateQuery);
-        $updateStmt->bind_param('ss', $this->currentDateTime, $this->visitorIpAddress);
-        if (!$updateStmt->execute()) {
+        $query = "UPDATE SongRequest SET played = 2, modifiedTime = ?, modifiedIpAddress = ? where played = 0 or played = 1";
+        $statement = $this->mysqli->prepare($query);
+        $statement->bind_param('ss', $this->currentDateTime, $this->visitorIpAddress);
+        if (!$statement->execute()) {
             throw new Exception("Error updating data.", 500);
         }
 

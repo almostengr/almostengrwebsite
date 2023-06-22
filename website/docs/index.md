@@ -5,12 +5,11 @@ description: Information about this blog and Kenny Robinson.
 
 ## Featured Project - Musical Light Show
 
-Each year, I do a musical [light show](/projects/light-show). The show consists of synchronizing
-lights to music. 
-More information about the project, including song information, show times, and links to previous
-years show videos, are avaiable on the [project page](/projects/light-show).
+Each year, I do a musical [Christmas light show](/lightshow). The show consists of synchronizing
+lights to music. To pick a song for the Light Show, go to the [Light Show home page](/lightshow).
 
-To pick a song for the Light Show, go to the [Jukebox page](/jukebox).
+More information about the project, including song information, show times, and links to previous
+years show videos, are available on the [project page](/projects/light-show).
 
 ## Technology Blog
 

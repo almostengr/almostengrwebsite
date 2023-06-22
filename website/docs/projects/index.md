@@ -4,15 +4,14 @@ description: List of projects that I have worked on.
 ---
 
 Below is a list of some of the projects that I have worked on in the past.
-All of my public projects are listed on 
+The code for my public projects can be viewed from
 <a href="https://github.com/almostengr/" target="_blank">my GitHub page</a>.
 
 Have a project that you need completed? You may request my services by contacting me through my business, 
 <a href="https://rhtservices.net" target="_blank">Robinson Handy and Technology Services</a>.
 
 * [Christmas Light Show (2023)](/projects/light-show)
-* [FPP Weather Monitor Plugin (2023)](/projects/fpp-weather-monitor-plugin)
-* [Light Show Jukebox (2023)](/projects/light-show-jukebox)
+* [Light Show Extender (2023)](/projects/light-show-extender)
 * [Video Processor Application (2023)](/projects/video-processor-application)
 * [Christmas Light Show (2022)](/projects/2022-christmas-light-show)
 * [Traffic Controller with ESP32 (2022)](/projects/traffic-light-controller)

@@ -11,7 +11,7 @@ define('API_KEY', 'your_api_key');
 
 // codes for day of week
 define('MONDAY_CODE', '');
-define('TUEDAY_CODE', '');
+define('TUESDAY_CODE', '');
 define('WEDNESDAY_CODE', '');
 define('THURSDAY_CODE', '');
 define('FRIDAY_CODE', '');

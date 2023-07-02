@@ -27,25 +27,19 @@ jobs:
       uses: actions/setup-python@v3
       with:
         python-version: 3.7
-        
     - run: /usr/bin/python3 -m pip install --upgrade pip
-
     - run: /usr/bin/python3 -m pip install --upgrade setuptools
-    
     - run: /usr/bin/python3 -m pip install mkdocs==1.1.2
-    
     - run: /usr/bin/python3 -m pip install --upgrade mkdocs-minify-plugin
-
-    - run: /usr/bin/python3 -m pip install mkdocs-material
-
+    # - run: /usr/bin/python3 -m pip install mkdocs-material
     - name: Check out main branch
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
       with:
         ref: main
 
     - run: git fetch -p
-    
     - run: /usr/bin/python3 -m mkdocs gh-deploy -f website/mkdocs.yml -b website
+    - run: /usr/bin/python3 -m mkdocs gh-deploy -f websitelights/mkdocs.yml -b websitelights
 
   deploy:
     runs-on: ubuntu-latest
@@ -54,21 +48,21 @@ jobs:
     - name: Deploy to Production
       uses: fifsky/ssh-action@master
       with:
-        command: cd && cd www && git pull origin website
+        command: cd && cd www && git pull origin website && cp -p jukeboxapi.php ../lightshow.thealmostengineer.com && cd ../lightshow.thealmostengineer.com/ && git pull origin websitelights
         host: ${{ secrets.HOSTNAME }}
         key: ${{ secrets.PRIVATE_KEY }}
         port: ${{ secrets.PORT_NUMBER }}
         user: ${{ secrets.USERNAME }}
     
-  tests:
-    runs-on: ubuntu-latest
-    steps:
+  # tests:
+  #   runs-on: ubuntu-latest
+  #   steps:
 #     - uses: actions/checkout@v3
 
-    - uses: actions/setup-dotnet@v3
-      name: Setup .NET Core
-      with:
-        dotnet-version: '6.x' # SDK Version to use; x will use the latest version of the specified channel
+    # - uses: actions/setup-dotnet@v3
+    #   name: Setup .NET Core
+    #   with:
+    #     dotnet-version: '6.x' # SDK Version to use; x will use the latest version of the specified channel
     
     # - name: Run automated tests
     #   run: dotnet test -c RELEASE --project tests/Almostengr.AlmostengrWebsite.Tests/Almostengr.AlmostengrWebsite.Tests.csproj

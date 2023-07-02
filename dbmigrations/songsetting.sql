@@ -6,4 +6,5 @@ CREATE TABLE IF NOT EXISTS `songsetting` (
     PRIMARY KEY (`settingid`)
 ); 
 
-INSERT INTO `songsetting` (`settingid`, `identifier`, `value`, `modified`) VALUES (NULL, 'currentsong', 'testingsong', current_timestamp()); 
+INSERT INTO `songsetting` (`settingid`, `identifier`, `value`, `modified`) 
+VALUES (NULL, 'currentsong', 'testingsong', current_timestamp()); 

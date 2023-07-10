@@ -12,6 +12,10 @@ dev_addr: 192.168.2.103:8000
 use_directory_urls: true
 strict: false
 
+theme:
+  static_templates:
+    - api.php
+
 plugins:
   - minify:
       minify_html: true

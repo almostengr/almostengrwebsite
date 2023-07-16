@@ -17,7 +17,7 @@ The previous generation of this application was written in Java. Thus this was o
 I refactored to improve and become more competent with C#. 
 
 After learning more about 
-[Domain Driven Design](#)
+[Domain Driven Design](/technology/2022.09.28-understanding-domain-driven-design)
 and other design patterns that exist within C#, I decided to create the new version of the application 
 by using a worker service. Given that the videos would be automated, also meant that the structure of the
 videos would have to be standardized, which improved the completion speed of the video creation process.
@@ -27,7 +27,7 @@ The first refactored version of this application was released in 2023.
 ## Technologies
 
 * C# (for the application)
-* FFMPEG (for video editing)
+* FFMPEG (for video editing and on screen graphics)
 * Selenium Webdriver (for creating video thumbnails)
 * MkDocs (static site generator that is used to create video thumbnails)
 * Github (for version control)

@@ -1,5 +1,7 @@
 site_name: Light Show
 site_url: https://lightshow.thealmostengineer.com
+site_description: Light show website
+site_author: Kenny Robinson, @almostengr
 copyright: Copyright &copy; 2010-2023 Kenny Robinson
 
 # repository information
@@ -14,7 +16,7 @@ strict: false
 
 theme:
   static_templates:
-    - api.php
+    - fppapi.php
 
 plugins:
   - minify:

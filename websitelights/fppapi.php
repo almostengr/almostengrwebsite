@@ -75,24 +75,24 @@ abstract class BaseRequestService
 
 final class FppRequestService extends BaseRequestService
 {
-    private string $action;
+    // private string $action;
     private string $songname;
 
     public function __construct(string $json)
     {
-        if (empty($json)) {
-            throw new Exception("Bad request.", 400);
-        }
+        // if (empty($json)) {
+        //     throw new Exception("Bad request.", 400);
+        // }
 
         $decodedJson = json_decode($json, false);
-        $this->action = $decodedJson->action;
+        // $this->action = $decodedJson->action;
         $this->songname = $decodedJson->songname ?? "";
     }
 
-    public function getAction(): string
-    {
-        return $this->action;
-    }
+    // public function getAction(): string
+// {
+//     return $this->action;
+// }
 
     public function updatePlayingRequestToPlayed(): void
     {
@@ -181,28 +181,9 @@ try {
             $song = $request->getFirstUnplayedRequest();
             $request->updateRequestToPlayed($song);
             break;
-            
+
         case 'PUT':
-
-            // switch ($request->getAction()) {
-                // case "nextsong":
-                //     // $request->updatePlayingRequestToPlayed();
-                //     $song = $request->getFirstUnplayedRequest();
-                //     $request->updateRequestToPlayed($song);
-                //     break;
-
-                // case "clearqueue":
-                //     break;
-
-                // case "playing":
-                //     $request->updateCurrentSongPlaying();
-                //     break;
-
-            //     default:
-            //         throw new Exception("Bad request. Invalid action", 400);
-            // }
             $request->updateCurrentSongPlaying();
-
             break;
 
         default:

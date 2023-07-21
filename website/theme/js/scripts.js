@@ -40,15 +40,15 @@ async function submitJukeboxRequest() {
 
 async function updateCurrentSong() {
     const songDiv = document.getElementById("currentSong");
-    
+
     if (songDiv == null) { return; }
-    
+
     try {
         const response = await fetch(jukeboxRoute, {
             method: 'GET',
             headers: getHeaders(),
         });
-        
+
         const result = await response.json();
 
         if (response.status > 299) {

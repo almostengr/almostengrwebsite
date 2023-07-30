@@ -6,7 +6,10 @@ updated: 2022-10-04
 category: resources
 keywords: toastmasters, table topics, questions, public speaking, tower toastmasters
 ---
-Table Topics are a portion of the Toastmasters meeting where individuals are asked a question and have to provide a response without preparing a speech. The activity is designed to give speakers opportunities to improve their improptu speaking skills.
+
+Table Topics are a portion of the Toastmasters meeting where individuals are asked a question and have to 
+provide a response without preparing a speech. The activity is designed to give speakers opportunities to
+improve their improptu speaking skills.
 
 ## Themed Table Topics
 

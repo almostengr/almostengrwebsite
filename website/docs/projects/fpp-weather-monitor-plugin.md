@@ -7,7 +7,8 @@ title: Weather Monitor Plugin
 Being a member of the Falcon Pi Player and Official Xlights Support Group groups, one recurring
 discussion that I see is that people ask the group
 whether they run their lights during the rain, snow, or high winds.
-Manually having to check the weather every day to know whether you can start your show can be additional task that could easily be delegated to the technology running the show.
+Manually having to check the weather every day to know whether you can start your show can be additional 
+task that could easily be delegated to the technology running the show.
 
 ## Solution
 

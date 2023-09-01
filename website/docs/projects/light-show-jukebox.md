@@ -1,5 +1,5 @@
 ---
-title: Light Show Jukebox
+title: Light Show Extender
 ---
 
 ## Problem
@@ -31,20 +31,33 @@ requests songs and perform other actions.
 
 ### Phase Two 
 
-The second phase of this project will be creating the necessary scripts for the Falcon 
-Pi Player to make calls to the API, get the next song information and to 
-be able to clear the queue of previously requested songs.
+The second phase of this project was to build a standalone application using C# that 
+will serve as a "middle man" system between the website and the Falcon Player.
+This application connects to the Falcon Player and The Almost Engineer website via 
+their APIs. 
+
+Additional features of the project have been considered, but are still in the planning 
+phases. Those features include getting and displaying temperature information on the 
+website, using weather information to automatically shut down the show, and tracking 
+how many times a song plays during the light show season.
+
+## Road Map 
+
+Project road map is tracked via issues on the project repository. Visit the 
+<a href="https://github.coma/almostengr/light-show-extender/issues" target="_blank">project repository</a>
+on Github.
 
 ## Technology
 
+* C# (C-sharp)
 * CSS
-* Falcon Pi Player
+* Falcon Player
 * HTML
 * Mkdocs
 * MySQL
 * PHP
 
-## Documentation
+## Source Code
 
-More information about this project can be found on the [Jukebox page](/jukebox) and on the 
-[Light Show project page](/projects/light-show).
+Source code for this project can be found on 
+<a href="https://github.com/almostengr/light-show-extender" target="_blank">Github</a>.

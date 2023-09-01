@@ -881,11 +881,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://thealmostengineer.com/projects/fpp-weather-monitor-plugin/</loc>
-         <lastmod>2023-09-01</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://thealmostengineer.com/projects/home-assistant/</loc>
          <lastmod>2023-09-01</lastmod>
          <changefreq>daily</changefreq>
@@ -911,12 +906,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://thealmostengineer.com/projects/light-show-faq/</loc>
+         <loc>https://thealmostengineer.com/projects/light-show-extender/</loc>
          <lastmod>2023-09-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://thealmostengineer.com/projects/light-show-jukebox/</loc>
+         <loc>https://thealmostengineer.com/projects/light-show-faq/</loc>
          <lastmod>2023-09-01</lastmod>
          <changefreq>daily</changefreq>
     </url>

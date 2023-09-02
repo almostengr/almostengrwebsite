@@ -15,6 +15,7 @@ use_directory_urls: true
 strict: false
 
 theme:
+  name: mkdocs
   static_templates:
     - fpp.php
 

@@ -148,6 +148,7 @@ try {
     validateApiKey();
     $dbConnection = connectToDatabase();
 
+    $requestMethod = $_SERVER['REQUEST_METHOD'];
     switch ($requestMethod) {
         case 'DELETE':
             deleteAllRequests($dbConnection);

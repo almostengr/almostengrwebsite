@@ -148,8 +148,6 @@ try {
     validateApiKey();
     $dbConnection = connectToDatabase();
 
-    $json = file_get_contents($phpInput);
-
     switch ($requestMethod) {
         case 'DELETE':
             deleteAllRequests($dbConnection);
@@ -160,6 +158,7 @@ try {
             break;
 
         case 'PUT':
+            $json = file_get_contents($phpInput);
             $request = new SettingRequestDto($json);
             updateSetting($dbConnection, $request);
             break;

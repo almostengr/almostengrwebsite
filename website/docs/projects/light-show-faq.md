@@ -180,7 +180,7 @@ Lights used are the same ones that you can get at a big box retailer.
 #### FM Radio Transmitter
 
 Music is transmitted over radio via a low-power FM transmitter. Music goes into the transmitter directly from
-the Raspberry Pi and broadcasted on 90.3 FM. Radio Locator
+the Raspberry Pi and broadcasted via the radio. Radio Locator
 [mentioned below](/projects/light-show-faq#where-can-i-find-out-more-information-or-ask-questions)
 was used to locate the best frequency based on the area.
 
@@ -298,7 +298,7 @@ this feature by turning on "live mode". Check your vehicle's owners manual for h
 
 ### How does the jukebox work?
 
-When you submit your request on the [jukebox page](/jukebox), the request is placed in 
+When you submit your request on the [Light Show home page](/lightshow), the request is placed in 
 a queue. As a song is finishing, the light show system will check to see if a new request has been submitted. 
 If a new song has been requested, it will then prepare to and play that song.
 

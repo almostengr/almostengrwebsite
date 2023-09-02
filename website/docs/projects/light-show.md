@@ -13,12 +13,12 @@ from 5:00 PM (17:00) until 10:00 PM (22:00).
 
 During times of heavy rain or severe weather the light show may be stopped to reduce the
 chance of electrical shorts occurring and for safety of individuals watching. Latest information 
-about the show will be posted on the [Jukebox page](/jukebox).
+about the show will be posted on the [Light Show home page](/lightshow).
 
 ## Pick The Song
 
 This year, we are allowing viewers to pick the song that they want to see played. To select a song, 
-visit the [Jukebox page](/jukebox). Your song request will be added to the queue. Songs will be 
+visit the [Light Show home page](/lightshow). Your song request will be added to the queue. Songs will be 
 played in the order that they have been requested.
 
 ## Listen From Your Car

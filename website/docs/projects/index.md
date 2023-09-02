@@ -4,7 +4,7 @@ description: List of projects that I have worked on.
 ---
 
 Below is a list of some of the projects that I have worked on in the past.
-All of my public projects are listed on 
+The code for my public projects can be viewed from
 <a href="https://github.com/almostengr/" target="_blank">my GitHub page</a>.
 
 Have a project that you need completed? You may request my services by contacting me through my business, 

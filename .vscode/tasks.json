@@ -31,5 +31,17 @@
             ],
             "group": "none"
         },
-    ]
+        {
+            "label": "Deploy to staging",
+            "command" : "mkdocs",
+            "type": "shell",
+            "args": [
+                "gh-deploy",
+                "-b",
+                "staging",
+                "-f",
+                "website/mkdocs.yml"
+            ],
+        }
+    ],
 }

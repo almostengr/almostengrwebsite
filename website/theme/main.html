@@ -17,23 +17,7 @@
   {% endif %}
 
   <link href="/assets/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-    }
-
-    @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-      }
-    }
-  </style>
-
+  <script type="text/javascript" src="/js/scripts.min.js"></script>
   <link href="/css/blog.min.css" rel="stylesheet">
 
   <meta property="og:type" content="website" />
@@ -136,7 +120,7 @@
           {% if page.meta.title %}<h1>{{ page.meta.title }}</h1>{% endif %}
           {% endif %}
 
-          {% if page and page.url == "jukebox/" %}
+          {% if page and page.url == "lightshow/" %}
           {% include "_jukebox.html" %}
           {% endif %}
 

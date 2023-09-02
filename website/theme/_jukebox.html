@@ -1,14 +1,19 @@
+<div id="currentSong" class="alert alert-primary" role="alert">Getting show details...</div>
+
+<h2>Jukebox</h2>
+<div id="alert" class="alert d-none alert-dismissible fade show" role="alert"></div>
 <p>
-    Are you currently watching the light show? Pick the song that you would like to hear next!
+    Just pick the song that you want to hear and we will play it (in order which requests are received).
 </p>
-<form method="post" action="/jukeboxapi.php">
+<form id="jukeboxForm" onsubmit="event.preventDefault(); submitJukeboxRequest();">
     <div class="form-group">
         <label for="sequenceName" class="required">Select A Song</label>
         <select name="sequenceName" class="form-control" required>
             <option value="">-Select A Song-</option>
             <option value='20th Century Fox.fseq'>20th Century Fox</option>
             <option value='About Damn Time (Clean) - Lizzo.fseq'>About Damn Time (Clean) - Lizzo</option>
-            <option value='All I Really Want For Christmas-Lil Jon featuring Kool-Aid Man.fseq'>All I Really Want For Christmas-Lil Jon featuring Kool-Aid Man</option>
+            <option value='All I Really Want For Christmas-Lil Jon featuring Kool-Aid Man.fseq'>All I Really Want For Christmas-Lil Jon featuring
+                Kool-Aid Man</option>
             <option value='Christmas Eve-Sarajevo.fseq'>Christmas Eve-Sarajevo</option>
             <option value='Christmas Time Is Party Time_Luke.fseq'>Christmas Time Is Party Time_Luke</option>
             <option value='December - Earth Wind and Fire.fseq'>December - Earth Wind and Fire</option>
@@ -24,7 +29,7 @@
     <div class="form-group">
         <label for="code" class="required">Code</label>
         <input class="form-control" type="text" name="code" required />
-        <small class="form-text  text-muted">
+        <small class="form-text text-muted">
             The code will be mentioned during the show announcements.
         </small>
     </div>
@@ -32,3 +37,6 @@
         <button class="btn btn-dark" type="submit">Request Song</button>
     </div>
 </form>
+<script type="text/javascript">
+    window.onload = updateCurrentSong();
+</script>

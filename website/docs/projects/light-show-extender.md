@@ -4,10 +4,24 @@ title: Light Show Extender
 
 ## Problem
 
-I wanted to have a way that visitors to the light show would be able to interact with the light show. 
-While researching what others were doing, I found a way for this to be done.
+While having a Christmas light show is fun, having one that the viewers can interact with is even better. 
+I created this project to allow users to pick the song that they want to hear, see the current song 
+information, and to see the current temperature and weather information.
 
 ## Solution
+
+The solution was to create a custom application that would do all of the above and more.
+Originally this project started as the Falcon Pi Twitter project, which would post the song 
+information and countdown to Christmas to the Twitter account created for the show. 
+However, due to changes made by Twitter with their API, this project was modified to 
+not use that platform, create a custom solution that would offer the same if not more 
+benefit, and to add additional features that users could interact with.
+
+Current functionality includes allowing visitors to select the song(s) that they would 
+like to play. This has been dubbed the Jukebox feature as you request the song, 
+and the show plays it.
+
+### Phase One
 
 I found a project called Remote Falcon that allows visitors to do some of the similar things that I wanted. 
 However, it did lack some features. 
@@ -21,8 +35,6 @@ My implementation of this project, was designed to have only the features that I
 to be included. This mainly consisted of users being able pick one of the songs that 
 that they wanted to hear and the Falcon Pi Player, play those songs in the order
 in which they were requested.
-
-### Phase One
 
 The first phase of this project was to set up a page on the website that could accept 
 requests from the viewers. It also included setting up an API (Application 
@@ -53,7 +65,9 @@ on Github.
 * CSS
 * Falcon Player
 * HTML
-* Mkdocs
+* Javascript
+* Linux
+* MkDocs
 * MySQL
 * PHP
 

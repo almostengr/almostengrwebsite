@@ -22,6 +22,7 @@ Project was started in 2019.
 ## Technology
 
 * Java
+* Kdenlive
 
 ## Source Code
 

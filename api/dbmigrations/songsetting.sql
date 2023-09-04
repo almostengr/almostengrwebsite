@@ -15,9 +15,18 @@ select null, 'cputempc', 0, current_timestamp() from dual
 where not exists (select * from songsetting where identifier = 'cputempc');
 
 insert into songsetting (settingid, identifier, songsetting.value, modified)
-select null, 'outdoortempc', 0, current_timestamp() from dual
-where not exists (select * from songsetting where identifier = 'outdoortempc');
-
-insert into songsetting (settingid, identifier, songsetting.value, modified)
 select null, 'nwstempc', 0, current_timestamp() from dual
 where not exists (select * from songsetting where identifier = 'nwstempc');
+
+insert into songsetting (settingid, identifier, songsetting.value, modified)
+select null, 'queuecount', 0, current_timestamp() from dual
+where not exists (select * from songsetting where identifier = 'queuecount');
+
+insert into songsetting (settingid, identifier, songsetting.value, modified)
+select null, 'seasonplayedcount', 0, current_timestamp() from dual
+where not exists (select * from songsetting where identifier = 'seasonplayedcount');
+
+insert into songsetting (settingid, identifier, songsetting.value, modified)
+select null, 'nightlyplayedcount', 0, current_timestamp() from dual
+where not exists (select * from songsetting where identifier = 'nightlyplayedcount');
+

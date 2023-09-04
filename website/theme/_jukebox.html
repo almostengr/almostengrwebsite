@@ -1,13 +1,52 @@
-<div id="currentSong" class="alert alert-primary" role="alert">Getting show details...</div>
+{% if page and page.meta.announcement %}
+<div id="alert" class="alert fade show alert-warning" role="alert">
+    {{ page.meta.announcement }}
+</div>
+{% endif %}
 
-<h2>Jukebox</h2>
-<div id="alert" class="alert d-none alert-dismissible fade show" role="alert"></div>
+<div class="jumbotron bg-dark text-light">
+    <div class="row">
+        <div class="col-md-2 d-sm-block">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-music-note-beamed" viewBox="0 0 16 16">
+                <path
+                    d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13c0-1.104 1.12-2 2.5-2s2.5.896 2.5 2zm9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2z" />
+                <path fill-rule="evenodd" d="M14 11V2h1v9h-1zM6 3v10H5V3h1z" />
+                <path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4V2.905z" />
+            </svg>
+        </div>
+        <div class="col-md-10">
+            <h2 class="pb-2" id="currentSong">Getting show information...</h2>
+            <h4 class="pb-2" id="currentArtist"></h4>
+            <h6>
+                <strong>Songs In Queue:</strong>
+                <span id="songQueue">0</span>
+            </h6>
+            <h6>
+                <strong>Outdoor Temperature:</strong>
+                <span id="nwsTemp"></span>
+            </h6>
+            <h6>
+                <strong>System Temperature:</strong>
+                <span id="controllerTemp"></span>
+            </h6>
+        </div>
+    </div>
+</div>
+
+<h2 class="pt-3">Request A Song</h2>
+<div id="alertBody" class="alert d-none alert-dismissible fade show" role="alert">
+    <span id="alertText"></span>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
 <p>
-    Just pick the song that you want to hear and we will play it (in order which requests are received).
+    You say it; we will play it. Select the song that you would like to see and hear and we will play your requests
+    in the order that they are received (just like a jukebox).
 </p>
 <form id="jukeboxForm" onsubmit="event.preventDefault(); submitJukeboxRequest();">
     <div class="form-group">
-        <label for="sequenceName" class="required">Select A Song</label>
+        <label for="sequenceName" class="required">Song</label>
         <select name="sequenceName" class="form-control" required>
             <option value="">-Select A Song-</option>
             <option value='20th Century Fox.fseq'>20th Century Fox</option>
@@ -37,6 +76,3 @@
         <button class="btn btn-dark" type="submit">Request Song</button>
     </div>
 </form>
-<script type="text/javascript">
-    window.onload = updateCurrentSong();
-</script>

@@ -30,8 +30,7 @@ final class JsonResponse extends BaseResponse
             "message" => $this->message,
         );
 
-        if ($this->data !== array())
-        {
+        if ($this->data !== array()) {
             $output = array(
                 "code" => $this->responseCode,
                 "message" => $this->message,
@@ -62,15 +61,6 @@ abstract class BaseRequestService
 
         if (mysqli_connect_errno()) {
             throw new Exception("Failed to connect to database.", 500);
-        }
-    }
-
-    public function validateApiKey()
-    {
-        $xAuthToken = 'X-Auth-Token';
-        $headers = apache_request_headers();
-        if (!isset($headers[$xAuthToken]) || $headers[$xAuthToken] !== API_KEY) {
-            throw new Exception("Unauthorized.", 401);
         }
     }
 }
@@ -150,7 +140,7 @@ final class PostRequestService extends BaseRequestService
         $result = $statement->get_result();
         if ($result->num_rows > 0) {
             $this->mysqli->close();
-            throw new Exception("Song has already been requested. Please wait for the song to play. " . $result->num_rows, 400);
+            throw new Exception("Song has already been requested. Please wait for the song to play.", 400);
         }
     }
 
@@ -186,6 +176,25 @@ final class GetRequestService extends BaseRequestService
         $song = str_replace(".fseq", "", $song['value']);
         (new JsonResponse(200, $song))->toJsonEncode();
     }
+
+    public function getAllSettings()
+    {
+        $query = "SELECT identifier, value from songsetting";
+        $statement = $this->mysqli->prepare($query);
+        if (!$statement->execute()) {
+            throw new Exception("Error updating data.", 500);
+        }
+
+        $result = $statement->get_result();
+        $settings = [];
+        while ($row = $result->fetch_assoc()) {
+            $settings[] = $row;
+        }
+
+        echo json_encode($settings);
+        http_response_code(200);
+        exit();
+    }
 }
 
 $requestMethod = $_SERVER['REQUEST_METHOD'] ?? null;
@@ -196,7 +205,7 @@ try {
         case 'GET':
             $request = new GetRequestService();
             $request->connectToDatabase();
-            $request->getPlayingSong();
+            $request->getAllSettings();
             break;
 
         case 'POST':

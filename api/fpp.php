@@ -88,10 +88,22 @@ function deleteAllRequests($dbConnection)
     $response->toJsonEncode();
 }
 
+function updateQueueCount($dbConnection)
+{
+    $query = "update songsetting set value = (select count(*) from songrequest where played = 0) where identifier = 'queuecount'";
+    $statement = $dbConnection->prepare($query);
+    if (!$statement->execute()) {
+        throw new Exception("Error updating setting", 500);
+    }
+}
+
 function updateSetting($dbConnection, SettingRequestDto $settingRequestDto)
 {
+    $nightlyPlayedCount = "nightlyplayedcount";
+    $seasonplayedCount = "seasonplayedcount";
+
     $isKeyValid = false;
-    $acceptableKeys = ["currentsong", "cputempc", "outdoortempc"];
+    $acceptableKeys = ["currentsong", "cputempc", "nwstempc", $nightlyPlayedCount, $seasonplayedCount];
     foreach ($acceptableKeys as $key) {
         if ($key == $settingRequestDto->key) {
             $isKeyValid = true;
@@ -103,7 +115,17 @@ function updateSetting($dbConnection, SettingRequestDto $settingRequestDto)
         throw new Exception("Invalid key", 400);
     }
 
-    $query = "update songsetting set value = ? where identifier = ?";
+    $query = "";
+    switch ($settingRequestDto->key) {
+        case $nightlyPlayedCount:
+        case $seasonplayedCount:
+            $query = "update songsetting set value = cast(value as unsigned) + 1 where identifier in ('$nightlyPlayedCount','$seasonplayedCount')";
+            break;
+
+        default:
+            $query = "update songsetting set value = ? where identifier = ?";
+    }
+
     $statement = $dbConnection->prepare($query);
     $statement->bind_param("ss", $settingRequestDto->value, $settingRequestDto->key);
 
@@ -147,6 +169,7 @@ function getNextUnplayedRequest($dbConnection)
 try {
     validateApiKey();
     $dbConnection = connectToDatabase();
+    updateQueueCount($dbConnection);
 
     $requestMethod = $_SERVER['REQUEST_METHOD'];
     switch ($requestMethod) {

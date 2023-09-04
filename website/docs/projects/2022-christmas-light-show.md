@@ -42,9 +42,7 @@ drivers that are passing by.
 
 ## Twitter Feed
 
-<a class="twitter-timeline" data-lang="en" data-height="500" data-theme="dark"
-    href="https://twitter.com/hplightshow?ref_src=twsrc%5Etfw">Tweets by HP Light Show</a>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+Current song information and countdown to Christmas is posted to Twitter.
 
 ## Fun Facts
 

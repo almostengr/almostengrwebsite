@@ -56,7 +56,7 @@ how many times a song plays during the light show season.
 ## Road Map 
 
 Project road map is tracked via issues on the project repository. Visit the 
-<a href="https://github.coma/almostengr/light-show-extender/issues" target="_blank">project repository</a>
+<a href="https://github.com/almostengr/light-show-extender/issues" target="_blank">project repository</a>
 on Github.
 
 ## Technology

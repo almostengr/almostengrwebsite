@@ -6,7 +6,7 @@
 
 <div class="jumbotron bg-dark text-light">
     <div class="row">
-        <div class="col-md-2 d-sm-block">
+        <div class="col-md-2 col-sm-1">
             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-music-note-beamed" viewBox="0 0 16 16">
                 <path
                     d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13c0-1.104 1.12-2 2.5-2s2.5.896 2.5 2zm9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2z" />
@@ -14,49 +14,55 @@
                 <path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4V2.905z" />
             </svg>
         </div>
-        <div class="col-md-10">
-            <h2 class="pb-2" id="currentSong">Getting show information...</h2>
-            <h4 class="pb-2" id="currentArtist"></h4>
-            <h6>
-                <strong>Songs In Queue:</strong>
-                <span id="songQueue">0</span>
-            </h6>
-            <h6>
-                <strong>Outdoor Temperature:</strong>
-                <span id="nwsTemp">Loading</span>
-            </h6>
-            </h6>
-            <h6>
-                <strong>Wind Chill:</strong>
-                <span id="windchill">None</span>
-            </h6>
-            <h6>
-                <strong>System Temperature:</strong>
-                <span id="controllerTemp">Loading</span>
-            </h6>
+        <div class="col-md-10 col-sm-11">
+            <div id="showOffline" class="d-none">
+                <h2 class="pb-2">Show is offline</h2>
+                <h4 class="pb-2">Please check the dates and times available below.</h4>
+            </div>
+            <div id="currentSongMetaData" class="d-none">
+                <h2 class="pb-2 text-uppercase" id="currentSong">Getting show information...</h2>
+                <h4 class="pb-2 text-capitalize" id="currentArtist">Loading</h4>
+                <h6>
+                    <strong>Songs In Queue:</strong>
+                    <span id="songQueue">0</span>
+                </h6>
+                <h6>
+                    <strong>Outdoor Temperature:</strong>
+                    <span id="nwsTemp">Loading</span>
+                </h6>
+                <h6>
+                    <strong>Wind Chill:</strong>
+                    <span id="windchill">None</span>
+                </h6>
+                <h6>
+                    <strong>System Temperature:</strong>
+                    <span id="controllerTemp">Loading</span>
+                </h6>
+            </div>
         </div>
     </div>
 </div>
 
-<h2 class="pt-3">Request A Song</h2>
-<div id="alertBody" class="alert d-none alert-dismissible fade show" role="alert">
-    <span id="alertText"></span>
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-    </button>
-</div>
-<p>
-    You say it; we will play it. Select the song that you would like to see and hear and we will play your requests
-    in the order that they are received (just like a jukebox).
-</p>
-<form id="jukeboxForm" onsubmit="event.preventDefault(); submitJukeboxRequest();">
+<form id="jukeboxForm" class="d-none" onsubmit="event.preventDefault(); submitJukeboxRequest();">
+    <h2 class="pt-3">Request A Song</h2>
+    <div id="alertBody" class="alert d-none alert-dismissible fade show" role="alert">
+        <span id="alertText"></span>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <p>
+        You say it; we will play it. Select the song that you would like to see and hear and we will play your requests
+        in the order that they are received (just like a jukebox).
+    </p>
     <div class="form-group">
-        <label for="sequenceName" class="required">Song</label>
-        <select name="sequenceName" class="form-control" required>
+        <label for="sequenceName">Song *</label>
+        <select name="sequenceName" id="sequenceName" class="form-control" required>
             <option value="">-Select A Song-</option>
             <option value="20th Century Fox.fseq">20th Century Fox</option>
             <option value="About Damn Time (Clean) - Lizzo.fseq">About Damn Time (Clean) - Lizzo</option>
-            <option value="All I Really Want For Christmas-Lil Jon featuring Kool-Aid Man.fseq">All I Really Want For Christmas-Lil Jon featuring Kool-Aid Man</option>
+            <option value="All I Really Want For Christmas-Lil Jon featuring Kool-Aid Man.fseq">All I Really Want For Christmas-Lil Jon featuring
+                Kool-Aid Man</option>
             <option value="Christmas Eve-Sarajevo.fseq">Christmas Eve-Sarajevo</option>
             <option value="Christmas Time Is Party Time_Luke.fseq">Christmas Time Is Party Time_Luke</option>
             <option value="December - Earth Wind and Fire.fseq">December - Earth Wind and Fire</option>
@@ -71,8 +77,8 @@
         </select>
     </div>
     <div class="form-group">
-        <label for="code" class="required">Code</label>
-        <input class="form-control" type="text" name="code" required />
+        <label for="code">Code *</label>
+        <input class="form-control" type="text" name="code" id="code" required />
         <small class="form-text text-muted">
             The code will be mentioned during the show announcements.
         </small>

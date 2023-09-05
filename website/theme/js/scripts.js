@@ -3,7 +3,6 @@ const successClass = "alert-success";
 const dangerClass = "alert-danger";
 const dNone = "d-none";
 const songNameElement = document.getElementById("currentSong");
-const showOfflineMessage = "Show is offline";
 
 function getHeaders() {
     return { "Content-Type": "application/json" };
@@ -12,16 +11,12 @@ function getHeaders() {
 async function submitJukeboxRequest() {
     const alertBody = document.getElementById("alertBody");
     const alertText = document.getElementById("alertText");
-    const form = document.getElementById("jukeboxForm");
-    const formData = new FormData(form);
-    const data = Object.fromEntries(formData);
+    const jukeboxForm = document.getElementById("jukeboxForm");
 
     try {
+        const formData = new FormData(jukeboxForm);
+        const data = Object.fromEntries(formData);
         alertBody.classList.add(dNone);
-
-        if (songNameElement.innerText.indexOf(showOfflineMessage) !== -1) {
-            throw new Error("The show is offline and not accepting requests.");
-        }
 
         const response = await fetch(jukeboxRoute, {
             method: 'POST',
@@ -50,9 +45,8 @@ async function getAllSettings() {
         return;
     }
 
-    const textDanger = "text-danger";
-
     try {
+        const textDanger = "text-danger";
         const response = await fetch(jukeboxRoute, {
             method: 'GET',
             headers: getHeaders(),
@@ -63,19 +57,32 @@ async function getAllSettings() {
         }
 
         const result = await response.json();
+        const jukeboxForm = document.getElementById("jukeboxForm");
         const artistElement = document.getElementById("currentArtist");
         const controllerTempElement = document.getElementById("controllerTemp");
         const nwsTempElement = document.getElementById("nwsTemp");
         const queueCount = document.getElementById("songQueue");
         const windChillElement = document.getElementById("windchill");
+        const showOffline = document.getElementById("showOffline");
+        const currentSongMetaData = document.getElementById("currentSongMetaData");
 
         result.forEach(element => {
             let tempF = 32, tempC = 0;
             switch (element.identifier) {
                 case "currentsong":
+                    if (element.value == "") {
+                        showOffline.classList.remove(dNone);
+                        currentSongMetaData.classList.add(dNone);
+                        jukeboxForm.classList.add(dNone);
+                        break;
+                    }
+
                     var songParts = element.value.split("|");
-                    songNameElement.innerText = songParts[0] == "" ? showOfflineMessage : songParts[0];
+                    songNameElement.innerText = songParts[0]; // == "" ? showOfflineMessage : songParts[0];
                     artistElement.innerText = songParts[1] == undefined ? "" : songParts[1];
+                    showOffline.classList.add(dNone);
+                    currentSongMetaData.classList.remove(dNone);
+                    jukeboxForm.classList.remove(dNone);
                     break;
 
                 case "cputempc":

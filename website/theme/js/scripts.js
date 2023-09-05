@@ -70,7 +70,11 @@ async function getAllSettings() {
             let tempF = 32, tempC = 0;
             switch (element.identifier) {
                 case "currentsong":
+<<<<<<< HEAD
                     if (trim(element.value) == "") {
+=======
+                    if (element.value == "") {
+>>>>>>> refs/remotes/origin/lightshow
                         showOffline.classList.remove(dNone);
                         currentSongMetaData.classList.add(dNone);
                         jukeboxForm.classList.add(dNone);

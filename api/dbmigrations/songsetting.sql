@@ -30,3 +30,7 @@ insert into songsetting (settingid, identifier, songsetting.value, modified)
 select null, 'nightlyplayedcount', 0, current_timestamp() from dual
 where not exists (select * from songsetting where identifier = 'nightlyplayedcount');
 
+insert into songsetting (settingid, identifier, songsetting.value, modified)
+select null, 'windchill', 0, current_timestamp() from dual
+where not exists (select * from songsetting where identifier = 'windchill');
+

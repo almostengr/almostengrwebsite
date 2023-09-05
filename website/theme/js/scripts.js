@@ -50,6 +50,8 @@ async function getAllSettings() {
         return;
     }
 
+    const textDanger = "text-danger";
+
     try {
         const response = await fetch(jukeboxRoute, {
             method: 'GET',
@@ -65,6 +67,7 @@ async function getAllSettings() {
         const controllerTempElement = document.getElementById("controllerTemp");
         const nwsTempElement = document.getElementById("nwsTemp");
         const queueCount = document.getElementById("songQueue");
+        const windChillElement = document.getElementById("windchill");
 
         result.forEach(element => {
             let tempF = 32, tempC = 0;
@@ -90,11 +93,20 @@ async function getAllSettings() {
                 case "queuecount":
                     queueCount.innerText = artistElement.innerText == "" ? 0 : element.value;
                     break;
+
+                case "windchill":
+                    tempF = getFahrenheitFromCelsius(element.value);
+                    tempC = roundCelsius(element.value);
+                    windChillElement.innerText = element.value == "" ? "None" : `${tempF} F (${tempC} C)`;
+                    break;
             }
         });
+
+        songNameElement.classList.remove(textDanger);
     }
     catch (errorMessage) {
         songNameElement.innerText = errorMessage;
+        songNameElement.classList.add(textDanger);
     }
 
     const delaySeconds = 1000 * 7;

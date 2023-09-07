@@ -2,7 +2,7 @@
 
 require_once('../config.php');
 date_default_timezone_set("America/Chicago");
-ini_set('display_errors', 'Off');
+ini_set('display_errors', 'On');
 
 final class SettingRequestDto
 {
@@ -52,6 +52,20 @@ final class SettingResponseDto extends ResponseDto
         $this->message = $message;
         $this->key = $key;
         $this->value = $value;
+    }
+
+    public function toJsonEncode()
+    {
+        http_response_code($this->code);
+        $output = array(
+            "code" => $this->code,
+            "message" => $this->message,
+            "key" => $this->key,
+            "value" => $this->value,
+        );
+
+        echo json_encode($output);
+        exit();
     }
 }
 
@@ -112,7 +126,7 @@ function updateSetting($dbConnection, SettingRequestDto $settingRequestDto)
     }
 
     if (!$isKeyValid) {
-        throw new Exception("Invalid key", 400);
+        throw new Exception("Invalid setting key", 400);
     }
 
     $query = "";
@@ -123,11 +137,12 @@ function updateSetting($dbConnection, SettingRequestDto $settingRequestDto)
             break;
 
         default:
-            $query = "update songsetting set value = ? where identifier = ?";
+            $query = "update songsetting set value = ?, modified = ? where identifier = ?";
     }
 
     $statement = $dbConnection->prepare($query);
-    $statement->bind_param("ss", $settingRequestDto->value, $settingRequestDto->key);
+    $currentTime = date('Y-m-d H:i:s');
+    $statement->bind_param("sss", $settingRequestDto->value, $currentTime, $settingRequestDto->key);
 
     if (!$statement->execute()) {
         throw new Exception("Error updating setting", 500);
@@ -182,6 +197,7 @@ try {
             break;
 
         case 'PUT':
+            $phpInput = "php://input";
             $json = file_get_contents($phpInput);
             $request = new SettingRequestDto($json);
             updateSetting($dbConnection, $request);

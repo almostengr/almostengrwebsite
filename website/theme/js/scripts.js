@@ -4,11 +4,21 @@ const dangerClass = "alert-danger";
 const dNone = "d-none";
 const songNameElement = document.getElementById("currentSong");
 
+const jukeboxForm = document.getElementById("jukeboxForm");
+const artistElement = document.getElementById("currentArtist");
+const controllerTempElement = document.getElementById("controllerTemp");
+const nwsTempElement = document.getElementById("nwsTemp");
+const queueCount = document.getElementById("songQueue");
+const windChillElement = document.getElementById("windchill");
+const showOffline = document.getElementById("showOffline");
+const currentSongMetaData = document.getElementById("currentSongMetaData");
+const textDanger = "text-danger";
+
 function getHeaders() {
     return { "Content-Type": "application/json" };
 }
 
-async function submitJukeboxRequest() { 
+async function submitJukeboxRequest() {
 
     try {
         const formData = new FormData(jukeboxForm);
@@ -37,21 +47,7 @@ async function submitJukeboxRequest() {
     alertBody.classList.remove(dNone);
 }
 
-const jukeboxForm = document.getElementById("jukeboxForm");
-const artistElement = document.getElementById("currentArtist");
-const controllerTempElement = document.getElementById("controllerTemp");
-const nwsTempElement = document.getElementById("nwsTemp");
-const queueCount = document.getElementById("songQueue");
-const windChillElement = document.getElementById("windchill");
-const showOffline = document.getElementById("showOffline");
-const currentSongMetaData = document.getElementById("currentSongMetaData");
-const textDanger = "text-danger";
-
 async function getAllSettings() {
-    if (songNameElement == null) {
-        return;
-    }
-
     try {
         const response = await fetch(jukeboxRoute, {
             method: 'GET',
@@ -113,9 +109,6 @@ async function getAllSettings() {
         songNameElement.innerText = errorMessage;
         songNameElement.classList.add(textDanger);
     }
-
-    // const delaySeconds = 1000 * 7;
-    // setTimeout(getAllSettings, delaySeconds);
 }
 
 function getFahrenheitFromCelsius(celsius) {
@@ -129,5 +122,8 @@ function roundCelsius(celsius) {
     return Math.round(value);
 }
 
-// getAllSettings();
-setInterval(getAllSettings, 7000);
+if (songNameElement !== null) {
+    const intervalDelay = 1000 * 7;
+    setInterval(getAllSettings, intervalDelay);
+    return;
+}

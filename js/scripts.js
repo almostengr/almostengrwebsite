@@ -4,14 +4,21 @@ const dangerClass = "alert-danger";
 const dNone = "d-none";
 const songNameElement = document.getElementById("currentSong");
 
+const jukeboxForm = document.getElementById("jukeboxForm");
+const artistElement = document.getElementById("currentArtist");
+const controllerTempElement = document.getElementById("controllerTemp");
+const nwsTempElement = document.getElementById("nwsTemp");
+const queueCount = document.getElementById("songQueue");
+const windChillElement = document.getElementById("windchill");
+const showOffline = document.getElementById("showOffline");
+const currentSongMetaData = document.getElementById("currentSongMetaData");
+const textDanger = "text-danger";
+
 function getHeaders() {
     return { "Content-Type": "application/json" };
 }
 
 async function submitJukeboxRequest() {
-    const alertBody = document.getElementById("alertBody");
-    const alertText = document.getElementById("alertText");
-    const jukeboxForm = document.getElementById("jukeboxForm");
 
     try {
         const formData = new FormData(jukeboxForm);
@@ -41,12 +48,7 @@ async function submitJukeboxRequest() {
 }
 
 async function getAllSettings() {
-    if (songNameElement == null) {
-        return;
-    }
-
     try {
-        const textDanger = "text-danger";
         const response = await fetch(jukeboxRoute, {
             method: 'GET',
             headers: getHeaders(),
@@ -57,14 +59,6 @@ async function getAllSettings() {
         }
 
         const result = await response.json();
-        const jukeboxForm = document.getElementById("jukeboxForm");
-        const artistElement = document.getElementById("currentArtist");
-        const controllerTempElement = document.getElementById("controllerTemp");
-        const nwsTempElement = document.getElementById("nwsTemp");
-        const queueCount = document.getElementById("songQueue");
-        const windChillElement = document.getElementById("windchill");
-        const showOffline = document.getElementById("showOffline");
-        const currentSongMetaData = document.getElementById("currentSongMetaData");
 
         result.forEach(element => {
             let tempF = 32, tempC = 0;
@@ -77,7 +71,7 @@ async function getAllSettings() {
                         break;
                     }
 
-                    var songParts = element.value.split("|");
+                    const songParts = element.value.split("|");
                     songNameElement.innerText = songParts[0]; // == "" ? showOfflineMessage : songParts[0];
                     artistElement.innerText = songParts[1] == undefined ? "" : songParts[1];
                     showOffline.classList.add(dNone);
@@ -115,9 +109,6 @@ async function getAllSettings() {
         songNameElement.innerText = errorMessage;
         songNameElement.classList.add(textDanger);
     }
-
-    const delaySeconds = 1000 * 7;
-    setTimeout(getAllSettings, delaySeconds);
 }
 
 function getFahrenheitFromCelsius(celsius) {
@@ -131,4 +122,8 @@ function roundCelsius(celsius) {
     return Math.round(value);
 }
 
-getAllSettings();
+if (songNameElement !== null) {
+    const intervalDelay = 1000 * 7;
+    setInterval(getAllSettings, intervalDelay);
+    return;
+}

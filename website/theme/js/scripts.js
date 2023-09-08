@@ -19,11 +19,10 @@ function getHeaders() {
 }
 
 async function submitJukeboxRequest() {
-
+    alertBody.classList.add(dNone);
     try {
         const formData = new FormData(jukeboxForm);
         const data = Object.fromEntries(formData);
-        alertBody.classList.add(dNone);
 
         const response = await fetch(jukeboxRoute, {
             method: 'POST',
@@ -32,15 +31,14 @@ async function submitJukeboxRequest() {
         });
 
         const result = await response.json();
+        alertText.innerText = result.message;
         if (response.status > 299) {
             throw new Error(result.message);
         }
 
-        alertText.innerText = result.message;
         alertBody.classList.remove(dangerClass);
         alertBody.classList.add(successClass);
     } catch (error) {
-        alertText.innerText = error;
         alertBody.classList.remove(successClass);
         alertBody.classList.add(dangerClass);
     }
@@ -65,11 +63,10 @@ async function getAllSettings() {
         let result = await response.json();
 
         result.forEach(element => {
-            let tempF = 32, tempC = 0;
+            let tempF = 32, 
+                tempC = 0;
             switch (element.identifier) {
                 case "currentsong":
-                    console.log("current song :  " + element.value);
-
                     if (element.value == "") {
                         showOffline.classList.remove(dNone);
                         currentSongMetaData.classList.add(dNone);
@@ -78,7 +75,7 @@ async function getAllSettings() {
                     }
 
                     const songParts = element.value.split("|");
-                    songNameElement.innerText = songParts[0]; // == "" ? showOfflineMessage : songParts[0];
+                    songNameElement.innerText = songParts[0];
                     artistElement.innerText = songParts[1] == undefined ? "" : songParts[1];
                     showOffline.classList.add(dNone);
                     currentSongMetaData.classList.remove(dNone);
@@ -86,14 +83,14 @@ async function getAllSettings() {
                     break;
 
                 case "cputempc":
-                    tempF = getFahrenheitFromCelsius(element.value);
-                    tempC = roundCelsius(element.value);
+                    tempF = getFahrenheit(element.value);
+                    tempC = getCelsius(element.value);
                     controllerTempElement.innerText = `${tempF} F (${tempC} C)`;
                     break;
 
                 case "nwstempc":
-                    tempF = getFahrenheitFromCelsius(element.value);
-                    tempC = roundCelsius(element.value);
+                    tempF = getFahrenheit(element.value);
+                    tempC = getCelsius(element.value);
                     nwsTempElement.innerText = `${tempF} F (${tempC} C)`;
                     break;
 
@@ -102,8 +99,8 @@ async function getAllSettings() {
                     break;
 
                 case "windchill":
-                    tempF = getFahrenheitFromCelsius(element.value);
-                    tempC = roundCelsius(element.value);
+                    tempF = getFahrenheit(element.value);
+                    tempC = getCelsius(element.value);
                     windChillElement.innerText = element.value == "" ? "None" : `${tempF} F (${tempC} C)`;
                     break;
             }
@@ -117,13 +114,13 @@ async function getAllSettings() {
     }
 }
 
-function getFahrenheitFromCelsius(celsius) {
+function getFahrenheit(celsius) {
     const value = parseFloat(celsius);
     const calcF = (value * (9 / 5)) + 32;
     return Math.round(calcF);
 }
 
-function roundCelsius(celsius) {
+function getCelsius(celsius) {
     const value = parseFloat(celsius);
     return Math.round(value);
 }

@@ -48,8 +48,12 @@ async function submitJukeboxRequest() {
 }
 
 async function getAllSettings() {
+    if (songNameElement == null) {
+        return;
+    }
+
     try {
-        const response = await fetch(jukeboxRoute, {
+        let response = await fetch(jukeboxRoute, {
             method: 'GET',
             headers: getHeaders(),
         });
@@ -58,13 +62,15 @@ async function getAllSettings() {
             throw new Error(result.message);
         }
 
-        const result = await response.json();
+        let result = await response.json();
 
         result.forEach(element => {
             let tempF = 32, tempC = 0;
             switch (element.identifier) {
                 case "currentsong":
-                    if (trim(element.value) == "") {
+                    console.log("current song :  " + element.value);
+
+                    if (element.value == "") {
                         showOffline.classList.remove(dNone);
                         currentSongMetaData.classList.add(dNone);
                         jukeboxForm.classList.add(dNone);
@@ -122,7 +128,6 @@ function roundCelsius(celsius) {
     return Math.round(value);
 }
 
-if (songNameElement !== null) {
-    const intervalDelay = 1000 * 7;
-    setInterval(getAllSettings, intervalDelay);
-}
+getAllSettings();
+const intervalDelay = 1000 * 7;
+setInterval(getAllSettings, intervalDelay);

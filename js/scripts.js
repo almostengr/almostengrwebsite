@@ -125,5 +125,4 @@ function roundCelsius(celsius) {
 if (songNameElement !== null) {
     const intervalDelay = 1000 * 7;
     setInterval(getAllSettings, intervalDelay);
-    return;
 }

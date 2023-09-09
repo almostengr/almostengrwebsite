@@ -167,19 +167,26 @@ function getNextUnplayedRequest($dbConnection)
         $response->toJsonEncode();
     }
 
+    $requestId = 0;
+    $requestSequence = "";
+    while ($row = $result->fetch_assoc()) {
+        $requestId = $row['id'];
+        $requestSequence = $row['sequencename'];
+    }
+
     $query = "UPDATE songrequest SET played = 1, modifiedTime = ?, modifiedIpAddress = ? WHERE id = ?";
     $statement = $dbConnection->prepare($query);
 
     $ipAddress = $_SERVER['REMOTE_ADDR'];
-    $statement->bind_param('ssi', date('Y-m-d H:i:s'), $ipAddress, $result['id']);
+    $currentTime = date('Y-m-d H:i:s');
+    $statement->bind_param('ssi', $currentTime, $ipAddress, $requestId);
     if (!$statement->execute()) {
         throw new Exception("Error updating song", 500);
     }
 
-    $response = new ResponseDto(200, $result['sequenceName']);
+    $response = new ResponseDto(200, $requestSequence);
     $response->toJsonEncode();
 }
-
 
 try {
     validateApiKey();
@@ -197,8 +204,7 @@ try {
             break;
 
         case 'PUT':
-            $phpInput = "php://input";
-            $json = file_get_contents($phpInput);
+            $json = file_get_contents("php://input");
             $request = new SettingRequestDto($json);
             updateSetting($dbConnection, $request);
             break;

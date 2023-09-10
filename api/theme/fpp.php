@@ -117,7 +117,7 @@ function updateSetting($dbConnection, SettingRequestDto $settingRequestDto)
     $seasonplayedCount = "seasonplayedcount";
 
     $isKeyValid = false;
-    $acceptableKeys = ["currentsong", "cputempc", "nwstempc", $nightlyPlayedCount, $seasonplayedCount];
+    $acceptableKeys = ["currentsong", "cputempc", "nwstempc", "windchill", $nightlyPlayedCount, $seasonplayedCount];
     foreach ($acceptableKeys as $key) {
         if ($key == $settingRequestDto->key) {
             $isKeyValid = true;

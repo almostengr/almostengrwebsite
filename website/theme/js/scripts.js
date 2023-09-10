@@ -43,6 +43,11 @@ async function submitJukeboxRequest() {
         alertBody.classList.add(dangerClass);
     }
     alertBody.classList.remove(dNone);
+
+    const alertDisplaySeconds = 5 * 1000;
+    setTimeout(() => {
+        alertBody.classList.add(dNone)
+    }, alertDisplaySeconds);
 }
 
 async function getAllSettings() {
@@ -63,7 +68,7 @@ async function getAllSettings() {
         let result = await response.json();
 
         result.forEach(element => {
-            let tempF = 32, 
+            let tempF = 32,
                 tempC = 0;
             switch (element.identifier) {
                 case "currentsong":

@@ -2,22 +2,9 @@
 
 require_once('../config.php');
 date_default_timezone_set("America/Chicago");
-ini_set('display_errors', 'On');
+ini_set('display_errors', 'Off');
 
-final class SettingRequestDto
-{
-    public string $key;
-    public string $value;
-
-    public function __construct(string $json)
-    {
-        $decodedJson = json_decode($json, false);
-        $this->key = $decodedJson->key;
-        $this->value = $decodedJson->value;
-    }
-}
-
-class ResponseDto
+final class ResponseDto
 {
     public int $code;
     public string $message;
@@ -32,36 +19,7 @@ class ResponseDto
     {
         http_response_code($this->code);
         $output = array(
-            "code" => $this->code,
             "message" => $this->message
-        );
-
-        echo json_encode($output);
-        exit();
-    }
-}
-
-final class SettingResponseDto extends ResponseDto
-{
-    public string $key;
-    public string $value;
-
-    public function __construct(int $code, string $message, string $key, string $value)
-    {
-        $this->code = $code;
-        $this->message = $message;
-        $this->key = $key;
-        $this->value = $value;
-    }
-
-    public function toJsonEncode()
-    {
-        http_response_code($this->code);
-        $output = array(
-            "code" => $this->code,
-            "message" => $this->message,
-            "key" => $this->key,
-            "value" => $this->value,
         );
 
         echo json_encode($output);
@@ -102,63 +60,13 @@ function deleteAllRequests($dbConnection)
     $response->toJsonEncode();
 }
 
-function updateQueueCount($dbConnection)
-{
-    $query = "update songsetting set value = (select count(*) from songrequest where played = 0) where identifier = 'queuecount'";
-    $statement = $dbConnection->prepare($query);
-    if (!$statement->execute()) {
-        throw new Exception("Error updating setting", 500);
-    }
-}
-
-function updateSetting($dbConnection, SettingRequestDto $settingRequestDto)
-{
-    $nightlyPlayedCount = "nightlyplayedcount";
-    $seasonplayedCount = "seasonplayedcount";
-
-    $isKeyValid = false;
-    $acceptableKeys = ["currentsong", "cputempc", "nwstempc", "windchill", $nightlyPlayedCount, $seasonplayedCount];
-    foreach ($acceptableKeys as $key) {
-        if ($key == $settingRequestDto->key) {
-            $isKeyValid = true;
-            break;
-        }
-    }
-
-    if (!$isKeyValid) {
-        throw new Exception("Invalid setting key", 400);
-    }
-
-    $query = "";
-    switch ($settingRequestDto->key) {
-        case $nightlyPlayedCount:
-        case $seasonplayedCount:
-            $query = "update songsetting set value = cast(value as unsigned) + 1 where identifier in ('$nightlyPlayedCount','$seasonplayedCount')";
-            break;
-
-        default:
-            $query = "update songsetting set value = ?, modified = ? where identifier = ?";
-    }
-
-    $statement = $dbConnection->prepare($query);
-    $currentTime = date('Y-m-d H:i:s');
-    $statement->bind_param("sss", $settingRequestDto->value, $currentTime, $settingRequestDto->key);
-
-    if (!$statement->execute()) {
-        throw new Exception("Error updating setting", 500);
-    }
-
-    $response = new SettingResponseDto(200, "", $settingRequestDto->key, $settingRequestDto->value);
-    $response->toJsonEncode();
-}
-
 function getNextUnplayedRequest($dbConnection)
 {
     $query = "SELECT id, sequencename FROM songrequest WHERE played = 0 ORDER BY createdTime ASC LIMIT 1";
     $statement = $dbConnection->prepare($query);
 
     if (!$statement->execute()) {
-        throw new Exception("Error getting song", 500);
+        throw new Exception("Error getting next song request", 500);
     }
 
     $result = $statement->get_result();
@@ -181,17 +89,32 @@ function getNextUnplayedRequest($dbConnection)
     $currentTime = date('Y-m-d H:i:s');
     $statement->bind_param('ssi', $currentTime, $ipAddress, $requestId);
     if (!$statement->execute()) {
-        throw new Exception("Error updating song", 500);
+        throw new Exception("Error updating song played status", 500);
     }
 
     $response = new ResponseDto(200, $requestSequence);
     $response->toJsonEncode();
 }
 
+function insertCurrentVitals($dbConnection, $json)
+{
+    $query = "insert into lightshowdisplay (windchill, nwstemp, cputemp, title, artist, createdipaddress) values (?,?,?,?,?,?)";
+    $statement = $dbConnection->prepare($query);
+    $ipAddress = $_SERVER['REMOTE_ADDR'];
+    $statement->bind_param('ssssss', 
+        $json->windchill, $json->nwstemperature, $json->CpuTempSensors, $json->title, $json->artist, $ipAddress);
+
+    if (!$statement->execute()) {
+        throw new Exception("Unable to save display details", 500);
+    }
+
+    $response = new ResponseDto(201, "Created");
+    $response->toJsonEncode();
+}
+
 try {
     validateApiKey();
     $dbConnection = connectToDatabase();
-    updateQueueCount($dbConnection);
 
     $requestMethod = $_SERVER['REQUEST_METHOD'];
     switch ($requestMethod) {
@@ -203,10 +126,9 @@ try {
             getNextUnplayedRequest($dbConnection);
             break;
 
-        case 'PUT':
+        case 'POST':
             $json = file_get_contents("php://input");
-            $request = new SettingRequestDto($json);
-            updateSetting($dbConnection, $request);
+            insertCurrentVitals($dbConnection, $json);
             break;
 
         default:

@@ -11,3 +11,9 @@ create table if not exists lightshowdisplay
     createdIpAddress VARCHAR(255) NOT NULL,
     PRIMARY KEY (`lightshowdisplayid`)
 );
+
+insert into lightshowdisplay
+(windchill, nwstemp, cputemp, title, artist, album, createdIpAddress)
+values
+("None", "32F 0C", "212F 100C", "Testing Title", "Testing Artist", "Testing Album", "localhost")
+;

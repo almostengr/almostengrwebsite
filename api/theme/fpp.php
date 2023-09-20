@@ -2,7 +2,7 @@
 
 require_once('../config.php');
 date_default_timezone_set("America/Chicago");
-ini_set('display_errors', 'Off');
+ini_set('display_errors', 'On');
 
 final class ResponseDto
 {
@@ -101,8 +101,12 @@ function insertCurrentVitals($dbConnection, $json)
     $query = "insert into lightshowdisplay (windchill, nwstemp, cputemp, title, artist, createdipaddress) values (?,?,?,?,?,?)";
     $statement = $dbConnection->prepare($query);
     $ipAddress = $_SERVER['REMOTE_ADDR'];
-    $statement->bind_param('ssssss', 
-        $json->windchill, $json->nwstemperature, $json->CpuTempSensors, $json->title, $json->artist, $ipAddress);
+
+    $statement->bind_param(
+        'ssssss',
+        $json->WindChill, $json->NwsTemperature, $json->CpuTemp, $json->Title, $json->Artist,
+        $ipAddress
+    );
 
     if (!$statement->execute()) {
         throw new Exception("Unable to save display details", 500);
@@ -127,7 +131,8 @@ try {
             break;
 
         case 'POST':
-            $json = file_get_contents("php://input");
+            $input = file_get_contents("php://input");
+            $json = json_decode($input);
             insertCurrentVitals($dbConnection, $json);
             break;
 

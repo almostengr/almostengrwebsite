@@ -1,17 +1,16 @@
 const jukeboxRoute = "/jukeboxapi.php";
-const dangerClass = "alert-danger";
+const alertDangerClass = "alert-danger";
+const alertSuccessClass = "alert-success";
 const dNone = "d-none";
-const textDanger = "text-danger";
-const successClass = "alert-success";
+const textDangerClass = "text-danger";
 
-const artistElement = document.getElementById("currentArtist");
-const controllerTempElement = document.getElementById("controllerTemp");
-const currentSongMetaData = document.getElementById("currentSongMetaData");
+const artistElement = document.getElementById("songArtist");
+const cpuTempElement = document.getElementById("cpuTemp");
 const jukeboxForm = document.getElementById("jukeboxForm");
 const nwsTempElement = document.getElementById("nwsTemp");
-const showOffline = document.getElementById("showOffline");
-const songNameElement = document.getElementById("currentSong");
-const windChillElement = document.getElementById("windchill");
+const showMetaDataElement = document.getElementById("showMetaData");
+const songTitleElement = document.getElementById("songTitle");
+const windChillElement = document.getElementById("windChill");
 
 function requestHeaders() {
     return { "Content-Type": "application/json" };
@@ -36,13 +35,13 @@ async function submitJukeboxRequest() {
             throw new Error(result.message);
         }
 
-        alertBody.classList.remove(dangerClass);
-        alertBody.classList.add(successClass);
+        alertBody.classList.remove(alertDangerClass);
+        alertBody.classList.add(alertSuccessClass);
     } catch (error) {
-        alertBody.classList.remove(successClass);
-        alertBody.classList.add(dangerClass);
+        alertBody.classList.remove(alertSuccessClass);
+        alertBody.classList.add(alertDangerClass);
     }
-    
+
     alertBody.classList.remove(dNone);
 
     const alertDisplaySeconds = 5 * 1000;
@@ -52,12 +51,12 @@ async function submitJukeboxRequest() {
 }
 
 async function getDisplayData() {
-    if (songNameElement == null) {
+    if (songTitleElement == null) {
         return;
     }
 
     try {
-        await fetch(jukeboxRoute, {
+        const response = await fetch(jukeboxRoute, {
             method: 'GET',
             headers: requestHeaders(),
         });
@@ -65,35 +64,30 @@ async function getDisplayData() {
         if (response.status > 299) {
             throw new Error(result.message);
         }
+
         let result = await response.json();
 
-        if (result.Title === "") {
-            showOffline.classList.remove(dNone);
-            currentSongMetaData.classList.add(dNone);
+        if (result.title === "") {
+            songTitleElement.innerText = "Show is offline";
+            artistElement.innerText = "Show dates and times are available below.";
             jukeboxForm.classList.add(dNone);
+            showMetaDataElement.classList.add(dNone);
         }
         else {
-            songNameElement.innerText = result.Title;
-            artistElement.innerText = result.Artist;
-
-            controllerTempElement.innerText = "";
-            result.CpuTempSensors.foreach(element => {
-                controllerTempElement.innerText += `${element} `;
-            });
-
-            nwsTempElement.innerText = result.NwsTemperature;
-            windChillElement.innerText = element.value == "" ? "None" : `${tempF}F (${tempC}C)`;
-
-            showOffline.classList.add(dNone);
-            currentSongMetaData.classList.remove(dNone);
+            songTitleElement.innerText = result.title;
+            artistElement.innerText = result.artist;
+            nwsTempElement.innerText = result.nwstemp;
+            windChillElement.innerText = result.windchill;
+            cpuTempElement.innerText = result.cputemp;
             jukeboxForm.classList.remove(dNone);
+            showMetaDataElement.classList.remove(dNone);
         }
 
-        songNameElement.classList.remove(textDanger);
+        songTitleElement.classList.remove(textDangerClass);
     }
     catch (errorMessage) {
-        songNameElement.innerText = errorMessage;
-        songNameElement.classList.add(textDanger);
+        songTitleElement.innerText = errorMessage;
+        songTitleElement.classList.add(textDangerClass);
     }
 }
 

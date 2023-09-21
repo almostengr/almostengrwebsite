@@ -4,46 +4,30 @@ require_once('../config.php');
 date_default_timezone_set("America/Chicago");
 ini_set('display_errors', 'Off');
 
-abstract class BaseResponse
+final class JsonResponse
 {
     public int $responseCode;
     public string $message;
-}
 
-final class JsonResponse extends BaseResponse
-{
-    public array $data;
-
-    public function __construct(int $responseCode, string $message, $data = array())
+    public function __construct(int $responseCode, string $message)
     {
         $this->responseCode = $responseCode;
         $this->message = $message;
-        $this->data = $data;
     }
 
     public function toJsonEncode()
     {
-        // header('Content-Type: application/json');
         http_response_code($this->responseCode);
         $output = array(
-            "code" => $this->responseCode,
             "message" => $this->message,
         );
-
-        if ($this->data !== array()) {
-            $output = array(
-                "code" => $this->responseCode,
-                "message" => $this->message,
-                "data" => $this->data,
-            );
-        }
 
         echo json_encode($output);
         exit();
     }
 }
 
-abstract class BaseRequestService
+abstract class BaseRequestHandler
 {
     public mysqli $mysqli;
     public string $currentDateTime;
@@ -65,7 +49,7 @@ abstract class BaseRequestService
     }
 }
 
-final class PostRequestService extends BaseRequestService
+final class PostRequestHandler extends BaseRequestHandler
 {
     public string $sequenceName;
     public string $code;
@@ -85,7 +69,7 @@ final class PostRequestService extends BaseRequestService
 
     public function maxUnplayedSongsPerDevice(): int
     {
-        return 2;
+        return 3;
     }
 
     public function preventSpamAndFloodRequests(): void
@@ -99,7 +83,7 @@ final class PostRequestService extends BaseRequestService
         $result = $statement->get_result();
         if ($result->num_rows >= $this->maxUnplayedSongsPerDevice()) {
             $this->mysqli->close();
-            throw new Exception("Whoa there! Let someone else pick a song. Once your requests have been played, you may pick more songs.", 400);
+            throw new Exception("Take it easy! Once your requests have been played, you may pick more songs.", 400);
         }
     }
 
@@ -127,7 +111,7 @@ final class PostRequestService extends BaseRequestService
     {
         $validCodeForToday = $this->getCodeForToday();
         if ($this->code !== $validCodeForToday) {
-            throw new Exception("Invalid code. Please listen to the show announcement for todays code.", 400);
+            throw new Exception("Invalid code. Please listen to the show announcement for the code.", 400);
         }
     }
 
@@ -157,60 +141,50 @@ final class PostRequestService extends BaseRequestService
         $statement = $this->mysqli->prepare("INSERT INTO songrequest (sequenceName, createdIpAddress, modifiedIpAddress) VALUES (?, ?, ?)");
         $statement->bind_param("sss", $this->sequenceName, $this->ipAddress, $this->ipAddress);
         $statement->execute();
-        (new JsonResponse(201, "Your request has been submitted. There are " . $songsAhead . " song(s) ahead of your request."))->toJsonEncode();
+        
+        $message = "Your request has been submitted. There are " . $songsAhead . " song(s) ahead of your request.";
+        $response = new JsonResponse(201, $message);
+        $response->toJsonEncode();
     }
 }
 
-final class GetRequestService extends BaseRequestService
+final class GetRequestHandler extends BaseRequestHandler
 {
-    public function getPlayingSong(): void
+    public function getDisplayData(): string
     {
-        $query = "SELECT value from songsetting where identifier = 'currentsong'";
+        $query = "select windchill, nwstemp, cputemp, title, artist from lightshowdisplay where lightshowdisplayid = (select max(lightshowdisplayid) from lightshowdisplay)";
         $statement = $this->mysqli->prepare($query);
         if (!$statement->execute()) {
-            throw new Exception("Error updating data.", 500);
+            throw new Exception("Unable to retrieve data.", 500);
         }
 
         $result = $statement->get_result();
-        $song = $result->fetch_assoc();
-        $song = str_replace(".fseq", "", $song['value']);
-        (new JsonResponse(200, $song))->toJsonEncode();
-    }
-
-    public function getAllSettings()
-    {
-        $query = "SELECT identifier, value from songsetting";
-        $statement = $this->mysqli->prepare($query);
-        if (!$statement->execute()) {
-            throw new Exception("Error updating data.", 500);
-        }
-
-        $result = $statement->get_result();
-        $settings = [];
         while ($row = $result->fetch_assoc()) {
-            $settings[] = $row;
+            $json['windchill'] = $row['windchill'];
+            $json['nwstemp'] = $row['nwstemp'];
+            $json['cputemp'] = $row['cputemp'];
+            $json['title'] = $row['title'];
+            $json['artist'] = $row['artist'];
         }
 
-        echo json_encode($settings);
         http_response_code(200);
+        echo json_encode($json);
         exit();
     }
 }
 
-$requestMethod = $_SERVER['REQUEST_METHOD'] ?? null;
-$phpInput = "php://input";
-
 try {
+    $requestMethod = $_SERVER['REQUEST_METHOD'] ?? null;
     switch ($requestMethod) {
         case 'GET':
-            $request = new GetRequestService();
+            $request = new GetRequestHandler();
             $request->connectToDatabase();
-            $request->getAllSettings();
+            $request->getDisplayData();
             break;
 
         case 'POST':
-            $json = file_get_contents($phpInput);
-            $request = new PostRequestService($json);
+            $json = file_get_contents("php://input");
+            $request = new PostRequestHandler($json);
             $request->validateCode();
             $request->connectToDatabase();
             $request->preventSpamAndFloodRequests();
@@ -220,7 +194,8 @@ try {
             break;
 
         default:
-            (new JsonResponse(405, "Method not allowed."))->toJsonEncode();
+            $response = new JsonResponse(405, "Method not allowed.");
+            $response->toJsonEncode();
     }
 } catch (Exception $exception) {
     $jsonResponse = new JsonResponse($exception->getCode(), $exception->getMessage());

@@ -34,3 +34,4 @@ insert into songsetting (settingid, identifier, songsetting.value, modified)
 select null, 'windchill', 0, current_timestamp() from dual
 where not exists (select * from songsetting where identifier = 'windchill');
 
+drop table if exists songsetting;

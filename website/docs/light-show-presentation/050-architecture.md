@@ -6,4 +6,4 @@ presentation: true
 
 ![](/images/light-show-architecture.jpg)
 
-[next](/light-show-presentation/software-xlights)
+[next](/light-show-presentation/060-xlights)

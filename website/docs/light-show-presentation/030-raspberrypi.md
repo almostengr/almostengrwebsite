@@ -6,7 +6,7 @@ presentation: true
 
 ![Raspberry Pi and FM Transmitter](/images/20201220presentation/20201220_084747.jpg)
 
-[next](/light-show-presentation/hardware-relays)
+[next](/light-show-presentation/040-relays)
 
 * 5 volt circuit, provided by the Raspberry Pi
 * Used to control relays

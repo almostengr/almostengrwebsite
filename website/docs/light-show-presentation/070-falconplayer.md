@@ -6,7 +6,7 @@ presentation: true
 
 ![Screenshot of Falcon Pi Player homepage](/images/20201220presentation/falconpi.jpg)
 
-[next](/light-show-presentation/software-extender)
+[next](/light-show-presentation/080-extender)
 
 * Runs on Raspberry Pi
 * Reads the file created in xLights with the light data

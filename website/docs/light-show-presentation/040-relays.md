@@ -6,7 +6,7 @@ presentation: true
 
 ![8-Channel Solid State Relay board](/images/20201220presentation/20201220_084801.jpg)
 
-[next](/light-show-presentation/software-architecture)
+[next](/light-show-presentation/050-architecture)
 
 * No moving parts
 * Silent operation

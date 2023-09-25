@@ -9,4 +9,4 @@ presentation: true
 ## Took about 1.5 months to build box and show
 ## Approximately 15 minute show duration
 
-[next](/light-show-presentation/hardware-controlbox)
+[next](/light-show-presentation/020-controlbox)

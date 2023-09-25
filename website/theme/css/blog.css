@@ -123,6 +123,10 @@ a, a:hover {
 img {
   max-width: 100%;
 }
+/* 
+.presentation img {
+  max-width: 75%;
+} */
 
 pre {
   background-color: #000000;

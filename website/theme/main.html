@@ -88,10 +88,14 @@
         <li class="nav-item"><a class="nav-link text-light" href="/resources">Resources</a></li>
         <li class="nav-item"><a class="nav-link text-light" href="/lightshow">Light Show</a></li>
       </ul>
+
+      {% if page and page.meta.presentation %}
+      {% else %}
       <form class="form-inline mt-2 mt-md-0" action="https://www.google.com/search" method="get">
         <input type="hidden" name="q" value="site:thealmostengineer.com">
         <input class="form-control mr-sm-2" type="text" placeholder="Search with Google" aria-label="Search" name="q">
       </form>
+      {% endif %}
     </div>
   </nav>
 
@@ -109,11 +113,17 @@
       </div>
       {% endif %}
     </div>
+
     {% if page and page.meta.presentation %}
-      {{ page.content }}
+    <main class="container presentation">
+      <div style="min-height: 100vh" class="mx-5 ">
+        {{ page.content }}
+      </div>
+    </main>
     {% else %}
     {% include "_pagemain.html" %}
     {% endif %}
+
   </div>
   <script type="text/javascript" src="/js/jquery.min.js"></script>
   <script type="text/javascript" src="/js/vendor/popper.min.js"></script>

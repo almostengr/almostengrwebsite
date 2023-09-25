@@ -12,3 +12,4 @@ title: HP Light Show
 * [Show Dates, Times, and Other Information](/projects/light-show) are available on the project page.
 * [Frequently Asked Questions](/projects/light-show-faq)
 * <a href="https://youtu.be/sbbEQJ80q0I" target="_blank">Behind The Scenes of the 2021 Christmas Light Show</a>
+* [Light Show Presentation](/light-show-presentation) provides additional information about the show.

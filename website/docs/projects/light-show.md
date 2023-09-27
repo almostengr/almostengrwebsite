@@ -13,12 +13,12 @@ from 5:00 PM (17:00) until 10:00 PM (22:00).
 
 During times of heavy rain or severe weather the light show may be stopped to reduce the
 chance of electrical shorts occurring and for safety of individuals watching. Latest information 
-about the show will be posted on the [Light Show home page](/lightshow).
+about the show will be posted on the [LIght Show Jukebox Page](/lightshow).
 
 ## Pick The Song
 
 This year, we are allowing viewers to pick the song that they want to see played. To select a song, 
-visit the [Light Show home page](/lightshow). Your song request will be added to the queue. Songs will be 
+visit the [LIght Show Jukebox Page](/lightshow). Your song request will be added to the queue. Songs will be 
 played in the order that they have been requested.
 
 ## Listen From Your Car
@@ -27,21 +27,36 @@ To listen to the light show, tune your radio to 90.3 FM.
 
 * Please keep your radio volume down to not disturb the neighbors.
 * Please remain in your vehicle for your safety and that of passing vehicles.
-* Please keep your park lights on while watching the show so that you are visible to other
-drivers that are passing by.
-
-## Song List 
-
-Songs for this years show have not been decided at this time.
 
 ## Fun Facts
 
 * 3600 LED lights
 * Numerous hours of programming
-* Over 200 Feet of extension cords
+* Over 200 Feet of electrical wire
 * 20 channels
 * 4 8-channel Solid State Relay Boards
 * 2 Raspberry Pi 3B+
+
+## Song List 
+
+Below is the full list of songs for this years' show. Visit the [Jukebox page](/lightshow) to 
+select the song that you want to hear.
+
+* 20th Century Fox
+* About Damn Time (Clean) - Lizzo
+* All I Really Want For Christmas - Lil Jon featuring Kool-Aid Man
+* Baby Shark
+* Christmas Eve-Sarajevo
+* Christmas Time Is Party Time_Luke
+* December - Earth Wind and Fire
+* Holidays - Meghan Trainor
+* Nutrocker - Trans-Siberian Orchestra
+* The Polar Express - Tom Hanks
+* The Song That Doesnt End - Shari Lewis
+* Uptown Funk - Mark Ronson
+* WAP - Cardi B feat Megan The Stallion
+* What You Want for Christmas - Quad City DJs and K-nock
+* Wizards In Winter - Trans-Siberian Orchestra
 
 ## Other Information
 
@@ -49,5 +64,5 @@ To find out more about the light show, including previous years show information
 scenes looks, visit one of the pages listed below.
 
 * [2022 Christmas Light Show Details](/projects/2022-christmas-light-show)
-* <a href="https://youtu.be/sbbEQJ80q0I" target="_blank">Behind The Scenes of the 2021 Christmas Light Show</a>
+* <a href="https://www.youtube.com/watch?v=-1xZ8bZFQcM" target="_blank">Behind The Scenes of the 2022 Christmas Light Show</a>
 * [FAQs (Frequently Asked Questions)](/projects/light-show-faq)

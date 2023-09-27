@@ -217,17 +217,12 @@ the latest release <a href="https://github.com/FalconChristmas/fpp" target="_bla
 For assistance with configuring or issues with Falcon Pi Player, you can post in the
 <a href="https://www.facebook.com/groups/FalconPlayer/" target="_blank">FPP, Falcon Player</a> group.
 
-#### Falcon Pi Twitter
+#### Light Show Extender
 
-[Falcon Pi Twitter](/projects/falcon-pi-twitter)
-is a custom .NET Core application written in C#. The application serves as a bridge
-between the Falcon Pi Player and Twitter. As the show plays, the song information is pulled from the
-Falcon Pi Player and then posted as a tweet on Twitter. 
-This custom application was created to read the show and song data from Falcon Pi Player and post it 
-as a tweet on Twitter. When a show is not running, it posts tweets with the remaining time until 
-Christmas day. 
-You can find out more information about this
-project by visiting the [project page](/projects/falcon-pi-twitter).
+The [Light Show Extender](/projects/light-show-extender) is a custom C# application that provides additional 
+functionality for the light show. This application serves as an interface between the Falcon Pi Player that 
+runs the show, the National Weather Service for getting weather information, and thealmostengineer.com 
+website where users make their song requests and see current show information.
 
 #### Ffmpeg
 
@@ -245,7 +240,7 @@ release <a href="https://github.com/smeighan/xLights" target="_blank">from the r
 For assistance with configuring or issues with xLights, you can post in the
 <a href="https://www.facebook.com/groups/xLights" target="_blank">Official xLights Support Group</a>.
 
-### Song updates are posted to Twitter. How does that work?
+### Song updates used to be posted to Twitter. How does that work?
 
 See the [Falcon Pi Twitter](/projects/falcon-pi-twitter) page for more information about
 that project.
@@ -298,14 +293,14 @@ this feature by turning on "live mode". Check your vehicle's owners manual for h
 
 ### How does the jukebox work?
 
-When you submit your request on the [Light Show home page](/lightshow), the request is placed in 
+When you submit your request on the [LIght Show Jukebox Page](/lightshow), the request is placed in 
 a queue. As a song is finishing, the light show system will check to see if a new request has been submitted. 
 If a new song has been requested, it will then prepare to and play that song.
 
 ### What technology runs the jukebox?
 
-This portion of the show uses HTML, CSS, PHP, and MySQL. This group of technologies are often used for 
-small to medium scale websites and applications because free and easy to set up.
+The jukebox uses C#, HTML, CSS, PHP, and MySQL. More infomration about the jukebox set up and how it 
+operates can be found on the [Light Show Extender project page](/projects/light-show-extender).
 
 ## Resources
 

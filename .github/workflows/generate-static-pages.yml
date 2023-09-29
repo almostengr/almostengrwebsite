@@ -53,6 +53,15 @@ jobs:
         key: ${{ secrets.PRIVATE_KEY }}
         port: ${{ secrets.PORT_NUMBER }}
         user: ${{ secrets.USERNAME }}
+
+  sitemapush:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Sitemap Ping to search engines
+      uses: atymic/sitemap-ping-action@1.1.0
+      with:
+        sitemap-url: https://thealmostengineer.com/sitemap.xml        
     
   # tests:
   #   runs-on: ubuntu-latest

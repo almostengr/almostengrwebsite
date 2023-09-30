@@ -11,6 +11,7 @@ const nwsTempElement = document.getElementById("nwsTemp");
 const showMetaDataElement = document.getElementById("showMetaData");
 const songTitleElement = document.getElementById("songTitle");
 const windChillElement = document.getElementById("windChill");
+const lastUpdatedElement = document.getElementById("lastUpdated");
 
 function requestHeaders() {
     return { "Content-Type": "application/json" };
@@ -71,7 +72,6 @@ async function getDisplayData() {
             songTitleElement.innerText = "Show is offline";
             artistElement.innerText = "Show dates and times are available below.";
             jukeboxForm.classList.add(dNone);
-            showMetaDataElement.classList.add(dNone);
         }
         else {
             songTitleElement.innerText = result.title;
@@ -79,8 +79,8 @@ async function getDisplayData() {
             nwsTempElement.innerText = result.nwstemp;
             windChillElement.innerText = result.windchill;
             cpuTempElement.innerText = result.cputemp;
+            lastUpdatedElement.innerText = result.createdTime;
             jukeboxForm.classList.remove(dNone);
-            showMetaDataElement.classList.remove(dNone);
         }
 
         songTitleElement.classList.remove(textDangerClass);

@@ -152,7 +152,7 @@ final class GetRequestHandler extends BaseRequestHandler
 {
     public function getDisplayData(): string
     {
-        $query = "select windchill, nwstemp, cputemp, title, artist from lightshowdisplay where lightshowdisplayid = (select max(lightshowdisplayid) from lightshowdisplay)";
+        $query = "select windchill, nwstemp, cputemp, title, artist, createdTime from lightshowdisplay where lightshowdisplayid = (select max(lightshowdisplayid) from lightshowdisplay)";
         $statement = $this->mysqli->prepare($query);
         if (!$statement->execute()) {
             throw new Exception("Unable to retrieve data.", 500);
@@ -165,6 +165,7 @@ final class GetRequestHandler extends BaseRequestHandler
             $json['cputemp'] = $row['cputemp'];
             $json['title'] = $row['title'];
             $json['artist'] = $row['artist'];
+            $json['createdTime'] = $row['createdTime'];
         }
 
         http_response_code(200);

@@ -12,6 +12,7 @@ const showMetaDataElement = document.getElementById("showMetaData");
 const songTitleElement = document.getElementById("songTitle");
 const windChillElement = document.getElementById("windChill");
 const lastUpdatedElement = document.getElementById("lastUpdated");
+const errorsElement = document.getElementById("errors");
 
 function requestHeaders() {
     return { "Content-Type": "application/json" };
@@ -83,11 +84,10 @@ async function getDisplayData() {
             jukeboxForm.classList.remove(dNone);
         }
 
-        songTitleElement.classList.remove(textDangerClass);
+        errorsElement.innerText = "";
     }
     catch (errorMessage) {
-        songTitleElement.innerText = errorMessage;
-        songTitleElement.classList.add(textDangerClass);
+        errorsElement.innerText = errorMessage;
     }
 }
 

@@ -15,26 +15,27 @@
             </svg>
         </div>
         <div class="col-md-10 col-sm-11">
-            <h2 class="pb-2 text-uppercase" id="stationId">RADIO OFF</h2>
-            <h3 class="pb-2 text-uppercase" id="songTitle"></h3>
-            <h4 class="pb-2 text-capitalize" id="songArtist">Dates and times are available below</h4>
-            <div id="showMetaData">
-                <h6>
-                    <strong>Outdoor Temperature:</strong>
-                    <span id="nwsTemp">Loading</span>
-                </h6>
-                <h6>
-                    <strong>Wind Chill:</strong>
-                    <span id="windChill">None</span>
-                </h6>
-                <h6>
-                    <strong>System Temperature:</strong>
-                    <span id="cpuTemp">Loading</span>
-                </h6>
-                <h6>
-                    <strong>Last Updated:</strong>
-                    <span id="lastUpdated">Loading</span>
-                </h6>
+            <h2 class="pb-2 text-uppercase text-truncate" id="songTitle">RADIO OFF</h2>
+            <h4 class="pb-2 text-capitalize text-truncate" id="songArtist">Show times are listed below</h4>
+            <div id="showMetaData" class="d-none">
+                <div class="row">
+                    <div class="col-md-6 text-warning">
+                        <strong>Outdoor:</strong>
+                        <span id="nwsTemp">Loading</span>
+                    </div>
+                    <div class="col-md-6 text-warning">
+                        <strong>Wind Chill:</strong>
+                        <span id="windChill">None</span>
+                    </div>
+                    <div class="col-md-6 text-warning">
+                        <strong>CPU(s):</strong>
+                        <span id="cpuTemp">Loading</span>
+                    </div>
+                    <div class="col-md-6 text-warning">
+                        <strong>Updated:</strong>
+                        <span id="lastUpdated">Loading</span>
+                    </div>
+                </div>
                 <h6 class="text-danger" id="errors"></h6>
             </div>
         </div>
@@ -69,7 +70,8 @@
             <option value="The Song That Doesnt End - Shari Lewis.fseq">The Song That Doesnt End - Shari Lewis</option>
             <option value="Uptown Funk - Mark Ronson.fseq">Uptown Funk - Mark Ronson</option>
             <option value="WAP - Cardi B feat Megan The Stallion.fseq">WAP - Cardi B feat Megan The Stallion</option>
-            <option value="What You Want for Christmas_Quad City DJs and K-nock.fseq">What You Want for Christmas_Quad City DJs and K-nock</option>
+            <option value="What You Want for Christmas_Quad City DJs and K-nock.fseq">What You Want for Christmas_Quad City DJs and K-nock
+            </option>
             <option value="Wizards In Winter_Trans-Siberian Orchestra.fseq">Wizards In Winter_Trans-Siberian Orchestra</option>
         </select>
     </div>

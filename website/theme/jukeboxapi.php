@@ -69,7 +69,7 @@ final class PostRequestHandler extends BaseRequestHandler
 
     public function maxUnplayedSongsPerDevice(): int
     {
-        return 3;
+        return 2;
     }
 
     public function preventSpamAndFloodRequests(): void

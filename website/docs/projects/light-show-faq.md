@@ -34,6 +34,7 @@ Yes, there are many that exist. There are also commercial light shows. See the l
 * <a href="http://www.lightinguppaxton.com/" target="_blank">Lighting Up Paxton</a>
 * <a href="https://www.lightstoabeat.com" target="_blank">Lights To A Beat</a>
 * <a href="https://sites.google.com/site/listentoourlights/home" target="_blank">Listen To Our Lights</a>
+* <a href="https://ldplights.com/" target="_blank">Lucy Depp Park Light Show</a>
 * <a href="https://www.zeemaps.com/map?group=3242152" target="_blank">Map of Light Displays</a>
 * <a href="https://mkelights.com/" target="_blank">MKE Lights</a>
 * <a href="https://www.facebook.com/LocateMGMLights" target="_blank">Montgomery Christmas Lights (MGM)</a>

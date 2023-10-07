@@ -141,7 +141,7 @@ final class PostRequestHandler extends BaseRequestHandler
         $statement = $this->mysqli->prepare("INSERT INTO songrequest (sequenceName, createdIpAddress, modifiedIpAddress) VALUES (?, ?, ?)");
         $statement->bind_param("sss", $this->sequenceName, $this->ipAddress, $this->ipAddress);
         $statement->execute();
-        
+
         $message = "Your request has been submitted. There are " . $songsAhead . " song(s) ahead of your request.";
         $response = new JsonResponse(201, $message);
         $response->toJsonEncode();
@@ -152,7 +152,7 @@ final class GetRequestHandler extends BaseRequestHandler
 {
     public function getDisplayData(): string
     {
-        $query = "select windchill, nwstemp, cputemp, title, artist, createdTime from lightshowdisplay where lightshowdisplayid = (select max(lightshowdisplayid) from lightshowdisplay)";
+        $query = "select windchill, nwstemp, cputemp, title, artist, createdtime from lightshowdisplay where lightshowdisplayid = (select max(lightshowdisplayid) from lightshowdisplay)";
         $statement = $this->mysqli->prepare($query);
         if (!$statement->execute()) {
             throw new Exception("Unable to retrieve data.", 500);
@@ -165,7 +165,9 @@ final class GetRequestHandler extends BaseRequestHandler
             $json['cputemp'] = $row['cputemp'];
             $json['title'] = $row['title'];
             $json['artist'] = $row['artist'];
-            $json['createdTime'] = $row['createdTime'];
+
+            $createdTime = explode(" ", $row['createdtime']);
+            $json['createdtime'] = $createdTime[1];
         }
 
         http_response_code(200);

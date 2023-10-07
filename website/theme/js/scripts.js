@@ -80,7 +80,7 @@ async function getDisplayData() {
             nwsTempElement.innerText = result.nwstemp;
             windChillElement.innerText = result.windchill;
             cpuTempElement.innerText = result.cputemp;
-            lastUpdatedElement.innerText = result.createdTime;
+            lastUpdatedElement.innerText = result.createdtime + " ET";
             jukeboxForm.classList.remove(D_NONE);
             showMetaDataElement.classList.remove(D_NONE);
         }

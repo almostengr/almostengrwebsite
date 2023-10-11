@@ -1,8 +1,7 @@
-const jukeboxRoute = "/jukeboxapi.php";
-const alertDangerClass = "alert-danger";
-const alertSuccessClass = "alert-success";
-const dNone = "d-none";
-const textDangerClass = "text-danger";
+const JUKEBOX_ROUTE = "/jukeboxapi.php";
+const ALERT_DANGER_CLASS = "alert-danger";
+const ALERT_SUCCESS_CLASS = "alert-success";
+const D_NONE = "d-none";
 
 const artistElement = document.getElementById("songArtist");
 const cpuTempElement = document.getElementById("cpuTemp");
@@ -11,19 +10,21 @@ const nwsTempElement = document.getElementById("nwsTemp");
 const showMetaDataElement = document.getElementById("showMetaData");
 const songTitleElement = document.getElementById("songTitle");
 const windChillElement = document.getElementById("windChill");
+const lastUpdatedElement = document.getElementById("lastUpdated");
+const errorsElement = document.getElementById("errors");
 
 function requestHeaders() {
     return { "Content-Type": "application/json" };
 }
 
 async function submitJukeboxRequest() {
-    alertBody.classList.add(dNone);
+    alertBody.classList.add(D_NONE);
 
     try {
         const formData = new FormData(jukeboxForm);
         const data = Object.fromEntries(formData);
 
-        const response = await fetch(jukeboxRoute, {
+        const response = await fetch(JUKEBOX_ROUTE, {
             method: 'POST',
             headers: requestHeaders(),
             body: JSON.stringify(data),
@@ -35,18 +36,18 @@ async function submitJukeboxRequest() {
             throw new Error(result.message);
         }
 
-        alertBody.classList.remove(alertDangerClass);
-        alertBody.classList.add(alertSuccessClass);
+        alertBody.classList.remove(ALERT_DANGER_CLASS);
+        alertBody.classList.add(ALERT_SUCCESS_CLASS);
     } catch (error) {
-        alertBody.classList.remove(alertSuccessClass);
-        alertBody.classList.add(alertDangerClass);
+        alertBody.classList.remove(ALERT_SUCCESS_CLASS);
+        alertBody.classList.add(ALERT_DANGER_CLASS);
     }
 
-    alertBody.classList.remove(dNone);
+    alertBody.classList.remove(D_NONE);
 
     const alertDisplaySeconds = 5 * 1000;
     setTimeout(() => {
-        alertBody.classList.add(dNone)
+        alertBody.classList.add(D_NONE)
     }, alertDisplaySeconds);
 }
 
@@ -56,7 +57,7 @@ async function getDisplayData() {
     }
 
     try {
-        const response = await fetch(jukeboxRoute, {
+        const response = await fetch(JUKEBOX_ROUTE, {
             method: 'GET',
             headers: requestHeaders(),
         });
@@ -68,10 +69,10 @@ async function getDisplayData() {
         let result = await response.json();
 
         if (result.title === "") {
-            songTitleElement.innerText = "Show is offline";
-            artistElement.innerText = "Show dates and times are available below.";
-            jukeboxForm.classList.add(dNone);
-            showMetaDataElement.classList.add(dNone);
+            songTitleElement.innerText = "RADIO OFF";
+            artistElement.innerText = "Show times are listed below";
+            jukeboxForm.classList.add(D_NONE);
+            showMetaDataElement.classList.add(D_NONE);
         }
         else {
             songTitleElement.innerText = result.title;
@@ -79,15 +80,15 @@ async function getDisplayData() {
             nwsTempElement.innerText = result.nwstemp;
             windChillElement.innerText = result.windchill;
             cpuTempElement.innerText = result.cputemp;
-            jukeboxForm.classList.remove(dNone);
-            showMetaDataElement.classList.remove(dNone);
+            lastUpdatedElement.innerText = result.createdtime + " ET";
+            jukeboxForm.classList.remove(D_NONE);
+            showMetaDataElement.classList.remove(D_NONE);
         }
 
-        songTitleElement.classList.remove(textDangerClass);
+        errorsElement.innerText = "";
     }
     catch (errorMessage) {
-        songTitleElement.innerText = errorMessage;
-        songTitleElement.classList.add(textDangerClass);
+        errorsElement.innerText = errorMessage;
     }
 }
 

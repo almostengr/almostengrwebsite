@@ -15,22 +15,29 @@
             </svg>
         </div>
         <div class="col-md-10 col-sm-11">
-            <h2 class="pb-2 text-uppercase" id="songTitle">Show is offline</h2>
-            <h4 class="pb-2 text-capitalize" id="songArtist">Show dates and times are available below.</h4>
-            <div id="showMetaData" class="d-none">
-                <h6>
-                    <strong>Outdoor Temperature:</strong>
-                    <span id="nwsTemp"></span>
-                </h6>
-                <h6>
+            <h2 class="pb-2 text-uppercase" id="songTitle">RADIO OFF</h2>
+            <h4 class="pb-2 text-capitalize text-truncate" id="songArtist">Show times are listed below</h4>
+        </div>
+        <div id="showMetaData" class="col-12 mt-2 d-none">
+            <div class="row">
+                <div class="col-md-6 h6 text-info">
+                    <strong>Outdoor:</strong>
+                    <span id="nwsTemp">Loading</span>
+                </div>
+                <div class="col-md-6 h6 text-info">
                     <strong>Wind Chill:</strong>
                     <span id="windChill">None</span>
-                </h6>
-                <h6>
-                    <strong>System Temperature:</strong>
+                </div>
+                <div class="col-md-6 h6 text-info">
+                    <strong>CPU(s):</strong>
                     <span id="cpuTemp">Loading</span>
-                </h6>
+                </div>
+                <div class="col-md-6 h6 text-info">
+                    <strong>Updated:</strong>
+                    <span id="lastUpdated">Loading</span>
+                </div>
             </div>
+            <h6 class="text-danger h6" id="errors"></h6>
         </div>
     </div>
 </div>
@@ -54,7 +61,6 @@
                 Kool-Aid Man</option>
             <option value="All Lights Off-None.fseq">All Lights Off-None</option>
             <option value="Baby Shark.fseq">Baby Shark</option>
-            <option value="Christmas Day-None.fseq">Christmas Day-None</option>
             <option value="Christmas Eve-Sarajevo.fseq">Christmas Eve-Sarajevo</option>
             <option value="Christmas Time Is Party Time_Luke.fseq">Christmas Time Is Party Time_Luke</option>
             <option value="December - Earth Wind and Fire.fseq">December - Earth Wind and Fire</option>
@@ -64,7 +70,8 @@
             <option value="The Song That Doesnt End - Shari Lewis.fseq">The Song That Doesnt End - Shari Lewis</option>
             <option value="Uptown Funk - Mark Ronson.fseq">Uptown Funk - Mark Ronson</option>
             <option value="WAP - Cardi B feat Megan The Stallion.fseq">WAP - Cardi B feat Megan The Stallion</option>
-            <option value="What You Want for Christmas_Quad City DJs and K-nock.fseq">What You Want for Christmas_Quad City DJs and K-nock</option>
+            <option value="What You Want for Christmas_Quad City DJs and K-nock.fseq">What You Want for Christmas_Quad City DJs and K-nock
+            </option>
             <option value="Wizards In Winter_Trans-Siberian Orchestra.fseq">Wizards In Winter_Trans-Siberian Orchestra</option>
         </select>
     </div>

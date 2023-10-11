@@ -56,10 +56,10 @@ jobs:
 
   sitemapush:
     runs-on: ubuntu-latest
-
+    needs: deploy
     steps:
     - name: Sitemap Ping to search engines
-      uses: atymic/sitemap-ping-action@1.1.0
+      uses: atymic/sitemap-ping-action@master
       with:
         sitemap-url: https://thealmostengineer.com/sitemap.xml        
     

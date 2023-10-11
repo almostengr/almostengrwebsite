@@ -46,15 +46,16 @@ select the song that you want to hear.
 * About Damn Time (Clean) - Lizzo
 * All I Really Want For Christmas - Lil Jon featuring Kool-Aid Man
 * Baby Shark
-* Christmas Eve-Sarajevo
-* Christmas Time Is Party Time_Luke
-* December - Earth Wind and Fire
-* Holidays - Meghan Trainor
+* Batman TV Theme
+* Christmas Eve-Sarajevo - Trans-Siberian Orchestra
+* Christmas Time Is Party Time - Luke
+* December - Earth, Wind, and Fire
+* Holidays - Meghan Trainor featuring Earth, Wind, and Fire
 * Nutrocker - Trans-Siberian Orchestra
 * The Polar Express - Tom Hanks
 * The Song That Doesnt End - Shari Lewis
-* Uptown Funk - Mark Ronson
-* WAP - Cardi B feat Megan The Stallion
+* Uptown Funk - Mark Ronson featuring Bruno Mars
+* WAP - Cardi B featuring Megan The Stallion
 * What You Want for Christmas - Quad City DJs and K-nock
 * Wizards In Winter - Trans-Siberian Orchestra
 

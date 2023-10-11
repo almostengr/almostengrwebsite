@@ -47,6 +47,15 @@ to remember how my channels are mapped and that all my documentation is in a sin
 | LEVEL3              | NULL      | 03    | NULL  |
 | LEVEL4              | NULL      | 04    | NULL  |
 
+
+## Indoor Tree Controller 
+
+White breadboard
+
+## Floodlight Controller
+
+Yellow breadboard
+
 ## Notes
 
 Tree1Red previously Plug 09

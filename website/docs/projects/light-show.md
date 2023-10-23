@@ -8,8 +8,8 @@ image: /images/2020 Christmas Light Show 20201211-f000000.jpg
 
 ## Show Dates and Times
 
-Show will run nightly from November 24, 2023 until December 31, 2023
-from 5:00 PM (17:00) until 10:00 PM (22:00).
+Show will run nightly from Black Friday (November 24, 2023) until New Year's Even (December 31, 2023)
+from 5:30 PM (17:30) until 10:00 PM (22:00).
 
 During times of heavy rain or severe weather the light show may be stopped to reduce the
 chance of electrical shorts occurring and for safety of individuals watching. Latest information 

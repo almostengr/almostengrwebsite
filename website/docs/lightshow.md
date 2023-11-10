@@ -1,5 +1,5 @@
 ---
-title: HP Light Show
+title: HP Light Show Jukebox
 # announcement: No announcements
 ---
 
@@ -13,3 +13,4 @@ title: HP Light Show
 * [Frequently Asked Questions](/projects/light-show-faq)
 * <a href="https://youtu.be/sbbEQJ80q0I" target="_blank">Behind The Scenes of the 2021 Christmas Light Show</a>
 * [Light Show Presentation](/light-show-presentation) provides additional information about the show.
+* <a href="https://www.youtube.com/channel/UC4xp-TEEIAL-4XtMVvfRaQw" target="_blank">Tech Talk with RHT Services</a> to go behind the scenes and learn more about the light show.

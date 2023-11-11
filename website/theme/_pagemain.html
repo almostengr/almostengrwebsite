@@ -6,10 +6,6 @@
             {% if page.meta.title %}<h1>{{ page.meta.title }}</h1>{% endif %}
             {% endif %}
   
-            {% if page and page.url == "lightshow/" %}
-            {% include "_jukebox.html" %}
-            {% endif %}
-  
             {%- block content %}
             {{ page.content }}
             {%- endblock %}

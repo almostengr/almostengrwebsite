@@ -294,7 +294,7 @@ this feature by turning on "live mode". Check your vehicle's owners manual for h
 
 ### How does the jukebox work?
 
-When you submit your request on the [LIght Show Jukebox Page](/lightshow), the request is placed in 
+When you submit your request on the [Light Show Jukebox Page](https://lightshow.thealmostengineer.com), the request is placed in 
 a queue. As a song is finishing, the light show system will check to see if a new request has been submitted. 
 If a new song has been requested, it will then prepare to and play that song.
 

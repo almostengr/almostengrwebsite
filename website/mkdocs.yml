@@ -20,7 +20,6 @@ theme:
   language: en
   static_templates:
     - 404.html
-    - jukeboxapi.php
 use_directory_urls: true
 strict: false
 

@@ -5,8 +5,8 @@ description: Information about this blog and Kenny Robinson.
 
 ## Featured Project - Musical Light Show
 
-Each year, I do a musical [Christmas light show](/lightshow). The show consists of synchronizing
-lights to music. To pick a song for the Light Show, go to the [LIght Show Jukebox Page](/lightshow).
+Each year, I do a musical Christmas light show. The show consists of synchronizing
+lights to music. To pick a song for the Light Show, go to the [Light Show Jukebox Page](https://lightshow.thealmostengineer.com).
 
 More information about the project, including song information, show times, and links to previous
 years show videos, are available on the [project page](/projects/light-show).

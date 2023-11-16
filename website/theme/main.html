@@ -86,12 +86,16 @@
         <li class="nav-item"><a class="nav-link text-light" href="/lifestyle">Living</a></li>
         <li class="nav-item"><a class="nav-link text-light" href="/projects">Projects</a></li>
         <li class="nav-item"><a class="nav-link text-light" href="/resources">Resources</a></li>
-        <li class="nav-item"><a class="nav-link text-light" href="/lightshow">Light Show</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="https://lightshow.thealmostengineer.com">Light Show</a></li>
       </ul>
+
+      {% if page and page.meta.presentation %}
+      {% else %}
       <form class="form-inline mt-2 mt-md-0" action="https://www.google.com/search" method="get">
         <input type="hidden" name="q" value="site:thealmostengineer.com">
         <input class="form-control mr-sm-2" type="text" placeholder="Search with Google" aria-label="Search" name="q">
       </form>
+      {% endif %}
     </div>
   </nav>
 
@@ -110,145 +114,20 @@
       {% endif %}
     </div>
 
-    <main role="main" class="container">
-      <div class="row">
-        <div class="col-md-8 blog-main">
-          {% if page and page.is_homepage == false %}
-          {% if page.meta.title %}<h1>{{ page.meta.title }}</h1>{% endif %}
-          {% endif %}
-
-          {% if page and page.url == "lightshow/" %}
-          {% include "_jukebox.html" %}
-          {% endif %}
-
-          {%- block content %}
-          {{ page.content }}
-          {%- endblock %}
-
-          {% if page and page.meta.category == "directorylist" %}
-          {% for nav_item in nav %}
-          {% if nav_item.children and page %}
-          {% for nav_item in nav_item.children | reverse %}
-          {% if page and page.url in nav_item.url %}
-          <h2><a href="/{{ nav_item.url }}">{{ nav_item.title }}</a></h2>
-          <div>
-            {% if nav_item.description is defined %}
-            {{ nav_item.description }}
-            {% else %}
-            {{ nav_item.content | striptags | truncate(175,false) }}
-            {% endif %}
-          </div>
-          <div class="text-muted pb-3">
-            <small>
-              <span title="{{ nav_item.content | wordcount }} words">
-                {%- set num_of_words = nav_item.content | wordcount // 200 -%}
-                {% if num_of_words <= 1 %}1 {% else %}{{ num_of_words }} {% endif %} </span> minute read
-                  {% if nav_item.meta.posted %}
-                  | posted on {{ nav_item.meta.posted }}
-                  {% endif %}
-                  {% if nav_item.meta.updated %}
-                  | updated on {{ nav_item.meta.updated }}
-                  {% endif %}
-            </small>
-          </div>
-          {% endif %}
-          {% endfor %}
-          {% endif %}
-          {% endfor %}
-          {% endif %}
-
-          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-          <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4218270188842097" data-ad-slot="5189305512" data-ad-format="auto"
-            data-full-width-responsive="true"></ins>
-          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-        </div><!-- /.blog-main -->
-
-        <aside class="col-md-4 blog-sidebar">
-          <div class="p-4 mb-3 bg-light rounded shadow">
-            <h4 class="font-italic">About Kenny</h4>
-            <p class="mb-0">
-              A software developer that builds and fixes things, and writes about the journey.
-            </p>
-          </div>
-          <div class="p-4 shadow mb-3">
-            <h4 class="font-italic">Get Into Tech</h4>
-            <p class="mb-0">
-              Are you looking to get into a tech career or role? Check out the
-              <a href="/resources">Resources</a> section for more information. Also check out my
-              <a href="https://www.youtube.com/channel/UC4xp-TEEIAL-4XtMVvfRaQw?sub_confirmation=1" target="_blank">
-                Tech Talk YouTube Channel</a> and
-              <a href="https://www.facebook.com/profile.php?id=100089303142244" target="_blank">
-                Tech Talk Facebook page</a> for video tutorials about software development, web development,
-              and working with tech.
-              </a>
-            </p>
-          </div>
-          <div class="p-4 shadow mb-3">
-            <h4 class="font-italic">Connect with Me</h4>
-            <ol class="list-unstyled">
-              <li><a target="_blank" href="https://github.com/almostengr">Github</a></li>
-              <li><a target="_blank" href="https://facebook.com/rhtservicesllc">Home Improvement (Facebook)</a></li>
-              <li><a target="_blank" href="https://www.youtube.com/c/RobinsonHandyandTechnologyServices?sub_confirmation=1">Home
-                  Improvement (YouTube)</a></li>
-              <li><a target="_blank" href="https://instagram.com/almostengr">Instagram</a></li>
-              <li><a target="_blank" href="https://stackoverflow.com/users/12875554/almostengr">StackOverflow</a></li>
-              <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100089303142244">Tech Talk (Facebook)</a></li>
-              <li><a target="_blank" href="https://www.youtube.com/channel/UC4xp-TEEIAL-4XtMVvfRaQw?sub_confirmation=1">Tech Talk
-                  (YouTube)</a></li>
-              <li><a target="_blank" href="https://www.tiktok.com/@almostengr">TikTok</a></li>
-              <li><a target="_blank" href="https://twitter.com/almostengr">Twitter</a></li>
-            </ol>
-          </div>
-          <div class="p-4 shadow mb-3">
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4218270188842097" data-ad-slot="5189305512" data-ad-format="auto"
-              data-full-width-responsive="true"></ins>
-            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-          </div>
-        </aside><!-- /.blog-sidebar -->
-      </div><!-- /.row -->
-    </main><!-- /.container -->
-    <footer class="blog-footer bg-dark text-light text-left">
-      <div class="container">
-        <div>
-          <a class="text-light pr-2" href="/technology">Technology</a>
-          <a class="text-light pr-2" href="/lifestyle">Living</a>
-          <a class="text-light pr-2" href="/projects">Projects</a>
-          <a class="text-light pr-2" href="/resources">Resources</a>
-          <a class="text-light pr-2" href="/services">Services</a>
-          <a class="text-light pr-2" href="/uses">Uses</a>
-          <a class="text-light pr-2" href="/about">About</a>
-          <a class="text-light pr-2" href="/contact">Contact</a>
-          <a class="text-light pr-2" href="/about/privacy">Privacy Policy</a>
-          <a class="text-light pr-2" href="/sitemap.xml">Sitemap</a>
-        </div>
-        <div>
-          <a class="text-light pr-2" target="_blank" href="https://facebook.com/rhtservicesllc">Home Improvement (Facebook)</a>
-          <a class="text-light pr-2" target="_blank" href="https://www.youtube.com/c/RobinsonHandyandTechnologyServices?sub_confirmation=1">Home
-            Improvement (YouTube)</a>
-          <a class="text-light pr-2" target="_blank" href="https://www.facebook.com/profile.php?id=100089303142244">Tech Talk (Facebook)</a>
-          <a class="text-light pr-2" target="_blank" href="https://www.youtube.com/channel/UC4xp-TEEIAL-4XtMVvfRaQw?sub_confirmation=1">Tech Talk
-            (YouTube)</a>
-        </div>
-        <div>
-          <a class="text-light pr-2" target="_blank" href="https://github.com/almostengr">Github</a>
-          <a class="text-light pr-2" target="_blank" href="https://instagram.com/almostengr">Instagram</a>
-          <a class="text-light pr-2" target="_blank" href="https://stackoverflow.com/users/12875554/almostengr">StackOverflow</a>
-          <a class="text-light pr-2" target="_blank" href="https://www.tiktok.com/@almostengr">TikTok</a>
-          <a class="text-light pr-2" target="_blank" href="https://twitter.com/almostengr">Twitter</a>
-        </div>
-        <div>Copyright &copy; 2010-{{ build_date_utc.strftime("%Y") }} Kenny Robinson</div>
-        <div>
-          Created by <a class="text-light" href="https://rhtservices.net" target="_blank">Robinson Handy and Technology Services</a>
-        </div>
-        <div>
-          Disclaimer: The opinions expressed here are those of mine and not representative of my employer or
-          affiliates.
-        </div>
+    {% if page and page.meta.presentation %}
+    <main class="container presentation">
+      <div style="min-height: 100vh" class="mx-5 ">
+        {{ page.content }}
       </div>
-    </footer>
+    </main>
+    {% else %}
+    {% include "_pagemain.html" %}
+    {% endif %}
+
   </div>
-  <script type="text/javascript" src="/js/scripts.js"></script>
+  <script type="text/javascript" src="/js/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/popper.min.js"></script>
+  <script type="text/javascript" src="/js/bootstrap.min.js"></script>
 </body>
 
 </html>

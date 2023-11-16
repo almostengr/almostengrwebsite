@@ -19,11 +19,15 @@ benefit, and to add additional features that users could interact with.
 
 Current functionality includes allowing visitors to select the song(s) that they would 
 like to play. This has been dubbed the Jukebox feature as you request the song, 
-and the show plays it.
+and the show plays it. Additional information, including the current weather and system temperatures 
+are displayed on the website. This makes it easier to check on the status of the system and provides 
+some additional information to the user about the show.
 
 ### Phase One
 
-I found a project called Remote Falcon that allows visitors to do some of the similar things that I wanted. 
+I found a project called 
+<a href="https://remotefalcon.com" target="_blank">Remote Falcon</a>
+that allows visitors to do some of the similar things that I wanted. 
 However, it did lack some features. 
 Remote Falcon is maintained by one of the individuals in the light show community. It is a personal project
 of his and he does not charge fees for the service.
@@ -33,8 +37,7 @@ to the existing code, but it was apprehensive about doing so.
 What I decided to do was to create my own jukebox implementation of the light show using my website. 
 My implementation of this project, was designed to have only the features that I desired
 to be included. This mainly consisted of users being able pick one of the songs that 
-that they wanted to hear and the Falcon Pi Player, play those songs in the order
-in which they were requested.
+that they wanted to hear.
 
 The first phase of this project was to set up a page on the website that could accept 
 requests from the viewers. It also included setting up an API (Application 
@@ -61,9 +64,10 @@ on Github.
 
 ## Technology
 
+* Bootstrap 4
 * C# (C-sharp)
 * CSS
-* Falcon Player
+* Falcon Pi Player
 * HTML
 * Javascript
 * Linux

@@ -866,7 +866,77 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://thealmostengineer.com/lifestyle/2023.10.24-toastmasters-word-of-the-day/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://thealmostengineer.com/lifestyle/2023.11.01-november-2023-weather/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://thealmostengineer.com/light-show-presentation/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://thealmostengineer.com/light-show-presentation/000-full/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://thealmostengineer.com/light-show-presentation/010-about/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://thealmostengineer.com/light-show-presentation/020-controlbox/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://thealmostengineer.com/light-show-presentation/030-raspberrypi/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://thealmostengineer.com/light-show-presentation/040-relays/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://thealmostengineer.com/light-show-presentation/050-architecture/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://thealmostengineer.com/light-show-presentation/060-xlights/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://thealmostengineer.com/light-show-presentation/070-falconplayer/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://thealmostengineer.com/light-show-presentation/080-extender/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://thealmostengineer.com/light-show-presentation/090-thealmostengineer/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://thealmostengineer.com/light-show-presentation/100-lightshow/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://thealmostengineer.com/light-show-presentation/110-conclusion/</loc>
          <lastmod>2023-11-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -952,11 +1022,6 @@
     </url>
     <url>
          <loc>https://thealmostengineer.com/projects/light-show-faq/</loc>
-         <lastmod>2023-11-16</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://thealmostengineer.com/projects/light-show-presentation20201220/</loc>
          <lastmod>2023-11-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -1967,6 +2032,11 @@
     </url>
     <url>
          <loc>https://thealmostengineer.com/technology/2023.07.20-rebuilding-my-home-network/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://thealmostengineer.com/technology/2023.10.24-content-creation-workflow/</loc>
          <lastmod>2023-11-16</lastmod>
          <changefreq>daily</changefreq>
     </url>

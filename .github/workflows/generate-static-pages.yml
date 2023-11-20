@@ -39,7 +39,6 @@ jobs:
 
     - run: git fetch -p
     - run: /usr/bin/python3 -m mkdocs gh-deploy -f website/mkdocs.yml -b website
-    - run: /usr/bin/python3 -m mkdocs gh-deploy -f api/mkdocs.yml -b websitelights
 
   deploy:
     runs-on: ubuntu-latest

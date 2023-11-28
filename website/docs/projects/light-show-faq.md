@@ -27,6 +27,7 @@ Yes, there are many that exist. There are also commercial light shows. See the l
 * <a href="https://www.facebook.com/Burtonfamilylightshow" target="_blank">Burton Family Light Show</a>
 * <a href="https://www.youtube.com/c/CanispaterChristmas" target="_blank">Canispater Christmas</a>
 * <a href="https://www.christmaslightfinder.com/" target="_blank">Christmas Light Finder</a>
+* <a href="https://www.christmasoncandleflower.com" target="_blank">Christmas on Candleflower</a>
 * <a href="https://www.cityofwetumpka.com/Default.asp?ID=452&pg=Decorations+Contest" target="_blank">Christmas on the Coosa (MGM)</a>
 * <a href="https://www.facebook.com/ChristmasWonderlandAlabama/" target="_blank">Christmas Wonderland</a>
 * <a href="https://www.davislights.org/" target="_blank">Davis Family Christmas Light Show</a>

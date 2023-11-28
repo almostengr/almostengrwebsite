@@ -9,7 +9,7 @@ to remember how my channels are mapped and that all my documentation is in a sin
 
 | Device/Output     | Channel   | Plug  | GPIO  |
 |-------------------|-----------|-------|-------|
-| Cane1White        | 101       | 08    | 01    |
+| Cane1White        | 118       | 08    | 01    |
 | Cane2White        | 102       | 22    | 21    |
 | Cane3White        | 103       | 12    | 24    |
 | Cane4White        | 104       | 10    | 25    |

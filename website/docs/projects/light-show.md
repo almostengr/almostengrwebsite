@@ -9,16 +9,16 @@ image: /images/2020 Christmas Light Show 20201211-f000000.jpg
 ## Pick The Song
 
 This year, we are allowing viewers to pick the song that they want to see played. To select a song,
-visit the [Light Show Jukebox Page](https://lightshow.thealmostengineer.com). Your song request will be added to the queue. Songs will be
+visit the [Light Show Jukebox Page](https://lightshow.thealmostengineer.com). 
+Your song request will be added to the queue. Songs will be
 played in the order that they have been requested.
 
 ## Fun Facts
 
-* 3600 LED lights
+* 5000 LED lights
 * Numerous hours of programming
 * Over 200 Feet of electrical wire
 * 36 channels
-* 5 8-channel Solid State Relay Boards
 * Raspberry Pi 3B+
 * 2 ESP32 microcontrollers
 
@@ -37,6 +37,8 @@ select the song that you want to hear.
 * Holidays - Meghan Trainor featuring Earth, Wind, and Fire
 * Nutrocker - Trans-Siberian Orchestra
 * Shaft - Issac Hayes (RIP Richard Roundtree)
+* Silent Night - The Tempatations
+* Spongebob Square Pants
 * The Polar Express - Tom Hanks
 * The Song That Doesnt End - Shari Lewis
 * Uptown Funk - Mark Ronson featuring Bruno Mars

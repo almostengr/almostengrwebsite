@@ -10,6 +10,7 @@ The code for my public projects can be viewed from
 Have a project that you need completed? You may request my services by contacting me through my business, 
 <a href="https://rhtservices.net" target="_blank">Robinson Handy and Technology Services</a>.
 
+* 4th of July Light Show (2024) (proposed)
 * [Christmas Light Show (2023)](/projects/light-show)
 * [Light Show Extender (2023)](/projects/light-show-extender)
 * [Video Processor Application (2023)](/projects/video-processor-application)

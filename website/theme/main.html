@@ -9,8 +9,6 @@
   <meta name="generator" content="Mkdocs">
 
   {% if page and page.meta and page.meta.title %}
-  <title>{{ page.meta.title }} - {{ config.site_name }}</title>
-  {% elif page and page.title and not page.is_homepage %}
   <title>{{ page.title | striptags }} - {{ config.site_name }}</title>
   {% else %}
   <title>{{ config.site_name }} - {{ config.site_description }}</title>
@@ -100,19 +98,9 @@
   </nav>
 
   <div class="bg-light pt-3 mb-0 pb-0">
-    <div class="container">
-      {% if page and page.is_homepage %}
-      <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark"
-        style="background-image: url(/images/jumbotron_kenny.jpg); background-size: contain; background-position: right; background-repeat: no-repeat;">
-        <div class="col-md-3 p-2 bg-dark">
-          <h1 class="display-4 font-italic font-weight-bold">The blog of Kenny Robinson</h1>
-          <p class="lead my-3 font-weight-bold">
-            Share what you know, document what does work, and learn from previous mistakes.
-          </p>
-        </div>
-      </div>
-      {% endif %}
-    </div>
+    {% if page and page.is_homepage %}
+    {% include "_jumbotron.html" %}
+    {% endif %}
 
     {% if page and page.meta.presentation %}
     <main class="container presentation">

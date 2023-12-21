@@ -13,6 +13,11 @@ visit the [Light Show Jukebox Page](https://lightshow.thealmostengineer.com).
 Your song request will be added to the queue. Songs will be
 played in the order that they have been requested.
 
+## Watch The Show
+
+You can watch the show via my Tech Talk with RHT Service 
+<a href="https://www.youtube.com/watch?v=9zVLhOTrREI" target="_blank">YouTube Channel</a>.
+
 ## Fun Facts
 
 * 5000 LED lights

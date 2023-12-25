@@ -74,5 +74,5 @@ scenes looks, visit one of the pages listed below.
 * [Falcon Pi Twitter](/projects/falcon-pi-twitter) which reads the song data from FPP and posts it to Twitter
 * [2020 Christmas Light Show Details](/projects/2020-christmas-light-show)
 * <a href="https://www.youtube.com/watch?v=5sm_wmnRPDs" target="_blank">Behind The Scenes of the 2020 Christmas Light Show</a>
-* [FAQs (Frequently Asked Questions)](/projects/light-show-faq)
+* [FAQs (Frequently Asked Questions)](https://lightshow.thealmostengineer.com/faq)
 * <a href="https://www.youtube.com/watch?v=sbbEQJ80q0I&list=PLaAJ0fv0d9WM96AeA_ERG7BR3zKr75r45" target="_blank">Watch 2021 Light Show</a>

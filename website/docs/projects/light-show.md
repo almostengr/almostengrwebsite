@@ -58,5 +58,5 @@ scenes looks, visit one of the pages listed below.
 
 * [2022 Christmas Light Show Details](/projects/2022-christmas-light-show)
 * <a href="https://www.youtube.com/watch?v=-1xZ8bZFQcM" target="_blank">Behind The Scenes of the 2022 Christmas Light Show</a>
-* [FAQs (Frequently Asked Questions)](/projects/light-show-faq)
+* [FAQs (Frequently Asked Questions)](https://lightshow.thealmostengineer.com/faq)
 * Visit <a href="https://www.youtube.com/channel/UC4xp-TEEIAL-4XtMVvfRaQw" target="_blank">Tech Talk with RHT Services</a> to go behind the scenes and learn more about the light show.

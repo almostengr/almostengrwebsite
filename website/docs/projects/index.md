@@ -29,7 +29,7 @@ Have a project that you need completed? You may request my services by contactin
 * [Ubuntu Automation Scripts (2018)](/projects/ubuntu-automation)
 * [Traffic Pi (2018)](/projects/traffic-pi)
 * [KdenLive To YouTube (2018)](/projects/kdenlive-to-youtube)
-* [Kenny Ram Dash Cam](/projects/kenny-ram-dash-cam)
+* [Kenny Ram Dash Cam (2018)](/projects/kenny-ram-dash-cam)
 * [thealmostengineer.com (2017)](/projects/the-almost-engineer)
 * [Home Assistant (2017)](/projects/home-assistant)
 * [FarmOS NWS (2017)](/projects/farmos-nws)

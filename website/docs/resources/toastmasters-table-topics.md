@@ -13,9 +13,12 @@ improve their improptu speaking skills.
 
 ## Themed Table Topics
 
-* [Miscellaneous Table Topics](#miscellaneous-table-topic-questions)
-* [School Table Topics](/lifestyle/2022.08.02-table-topics-related-to-school)
-* [Summer Table Topics](/lifestyle/2021.06.29-table-topics-questions)
+* [Homeowner Questions](/lifestyle/2023.07.25-table-topics-toastmasters)
+* [Miscellaneous Questions](#miscellaneous-table-topic-questions)
+* [Random Questions](/lifestyle/2023.10.10-toastmasters-table-topics)
+* [School Questions](/lifestyle/2022.08.02-table-topics-related-to-school)
+* [Spring Questions](/lifestyle/2023.04.17-toastmasters-table-topics)
+* [Summer Questions](/lifestyle/2021.06.29-table-topics-questions)
 
 ## Miscellaneous Table Topic Questions
 

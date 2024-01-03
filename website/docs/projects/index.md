@@ -10,9 +10,9 @@ The code for my public projects can be viewed from
 Have a project that you need completed? You may request my services by contacting me through my business, 
 <a href="https://rhtservices.net" target="_blank">Robinson Handy and Technology Services</a>.
 
-* Christmas Light Show (2024) (proposed)
 * 4th of July Light Show (2024) (proposed)
-* [Christmas Light Show (2023)](/projects/light-show)
+* [Christmas Light Show (2024)](/projects/light-show)
+* [Christmas Light Show (2023)](/projects/2023-christmas-light-show)
 * [Light Show Extender (2023)](/projects/light-show-extender)
 * [Video Processor Application (2023)](/projects/video-processor-application)
 * [Christmas Light Show (2022)](/projects/2022-christmas-light-show)
@@ -29,7 +29,7 @@ Have a project that you need completed? You may request my services by contactin
 * [Ubuntu Automation Scripts (2018)](/projects/ubuntu-automation)
 * [Traffic Pi (2018)](/projects/traffic-pi)
 * [KdenLive To YouTube (2018)](/projects/kdenlive-to-youtube)
-* [Kenny Ram Dash Cam](/projects/kenny-ram-dash-cam)
+* [Kenny Ram Dash Cam (2018)](/projects/kenny-ram-dash-cam)
 * [thealmostengineer.com (2017)](/projects/the-almost-engineer)
 * [Home Assistant (2017)](/projects/home-assistant)
 * [FarmOS NWS (2017)](/projects/farmos-nws)

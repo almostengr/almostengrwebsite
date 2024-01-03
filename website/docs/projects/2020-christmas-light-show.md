@@ -90,4 +90,4 @@ scenes looks, visit one of the pages listed below.
 * [Building A Christmas Light Show Control Box (Presentation 2020-12-20)](/light-show-presentation)
 * [Behind The Scenes of the 2020 Christmas Light Show](https://www.youtube.com/watch?v=5sm_wmnRPDs)
 * [2019 Christmas Light Show Details](/projects/2019-christmas-light-show)
-* [FAQs (Frequently Asked Questions)](/projects/light-show-faq)
+* [FAQs (Frequently Asked Questions)](https://lightshow.thealmostengineer.com/faq)

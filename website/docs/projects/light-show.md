@@ -27,6 +27,57 @@ You can watch the show via my Tech Talk with RHT Service
 * Raspberry Pi 3B+
 * 2 ESP32 microcontrollers
 
+### Songs Requested
+
+Below is a list of the number of times that each song was requested by viewers of the show.
+
+* 20th Century Fox - 1
+* About Damn Time (Clean) - Lizzo - 1
+* All I Really Want For Christmas-Lil Jon featuring Kool-Aid Man - 6
+* Baby Shark - 5
+* Christmas Time Is Party Time_Luke - 5
+* December - Earth Wind and Fire - 2
+* Disco Santa - Holiday Express - 3
+* Holidays - Meghan Trainor - 2
+* Nutrocker - Trans-Siberian Orchestra - 2
+* Shaft - Issac Hayes - 4
+* Spongebob Square Pants - 5
+* The Polar Express-Tom Hanks - 2
+* The Song That Doesnt End - Shari Lewis - 1
+* Uptown Funk - Mark Ronson - 3
+* WAP - Cardi B feat Megan The Stallion - 5
+* What You Want for Christmas_Quad City DJs and K-nock - 6
+* Wizards In Winter_Trans-Siberian Orchestra - 2
+
+#### Total Requests - 55
+
+### Songs Played
+
+Below is a list of the number of times each song was played.
+
+* 20th Century Fox Theme - 1
+* About Damn Time (Clean) - 2
+* All I Really Want For Christmas - 229
+* Baby Shark - 504
+* Christmas Eve/Sarajevo - 4
+* Christmas Time Is Party Time - 5
+* December - 499
+* Disco Santa (Santa Clause/N.O.E.L.) - 6
+* Holidays - 736
+* HPL Startup - 5930
+* Nutrocker - 498
+* Shaft - 92
+* Show Information - 2841
+* Spongebob Square pants - 8
+* The Polar Express - 185
+* The Song That Doesn't End - 1
+* Uptown Funk - 184
+* WAP (feat. Megan Thee Stallion) - 6
+* What You Want for Christmas - 7
+* Wizards In Winter - 2
+
+#### Total Plays - 11740
+
 ## Song List
 
 Below is the full list of songs for this years' show. Visit the [Jukebox page](https://lightshow.thealmostengineer.com/) to

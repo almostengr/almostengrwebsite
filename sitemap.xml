@@ -6,11 +6,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://thealmostengineer.com/christmas23/</loc>
-         <lastmod>2024-01-03</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://thealmostengineer.com/contact/</loc>
          <lastmod>2024-01-03</lastmod>
          <changefreq>daily</changefreq>
@@ -986,6 +981,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://thealmostengineer.com/projects/2023-christmas-light-show/</loc>
+         <lastmod>2024-01-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://thealmostengineer.com/projects/black-box-operations/</loc>
          <lastmod>2024-01-03</lastmod>
          <changefreq>daily</changefreq>
@@ -1042,11 +1042,6 @@
     </url>
     <url>
          <loc>https://thealmostengineer.com/projects/light-show-extender/</loc>
-         <lastmod>2024-01-03</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://thealmostengineer.com/projects/light-show-faq/</loc>
          <lastmod>2024-01-03</lastmod>
          <changefreq>daily</changefreq>
     </url>

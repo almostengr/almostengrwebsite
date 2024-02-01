@@ -1,8 +1,8 @@
 name: Get Automated Content
 
-on:
-  schedule:
-    - cron: '15 15 * * *'
+# on:
+#   schedule:
+#     - cron: '15 15 * * *'
 
 jobs:
   getcontent:

@@ -8,9 +8,9 @@ jobs:
   getcontent:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@master
 
-    - uses: actions/setup-dotnet@v3
+    - uses: actions/setup-dotnet@master
       name: Setup .NET Core
       with:
         dotnet-version: '6.x' # SDK Version to use; x will use the latest version of the specified channel

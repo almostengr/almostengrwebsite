@@ -3,7 +3,7 @@ title: The Blog of Kenny Robinson
 description: Information about this blog and Kenny Robinson.
 ---
 
-## Musical Light Show
+## Musical Light Show - Featured Project
 
 Each year, I do a musical Christmas light show. The show consists of synchronizing
 lights to music. To pick a song for the Light Show, go to the [Light Show website](https://lightshow.thealmostengineer.com).
@@ -33,7 +33,7 @@ that offer valuable resources and content. Topics include
 
 ## Lifestyle Blog
 
-Here I share other aspects of life, including by hobbies, and other thoughts that are not related to tech.
+Here I share other aspects of life, including my hobbies, and other thoughts that are not related to tech.
 [Read the Lifestyle Blog](/lifestyle)
 
 ## Projects

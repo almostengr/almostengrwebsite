@@ -15,7 +15,7 @@ played in the order that they have been requested.
 
 ## Song List
 
-Songs for this year's light show has not been selected at this time. Please check back at a later date
+Songs for this year's light show have not been selected at this time. Please check back at a later date
 for this information.
 
 ## Other Information

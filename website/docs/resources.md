@@ -1,5 +1,5 @@
 ---
-title: Resources
+title: Resources to Get Into Tech
 description: Tech and non-tech resources that can provide additional information or support
 keywords: black in tech, black tech twitter, tech resources, online learning
 ---
@@ -16,14 +16,14 @@ Additional resources and suggestions can be added to this list by messaging me o
 
 ## Categories
 
-* [.NET (Core) CLI Cheatsheet](/resources/dotnet-core-cheatsheet)
-* [Black In Tech](/resources/black-in-tech)
-* [Getting Into Tech](/resources/getting-into-tech)
+* [.NET (Core) CLI Cheatsheet](/technology/dotnet-core-cheatsheet)
+* [Black In Tech](/technology/2021.11.16-black-in-tech)
+* [Getting Into Tech](/technology/2022.04.08-getting-into-tech)
 * [Getting Tech Job With No Experience](/technology/2021.05.06-tech-job-with-no-experience)
-* [Git Cheatsheet](/resources/git-cheatsheet)
-* [Linux](/resources/linux)
+* [Git Cheatsheet](/technology/2022.03.04-git-cheatsheet)
+* [Linux](/technology/2021.11.26-linux-resources)
 * [Linux Cheatsheet](/technology/2020.03.01-linux-training-session)
-* [Non-Tech Resources](/resources/non-tech-resources)
-* [Tech Interview Tips](/resources/tech-interview-tips)
-* [Toastmasters Table Topics](/resources/toastmasters-table-topics)
-* [Web and Software Development](/resources/web-and-software-development)
+* [Non-Tech Resources](/lifestyle/2022.07.08-non-tech-resources)
+* [Tech Interview Tips](/technology/2022.04.11-tech-interview-tips)
+* [Toastmasters Table Topics](/lifestyle/2022.09.08-toastmasters-table-topics)
+* [Web and Software Development](/technology/2021.11.26-web-and-software-development)

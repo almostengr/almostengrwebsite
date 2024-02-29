@@ -1,22 +1,22 @@
-name: Get Automated Content
+# name: Get Automated Content
 
 # on:
 #   schedule:
 #     - cron: '15 15 * * *'
 
-jobs:
-  getcontent:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@master
+# jobs:
+#   getcontent:
+#     runs-on: ubuntu-latest
+#     steps:
+#     - uses: actions/checkout@master
 
-    - uses: actions/setup-dotnet@master
-      name: Setup .NET Core
-      with:
-        dotnet-version: '6.x' # SDK Version to use; x will use the latest version of the specified channel
+#     - uses: actions/setup-dotnet@master
+#       name: Setup .NET Core
+#       with:
+#         dotnet-version: '6.x' # SDK Version to use; x will use the latest version of the specified channel
     
-    - name: Get Weather Data
-      run: dotnet run --project source/Almostengr.AlmostengrWebsite.GardenWeather/Almostengr.AlmostengrWebsite.GardenWeather.csproj
+#     - name: Get Weather Data
+#       run: dotnet run --project source/Almostengr.AlmostengrWebsite.GardenWeather/Almostengr.AlmostengrWebsite.GardenWeather.csproj
 
-    - name: Run commit on files
-      run: bash scripts/ghcommit.sh
+#     - name: Run commit on files
+#       run: bash scripts/ghcommit.sh

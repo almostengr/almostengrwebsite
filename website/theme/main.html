@@ -8,7 +8,7 @@
   <meta name="author" content="{{ config.site_author }}">
   <meta name="generator" content="Mkdocs">
 
-  {% if page and page.meta and page.meta.title %}
+  {% if page and page.title %}
   <title>{{ page.title | striptags }} - {{ config.site_name }}</title>
   {% else %}
   <title>{{ config.site_name }} - {{ config.site_description }}</title>

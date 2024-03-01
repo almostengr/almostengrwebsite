@@ -26,9 +26,9 @@ and other things technology here.
 
 What's better than learning to advance your career? Learning for free! In this section, a collection of websites
 that offer valuable resources and content. Topics include
-[Linux](/resources#linux),
-[software development](/resources#web-and-software-development),
-[getting a tech career](/resources/getting-into-tech), and more!
+[Linux](/resources),
+[software development](/resources),
+[getting a tech career](/resources/2022.04.08-getting-into-tech), and more!
 [Go to Resources page](/resources)
 
 ## Lifestyle Blog

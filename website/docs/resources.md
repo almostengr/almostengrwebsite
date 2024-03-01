@@ -17,7 +17,7 @@ Additional resources and suggestions can be added to this list by messaging me o
 ## Categories
 
 * [.NET (Core) CLI Cheatsheet](/technology/dotnet-core-cheatsheet)
-* [Black In Tech](/technology/2021.11.16-black-in-tech)
+* [Black In Tech](/technology/2021.11.26-black-in-tech)
 * [Getting Into Tech](/technology/2022.04.08-getting-into-tech)
 * [Getting Tech Job With No Experience](/technology/2021.05.06-tech-job-with-no-experience)
 * [Git Cheatsheet](/technology/2022.03.04-git-cheatsheet)

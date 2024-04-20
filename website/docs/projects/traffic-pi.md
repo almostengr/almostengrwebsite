@@ -213,8 +213,6 @@ others significantly.
     * To make this more challenging, “Light on” and “Light off” can be two separate commands.
 
 
-----
-----
 
 ## Technical Information
 

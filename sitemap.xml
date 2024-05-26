@@ -1096,6 +1096,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://thealmostengineer.com/projects/landscape-lighting/</loc>
+         <lastmod>2024-05-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://thealmostengineer.com/projects/light-show-channel-mapping/</loc>
          <lastmod>2024-05-26</lastmod>
          <changefreq>daily</changefreq>
@@ -1781,6 +1786,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://thealmostengineer.com/technology/2021.01.01-dotnet-core-cheatsheet/</loc>
+         <lastmod>2024-05-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://thealmostengineer.com/technology/2021.02.23-engineers-week-2021/</loc>
          <lastmod>2024-05-26</lastmod>
          <changefreq>daily</changefreq>
@@ -2136,7 +2146,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://thealmostengineer.com/technology/dotnet-core-cheatsheet/</loc>
+         <loc>https://thealmostengineer.com/technology/2024.05.25-black-in-tech/</loc>
          <lastmod>2024-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>

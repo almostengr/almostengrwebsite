@@ -1,0 +1,31 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "mkdocs serve",
+            "command": "mkdocs",
+            "type": "shell",
+            "args": [
+                "serve",
+                "--watch-theme",
+                "-f",
+                "website/mkdocs.yml"
+            ],
+            "group": "none"
+        },
+        {
+            "label": "Deploy to staging",
+            "command" : "mkdocs",
+            "type": "shell",
+            "args": [
+                "gh-deploy",
+                "-b",
+                "staging",
+                "-f",
+                "website/mkdocs.yml"
+            ],
+        }
+    ],
+}

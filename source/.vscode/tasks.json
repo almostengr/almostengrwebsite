@@ -19,29 +19,5 @@
             },
             "problemMatcher": "$msCompile"
         },
-        {
-            "label": "mkdocs serve",
-            "command": "mkdocs",
-            "type": "shell",
-            "args": [
-                "serve",
-                "--watch-theme",
-                "-f",
-                "website/mkdocs.yml"
-            ],
-            "group": "none"
-        },
-        {
-            "label": "Deploy to staging",
-            "command" : "mkdocs",
-            "type": "shell",
-            "args": [
-                "gh-deploy",
-                "-b",
-                "staging",
-                "-f",
-                "website/mkdocs.yml"
-            ],
-        }
     ],
 }

@@ -26,7 +26,7 @@ jobs:
     - name: Setup Python
       uses: actions/setup-python@master
       with:
-        python-version: 3.7
+        python-version: 3.13
     - run: /usr/bin/python3 -m pip install --upgrade pip
     - run: /usr/bin/python3 -m pip install --upgrade setuptools
     - run: /usr/bin/python3 -m pip install mkdocs==1.1.2

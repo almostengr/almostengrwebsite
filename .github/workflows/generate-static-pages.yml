@@ -6,36 +6,20 @@ on:
       - 'main'
 
 jobs:
-  # spelling:
-  #   name: Check Spelling
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #   - uses: actions/checkout@v2
-  #   - name: Remove duplicates from and sort wordlist
-  #     run: (/bin/cat .wordlist.txt | /usr/bin/sort | /usr/bin/uniq) > .wordlist.tmp
-  #   - name: Moving cleaned wordlist
-  #     run: /bin/mv .wordlist.tmp .wordlist.txt
-  #   - uses: rojopolis/spellcheck-github-actions@0.5.0
-  #     name: Spellcheck
-
   build:
     name: Build
     runs-on: ubuntu-latest
     
     steps:
-    - name: Setup Python
-      uses: actions/setup-python@master
-      with:
-        python-version: 3.13
-    - run: /usr/bin/python3 -m pip install --upgrade pip
-    - run: /usr/bin/python3 -m pip install --upgrade setuptools
-    - run: /usr/bin/python3 -m pip install mkdocs==1.1.2
-    - run: /usr/bin/python3 -m pip install --upgrade mkdocs-minify-plugin
-
     - name: Check out main branch
       uses: actions/checkout@master
       with:
         ref: main
+        
+    # - run: /usr/bin/python3 -m pip install --upgrade pip
+    - run: /usr/bin/python3 -m pip install --upgrade setuptools
+    - run: /usr/bin/python3 -m pip install --upgrade mkdocs
+    - run: /usr/bin/python3 -m pip install --upgrade mkdocs-minify-plugin
 
     - run: git fetch -p
     - run: /usr/bin/python3 -m mkdocs gh-deploy -f website/mkdocs.yml -b website

@@ -13,10 +13,44 @@ visit the [Light Show Jukebox Page](https://lightshow.thealmostengineer.com).
 Your song request will be added to the queue. Songs will be
 played in the order that they have been requested.
 
+
 ## Song List
 
-Songs for this year's light show have not been selected at this time. Please check back at a later date
-for this information.
+Below is the full list of songs for this years' show. Visit the [Jukebox page](https://lightshow.thealmostengineer.com/) to
+select the song that you want to hear.
+
+* 20th Century Fox
+* About Damn Time (Clean) - Lizzo
+* All I Really Want For Christmas - Lil Jon featuring Kool-Aid Man
+* All I Want For Christmas Is You - Mariah Carey
+* Baby Shark
+* Bangarang - Skrillex
+* Christmas Eve-Sarajevo - Trans-Siberian Orchestra
+* Christmas Time Is Party Time - Luke
+* December - Earth, Wind, and Fire
+* Disco Santa - Holiday Express
+* Hey Ya! - Outkast
+* Holidays - Meghan Trainor featuring Earth, Wind, and Fire
+* Nutrocker - Trans-Siberian Orchestra
+* Shaft - Issac Hayes (RIP Richard Roundtree)
+* Silent Night - The Tempatations
+* Spongebob Square Pants
+* The Polar Express - Tom Hanks
+* The Song That Doesnt End - Shari Lewis
+* Uptown Funk - Mark Ronson featuring Bruno Mars
+* WAP - Cardi B featuring Megan The Stallion
+* What You Want for Christmas - Quad City DJs and K-nock
+* Wizards In Winter - Trans-Siberian Orchestra
+
+
+## Fun Facts
+
+* Over 7,000 LED lights
+* Numerous hours of programming
+* Over 200 Feet of electrical wire
+* 42 channels
+* Raspberry Pi 3B+
+* 4 ESP32 microcontrollers
 
 ## Other Information
 

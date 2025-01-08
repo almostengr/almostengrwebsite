@@ -1,5 +1,5 @@
 ---
-title: Light Show Guard
+title: Light Show Pulse
 ---
 
 ## Problem
@@ -22,7 +22,7 @@ this software solution. Thus this project was born.
 ### System Architecture
 
 The primary light show controller provides a status of what it is doing to the website. 
-The Light Show Guard website receives said status and determines what the controller should do next, based 
+The Light Show Pulse website receives said status and determines what the controller should do next, based 
 upon the user selected options.
 If there is rain, severe, or other adverse weather conditions 
 where the show is located, the user will be notified of this when their show is running.

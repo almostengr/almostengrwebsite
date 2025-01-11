@@ -2,9 +2,12 @@
 title: "@almostengr Links"
 ---
 
-* [2023 Christmas Light Show (Replay)](https://www.youtube.com/watch?v=9zVLhOTrREI&pp=ygUmMjAyMyBjaHJpc210YXMgbGlnaHQgc2hvdyByaHQgc2VydmljZXM%3D)
-* [Tech Talk Videos](https://www.youtube.com/channel/UC4xp-TEEIAL-4XtMVvfRaQw?sub_confirmation=1)
-* [Home Improvement Videos](https://www.youtube.com/c/RobinsonHandyandTechnologyServices?sub_confirmation=1)
+* <a href="https://www.fanbase.app/@almostengr" target="_blank">Fanbase</a>
+* <a href="https://instagram.com/almostengr" target="_blank">Instagram</a>
+* <a href="https://tiktok.com/@almostengr" target="_blank">TikTok</a>
+* <a href="https://twitter.com/almostengr" target="_blank">Twitter</a>
+* <a href="https://www.youtube.com/c/robinsonhandyandtechnologyservices?sub_confirmation=1" target="_blank">Handyman YouTube Channel</a>
+* <a href="https://www.youtube.com/channel/UC4xp-TEEIAL-4XtMVvfRaQw?sub_confirmation=1" target="_blank">Tech Talk YouTube Channel</a>
 * [Visit My Blog](/)
 
 ## Get Into Tech

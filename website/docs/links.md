@@ -2,6 +2,12 @@
 title: "@almostengr Links"
 ---
 
+## Online Courses
+
+* <a href="https://forums.rhtservices.net/forumdisplay.php?fid=31" target="_blank">Intro To Softare Development, 2025 Spring</a>
+
+## Connect With Me
+
 * <a href="https://bluesky.com/almostengr.bsky.social" target="_blank">Blue Sky</a>
 * <a href="https://www.fanbase.app/@almostengr" target="_blank">Fanbase</a>
 * <a href="https://instagram.com/almostengr" target="_blank">Instagram</a>

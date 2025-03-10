@@ -35,5 +35,5 @@ appropriate colors for the holiday, special weekend, or special month.
 
 ## Source Code
 
-I created a separate post about the [holiday lighting script](/technology/2024.04.18-holiday-lighting-script-for-fpp)
+I created a separate post about the [holiday lighting script](/blog/2024.04.18-holiday-lighting-script-for-fpp)
 that I use to start the sequences for the special lighting.

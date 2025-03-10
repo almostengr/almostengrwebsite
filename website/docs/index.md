@@ -13,14 +13,15 @@ lights that are synchronized to music.
 More information about the project, including song information, show times, and links to previous
 years show videos, are available on the [project page](/projects/light-show).
 
-## Technology Blog
+## My Blog
 
 A programmer that does not talk (or in this case write) about technology probably is not a good programmer.
 I share
-[my code snippets](/technology/2022.09.17-length-of-shell-variable/),
-[difficulties with coding](/technology/2021.08.12-jquery-validator-with-parameter/),
+[my code snippets](/blog/2022.09.17-length-of-shell-variable/),
+[difficulties with coding](/blog/2021.08.12-jquery-validator-with-parameter/),
 and other things technology here.
-[Read the Tech Blog](/technology)
+Here I share other aspects of life, including my hobbies, and other thoughts that are not related to tech.
+[Read the Blog](/blog)
 
 ## Tech Career Resources
 
@@ -30,11 +31,6 @@ that offer valuable resources and content. Topics include
 [software development](/resources),
 [getting a tech career](/resources/2022.04.08-getting-into-tech), and more!
 [Go to Resources page](/resources)
-
-## Lifestyle Blog
-
-Here I share other aspects of life, including my hobbies, and other thoughts that are not related to tech.
-[Read the Lifestyle Blog](/lifestyle)
 
 ## Projects
 

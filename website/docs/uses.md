@@ -12,7 +12,7 @@ image: /images/2020.02.01-uses-entry.jpg
 Browsing around on GitHub, I found that developers create "uses" (or /uses) pages that
 detail the tools that they use do their work. Below are a list of tools that are used to get
 the job done. For more detail about what is a Uses page and how you can create your own,
-you can check out [the blog post](/technology/2020.02.01-developer-uses-page) about this topic.
+you can check out [the blog post](/blog/2020.02.01-developer-uses-page) about this topic.
 
 ## Handyman Tools
 

@@ -19,6 +19,6 @@ title: "@almostengr Links"
 
 ## Get Into Tech
 
-* [Getting Into Tech](/technology/2022.04.08-getting-into-tech)
-* [Getting Tech Job With No Experience](/technology/2021.05.06-tech-job-with-no-experience)
+* [Getting Into Tech](/blog/2022.04.08-getting-into-tech)
+* [Getting Tech Job With No Experience](/blog/2021.05.06-tech-job-with-no-experience)
 * [Get Into Tech - All Resources](/resources)

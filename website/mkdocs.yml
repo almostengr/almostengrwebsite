@@ -25,5 +25,5 @@ use_directory_urls: true
 strict: false
 
 plugins:
-  - minify:
-      minify_html: true
+  # - minify:
+  #     minify_html: true

@@ -1,11 +1,266 @@
-<!doctype html><html lang=en> <head><meta charset=utf-8><meta name=viewport content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name=description content="The blog of Kenny Robinson"><meta name=author content="Kenny Robinson, @almostengr"><meta name=generator content=Mkdocs><title>Reverse Sort for MkDocs - The Almost Engineer</title><link href=/assets/dist/css/bootstrap.min.css rel=stylesheet><link href=/css/blog.min.css rel=stylesheet><meta property=og:type content=website><meta property=og:locale content=en_US><meta property=og:site_name content="The Almost Engineer"><meta name=twitter:card content=summary><meta name=twitter:site content><meta name=twitter:creator content><meta name=description content="The blog of Kenny Robinson"><meta property=og:description content="The blog of Kenny Robinson"><meta name=twitter:description content="The blog of Kenny Robinson"><meta name=robots content="index, follow"><link href=https://thealmostengineer.com/blog/2020.07.15-reverse-sort-for-mkdocs/ rel=canonical><meta content=https://thealmostengineer.com/blog/2020.07.15-reverse-sort-for-mkdocs/ property=og:url><meta content=https://thealmostengineer.com/blog/2020.07.15-reverse-sort-for-mkdocs/ property=twitter:url><meta name=author content="Kenny Robinson"><!-- Global site tag (gtag.js) - Google Analytics --><script async src="//www.googletagmanager.com/gtag/js?id="></script><script async>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'UA-64643711-1');</script></head> <body class=bg-dark> <nav class="navbar navbar-expand-md navbar-dark bg-dark pb-2"> <a href=/ class=navbar-brand>The Almost Engineer</a> <button class=navbar-toggler type=button data-toggle=collapse data-target=#navbarCollapse aria-controls=navbarCollapse aria-expanded=false aria-label="Toggle navigation"> <span class=navbar-toggler-icon></span> </button> <div class="collapse navbar-collapse" id=navbarCollapse> <ul class="navbar-nav mr-auto"> <li class=nav-item><a class="nav-link text-light" href=/blog>Blog</a></li> <li class=nav-item><a class="nav-link text-light" href=/projects>Projects</a></li> <li class=nav-item><a class="nav-link text-light" href=/resources>Get Into Tech</a></li> <li class=nav-item><a class="nav-link text-light" href=https://lightshow.thealmostengineer.com>Light Show</a></li> </ul> <form class="form-inline mt-2 mt-md-0" action=https://www.google.com/search method=get> <input type=hidden name=q value=site:thealmostengineer.com> <input class="form-control mr-sm-2" type=text placeholder="Search with Google" aria-label=Search name=q> </form> </div> </nav> <div class="bg-light pt-3 mb-0 pb-0"> <main role=main class=container> <div class=row> <div class="col-md-8 blog-main"> <h1>Reverse Sort for MkDocs</h1> <h2 id=background>Background</h2> <p>MkDocs doesn't have much information about how to do modify or create templates on its websites. As a result, I had to search around on the internet to figure out how to create templates for my website which is made with MkDocs.</p> <p>After doing some digging on other websites, I found that <a href=https://mkdocs.org target=_blank>MkDocs</a> uses <a href=https://jinja.palletsprojects.com target=_blank>Jinja</a> for the templating engine. From there, I was able to find some of the documentation on how to use the values and variables in a template.</p> <p>Since I was creating a website with a blog, I wanted to sort the content by the most recent first. The problem with this is that using the <code>for</code> function, it would sort the content from oldest to newest. Again, I could not figure out how to reverse the order as this was not documented in the Jinja documentation where I could find it nor was it on Stack Overflow.</p> <p>Out on a limb, I typed the below and believe it or not, it sorted the content in reverse order just like how I wanted it to.</p> <pre><code class=language-python>{% for nav_item in nav | reverse %}
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="The blog of Kenny Robinson">
+  <meta name="author" content="Kenny Robinson, @almostengr">
+  <meta name="generator" content="Mkdocs">
+
+  
+  <title>Reverse Sort for MkDocs - The Almost Engineer</title>
+  
+
+  <link href="/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/blog.min.css" rel="stylesheet">
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="The Almost Engineer" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="" />
+  <meta name="twitter:creator" content="" />
+
+  
+  <meta name="description" content="The blog of Kenny Robinson">
+  <meta property="og:description" content="The blog of Kenny Robinson" />
+  <meta name="twitter:description" content="The blog of Kenny Robinson" />
+  
+
+  
+
+  
+
+  
+
+  
+  <meta name="robots" content="index, follow" />
+  
+
+  
+  <link rel="canonical" href="https://thealmostengineer.com/blog/2020.07.15-reverse-sort-for-mkdocs/">
+  <meta property="og:url" content="https://thealmostengineer.com/blog/2020.07.15-reverse-sort-for-mkdocs/" />
+  <meta property="twitter:url" content="https://thealmostengineer.com/blog/2020.07.15-reverse-sort-for-mkdocs/" />
+  
+
+  
+  <meta name="author" content="Kenny Robinson">
+  
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="//www.googletagmanager.com/gtag/js?id="></script>
+  <script
+    async>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'UA-64643711-1');</script>
+</head>
+
+<body class="bg-dark">
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark pb-2">
+    <a class="navbar-brand" href="/">The Almost Engineer</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a class="nav-link text-light" href="/blog">Blog</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="/projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="/resources">Get Into Tech</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="https://lightshow.thealmostengineer.com">Light Show</a></li>
+      </ul>
+
+      
+      <form class="form-inline mt-2 mt-md-0" action="https://www.google.com/search" method="get">
+        <input type="hidden" name="q" value="site:thealmostengineer.com">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search with Google" aria-label="Search" name="q">
+      </form>
+      
+    </div>
+  </nav>
+
+  <div class="bg-light pt-3 mb-0 pb-0">
+    
+
+    
+    <main role="main" class="container">
+  <div class="row">
+    <div class="col-md-8 blog-main">
+      
+      <h1>Reverse Sort for MkDocs</h1>
+      
+      <h2 id="background">Background</h2>
+<p>MkDocs doesn't have much information about how to do modify or create templates on its websites. As a
+result, I had to search around on the internet to figure out how to create templates for my website
+which is made with MkDocs.</p>
+<p>After doing some digging on other websites, I found that
+<a href="https://mkdocs.org" target="_blank">MkDocs</a> uses
+<a href="https://jinja.palletsprojects.com" target="_blank">Jinja</a> for the templating engine.
+From there, I was able to find some of the documentation on how to use the values and variables
+in a template.</p>
+<p>Since I was creating a website with a blog, I wanted to sort the content by the most recent first.
+The problem with this is that using the <code>for</code> function, it would sort the content from oldest to
+newest. Again, I could not figure out how to reverse the order as this was not documented in the Jinja
+documentation where I could find it nor was it on Stack Overflow.</p>
+<p>Out on a limb, I typed the below and believe it or not, it sorted the content in reverse order
+just like how I wanted it to.</p>
+<pre><code class="language-python">{% for nav_item in nav | reverse %}
 /// whatever you want to loop over
 {% endfor %}
-</code></pre> <h2 id=the-break-down>The Break Down</h2> <p>Let's break down the parts of the code.</p> <h3 id=start-the-loop>Start The Loop</h3> <pre><code class=language-python>{% for
-</code></pre> <p>This denotes the beginning of the for loop. The space between the parenthesis and the word "for" is required. Otherwise the command will not be intepreted as you expect and thus not work.</p> <h3 id=iterator-variable>Iterator Variable</h3> <pre><code class=language-python>nav_item
-</code></pre> <p>In this example, the "nav_item" is the name of the variable that is used within the for loop.</p> <p>For those of you that are familiar with writing foreach loops in Java or C#, "i" is commonly used for this same purpose.</p> <pre><code class=language-csharp>foreach(item in collection){
+</code></pre>
+<h2 id="the-break-down">The Break Down</h2>
+<p>Let's break down the parts of the code.</p>
+<h3 id="start-the-loop">Start The Loop</h3>
+<pre><code class="language-python">{% for
+</code></pre>
+<p>This denotes the beginning of the for loop. The space between the parenthesis and the word "for" is
+required. Otherwise the command will not be intepreted as you expect and thus not work.</p>
+<h3 id="iterator-variable">Iterator Variable</h3>
+<pre><code class="language-python">nav_item
+</code></pre>
+<p>In this example, the "nav_item" is the name of the variable that is used within the for loop.</p>
+<p>For those of you that are familiar with writing foreach loops in Java or C#, "i" is commonly used for this
+same purpose.</p>
+<pre><code class="language-csharp">foreach(item in collection){
     // do something
 }
-</code></pre> <p>"item" in the example above would be the same as "nav_item" in Jinja example.</p> <h3 id=collection-or-array>Collection or Array</h3> <p>"nav" is the collection or array of items that will be looped over one by one. This variable can be changed to loop over other items that are available, such as page variables or configuration variables.</p> <h3 id=reverse-the-items>Reverse The Items</h3> <pre><code class=language-python>| reverse
-</code></pre> <p>This part of the command, will sort the items in the collection or array in reverse. If your items are sorted by date, then the most recent date would be first. If your items are sorted by alphabet, then the end of the alphabet ("Z") would be first.</p> <h3 id=close-the-loop>Close The Loop</h3> <pre><code class=language-python>{% endfor %}
-</code></pre> <p>This closes the end of the for loop.</p> <h2 id=conclusion>Conclusion</h2> <p>Hopefully this helps you if you encounter the same problem that I did. </p> <div class="text-muted py-2"> <span>Updated: 2020-07-15 |</span> <span>Posted: 2020-07-15</span> </div> <div class="text-muted pb-2"> <div>Author: Kenny Robinson</div> </div> <script async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script> <ins class=adsbygoogle style=display:block data-ad-client=ca-pub-4218270188842097 data-ad-slot=5189305512 data-ad-format=auto data-full-width-responsive=true></ins> <script>(adsbygoogle = window.adsbygoogle || []).push({});</script> </div><!-- /.blog-main --> <aside class="col-md-4 blog-sidebar"> <div class="p-4 mb-3 bg-light rounded shadow"> <h4 class=font-italic>About Kenny</h4> <p class=mb-0> A software developer that builds and fixes things, and writes about the journey. </p> </div> <div class="p-4 shadow mb-3"> <h4 class=font-italic>Get Into Tech</h4> <p class=mb-0> Are you looking to get into a tech career or role? Check out the <a href=/resources>Resources</a> section for more information. Also check out my <a href="https://www.youtube.com/channel/UC4xp-TEEIAL-4XtMVvfRaQw?sub_confirmation=1" target=_blank> Tech Talk YouTube Channel</a> and <a href="https://www.facebook.com/profile.php?id=100089303142244" target=_blank> Tech Talk Facebook page</a> for video tutorials about software development, web development, and working with tech. </a> </p> </div> <div class="p-4 shadow mb-3"> <h4 class=font-italic>Connect with Me</h4> <ol class=list-unstyled> <li><a target=_blank href=https://bluesky.com/almostengr.bsky.social>Blue Sky</a></li> <li><a target=_blank href=https://www.fanbase.app/almostengr>Fanbase</a></li> <li><a target=_blank href=https://github.com/almostengr>Github</a></li> <li><a target=_blank href=https://facebook.com/rhtservicesllc>Home Improvement (Facebook)</a></li> <li><a target=_blank href="https://www.youtube.com/c/RobinsonHandyandTechnologyServices?sub_confirmation=1">Home Improvement (YouTube)</a></li> <li><a target=_blank href=https://instagram.com/almostengr>Instagram</a></li> <li><a target=_blank href="https://www.youtube.com/channel/UCB7rvymUaUbbig3skv2zvCQ?sub_confirmation=1">Kenny Ram Dash Cam</a></li> <li><a target=_blank href=https://stackoverflow.com/users/12875554/almostengr>StackOverflow</a></li> <li><a target=_blank href="https://www.facebook.com/profile.php?id=100089303142244">Tech Talk (Facebook)</a></li> <li><a target=_blank href="https://www.youtube.com/channel/UC4xp-TEEIAL-4XtMVvfRaQw?sub_confirmation=1">Tech Talk (YouTube)</a></li> <li><a target=_blank href=https://www.tiktok.com/@almostengr>TikTok</a></li> <li><a target=_blank href=https://twitter.com/almostengr>Twitter</a></li> </ol> </div> <div class="p-4 shadow mb-3"> <script async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script> <ins class=adsbygoogle style=display:block data-ad-client=ca-pub-4218270188842097 data-ad-slot=5189305512 data-ad-format=auto data-full-width-responsive=true></ins> <script>(adsbygoogle = window.adsbygoogle || []).push({});</script> </div> </aside><!-- /.blog-sidebar --> </div><!-- /.row --> </main><!-- /.container --> <footer class="blog-footer bg-dark text-light text-left"> <div class=container> <div> <a class="text-light pr-2" href=/blog>Blog</a> <a class="text-light pr-2" href=/projects>Projects</a> <a class="text-light pr-2" href=/resources>Get Into Tech</a> <a class="text-light pr-2" href=/services>Services</a> <a class="text-light pr-2" href=/blog>Food</a> <a class="text-light pr-2" href=/uses>Uses</a> <a class="text-light pr-2" href=/about>About</a> <a class="text-light pr-2" href=/contact>Contact</a> <a class="text-light pr-2" href=/privacy>Privacy Policy</a> <a class="text-light pr-2" href=/sitemap.xml>Sitemap</a> </div> <div> <a class="text-light pr-2" target=_blank href=https://facebook.com/rhtservicesllc>Home Improvement (Facebook)</a> <a class="text-light pr-2" target=_blank href="https://www.youtube.com/c/RobinsonHandyandTechnologyServices?sub_confirmation=1">Home Improvement (YouTube)</a> <a class="text-light pr-2" target=_blank href="https://www.facebook.com/profile.php?id=100089303142244">Tech Talk (Facebook)</a> <a class="text-light pr-2" target=_blank href="https://www.youtube.com/channel/UC4xp-TEEIAL-4XtMVvfRaQw?sub_confirmation=1">Tech Talk (YouTube)</a> <a class="text-light pr-2" target=_blank href="https://www.youtube.com/channel/UCB7rvymUaUbbig3skv2zvCQ?sub_confirmation=1">Kenny Ram Dash Cam</a> </div> <div> <a class="text-light pr-2" target=_blank href=https://bluesky.com/almostengr.bsky.social>Blue Sky</a> <a class="text-light pr-2" target=_blank href=https://fanbase.app/almostengr>Fanbase</a> <a class="text-light pr-2" target=_blank href=https://github.com/almostengr>Github</a> <a class="text-light pr-2" target=_blank href=https://instagram.com/almostengr>Instagram</a> <a class="text-light pr-2" target=_blank href=https://stackoverflow.com/users/12875554/almostengr>StackOverflow</a> <a class="text-light pr-2" target=_blank href=https://www.tiktok.com/@almostengr>TikTok</a> <a class="text-light pr-2" target=_blank href=https://twitter.com/almostengr>Twitter</a> </div> <div>Copyright &copy; 2010-2025 Kenny Robinson</div> <div> Created by <a class=text-light href=https://rhtservices.net target=_blank>Robinson Handy and Technology Services</a> </div> <div> Disclaimer: The opinions expressed here are those of mine and not representative of my employer or affiliates. </div> </div> </footer> </div> <script type=text/javascript src=/js/jquery.min.js></script> <script type=text/javascript src=/js/popper.min.js></script> <script type=text/javascript src=/js/bootstrap.min.js></script> </body> </html>
+</code></pre>
+<p>"item" in the example above would be the same as "nav_item" in Jinja example.</p>
+<h3 id="collection-or-array">Collection or Array</h3>
+<p>"nav" is the collection or array of items that will be looped over one by one. This variable can be
+changed to loop over other items that are available, such as page variables or configuration variables.</p>
+<h3 id="reverse-the-items">Reverse The Items</h3>
+<pre><code class="language-python">| reverse
+</code></pre>
+<p>This part of the command, will sort the items in the collection or array in reverse. If your items
+are sorted by date, then the most recent date would be first. If your items are sorted by alphabet,
+then the end of the alphabet ("Z") would be first.</p>
+<h3 id="close-the-loop">Close The Loop</h3>
+<pre><code class="language-python">{% endfor %}
+</code></pre>
+<p>This closes the end of the for loop.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Hopefully this helps you if you encounter the same problem that I did. </p>
+
+      
+
+      <div class="text-muted py-2">
+        
+        <span>Updated: 2020-07-15 |</span>
+        
+
+        
+        <span>Posted: 2020-07-15</span>
+        
+      </div>
+      <div class="text-muted pb-2">
+        
+        <div>Author: Kenny Robinson</div>
+        
+      </div>
+
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4218270188842097" data-ad-slot="5189305512" data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div><!-- /.blog-main -->
+
+    <aside class="col-md-4 blog-sidebar">
+      <div class="p-4 mb-3 bg-light rounded shadow">
+        <h4 class="font-italic">About Kenny</h4>
+        <p class="mb-0">
+          A software developer that builds and fixes things, and writes about the journey.
+        </p>
+      </div>
+      <div class="p-4 shadow mb-3">
+        <h4 class="font-italic">Get Into Tech</h4>
+        <p class="mb-0">
+          Are you looking to get into a tech career or role? Check out the
+          <a href="/resources">Resources</a> section for more information. Also check out my
+          <a href="https://www.youtube.com/channel/UC4xp-TEEIAL-4XtMVvfRaQw?sub_confirmation=1" target="_blank">
+            Tech Talk YouTube Channel</a> and
+          <a href="https://www.facebook.com/profile.php?id=100089303142244" target="_blank">
+            Tech Talk Facebook page</a> for video tutorials about software development, web development,
+          and working with tech.
+          </a>
+        </p>
+      </div>
+      <div class="p-4 shadow mb-3">
+        <h4 class="font-italic">Connect with Me</h4>
+        <ol class="list-unstyled">
+          <li><a target="_blank" href="https://bluesky.com/almostengr.bsky.social">Blue Sky</a></li>
+          <li><a target="_blank" href="https://www.fanbase.app/almostengr">Fanbase</a></li>
+          <li><a target="_blank" href="https://github.com/almostengr">Github</a></li>
+          <li><a target="_blank" href="https://facebook.com/rhtservicesllc">Home Improvement (Facebook)</a></li>
+          <li><a target="_blank" href="https://www.youtube.com/c/RobinsonHandyandTechnologyServices?sub_confirmation=1">Home
+              Improvement (YouTube)</a></li>
+          <li><a target="_blank" href="https://instagram.com/almostengr">Instagram</a></li>
+          <li><a target="_blank" href="https://www.youtube.com/channel/UCB7rvymUaUbbig3skv2zvCQ?sub_confirmation=1">Kenny Ram Dash Cam</a></li>
+          <li><a target="_blank" href="https://stackoverflow.com/users/12875554/almostengr">StackOverflow</a></li>
+          <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100089303142244">Tech Talk (Facebook)</a></li>
+          <li><a target="_blank" href="https://www.youtube.com/channel/UC4xp-TEEIAL-4XtMVvfRaQw?sub_confirmation=1">Tech Talk
+              (YouTube)</a></li>
+          <li><a target="_blank" href="https://www.tiktok.com/@almostengr">TikTok</a></li>
+          <li><a target="_blank" href="https://twitter.com/almostengr">Twitter</a></li>
+        </ol>
+      </div>
+      <div class="p-4 shadow mb-3">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4218270188842097" data-ad-slot="5189305512" data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
+    </aside><!-- /.blog-sidebar -->
+  </div><!-- /.row -->
+</main><!-- /.container -->
+<footer class="blog-footer bg-dark text-light text-left">
+  <div class="container">
+    <div>
+      <a class="text-light pr-2" href="/blog">Blog</a>
+      <a class="text-light pr-2" href="/projects">Projects</a>
+      <a class="text-light pr-2" href="/resources">Get Into Tech</a>
+      <a class="text-light pr-2" href="/services">Services</a>
+      <a class="text-light pr-2" href="/blog">Food</a>
+      <a class="text-light pr-2" href="/uses">Uses</a>
+      <a class="text-light pr-2" href="/about">About</a>
+      <a class="text-light pr-2" href="/contact">Contact</a>
+      <a class="text-light pr-2" href="/privacy">Privacy Policy</a>
+      <a class="text-light pr-2" href="/sitemap.xml">Sitemap</a>
+    </div>
+    <div>
+      <a class="text-light pr-2" target="_blank" href="https://facebook.com/rhtservicesllc">Home Improvement (Facebook)</a>
+      <a class="text-light pr-2" target="_blank" href="https://www.youtube.com/c/RobinsonHandyandTechnologyServices?sub_confirmation=1">Home
+        Improvement (YouTube)</a>
+      <a class="text-light pr-2" target="_blank" href="https://www.facebook.com/profile.php?id=100089303142244">Tech Talk (Facebook)</a>
+      <a class="text-light pr-2" target="_blank" href="https://www.youtube.com/channel/UC4xp-TEEIAL-4XtMVvfRaQw?sub_confirmation=1">Tech Talk
+        (YouTube)</a>
+      <a class="text-light pr-2" target="_blank" href="https://www.youtube.com/channel/UCB7rvymUaUbbig3skv2zvCQ?sub_confirmation=1">Kenny Ram Dash
+        Cam</a>
+    </div>
+    <div>
+      <a class="text-light pr-2" target="_blank" href="https://bluesky.com/almostengr.bsky.social">Blue Sky</a>
+      <a class="text-light pr-2" target="_blank" href="https://fanbase.app/almostengr">Fanbase</a>
+      <a class="text-light pr-2" target="_blank" href="https://github.com/almostengr">Github</a>
+      <a class="text-light pr-2" target="_blank" href="https://instagram.com/almostengr">Instagram</a>
+      <a class="text-light pr-2" target="_blank" href="https://stackoverflow.com/users/12875554/almostengr">StackOverflow</a>
+      <a class="text-light pr-2" target="_blank" href="https://www.tiktok.com/@almostengr">TikTok</a>
+      <a class="text-light pr-2" target="_blank" href="https://twitter.com/almostengr">Twitter</a>
+    </div>
+    <div>Copyright &copy; 2010-2025 Kenny Robinson</div>
+    <div>
+      Created by <a class="text-light" href="https://rhtservices.net" target="_blank">Robinson Handy and Technology Services</a>
+    </div>
+    <div>
+      Disclaimer: The opinions expressed here are those of mine and not representative of my employer or
+      affiliates.
+    </div>
+  </div>
+</footer>
+    
+
+  </div>
+  <script type="text/javascript" src="/js/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/popper.min.js"></script>
+  <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,1 +1,101 @@
-<!doctype html><html lang=en> <head><meta charset=utf-8><meta name=viewport content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name=description content="The blog of Kenny Robinson"><meta name=author content="Kenny Robinson, @almostengr"><meta name=generator content=Mkdocs><title>Hardware, Solid State Relays - The Almost Engineer</title><link href=/assets/dist/css/bootstrap.min.css rel=stylesheet><link href=/css/blog.min.css rel=stylesheet><meta property=og:type content=website><meta property=og:locale content=en_US><meta property=og:site_name content="The Almost Engineer"><meta name=twitter:card content=summary><meta name=twitter:site content><meta name=twitter:creator content><meta name=description content="The blog of Kenny Robinson"><meta property=og:description content="The blog of Kenny Robinson"><meta name=twitter:description content="The blog of Kenny Robinson"><meta name=robots content="index, follow"><link href=https://thealmostengineer.com/light-show-presentation/040-relays/ rel=canonical><meta content=https://thealmostengineer.com/light-show-presentation/040-relays/ property=og:url><meta content=https://thealmostengineer.com/light-show-presentation/040-relays/ property=twitter:url><meta name=author content="Kenny Robinson, @almostengr"><!-- Global site tag (gtag.js) - Google Analytics --><script async src="//www.googletagmanager.com/gtag/js?id="></script><script async>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'UA-64643711-1');</script></head> <body class=bg-dark> <nav class="navbar navbar-expand-md navbar-dark bg-dark pb-2"> <a href=/ class=navbar-brand>The Almost Engineer</a> <button class=navbar-toggler type=button data-toggle=collapse data-target=#navbarCollapse aria-controls=navbarCollapse aria-expanded=false aria-label="Toggle navigation"> <span class=navbar-toggler-icon></span> </button> <div class="collapse navbar-collapse" id=navbarCollapse> <ul class="navbar-nav mr-auto"> <li class=nav-item><a class="nav-link text-light" href=/blog>Blog</a></li> <li class=nav-item><a class="nav-link text-light" href=/projects>Projects</a></li> <li class=nav-item><a class="nav-link text-light" href=/resources>Get Into Tech</a></li> <li class=nav-item><a class="nav-link text-light" href=https://lightshow.thealmostengineer.com>Light Show</a></li> </ul> </div> </nav> <div class="bg-light pt-3 mb-0 pb-0"> <main class="container presentation"> <div style="min-height: 100vh" class="mx-5 "> <h1 id=hardware-solid-state-relays>Hardware, Solid State Relays</h1> <p><img alt="8-Channel Solid State Relay board" src=/images/20201220presentation/20201220_084801.jpg></p> <p><a href=/light-show-presentation/050-architecture>next</a></p> <ul> <li>No moving parts</li> <li>Silent operation</li> <li>Connected to lights via outlets</li> </ul> </div> </main> </div> <script type=text/javascript src=/js/jquery.min.js></script> <script type=text/javascript src=/js/popper.min.js></script> <script type=text/javascript src=/js/bootstrap.min.js></script> </body> </html>
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="The blog of Kenny Robinson">
+  <meta name="author" content="Kenny Robinson, @almostengr">
+  <meta name="generator" content="Mkdocs">
+
+  
+  <title>Hardware, Solid State Relays - The Almost Engineer</title>
+  
+
+  <link href="/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/blog.min.css" rel="stylesheet">
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="The Almost Engineer" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="" />
+  <meta name="twitter:creator" content="" />
+
+  
+  <meta name="description" content="The blog of Kenny Robinson">
+  <meta property="og:description" content="The blog of Kenny Robinson" />
+  <meta name="twitter:description" content="The blog of Kenny Robinson" />
+  
+
+  
+
+  
+
+  
+
+  
+  <meta name="robots" content="index, follow" />
+  
+
+  
+  <link rel="canonical" href="https://thealmostengineer.com/light-show-presentation/040-relays/">
+  <meta property="og:url" content="https://thealmostengineer.com/light-show-presentation/040-relays/" />
+  <meta property="twitter:url" content="https://thealmostengineer.com/light-show-presentation/040-relays/" />
+  
+
+  
+  <meta name="author" content="Kenny Robinson, @almostengr">
+  
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="//www.googletagmanager.com/gtag/js?id="></script>
+  <script
+    async>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'UA-64643711-1');</script>
+</head>
+
+<body class="bg-dark">
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark pb-2">
+    <a class="navbar-brand" href="/">The Almost Engineer</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a class="nav-link text-light" href="/blog">Blog</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="/projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="/resources">Get Into Tech</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="https://lightshow.thealmostengineer.com">Light Show</a></li>
+      </ul>
+
+      
+      
+    </div>
+  </nav>
+
+  <div class="bg-light pt-3 mb-0 pb-0">
+    
+
+    
+    <main class="container presentation">
+      <div style="min-height: 100vh" class="mx-5 ">
+        <h1 id="hardware-solid-state-relays">Hardware, Solid State Relays</h1>
+<p><img alt="8-Channel Solid State Relay board" src="/images/20201220presentation/20201220_084801.jpg" /></p>
+<p><a href="/light-show-presentation/050-architecture">next</a></p>
+<ul>
+<li>No moving parts</li>
+<li>Silent operation</li>
+<li>Connected to lights via outlets</li>
+</ul>
+      </div>
+    </main>
+    
+
+  </div>
+  <script type="text/javascript" src="/js/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/popper.min.js"></script>
+  <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+</body>
+
+</html>

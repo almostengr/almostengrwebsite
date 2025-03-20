@@ -1,4 +1,121 @@
-<!doctype html><html lang=en> <head><meta charset=utf-8><meta name=viewport content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name=description content="The blog of Kenny Robinson"><meta name=author content="Kenny Robinson, @almostengr"><meta name=generator content=Mkdocs><title>Copying Infested Code - The Almost Engineer</title><link href=/assets/dist/css/bootstrap.min.css rel=stylesheet><link href=/css/blog.min.css rel=stylesheet><meta property=og:type content=website><meta property=og:locale content=en_US><meta property=og:site_name content="The Almost Engineer"><meta name=twitter:card content=summary><meta name=twitter:site content><meta name=twitter:creator content><meta name=description content="The blog of Kenny Robinson"><meta property=og:description content="The blog of Kenny Robinson"><meta name=twitter:description content="The blog of Kenny Robinson"><meta name=keywords content="selenium, webdriver, automated testing, java, programming"><meta name=robots content="index, follow"><link href=https://thealmostengineer.com/blog/2019.09.05-copying-infested-code/ rel=canonical><meta content=https://thealmostengineer.com/blog/2019.09.05-copying-infested-code/ property=og:url><meta content=https://thealmostengineer.com/blog/2019.09.05-copying-infested-code/ property=twitter:url><meta name=author content="Kenny Robinson, @almostengr"><!-- Global site tag (gtag.js) - Google Analytics --><script async src="//www.googletagmanager.com/gtag/js?id="></script><script async>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'UA-64643711-1');</script></head> <body class=bg-dark> <nav class="navbar navbar-expand-md navbar-dark bg-dark pb-2"> <a href=/ class=navbar-brand>The Almost Engineer</a> <button class=navbar-toggler type=button data-toggle=collapse data-target=#navbarCollapse aria-controls=navbarCollapse aria-expanded=false aria-label="Toggle navigation"> <span class=navbar-toggler-icon></span> </button> <div class="collapse navbar-collapse" id=navbarCollapse> <ul class="navbar-nav mr-auto"> <li class=nav-item><a class="nav-link text-light" href=/blog>Blog</a></li> <li class=nav-item><a class="nav-link text-light" href=/projects>Projects</a></li> <li class=nav-item><a class="nav-link text-light" href=/resources>Get Into Tech</a></li> <li class=nav-item><a class="nav-link text-light" href=https://lightshow.thealmostengineer.com>Light Show</a></li> </ul> <form class="form-inline mt-2 mt-md-0" action=https://www.google.com/search method=get> <input type=hidden name=q value=site:thealmostengineer.com> <input class="form-control mr-sm-2" type=text placeholder="Search with Google" aria-label=Search name=q> </form> </div> </nav> <div class="bg-light pt-3 mb-0 pb-0"> <main role=main class=container> <div class=row> <div class="col-md-8 blog-main"> <h1>Copying Infested Code</h1> <h2 id=background>Background</h2> <p>As some of you may know, my current role consists of me building and maintaining automations. The thing about writing code is that at some point, maintenance has to be done on the code to keep it up to date and to add future enhancements and functionality. </p> <h2 id=what-kind-of-pest-the-problem>What Kind of Pest (The Problem)</h2> <p>Squirrels and rats both chew on wood. However they do not eat the same stuff, so you have to be selective with the bait that you choose. For most of the automations that I build, I use Selenium WebDriver as the automations are for web-based applications. </p> <p>Recently, we have noticed that number of automations have not been running due to “connection refused” exceptions. The connection is being refused from the automation jar not connecting to the Gecko Driver (the interface between WebDriver automation and the browser). Applying knowledge that I have of computers, normally you only see “connection refused” messages when one or more of the scenarios occur</p> <ul> <li>too many devices trying to connect at the same time, also referred to as Denial of Service Attack or Distributed Denial of Service Attack</li> <li>a firewall is rejecting the connection</li> <li>wrong password when trying to authenticate. </li> </ul> <h2 id=tracking-down-the-pest-the-analysis>Tracking Down The Pest (The Analysis)</h2> <p>I was able to immediately rule out scenarios 2 and 3 because the automation would work majority of the time. In other words, we know it is not a rat based on the evidence. Therefore, through the process of elimination, it must be a squirrel. Majority being that out of 7 days of the week that it was used, it would fail only on 1 of those days. I then did some research on the internet that provided a number of causes and solutions for the exception occurring. Some of the causes included </p> <ul> <li>the Gecko Driver process not being able to write to a log file because existing log file already exists (not in our case)</li> <li>having concurrent WebDriver automations running at the same time (which wasn’t our case as we have done several at the same time in the past)</li> <li>to the hosts file not having the localhost IP address entered (which we did not, but nslookup and ping commands both returned valid IP addresses)</li> <li>having bad code. </li> </ul> <p>I got to that last reason in the list, bad code, and I put more effort into looking into the code as we have experienced (2+ years) and inexperienced developers on our team. </p> <h2 id=found-the-nest-found-the-source-of-the-problem>Found The Nest (Found The Source Of The Problem)</h2> <p>After search through multiple automation projects, shaking my head at some of the exact examples of bad code mentioned in Robert Martin’s <em>Clean Code</em>, I hit the bullseye. Several of the automations had the same code. </p> <p>Yes... copied and pasted. First person got it working, so the next person got theirs working by doing exactly what the first person did. There's that saying about if you see one bug, there's probably another one not too far way. This would be it. To make it worse, it was multiplying everytime the code was copy and pasted. This is what I found: </p> <pre><code class=language-java>WebDriver driver = null;
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="The blog of Kenny Robinson">
+  <meta name="author" content="Kenny Robinson, @almostengr">
+  <meta name="generator" content="Mkdocs">
+
+  
+  <title>Copying Infested Code - The Almost Engineer</title>
+  
+
+  <link href="/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/blog.min.css" rel="stylesheet">
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="The Almost Engineer" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="" />
+  <meta name="twitter:creator" content="" />
+
+  
+  <meta name="description" content="The blog of Kenny Robinson">
+  <meta property="og:description" content="The blog of Kenny Robinson" />
+  <meta name="twitter:description" content="The blog of Kenny Robinson" />
+  
+
+  
+
+  
+  <meta name="keywords" content="selenium, webdriver, automated testing, java, programming" />
+  
+
+  
+
+  
+  <meta name="robots" content="index, follow" />
+  
+
+  
+  <link rel="canonical" href="https://thealmostengineer.com/blog/2019.09.05-copying-infested-code/">
+  <meta property="og:url" content="https://thealmostengineer.com/blog/2019.09.05-copying-infested-code/" />
+  <meta property="twitter:url" content="https://thealmostengineer.com/blog/2019.09.05-copying-infested-code/" />
+  
+
+  
+  <meta name="author" content="Kenny Robinson, @almostengr">
+  
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="//www.googletagmanager.com/gtag/js?id="></script>
+  <script
+    async>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'UA-64643711-1');</script>
+</head>
+
+<body class="bg-dark">
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark pb-2">
+    <a class="navbar-brand" href="/">The Almost Engineer</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a class="nav-link text-light" href="/blog">Blog</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="/projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="/resources">Get Into Tech</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="https://lightshow.thealmostengineer.com">Light Show</a></li>
+      </ul>
+
+      
+      <form class="form-inline mt-2 mt-md-0" action="https://www.google.com/search" method="get">
+        <input type="hidden" name="q" value="site:thealmostengineer.com">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search with Google" aria-label="Search" name="q">
+      </form>
+      
+    </div>
+  </nav>
+
+  <div class="bg-light pt-3 mb-0 pb-0">
+    
+
+    
+    <main role="main" class="container">
+  <div class="row">
+    <div class="col-md-8 blog-main">
+      
+      <h1>Copying Infested Code</h1>
+      
+      <h2 id="background">Background</h2>
+<p>As some of you may know, my current role consists of me building and maintaining automations. The thing about writing code is that at some point, maintenance has to be done on the code to keep it up to date and to add future enhancements and functionality. </p>
+<h2 id="what-kind-of-pest-the-problem">What Kind of Pest (The Problem)</h2>
+<p>Squirrels and rats both chew on wood. However they do not eat the same stuff, so you have to be selective with the bait that you choose. For most of the automations that I build, I use Selenium WebDriver as the automations are for web-based applications. </p>
+<p>Recently, we have noticed that number of automations have not been running due to “connection refused” exceptions. The connection is being refused from the automation jar not connecting to the Gecko Driver (the interface between WebDriver automation and the browser). Applying knowledge that I have of computers, normally you only see “connection refused” messages when one or more of the scenarios occur</p>
+<ul>
+<li>too many devices trying to connect at the same time, also referred to as Denial of Service Attack or Distributed Denial of Service Attack</li>
+<li>a firewall is rejecting the connection</li>
+<li>wrong password when trying to authenticate. </li>
+</ul>
+<h2 id="tracking-down-the-pest-the-analysis">Tracking Down The Pest (The Analysis)</h2>
+<p>I was able to immediately rule out scenarios 2 and 3 because the automation would work majority of the time. In other words, we know it is not a rat based on the evidence. Therefore, through the process of elimination, it must be a squirrel. Majority being that out of 7 days of the week that it was used, it would fail only on 1 of those days. I then did some research on the internet that provided a number of causes and solutions for the exception occurring. Some of the causes included </p>
+<ul>
+<li>the Gecko Driver process not being able to write to a log file because existing log file already exists (not in our case)</li>
+<li>having concurrent WebDriver automations running at the same time (which wasn’t our case as we have done several at the same time in the past)</li>
+<li>to the hosts file not having the localhost IP address entered (which we did not, but nslookup and ping commands both returned valid IP addresses)</li>
+<li>having bad code.  </li>
+</ul>
+<p>I got to that last reason in the list, bad code, and I put more effort into looking into the code as we have experienced (2+ years) and inexperienced developers on our team. </p>
+<h2 id="found-the-nest-found-the-source-of-the-problem">Found The Nest (Found The Source Of The Problem)</h2>
+<p>After search through multiple automation projects, shaking my head at some of the exact examples of bad code mentioned in Robert Martin’s <em>Clean Code</em>, I hit the bullseye. Several of the automations had the same code. </p>
+<p>Yes... copied and pasted. First person got it working, so the next person got theirs working by doing 
+exactly what the first person did. There's that saying about if you see one bug, there's probably 
+another one not too far way. This would be it. To make it worse, it was multiplying everytime the code 
+was copy and pasted. This is what I found: </p>
+<pre><code class="language-java">WebDriver driver = null;
 
 try{    
     driver = new FirefoxDriver();
@@ -12,7 +129,12 @@ try{
     exception.printStackTrace();
     System.exit(1);
 }
-</code></pre> <p>Now this is just a snippet of the actual code. Obviously, I cannot put the entire code here because of confidentiality. Do you notice the problem with this code? </p> <p>The problem here is that if an exception occurs between the <code>try</code> and <code>driver.quit();</code>, the browser and as a result, the Gecko Driver process never exits. What happens when you have too many processes running? The system will hang. What happens when there are too many connections open to a process? Some of those connections are refused. </p> <h2 id=spraying-the-bug-spray-the-solution>Spraying The Bug Spray (The Solution)</h2> <p>To now rid the varmint of our code, I had to fix the defect that I identified. The <code>driver.quit();</code>bashould always be executed regardless of whether the exception occurs. The reason being is that you do not want to the browser nor the Gecko Driver process running as they will hang up your system or result in the "connection refused" exceptions. So I changed the above code to the code below: </p> <pre><code class=language-java>WebDriver driver = null;
+</code></pre>
+<p>Now this is just a snippet of the actual code. Obviously, I cannot put the entire code here because of confidentiality. Do you notice the problem with this code? </p>
+<p>The problem here is that if an exception occurs between the <code>try</code> and <code>driver.quit();</code>, the browser and as a result, the Gecko Driver process never exits. What happens when you have too many processes running?  The system will hang. What happens when there are too many connections open to a process? Some of those connections are refused. </p>
+<h2 id="spraying-the-bug-spray-the-solution">Spraying The Bug Spray (The Solution)</h2>
+<p>To now rid the varmint of our code, I had to fix the defect that I identified. The <code>driver.quit();</code>bashould always be executed regardless of whether the exception occurs.  The reason being is that you do not want to the browser nor the Gecko Driver process running as they will hang up your system or result in the "connection refused" exceptions. So I changed the above code to the code below: </p>
+<pre><code class="language-java">WebDriver driver = null;
 int exitCode = 1;
 
 try{    
@@ -32,4 +154,136 @@ if (driver != null)
 }
 
 System.exit(exitCode);
-</code></pre> <p>The changes that I made: </p> <ul> <li>the <code>driver.quit();</code> has been moved outside of the try-catch block. That way it will always execute whether an exception occurs or not. Could a <code>finally</code>block been used? Yes. However, for the sake of simplifying the code I did not use one.</li> <li>I moved the <code>System.exit</code> call to the end of the code. It is best to have only one way to exit a function. If you have multiple ways to exit (or return) out of a function, code that needs to exit may not get executed because of the multiple ways out.</li> <li>I created a new integer variable called <code>exitCode</code>. Following standards for program exit code, 1 or greater means that something went wrong during execution. 0 means that everything went well during execution. Therefore, the variable defaults to 1 because you do not want your code to say that all went well when it actually did not. It is better to have a false failure and it get noticed than to have a false success and it go undetected. </li> </ul> <h2 id=conclusion>Conclusion</h2> <p>If you are going to copy the code of others, please be sure to review it first before using it as it may have defects already in it. If you do not know what the code does, then spend a few moments searching for those commands or snippets online so that you learn what they do. Using code somebody else wrote without confirming that it is not defective, is like building a chair from wood and not checking to see if it is rotting or has termites. </p> <div class="text-muted py-2"> <span>Updated: 2022-09-30 |</span> <span>Posted: 2019-09-05</span> </div> <div class="text-muted pb-2"> <div>Author: Kenny Robinson, @almostengr</div> </div> <script async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script> <ins class=adsbygoogle style=display:block data-ad-client=ca-pub-4218270188842097 data-ad-slot=5189305512 data-ad-format=auto data-full-width-responsive=true></ins> <script>(adsbygoogle = window.adsbygoogle || []).push({});</script> </div><!-- /.blog-main --> <aside class="col-md-4 blog-sidebar"> <div class="p-4 mb-3 bg-light rounded shadow"> <h4 class=font-italic>About Kenny</h4> <p class=mb-0> A software developer that builds and fixes things, and writes about the journey. </p> </div> <div class="p-4 shadow mb-3"> <h4 class=font-italic>Get Into Tech</h4> <p class=mb-0> Are you looking to get into a tech career or role? Check out the <a href=/resources>Resources</a> section for more information. Also check out my <a href="https://www.youtube.com/channel/UC4xp-TEEIAL-4XtMVvfRaQw?sub_confirmation=1" target=_blank> Tech Talk YouTube Channel</a> and <a href="https://www.facebook.com/profile.php?id=100089303142244" target=_blank> Tech Talk Facebook page</a> for video tutorials about software development, web development, and working with tech. </a> </p> </div> <div class="p-4 shadow mb-3"> <h4 class=font-italic>Connect with Me</h4> <ol class=list-unstyled> <li><a target=_blank href=https://bluesky.com/almostengr.bsky.social>Blue Sky</a></li> <li><a target=_blank href=https://www.fanbase.app/almostengr>Fanbase</a></li> <li><a target=_blank href=https://github.com/almostengr>Github</a></li> <li><a target=_blank href=https://facebook.com/rhtservicesllc>Home Improvement (Facebook)</a></li> <li><a target=_blank href="https://www.youtube.com/c/RobinsonHandyandTechnologyServices?sub_confirmation=1">Home Improvement (YouTube)</a></li> <li><a target=_blank href=https://instagram.com/almostengr>Instagram</a></li> <li><a target=_blank href="https://www.youtube.com/channel/UCB7rvymUaUbbig3skv2zvCQ?sub_confirmation=1">Kenny Ram Dash Cam</a></li> <li><a target=_blank href=https://stackoverflow.com/users/12875554/almostengr>StackOverflow</a></li> <li><a target=_blank href="https://www.facebook.com/profile.php?id=100089303142244">Tech Talk (Facebook)</a></li> <li><a target=_blank href="https://www.youtube.com/channel/UC4xp-TEEIAL-4XtMVvfRaQw?sub_confirmation=1">Tech Talk (YouTube)</a></li> <li><a target=_blank href=https://www.tiktok.com/@almostengr>TikTok</a></li> <li><a target=_blank href=https://twitter.com/almostengr>Twitter</a></li> </ol> </div> <div class="p-4 shadow mb-3"> <script async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script> <ins class=adsbygoogle style=display:block data-ad-client=ca-pub-4218270188842097 data-ad-slot=5189305512 data-ad-format=auto data-full-width-responsive=true></ins> <script>(adsbygoogle = window.adsbygoogle || []).push({});</script> </div> </aside><!-- /.blog-sidebar --> </div><!-- /.row --> </main><!-- /.container --> <footer class="blog-footer bg-dark text-light text-left"> <div class=container> <div> <a class="text-light pr-2" href=/blog>Blog</a> <a class="text-light pr-2" href=/projects>Projects</a> <a class="text-light pr-2" href=/resources>Get Into Tech</a> <a class="text-light pr-2" href=/services>Services</a> <a class="text-light pr-2" href=/blog>Food</a> <a class="text-light pr-2" href=/uses>Uses</a> <a class="text-light pr-2" href=/about>About</a> <a class="text-light pr-2" href=/contact>Contact</a> <a class="text-light pr-2" href=/privacy>Privacy Policy</a> <a class="text-light pr-2" href=/sitemap.xml>Sitemap</a> </div> <div> <a class="text-light pr-2" target=_blank href=https://facebook.com/rhtservicesllc>Home Improvement (Facebook)</a> <a class="text-light pr-2" target=_blank href="https://www.youtube.com/c/RobinsonHandyandTechnologyServices?sub_confirmation=1">Home Improvement (YouTube)</a> <a class="text-light pr-2" target=_blank href="https://www.facebook.com/profile.php?id=100089303142244">Tech Talk (Facebook)</a> <a class="text-light pr-2" target=_blank href="https://www.youtube.com/channel/UC4xp-TEEIAL-4XtMVvfRaQw?sub_confirmation=1">Tech Talk (YouTube)</a> <a class="text-light pr-2" target=_blank href="https://www.youtube.com/channel/UCB7rvymUaUbbig3skv2zvCQ?sub_confirmation=1">Kenny Ram Dash Cam</a> </div> <div> <a class="text-light pr-2" target=_blank href=https://bluesky.com/almostengr.bsky.social>Blue Sky</a> <a class="text-light pr-2" target=_blank href=https://fanbase.app/almostengr>Fanbase</a> <a class="text-light pr-2" target=_blank href=https://github.com/almostengr>Github</a> <a class="text-light pr-2" target=_blank href=https://instagram.com/almostengr>Instagram</a> <a class="text-light pr-2" target=_blank href=https://stackoverflow.com/users/12875554/almostengr>StackOverflow</a> <a class="text-light pr-2" target=_blank href=https://www.tiktok.com/@almostengr>TikTok</a> <a class="text-light pr-2" target=_blank href=https://twitter.com/almostengr>Twitter</a> </div> <div>Copyright &copy; 2010-2025 Kenny Robinson</div> <div> Created by <a class=text-light href=https://rhtservices.net target=_blank>Robinson Handy and Technology Services</a> </div> <div> Disclaimer: The opinions expressed here are those of mine and not representative of my employer or affiliates. </div> </div> </footer> </div> <script type=text/javascript src=/js/jquery.min.js></script> <script type=text/javascript src=/js/popper.min.js></script> <script type=text/javascript src=/js/bootstrap.min.js></script> </body> </html>
+</code></pre>
+<p>The changes that I made: </p>
+<ul>
+<li>the <code>driver.quit();</code> has been moved outside of the try-catch block. That way it will always execute whether an exception occurs or not.   Could a <code>finally</code>block been used?  Yes. However, for the sake of simplifying the code I did not use one.</li>
+<li>I moved the <code>System.exit</code> call to the end of the code. It is best to have only one way to exit a function.  If you have multiple ways to exit (or return) out of a function, code that needs to exit may not get executed because of the multiple ways out.</li>
+<li>I created a new integer variable called <code>exitCode</code>.  Following standards for program exit code, 1 or greater means that something went wrong during execution. 0 means that everything went well during execution. Therefore, the variable defaults to 1 because you do not want your code to say that all went well when it actually did not. It is better to have a false failure and it get noticed than to have a false success and it go undetected. </li>
+</ul>
+<h2 id="conclusion">Conclusion</h2>
+<p>If you are going to copy the code of others, please be sure to review it first before using it as it may have defects already in it. If you do not know what the code does, then spend a few moments searching for those commands or snippets online so that you learn what they do. Using code somebody else wrote without confirming that it is not defective, is like building a chair from wood and not checking to see if it is rotting or has termites. </p>
+
+      
+
+      <div class="text-muted py-2">
+        
+        <span>Updated: 2022-09-30 |</span>
+        
+
+        
+        <span>Posted: 2019-09-05</span>
+        
+      </div>
+      <div class="text-muted pb-2">
+        
+        <div>Author: Kenny Robinson, @almostengr</div>
+        
+      </div>
+
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4218270188842097" data-ad-slot="5189305512" data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div><!-- /.blog-main -->
+
+    <aside class="col-md-4 blog-sidebar">
+      <div class="p-4 mb-3 bg-light rounded shadow">
+        <h4 class="font-italic">About Kenny</h4>
+        <p class="mb-0">
+          A software developer that builds and fixes things, and writes about the journey.
+        </p>
+      </div>
+      <div class="p-4 shadow mb-3">
+        <h4 class="font-italic">Get Into Tech</h4>
+        <p class="mb-0">
+          Are you looking to get into a tech career or role? Check out the
+          <a href="/resources">Resources</a> section for more information. Also check out my
+          <a href="https://www.youtube.com/channel/UC4xp-TEEIAL-4XtMVvfRaQw?sub_confirmation=1" target="_blank">
+            Tech Talk YouTube Channel</a> and
+          <a href="https://www.facebook.com/profile.php?id=100089303142244" target="_blank">
+            Tech Talk Facebook page</a> for video tutorials about software development, web development,
+          and working with tech.
+          </a>
+        </p>
+      </div>
+      <div class="p-4 shadow mb-3">
+        <h4 class="font-italic">Connect with Me</h4>
+        <ol class="list-unstyled">
+          <li><a target="_blank" href="https://bluesky.com/almostengr.bsky.social">Blue Sky</a></li>
+          <li><a target="_blank" href="https://www.fanbase.app/almostengr">Fanbase</a></li>
+          <li><a target="_blank" href="https://github.com/almostengr">Github</a></li>
+          <li><a target="_blank" href="https://facebook.com/rhtservicesllc">Home Improvement (Facebook)</a></li>
+          <li><a target="_blank" href="https://www.youtube.com/c/RobinsonHandyandTechnologyServices?sub_confirmation=1">Home
+              Improvement (YouTube)</a></li>
+          <li><a target="_blank" href="https://instagram.com/almostengr">Instagram</a></li>
+          <li><a target="_blank" href="https://www.youtube.com/channel/UCB7rvymUaUbbig3skv2zvCQ?sub_confirmation=1">Kenny Ram Dash Cam</a></li>
+          <li><a target="_blank" href="https://stackoverflow.com/users/12875554/almostengr">StackOverflow</a></li>
+          <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100089303142244">Tech Talk (Facebook)</a></li>
+          <li><a target="_blank" href="https://www.youtube.com/channel/UC4xp-TEEIAL-4XtMVvfRaQw?sub_confirmation=1">Tech Talk
+              (YouTube)</a></li>
+          <li><a target="_blank" href="https://www.tiktok.com/@almostengr">TikTok</a></li>
+          <li><a target="_blank" href="https://twitter.com/almostengr">Twitter</a></li>
+        </ol>
+      </div>
+      <div class="p-4 shadow mb-3">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4218270188842097" data-ad-slot="5189305512" data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
+    </aside><!-- /.blog-sidebar -->
+  </div><!-- /.row -->
+</main><!-- /.container -->
+<footer class="blog-footer bg-dark text-light text-left">
+  <div class="container">
+    <div>
+      <a class="text-light pr-2" href="/blog">Blog</a>
+      <a class="text-light pr-2" href="/projects">Projects</a>
+      <a class="text-light pr-2" href="/resources">Get Into Tech</a>
+      <a class="text-light pr-2" href="/services">Services</a>
+      <a class="text-light pr-2" href="/blog">Food</a>
+      <a class="text-light pr-2" href="/uses">Uses</a>
+      <a class="text-light pr-2" href="/about">About</a>
+      <a class="text-light pr-2" href="/contact">Contact</a>
+      <a class="text-light pr-2" href="/privacy">Privacy Policy</a>
+      <a class="text-light pr-2" href="/sitemap.xml">Sitemap</a>
+    </div>
+    <div>
+      <a class="text-light pr-2" target="_blank" href="https://facebook.com/rhtservicesllc">Home Improvement (Facebook)</a>
+      <a class="text-light pr-2" target="_blank" href="https://www.youtube.com/c/RobinsonHandyandTechnologyServices?sub_confirmation=1">Home
+        Improvement (YouTube)</a>
+      <a class="text-light pr-2" target="_blank" href="https://www.facebook.com/profile.php?id=100089303142244">Tech Talk (Facebook)</a>
+      <a class="text-light pr-2" target="_blank" href="https://www.youtube.com/channel/UC4xp-TEEIAL-4XtMVvfRaQw?sub_confirmation=1">Tech Talk
+        (YouTube)</a>
+      <a class="text-light pr-2" target="_blank" href="https://www.youtube.com/channel/UCB7rvymUaUbbig3skv2zvCQ?sub_confirmation=1">Kenny Ram Dash
+        Cam</a>
+    </div>
+    <div>
+      <a class="text-light pr-2" target="_blank" href="https://bluesky.com/almostengr.bsky.social">Blue Sky</a>
+      <a class="text-light pr-2" target="_blank" href="https://fanbase.app/almostengr">Fanbase</a>
+      <a class="text-light pr-2" target="_blank" href="https://github.com/almostengr">Github</a>
+      <a class="text-light pr-2" target="_blank" href="https://instagram.com/almostengr">Instagram</a>
+      <a class="text-light pr-2" target="_blank" href="https://stackoverflow.com/users/12875554/almostengr">StackOverflow</a>
+      <a class="text-light pr-2" target="_blank" href="https://www.tiktok.com/@almostengr">TikTok</a>
+      <a class="text-light pr-2" target="_blank" href="https://twitter.com/almostengr">Twitter</a>
+    </div>
+    <div>Copyright &copy; 2010-2025 Kenny Robinson</div>
+    <div>
+      Created by <a class="text-light" href="https://rhtservices.net" target="_blank">Robinson Handy and Technology Services</a>
+    </div>
+    <div>
+      Disclaimer: The opinions expressed here are those of mine and not representative of my employer or
+      affiliates.
+    </div>
+  </div>
+</footer>
+    
+
+  </div>
+  <script type="text/javascript" src="/js/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/popper.min.js"></script>
+  <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -6,10 +6,15 @@ description: List of projects that I have worked on.
 Below is a list of some of the projects that I have worked on in the past.
 The code for my public projects can be viewed from
 <a href="https://github.com/almostengr/" target="_blank">my GitHub page</a>.
+While majority of the projects listed below are tech related, I also do handyman projects
+that are significant that I include here.
 
 Have a project that you need completed? You may request my services by contacting me through my business, 
 <a href="https://rhtservices.net" target="_blank">Robinson Handy and Technology Services</a>.
 
+* Christmas Light Show (2025)
+* Solar Shed (2025)
+* Dog House (2025)
 * [Christmas Light Show (2024)](/projects/light-show)
 * [Landscape RGB Lighting (2024)](/projects/landscape-lighting)
 * [Christmas Light Show (2023)](/projects/2023-christmas-light-show)

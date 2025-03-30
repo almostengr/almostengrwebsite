@@ -1,17 +1,18 @@
 ---
-title: Cooking and Food
-description: Sharing food recipes that I have previously made
+title: Blog
+description: Sharing food recipes, thoughts, and managing life.
 hidepostinfo: true
 category: directorylist
 filtercategory: cooking
 ---
 
-On a regular basis, I will cook dinner, breakfast, or some other food. Those recipes that 
-I want to document and share, I place them here. 
+Below are the thoughts that I have on life and a variety of subjects, including tech, 
+home improvement, and more. Being able to write is just as essential as being able 
+to speak, because when those audiences cannot listen to you, they have to be able 
+to "listen" to your writings.
 
-None of that long filler text about how elegant some dish is. Straight, to the point, with 
-ingredients and instructions.
+I will also add, that having a blog, makes it easier to find things, such as checklists, 
+notes from a meeting, and more. This can be done by using the search feature. At the same 
+time, having a blog, means that things that you want to keep up or recall, you can do so 
+without trying to find the piece of paper that you wrote it down on.
 
-In regards to seasonings, I don't always go into detail about those, because some may like their
-food spicier, or saltier, or taste different than others. That said, if you see a seasoning 
-mentioned, but not the exact quantity listed, then this is why.

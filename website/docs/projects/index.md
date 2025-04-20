@@ -12,10 +12,10 @@ that are significant that I include here.
 Have a project that you need completed? You may request my services by contacting me through my business, 
 <a href="https://rhtservices.net" target="_blank">Robinson Handy and Technology Services</a>.
 
-* Christmas Light Show (2025)
+* [Christmas Light Show (2025)](/projects/light-show)
 * Solar Shed (2025)
 * Dog House (2025)
-* [Christmas Light Show (2024)](/projects/light-show)
+* [Christmas Light Show (2024)](/projects/2024-christmas-light-show)
 * [Landscape RGB Lighting (2024)](/projects/landscape-lighting)
 * [Christmas Light Show (2023)](/projects/2023-christmas-light-show)
 * [Light Show Extender (2023)](/projects/light-show-extender)

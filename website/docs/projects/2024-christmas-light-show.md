@@ -1,5 +1,5 @@
 ---
-title: 2025 Christmas Light Show
+title: 2024 Christmas Light Show
 imagealt: 2024 Christmas Light Show
 image: /images/2020 Christmas Light Show 20201211-f000000.jpg
 ---

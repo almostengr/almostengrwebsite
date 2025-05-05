@@ -11,8 +11,8 @@ links are resources that I have used myself. Each of the links go to a person in
 or tech related organization.
 
 Additional resources and suggestions can be added to this list by messaging me on 
-<a href="https://www.instagram.com/almostengr" target="_blank">Instagram</a> or
-<a href="https://twitter.com/almostengr" target="_blank">Twitter</a>.
+<a href="https://www.instagram.com/almostengr" target="_blank">Instagram</a> or 
+<a href="https://tiktok.com/@almostengr">Tiktok</a>.
 
 ## Categories
 

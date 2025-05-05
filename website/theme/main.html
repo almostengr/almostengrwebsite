@@ -9,14 +9,13 @@
   <meta name="generator" content="Mkdocs">
 
   {% if page and page.title %}
-  <title>{{ page.title | striptags }} - {{ config.site_name }}</title>
+  <title>{{ page.title | striptags }} | {{ config.site_name }}</title>
   {% else %}
-  <title>{{ config.site_name }} - {{ config.site_description }}</title>
+  <title>{{ config.site_name }} | {{ config.site_description }}</title>
   {% endif %}
 
   <link href="/assets/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="/css/blog.min.css" rel="stylesheet">
-
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:site_name" content="{{ config.site_name }}" />
@@ -28,10 +27,6 @@
   <meta name="description" content="{{ page.meta.description }}">
   <meta property="og:description" content="{{ page.meta.description }}" />
   <meta name="twitter:description" content="{{ page.meta.description }}" />
-  {% else %}
-  <meta name="description" content="{{ config.site_description }}">
-  <meta property="og:description" content="{{ config.site_description }}" />
-  <meta name="twitter:description" content="{{ config.site_description }}" />
   {% endif %}
 
   {% if page and page.meta.image %}
@@ -85,14 +80,10 @@
         <li class="nav-item"><a class="nav-link text-light" href="/resources">Get Into Tech</a></li>
         <li class="nav-item"><a class="nav-link text-light" href="https://lightshow.thealmostengineer.com">Light Show</a></li>
       </ul>
-
-      {% if page and page.meta.presentation %}
-      {% else %}
       <form class="form-inline mt-2 mt-md-0" action="https://www.google.com/search" method="get">
         <input type="hidden" name="q" value="site:thealmostengineer.com">
         <input class="form-control mr-sm-2" type="text" placeholder="Search with Google" aria-label="Search" name="q">
       </form>
-      {% endif %}
     </div>
   </nav>
 

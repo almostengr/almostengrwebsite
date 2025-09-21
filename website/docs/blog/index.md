@@ -1,5 +1,5 @@
 ---
-title: Blog
+title: Blog of Kenny Robinson
 description: Sharing food recipes, thoughts, and managing life.
 hidepostinfo: true
 category: directorylist

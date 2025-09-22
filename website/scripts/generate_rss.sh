@@ -64,7 +64,7 @@ writeFeedFooter $RSS_FILE
 # write latest file
 writeFeedHeader $RSS_LATEST_FILE
 
-for blogPost in $(ls -r docs/blog/*.md | head -16)
+for blogPost in $(ls -r docs/blog/*.md | head -11)
 do
     writeFeedItems "$RSS_LATEST_FILE" $blogPost
 done

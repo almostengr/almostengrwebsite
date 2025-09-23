@@ -36,7 +36,7 @@ function writeFeedItems() {
     TITLE=$(grep "^title:" "$fileName" | sed 's/^title: //' | xargs)
     echo "<title>${TITLE}</title>" >> $1
 
-    PAGE_PATH=$(echo $2 | sed "s/docs\/blog//g" | sed "s/.md//g" | xargs)
+    PAGE_PATH=$(echo $2 | sed "s/website\/docs\/blog//g" | sed "s/.md//g" | xargs)
     echo "<link>https://thealmostengineer.com/blog${PAGE_PATH}</link>" >> $1
 
     PUBLISH_DATE=$(grep "^posted:" "$fileName" | sed 's/^posted: //' | xargs)

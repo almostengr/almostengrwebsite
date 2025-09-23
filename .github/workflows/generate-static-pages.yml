@@ -47,7 +47,7 @@ jobs:
     - name: Deploy to Production
       uses: fifsky/ssh-action@master
       with:
-        command: cd && cd www && git pull origin website 
+        command: cd && cd www && git pull origin website && mv website/*xml .. && rm -r website
         host: ${{ secrets.HOSTNAME }}
         key: ${{ secrets.PRIVATE_KEY }}
         port: ${{ secrets.PORT_NUMBER }}

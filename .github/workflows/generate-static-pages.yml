@@ -25,8 +25,7 @@ jobs:
     - run: /usr/bin/python3 -m mkdocs gh-deploy -f website/mkdocs.yml -b website
 
     - run: |
-        cd website 
-        scripts/generate_rss.sh
+        website/scripts/generate_rss.sh
 
     # - run: scp -p -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -P ${{ secrets.PORT_NUMBER }} all.xml latest.xml ${{ secrets.USERNAME }}@${{ secrets.HOSTNAME }}:${{ secrets.WwW_DIRECTORY }}
     - name: Copy RSS files via SSH
@@ -36,7 +35,7 @@ jobs:
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT_NUMBER }}
-        source: "website/all.xml,website/latest.xml"
+        source: "all.xml,latest.xml"
         target: ${{ secrets.WWW_DIRECTORY }}
         key: ${{ secrets.PRIVATE_KEY }}
           
@@ -47,7 +46,7 @@ jobs:
     - name: Deploy to Production
       uses: fifsky/ssh-action@master
       with:
-        command: cd && cd www && git pull origin website && mv website/*xml .. && rm -r website
+        command: cd && cd www && git pull origin website
         host: ${{ secrets.HOSTNAME }}
         key: ${{ secrets.PRIVATE_KEY }}
         port: ${{ secrets.PORT_NUMBER }}

@@ -54,7 +54,7 @@ function writeFeedItems() {
 # write full file
 writeFeedHeader $RSS_FILE
 
-for blogPost in $(ls -r docs/blog/*.md)
+for blogPost in $(ls -r website/docs/blog/*.md)
 do
     writeFeedItems "$RSS_FILE" "$blogPost"
 done
@@ -64,7 +64,7 @@ writeFeedFooter $RSS_FILE
 # write latest file
 writeFeedHeader $RSS_LATEST_FILE
 
-for blogPost in $(ls -r docs/blog/*.md | head -11)
+for blogPost in $(ls -r website/docs/blog/*.md | head -11)
 do
     writeFeedItems "$RSS_LATEST_FILE" $blogPost
 done

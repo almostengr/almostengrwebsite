@@ -24,8 +24,9 @@ jobs:
     - run: git fetch -p
     - run: /usr/bin/python3 -m mkdocs gh-deploy -f website/mkdocs.yml -b website
 
-    - run: cd website 
-    - run: scripts/generate_rss.sh
+    - run: |
+        cd website 
+        scripts/generate_rss.sh
 
     # - run: scp -p -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -P ${{ secrets.PORT_NUMBER }} all.xml latest.xml ${{ secrets.USERNAME }}@${{ secrets.HOSTNAME }}:${{ secrets.WwW_DIRECTORY }}
     - name: Copy RSS files via SSH

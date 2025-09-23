@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -x
+# set -x
 
 RSS_FILE="all.xml"
 RSS_LATEST_FILE="latest.xml"

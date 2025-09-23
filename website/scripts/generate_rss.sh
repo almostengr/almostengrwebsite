@@ -16,10 +16,11 @@ function writeFeedHeader() {
     echo "<link>http://www.thealmostengineer.com/</link>" >> $1
     echo "<description>Information about this blog and Kenny Robinson.</description>" >> $1
     echo "<language>en-us</language>" >> $1
+    echo "<copyright>The Almost Engineer</copyright>" >> $1
+    echo "<generator>The Almost Engineer Bash Script</generator>" >> $1
     echo "<pubDate>$(date)</pubDate>" >> $1
     echo "<lastBuildDate>$(date)</lastBuildDate>" >> $1
     echo "<docs>https://www.rssboard.org/rss-specification</docs>" >> $1
-    echo "<atom:link href='https://www.rssboard.org/files/sample-rss-2.xml' rel='self' type='application/rss+xml'/>" >> $1
 }
 
 function writeFeedFooter() {

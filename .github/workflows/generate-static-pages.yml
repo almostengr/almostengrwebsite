@@ -26,8 +26,18 @@ jobs:
 
     - run: website/scripts/generate_rss.sh
 
-    - run: scp -p -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -P ${{ secrets.PORT_NUMBER }} all.xml latest.xml ${{ secrets.USERNAME }}@${{ secrets.HOSTNAME }}:${{ secrets.WwW_DIRECTORY }}
-
+    # - run: scp -p -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -P ${{ secrets.PORT_NUMBER }} all.xml latest.xml ${{ secrets.USERNAME }}@${{ secrets.HOSTNAME }}:${{ secrets.WwW_DIRECTORY }}
+    - name: Copy RSS files via SSH
+      uses: appleboy/scp-action@v1
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        password: ${{ secrets.PASSWORD }}
+        port: ${{ secrets.PORT_NUMBER }}
+        source: "all.xml,latest.xml"
+        target: ${{ secrets.WWW_DIRECTORY }}
+        key: ${{ secrets.PRIVATE_KEY }}
+          
   deploy:
     runs-on: ubuntu-latest
     needs: build

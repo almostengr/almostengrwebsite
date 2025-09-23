@@ -30,7 +30,7 @@ jobs:
     - name: Copy RSS files via SSH
       uses: appleboy/scp-action@v1
       with:
-        host: ${{ secrets.HOST }}
+        host: ${{ secrets.HOSTNAME }}
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT_NUMBER }}

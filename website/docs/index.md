@@ -3,15 +3,6 @@ title: The Blog of Kenny Robinson
 description: Information about this blog and Kenny Robinson.
 ---
 
-## Musical Light Show - Featured Project
-
-Each year, I do a musical Christmas light show. The show consists of synchronizing
-lights to music. To pick a song for the Light Show, go to the [Light Show website](https://lightshow.thealmostengineer.com).
-
-This project is regularly brought up with my neighbors and coworkers at the office. Each year, I put up 
-lights that are synchronized to music.
-More information about the project, including song information, show times, and links to previous
-years show videos, are available on the [project page](/projects/light-show).
 
 ## My Blog
 

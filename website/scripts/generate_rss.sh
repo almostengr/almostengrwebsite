@@ -2,8 +2,8 @@
 
 set -x
 
-RSS_FILE="rss.xml"
-RSS_LATEST_FILE="rsslatest.xml"
+RSS_FILE="all.xml"
+RSS_LATEST_FILE="latest.xml"
 
 rm -f $RSS_FILE $RSS_LATEST_FILE
 

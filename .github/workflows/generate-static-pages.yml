@@ -26,7 +26,7 @@ jobs:
 
     - run: website/scripts/generate_rss.sh
 
-    - run: scp -p -P ${{ secrets.PORT_NUMBER }} rss.xml rsslatest.xml ${{ secrets.USERNAME }}@${{ secrets.HOSTNAME }}:${{ secrets.WwW_DIRECTORY }}
+    - run: scp -p -P ${{ secrets.PORT_NUMBER }} all.xml latest.xml ${{ secrets.USERNAME }}@${{ secrets.HOSTNAME }}:${{ secrets.WwW_DIRECTORY }}
 
   deploy:
     runs-on: ubuntu-latest

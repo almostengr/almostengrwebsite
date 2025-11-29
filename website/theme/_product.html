@@ -1,53 +1,33 @@
-<!-- Hero – instant trust & desire -->
 <section class="bg-dark text-white py-5">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-6">
-        <h1>Traffic Pi – Full Source Code + Schematics</h1>
-        <p class="lead">The exact code + wiring I use in my real traffic light project. Plug-and-play on any Raspberry Pi.</p>
-        <h2 class="display-4 mb-4">$49</h2>
-        <form action="https://your-square-checkout-link" target="_blank">
-          <button class="btn btn-success btn-lg">Buy with Square →</button>
+        <h1>{{ page.title }}</h1>
+        <p class="lead">{{ page.meta.subtitle }}</p>
+        <h2 class="display-4 mb-4">${{ page.meta.price }}</h2>
+        <form action="{{ page.meta.squarelink}}" target="_blank">
+          <button class="btn btn-success btn-lg">Buy Now →</button>
         </form>
-        <p class="mt-3"><small>Instant GitHub repo access after payment • Lifetime updates</small></p>
+        {% if page and page.meta.heroNote %}
+        <p class="mt-3"><small>{{ page.meta.heroNote }}</small></p>
+        {% endif %}
       </div>
       <div class="col-lg-6 text-center">
-        <img src="/images/products/traffic-pi-hero.webp" alt="Traffic Pi running" class="img-fluid rounded shadow">
+        <img src="{{ page.meta.image }}" alt="Traffic Pi running" class="img-fluid rounded shadow">
       </div>
     </div>
   </div>
 </section>
-
-<!-- Proof & contents -->
-<section class="py-5">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 mx-auto">
-        <h2>What you get</h2>
-        <ul class="list-unstyled">
-          <li>✔ Full .NET 8 source code</li>
-          <li>✔ Fritzing schematic + parts list</li>
-          <li>✔ Pre-built SD card image (optional)</li>
-          <li>✔ Private GitHub repo invite (you own it forever)</li>
-          <li>✔ 1 year of updates free</li>
-        </ul>
-
-        <h2 class="mt-5">Demo video</h2>
-        <div class="ratio ratio-16x9 mb-5">
-          <iframe src="https://www.youtube.com/embed/xxxx" allowfullscreen></iframe>
-        </div>
-
-        <h2>Frequently asked questions</h2>
-        <!-- Simple Bootstrap accordion -->
-      </div>
+<section class="py-3">
+  <div class="container px-3">
+    <div class="col-lg-10 mx-auto">
+      {{ page.content }}
     </div>
   </div>
 </section>
-
-<!-- Final CTA -->
-<section class="bg-success text-white py-5 text-center">
+<section class="bg-secondary text-white py-5 text-center">
   <div class="container">
     <h2>Ready to build your own?</h2>
-    <a href="https://your-square-link" target="_blank" class="btn btn-light btn-lg">Buy now – $49 →</a>
+    <a href="{{ page.meta.squarelink }}" target="_blank" class="btn btn-light btn-lg">Buy now – $49 →</a>
   </div>
 </section>

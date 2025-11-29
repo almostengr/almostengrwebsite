@@ -1,8 +1,7 @@
 ---
-title: The Blog of Kenny Robinson
+title: Web Development, Embedded Systems, and Dad Life
 description: Information about this blog and Kenny Robinson.
 ---
-
 
 ## My Blog
 

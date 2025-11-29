@@ -8,19 +8,15 @@
   <meta name="author" content="{{ config.site_author }}">
 
   {% if page and page.title %}
-  <title>{{ page.title | striptags }} | The Almost Engineer</title>
+  <title>{{ page.title | striptags }} | The Almost Engineer, the blog of Kenny Robinson</title>
   {% else %}
-  <title>The Almost Engineer | The Blog of Kenny Robinson</title>
+  <title>The Almost Engineer</title>
   {% endif %}
 
-  <!-- <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/starter-template/" /> -->
-  <link href="/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="/css/site5.css" rel="stylesheet" />
-  <link href="/css/hero.css" rel="stylesheet" />
-  <meta name="theme-color" content="#712cf9" />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="en_US" />
-  <meta property="og:site_name" content="The Almoste Engineer" />
+  <meta property="og:site_name" content="The Almost Engineer" />
+  <meta name="theme-color" content="#712cf9" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="{{ config.theme.social_user }}" />
   <meta name="twitter:creator" content="{{ config.theme.social_user }}" />
@@ -60,19 +56,27 @@
   {% if page and page.meta.redirect %}
   <meta http-equiv="refresh" content="0; url={{ page.meta.redirect }}" />
   {% endif %}
-
+  
+  <link rel="canonical" href="https://thealmostengineer.com/{{ page.url }}" />
+  <link href="/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="/css/hero.min.css" rel="stylesheet" />
+  <link href="/css/prism.min.css" rel="stylesheet" />
+  <link href="/css/site5.css" rel="stylesheet" />
+  
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="//www.googletagmanager.com/gtag/js?id={{ config.google_analytics[0] }}"></script>
   <script
     async>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'UA-64643711-1');</script>
-</head>
-
-<body class="">
+  </head>
+  
+  <body>
+  {% block content %}
   {% if page and page.meta.redirect %}
   {% include "_redirect.html" %}
   {% else %}
   {% include "_layout.html" %}
   {% endif %}
+  {% endblock %}
 </body>
 
 </html>

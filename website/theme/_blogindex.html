@@ -1,0 +1,39 @@
+{% for nav_item in nav %}
+{% if nav_item.children and page %}
+{% for child in nav_item.children | reverse %}
+{% if page.url in child.url and child.url != page.url %}
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/{{ child.url }}" class="icon-link gap-1 icon-link-hover stretched-link">
+                        {{ child.title }}
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="{{ nav_item.content | wordcount }} words">
+                        {%- set num_of_words = child.content | wordcount // 200 -%}
+                        {% if num_of_words <= 1 %}1 {% else %}{{ num_of_words }} {% endif %} </span> minute read
+                            {% if child.meta.posted %}
+                            | posted on {{ child.meta.posted }}
+                            {% endif %}
+                            {% if child.meta.updated %}
+                            | updated on {{ child.meta.updated }}
+                            {% endif %}
+                </div>
+                <p class="card-text mb-auto">
+                    {% if child.description is defined %}
+                    {{ child.description }}
+                    {% else %}
+                    {{ child.content | striptags | truncate(175,false) }}
+                    {% endif %}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+{% endfor %}
+{% endif %}
+{% endfor %}

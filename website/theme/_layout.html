@@ -20,6 +20,10 @@
       d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z">
     </path>
   </symbol>
+  <symbol id="search" viewBox="0 0 16 16">
+    <path
+      d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+  </symbol>
 </svg>
 <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
   <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button"
@@ -81,20 +85,10 @@
     </path>
   </symbol>
 </svg>
-<!-- <div class="col-lg-8 mx-auto p-4 py-md-5">
-  <header class="d-flex align-items-center pb-3 mb-5 border-bottom">
-    <a href="/" class="d-flex align-items-center text-body-emphasis text-decoration-none">
-      <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
-        <use xlink:href="#bootstrap"></use>
-      </svg>
-      <span class="fs-4">Starter template</span>
-    </a>
-  </header>
-</div> -->
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
   <div class="container">
     <a class="navbar-brand fw-bold" href="/">
-      The Almost Engineer
+      Kenny Robinson
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
       aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -102,88 +96,198 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav me-auto mb-2 mb-md-0">
-        <li class="nav-item"><a class="nav-link active" href="/techstack">Tech Stack</a></li>
+        <li class="nav-item"><a class="nav-link active" href="/web-development">Web Development</a></li>
+        <li class="nav-item"><a class="nav-link active" href="/embedded-systems">Embedded Systems</a></li>
+        <li class="nav-item"><a class="nav-link active" href="/tech-workbench">Tech Workbench</a></li>
         <li class="nav-item"><a class="nav-link active" href="/dadlife">Dad Life</a></li>
-        <!-- <li class="nav-item"><a class="nav-link active" href="#">Books and Source Code</a></li> -->
-        <li class="nav-item"><a class="nav-link active" href="/about">About</a></li>
-        <li class="nav-item"><a class="nav-link active" href="/contact">Contact</a></li>
-        <!-- <li class="nav-item"> <a class="nav-link active" aria-current="page" href="#">Home</a></li>
-        <li class="nav-item"> <a class="nav-link" href="#">Link</a></li>
-        <li class="nav-item"> <a class="nav-link disabled" aria-disabled="true">Disabled</a></li> -->
+        <li class="nav-item"><a class="nav-link active" href="/services">Services</a></li>
+        <!-- <li class="nav-item"><a class="nav-link active" href="/lightshow">Light Show</a></li> -->
       </ul>
-      <form class="d-flex" role="search" action="https://www.google.com/search" method="get">
-        <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-light" type="submit">Search</button> -->
-        <div class="input-group">
-          <input type="hidden" name="q" value="site:thealmostengineer.com">
-          <input type="text" class="form-control" placeholder="Search with Google" aria-label="Search"
-            aria-describedby="search-button" name="q">
-          <button class="btn btn-outline-secondary" type="submit" id="search-button">Search</button>
-        </div>
-      </form>
     </div>
   </div>
 </nav>
 <main>
-  {% if page and page.meta.redirect %}
-  {% elif page and page.is_homepage %}
-  {% include "_homeheader.html" %}
-  {% include "_default.html" %}
-  {% elif page and (page.url == "techstack/" or page.url == "dadlife/" or page.url == "junkdrawer/") %}
-  {% include "_blogindex.html" %}
-  {% elif page and ("techstack/" in page.url or "dadlife/" in page.url or "junkdrawer/" in page.url) %}
+  {% if page and page.is_homepage %}
+  <div class="px-4 mb-5 w-100 border-bottom border-top shadow bg-warning">
+    <div class="container rounded text-dark">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img src="/images/jumbotron_kenny.jpg" class="d-block mx-lg-auto img-fluid rounded"
+            alt="Kenny with traffic light" width="700" height="500" loading="lazy">
+        </div>
+        <div class="col-lg-6 ">
+          <h1 class="display-5 fw-bold text-body-dark lh-1 mb-3">
+            Kenny Robinson
+          </h1>
+          <p class="lead">
+            Full-Stack C# .NET Web Developer. Linux. STEM Advocate. Public Speaker.
+            Software Developer. Father. Content Creator.
+          </p>
+          <p class="lead fw-italic">
+            Share what you know, document what does work, and learn from previous mistakes.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% elif page and ("tech-workbench/" in page.url or "dadlife/" in page.url or "junkdrawer/" in page.url or
+  "lightshow" in page.url or "embedded-systems/" in page.url or "web-development/" in page.url) and page.url %}
   {% include "_blogheader.html" %}
-  {% include "_default.html" %}
-  {% elif page and page.url == "store/" %}
-  {% include "_store.html" %}
-  {% elif page and "store/" in page.url %}
-  {% include "_product.html" %}
   {% else %}
   <div class="container my-4">
     <h1>{{ page.title }}</h1>
   </div>
-  {% include "_default.html" %}
   {% endif %}
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-9">
+        {%- block content %}
+        {% if page and page.is_homepage %}
+        <!-- end content -->
+        {% elif page and page.meta.blogindex %}
+        {% include "_blogindex.html" %}
+        {% elif page and page.url == "store/" %}
+        {% include "_store.html" %}
+        {% elif page and "store/" in page.url %}
+        {% include "_product.html" %}
+        {% else %}
+        {{ page.content }}
+        {% endif %}
+        {%- endblock %}
+      </div>
+      {% if page and "store" not in page.url %}
+      <div class="col-12 col-sm-3">
+        <aside class="blog-sidebar">
+          <div class="p-4 mb-3 rounded shadow">
+            <form class="d-flex" role="search" action="https://www.google.com/search" method="get">
+              <div class="input-group">
+                <input type="hidden" name="q" value="site:thealmostengineer.com">
+                <input type="text" class="form-control rounded" placeholder="Search with Google" aria-label="Search"
+                  aria-describedby="search-button" name="q">
+                <button class="btn btn-secondary" type="submit" id="search-button">Search</button>
+              </div>
+            </form>
+          </div>
+          <div class="p-4 mb-3 rounded shadow">
+            <h4 class="font-italic">About Kenny</h4>
+            <p class="mb-0">
+              Kenny is a software developer that
+              streamlines business processes and improving efficiency with innovative web applications and websites.
+            </p>
+          </div>
+          <div class="p-4 shadow mb-3">
+            <h4 class="font-italic">Get Into Tech</h4>
+            <p class="mb-0">
+              Are you looking to get into a tech career or role? Check out the
+              <a href="/resources">Resources</a> section for more information. Also check out my
+              <a href="https://www.youtube.com/channel/UC4xp-TEEIAL-4XtMVvfRaQw?sub_confirmation=1" target="_blank">
+                YouTube Channel</a> and
+              <a href="https://www.facebook.com/profile.php?id=100089303142244" target="_blank">Facebook page</a> for
+              video tutorials about software development, web development,
+              and working with tech.
+              </a>
+            </p>
+          </div>
+          <div class="p-4 shadow mb-3">
+            <h4 class="font-italic">Connect with Me</h4>
+            <ol class="list-unstyled">
+              <li><a target="_blank" href="https://bsky.app/profile/almostengr.bsky.social">Blue Sky</a></li>
+              <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100089303142244">Facebook</a>
+              <li><a target="_blank" href="https://github.com/almostengr">Github</a></li>
+              <li><a target="_blank" href="https://instagram.com/almostengr">Instagram</a></li>
+              <li><a target="_blank"
+                  href="https://www.youtube.com/channel/UCB7rvymUaUbbig3skv2zvCQ?sub_confirmation=1">Kenny Ram Dash
+                  Cam</a>
+              </li>
+              <li><a target="_blank" href="/latest.xml">RSS Latest Feed</a></li>
+              <li><a target="_blank" href="https://stackoverflow.com/users/12875554/almostengr">StackOverflow</a></li>
+              </li>
+              <li><a target="_blank" href="https://www.tiktok.com/@almostengr">TikTok</a></li>
+              <li><a target="_blank" href="https://twitter.com/almostengr">Twitter</a></li>
+              <li><a target="_blank"
+                  href="https://www.youtube.com/channel/UC4xp-TEEIAL-4XtMVvfRaQw?sub_confirmation=1">YouTube</a></li>
+            </ol>
+          </div>
+          <div class="p-4 shadow mb-3">
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4218270188842097"
+              data-ad-slot="5189305512" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+          </div>
+        </aside><!-- /.blog-sidebar -->
+      </div>
+      {% endif %}
+    </div>
+  </div>
+  <div class="container bg-warning text-dark rounded p-5 my-2 shadow">
+    <div class="row text-center">
+      <h3 class="col-12 col-md-4 text-center mb-2 mb-md-0">
+        <div>SHARE THE KNOWLEDGE</div>
+        <div>JOIN THE COMMUNITY</div>
+      </h3>
+      <div class="col-12 col-md-4 text-center mb-2 mb-md-0">
+        Whether you are just getting started in tech, or seasoned professional looking to share
+        your knowledge, join the community with other like minded individuals.
+      </div>
+      <div class="col-12 col-md-4 text-center mb-2 mb-md-0">
+        <button type="button" class="btn btn-lg btn-dark p-2">
+          <a class="text-decoration-none text-light" href="https://forums.rhtservices.net" target="_blank">
+            JOIN THE DISCUSSION</a>
+        </button>
+      </div>
+    </div>
+  </div>
 </main>
 <footer class="pt-2 my-5 text-body-secondary border-top blog-footer">
   <div class="container">
-    <div>
-      <a class="pe-2" href="/techstack">Tech Stack Blog</a>
-      <a class="pe-2" href="/dadlife">Dad Life Blog</a>
-      <a class="pe-2" href="/junkdrawer">Junk Drawer Blog</a>
+    <div class="mb-3">
+      <a class="pe-2" href="/web-development">Web Development</a>
+      <a class="pe-2" href="/embedded-systems">Embedded Systems</a>
+      <a class="pe-2" href="/tech-workbench">Tech Workbench</a>
+      <a class="pe-2" href="/dadlife">Dad Life</a>
+      <a class="pe-2" href="/junkdrawer">Junk Drawer</a>
       <a class="pe-2" href="/projects">Projects</a>
       <a class="pe-2" href="/services">Services</a>
       <a class="pe-2" href="/uses">Uses</a>
       <a class="pe-2" href="/about">About</a>
       <a class="pe-2" href="/contact">Contact</a>
-      <a class="pe-2" href="/privacy">Privacy Policy</a>
-      <a class="pe-2" href="/sitemap.xml">Sitemap</a>
     </div>
-    <div>
-      <a class="pe-2" target="_blank" href="/latest.xml">RSS Latest Feed</a>
-      <a class="pe-2" target="_blank" href="/latest.xml">RSS Feed</a>
+    <div class="mb-3">
       <a class="pe-2" target="_blank" href="https://bsky.app/profile/almostengr.bsky.social">Blue Sky</a>
+      <a class="pe-2" target="_blank" href="https://facebook.com/almostengr2">Facebook</a>
       <a class="pe-2" target="_blank" href="https://github.com/almostengr">Github</a>
       <a class="pe-2" target="_blank" href="https://instagram.com/almostengr">Instagram</a>
       <a class="pe-2" target="_blank" href="https://stackoverflow.com/users/12875554/almostengr">StackOverflow</a>
       <a class="pe-2" target="_blank" href="https://www.tiktok.com/@almostengr">TikTok</a>
       <a class="pe-2" target="_blank" href="https://twitter.com/almostengr">Twitter</a>
+      <a class="pe-2" target="_blank"
+        href="https://www.youtube.com/channel/UC4xp-TEEIAL-4XtMVvfRaQw?sub_confirmation=1">YouTube</a>
     </div>
-    <div>
+    <div class="mb-3">
+      <a class="pe-2" href="/search">Search</a>
+      <a class="pe-2" href="/lightshow">Light Show</a>
+      <a class="pe-2" href="/forums.rhtservices.net" target="_blank">Tech Forums</a>
+      <a class="pe-2" href="/privacy">Privacy Policy</a>
+      <a class="pe-2" href="/sitemap.xml">Sitemap</a>
+      <a class="pe-2" target="_blank" href="/latest.xml">RSS Feed</a>
+    </div>
+    <div class="mb-3">
       <a class="pe-2" target="_blank"
         href="https://www.youtube.com/channel/UCB7rvymUaUbbig3skv2zvCQ?sub_confirmation=1">Kenny Ram Dash Cam</a>
     </div>
-    <div>Copyright &copy; 2010-{{ build_date_utc.strftime("%Y") }} Kenny Robinson</div>
-    <div>
+    <div class="mb-3">
+      Copyright &copy; 2010-{{ build_date_utc.strftime("%Y") }} Kenny Robinson
+    </div>
+    <div class="mb-3">
       Created by <a href="https://rhtservices.net" target="_blank">Robinson Handy and Technology
         Services</a>
     </div>
-    <div>
+    <div class="mb-3">
       Disclaimer: The opinions expressed here are those of mine and not representative of my employer or
       affiliates.
     </div>
   </div>
 </footer>
-</div>
 <script src="/js/bootstrap.bundle.min.js" class="astro-vvvwv3sm"></script>
 <script src="/js/color-modes.min.js"></script>
+<script src="/js/prism.min.js"></script>

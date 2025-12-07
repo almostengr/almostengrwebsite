@@ -1,5 +1,6 @@
 ---
-title: Web Development, Embedded Systems, and Dad Life
+title: "The Almost Engineer: Web Development & Tech Solutions by Kenny Robinson"
+# title: Web Development, Embedded Systems, Information Technology, and Dad Life
 description: Information about this blog and Kenny Robinson.
 ---
 
@@ -7,8 +8,8 @@ description: Information about this blog and Kenny Robinson.
 
 A programmer that does not talk (or in this case write) about technology probably is not a good programmer.
 I share
-[my code snippets](/blog/2022.09.17-length-of-shell-variable/),
-[difficulties with coding](/blog/2021.08.12-jquery-validator-with-parameter/),
+[my code snippets](/tech-workbench/2022.09.17-length-of-shell-variable/),
+[difficulties with coding](/web-development/2021.08.12-jquery-validator-with-parameter/),
 and other things technology here.
 Here I share other aspects of life, including my hobbies, and other thoughts that are not related to tech.
 [Read the Blog](/blog)

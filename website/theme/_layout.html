@@ -24,6 +24,17 @@
     <path
       d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
   </symbol>
+  <symbol id="codesquare" viewBox="0 0 16 16">
+    <path
+      d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+    <path
+      d="M6.854 4.646a.5.5 0 0 1 0 .708L4.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0m2.292 0a.5.5 0 0 0 0 .708L11.793 8l-2.647 2.646a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708 0" />
+  </symbol>
+  <symbol id="cpu-fill" viewBox="0 0 16 16">
+    <path d="M6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5z" />
+    <path
+      d="M5.5.5a.5.5 0 0 0-1 0V2A2.5 2.5 0 0 0 2 4.5H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2A2.5 2.5 0 0 0 4.5 14v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14a2.5 2.5 0 0 0 2.5-2.5h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14A2.5 2.5 0 0 0 11.5 2V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1zm1 4.5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5v-3A1.5 1.5 0 0 1 6.5 5" />
+  </symbol>
 </svg>
 <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
   <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button"
@@ -99,7 +110,6 @@
         <li class="nav-item"><a class="nav-link active" href="/web-development">Web Development</a></li>
         <li class="nav-item"><a class="nav-link active" href="/embedded-systems">Embedded Systems</a></li>
         <li class="nav-item"><a class="nav-link active" href="/tech-workbench">Tech Workbench</a></li>
-        <li class="nav-item"><a class="nav-link active" href="/dadlife">Dad Life</a></li>
         <li class="nav-item"><a class="nav-link active" href="/services">Services</a></li>
         <!-- <li class="nav-item"><a class="nav-link active" href="/lightshow">Light Show</a></li> -->
       </ul>
@@ -117,19 +127,34 @@
         </div>
         <div class="col-lg-6 ">
           <h1 class="display-5 fw-bold text-body-dark lh-1 mb-3">
-            Kenny Robinson
+            Software Engineer, STEM Advocate, and Dad Life Optimizer.
           </h1>
           <p class="lead">
-            Full-Stack C# .NET Web Developer. Linux. STEM Advocate. Public Speaker.
-            Software Developer. Father. Content Creator.
+            I am Kenny Robinson.
+            I am a Full-Stack C# .NET Developer specializing in robust system architecture and Linux environments. I
+            apply the
+            same disciplined approach to teaching STEM, public speaking, and managing the organized chaos of family
+            life.
+            <!-- Full-Stack C# .NET Web Developer. Linux. STEM Advocate. Public Speaker. Software Developer. Father. Content Creator. -->
+            <!-- I share production-ready code, engineering insights, and the lessons learned balancing complex systems with the organized chaos of family life. -->
           </p>
           <p class="lead fw-italic">
-            Share what you know, document what does work, and learn from previous mistakes.
+            My approach: Share what you know, document what does work, and learn from previous mistakes.
           </p>
+          <!-- <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+          </div> -->
         </div>
       </div>
     </div>
   </div>
+
+        {% include "_homebody.html" %}
+
+
+
+
   {% elif page and ("tech-workbench/" in page.url or "dadlife/" in page.url or "junkdrawer/" in page.url or
   "lightshow" in page.url or "embedded-systems/" in page.url or "web-development/" in page.url) and page.url %}
   {% include "_blogheader.html" %}
@@ -155,7 +180,7 @@
         {% endif %}
         {%- endblock %}
       </div>
-      {% if page and "store" not in page.url %}
+      {% if page and ("store" not in page.url and page.is_homepage == false) %}
       <div class="col-12 col-sm-3">
         <aside class="blog-sidebar">
           <div class="p-4 mb-3 rounded shadow">
@@ -167,13 +192,6 @@
                 <button class="btn btn-secondary" type="submit" id="search-button">Search</button>
               </div>
             </form>
-          </div>
-          <div class="p-4 mb-3 rounded shadow">
-            <h4 class="font-italic">About Kenny</h4>
-            <p class="mb-0">
-              Kenny is a software developer that
-              streamlines business processes and improving efficiency with innovative web applications and websites.
-            </p>
           </div>
           <div class="p-4 shadow mb-3">
             <h4 class="font-italic">Get Into Tech</h4>
@@ -214,7 +232,7 @@
               data-ad-slot="5189305512" data-ad-format="auto" data-full-width-responsive="true"></ins>
             <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
           </div>
-        </aside><!-- /.blog-sidebar -->
+        </aside>
       </div>
       {% endif %}
     </div>

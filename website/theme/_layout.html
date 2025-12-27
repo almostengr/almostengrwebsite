@@ -118,15 +118,15 @@
 </nav>
 <main>
   {% if page and page.is_homepage %}
-  <div class="px-4 mb-5 w-100 border-bottom border-top shadow bg-warning">
-    <div class="container rounded text-dark">
+  <div class="px-4 mb-5 w-100 border-bottom border-top shadow bg-maroon text-body">
+    <div class="container rounded">
       <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
         <div class="col-10 col-sm-8 col-lg-6">
           <img src="/images/jumbotron_kenny.jpg" class="d-block mx-lg-auto img-fluid rounded"
             alt="Kenny with traffic light" width="700" height="500" loading="lazy">
         </div>
         <div class="col-lg-6 ">
-          <h1 class="display-5 fw-bold text-body-dark lh-1 mb-3">
+          <h1 class="display-5 fw-bold lh-1 mb-3">
             Software Engineer, STEM Advocate, and Dad Life Optimizer.
           </h1>
           <p class="lead">
@@ -149,27 +149,71 @@
       </div>
     </div>
   </div>
-
-        {% include "_homebody.html" %}
-
-
-
-
-  {% elif page and ("tech-workbench/" in page.url or "dadlife/" in page.url or "junkdrawer/" in page.url or
-  "lightshow" in page.url or "embedded-systems/" in page.url or "web-development/" in page.url) and page.url %}
-  {% include "_blogheader.html" %}
+  {% include "_homebody.html" %}
   {% else %}
-  <div class="container my-4">
-    <h1>{{ page.title }}</h1>
-  </div>
-  {% endif %}
-  <div class="container">
+  <div class="container-lg">
     <div class="row">
-      <div class="col-12 col-sm-9">
+      <div class="col-12 col-md-9">
         {%- block content %}
-        {% if page and page.is_homepage %}
-        <!-- end content -->
-        {% elif page and page.meta.blogindex %}
+        <div class="my-3">
+          <div class="p-3 bg-body-tertiary rounded-3">
+            <h1 class="text-body-emphasis fw-bold">{{ page.title }}</h1>
+            <div class="row text-muted">
+              {% if page and page.meta.author %}
+              <div class="col">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-person-lines-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1z" />
+                </svg>
+                {{ page.meta.author }}
+              </div>
+              {% endif %}
+              {% if page and page.meta.posted %}
+              <div class="col">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-calendar2-event" viewBox="0 0 16 16">
+                  <path d="M11 7.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z" />
+                  <path
+                    d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1z" />
+                  <path d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+                {{ page.meta.posted }}
+
+                {% if page and page.meta.updated %}
+                <span class="ms-2">Updated: {{ page.meta.updatd}}</span>
+                {% endif %}
+              </div>
+              {% endif %}
+              {% if page and page.meta.blogindex == false %}
+              <div class="col">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock"
+                  viewBox="0 0 16 16">
+                  <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+                  <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0" />
+                </svg>
+                {%- set num_of_words = page.content | wordcount -%}
+                {% include "_readingduration.html" %}
+              </div>
+              <div class="col">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-journal"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2" />
+                  <path
+                    d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1z" />
+                </svg>
+                {{ num_of_words }} words
+              </div>
+              {% else %}
+              <div class="px-4 py-2">
+                {{ page.meta.description }}
+              </div>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+        {% if page and page.meta.blogindex %}
         {% include "_blogindex.html" %}
         {% elif page and page.url == "store/" %}
         {% include "_store.html" %}
@@ -180,8 +224,9 @@
         {% endif %}
         {%- endblock %}
       </div>
+      {% endif %}
       {% if page and ("store" not in page.url and page.is_homepage == false) %}
-      <div class="col-12 col-sm-3">
+      <div class="col-12 col-md-3 mt-3">
         <aside class="blog-sidebar">
           <div class="p-4 mb-3 rounded shadow">
             <form class="d-flex" role="search" action="https://www.google.com/search" method="get">
@@ -237,7 +282,7 @@
       {% endif %}
     </div>
   </div>
-  <div class="container bg-warning text-dark rounded p-5 my-2 shadow">
+  <div class="container bg-maroon text-body rounded p-5 my-2 shadow">
     <div class="row text-center">
       <h3 class="col-12 col-md-4 text-center mb-2 mb-md-0">
         <div>SHARE THE KNOWLEDGE</div>
@@ -254,6 +299,9 @@
         </button>
       </div>
     </div>
+  </div>
+  <div class="container my-2 small">
+    <a href="#">Back to Top</a>
   </div>
 </main>
 <footer class="pt-2 my-5 text-body-secondary border-top blog-footer">
@@ -280,6 +328,8 @@
       <a class="pe-2" target="_blank" href="https://twitter.com/almostengr">Twitter</a>
       <a class="pe-2" target="_blank"
         href="https://www.youtube.com/channel/UC4xp-TEEIAL-4XtMVvfRaQw?sub_confirmation=1">YouTube</a>
+      <a class="pe-2" target="_blank"
+        href="https://www.youtube.com/channel/UCB7rvymUaUbbig3skv2zvCQ?sub_confirmation=1">Kenny Ram Dash Cam</a>
     </div>
     <div class="mb-3">
       <a class="pe-2" href="/search">Search</a>
@@ -290,13 +340,7 @@
       <a class="pe-2" target="_blank" href="/latest.xml">RSS Feed</a>
     </div>
     <div class="mb-3">
-      <a class="pe-2" target="_blank"
-        href="https://www.youtube.com/channel/UCB7rvymUaUbbig3skv2zvCQ?sub_confirmation=1">Kenny Ram Dash Cam</a>
-    </div>
-    <div class="mb-3">
-      Copyright &copy; 2010-{{ build_date_utc.strftime("%Y") }} Kenny Robinson
-    </div>
-    <div class="mb-3">
+      Copyright &copy; 2010-{{ build_date_utc.strftime("%Y") }} Kenny Robinson |
       Created by <a href="https://rhtservices.net" target="_blank">Robinson Handy and Technology
         Services</a>
     </div>

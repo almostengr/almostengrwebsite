@@ -1,6 +1,6 @@
 ---
 title: Tech Workshop
-description: Sharing other things related to tech
+description: Sharing my projects and thoughts that are related to tech.
 hidepostinfo: true
 category: directorylist
 filtercategory: cooking

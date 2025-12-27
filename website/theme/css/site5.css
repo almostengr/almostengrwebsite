@@ -1,3 +1,7 @@
+:root {
+  --maroon: #600;
+}
+
 /* features.css */
 .feature-icon {
   width: 4rem;
@@ -148,4 +152,36 @@ img {
 code {
   background-color: #000;
   color: #fff;
+}
+
+
+[data-bs-theme="light"] {
+  --maroon: #600;
+  --background-maroon: #f00;
+}
+
+[data-bs-theme="dark"] {
+  --maroon: #ff0000;
+  --background-maroon: #600;
+}
+
+a {
+  color: var(--maroon);
+  text-decoration-color: var(--maroon) !important;
+}
+
+.bg-maroon {
+  background-color: var(--background-maroon);
+}
+
+.text-maroon {
+  color: var(--maroon);
+}
+
+.feature-icon, .feature-icon-small{ 
+  background-color: var(--background-maroon) !important;
+}
+
+.btn-maroon{  
+  background-color: var(--background-maroon) !important;
 }

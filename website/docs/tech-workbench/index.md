@@ -1,5 +1,5 @@
 ---
-title: Tech Workshop
+title: Tech Workbench
 description: Sharing my projects and thoughts that are related to tech.
 hidepostinfo: true
 category: directorylist

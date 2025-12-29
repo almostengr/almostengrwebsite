@@ -5,9 +5,9 @@ title: "@almostengr Links"
 * [STEM Creators Spotlight 2026](https://forms.gle/h5iwVHwSNgvzfcU76)
 
 * [Web Development Blog](/web-development)
-* [Tech Workbench Blog](/tech-workbench)
+* [Tech Library Blog](/tech-library)
 * [Embedded Systems Blog](/embedded-systems)
-* [Dad Life](/dadlife)
+* [Dad Life](/dad-life)
 
 ## Connect With Me
 
@@ -20,6 +20,6 @@ title: "@almostengr Links"
 
 ## Get Into Tech
 
-* [Getting Into Tech](/tech-workbench/2022.04.08-getting-into-tech)
-* [Getting Tech Job With No Experience](/tech-workbench/2021.05.06-tech-job-with-no-experience)
+* [Getting Into Tech](/tech-library/2022.04.08-getting-into-tech)
+* [Getting Tech Job With No Experience](/tech-library/2021.05.06-tech-job-with-no-experience)
 * [Get Into Tech - All Resources](/resources)

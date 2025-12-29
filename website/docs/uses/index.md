@@ -12,7 +12,7 @@ image: /images/2020.02.01-uses-entry.jpg
 Browsing around on GitHub, I found that developers create "uses" (or /uses) pages that
 detail the tools that they use do their work. Below are a list of tools that are used to get
 the job done. For more detail about what is a Uses page and how you can create your own,
-you can check out [the blog post](/blog/2020.02.01-developer-uses-page) about this topic.
+you can check out [the blog post](/tech-library/2020.02.01-developer-uses-page) about this topic.
 
 Below are the tools that I use to create websites, software, and videos on my
 <a href="https://www.youtube.com/c/RobinsonHandyandTechnologyServices?sub_confirmation=1" 

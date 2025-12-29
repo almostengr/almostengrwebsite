@@ -22,8 +22,8 @@ projects, as it may be exactly what they are looking for.
 
 ## Why Does Kenny Blog?
 
-I have been been blogging about gardening, [technology experiences](/tech-workbench), 
-[about life](/junkdrawer), and mishaps for several reasons:
+I have been been blogging about gardening, [technology experiences](/tech-library), 
+[about life](/junk-drawer), and mishaps for several reasons:
 
 * you learn from your past mistakes
 * others can learn from your mistakes before they make them

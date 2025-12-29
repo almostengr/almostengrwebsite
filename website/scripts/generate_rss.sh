@@ -4,22 +4,22 @@
 
 RSS_FILE="all.xml"
 RSS_LATEST_FILE="latest.xml"
-DADLIFE_FILE="dadlife.rss.xml"
+dad-life_FILE="dad-life.rss.xml"
 EMBEDDED_FILE="embedded.rss.xml"
-JUNKDRAWER_FILE="junkdrawer.rss.xml"
+junk-drawer_FILE="junk-drawer.rss.xml"
 TECH_FILE="tech.rss.xml"
 WEBDEV_FILE="webdevelopment.rss.xml"
 
 rm -f $RSS_FILE $RSS_LATEST_FILE
-rm -f $DADLIFE_FILE $EMBEDDED_FILE $JUNKDRAWER_FILE $TECH_FILE $WEBDEV_FILE
+rm -f $dad-life_FILE $EMBEDDED_FILE $junk-drawer_FILE $TECH_FILE $WEBDEV_FILE
 
-touch $DADLIFE_FILE $EMBEDDED_FILE $JUNKDRAWER_FILE $TECH_FILE $WEBDEV_FILE
+touch $dad-life_FILE $EMBEDDED_FILE $junk-drawer_FILE $TECH_FILE $WEBDEV_FILE
 
 function writeFeedHeader() {
     TITLE=""
     DESCRIPTION=""
     case $2 in
-        "dadlife")
+        "dad-life")
             TITLE="Dad Life Feed | The Almost Engineer"        
             ;;
 
@@ -27,12 +27,12 @@ function writeFeedHeader() {
             TITLE="Embedded Systems Feed | The Almost Engineer"
             ;;
 
-        "junkdrawer")
+        "junk-drawer")
             TITLE="Junk Drawer and Randomness Feed | The Almost Engineer"
             ;;
 
-        "tech-workbench")
-            TITLE="Tech Workbench Feed | The Almost Engineer"
+        "tech-library")
+            TITLE="Tech Library Feed | The Almost Engineer"
             ;;
 
         "web-development")
@@ -94,12 +94,12 @@ function writeFeedItems() {
 }
 
 
-writeFeedHeader $DADLIFE_FILE "dadlife"
-for blogPost in $(ls -r website/docs/dadlife/*.md | head -11)
+writeFeedHeader $dad-life_FILE "dad-life"
+for blogPost in $(ls -r website/docs/dad-life/*.md | head -11)
 do
-    writeFeedItems "$DADLIFE_FILE" $blogPost "dadlife"
+    writeFeedItems "$dad-life_FILE" $blogPost "dad-life"
 done
-writeFeedFooter $DADLIFE_FILE
+writeFeedFooter $dad-life_FILE
 
 
 writeFeedHeader $EMBEDDED_FILE "embedded-systems"
@@ -110,18 +110,18 @@ done
 writeFeedFooter $EMBEDDED_FILE
 
 
-writeFeedHeader $JUNKDRAWER_FILE "junkdrawer"
-for blogPost in $(ls -r website/docs/junkdrawer/*.md | head -11)
+writeFeedHeader $junk-drawer_FILE "junk-drawer"
+for blogPost in $(ls -r website/docs/junk-drawer/*.md | head -11)
 do
-    writeFeedItems "$JUNKDRAWER_FILE" $blogPost "junkdrawer"
+    writeFeedItems "$junk-drawer_FILE" $blogPost "junk-drawer"
 done
-writeFeedFooter $JUNKDRAWER_FILE
+writeFeedFooter $junk-drawer_FILE
 
 
-writeFeedHeader $TECH_FILE "tech-workbench"
-for blogPost in $(ls -r website/docs/tech-workbench/*.md | head -11)
+writeFeedHeader $TECH_FILE "tech-library"
+for blogPost in $(ls -r website/docs/tech-library/*.md | head -11)
 do
-    writeFeedItems "$TECH_FILE" $blogPost "tech-workbench"
+    writeFeedItems "$TECH_FILE" $blogPost "tech-library"
 done
 writeFeedFooter $TECH_FILE
 

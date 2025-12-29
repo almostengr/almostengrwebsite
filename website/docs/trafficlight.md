@@ -2,6 +2,6 @@
 title: Traffic Light Controller, Redirecting...
 ---
 
-<meta http-equiv="refresh" content = "0; url=https://thealmostengineer.com/blog/2022.08.14-traffic-light-controller" />
+<meta http-equiv="refresh" content = "0; url=https://thealmostengineer.com/embedded-systems/2022.08.14-traffic-light-controller" />
 
-Redirecting to [https://thealmostengineer.com/blog/2022.08.14-traffic-light-controller](https://thealmostengineer.com/blog/2022.08.14-traffic-light-controller)
+Redirecting to [https://thealmostengineer.com/embedded-systems/2022.08.14-traffic-light-controller](https://thealmostengineer.com/embedded-systems/2022.08.14-traffic-light-controller)

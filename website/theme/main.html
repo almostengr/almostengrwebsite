@@ -56,19 +56,20 @@
   {% if page and page.meta.redirect %}
   <meta http-equiv="refresh" content="0; url={{ page.meta.redirect }}" />
   {% endif %}
-  
+
   <link rel="canonical" href="https://thealmostengineer.com/{{ page.url }}" />
   <link href="/css/bootstrap.min.css" rel="stylesheet" />
   <link href="/css/prism.min.css" rel="stylesheet" />
   <link href="/css/site5.css" rel="stylesheet" />
-  
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="//www.googletagmanager.com/gtag/js?id={{ config.google_analytics[0] }}"></script>
   <script
     async>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'UA-64643711-1');</script>
   </head>
-  
+
   <body>
+  <a name="#top"></a>
   {% block content %}
   {% if page and page.meta.redirect %}
   {% include "_redirect.html" %}

@@ -1,0 +1,45 @@
+{% if config.theme.jumbotron == "christmas" %}
+<div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+    <h1 class="display-3">Musical Light Show</h1>
+    <p>
+        Each year, I run a animated light show that is synchronized to music. The show allows visitors
+        to select the song of their choosing and see information about the show in real time.
+    </p>
+    <p><a class="btn btn-success btn-lg" href="https://lightshow.thealmostengineer.com" role="button">Visit Light
+            Show Website</a></p>
+</div>
+{% else %}
+<div class="px-4 mb-5 w-100 border-bottom border-top shadow bg-maroon text-light">
+    <div class="container rounded">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="/images/jumbotron_kenny.jpg" class="d-block mx-lg-auto img-fluid rounded"
+                    alt="Kenny with traffic light" width="700" height="500" loading="lazy">
+            </div>
+            <div class="col-lg-6 ">
+                <h1 class="display-5 fw-bold lh-1 mb-3">
+                    Software Engineer, STEM Advocate, and Dad Life Optimizer.
+                </h1>
+                <p class="lead">
+                    I am Kenny Robinson.
+                    I am a Full-Stack C# .NET Developer specializing in robust system architecture and Linux
+                    environments. I
+                    apply the
+                    same disciplined approach to teaching STEM, public speaking, and managing the organized chaos of
+                    family
+                    life.
+                    <!-- Full-Stack C# .NET Web Developer. Linux. STEM Advocate. Public Speaker. Software Developer. Father. Content Creator. -->
+                    <!-- I share production-ready code, engineering insights, and the lessons learned balancing complex systems with the organized chaos of family life. -->
+                </p>
+                <p class="lead fw-italic">
+                    My approach: Share what you know, document what does work, and learn from previous mistakes.
+                </p>
+                <!-- <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+          </div> -->
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}

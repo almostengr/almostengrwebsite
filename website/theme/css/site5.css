@@ -157,12 +157,14 @@ code {
 
 [data-bs-theme="light"] {
   --maroon: #600;
-  --background-maroon: #f00;
+  --background-maroon: #600;
+  --background-text: #fff;
 }
 
 [data-bs-theme="dark"] {
-  --maroon: #ff0000;
+  --maroon: #f00;
   --background-maroon: #600;
+  --background-text: #fff;
 }
 
 a {
@@ -172,16 +174,19 @@ a {
 
 .bg-maroon {
   background-color: var(--background-maroon);
+  color: var(--background-text);
 }
 
 .text-maroon {
   color: var(--maroon);
 }
 
-.feature-icon, .feature-icon-small{ 
+.feature-icon,
+.feature-icon-small {
   background-color: var(--background-maroon) !important;
 }
 
-.btn-maroon{  
+.btn-maroon {
   background-color: var(--background-maroon) !important;
+  color: var(--background-text);
 }

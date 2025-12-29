@@ -2,9 +2,7 @@
 title: "@almostengr Links"
 ---
 
-## Online Courses
-
-* <a href="https://forums.rhtservices.net/forumdisplay.php?fid=31" target="_blank">Intro To Softare Development, 2025 Spring</a>
+* [STEM Creators Spotlight 2026](https://forms.gle/h5iwVHwSNgvzfcU76)
 
 ## Connect With Me
 
@@ -17,9 +15,3 @@ title: "@almostengr Links"
 * <a href="https://www.youtube.com/c/robinsonhandyandtechnologyservices?sub_confirmation=1" target="_blank">Handyman YouTube Channel</a>
 * <a href="https://www.youtube.com/channel/UC4xp-TEEIAL-4XtMVvfRaQw?sub_confirmation=1" target="_blank">Tech Talk YouTube Channel</a>
 * [Visit My Blog](/)
-
-## Get Into Tech
-
-* [Getting Into Tech](/blog/2022.04.08-getting-into-tech)
-* [Getting Tech Job With No Experience](/blog/2021.05.06-tech-job-with-no-experience)
-* [Get Into Tech - All Resources](/resources)

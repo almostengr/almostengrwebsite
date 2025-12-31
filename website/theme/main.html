@@ -6,13 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="{{ config.site_description }}">
   <meta name="author" content="{{ config.site_author }}">
-
-  {% if page and page.title %}
-  <title>{{ page.title | striptags }} | The Almost Engineer, the blog of Kenny Robinson</title>
-  {% else %}
-  <title>The Almost Engineer</title>
-  {% endif %}
-
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:site_name" content="The Almost Engineer" />
@@ -21,6 +14,12 @@
   <meta name="twitter:site" content="{{ config.theme.social_user }}" />
   <meta name="twitter:creator" content="{{ config.theme.social_user }}" />
   <meta name="robots" content="index, follow" />
+
+  {% if page and page.title %}
+  <title>{{ page.title | striptags }} | The Almost Engineer, the blog of Kenny Robinson</title>
+  {% else %}
+  <title>The Almost Engineer</title>
+  {% endif %}
 
   {% if page and page.meta and page.meta.description %}
   <meta name="description" content="{{ page.meta.description }}">
@@ -64,14 +63,16 @@
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="//www.googletagmanager.com/gtag/js?id={{ config.google_analytics[0] }}"></script>
-  <script
-    async>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'UA-64643711-1');</script>
-  </head>
+  <script async>
+    window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'UA-64643711-1');
+  </script>
+</head>
 
-  <body>
-  <a name="#top"></a>
+<body>
   {% block content %}
-  {% if page and page.meta.redirect %}
+  {% if page and page.meta.newsletter %}
+  {% include "_newsletter.html" %}
+  {% elif page and page.meta.redirect %}
   {% include "_redirect.html" %}
   {% else %}
   {% include "_layout.html" %}

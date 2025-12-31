@@ -4,16 +4,16 @@
 
 RSS_FILE="all.xml"
 RSS_LATEST_FILE="latest.xml"
-dad-life_FILE="dad-life.rss.xml"
+DAD_LIFE_FILE="dadlife.rss.xml"
 EMBEDDED_FILE="embedded.rss.xml"
-junk-drawer_FILE="junk-drawer.rss.xml"
+JUNK_DRAWER_FILE="junkdrawer.rss.xml"
 TECH_FILE="tech.rss.xml"
 WEBDEV_FILE="webdevelopment.rss.xml"
 
 rm -f $RSS_FILE $RSS_LATEST_FILE
-rm -f $dad-life_FILE $EMBEDDED_FILE $junk-drawer_FILE $TECH_FILE $WEBDEV_FILE
+rm -f $DAD_LIFE_FILE $EMBEDDED_FILE $JUNK_DRAWER_FILE $TECH_FILE $WEBDEV_FILE
 
-touch $dad-life_FILE $EMBEDDED_FILE $junk-drawer_FILE $TECH_FILE $WEBDEV_FILE
+touch $DAD_LIFE_FILE $EMBEDDED_FILE $JUNK_DRAWER_FILE $TECH_FILE $WEBDEV_FILE
 
 function writeFeedHeader() {
     TITLE=""
@@ -94,12 +94,12 @@ function writeFeedItems() {
 }
 
 
-writeFeedHeader $dad-life_FILE "dad-life"
+writeFeedHeader $DAD_LIFE_FILE "dad-life"
 for blogPost in $(ls -r website/docs/dad-life/*.md | head -11)
 do
-    writeFeedItems "$dad-life_FILE" $blogPost "dad-life"
+    writeFeedItems "$DAD_LIFE_FILE" $blogPost "dad-life"
 done
-writeFeedFooter $dad-life_FILE
+writeFeedFooter $DAD_LIFE_FILE
 
 
 writeFeedHeader $EMBEDDED_FILE "embedded-systems"
@@ -110,12 +110,12 @@ done
 writeFeedFooter $EMBEDDED_FILE
 
 
-writeFeedHeader $junk-drawer_FILE "junk-drawer"
+writeFeedHeader $JUNK_DRAWER_FILE "junk-drawer"
 for blogPost in $(ls -r website/docs/junk-drawer/*.md | head -11)
 do
-    writeFeedItems "$junk-drawer_FILE" $blogPost "junk-drawer"
+    writeFeedItems "$JUNK_DRAWER_FILE" $blogPost "junk-drawer"
 done
-writeFeedFooter $junk-drawer_FILE
+writeFeedFooter $JUNK_DRAWER_FILE
 
 
 writeFeedHeader $TECH_FILE "tech-library"

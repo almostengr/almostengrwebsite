@@ -65,3 +65,8 @@ Stack for building applications locally
 * [Putty](https://www.putty.org) for connecting to linux-based systems
 * Visual Studio
 * [Visual Studio Code](https://code.visualstudio.com/download) for text editing and coding
+
+## Web Development Tools
+
+* [https://coolors.co](https://coolors.co) for color palette suggestions
+* [https://colorhunt.co/](https://colorhunt.co/) for color palette suggestions

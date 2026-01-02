@@ -135,20 +135,6 @@ img {
   max-width: 100%;
 }
 
-/* 
-.blog-footer {
-  padding: 2.5rem 0;
-  color: #999;
-  text-align: center; 
-  background-color: #f9f9f9;
-  border-top: .05rem solid #e5e5e5;
-}
-
-.blog-footer p:last-child {
-  margin-bottom: 0;
-} 
-*/
-
 code {
   background-color: #000;
   color: #fff;
@@ -156,37 +142,68 @@ code {
 
 
 [data-bs-theme="light"] {
-  --maroon: #600;
-  --background-maroon: #600;
-  --background-text: #fff;
+  --bg-main: #F8EEDF;
+  --bg-accent: #E8C999;
+  --text-accent: #8E1616;
+  --text-main: #000000;
 }
 
 [data-bs-theme="dark"] {
-  --maroon: #f00;
-  --background-maroon: #600;
-  --background-text: #fff;
+  --bg-main: #061E29;
+  --bg-accent: #1D546D;
+  --text-accent: #5F9598;
+  --text-main: #F3F4F4;
 }
 
-a {
-  color: var(--maroon);
-  text-decoration-color: var(--maroon) !important;
+.hero,
+.bg-text-accent {
+  background-color: var(--bg-accent);
+  color: var(--text-accent);
 }
 
-.bg-maroon {
-  background-color: var(--background-maroon);
-  color: var(--background-text);
+.bg-main-text-main {
+  background-color: var(--bg-main);
+  color: var(--text-main);
 }
 
-.text-maroon {
-  color: var(--maroon);
+body {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+}
+
+main a {
+  color: var(--text-accent);
+  text-decoration-color: var(--text-accent) !important;
+}
+
+a:not(.btn) {
+  color: var(--text-main);
+  text-decoration-color: var(--text-main) !important;
 }
 
 .feature-icon,
 .feature-icon-small {
-  background-color: var(--background-maroon) !important;
+  background-color: var(--text-accent);
+  color: var(--bg-accent);
 }
 
-.btn-maroon {
-  background-color: var(--background-maroon) !important;
-  color: var(--background-text);
+.page-header,
+.sidebar {
+  background-color: var(--text-accent);
+  color: var(--bg-accent);
+}
+
+aside div,
+aside div a {
+  background-color: var(--bg-accent);
+  color: var(--text-accent) !important;
+}
+
+.btn:not(#bd-theme) {
+  background-color: var(--text-main) !important;
+  color: var(--bg-main) !important;
+}
+
+.text-muted {
+  color: var(--bg-main);
 }

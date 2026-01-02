@@ -12,7 +12,8 @@ that are significant that I include here.
 Have a project that you need completed? You may request my services by contacting me through my business, 
 <a href="https://rhtservices.net" target="_blank">Robinson Handy and Technology Services</a>.
 
-* [Mobile Christmas Light Show (2025)](/embedded-systems/2025.12.13-mobile-christmas-light-show)
+* [thealmostengineer.com Refactoring (2026)](/web-development/2026.01.02-updated-bootstrap-5)
+* [Mobile Christmas Light Show (2025)](/embedded-systems/2025.12.13-2025-portable-christmas-light-show)
 * [Christmas Light Show (2025)](/embedded-systems/2025.08.13-2025-christmas-light-show)
 * Dog House (2025)
 * [Christmas Light Show (2024)](/lightshow)

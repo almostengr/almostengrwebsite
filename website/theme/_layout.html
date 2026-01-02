@@ -38,6 +38,22 @@
       {% elif page and "store/" in page.url %}
       {% include "_product.html" %}
       {% else %}
+
+
+      {% if page and page.meta.ytEmbed %}
+      <h2>Video</h2>
+      <div class="mb-3">
+        <iframe width="560" height="315" src="{{ page.meta.ytEmbed }}" class="youtube" frameborder="0"
+          allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+        {% if page and page.meta.ytUrl %}
+        <div>
+          <a href="{{ page.meta.ytUrl }}" target="_blank">Watch on YouTube</a>
+        </div>
+        {% endif %}
+      </div>
+      {% endif %}
+
+
       {{ page.content }}
       {% include "_keywords.html" %}
       {% endif %}
@@ -175,6 +191,4 @@
   </div>
 </footer>
 <script src="/js/bootstrap.bundle.min.js" class="astro-vvvwv3sm"></script>
-<script src="/js/color-modes.min.js"></script>
-<script src="/js/prism.min.js"></script>
 <script src="/js/site.js"></script>

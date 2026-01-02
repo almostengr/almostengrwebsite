@@ -131,6 +131,11 @@
   display: block !important;
 }
 
+
+/* 
+end of bootstrap specific files
+*/
+
 img {
   max-width: 100%;
 }

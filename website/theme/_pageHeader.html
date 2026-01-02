@@ -1,7 +1,7 @@
 <div class="my-3">
-    <div class="p-3 bg-body-tertiary rounded-3">
-        <h1 class="text-body-emphasis fw-bold">{{ page.title }}</h1>
-        <div class="row text-muted">
+    <div class="p-3 page-header rounded-3">
+        <h1 class="fw-bold">{{ page.title }}</h1>
+        <div class="row">
             {% if page and page.meta.author %}
             <div class="col">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -29,7 +29,7 @@
             {% endif %}
         </div>
         {% if page and page.meta.author %}
-        <div class="row text-muted">
+        <div class="row">
             <div class="col">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock"
                     viewBox="0 0 16 16">
@@ -52,7 +52,7 @@
         </div>
         {% endif %}
         {% if page and page.meta.description %}
-        <div class="px-4 py-2 text-muted">
+        <div class="px-4 py-2">
             {{ page.meta.description }}
         </div>
         {% endif %}

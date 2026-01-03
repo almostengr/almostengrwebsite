@@ -14,13 +14,12 @@
                 <div class="mb-1 text-body-secondary">
                     <span title="{{ nav_item.content | wordcount }} words">
                         {%- set num_of_words = child.content | wordcount // 200 -%}
-                        {% if num_of_words <= 1 %}1 {% else %}{{ num_of_words }} {% endif %} </span> minute read
-                            {% if child.meta.posted %}
-                            | posted on {{ child.meta.posted }}
-                            {% endif %}
-                            {% if child.meta.updated %}
-                            | updated on {{ child.meta.updated }}
-                            {% endif %}
+                        {% if num_of_words <= 1 %}1 {% else %}{{ num_of_words }} {% endif %} </span> minute read                            
+                        {% if child.meta.updated %}
+                        | updated on {{ child.meta.updated }}
+                        {% elif child.meta.posted %}
+                        | posted on {{ child.meta.posted }}
+                        {% endif %}
                 </div>
                 <p class="card-text mb-auto">
                     {% if child.description is defined %}

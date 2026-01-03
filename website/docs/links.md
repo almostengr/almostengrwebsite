@@ -4,19 +4,15 @@ title: "@almostengr Links"
 
 * [STEM Creators Spotlight 2026](https://forms.gle/h5iwVHwSNgvzfcU76)
 
-* [Web Development Blog](/web-development)
-* [Tech Library Blog](/tech-library)
-* [Embedded Systems Blog](/embedded-systems)
-* [Dad Life](/dad-life)
-
 ## Connect With Me
 
 * [RSS Feed](https://thealmostengineer.com/rss)
 * [BlueSky](https://bsky.app/profile/almostengr.bsky.social)
+* [Github](https://github.com/almostengr)
 * [Instagram](https://instagram.com/almostengr)
 * [TikTok](https://tiktok.com/@almostengr)
-* [Twitter (X)](https://twitter.com/almostengr)
 * [YouTube](https://www.youtube.com/channel/UC4xp-TEEIAL-4XtMVvfRaQw?sub_confirmation=1)
+* [thealmostengineer.com Home](/)
 
 ## Get Into Tech
 

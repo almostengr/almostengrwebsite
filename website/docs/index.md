@@ -1,7 +1,7 @@
 ---
 title: "The Almost Engineer: Web Development & Tech Solutions by Kenny Robinson"
-# title: Web Development, Embedded Systems, Information Technology, and Dad Life
 description: Information about this blog and Kenny Robinson.
+jumbotron: default
 ---
 
 ## My Blog

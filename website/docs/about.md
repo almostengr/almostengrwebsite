@@ -1,6 +1,5 @@
 ---
 title: About
-description: Information about Kenny Robinson and his blog
 ---
 
 ## "The Almost Engineer" Explanation
@@ -22,7 +21,8 @@ projects, as it may be exactly what they are looking for.
 
 ## Why Does Kenny Blog?
 
-I have been been blogging about gardening, [technology experiences](/tech-library), 
+I have been been blogging about gardening, [Christmas light shows](/embedded-systems), 
+[building software and web applications](/web-development), [life as a dad](/dad-life),
 [about life](/junk-drawer), and mishaps for several reasons:
 
 * you learn from your past mistakes
@@ -31,24 +31,10 @@ I have been been blogging about gardening, [technology experiences](/tech-librar
 * it provides a way to share thoughts
 * provides a place for project documentation
 
-## Blog Technology
-
-Originally, I started blogging on Blogger in 2010.
-After several years of a having the blog there, the blog was converted to
-Drupal 7. At the time of this switch, I was using Drupal 7 on a number
-of websites that I was building and maintaining. So it made sense to use
-it for personal use.
-
-In 2019, I converted the blog again from Drupal 7 over to MkDocs. The reason
-for this conversion was because I found myself spending more time performing
-maintenance updates than writing content. I outline this more in my post on
-[switching from Drupal to MkDocs](/web-development/2019.12.21-switched-blog-from-drupal-to-mkdocs).
-
 ## Services
 
-I offer custom software solutions and handyman work through my business
-<a href="https://rhtservices.net" target="_blank">Robinson Handy and Technology Services</a>. To
-make an appointment or discuss business, please visit the website.
+Please visit the [Services page](/services) to find out more about the services that 
+I offer and how to hire me.
 
 ## Have Questions
 

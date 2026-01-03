@@ -1,7 +1,3 @@
-:root {
-  --maroon: #600;
-}
-
 /* features.css */
 .feature-icon {
   width: 4rem;
@@ -156,7 +152,7 @@ code {
 [data-bs-theme="dark"] {
   --bg-main: #061E29;
   --bg-accent: #1D546D;
-  --text-accent: #5F9598;
+  --text-accent: #F3F4F4;
   --text-main: #F3F4F4;
 }
 

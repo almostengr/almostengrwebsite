@@ -3,20 +3,20 @@ title: Projects
 description: List of projects that I have worked on.
 ---
 
-Below is a list of some of the projects that I have worked on in the past.
-The code for my public projects can be viewed from
-[my Github page](https://github.com/almostengr).
+People always ask what I am working on currently or what I have planned next. 
+Below are the current and previous projects that I have worked
+on. The source code for some projects can be viewed on [my Github profile](https://github.com/almostengr).
 
-Projects that are listed, but do not have any details, are upcoming projects. Because they 
-are proposed and not confirmed, they may be cancelled before they are started.
+Projects that are listed, but do not have any details, are upcoming projects. When the details of an 
+upcoming project is finalized, the details will be posted.
 
-Have a project that you need completed? You may request my services by contacting me through my business, 
-[Robinson Handy and Technology Services](https://rhtservices.net).
+Have a project that you need completed? You may request 
+[my services](/services) by [contacting me](/contact) with details of work that you need completed.
 
 * Mobile Christmas Light Show (2026, Embedded Systems)
 * Christmas Light Show (2026, Embedded Systems)
 * Independence Day Light Show (2026, Embedded Systems)
-* [thealmostengineer.com Refactoring (2026, Web Development)](/web-development/2026.01.02-updated-bootstrap-5)
+* [thealmostengineer.com Bootstrap 5 Update (2026, Web Development)](/web-development/2026.01.02-updated-bootstrap-5)
 * [Mobile Christmas Light Show (2025, Embedded Systems)](/embedded-systems/2025.12.13-2025-portable-christmas-light-show)
 * [Christmas Light Show (2025, Embedded Systems)](/embedded-systems/2025.08.13-2025-christmas-light-show)
 * Dog House (2025)

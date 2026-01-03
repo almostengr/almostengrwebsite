@@ -1,14 +1,3 @@
-{% if config.theme.jumbotron == "christmas" %}
-<div class="hero p-4 p-md-5 rounded">
-    <h1 class="display-3">Musical Light Show</h1>
-    <p>
-        Each year, I run a animated light show that is synchronized to music. The show allows visitors
-        to select the song of their choosing and see information about the show in real time.
-    </p>
-    <p><a class="btn btn-success btn-lg" href="https://lightshow.thealmostengineer.com" role="button">Visit Light
-            Show Website</a></p>
-</div>
-{% else %}
 <div class="px-4 mb-5 w-100 border-bottom border-top shadow hero">
     <div class="container rounded">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
@@ -17,8 +6,24 @@
                     alt="Kenny with traffic light" width="700" height="500" loading="lazy">
             </div>
             <div class="col-lg-6 ">
+                {% if page and page.meta.jumbotron == "christmas" %}
                 <h1 class="display-5 fw-bold lh-1 mb-3">
-                    Software Engineer, STEM Advocate, and Dad Life.
+                    Musical Christmas Light Show
+                </h1>
+                <p class="lead">
+                    Each year, I run a animated light show that is synchronized to music. The show allows visitors
+                    to select the song of their choosing and see information about the show in real time.
+                </p>
+                <p class="lead fw-italic">
+                    My approach: Share what you know, document what does work, and learn from previous mistakes.
+                </p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <a class="btn btn-lg px-4 me-md-2" href="https://lightshow.thealmostengineer.com">Visit Light Show
+                        Website</a>
+                </div>
+                {% else %}
+                <h1 class="display-5 fw-bold lh-1 mb-3">
+                    Full Stack C# .NET Web Developer, Linux, STEM Advocate, and Dad Life.
                 </h1>
                 <p class="lead">
                     I am Kenny Robinson.
@@ -28,18 +33,12 @@
                     same disciplined approach to teaching STEM, public speaking, and managing the organized chaos of
                     family
                     life.
-                    <!-- Full-Stack C# .NET Web Developer. Linux. STEM Advocate. Public Speaker. Software Developer. Father. Content Creator. -->
-                    <!-- I share production-ready code, engineering insights, and the lessons learned balancing complex systems with the organized chaos of family life. -->
                 </p>
                 <p class="lead fw-italic">
                     My approach: Share what you know, document what does work, and learn from previous mistakes.
                 </p>
-                <!-- <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
-            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
-          </div> -->
+                {% endif %}
             </div>
         </div>
     </div>
 </div>
-{% endif %}

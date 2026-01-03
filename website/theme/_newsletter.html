@@ -15,7 +15,7 @@
     {% for nav_item in nav %}
     {% if nav_item.children %}
     {% for child in nav_item.children | reverse %}
-    {% if ("embedded-systems/" in child.url or "tech-library/" in child.url or "web-development/" in child.url) and loop.index <=2 %} 
+    {% if ("electronics/" in child.url or "tech-library/" in child.url or "web-development/" in child.url) and loop.index <=2 %} 
     <tr>
         <td style="font-family: Arial, sans-serif; padding-top: 20px; border-top: 3px solid #eeeeee;">
             <h2 style="margin: 0; font-size: 20px; line-height: 1.3;">

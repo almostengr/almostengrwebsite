@@ -21,7 +21,7 @@ projects, as it may be exactly what they are looking for.
 
 ## Why Does Kenny Blog?
 
-I have been been blogging about gardening, [Christmas light shows](/embedded-systems), 
+I have been been blogging about gardening, [Christmas light shows](/electronics), 
 [building software and web applications](/web-development), [life as a dad](/dad-life),
 [about life](/junk-drawer), and mishaps for several reasons:
 

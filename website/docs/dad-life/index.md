@@ -8,3 +8,5 @@ blogindex: true
 ---
 
 Sharing advice and tips living as a Black father.
+Get the latest updates faster by subscribing to the 
+[Dad Life Feed](/dadlife.rss.xml).

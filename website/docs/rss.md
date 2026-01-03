@@ -6,7 +6,7 @@ title: RSS Feeds
 
 Receive the latest updates that are posted here by selected the RSS feed category below.
 
-* [Embedded Systems RSS](/embedded.rss.xml)
+* [Electronics RSS](/electronics.rss.xml)
 * [Tech Library RSS](/tech.rss.xml)
 * [Web Development RSS](/webdevelopment.rss.xml)
 * [Dad Life RSS](/dadlife.rss.xml)

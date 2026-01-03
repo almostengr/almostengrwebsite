@@ -5,7 +5,7 @@
 RSS_FILE="all.xml"
 RSS_LATEST_FILE="latest.xml"
 DAD_LIFE_FILE="dadlife.rss.xml"
-EMBEDDED_FILE="embedded.rss.xml"
+EMBEDDED_FILE="electronics.rss.xml"
 JUNK_DRAWER_FILE="junkdrawer.rss.xml"
 TECH_FILE="tech.rss.xml"
 WEBDEV_FILE="webdevelopment.rss.xml"
@@ -24,7 +24,7 @@ function writeFeedHeader() {
             ;;
 
         "embedded-systems")
-            TITLE="Embedded Systems Feed | The Almost Engineer"
+            TITLE="Electronics Feed | The Almost Engineer"
             ;;
 
         "junk-drawer")
@@ -103,7 +103,7 @@ writeFeedFooter $DAD_LIFE_FILE
 
 
 writeFeedHeader $EMBEDDED_FILE "embedded-systems"
-for blogPost in $(ls -r website/docs/embedded-systems/*.md | head -11)
+for blogPost in $(ls -r website/docs/electronics/*.md | head -11)
 do
     writeFeedItems "$EMBEDDED_FILE" $blogPost "embedded-systems"
 done

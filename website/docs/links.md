@@ -2,10 +2,13 @@
 title: "@almostengr Links"
 ---
 
+## Recent Posts
+
 * [STEM Creators Spotlight 2026](https://forms.gle/h5iwVHwSNgvzfcU76)
 
 ## Connect With Me
 
+* [Hire Me/Services](/services)
 * [RSS Feed](https://thealmostengineer.com/rss)
 * [BlueSky](https://bsky.app/profile/almostengr.bsky.social)
 * [Github](https://github.com/almostengr)

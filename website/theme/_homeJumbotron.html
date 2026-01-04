@@ -6,22 +6,6 @@
                     alt="Kenny with traffic light" width="700" height="500" loading="lazy">
             </div>
             <div class="col-lg-6 ">
-                {% if page and page.meta.jumbotron == "christmas" %}
-                <h1 class="display-5 fw-bold lh-1 mb-3">
-                    Musical Christmas Light Show
-                </h1>
-                <p class="lead">
-                    Each year, I run a animated light show that is synchronized to music. The show allows visitors
-                    to select the song of their choosing and see information about the show in real time.
-                </p>
-                <p class="lead fw-italic">
-                    My approach: Share what you know, document what does work, and learn from previous mistakes.
-                </p>
-                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                    <a class="btn btn-lg px-4 me-md-2" href="https://lightshow.thealmostengineer.com">Visit Light Show
-                        Website</a>
-                </div>
-                {% else %}
                 <h1 class="display-5 fw-bold lh-1 mb-3">
                     Full Stack C# .NET Web Developer, Linux, STEM Advocate, and Dad Life.
                 </h1>
@@ -37,8 +21,21 @@
                 <p class="lead fw-italic">
                     My approach: Share what you know, document what does work, and learn from previous mistakes.
                 </p>
-                {% endif %}
             </div>
         </div>
     </div>
 </div>
+{% if page and page.meta.jumbotron == "Christmas" %}
+<div class="container px-4 py-5">
+    <h2 class="pb-2 border-bottom">Musical Christmas Light Show</h2>
+    <div class="mt-3 mb-5">
+        <p class="text-body">
+            Each year, I run a animated light show that is synchronized to music. The show allows visitors
+            to select the song of their choosing and see information about the show in real time.
+        </p>
+    </div>
+    <div class="my-3">
+        <a href="/lightshow" class="btn text-light btn-lg">Visit Light Show Page</a>
+    </div>
+</div>
+{% endif %}

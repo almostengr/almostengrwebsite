@@ -4,6 +4,7 @@ hidepostinfo: true
 category: directorylist
 filtercategory: electronics
 blogindex: true
+description: Ideas and projects using ESP32, Raspberry Pi, and other electronics.
 ---
 
 Ideas and projects using ESP32, Raspberry Pi, and other electronics.

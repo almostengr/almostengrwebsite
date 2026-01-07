@@ -41,17 +41,22 @@
       {% else %}
 
       {% if page and page.meta.ytEmbed %}
-      <h2>Video</h2>
       <div class="mb-3">
         <iframe width="560" height="315" src="{{ page.meta.ytEmbed }}" class="youtube" frameborder="0"
           allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
-        {% if page and page.meta.ytUrl %}
-        <div>
-          <a href="{{ page.meta.ytUrl }}" target="_blank">Watch on YouTube</a>
-        </div>
-        {% endif %}
       </div>
       {% endif %}
+      <div class="mb-3">
+        {% if page and page.meta.igUrl %}
+        <a href="{{ page.meta.igUrl }}" target="_blank">Watch on Instagram</a>
+        {% endif %}
+        {% if page and page.meta.ttUrl %}
+        <a href="{{ page.meta.ttUrl }}" target="_blank">Watch on TikTok</a>
+        {% endif %}
+        {% if page and page.meta.ytUrl %}
+        <a href="{{ page.meta.ytUrl }}" target="_blank">Watch on YouTube</a>
+        {% endif %}
+      </div>
 
       {{ page.content }}
       {% include "_keywords.html" %}
@@ -99,19 +104,19 @@
           <h4 class="font-italic">Connect with Me</h4>
           <ol class="list-unstyled">
             <li><a target="_blank" href="https://bsky.app/profile/almostengr.bsky.social">
-              <i class="bi bi-bluesky"></i> Blue Sky</a></li>
+                <i class="bi bi-bluesky"></i> Blue Sky</a></li>
             <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100089303142244">
-              <i class="bi bi-facebook"></i> Facebook</a></li>
+                <i class="bi bi-facebook"></i> Facebook</a></li>
             <li><a target="_blank" href="https://github.com/almostengr">
-              <i class="bi bi-github"></i> Github</a></li>
+                <i class="bi bi-github"></i> Github</a></li>
             <li><a target="_blank" href="https://instagram.com/almostengr">
-              <i class="bi bi-instagram"></i> Instagram</a></li>
+                <i class="bi bi-instagram"></i> Instagram</a></li>
             <li><a target="_blank" href="https://stackoverflow.com/users/12875554/almostengr">
-              <i class="bi bi-stack-overflow"></i> StackOverflow</a></li>
+                <i class="bi bi-stack-overflow"></i> StackOverflow</a></li>
             <li><a target="_blank" href="https://www.tiktok.com/@almostengr">
-              <i class="bi bi-tiktok"></i> TikTok</a></li>
+                <i class="bi bi-tiktok"></i> TikTok</a></li>
             <li><a target="_blank" href="https://www.youtube.com/channel/UC4xp-TEEIAL-4XtMVvfRaQw?sub_confirmation=1">
-              <i class="bi bi-youtube"></i> YouTube</a></li>
+                <i class="bi bi-youtube"></i> YouTube</a></li>
           </ol>
         </div>
         <div class="p-4 shadow mb-3">

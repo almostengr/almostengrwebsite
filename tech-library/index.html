@@ -1,0 +1,4639 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="The blog of Kenny Robinson">
+  <meta name="author" content="Kenny Robinson, @almostengr">
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="The Almost Engineer" />
+  <meta name="theme-color" content="#712cf9" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="" />
+  <meta name="twitter:creator" content="" />
+  <meta name="robots" content="index, follow" />
+
+  
+  <title>Tech Library | The Almost Engineer, the blog of Kenny Robinson</title>
+  
+
+  
+  <meta name="description" content="Sharing my projects, thoughts, and all things related to tech.">
+  <meta property="og:description" content="Sharing my projects, thoughts, and all things related to tech." />
+  <meta name="twitter:description" content="Sharing my projects, thoughts, and all things related to tech." />
+  
+
+  
+
+  
+
+  
+
+  
+  <link rel="canonical" href="https://thealmostengineer.com/tech-library/">
+  <meta property="og:url" content="https://thealmostengineer.com/tech-library/" />
+  <meta property="twitter:url" content="https://thealmostengineer.com/tech-library/" />
+  
+
+  
+  <meta name="author" content="Kenny Robinson, @almostengr">
+  
+
+  
+
+  <link rel="canonical" href="https://thealmostengineer.com/tech-library/" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link href="/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="/css/prism.min.css" rel="stylesheet" />
+  <link href="/css/site5.css" rel="stylesheet" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="//www.googletagmanager.com/gtag/js?id="></script>
+  <script async>
+    window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'UA-64643711-1');
+  </script>
+</head>
+
+<body>
+  
+  
+  <a name="#top"></a>
+<svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+    <symbol id="check2" viewBox="0 0 16 16">
+        <path
+            d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z">
+        </path>
+    </symbol>
+    <symbol id="circle-half" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"></path>
+    </symbol>
+    <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+        <path
+            d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z">
+        </path>
+        <path
+            d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z">
+        </path>
+    </symbol>
+    <symbol id="sun-fill" viewBox="0 0 16 16">
+        <path
+            d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z">
+        </path>
+    </symbol>
+    <symbol id="search" viewBox="0 0 16 16">
+        <path
+            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+    </symbol>
+    <symbol id="codesquare" viewBox="0 0 16 16">
+        <path
+            d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+        <path
+            d="M6.854 4.646a.5.5 0 0 1 0 .708L4.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0m2.292 0a.5.5 0 0 0 0 .708L11.793 8l-2.647 2.646a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708 0" />
+    </symbol>
+    <symbol id="cpu-fill" viewBox="0 0 16 16">
+        <path d="M6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5z" />
+        <path
+            d="M5.5.5a.5.5 0 0 0-1 0V2A2.5 2.5 0 0 0 2 4.5H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2A2.5 2.5 0 0 0 4.5 14v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14a2.5 2.5 0 0 0 2.5-2.5h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14A2.5 2.5 0 0 0 11.5 2V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1zm1 4.5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5v-3A1.5 1.5 0 0 1 6.5 5" />
+    </symbol>
+</svg>
+<div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+    <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button"
+        aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+        <svg class="bi my-1 theme-icon-active" aria-hidden="true">
+            <use href="#circle-half"></use>
+        </svg>
+        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+        <li>
+            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light"
+                aria-pressed="false">
+                <svg class="bi me-2 opacity-50" aria-hidden="true">
+                    <use href="#sun-fill"></use>
+                </svg>
+                Light
+                <svg class="bi ms-auto d-none" aria-hidden="true">
+                    <use href="#check2"></use>
+                </svg>
+            </button>
+        </li>
+        <li>
+            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark"
+                aria-pressed="false">
+                <svg class="bi me-2 opacity-50" aria-hidden="true">
+                    <use href="#moon-stars-fill"></use>
+                </svg>
+                Dark
+                <svg class="bi ms-auto d-none" aria-hidden="true">
+                    <use href="#check2"></use>
+                </svg>
+            </button>
+        </li>
+        <li>
+            <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto"
+                aria-pressed="true">
+                <svg class="bi me-2 opacity-50" aria-hidden="true">
+                    <use href="#circle-half"></use>
+                </svg>
+                Auto
+                <svg class="bi ms-auto d-none" aria-hidden="true">
+                    <use href="#check2"></use>
+                </svg>
+            </button>
+        </li>
+    </ul>
+</div>
+<!-- <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+    <symbol id="arrow-right-circle" viewBox="0 0 16 16">
+        <path
+            d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z">
+        </path>
+    </symbol>
+    <symbol id="bootstrap" viewBox="0 0 118 94">
+        <title>Bootstrap</title>
+        <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z">
+        </path>
+    </symbol>
+</svg> -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand fw-bold text-light" href="/">
+      Kenny Robinson
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+        <li class="nav-item"><a class="nav-link active" href="/web-development">Web Development</a></li>
+        <li class="nav-item"><a class="nav-link active" href="/electronics">Electronics</a></li>
+        <li class="nav-item"><a class="nav-link active" href="/tech-library">Tech Library</a></li>
+        <li class="nav-item"><a class="nav-link active" href="/projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link active" href="/services">Services</a></li>
+        <li class="nav-item"><a class="nav-link active" href="/contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  
+  <div class="row">
+    <main class="col-12 col-md-9">
+      <div class="my-3">
+    <div class="p-3 page-header rounded-3">
+        <h1 class="fw-bold">Tech Library</h1>
+        <div class="row">
+            
+            
+        </div>
+        
+        
+        <div class="px-4 py-2">
+            Sharing my projects, thoughts, and all things related to tech.
+        </div>
+        
+    </div>
+</div>
+      
+      <p>All things related to tech, that does not involve web development, Raspberry Pi, or Arduino. 
+Get the latest updates faster by subscribing to the 
+<a href="/tech.rss.xml">Tech Library Feed</a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2024.05.25-black-in-tech/" class="icon-link gap-1 icon-link-hover">
+                        Black In Tech 2024
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">3  </span> minute read                            
+                        
+                        | posted on 2024-05-25
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Groups or content targeted for or created by Black people in the IT industry. Some of the resources apply to mutliple areas of tech, while others are specific. Some groups...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2024.02.25-lessons-from-live-stream/" class="icon-link gap-1 icon-link-hover">
+                        Lessons from Live Stream on Tech Thursdays
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | posted on 2024-02-25
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    I completed another live stream this past week where I talked about tech. One thing that I have noticed is that there are some questions that get regularly asked. One...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2023.09.23-results-from-foundational-csharp-exam/" class="icon-link gap-1 icon-link-hover">
+                        Results from Foundational C# Certification Exam
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | posted on 2023-09-23
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Foundational C# with Microsoft Certification Exam: Passed Number of questions: 80 Correct answers: 67 Percent correct: 83.8% Time: 25:36...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2023.07.20-rebuilding-my-home-network/" class="icon-link gap-1 icon-link-hover">
+                        Rebuilding My Home Network
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">3  </span> minute read                            
+                        
+                        | posted on 2023-07-20
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Background I have been having issues with my home network. Running a TP-Link router with DD-WRT installed, for reasons unknown to me, the WiFi would randomly stop working....
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2023.06.03-check-for-power-outage-script/" class="icon-link gap-1 icon-link-hover">
+                        Check For Power Outage, Shell Script
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | posted on 2023-06-03
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    I havea computer that runs 24/7. It is connected to a UPS (Uninterruptable Power Supply) so that it does go offline when there are momentary power outages. One problem...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mb-3 small">
+    <a href="#top">Back to Top</a>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2023.02.27-video-processor-application/" class="icon-link gap-1 icon-link-hover">
+                        Video Processor Application
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Problem I wanted to have a way to render and batch process the videos that I create for my YouTube channels and other platforms without having to do a lot of manual...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2022.11.01-my-docker-containers/" class="icon-link gap-1 icon-link-hover">
+                        My Docker Containers
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">3  </span> minute read                            
+                        
+                        | updated on 2023-05-23
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    At one point, I ran virtual machines for various services or installed them directly to the media computer that runs 24/7. I have gotten away from virtual machines because...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2022.10.18-disable-wayland-graphics-on-ubuntu/" class="icon-link gap-1 icon-link-hover">
+                        Disable Wayland Graphics on Ubuntu
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">3  </span> minute read                            
+                        
+                        | posted on 2022-10-18
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    I recently upgraded to Ubuntu 22.04 LTS system. Overall the upgrade went smooth, but there was one thing that was off. That was the monitor setup. The computer that I have...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2022.10.14-put-your-documentation-in-source-code/" class="icon-link gap-1 icon-link-hover">
+                        Put Your Documentation In Source Code
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">4  </span> minute read                            
+                        
+                        | posted on 2022-10-14
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    As I research various technologies and ways of doing things, one thing that I found is that people are putting their project documentation in with their source code. Now...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2022.10.03-using-outlook-as-intended/" class="icon-link gap-1 icon-link-hover">
+                        Using Microsoft Outlook as Intended
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">11  </span> minute read                            
+                        
+                        | posted on 2022-10-03
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Having worked in IT for a number of years, one thing that is fairly common is having to use Microsoft Outlook for calendar and email. One thing that most do not realize,...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mb-3 small">
+    <a href="#top">Back to Top</a>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2022.10.02-compress-tar-files-with-xz-compression/" class="icon-link gap-1 icon-link-hover">
+                        Compress All Files with XZ Compression
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | updated on 2023-01-17
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Problem I wanted to compress all of the tar files in the directories for video processor application. Given the number of files, I did not want to do this one by one....
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2022.09.17-length-of-shell-variable/" class="icon-link gap-1 icon-link-hover">
+                        Find Length of Shell (Bash) Variable
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | posted on 2022-09-17
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    I was building an automation and needed to find the length of the variable. After doing some research, I found that you can do that easily with the commands below. $...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2022.09.16-batch-processing-videos-with-ffmpeg/" class="icon-link gap-1 icon-link-hover">
+                        Batch Processing Videos with FFMPEG
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">3  </span> minute read                            
+                        
+                        | posted on 2022-09-16
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    As you may or may not know, I run couple of YouTube channels. One of the channels I post dash cam video of trips and bad driving. The other channel I post #"...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2022.08.30-automating-toastmasters-meeting-recordings/" class="icon-link gap-1 icon-link-hover">
+                        Automating Toastmasters Meeting Recordings
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">3  </span> minute read                            
+                        
+                        | updated on 2022-10-03
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    During the summer, I was nominated and eventually elected to be the Public Relations chair for the Toastmasters club that I am a member of. One of the duties that the role...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2022.06.27-roe-v-wade-and-your-digital-footprint/" class="icon-link gap-1 icon-link-hover">
+                        Roe V. Wade and Your Digital Footprint
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">6  </span> minute read                            
+                        
+                        | posted on 2022-06-27
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Roe v Wade was overturned on Friday. That means that those to want to have an abortion will have to travel to states that allow it. That also means that in the states that...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mb-3 small">
+    <a href="#top">Back to Top</a>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2022.06.19-finding-thanksgiving-date-in-csharp/" class="icon-link gap-1 icon-link-hover">
+                        Finding Thanksgiving Date in C#
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | posted on 2022-06-19
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    I was looking for a way to determine the day of Thanksgiving for the current year. Looked online, but did not find a solution that worked. Thus had to come up with my own...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2022.04.11-tech-interview-tips/" class="icon-link gap-1 icon-link-hover">
+                        Tech Interview Tips
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">8  </span> minute read                            
+                        
+                        | updated on 2022-09-20
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Having sat on both sides of the interview desk, there are certain things that I have learned and have created this resource to share those details. They are in no...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2022.04.08-getting-into-tech/" class="icon-link gap-1 icon-link-hover">
+                        Getting Into Tech - Questions and Answers
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">32  </span> minute read                            
+                        
+                        | updated on 2022-10-12
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Since first learning how to code in 2002, holding various part- and full-time paid positions since 2008, a follower of #BlackTechTwitter on Twitter, and participating in a...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2022.04.07-automate-youtube-video-creation/" class="icon-link gap-1 icon-link-hover">
+                        Automate YouTube Video Creation
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">7  </span> minute read                            
+                        
+                        | posted on 2022-04-07
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Background As some of you may know, I run two YouTube channels. One is Robinson Handy and Technology Services, which I talk about tech, do it yourself repairs and builds,...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2022.03.04-git-cheatsheet/" class="icon-link gap-1 icon-link-hover">
+                        Git Cheatsheet
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">4  </span> minute read                            
+                        
+                        | updated on 2022-03-04
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Cheatsheet of commands to use when working with git. This is a quick reference for the commands that are most commonly used when working with Git. A description of what...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mb-3 small">
+    <a href="#top">Back to Top</a>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2022.02.26-adding-github-actions-to-blog/" class="icon-link gap-1 icon-link-hover">
+                        Adding GitHub Actions to Blog
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">5  </span> minute read                            
+                        
+                        | posted on 2022-02-26
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Background As you may know, I use MkDocs to generate the static pages for my website. This means that the posts that I write are written in Markdown and then I have to run...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2022.02.24-got-a-3d-printer-now-what/" class="icon-link gap-1 icon-link-hover">
+                        Got a 3D Printer. Now what?
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">4  </span> minute read                            
+                        
+                        | posted on 2022-02-24
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    An individual that know from the community reached out to me and said that he wanted to donate a 3D printer that he had to my NSBE chapter. This was unexpected and I had...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2022.02.11-clean-nuget-packages/" class="icon-link gap-1 icon-link-hover">
+                        Cleaning Nuget Packages
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | updated on 2023-01-17
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Problem I noticed that the disk space on my development computer had significantly decreased. After running df -h . via the terminal, I found that there were a lot of...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2022.02.02-breaking-into-tech/" class="icon-link gap-1 icon-link-hover">
+                        Breaking Into Tech (A Perspective)
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">3  </span> minute read                            
+                        
+                        | posted on 2022-02-02
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Yesterday I attended a session about breaking into tech. This is a topic that I frequently see asked on Black Tech Twitter and various tech Facebook groups that I'm in....
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2022.01.21-fan-control-script-for-openwrt/" class="icon-link gap-1 icon-link-hover">
+                        Fan Control Script for OpenWRT
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | updated on 2023-02-14
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    The LinkSys WRT1900AC router comes with a built in fan. I wanted to find a way to be able to control the fan so that it would run based when certain temperature thresholds...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mb-3 small">
+    <a href="#top">Back to Top</a>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2022.01.13-montgomery-river-region-digital-marketing-cohort/" class="icon-link gap-1 icon-link-hover">
+                        Montgomery River Region Digital Marketing 6-Weeks Cohort
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">14  </span> minute read                            
+                        
+                        | updated on 2022-01-20
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    The local Small Business Development Center (SBDC) in partnership with mutliple sponsors, held a digtal marketing course of the span of 6 weeks. The reason that I signed...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2021.12.12-calendar-versioning-works/" class="icon-link gap-1 icon-link-hover">
+                        Calendar Versioning Works
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">4  </span> minute read                            
+                        
+                        | posted on 2021-12-12
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    I have been working on several size projects. One of those projects, related to the Christmas Light Show called Falcon Pi Twitter, has custom built software that runs it....
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2021.11.28-ubuntu-automation/" class="icon-link gap-1 icon-link-hover">
+                        Ubuntu Automation Scripts
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Solution The purpose of this repository is to hold scripts that use for routine tasks, such as updating packages, starting virtual machines, and automatically commiting...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2021.11.28-kdenlive-to-youtube/" class="icon-link gap-1 icon-link-hover">
+                        Kdenlive to YouTube
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Problem As a content creator, creating content can be a time consuming task. Wanted to come up with a way to improve the efficiency of this task by creating an automated...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2021.11.28-coding-challenges/" class="icon-link gap-1 icon-link-hover">
+                        Coding Challenges
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | updated on 2022-03-29
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Problem I found that people want to learn about software development, web development, and programming. I decided on creating tutorials that show people how to learn and...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mb-3 small">
+    <a href="#top">Back to Top</a>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2021.11.26-linux-resources/" class="icon-link gap-1 icon-link-hover">
+                        Linux Resources
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | updated on 2022-09-30
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Wanting to get a Linux certification, but do not have any experience with it? The resources below will get you on the way to learning Linux and what all it has to offer....
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2021.11.26-find-sql-server-procedure-or-function-contents/" class="icon-link gap-1 icon-link-hover">
+                        Find SQL Server Stored Procedure or Function by Contents
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | posted on 2021-11-26
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Find SQL Server Stored Procedure or Function By Contents Problem I was working making changes to a table function that is in a SQL Server database. This update was being...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2021.11.26-black-in-tech/" class="icon-link gap-1 icon-link-hover">
+                        Black In Tech 2021
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">3  </span> minute read                            
+                        
+                        | updated on 2022-09-30
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Groups or content targeted for or created by Black people in the IT industry. Some of the resources apply to mutliple areas of tech, while others are specific. Some groups...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2021.07.21-remove-duplicate-files-linux/" class="icon-link gap-1 icon-link-hover">
+                        Remove Duplicate Files on Linux
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | updated on 2023-01-17
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Problem I was cleaning files on the system. Wanted to get rid of files that were duplicated as I had two computers that had gotten out of sync with each other. Solution...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2021.06.25-why-do-coding-challenges/" class="icon-link gap-1 icon-link-hover">
+                        Why Do Coding Challenges?
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">3  </span> minute read                            
+                        
+                        | posted on 2021-06-25
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    What is a coding challenge? A coding challenge strives to test ones ability to be able to solve a problem using a defined set of criteria. Often times, coding challenges...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mb-3 small">
+    <a href="#top">Back to Top</a>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2021.06.21-automatically-commit-files-with-script/" class="icon-link gap-1 icon-link-hover">
+                        Automatically Commit Files with Script
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | updated on 2023-01-17
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Problem While having backups are important, the problem that I had was that I would not remember to do the backups on a regular basis. The Christmas light show has lots of...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2021.06.17-automatically-transfer-files-via-ssh/" class="icon-link gap-1 icon-link-hover">
+                        Automatically Transfer Files via SSH
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | updated on 2023-01-17
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Problem I have files that I load from my dash camera and phone. I have an application that will assemble those files into a tarball that would then be processed into a...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2021.05.10-removing-linux-kernels/" class="icon-link gap-1 icon-link-hover">
+                        Removing Linux Kernels
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">6  </span> minute read                            
+                        
+                        | updated on 2023-01-17
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Problem I noticed that I could not connect to one of my virutal machines (VM). I have a script that checks to see if the machines were offline and if so it will start...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2021.05.07-how-can-programmers-stay-in-shape/" class="icon-link gap-1 icon-link-hover">
+                        How Programmers Can Stay In Shape
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">7  </span> minute read                            
+                        
+                        | posted on 2021-05-07
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    When you have a desk job for a living, sometimes you get tired of sitting down all of the time. I know that I do. Often times when I go out and everyone around me is...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2021.05.06-tech-job-with-no-experience/" class="icon-link gap-1 icon-link-hover">
+                        Get A Tech Job with No Experience
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">9  </span> minute read                            
+                        
+                        | posted on 2021-05-06
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Background In a Facebook group that I am a member of, someone asked the following: Web Developer's How are you all preparing for interviews? I have no actual web...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mb-3 small">
+    <a href="#top">Back to Top</a>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2021.05.04-coding-challenge-generate-random-passwords/" class="icon-link gap-1 icon-link-hover">
+                        Coding Challenge Generate Random Passwords
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">31  </span> minute read                            
+                        
+                        | posted on 2021-05-04
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Links Mentioned Coding Challenge Repository Transcript (Unedited) what's going on good people this video i'm going to continue building out a coding challenge that i did...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2021.04.01-git-local-branch-cleanup/" class="icon-link gap-1 icon-link-hover">
+                        Git Local Branch Cleanup
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">2  </span> minute read                            
+                        
+                        | posted on 2021-04-01
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    After you create a number of branches with git, it becomes outdated and a maintenance issue since local branches are not synchronized with branches on the server or...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2021.03.30-coding-challenge-create-hangman-game/" class="icon-link gap-1 icon-link-hover">
+                        Coding Challenge Create Hangman Game
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">35  </span> minute read                            
+                        
+                        | posted on 2021-03-30
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Links Mentioned Coding Challenge Repository Transcript (Unedited) what's going on good people this video will be a coding challenge video the challenge is actually a...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2021.03.16-obs-hotkeys-with-number-pad/" class="icon-link gap-1 icon-link-hover">
+                        OBS Hotkeys with Number Pad
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | posted on 2021-03-16
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2021.03.04-commit-without-files/" class="icon-link gap-1 icon-link-hover">
+                        Commit Without Files
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">3  </span> minute read                            
+                        
+                        | posted on 2021-03-04
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    I was recently looking into whether it was possible to write commit messages without actually commiting files. Come to find out, it is possible. You're probably thinking,...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mb-3 small">
+    <a href="#top">Back to Top</a>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2021.03.02-coding-challenge-fizz-buzz-with-.net-core/" class="icon-link gap-1 icon-link-hover">
+                        Coding Challenge Fizz Buzz with .NET Core
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">8  </span> minute read                            
+                        
+                        | posted on 2021-03-02
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Links Mentioned Coding Challenge Repository Transcript (Unedited) what's going on good people so this video will be another coding challenge this coding challenge will be...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2021.02.09-internet-monitor/" class="icon-link gap-1 icon-link-hover">
+                        Internet Monitor Project
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">4  </span> minute read                            
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Problem My router would occasionally disconnect any of the wireless clients that were connected to it. Since I have wired and wireless devices connected, some of the time...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2021.01.01-dotnet-core-cheatsheet/" class="icon-link gap-1 icon-link-hover">
+                        .NET / .NET Core CheatSheet
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | updated on 2024-05-25
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Cheatsheets have useful commands to do tasks that you may forget. This cheatsheet consisits of commands that I use when buidling .NET Core applications using Visual Studio...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2020.10.25-control-gpio-with-net-core-on-raspberry-pi/" class="icon-link gap-1 icon-link-hover">
+                        Control GPIO with .NET Core on Raspberry Pi
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | updated on 2020-10-25
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Background I wanted to convert the Python code for the Traffic Pi over to .NET Core with C#. These are the steps that I followed to get it set up on the Raspberry Pi 3...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2020.10.10-ffmpeg-for-image-slideshow/" class="icon-link gap-1 icon-link-hover">
+                        FFMPEG for Image Slideshow
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">4  </span> minute read                            
+                        
+                        | updated on 2020-10-10
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Background I needed to create a YouTube channel trailer for another channel that I manage for an organization. The channel already existed for some time, there was not...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mb-3 small">
+    <a href="#top">Back to Top</a>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2020.09.15-git-change-master-branch-to-main-branch/" class="icon-link gap-1 icon-link-hover">
+                        Git: Change Master Branch to Main Branch
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | updated on 2021-03-10
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Background The racial interactions that have taken place in the United States during 2020 have prompted a number of changes to take place. Calls for police reform, better...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2020.09.12-prune-branch-in-visual-studio/" class="icon-link gap-1 icon-link-hover">
+                        Prune Branches In Visual Studio
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">3  </span> minute read                            
+                        
+                        | updated on 2020-09-12
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Background Majority of my experience with Git has been via the command line. As you may know, Git was created by the same person that created Linux, Linus Torvalds. Thus...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2020.09.08-uninstall-java-from-ubuntu/" class="icon-link gap-1 icon-link-hover">
+                        Uninstall Java from Ubuntu
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | updated on 2020-09-16
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Background Due to a change in job, I will be doing more coding in C# and .NET Core instead of Java. That being said, you probably will not be seeing any more Java...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2020.08.19-hp-wireless-printer-problems/" class="icon-link gap-1 icon-link-hover">
+                        HP Wireless Printer Problems
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">5  </span> minute read                            
+                        
+                        | updated on 2020-08-19
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Background I had a job for a chair assembly for a customer. The only problem was that the customer had not received the chair. It was scheduled to be delivered on the same...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2020.04.30-generate-timelapse-ffmpeg/" class="icon-link gap-1 icon-link-hover">
+                        Generate Timelapse with FFMPEG
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | posted on 2020-04-30
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    I run multiple YouTube channels. One of which is the dash cam channel where I post videos of my travels. #!/bin/bash ############################################### ##...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mb-3 small">
+    <a href="#top">Back to Top</a>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2020.03.06-linux-training-session-april-2020/" class="icon-link gap-1 icon-link-hover">
+                        Linux Training Session, April 2020
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    MARCH 20, 2020 23:14 UPDATE Due to the concerns and gathering restrictions that have been put in place by the local government due to the Coronavirus (COVID-19), this...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2020.03.01-linux-training-session/" class="icon-link gap-1 icon-link-hover">
+                        Linux Training Session Notes, March 2020
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">68  </span> minute read                            
+                        
+                        | updated on 2020-07-15
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Linux Training Session Notes, March 2020 Background Information As mentioned in the training session, I am providing the output from the terminal from the commands that...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2020.02.29-linux-training-session/" class="icon-link gap-1 icon-link-hover">
+                        Linux Training Session
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Linux Training Session UPDATED MARCH 6, 2020 Notes from this training session are now available. ORIGINALLY POSTED ON FEBRUARY 29, 2020 On March 1, 2020, I will be hosting...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2020.02.01-developer-uses-page/" class="icon-link gap-1 icon-link-hover">
+                        Developer Uses Page
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">3  </span> minute read                            
+                        
+                        | updated on 2020-07-15
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Developer Uses Page Background Recently, I was browsing GitHub to see how others had done their blogs and personal websites to brand themselves. In the process, I came...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2020.01.10-7-lessons-from-production-support/" class="icon-link gap-1 icon-link-hover">
+                        7 Lessons Learned as Production Support or Help Desk Agent
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">16  </span> minute read                            
+                        
+                        | updated on 2022-04-14
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Background I worked for 7 years in Production Support role. When I explained the type of work that I did, I often related it to calling customer service when your internet...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mb-3 small">
+    <a href="#top">Back to Top</a>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2019.11.05-automate-unattended-upgrades-on-ubuntu/" class="icon-link gap-1 icon-link-hover">
+                        Automate Unattended Upgrades on Ubuntu
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">8  </span> minute read                            
+                        
+                        | updated on 2020-07-15
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Summary I cover how to set up your Ubuntu system to automatically update itself so that you have less maintenance to perform. Transcript (Unedited) what's going on YouTube...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2019.09.05-copying-infested-code/" class="icon-link gap-1 icon-link-hover">
+                        Copying Infested Code
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">5  </span> minute read                            
+                        
+                        | updated on 2022-09-30
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Background As some of you may know, my current role consists of me building and maintaining automations. The thing about writing code is that at some point, maintenance...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2019.07.04-when-deploying-before-testing/" class="icon-link gap-1 icon-link-hover">
+                        When Deploying Before Testing
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">4  </span> minute read                            
+                        
+                        | updated on 2020-07-15
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    When Deploying Before Testing As you may know, on July 3, 2019, Facebook, Instagram, Down Detector, and a number of other websites were partially or fully unavailable....
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2019.06.16-7-reasons-i-can-do-that-without-the-app/" class="icon-link gap-1 icon-link-hover">
+                        7 Reasons I Can Do That Without The App
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">9  </span> minute read                            
+                        
+                        | updated on 2020-07-15
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    7 Reasons I Can Do That Without The App These days, everybody wants you to download their app. However, before installing an app, I ask myself whether I really do need the...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2019.05.07-how-to-install-chrome-on-ubuntu/" class="icon-link gap-1 icon-link-hover">
+                        How to Install Google Chrome on Ubuntu 18.04
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | updated on 2020-07-15
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mb-3 small">
+    <a href="#top">Back to Top</a>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2019.03.11-sow%2C-a-planting-companion/" class="icon-link gap-1 icon-link-hover">
+                        Sow, A Planting Companion
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">2  </span> minute read                            
+                        
+                        | updated on 2021-06-01
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    What is the Cooperative Extension? The Alabama Cooperative Extension System (ACES) is based out of Auburn University (it hurts to type that... Roll Tide... That's better!)...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2019.03.05-use-gparted-to-partition-usb-drive/" class="icon-link gap-1 icon-link-hover">
+                        Use Gparted to Partition USB Drive
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | updated on 2020-07-15
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Summary This tutorial shows you how to format or partition a USB thumb drive using Gparted on your Linux.
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2019.01.29-set-timezone-on-ubuntu-18.04-server/" class="icon-link gap-1 icon-link-hover">
+                        Set Timezone on Ubuntu 18.04 Server
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | updated on 2020-07-15
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Summary This video tutorial shows you how to set the timezone on an Ubuntu Server. The server used in this video is an Ubuntu 18.04 server. The process for setting the...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2018.11.10-archive-project-in-kdenlive/" class="icon-link gap-1 icon-link-hover">
+                        Archive Project in Kdenlive
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | updated on 2020-07-15
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Summary This tutorial shows you how to archive your video project within Kdenlive. Most of the time, when creating a video project, videographers will pull all of the...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2018.09.22-upgrade-ubuntu-16.04-lts-to-18.04-lts-upgrade-no-commentary/" class="icon-link gap-1 icon-link-hover">
+                        Upgrade Ubuntu Script
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | updated on 2023-02-14
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Summary This video shows how to upgrade Ubuntu 16.04 LTS Server Edition to Ubuntu 18.04 LTS Server Edition. This video does not have any verbal commentary as the purpose...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mb-3 small">
+    <a href="#top">Back to Top</a>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2018.08.28-power-on-wemo-switch-after-power-failure-with-home-assistant/" class="icon-link gap-1 icon-link-hover">
+                        Power On Wemo Switch After Power Failure with Home Assistant
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | updated on 2020-07-15
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Summary This tutorial shows you how to power on a Wemo switch after a power failure. When a power failure occurs, the Wemo switch will default to the Off state. I'm using...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2018.08.14-install-hdhrviewer-plug-in-for-live-tv-on-plex-media-server/" class="icon-link gap-1 icon-link-hover">
+                        Install HDHRViewer Plug-in for Live TV on Plex Media Server
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">3  </span> minute read                            
+                        
+                        | updated on 2020-07-15
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Summary In this tutorial, you'll see how to install the HDHR Viewer plugin in Plex Media Server. This plugin allows you to watch content cable or OTA (over the air)...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2018.07.14-install-seven-square-on-ubuntu/" class="icon-link gap-1 icon-link-hover">
+                        Install Seven Square on Ubuntu
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | updated on 2020-07-15
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Summary This tutorial shows how to install Seven Square on your Ubuntu machine. Seven Square allows you to view your Android device on your PC. This is great if you have...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2018.07.07-music-library-cleanup-with-fdupes/" class="icon-link gap-1 icon-link-hover">
+                        Music Library Cleanup with fdupes
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | updated on 2021-06-13
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Summary Show you how to remove duplicates from your music library collection on a Linux / Ubuntu computer. The software used in this tutorial is called fdupes. Commands...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2018.06.26-configure-hdhomerun-connect-with-kodi-on-ubuntu/" class="icon-link gap-1 icon-link-hover">
+                        Configure HDHomeRun Connect with Kodi on Ubuntu
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | updated on 2020-07-15
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Summary This tutorial shows how configure the HDHomeRun Connect to work with Kodi on Ubuntu. For more information about the HDHomeRun Tuners, visit the product's website...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mb-3 small">
+    <a href="#top">Back to Top</a>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2018.06.19-replace-optical-drive-in-pc/" class="icon-link gap-1 icon-link-hover">
+                        Replace Optical Drive in PC
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | updated on 2020-07-15
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Background This tutorial shows you how to replace a DVD-ROM drive in with a Blu-Ray drive in a computer. This step by step tutorial covers removing the computer case and...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2018.06.12-setup-myq-with-home-assistant/" class="icon-link gap-1 icon-link-hover">
+                        Setup MyQ with Home Assistant
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | updated on 2020-07-15
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Background This tutorial shows you how to set up MyQ to work with Home Assistant. The opener that is connected to in this tutorial is of the Liftmaster brand.
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2018.06.05-configure-simplisafe-with-home-assistant/" class="icon-link gap-1 icon-link-hover">
+                        Configure Simplisafe with Home Assistant
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | updated on 2020-07-15
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Background This tutorial shows how to setup Simplisafe with Home Assistant. Walkthrough of adding the lines in the configuration file is shown, as well as the icon that...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2018.05.29-configure-dd-wrt-with-home-assistant/" class="icon-link gap-1 icon-link-hover">
+                        Configure DD WRT with Home Assistant
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | updated on 2020-07-15
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Configure DD WRT with Home Assistant This tutorial explains how to set up DD WRT router with home assistant. Using this setup, Home Assistant can react when certain...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2018.05.29-belkin-wemo-switch-unboxing/" class="icon-link gap-1 icon-link-hover">
+                        Belkin Wemo Switch Unboxing
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | updated on 2020-07-15
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Background This video is the unboxing of the Belkin Wemo Switch. This unboxing is of the full size Belkin Wemo. It shows the size of the Belkin Wemo relative to the size...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mb-3 small">
+    <a href="#top">Back to Top</a>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2018.05.15-configure-etckeeper-with-gitlab/" class="icon-link gap-1 icon-link-hover">
+                        Configure etckeeper with Gitlab
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | updated on 2021-06-13
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Background This tutorial shows how to configure etckeeper and GitLab to manage configuration files stored in the /etc directory on your Ubuntu desktop or server. Commands...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2018.05.08-redirect-to-home-assistant-using-apache/" class="icon-link gap-1 icon-link-hover">
+                        Redirect to Home Assistant using Apache
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">2  </span> minute read                            
+                        
+                        | updated on 2023-02-14
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    This video tutorial provides steps on how to set up your Home Assistant server to redirect to the appropriate port number so that you don't have to manually enter it when...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2018.05.01-upgrade-home-assistant/" class="icon-link gap-1 icon-link-hover">
+                        Upgrade Home Assistant
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | updated on 2020-07-15
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Background This tutorial describes how to update Home Assistant that is running in a Python virtual environment. Commands Used The commands that are entered in this video...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2018.05.01-install-kodi-on-ubuntu/" class="icon-link gap-1 icon-link-hover">
+                        install Kodi on Ubuntu
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | updated on 2020-07-15
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    install Kodi on Ubuntu This video shows you how to install Kodi (formerly XBMC) on your Ubuntu device.
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2018.04.24-setup-hp-network-printer-on-ubuntu-16.04/" class="icon-link gap-1 icon-link-hover">
+                        Setup HP Network Printer on Ubuntu 16.04
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | updated on 2020-07-15
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Background This tutorial shows how to set up an HP printer on Ubuntu 16.04 Desktop. The HP LIP can be installed from the Ubuntu Software Center. The installation of the HP...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mb-3 small">
+    <a href="#top">Back to Top</a>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2018.04.17-setup-ssh-key-authentication/" class="icon-link gap-1 icon-link-hover">
+                        Setup SSH Key Authentication
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | updated on 2023-01-17
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Background This tutorial shows how to set up SSH authentication between two Linux servers. This allows for a connection between servers to be done without the use of a...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2018.04.10-uninstall-plex-media-server-from-ubuntu-16.04/" class="icon-link gap-1 icon-link-hover">
+                        Uninstall Plex Media Server from Ubuntu 16.04
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | updated on 2020-07-15
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Background This tutorial shows how to uninstall Plex Media Server from Ubuntu 16.04 using the command line.
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2018.04.04-install-plex-on-ubuntu-16.04-server-or-desktop/" class="icon-link gap-1 icon-link-hover">
+                        Install Plex on Ubuntu 16.04 Server or Desktop
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | updated on 2020-07-15
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Install Plex on Ubuntu 16.04 Server or Desktop This tutorial shows how to install Plex Media Server on Ubuntu 16.04 Desktop or Server. If you have comments or questions...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2018.03.13-install-postfix-to-use-gmail-as-smtp-server-on-ubuntu-16.04/" class="icon-link gap-1 icon-link-hover">
+                        Install Postfix to Use Gmail as SMTP server on Ubuntu 16.04
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | updated on 2020-07-15
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Install Postfix to Use Gmail as SMTP server on Ubuntu 16.04 This tutorial shows how to install Postfix as a SMTP server on Ubuntu 16.04 Server and Desktop versions.
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2018.03.13-install-home-assistant-on-ubuntu-16.04-vm/" class="icon-link gap-1 icon-link-hover">
+                        Install Home Assistant on Ubuntu 16.04 VM
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | updated on 2020-07-15
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Install Home Assistant on Ubuntu 16.04 VM This tutorial shows how to install Home Assistant on an Ubuntu 16.04 Virtual Machine using the steps provided on the Home...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mb-3 small">
+    <a href="#top">Back to Top</a>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2018.03.06-setup-ubuntu-16.04-on-virtualbox/" class="icon-link gap-1 icon-link-hover">
+                        Setup Ubuntu 16.04 on VirtualBox
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | updated on 2019-03-09
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Setup Ubuntu 16.04 on VirtualBox This video shows Ubuntu 16.04 being installed on a VirtualBox virtual machine. This video does not provide detailed instructions. This...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2018.02.27-install-virtualbox-on-ubuntu-16.04/" class="icon-link gap-1 icon-link-hover">
+                        Install VirtualBox on Ubuntu 16.04
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | updated on 2020-07-15
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Background This tutorial shows how to install Oracle VirtualBox on Ubuntu 16.04 Desktop.
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2018.02.20-install-webmin-on-ubuntu-16.04/" class="icon-link gap-1 icon-link-hover">
+                        Install Webmin on Ubuntu 16.04
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | updated on 2021-06-13
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Background Webmin is a great web-based, system administration tool for Ubuntu-based desktop or servers. Since Webmin is web-based, you don't have to be familiar with the...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2018.02.13-use-twitter-and-rules-for-farmos-notifications/" class="icon-link gap-1 icon-link-hover">
+                        Use Twitter and Rules for FarmOS Notifications
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | updated on 2020-07-15
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Use Twitter and Rules for FarmOS Notifications Intro This tutorial allows you to use Twitter for notifications. Using the Rules module, FarmOS can send notifications for...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2018.02.07-install-mysql-server-on-ubuntu-16.04/" class="icon-link gap-1 icon-link-hover">
+                        Install MySQL Server on Ubuntu 16.04
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | updated on 2021-06-13
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Background This video tutorial shows you how to install MySQL on an Ubuntu 16.04. The installation is really simple and requires just a few commands to be entered. This...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mb-3 small">
+    <a href="#top">Back to Top</a>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2017.12.16-command-line-internet-speed-test/" class="icon-link gap-1 icon-link-hover">
+                        Command Line Internet Speed Test
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | updated on 2023-01-17
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Problem I wanted to be able to run speed tests to make sure that I was getting the internet speeds that I was paying for. While a speedtest can be done from the web...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2017.11.14-enable-and-setup-ufw-on-ubuntu/" class="icon-link gap-1 icon-link-hover">
+                        Enable and Setup UFW on Ubuntu
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | updated on 2023-02-14
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    UFW or Uncomplicated FireWall, comes with Ubuntu and some other Linux distributions. This video shows how to install and configure it on your system. The Script...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2017.09.10-update-repository-script/" class="icon-link gap-1 icon-link-hover">
+                        Update Repository Script
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | updated on 2023-02-14
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Needed a script that would automatically pull the latest version of the repository into a folder. This script was created in an effort to automate the deployments for my...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2017.04.03-linux-rm-argument-list-too-long/" class="icon-link gap-1 icon-link-hover">
+                        Linux rm Argument list too long
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">2  </span> minute read                            
+                        
+                        | updated on 2020-07-15
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Linux rm Argument list too long A problem that occasionally occurs is that when attempting to remove files in Unix or Linux system is that when you attempt to remove files...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2016.11.19-setup-ssh-on-openwrt/" class="icon-link gap-1 icon-link-hover">
+                        Setup SSH on OpenWRT
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | updated on 2020-07-15
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Setup SSH on OpenWRT This video shows how to set up SSH on OpenWRT version Chaos Calmer. Router used was TP-Link TL-WD4300.
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mb-3 small">
+    <a href="#top">Back to Top</a>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2016.09.28-find-lines-longer-than-specified-length/" class="icon-link gap-1 icon-link-hover">
+                        Find Lines Longer than Specified Length
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | updated on 2020-07-15
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Find Lines Longer than Specified Length When editing data files, sometimes you need to find the lines that are longer or shorter than a certain length to make corrections....
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2016.07.14-install-openwrt-on-linksys-wrt1900ac-v1/" class="icon-link gap-1 icon-link-hover">
+                        Install OpenWRT on Linksys WRT1900AC v1
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | updated on 2020-07-15
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Install OpenWRT on Linksys WRT1900AC v1 Video explains how to install OpenWRT on Linksys WRT1900AC Version 1.
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2016.05.29-clean-log-directory-script/" class="icon-link gap-1 icon-link-hover">
+                        Clean Linux Log Directory Script
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">2  </span> minute read                            
+                        
+                        | updated on 2023-06-03
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Problem The more you use your Linux based system, the more files will be created. One thing that I noticed with mine is that the log directory would continue to grow. When...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2016.05.09-ssh-connection-test/" class="icon-link gap-1 icon-link-hover">
+                        SSH Connection Test Script
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | updated on 2023-02-14
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    As a way to see if servers are online and can be reached for file transfers, I decided to create the script to do just that. The Script #!/bin/bash...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2016.03.10-automating-ubuntu-14.04-automatic-updates/" class="icon-link gap-1 icon-link-hover">
+                        Automating Ubuntu 14.04 Automatic Updates
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | updated on 2020-07-15
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Automating Ubuntu 14.04 Automatic Updates sudo dpkg-reconfigure unattended-upgrades If you receive an error stating that unattended-upgrades package cannot be found, then...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mb-3 small">
+    <a href="#top">Back to Top</a>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2016.02.28-automatic-linux-updates-script/" class="icon-link gap-1 icon-link-hover">
+                        Automatic Ubuntu Update Script
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | updated on 2023-06-03
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Problem I have several Ubuntu (Linux) computers and systems that run on my home network. Now while I could manually perform updates on each of these, what I decided to do...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2015.11.21-hdmi-sound-on-ubuntu-with-shuttle-ds61/" class="icon-link gap-1 icon-link-hover">
+                        HDMI Sound on Ubuntu with Shuttle DS61
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | updated on 2020-07-15
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    HDMI Sound on Ubuntu with Shuttle DS61 If you have issues getting the sound to work using Ubuntu via HDMI, perform the following steps in order: Confirm that the volume on...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2015.10.30-sample-interview-question-unixlinux-experience/" class="icon-link gap-1 icon-link-hover">
+                        Sample Interview Question Unix/Linux Experience
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | updated on 2020-07-15
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Sample Interview Question Unix/Linux Experience This is a sample interview question that has been given to those that are interviewing for an IT Consultant role. This...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2015.10.30-sample-interview-question-sqldatabase-experience/" class="icon-link gap-1 icon-link-hover">
+                        Sample Interview Question SQL/Database Experience
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | updated on 2020-07-15
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Sample Interview Question SQL/Database Experience This is a sample question for interviewees that state that they have SQL and Database experience. Problem: Join the two...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2015.10.30-find-lines-that-contain-greater-than-specified-number-of-characters-in-unix/" class="icon-link gap-1 icon-link-hover">
+                        Find lines that contain greater than specified number of characters in Unix
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | updated on 2022-04-14
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    When working with files in Unix or Linux, sometimes you need to find the files that are greater than a specified number of characters. Unix or Linux systems are often used...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mb-3 small">
+    <a href="#top">Back to Top</a>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2015.10.21-how-to-disable-foreign-key-constraints-in-mysql/" class="icon-link gap-1 icon-link-hover">
+                        How to disable foreign key constraints in MySQL
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | updated on 2020-07-15
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    How to disable foreign key constraints in MySQL Why would you want to disable a foreign key constraint? Well there are some scenarios... such as when you are refreshing...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2015.10.07-green-screen-with-flash-videos-in-windows-10/" class="icon-link gap-1 icon-link-hover">
+                        Green Screen with Flash videos in Windows 10
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | updated on 2020-07-15
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Green Screen with Flash videos in Windows 10 Great!!! You've upgrade to Windows 10. No issues thus far. Then you go to one of your favorite websites to watch some videos....
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2015.10.01-test-internet-connection-script/" class="icon-link gap-1 icon-link-hover">
+                        Test Internet Script
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | updated on 2023-02-14
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    I wanted to have a script to ensure that the internet connection was up and running. One way to do this quickly was to create a script that could perform a speed test to...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2015.09.04-oracle-holidays-without-stored-procedure-with-2-week-notification/" class="icon-link gap-1 icon-link-hover">
+                        Oracle Holidays without Stored Procedure with 2 Week Notification
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">4  </span> minute read                            
+                        
+                        | updated on 2022-09-30
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    A client had a need for notifying others of upcoming holidays in some automated reports. Instead of manually adding these holidays to the reports as they were approaching,...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2015.06.28-how-to-synchronize-files-between-two-or-more-windows-computers/" class="icon-link gap-1 icon-link-hover">
+                        How To Synchronize Files Between Two or More Windows Computers
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | updated on 2020-07-15
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    How To Synchronize Files Between Two or More Windows Computers Do you have two or more computers running Windows? If you do, do you hate having to backup or keep files...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mb-3 small">
+    <a href="#top">Back to Top</a>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2014.02.08-java-swap-values/" class="icon-link gap-1 icon-link-hover">
+                        Java Swap Values
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | updated on 2020-07-15
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Java Swap Values This program swaps the values of two inputs and then prints them back out to the console. package com.thealmostengineer.swapvalues; import...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2014.02.08-java-count-up-and-down/" class="icon-link gap-1 icon-link-hover">
+                        Java Count Up and Down
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | updated on 2020-07-15
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Java Count Up and Down package com.thealmostengineer.countupdown; /** * * @author almostengr * @file Counts up and down to the specified provided number. */ public class...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2012.02.09-setup-ldap-on-ubuntu-10-04/" class="icon-link gap-1 icon-link-hover">
+                        Setup LDAP on Ubuntu 10.04
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">2  </span> minute read                            
+                        
+                        | updated on 2020-07-15
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Setup LDAP on Ubuntu 10.04 I attempted to set up and LDAP server on Ubuntu, but apparently I skipped a step or missed part of the instructions because I could not get it...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2011.12.12-ubuntu-server/" class="icon-link gap-1 icon-link-hover">
+                        Ubuntu Server
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | updated on 2020-07-15
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Ubuntu Server Recently managed to setup an Ubuntu 10.04 server for my business Black Box Innovation Technologies. It uses LAMP (Linux, Apache, MySQL, PHP) for our hosted...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2011.07.12-image-rotator/" class="icon-link gap-1 icon-link-hover">
+                        Image Rotator
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | updated on 2020-07-15
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Image Rotator I created a image scrolling script for a website. Below is the Javascript and HTML code to use it. Please leave the credits to me var indexBannersNum = 0;...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mb-3 small">
+    <a href="#top">Back to Top</a>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2011.05.19-rename-a-file-vb-net/" class="icon-link gap-1 icon-link-hover">
+                        Rename A File - VB.Net
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | posted on 2011-05-19
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Rename A File - VB.Net ' Change "c:\test.txt" to the path and filename for the file that ' you want to rename. My.Computer.FileSystem.RenameFile("C:\Test.txt",...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2011.05.10-oracle-pl-sql-commands/" class="icon-link gap-1 icon-link-hover">
+                        Oracle PLSQL Commands
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | posted on 2011-05-10
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Oracle PLSQL Commands If you are unfamiliar with Oracle DB and/or PL/SQL Commands, you can go to http://www.techonthenet.com and look up a variety of commands to complete...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2011.03.30-birt-reporting/" class="icon-link gap-1 icon-link-hover">
+                        BIRT Reporting
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | updated on 2020-07-15
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    BIRT Reporting If doing a BIRT report and you get a "+ There is no report design object available." error, then you have a version incompatibility. Chances are, there...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2">
+                    <a href="/tech-library/2011.03.07-free-software-development/" class="icon-link gap-1 icon-link-hover">
+                        Free Software for Web Development
+                    </a>
+                </h3>
+                <div class="mb-1 text-body-secondary">
+                    <span title="0 words">1  </span> minute read                            
+                        
+                        | updated on 2020-07-15
+                        
+                </div>
+                <p class="card-text mb-auto">
+                    
+                    Free Software for Web Development Here is a list of some of the free, some which are open-source, software that I use for web development. An internet search will provide...
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+    </main>
+    
+    <div class="col-12 col-md-3 mt-3">
+      <aside class="blog-sidebar">
+        <div class="p-4 mb-3 rounded shadow">
+          <form class="d-flex" role="search" action="https://www.google.com/search" method="get">
+            <div class="input-group">
+              <input type="hidden" name="q" value="site:thealmostengineer.com">
+              <input type="text" class="form-control rounded" placeholder="Search with Google" aria-label="Search"
+                aria-describedby="search-button" name="q">
+              <button class="btn btn-dark border-1 border-light" type="submit" id="search-button">Search</button>
+            </div>
+          </form>
+        </div>
+        <div class="p-4 shadow mb-3">
+          <h4 class="font-italic">Get Into Tech</h4>
+          <p class="mb-0">
+            Are you looking to get into a tech career or role? Check out the
+            <a href="/resources">Resources</a> section for more information. Also check out my
+            <a href="https://www.youtube.com/channel/UC4xp-TEEIAL-4XtMVvfRaQw?sub_confirmation=1" target="_blank">
+              YouTube Channel</a> and
+            <a href="https://www.facebook.com/profile.php?id=100089303142244" target="_blank">Facebook page</a> for
+            video tutorials about software development, web development,
+            and working with tech.
+            </a>
+          </p>
+        </div>
+        <div class="p-4 shadow mb-3">
+          <h4 class="font-italic">Monthly Newsletter</h4>
+          <p class="mb-0">
+            Get the latest posts and video delivered directly to your Inbox. Sign up for the mailing list. You will
+            receive, at most, one email per month with the latest updates.
+          </p>
+          <p class="mt-2">
+            <a class="text-light text-decoration-none btn btn-dark text-light mt-3"
+              href="https://newsletter.thealmostengineer.com/?p=subscribe&id=1">JOIN THE MAILING LIST</a>
+          </p>
+        </div>
+        <div class="p-4 shadow mb-3">
+          <h4 class="font-italic">Connect with Me</h4>
+          <ol class="list-unstyled">
+            <li><a target="_blank" href="https://bsky.app/profile/almostengr.bsky.social">
+                <i class="bi bi-bluesky"></i> Blue Sky</a></li>
+            <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100089303142244">
+                <i class="bi bi-facebook"></i> Facebook</a></li>
+            <li><a target="_blank" href="https://github.com/almostengr">
+                <i class="bi bi-github"></i> Github</a></li>
+            <li><a target="_blank" href="https://instagram.com/almostengr">
+                <i class="bi bi-instagram"></i> Instagram</a></li>
+            <li><a target="_blank" href="https://stackoverflow.com/users/12875554/almostengr">
+                <i class="bi bi-stack-overflow"></i> StackOverflow</a></li>
+            <li><a target="_blank" href="https://www.tiktok.com/@almostengr">
+                <i class="bi bi-tiktok"></i> TikTok</a></li>
+            <li><a target="_blank" href="https://www.youtube.com/channel/UC4xp-TEEIAL-4XtMVvfRaQw?sub_confirmation=1">
+                <i class="bi bi-youtube"></i> YouTube</a></li>
+          </ol>
+        </div>
+        <div class="p-4 shadow mb-3">
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4218270188842097"
+            data-ad-slot="5189305512" data-ad-format="auto" data-full-width-responsive="true"></ins>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+      </aside>
+    </div>
+    
+  </div>
+  
+</div>
+<div class="container sidebar rounded p-5 my-2 shadow">
+  <div class="row text-center">
+    <h3 class="col-12 col-md-4 text-center mb-2 mb-md-0">
+      <div>SHARE THE KNOWLEDGE</div>
+      <div>JOIN THE COMMUNITY</div>
+    </h3>
+    <div class="col-12 col-md-4 text-center mb-2 mb-md-0">
+      Whether you are just getting started in tech, or seasoned professional looking to share
+      your knowledge, join the community with other like minded individuals.
+    </div>
+    <div class="col-12 col-md-4 text-center mb-2 mb-md-0">
+      <a class="text-decoration-none text-light btn btn-lg btn-dark p-2" href="https://forums.rhtservices.net"
+        target="_blank">JOIN THE DISCUSSION</a>
+    </div>
+  </div>
+</div>
+<div class="container my-2 small">
+  <a href="#top">Back to Top</a>
+</div>
+<footer class="pt-2 my-5 text-body border-top blog-footer">
+  <div class="container">
+    <div class="mb-3">
+      <a class="pe-2" href="/web-development">Web Development</a>
+      <a class="pe-2" href="/electronics">Electronics</a>
+      <a class="pe-2" href="/tech-library">Tech Library</a>
+      <a class="pe-2" href="/dad-life">Dad Life</a>
+      <a class="pe-2" href="/junk-drawer">Junk Drawer</a>
+      <a class="pe-2" href="/projects">Projects</a>
+      <a class="pe-2" href="/services">Services</a>
+      <a class="pe-2" href="/about">About</a>
+      <a class="pe-2" href="/contact">Contact</a>
+    </div>
+    <div class="mb-3">
+      <a class="pe-2" target="_blank" href="https://bsky.app/profile/almostengr.bsky.social"><i
+          class="bi bi-bluesky"></i> Blue Sky</a>
+      <a class="pe-2" target="_blank" href="https://www.facebook.com/profile.php?id=100089303142244"><i
+          class="bi bi-facebook"></i> Facebook</a>
+      <a class="pe-2" target="_blank" href="https://github.com/almostengr"><i class="bi bi-github"></i> Github</a>
+      <a class="pe-2" target="_blank" href="https://instagram.com/almostengr"><i class="bi bi-instagram"></i>
+        Instagram</a>
+      <a class="pe-2" target="_blank" href="https://stackoverflow.com/users/12875554/almostengr"><i
+          class="bi bi-stack-overflow"></i> StackOverflow</a>
+      <a class="pe-2" target="_blank" href="https://www.tiktok.com/@almostengr"><i class="bi bi-tiktok"></i> TikTok</a>
+      <a class="pe-2" target="_blank"
+        href="https://www.youtube.com/channel/UC4xp-TEEIAL-4XtMVvfRaQw?sub_confirmation=1"><i class="bi bi-youtube"></i>
+        YouTube</a>
+      <a class="pe-2" target="_blank"
+        href="https://www.youtube.com/channel/UCB7rvymUaUbbig3skv2zvCQ?sub_confirmation=1">Kenny Ram Dash Cam</a>
+    </div>
+    <div class="mb-3">
+      <a class="pe-2" href="https://newsletter.thealmostengineer.com">Newsletter</a>
+      <a class="pe-2" href="https://forums.rhtservices.net" target="_blank">Tech Forums</a>
+      <a class="pe-2" href="/rss">RSS Feeds</a>
+      <a class="pe-2" href="/links">Links</a>
+      <a class="pe-2" href="/lightshow">Light Show</a>
+      <a class="pe-2" href="/uses">Uses</a>
+      <a class="pe-2" href="/privacy">Privacy Policy</a>
+      <a class="pe-2" href="/sitemap.xml">Sitemap</a>
+    </div>
+    <div class="mb-3">
+      Copyright &copy; 2010-2026 Kenny Robinson |
+      Created by <a href="https://rhtservices.net" target="_blank">Robinson Handy and Technology
+        Services</a>
+    </div>
+    <div class="mb-3">
+      Disclaimer: The opinions expressed here are those of mine and not representative of my employer or
+      affiliates.
+    </div>
+  </div>
+</footer>
+<script src="/js/bootstrap.bundle.min.js" class="astro-vvvwv3sm"></script>
+<script src="/js/color-modes.js"></script>
+<script src="/js/prism.js"></script>
+<script src="/js/site.js"></script>
+  
+  
+</body>
+
+</html>

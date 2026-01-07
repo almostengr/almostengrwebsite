@@ -2,6 +2,8 @@
 title: Building A Christmas Light Show Control Box (Presentation 2020-12-20)
 imagealt: House with lights
 image: /images/2020 Christmas Light Show 20201211-f000000.jpg
+ytEmbed: https://www.youtube.com/embed/fs6Lx8ySL9Y
+ytUrl: https://www.youtube.com/watch?v=fs6Lx8ySL9Y
 ---
 
 ## About The Show
@@ -73,10 +75,3 @@ image: /images/2020 Christmas Light Show 20201211-f000000.jpg
 * <a href="https://github.com/almostengr/falconpitwitter" target="_blank">Source Code</a>
 
 ![Screenshot of tweets from the application](/images/20201220presentation/twittertweets.jpg)
-
-## 2020 Christmas Light Show
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/fs6Lx8ySL9Y" frameborder="0"
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<a href="https://www.youtube.com/watch?v=fs6Lx8ySL9Y" target="_blank">Watch on YouTube</a>

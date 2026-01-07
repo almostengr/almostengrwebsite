@@ -2,16 +2,23 @@
 title: "@almostengr Links"
 ---
 
+## Recent Posts
+
 * [STEM Creators Spotlight 2026](https://forms.gle/h5iwVHwSNgvzfcU76)
 
 ## Connect With Me
 
-* <a href="https://thealmostengineer.com/rss" target="_blank">RSS Feeds</a>
-* <a href="https://bsky.app/profile/almostengr.bsky.social" target="_blank">Blue Sky</a>
-* <a href="https://www.fanbase.app/@almostengr" target="_blank">Fanbase</a>
-* <a href="https://instagram.com/almostengr" target="_blank">Instagram</a>
-* <a href="https://tiktok.com/@almostengr" target="_blank">TikTok</a>
-* <a href="https://twitter.com/almostengr" target="_blank">Twitter</a>
-* <a href="https://www.youtube.com/c/robinsonhandyandtechnologyservices?sub_confirmation=1" target="_blank">Handyman YouTube Channel</a>
-* <a href="https://www.youtube.com/channel/UC4xp-TEEIAL-4XtMVvfRaQw?sub_confirmation=1" target="_blank">Tech Talk YouTube Channel</a>
-* [Visit My Blog](/)
+* [Hire Me/Services](/services)
+* [RSS Feed](https://thealmostengineer.com/rss)
+* [BlueSky](https://bsky.app/profile/almostengr.bsky.social)
+* [Github](https://github.com/almostengr)
+* [Instagram](https://instagram.com/almostengr)
+* [TikTok](https://tiktok.com/@almostengr)
+* [YouTube](https://www.youtube.com/channel/UC4xp-TEEIAL-4XtMVvfRaQw?sub_confirmation=1)
+* [thealmostengineer.com Home](/)
+
+## Get Into Tech
+
+* [Getting Into Tech](/tech-library/2022.04.08-getting-into-tech)
+* [Getting Tech Job With No Experience](/tech-library/2021.05.06-tech-job-with-no-experience)
+* [Get Into Tech - All Resources](/resources)

@@ -1,6 +1,5 @@
 ---
 title: About
-description: Information about Kenny Robinson and his blog
 ---
 
 ## "The Almost Engineer" Explanation
@@ -16,14 +15,15 @@ someone else to do it for me. However, I have a Business degree from the Univers
 My day job is working as a programmer and I have years of experience in building web based
 applications and providing software support. When you create or maintain software for a living,
 often times you will reuse the same code over in multiple projects. By using a blog, you can search for
-that [code snippet](/blog/2020.08.25-select-list-of-times)
+that [code snippet](/web-development/2020.08.25-select-list-of-times)
 and copy and paste it in. In addition, it assists other developers with their coding
 projects, as it may be exactly what they are looking for.
 
 ## Why Does Kenny Blog?
 
-I have been been blogging  about gardening, [technology experiences](/blog), 
-[about life](/blog), and mishaps for several reasons:
+I have been been blogging about gardening, [Christmas light shows](/electronics), 
+[building software and web applications](/web-development), [life as a dad](/dad-life),
+[about life](/junk-drawer), and mishaps for several reasons:
 
 * you learn from your past mistakes
 * others can learn from your mistakes before they make them
@@ -31,30 +31,10 @@ I have been been blogging  about gardening, [technology experiences](/blog),
 * it provides a way to share thoughts
 * provides a place for project documentation
 
-## Blog Technology
-
-Originally, I started blogging on Blogger in 2010.
-After several years of a having the blog there, the blog was converted to
-Drupal 7. At the time of this switch, I was using Drupal 7 on a number
-of websites that I was building and maintaining. So it made sense to use
-it for personal use.
-
-In 2019, I converted the blog again from Drupal 7 over to MkDocs. The reason
-for this conversion was because I found myself spending more time performing
-maintenance updates than writing content. I outline this more in my post on
-[switching from Drupal to MkDocs](/blog/2019.12.21-switched-blog-from-drupal-to-mkdocs).
-
 ## Services
 
-I offer custom software solutions and handyman work through my business
-<a href="https://rhtservices.net" target="_blank">Robinson Handy and Technology Services</a>. To
-make an appointment or discuss business, please visit the website.
-
-## Blogs I Read
-
-In addition to writing here, I also reads the blogs of others.
-Before you ask, they do not provide any kickbacks or monetary support for me listing links to their blog.
-Tech related blogs and resources can be found on the [Resources](/resources) page.
+Please visit the [Services page](/services) to find out more about the services that 
+I offer and how to hire me.
 
 ## Have Questions
 

@@ -6,7 +6,7 @@
         {
             "label": "mkdocs serve",
             "command": "mkdocs",
-            "type": "shell",
+            "type":"process",
             "args": [
                 "serve",
                 "--watch-theme",

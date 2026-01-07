@@ -18,7 +18,6 @@ theme:
   name: null
   custom_dir: 'theme'
   language: en
-  jumbotron: default #christmas
   static_templates:
     - 404.html
 use_directory_urls: true

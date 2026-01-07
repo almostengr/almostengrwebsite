@@ -1,0 +1,41 @@
+<div class="px-4 mb-5 w-100 border-bottom border-top shadow hero">
+    <div class="container rounded">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="/images/jumbotron_kenny.jpg" class="d-block mx-lg-auto img-fluid rounded"
+                    alt="Kenny with traffic light" width="700" height="500" loading="lazy">
+            </div>
+            <div class="col-lg-6 ">
+                <h1 class="display-5 fw-bold lh-1 mb-3">
+                    Full Stack C# .NET Web Developer, Linux, STEM Advocate, and Dad Life.
+                </h1>
+                <p class="lead">
+                    I am Kenny Robinson.
+                    I am a Full-Stack C# .NET Developer specializing in robust system architecture and Linux
+                    environments. I
+                    apply the
+                    same disciplined approach to teaching STEM, public speaking, and managing the organized chaos of
+                    family
+                    life.
+                </p>
+                <p class="lead fw-italic">
+                    My approach: Share what you know, document what does work, and learn from previous mistakes.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+{% if page and page.meta.jumbotron == "Christmas" %}
+<div class="container px-4 py-5">
+    <h2 class="pb-2 border-bottom">Musical Christmas Light Show</h2>
+    <div class="mt-3 mb-5">
+        <p class="text-body">
+            Each year, I run a animated light show that is synchronized to music. The show allows visitors
+            to select the song of their choosing and see information about the show in real time.
+        </p>
+    </div>
+    <div class="my-3">
+        <a href="/lightshow" class="btn text-light btn-lg">Visit Light Show Page</a>
+    </div>
+</div>
+{% endif %}

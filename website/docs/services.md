@@ -1,41 +1,42 @@
 ---
-title: Services
-descriptions: Technical services offered
+title: Hire Me, Services Offered
+description: Web development, software development, and IT (Information Technology) services that I offer
 ---
 
+Need a web or software developer? Then consider hiring me! I am available for freelance and consulting
+work and have over a decade of experience with building custom software and web-based solutions.
+
 I offer technology services to individuals and businesses that technology work done 
-in a timely manner. 
-All services are offered through my business 
-<a href="https://rhtservices.net/services" target="_blank">Robinson Handy and Technology Services</a>.
+in a timely manner.  You can review the list of my [previous projects](/projects).
 
-Services I offer include, but are not limited to
+## Services
 
-## Automations 
+The services I offer include, but are not limited to: 
 
-Need an automation built for a routine process? We build those too. Whether it is scraping information 
-from a website to processing files as they are received, I can build a custom solution that 
-will have improve your workflow and save you time.
+* automations including CI/CD (Continuous Integration, Continuous Development), Selenium WebDriver, and automated testing
+* custom websites
+* custom web-based applications
+* refactoring desktop and legacy applications to web-based applications
+* consulting on architectural needs and best practices
+* set up and configuration with home and enterprise networks
+* speaking about working in STEM and working in tech (Information Technology)
 
-## Courses
+Additionals services are offered that are not listed. Please 
+[contact me](/contact) to discuss your needs and how I can assist.
 
-I offer courses in a variety of subjects. Some of the content from these courses can be found on my 
-<a href="https://www.youtube.com/c/RobinsonHandyandTechnologyServices" target="_blank">YouTube Channel</a>. 
-Additional materials that are related to the course
-can be found and purchased from 
-<a href="https://rhtservices.net" target="_blank">business website</a>.
+## Rates
 
-## Web Applications 
+Typically I bill based on a project rate, the amount it would take to complete the project, 
+and not an hourly rate. Each project or contract is billed based upon the requirements 
+and needs of that project. 
+When a project is considered to be too large or the cost to be too expensive, alternative options 
+including splitting the project in to phases or payments using After Pay are made available.
 
-Have a need for a custom application? I build custom applications that solve business problems and 
-challenges. 
+## Location
 
-## Websites
+I am based in Alabama in the United States and working from the Central Time Zone of the United States.
 
-I create website for business, products, and services. Each website is checked to make sure that it 
-is mobile friendly and is compatible with Google best practices. 
+## How To Get Started
 
-## To Get Started
-
-To get started, you amy reach out to me via 
-<a href="https://rhtservices.net/services" target="_blank">my business website</a>. Any questions 
-regarding services, billing, and more can be found and asked from there.
+when you are ready to wrok with me, you can reach me by one of the options mentioned on the 
+[contact page](/contact) to discuss the next steps for your project.

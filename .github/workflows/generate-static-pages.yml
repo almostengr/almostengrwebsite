@@ -35,7 +35,7 @@ jobs:
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT_NUMBER }}
-        source: "all.xml,latest.xml"
+        source: "dadlife.rss.xml,electronics.rss.xml,junkdrawer.rss.xml,tech.rss.xml,webdevelopment.rss.xml"
         target: ${{ secrets.WWW_DIRECTORY }}
         key: ${{ secrets.PRIVATE_KEY }}
           

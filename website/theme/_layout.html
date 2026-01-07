@@ -1,0 +1,207 @@
+<a name="#top"></a>
+{% include "_lightDarkMode.html" %}
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand fw-bold text-light" href="/">
+      Kenny Robinson
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+        <li class="nav-item"><a class="nav-link active" href="/web-development">Web Development</a></li>
+        <li class="nav-item"><a class="nav-link active" href="/electronics">Electronics</a></li>
+        <li class="nav-item"><a class="nav-link active" href="/tech-library">Tech Library</a></li>
+        <li class="nav-item"><a class="nav-link active" href="/projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link active" href="/services">Services</a></li>
+        <li class="nav-item"><a class="nav-link active" href="/contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+{% if page and page.is_homepage %}
+{% include "_homeJumbotron.html" %}
+{% endif %}
+<div class="container">
+  {% if page and page.is_homepage %}
+  {% include "_homeBody.html" %}
+  {% else %}
+  <div class="row">
+    <main class="col-12 col-md-9">
+      {%- block content %}
+      {% include "_pageHeader.html" %}
+      {% if page and page.meta.blogindex %}
+      {% include "_blogIndex.html" %}
+      {% elif page and page.url == "store/" %}
+      {% include "_store.html" %}
+      {% elif page and "store/" in page.url %}
+      {% include "_product.html" %}
+      {% else %}
+
+      {% if page and page.meta.ytEmbed %}
+      <div class="mb-3">
+        <iframe width="560" height="315" src="{{ page.meta.ytEmbed }}" class="youtube" frameborder="0"
+          allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+      </div>
+      {% endif %}
+      <div class="mb-3">
+        {% if page and page.meta.igUrl %}
+        <a href="{{ page.meta.igUrl }}" target="_blank">Watch on Instagram</a>
+        {% endif %}
+        {% if page and page.meta.ttUrl %}
+        <a href="{{ page.meta.ttUrl }}" target="_blank">Watch on TikTok</a>
+        {% endif %}
+        {% if page and page.meta.ytUrl %}
+        <a href="{{ page.meta.ytUrl }}" target="_blank">Watch on YouTube</a>
+        {% endif %}
+      </div>
+
+      {{ page.content }}
+      {% include "_keywords.html" %}
+      {% endif %}
+      {%- endblock %}
+    </main>
+    {% if page and ("store" not in page.url and page.is_homepage == false) %}
+    <div class="col-12 col-md-3 mt-3">
+      <aside class="blog-sidebar">
+        <div class="p-4 mb-3 rounded shadow">
+          <form class="d-flex" role="search" action="https://www.google.com/search" method="get">
+            <div class="input-group">
+              <input type="hidden" name="q" value="site:thealmostengineer.com">
+              <input type="text" class="form-control rounded" placeholder="Search with Google" aria-label="Search"
+                aria-describedby="search-button" name="q">
+              <button class="btn btn-dark border-1 border-light" type="submit" id="search-button">Search</button>
+            </div>
+          </form>
+        </div>
+        <div class="p-4 shadow mb-3">
+          <h4 class="font-italic">Get Into Tech</h4>
+          <p class="mb-0">
+            Are you looking to get into a tech career or role? Check out the
+            <a href="/resources">Resources</a> section for more information. Also check out my
+            <a href="https://www.youtube.com/channel/UC4xp-TEEIAL-4XtMVvfRaQw?sub_confirmation=1" target="_blank">
+              YouTube Channel</a> and
+            <a href="https://www.facebook.com/profile.php?id=100089303142244" target="_blank">Facebook page</a> for
+            video tutorials about software development, web development,
+            and working with tech.
+            </a>
+          </p>
+        </div>
+        <div class="p-4 shadow mb-3">
+          <h4 class="font-italic">Monthly Newsletter</h4>
+          <p class="mb-0">
+            Get the latest posts and video delivered directly to your Inbox. Sign up for the mailing list. You will
+            receive, at most, one email per month with the latest updates.
+          </p>
+          <p class="mt-2">
+            <a class="text-light text-decoration-none btn btn-dark text-light mt-3"
+              href="https://newsletter.thealmostengineer.com/?p=subscribe&id=1">JOIN THE MAILING LIST</a>
+          </p>
+        </div>
+        <div class="p-4 shadow mb-3">
+          <h4 class="font-italic">Connect with Me</h4>
+          <ol class="list-unstyled">
+            <li><a target="_blank" href="https://bsky.app/profile/almostengr.bsky.social">
+                <i class="bi bi-bluesky"></i> Blue Sky</a></li>
+            <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100089303142244">
+                <i class="bi bi-facebook"></i> Facebook</a></li>
+            <li><a target="_blank" href="https://github.com/almostengr">
+                <i class="bi bi-github"></i> Github</a></li>
+            <li><a target="_blank" href="https://instagram.com/almostengr">
+                <i class="bi bi-instagram"></i> Instagram</a></li>
+            <li><a target="_blank" href="https://stackoverflow.com/users/12875554/almostengr">
+                <i class="bi bi-stack-overflow"></i> StackOverflow</a></li>
+            <li><a target="_blank" href="https://www.tiktok.com/@almostengr">
+                <i class="bi bi-tiktok"></i> TikTok</a></li>
+            <li><a target="_blank" href="https://www.youtube.com/channel/UC4xp-TEEIAL-4XtMVvfRaQw?sub_confirmation=1">
+                <i class="bi bi-youtube"></i> YouTube</a></li>
+          </ol>
+        </div>
+        <div class="p-4 shadow mb-3">
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4218270188842097"
+            data-ad-slot="5189305512" data-ad-format="auto" data-full-width-responsive="true"></ins>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+      </aside>
+    </div>
+    {% endif %}
+  </div>
+  {% endif %}
+</div>
+<div class="container sidebar rounded p-5 my-2 shadow">
+  <div class="row text-center">
+    <h3 class="col-12 col-md-4 text-center mb-2 mb-md-0">
+      <div>SHARE THE KNOWLEDGE</div>
+      <div>JOIN THE COMMUNITY</div>
+    </h3>
+    <div class="col-12 col-md-4 text-center mb-2 mb-md-0">
+      Whether you are just getting started in tech, or seasoned professional looking to share
+      your knowledge, join the community with other like minded individuals.
+    </div>
+    <div class="col-12 col-md-4 text-center mb-2 mb-md-0">
+      <a class="text-decoration-none text-light btn btn-lg btn-dark p-2" href="https://forums.rhtservices.net"
+        target="_blank">JOIN THE DISCUSSION</a>
+    </div>
+  </div>
+</div>
+<div class="container my-2 small">
+  <a href="#top">Back to Top</a>
+</div>
+<footer class="pt-2 my-5 text-body border-top blog-footer">
+  <div class="container">
+    <div class="mb-3">
+      <a class="pe-2" href="/web-development">Web Development</a>
+      <a class="pe-2" href="/electronics">Electronics</a>
+      <a class="pe-2" href="/tech-library">Tech Library</a>
+      <a class="pe-2" href="/dad-life">Dad Life</a>
+      <a class="pe-2" href="/junk-drawer">Junk Drawer</a>
+      <a class="pe-2" href="/projects">Projects</a>
+      <a class="pe-2" href="/services">Services</a>
+      <a class="pe-2" href="/about">About</a>
+      <a class="pe-2" href="/contact">Contact</a>
+    </div>
+    <div class="mb-3">
+      <a class="pe-2" target="_blank" href="https://bsky.app/profile/almostengr.bsky.social"><i
+          class="bi bi-bluesky"></i> Blue Sky</a>
+      <a class="pe-2" target="_blank" href="https://www.facebook.com/profile.php?id=100089303142244"><i
+          class="bi bi-facebook"></i> Facebook</a>
+      <a class="pe-2" target="_blank" href="https://github.com/almostengr"><i class="bi bi-github"></i> Github</a>
+      <a class="pe-2" target="_blank" href="https://instagram.com/almostengr"><i class="bi bi-instagram"></i>
+        Instagram</a>
+      <a class="pe-2" target="_blank" href="https://stackoverflow.com/users/12875554/almostengr"><i
+          class="bi bi-stack-overflow"></i> StackOverflow</a>
+      <a class="pe-2" target="_blank" href="https://www.tiktok.com/@almostengr"><i class="bi bi-tiktok"></i> TikTok</a>
+      <a class="pe-2" target="_blank"
+        href="https://www.youtube.com/channel/UC4xp-TEEIAL-4XtMVvfRaQw?sub_confirmation=1"><i class="bi bi-youtube"></i>
+        YouTube</a>
+      <a class="pe-2" target="_blank"
+        href="https://www.youtube.com/channel/UCB7rvymUaUbbig3skv2zvCQ?sub_confirmation=1">Kenny Ram Dash Cam</a>
+    </div>
+    <div class="mb-3">
+      <a class="pe-2" href="https://newsletter.thealmostengineer.com">Newsletter</a>
+      <a class="pe-2" href="https://forums.rhtservices.net" target="_blank">Tech Forums</a>
+      <a class="pe-2" href="/rss">RSS Feeds</a>
+      <a class="pe-2" href="/links">Links</a>
+      <a class="pe-2" href="/lightshow">Light Show</a>
+      <a class="pe-2" href="/uses">Uses</a>
+      <a class="pe-2" href="/privacy">Privacy Policy</a>
+      <a class="pe-2" href="/sitemap.xml">Sitemap</a>
+    </div>
+    <div class="mb-3">
+      Copyright &copy; 2010-{{ build_date_utc.strftime("%Y") }} Kenny Robinson |
+      Created by <a href="https://rhtservices.net" target="_blank">Robinson Handy and Technology
+        Services</a>
+    </div>
+    <div class="mb-3">
+      Disclaimer: The opinions expressed here are those of mine and not representative of my employer or
+      affiliates.
+    </div>
+  </div>
+</footer>
+<script src="/js/bootstrap.bundle.min.js" class="astro-vvvwv3sm"></script>
+<script src="/js/color-modes.js"></script>
+<script src="/js/prism.js"></script>
+<script src="/js/site.js"></script>

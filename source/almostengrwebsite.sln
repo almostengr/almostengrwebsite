@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "source\Almostengr.AlmostengrWebsite.Common", "source\Almostengr.AlmostengrWebsite.Common\Almostengr.AlmostengrWebsite.Common.csproj", "{F1A3A9BB-AC7F-4680-AC45-8305CCBCC476}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Almostengr.AlmostengrWebsite.Common", "Almostengr.AlmostengrWebsite.Common\Almostengr.AlmostengrWebsite.Common.csproj", "{F1A3A9BB-AC7F-4680-AC45-8305CCBCC476}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "source\Almostengr.AlmostengrWebsite.GardenWeather", "source\Almostengr.AlmostengrWebsite.GardenWeather\Almostengr.AlmostengrWebsite.GardenWeather.csproj", "{7F4D06A5-16E3-4B09-8C6A-4F44F90C665A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Almostengr.AlmostengrWebsite.GardenWeather", "Almostengr.AlmostengrWebsite.GardenWeather\Almostengr.AlmostengrWebsite.GardenWeather.csproj", "{7F4D06A5-16E3-4B09-8C6A-4F44F90C665A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

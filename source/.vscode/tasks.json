@@ -11,9 +11,12 @@
                 "build",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary",
-                "source/Almostengr.AlmostengrWebsite.GardenWeather/Almostengr.AlmostengrWebsite.GardenWeather.csproj"
+                "Almostengr.AlmostengrWebsite.GardenWeather/Almostengr.AlmostengrWebsite.GardenWeather.csproj"
             ],
-            "group": "build",
+            "group":{
+                "kind": "build",
+                "isDefault": true
+            },
             "presentation": {
                 "reveal": "silent"
             },

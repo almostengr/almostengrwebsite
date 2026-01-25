@@ -1,0 +1,11 @@
+<div id="slideshow"></div>
+{{ page.content }}
+
+<div class="small">
+    {% if page and page.meta.previous %}
+    <a id="previousLink" href="{{ page.meta.previous }}">Previous</a>
+    {% endif %}
+    {% if page and page.meta.next %}
+    <a id="nextLink" href="{{ page.meta.next }}">Next</a>
+    {% endif %}
+</div>

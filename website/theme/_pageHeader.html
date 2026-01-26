@@ -1,6 +1,9 @@
 <div class="my-3">
+    {% if page and page.meta.slideshow is not defined %}
     <div class="p-3 page-header rounded-3">
-        <h1 class="fw-bold">{{ page.title }}</h1>
+        <h1 class="fw-bold" id="title">
+            {{ page.title }}
+        </h1>
         <div class="row">
             {% if page and page.meta.author %}
             <div class="col">
@@ -57,4 +60,5 @@
         </div>
         {% endif %}
     </div>
+    {% endif %}
 </div>

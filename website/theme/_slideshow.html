@@ -1,0 +1,18 @@
+<div class="small text-end">
+    {% if page and page.meta.previousurl %}
+    <a id="previousLink" href="#" data-url="/{{ page.meta.previousurl }}">Previous</a>
+    {% else %}
+    <a id="previousLink" href="#" data-url="/{{ page.previous_page.url }}">Previous</a>
+    {% endif %}
+    {% if page and page.meta.nexturl %}
+    <a id="nextLink" href="#" data-url="/{{ page.meta.nexturl }}">Next</a>
+    {% else %}
+    <a id="nextLink" href="#" data-url="/{{ page.next_page.url }}">Next</a>
+    {% endif %}
+</div>
+<div id="slideTitle" class="d-none mt-3 mb-5">
+    <h1>{{ page.title }}</h1>
+</div>
+<div id="slideBody" class="d-none">
+    {{ page.content }}
+</div>

@@ -65,7 +65,7 @@
       {% endif %}
       {%- endblock %}
     </main>
-    {% if page and ("store" not in page.url and page.is_homepage == false and page.meta.quiz is defined) %}
+    {% if page and ("store" not in page.url and page.is_homepage == false) %}
     <div class="col-12 col-md-3 mt-3">
       <aside class="blog-sidebar">
         <div class="p-4 mb-3 rounded shadow">
@@ -77,6 +77,13 @@
               <button class="btn btn-dark border-1 border-light" type="submit" id="search-button">Search</button>
             </div>
           </form>
+        </div>
+        <div class="p-4 shadow mb-3">
+          <h4 class="font-italic">STEM Creators Spotlight</h4>
+          <p class="mb-0">
+            Looking for other STEM (Science, Technology, Engineering, and Math) creators to follow, then check out 
+            my <a href="/tech-library/2026.01.28-stem-creators-2026">curated list of creators</a>.
+          </p>
         </div>
         <div class="p-4 shadow mb-3">
           <h4 class="font-italic">Get Into Tech</h4>

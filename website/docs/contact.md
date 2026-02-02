@@ -24,5 +24,5 @@ You may also connect and message me via the below social media platforms.
 
 ## Community Support 
 
-You can visit [the forum](https://forums.thealmostengineer.com) to connect with other like minded 
+You can visit [the forum](https://community.thealmostengineer.com) to connect with other like minded 
 individuals to discuss tech and other projects.

@@ -6,6 +6,11 @@ title: "@almostengr Links"
 
 * [STEM Creators Spotlight 2026](https://forms.gle/h5iwVHwSNgvzfcU76)
 
+
+## Tech Forum
+
+* [Tech Community Forum](https://community.thealmostengineer.com)
+
 ## Connect With Me
 
 * [Hire Me/Services](/services)

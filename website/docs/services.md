@@ -34,9 +34,9 @@ including splitting the project in to phases or payments using After Pay are mad
 
 ## Location
 
-I am based in Alabama in the United States and working from the Central Time Zone of the United States.
+I am based in Alabama in the United States. I work in the Central Time Zone of the United States.
 
 ## How To Get Started
 
-when you are ready to wrok with me, you can reach me by one of the options mentioned on the 
+When you are ready to work with me, you can reach me by one of the options mentioned on the 
 [contact page](/contact) to discuss the next steps for your project.

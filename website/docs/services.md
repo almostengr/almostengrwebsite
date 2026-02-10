@@ -20,6 +20,7 @@ The services I offer include, but are not limited to:
 * consulting on architectural needs and best practices
 * set up and configuration with home and enterprise networks
 * speaking about working in STEM and working in tech (Information Technology)
+* website review and critique
 
 Additionals services are offered that are not listed. Please 
 [contact me](/contact) to discuss your needs and how I can assist.

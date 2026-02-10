@@ -71,9 +71,7 @@
 
 <body>
   {% block content %}
-  {% if page and page.meta.newsletter %}
-  {% include "_newsletter.html" %}
-  {% elif page and page.meta.redirect %}
+  {% if page and page.meta.redirect %}
   {% include "_redirect.html" %}
   {% else %}
   {% include "_layout.html" %}

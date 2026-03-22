@@ -4,8 +4,8 @@ title: "@almostengr Links"
 
 ## Recent Posts
 
+* [NSBE Convention 2026](/tech-library/2026.03.23-nsbe-convention-2026)
 * [STEM Creators Spotlight 2026](https://forms.gle/h5iwVHwSNgvzfcU76)
-
 
 ## Tech Forum
 

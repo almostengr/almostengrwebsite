@@ -12,7 +12,7 @@
         <p class="mt-3"><small>Instant GitHub repo access after payment • Lifetime updates</small></p>
       </div>
       <div class="col-lg-6 text-center">
-        <img src="/images/products/traffic-pi-hero.webp" alt="Traffic Pi running" class="img-fluid rounded shadow">
+        <img src="products/traffic-pi-hero.webp" alt="Traffic Pi running" class="img-fluid rounded shadow">
       </div>
     </div>
   </div>

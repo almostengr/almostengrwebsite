@@ -6,8 +6,8 @@ on:
       - 'main'
 
 jobs:
-  build:
-    name: build
+  dependencies:
+    name: dependencies
     runs-on: ubuntu-latest
     
     steps:
@@ -19,7 +19,14 @@ jobs:
     - run: /usr/bin/python3 -m pip install --upgrade setuptools
     - run: /usr/bin/python3 -m pip install --upgrade mkdocs
     - run: /usr/bin/python3 -m pip install --upgrade mkdocs-minify-plugin
+    - run: /usr/bin/python3 -m pip install --upgrade mkdocs-rss-plugin
 
+  build:
+    name: build
+    runs-on: ubuntu-latest
+    needs: dependencies
+
+    steps:
     - run: git fetch -p
     - run: /usr/bin/python3 -m mkdocs gh-deploy -f website/mkdocs.yml -b website
 

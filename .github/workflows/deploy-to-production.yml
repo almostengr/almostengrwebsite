@@ -6,8 +6,8 @@ on:
       - 'main'
 
 jobs:
-  build:
-    name: "Deploy to Production"
+  dependencies:
+    name: dependencies
     runs-on: ubuntu-latest
     
     steps:
@@ -16,17 +16,28 @@ jobs:
       with:
         ref: main
         
-    # - run: /usr/bin/python3 -m pip install --upgrade pip
     - run: /usr/bin/python3 -m pip install --upgrade setuptools
     - run: /usr/bin/python3 -m pip install --upgrade mkdocs
-    # - run: /usr/bin/python3 -m pip install --upgrade mkdocs-minify-plugin
+    - run: /usr/bin/python3 -m pip install --upgrade mkdocs-minify-plugin
+    - run: /usr/bin/python3 -m pip install --upgrade mkdocs-rss-plugin
 
+  build:
+    name: build
+    runs-on: ubuntu-latest
+    needs: dependencies
+
+    steps:
     - run: git fetch -p
     - run: /usr/bin/python3 -m mkdocs gh-deploy -f website/mkdocs.yml -b website
 
-    - run: |
-        website/scripts/generate_rss.sh
+    - run: website/scripts/generate_rss.sh
 
+  deploy:
+    name: deploy
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
     - name: Copy RSS files via SSH
       uses: appleboy/scp-action@v1
       with:
@@ -38,7 +49,7 @@ jobs:
         target: ${{ secrets.WWW_DIRECTORY }}
         key: ${{ secrets.PRIVATE_KEY }}
           
-    - name: "Update production"
+    - name: Deploy to Production
       uses: fifsky/ssh-action@master
       with:
         command: cd && cd www && git pull origin website

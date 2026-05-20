@@ -7,10 +7,6 @@ title: "@almostengr Links"
 * [NSBE Convention 2026](/tech-library/2026.03.23-nsbe-convention-2026)
 * [STEM Creators Spotlight 2026](https://forms.gle/h5iwVHwSNgvzfcU76)
 
-## Tech Forum
-
-* [Tech Community Forum](https://community.thealmostengineer.com)
-
 ## Connect With Me
 
 * [Hire Me/Services](/services)

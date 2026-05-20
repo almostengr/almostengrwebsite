@@ -24,5 +24,9 @@ You may also connect and message me via the below social media platforms.
 
 ## Community Support 
 
-You can visit [the forum](https://community.thealmostengineer.com) to connect with other like minded 
-individuals to discuss tech and other projects.
+To receive support from the community, I ask that you comment on the
+video that you see or would like more information about. Myself and others
+are able to then respond to the comments or questions that you have. 
+
+Those who do not want to ask their questions or comment publicly, may 
+send me a message using one of the social media platforms above.

@@ -13,12 +13,13 @@ upcoming project is finalized, the details will be posted.
 Have a project that you need completed? You may request 
 [my services](/services) by [contacting me](/contact) with details of work that you need completed.
 
+* Christmas Light Show 2026
 * [Crime Mapping Email Parser (2026, Software)](/tech-library/2026.03.07-crimemapping-library)
 * [Open Data Montgomery, AL C# Library (2026, Software)](/tech-library/2026.02.23-open-data-montgomery-al-library.md)
 * [thealmostengineer.com Bootstrap 5 Update (2026, Web Development)](/web-development/2026.01.02-updated-bootstrap-5)
 * [Mobile Christmas Light Show (2025, Electronics)](/electronics/2025.12.13-2025-portable-christmas-light-show)
 * [Christmas Light Show (2025, Electronics)](/electronics/2025.08.13-2025-christmas-light-show)
-* [Christmas Light Show (2024, Electronics)](/lightshow)
+* [Christmas Light Show (2024, Electronics)](/electronics/2024.11.29-2024-christmas-light-show)
 * [Landscape RGB Lighting (2024, Electronics)](/electronics/2024.05.25-landscape-lighting)
 * [Christmas Light Show (2023, Electronics)](/electronics/2021.02.09-2023-christmas-light-show)
 * [Light Show Extender (2023, Software)](/electronics/2024.01.10-light-show-guard)

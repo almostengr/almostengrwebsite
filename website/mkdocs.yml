@@ -20,6 +20,7 @@ theme:
   language: en
   static_templates:
     - 404.html
+    - thumbnail.html
 use_directory_urls: true
 strict: false
 

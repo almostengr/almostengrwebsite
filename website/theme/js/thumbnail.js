@@ -17,7 +17,7 @@ function darkSidebar() {
 }
 
 if (title !== null) {
-    titleColumn.innerText = title;
+    titleColumn.innerText = title.toUpperCase();
 }
 
 switch (video) {
@@ -28,7 +28,12 @@ switch (video) {
 
     case "personal":
         darkSidebar();
-        titleColumn.classList.add("text-dark");
+        titleColumn.classList.add("bg-info");
+        break;
+
+    case "handyman":
+        darkSidebar();
+        titleColumn.classList.add("bg-warning");
         break;
 
     default:

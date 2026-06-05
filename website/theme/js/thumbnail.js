@@ -22,6 +22,7 @@ if (title !== null) {
 
 switch (video) {
     case "tech":
+    case "gardening":
         lightSidebar();
         titleColumn.classList.add("bg-success");
         break;

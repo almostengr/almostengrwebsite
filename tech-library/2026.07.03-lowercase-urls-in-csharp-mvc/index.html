@@ -228,7 +228,7 @@
                     <path
                         d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1z" />
                 </svg>
-                72 words
+                338 words
             </div>
         </div>
         
@@ -245,14 +245,39 @@
         
       </div>
 
-      <p>Lowercase URLs are common with APIs.  TO implement this throughout your 
-entire application, you can use the below in your Program.cs file. </p>
+      <p>Lowercase URLs are common with APIs.  They can also be done in MVC 
+applications. To some systems, URLS that are upper case or title case 
+are treated as a different page in comparison to those that have only 
+lower case URLs. </p>
+<p>By default, C# MVC and API will used title cased URLs.  Meaning the 
+URLs will have a combination of upper and lower case letters in them. 
+For systems that you are running internally, this probably won't be 
+a big deal. </p>
+<p>For those that are accessed by the public internet, it is a big deal 
+because it can SEO implications.</p>
+<h2 id="seo-reasons">SEO Reasons</h2>
+<p>In regards to SEO (Search Engine Optimization), URLS with upper case
+letters can be seen as a different URL than one with only lower case letters. 
+The problem with this is that when two different URLs display the same 
+content, search engines often consider that to be duplicate content. 
+Because it is considered duplicate content, the search engine algorithm 
+could derank your website or that page in the search results. That is not 
+what you want to have happen.</p>
+<h2 id="implementation">Implementation</h2>
+<p>To implement this throughout your 
+entire application, you can use the below in your <code>Program.cs</code> file. </p>
+<p>NOTE: At the time of writing this article, .NET 10 is the current 
+and latest stable version. Thus the code is written for this version and 
+may not work in future versions.</p>
 <pre><code class="language-csharp">builder.Services.Configure&lt;RouteOptions&gt;(options =&gt;
 {
     options.LowercaseUrls = true;
     // options.LowercaseQueryStrings = true;
 });
 </code></pre>
+<p>The <code>LowercaseUrls</code> option will make the URLS lower cased, even
+when entered as upper or title case. I would also make sure that the links within 
+your application are always lower cased.</p>
 <p>The <code>LowercaseQueryStrings</code> option will enforce that the query 
 parameters also be lowercased.  If using case-sensitive parameters, 
 this option should be disabled.</p>

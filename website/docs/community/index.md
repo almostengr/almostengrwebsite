@@ -1,10 +1,10 @@
 ---
-title: Community
+title: Local Community
 hidepostinfo: true
 category: directorylist
 filtercategory: community
 blogindex: true
-description: Data logging and metrics for weather and gardening.
+description: Commentary and thoguhts about Montgomery, Alabama, and the United States.
 ---
 
 Being involved with the neighborhood and community, you develop a 

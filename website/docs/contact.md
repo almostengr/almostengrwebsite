@@ -21,8 +21,3 @@ You may also connect and message me via the below social media platforms.
 * [Instagram](https://instagram.com/almostengr)
 * [TikTok](https://tiktok.com/@almostengr)
 * [YouTube](https://www.youtube.com/channel/UC4xp-TEEIAL-4XtMVvfRaQw?sub_confirmation=1)
-
-## Community Support 
-
-You can visit [the forum](https://community.thealmostengineer.com) to connect with other like minded 
-individuals to discuss tech and other projects.

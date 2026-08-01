@@ -13,7 +13,8 @@ upcoming project is finalized, the details will be posted.
 Have a project that you need completed? You may request 
 [my services](/services) by [contacting me](/contact) with details of work that you need completed.
 
-* Christmas Light Show 2026
+* [Sunshine Counseling Services website (2026, Web Development)](/web-development/2026.07.31-sunshine-counseling)
+* [Christmas Light Show (2026, Electronics)](/electronics/2026.07.24-2026-christmas-light-show)
 * [Crime Mapping Email Parser (2026, Software)](/tech-library/2026.03.07-crimemapping-library)
 * [Open Data Montgomery, AL C# Library (2026, Software)](/tech-library/2026.02.23-open-data-montgomery-al-library.md)
 * [thealmostengineer.com Bootstrap 5 Update (2026, Web Development)](/web-development/2026.01.02-updated-bootstrap-5)

@@ -11,7 +11,7 @@ in a timely manner.  You can review the list of my [previous projects](/projects
 
 ## Services
 
-The services I offer include, but are not limited to: 
+The technology services I offer include, but are not limited to: 
 
 * automations including CI/CD (Continuous Integration, Continuous Development), Selenium WebDriver, and automated testing
 * custom websites
@@ -25,10 +25,10 @@ The services I offer include, but are not limited to:
 Additionals services are offered that are not listed. Please 
 [contact me](/contact) to discuss your needs and how I can assist.
 
-## Rates
+## Pricing and Rates
 
-Typically I bill based on a project rate, the amount it would take to complete the project, 
-and not an hourly rate. Each project or contract is billed based upon the requirements 
+Work is billed based on the cost to complete the project, and not an hourly rate. 
+Each project or contract is billed based upon the requirements 
 and needs of that project. 
 When a project is considered to be too large or the cost to be too expensive, alternative options 
 including splitting the project in to phases or payments using After Pay are made available.

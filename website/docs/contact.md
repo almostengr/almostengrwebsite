@@ -21,12 +21,3 @@ You may also connect and message me via the below social media platforms.
 * [Instagram](https://instagram.com/almostengr)
 * [TikTok](https://tiktok.com/@almostengr)
 * [YouTube](https://www.youtube.com/channel/UC4xp-TEEIAL-4XtMVvfRaQw?sub_confirmation=1)
-
-## Community Support 
-
-To receive support from the community, I ask that you comment on the
-video that you see or would like more information about. Myself and others
-are able to then respond to the comments or questions that you have. 
-
-Those who do not want to ask their questions or comment publicly, may 
-send me a message using one of the social media platforms above.

@@ -24,11 +24,11 @@ theme:
 use_directory_urls: true
 strict: false
 
-plugins:
-  - rss:  
-    rss_feed_enabled: false
-  - minify:
-      minify_html: true
+# plugins:
+#   - rss:  
+#     rss_feed_enabled: false
+#   - minify:
+#       minify_html: true
 
 # hooks:
   # - hooks/json_export.py

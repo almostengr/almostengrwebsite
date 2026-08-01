@@ -5,6 +5,118 @@ const bodyElement = document.getElementById("slideBody");
 const previousLink = document.getElementById("previousLink");
 const nextLink = document.getElementById("nextLink");
 
+class SlideShow {
+    currentSlide = 0;
+
+    constructor() {
+        this.bodyElement = document.getElementById("slideBody");
+
+        if (this.bodyElement === null) {
+            return;
+        }
+
+        let selectedSlide = [];
+        const nodes = Array.from(this.bodyElement.children);
+
+        nodes.forEach(node => {
+            if (node.tagName === "HR") {
+                if (selectedSlide.length > 0) {
+                    this.slides.push(selectedSlide);
+                    selectedSlide = [];
+                }
+                else {
+                    selectedSlide.push(node);
+                }
+            }
+        });
+
+        // last slide
+        if (selectedSlide.length > 0) {
+            this.slides.push(selectedSlide);
+        }
+    }
+
+
+    currentSlide = 0;
+    slides = [];
+
+    constructor() {
+        this.bodyElement = document.getElementById("slideBody");
+
+        if (!this.bodyElement) return;
+
+        let selectedSlide = [];
+        const nodes = Array.from(this.bodyElement.children);
+
+        nodes.forEach(node => {
+            if (node.tagName === "HR") {
+                if (selectedSlide.length > 0) {
+                    this.slides.push(selectedSlide);
+                    selectedSlide = [];
+                }
+            } else {
+                selectedSlide.push(node);
+            }
+        });
+
+        // push last slide
+        if (selectedSlide.length > 0) {
+            this.slides.push(selectedSlide);
+        }
+
+        this.bindEvents();
+        this.showSlide(0);
+    }
+
+    // nextSlide() {
+    //     if (this.bodyElement === null) {
+    //         return;
+    //     }
+
+    //     if (this.currentSlide >= this.slides.length) {
+    //         return;
+    //     }
+
+    // }
+
+    // previousSlide() {
+    //     if (this.bodyElement === null) {
+    //         return;
+    //     }
+
+    //     if (this.currentSlide <= 0) {
+    //         return;
+    //     }
+    // }
+
+    nextSlide() {
+        if (this.currentSlide < this.slides.length - 1) {
+            this.showSlide(this.currentSlide + 1);
+        }
+    }
+
+    previousSlide() {
+        if (this.currentSlide > 0) {
+            this.showSlide(this.currentSlide - 1);
+        }
+    }
+} // end class SlideShow
+
+
+
+
+function addSlideShowNavigation2() {
+    if (bodyElement === null) {
+        return;
+    }
+
+    const slides = document.getElementsByTagName("hr");
+
+
+
+    bodyElement.classList.remove(dNone);
+}
+
 function addSlideShowNavigation() {
     if (bodyElement === null) {
         return;

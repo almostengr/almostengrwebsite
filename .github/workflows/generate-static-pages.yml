@@ -22,10 +22,10 @@ jobs:
 
     - run: git fetch -p
 
-    - run: /usr/bin/python3 -m mkdocs build -f presentations/mkdocs.yml build/presentations
+    - run: /usr/bin/python3 -m mkdocs build -f presentations/mkdocs.yml -d build/presentations
       name: Build presentations
 
-    - run: /usr/bin/python3 -m mkdocs build -f website/mkdocs.yml build/website
+    - run: /usr/bin/python3 -m mkdocs build -f website/mkdocs.yml -d build/website
       name: Build website
 
     - run: |

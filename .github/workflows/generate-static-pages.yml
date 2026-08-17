@@ -71,7 +71,7 @@ jobs:
       uses: contention/rsync-deployments@v2.0.0
       with:
         # Initial/required rsync flags
-        flags: 
+        flags: -rtu --delete
         # Exclude flags and directory pairs
         excludes: 
         # The server user

@@ -64,23 +64,25 @@ jobs:
     #     source: "dadlife.rss.xml,electronics.rss.xml,tech.rss.xml,webdevelopment.rss.xml"
     #     target: ${{ secrets.WWW_DIRECTORY }}
     #     key: ${{ secrets.PRIVATE_KEY }}
+
+    - run: rsync -avz -e "ssh -p ${{ secrets.PORT_NUMBER }}" build/presentations ${{ secrets.USERNAME }}@${{ secrets.HOSTNAME }}:${{ secrets.TALK_DIRECTORY }}
         
-    - name: rsync talks
-      # You may pin to the exact commit or the version.
-      # uses: contention/rsync-deployments@10f98a8726e6760601d8818ea6ff812f87bf8a97
-      uses: contention/rsync-deployments@v2.0.0
-      with:
-        # Initial/required rsync flags
-        flags: -rtu --delete
-        # Exclude flags and directory pairs
-        excludes: 
-        # The server user
-        user:  ${{ secrets.USERNAME }}
-        # The deployment target
-        host:  ${{ secrets.HOSTNAME }}
-        # The local path to sync
-        localpath: build/presentations
-        # The remote path to sync
-        remotepath:  ${{ secrets.TALK_DIRECTORY }}
-        # The private key
-        deploy_key:  ${{ secrets.PRIVATE_KEY }}
+    # - name: rsync talks
+    #   # You may pin to the exact commit or the version.
+    #   # uses: contention/rsync-deployments@10f98a8726e6760601d8818ea6ff812f87bf8a97
+    #   uses: contention/rsync-deployments@v2.0.0
+    #   with:
+    #     # Initial/required rsync flags
+    #     flags: -rtu --delete
+    #     # Exclude flags and directory pairs
+    #     excludes: 
+    #     # The server user
+    #     user:  ${{ secrets.USERNAME }}
+    #     # The deployment target
+    #     host:  ${{ secrets.HOSTNAME }}
+    #     # The local path to sync
+    #     localpath: build/presentations
+    #     # The remote path to sync
+    #     remotepath:  ${{ secrets.TALK_DIRECTORY }}
+    #     # The private key
+    #     deploy_key:  ${{ secrets.PRIVATE_KEY }}

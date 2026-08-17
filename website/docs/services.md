@@ -1,5 +1,5 @@
 ---
-title: Hire Me, Services Offered
+title: Hire Me
 description: Web development, software development, and IT (Information Technology) services that I offer
 ---
 

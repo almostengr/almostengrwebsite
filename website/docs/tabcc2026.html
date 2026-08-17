@@ -1,0 +1,1511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Business Technology Assessment</title>
+
+    <!-- Bootstrap 5 -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #212529;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #0d6efd, #084298);
+            color: white;
+            padding: 80px 0;
+        }
+
+        .assessment-card {
+            margin-top: -50px;
+            position: relative;
+            z-index: 2;
+            border: 0;
+            border-radius: 1rem;
+        }
+
+        .question {
+            display: none;
+        }
+
+        .question.active {
+            display: block;
+        }
+
+        .answer-option {
+            display: block;
+            border: 2px solid #dee2e6;
+            border-radius: .75rem;
+            padding: 1rem;
+            margin-bottom: .75rem;
+            cursor: pointer;
+            transition: all .15s ease-in-out;
+            background-color: white;
+        }
+
+        .answer-option:hover {
+            border-color: #0d6efd;
+            background-color: #f0f6ff;
+        }
+
+        .answer-option.selected {
+            border-color: #0d6efd;
+            background-color: #e7f1ff;
+        }
+
+        .answer-option input {
+            display: none;
+        }
+
+        .progress {
+            height: 10px;
+        }
+
+        .result-icon {
+            font-size: 4rem;
+        }
+
+        .offer-card {
+            height: 100%;
+            border: 0;
+            border-radius: 1rem;
+            transition: transform .15s ease-in-out;
+        }
+
+        .offer-card:hover {
+            transform: translateY(-4px);
+        }
+
+        footer {
+            background-color: #212529;
+            color: #adb5bd;
+        }
+
+        .form-section {
+            background-color: #fff;
+            border-radius: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- ============================================================
+     HERO
+============================================================= -->
+
+<section class="hero">
+    <div class="container text-center">
+        <p class="text-uppercase fw-bold small mb-3">
+            Websites • Business Software • Automation
+        </p>
+
+        <h1 class="display-4 fw-bold">
+            What Does Your Business Need Next?
+        </h1>
+
+        <p class="lead mt-4 mb-4 mx-auto" style="max-width: 700px;">
+            Take our 2-minute Business Technology Assessment and
+            discover where your organization may have its biggest
+            opportunity to improve.
+        </p>
+
+        <button
+            class="btn btn-light btn-lg px-5"
+            onclick="startAssessment()">
+            Take the Assessment
+        </button>
+    </div>
+</section>
+
+
+<!-- ============================================================
+     ASSESSMENT
+============================================================= -->
+
+<section class="container" id="assessmentSection">
+
+    <div class="card shadow assessment-card">
+
+        <div class="card-body p-4 p-md-5">
+
+            <!-- Progress -->
+
+            <div id="progressContainer" class="mb-4 d-none">
+
+                <div class="d-flex justify-content-between mb-2">
+                    <small class="text-muted">
+                        Question <span id="currentQuestionNumber">1</span>
+                        of <span id="totalQuestions">10</span>
+                    </small>
+
+                    <small class="text-muted">
+                        <span id="progressPercent">10</span>%
+                    </small>
+                </div>
+
+                <div class="progress">
+                    <div
+                        id="progressBar"
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 10%">
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- INTRO -->
+
+            <div id="assessmentIntro" class="text-center">
+
+                <h2 class="fw-bold mb-3">
+                    Let's see where your biggest opportunity is.
+                </h2>
+
+                <p class="text-muted mx-auto" style="max-width: 650px;">
+                    Answer 10 quick questions about your website,
+                    business processes, and technology.
+                </p>
+
+                <button
+                    class="btn btn-primary btn-lg px-5 mt-3"
+                    onclick="startAssessment()">
+                    Start Assessment
+                </button>
+
+            </div>
+
+
+            <!-- QUESTIONS -->
+
+            <div id="questionsContainer" class="d-none">
+
+                <!-- Questions are inserted by JavaScript -->
+
+            </div>
+
+
+            <!-- NAVIGATION -->
+
+            <div
+                id="navigationButtons"
+                class="d-none d-flex justify-content-between mt-4">
+
+                <button
+                    id="previousButton"
+                    class="btn btn-outline-secondary"
+                    onclick="previousQuestion()">
+                    ← Previous
+                </button>
+
+                <button
+                    id="nextButton"
+                    class="btn btn-primary"
+                    onclick="nextQuestion()">
+                    Next →
+                </button>
+
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+
+<!-- ============================================================
+     RESULTS
+============================================================= -->
+
+<section
+    id="resultsSection"
+    class="container py-5 d-none">
+
+    <div class="card shadow border-0">
+
+        <div class="card-body p-4 p-md-5 text-center">
+
+            <div id="resultIcon" class="result-icon mb-3">
+                💡
+            </div>
+
+            <h2 id="resultTitle" class="fw-bold"></h2>
+
+            <p
+                id="resultDescription"
+                class="lead text-muted mx-auto mt-3"
+                style="max-width: 700px;">
+            </p>
+
+            <div
+                id="resultRecommendation"
+                class="alert alert-primary text-start mx-auto mt-4"
+                style="max-width: 700px;">
+            </div>
+
+            <div class="mt-4">
+
+                <button
+                    id="resultCta"
+                    class="btn btn-primary btn-lg"
+                    onclick="showLeadForm()">
+                    Let's Talk
+                </button>
+
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+
+<!-- ============================================================
+     LEAD CAPTURE
+============================================================= -->
+
+<section
+    id="leadSection"
+    class="container py-5 d-none">
+
+    <div
+        class="form-section shadow-sm p-4 p-md-5 mx-auto"
+        style="max-width: 700px;">
+
+        <div class="text-center mb-4">
+
+            <h2 class="fw-bold">
+                Want Your Results?
+            </h2>
+
+            <p class="text-muted">
+                Enter your information and we'll send you your
+                assessment results along with some ideas for next steps.
+            </p>
+
+        </div>
+
+        <form id="leadForm">
+
+            <div class="mb-3">
+
+                <label
+                    for="name"
+                    class="form-label fw-semibold">
+                    Name
+                </label>
+
+                <input
+                    type="text"
+                    class="form-control form-control-lg"
+                    id="name"
+                    name="name"
+                    required>
+
+            </div>
+
+
+            <div class="mb-3">
+
+                <label
+                    for="email"
+                    class="form-label fw-semibold">
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    class="form-control form-control-lg"
+                    id="email"
+                    name="email"
+                    required>
+
+            </div>
+
+
+            <div class="mb-3">
+
+                <label
+                    for="organization"
+                    class="form-label fw-semibold">
+                    Organization
+                </label>
+
+                <input
+                    type="text"
+                    class="form-control form-control-lg"
+                    id="organization"
+                    name="organization">
+
+            </div>
+
+
+            <div class="mb-3">
+
+                <label
+                    for="timeline"
+                    class="form-label fw-semibold">
+                    How soon are you looking to do something about this?
+                </label>
+
+                <select
+                    id="timeline"
+                    name="timeline"
+                    class="form-select form-select-lg">
+
+                    <option value="">
+                        Select one
+                    </option>
+
+                    <option value="exploring">
+                        Just exploring
+                    </option>
+
+                    <option value="3-6-months">
+                        Within the next 3–6 months
+                    </option>
+
+                    <option value="1-3-months">
+                        Within the next 1–3 months
+                    </option>
+
+                    <option value="ready">
+                        We're ready to get started
+                    </option>
+
+                    <option value="learn">
+                        I just want to learn more
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="mb-4">
+
+                <label
+                    for="message"
+                    class="form-label fw-semibold">
+
+                    Tell me a little more
+                    <span class="text-muted fw-normal">
+                        (optional)
+                    </span>
+
+                </label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    class="form-control"
+                    rows="4"
+                    placeholder="What's the biggest website, process, or technology challenge you're dealing with?">
+                </textarea>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="btn btn-primary btn-lg w-100">
+
+                Send My Results
+
+            </button>
+
+
+            <p class="small text-muted text-center mt-3 mb-0">
+                No spam. Just your assessment results and information
+                about how we may be able to help.
+            </p>
+
+        </form>
+
+
+        <!-- Success message -->
+
+        <div
+            id="formSuccess"
+            class="alert alert-success mt-4 d-none">
+
+            <h4 class="alert-heading">
+                Thanks!
+            </h4>
+
+            <p class="mb-0">
+                Your information has been received.
+                I'll be in touch soon.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ============================================================
+     SERVICES
+============================================================= -->
+
+<section class="container py-5">
+
+    <div class="text-center mb-5">
+
+        <h2 class="fw-bold">
+            How I Can Help
+        </h2>
+
+        <p class="text-muted">
+            Practical technology solutions for businesses,
+            nonprofits, and professional services.
+        </p>
+
+    </div>
+
+
+    <div class="row g-4">
+
+        <div class="col-md-4">
+
+            <div class="card offer-card shadow-sm">
+
+                <div class="card-body p-4">
+
+                    <div class="fs-1 mb-3">
+                        🌐
+                    </div>
+
+                    <h3>
+                        Professional Websites
+                    </h3>
+
+                    <p class="text-muted">
+                        Clean, responsive websites designed to
+                        clearly communicate who you are and what
+                        you do.
+                    </p>
+
+                    <p class="fw-bold">
+                        Starting at $500
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="col-md-4">
+
+            <div class="card offer-card shadow-sm">
+
+                <div class="card-body p-4">
+
+                    <div class="fs-1 mb-3">
+                        ⚙️
+                    </div>
+
+                    <h3>
+                        Business Software
+                    </h3>
+
+                    <p class="text-muted">
+                        Custom web applications for processes,
+                        workflows, dashboards, portals, and
+                        other business needs.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="col-md-4">
+
+            <div class="card offer-card shadow-sm">
+
+                <div class="card-body p-4">
+
+                    <div class="fs-1 mb-3">
+                        🚀
+                    </div>
+
+                    <h3>
+                        Software Ideas
+                    </h3>
+
+                    <p class="text-muted">
+                        Have an idea that could help businesses
+                        beyond your own? Let's explore whether
+                        it could become a software product.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ============================================================
+     FOOTER
+============================================================= -->
+
+<footer class="py-5">
+
+    <div class="container text-center">
+
+        <h3 class="text-white">
+            Let's Build Something Useful.
+        </h3>
+
+        <p class="mt-3">
+            Websites • Business Software • Automation
+        </p>
+
+        <p class="mb-0">
+            © <span id="currentYear"></span>
+            Your Business Name
+        </p>
+
+    </div>
+
+</footer>
+
+
+<!-- ============================================================
+     JAVASCRIPT
+============================================================= -->
+
+<script>
+
+/* =============================================================
+   ASSESSMENT QUESTIONS
+============================================================= */
+
+const questions = [
+
+    {
+        question:
+            "Does your organization currently have a website?",
+
+        answers: [
+            {
+                text: "No website",
+                scores: { website: 5 }
+            },
+            {
+                text: "Yes, but it needs major work",
+                scores: { website: 4 }
+            },
+            {
+                text: "Yes, but it could be better",
+                scores: { website: 2 }
+            },
+            {
+                text: "Yes, and we're happy with it",
+                scores: { website: 0 }
+            }
+        ]
+    },
+
+
+    {
+        question:
+            "When was your website last significantly updated?",
+
+        answers: [
+            {
+                text: "We don't have one",
+                scores: { website: 5 }
+            },
+            {
+                text: "More than 5 years ago",
+                scores: { website: 4 }
+            },
+            {
+                text: "2–5 years ago",
+                scores: { website: 3 }
+            },
+            {
+                text: "Within the last 2 years",
+                scores: { website: 1 }
+            },
+            {
+                text: "Recently",
+                scores: { website: 0 }
+            }
+        ]
+    },
+
+
+    {
+        question:
+            "How easy is it for customers or clients to get information from you online?",
+
+        answers: [
+            {
+                text: "They usually have to call or email us",
+                scores: { software: 3 }
+            },
+            {
+                text: "Some information is available online",
+                scores: { software: 2 }
+            },
+            {
+                text: "Most information is available online",
+                scores: { software: 1 }
+            },
+            {
+                text: "They can do almost everything they need online",
+                scores: { software: 0 }
+            }
+        ]
+    },
+
+
+    {
+        question:
+            "How much does your organization rely on spreadsheets?",
+
+        answers: [
+            {
+                text: "Almost none",
+                scores: { software: 0 }
+            },
+            {
+                text: "A few spreadsheets",
+                scores: { software: 1 }
+            },
+            {
+                text: "Several important spreadsheets",
+                scores: { software: 3 }
+            },
+            {
+                text: "Spreadsheets are critical to daily operations",
+                scores: { software: 5 }
+            }
+        ]
+    },
+
+
+    {
+        question:
+            "How much time do you spend on repetitive administrative tasks?",
+
+        answers: [
+            {
+                text: "Very little",
+                scores: { automation: 0 }
+            },
+            {
+                text: "A few hours a month",
+                scores: { automation: 1 }
+            },
+            {
+                text: "Several hours every week",
+                scores: { automation: 3 }
+            },
+            {
+                text: "A significant part of someone's job",
+                scores: { automation: 5 }
+            }
+        ]
+    },
+
+
+    {
+        question:
+            "Do you enter the same information into multiple systems, spreadsheets, or forms?",
+
+        answers: [
+            {
+                text: "Never",
+                scores: { automation: 0 }
+            },
+            {
+                text: "Occasionally",
+                scores: { automation: 1 }
+            },
+            {
+                text: "Frequently",
+                scores: { automation: 3 }
+            },
+            {
+                text: "Constantly",
+                scores: { automation: 5 }
+            }
+        ]
+    },
+
+
+    {
+        question:
+            "Is there something you currently do manually that you wish were automated?",
+
+        answers: [
+            {
+                text: "No",
+                scores: { automation: 0 }
+            },
+            {
+                text: "Maybe, but it's not a big problem",
+                scores: { automation: 1 }
+            },
+            {
+                text: "Yes, one process comes to mind",
+                scores: { automation: 4 }
+            },
+            {
+                text: "Yes, we have several",
+                scores: { automation: 5 }
+            }
+        ]
+    },
+
+
+    {
+        question:
+            "How well does your current software fit the way your organization works?",
+
+        answers: [
+            {
+                text: "Perfectly",
+                scores: { software: 0 }
+            },
+            {
+                text: "Mostly, with a few workarounds",
+                scores: { software: 1 }
+            },
+            {
+                text: "We have quite a few workarounds",
+                scores: { software: 3 }
+            },
+            {
+                text: "Our software forces us to change how we work",
+                scores: { software: 5 }
+            }
+        ]
+    },
+
+
+    {
+        question:
+            "Do you have a business problem that you believe other organizations in your industry have too?",
+
+        answers: [
+            {
+                text: "No",
+                scores: { saas: 0 }
+            },
+            {
+                text: "I'm not sure",
+                scores: { saas: 1 }
+            },
+            {
+                text: "Yes, probably",
+                scores: { saas: 3 }
+            },
+            {
+                text: "Absolutely — everyone deals with it",
+                scores: { saas: 5 }
+            }
+        ]
+    },
+
+
+    {
+        question:
+            "If you could improve one thing about your organization's technology, what would it be?",
+
+        answers: [
+            {
+                text: "Get a professional website",
+                scores: { website: 5 }
+            },
+            {
+                text: "Make our existing website better",
+                scores: { website: 4 }
+            },
+            {
+                text: "Save time on repetitive work",
+                scores: { automation: 5 }
+            },
+            {
+                text: "Replace spreadsheets or manual processes",
+                scores: { software: 5 }
+            },
+            {
+                text: "Build a system specifically for our business",
+                scores: { software: 5 }
+            },
+            {
+                text: "Build a software product other businesses could use",
+                scores: { saas: 7 }
+            },
+            {
+                text: "I'm not sure",
+                scores: { consultation: 3 }
+            }
+        ]
+    }
+
+];
+
+
+/* =============================================================
+   STATE
+============================================================= */
+
+let currentQuestion = 0;
+
+let answers = new Array(questions.length).fill(null);
+
+let scores = {
+    website: 0,
+    automation: 0,
+    software: 0,
+    saas: 0,
+    consultation: 0
+};
+
+let assessmentResult = null;
+
+
+/* =============================================================
+   DOM ELEMENTS
+============================================================= */
+
+const assessmentIntro =
+    document.getElementById("assessmentIntro");
+
+const questionsContainer =
+    document.getElementById("questionsContainer");
+
+const navigationButtons =
+    document.getElementById("navigationButtons");
+
+const progressContainer =
+    document.getElementById("progressContainer");
+
+const previousButton =
+    document.getElementById("previousButton");
+
+const nextButton =
+    document.getElementById("nextButton");
+
+
+/* =============================================================
+   START ASSESSMENT
+============================================================= */
+
+function startAssessment() {
+
+    document.getElementById("assessmentSection")
+        .scrollIntoView({
+            behavior: "smooth"
+        });
+
+    assessmentIntro.classList.add("d-none");
+
+    questionsContainer.classList.remove("d-none");
+
+    navigationButtons.classList.remove("d-none");
+
+    progressContainer.classList.remove("d-none");
+
+    renderQuestions();
+
+    showQuestion(0);
+}
+
+
+/* =============================================================
+   RENDER QUESTIONS
+============================================================= */
+
+function renderQuestions() {
+
+    questionsContainer.innerHTML = "";
+
+    questions.forEach((question, questionIndex) => {
+
+        const questionElement =
+            document.createElement("div");
+
+        questionElement.className =
+            "question";
+
+        questionElement.id =
+            `question-${questionIndex}`;
+
+
+        let html = `
+
+            <h3 class="fw-bold mb-4">
+                ${question.question}
+            </h3>
+
+        `;
+
+
+        question.answers.forEach((answer, answerIndex) => {
+
+            const selected =
+                answers[questionIndex] === answerIndex
+                    ? "selected"
+                    : "";
+
+
+            html += `
+
+                <label
+                    class="answer-option ${selected}"
+                    onclick="selectAnswer(${questionIndex}, ${answerIndex})">
+
+                    <input
+                        type="radio"
+                        name="question-${questionIndex}"
+                        value="${answerIndex}">
+
+                    <span class="fw-semibold">
+                        ${answer.text}
+                    </span>
+
+                </label>
+
+            `;
+
+        });
+
+
+        questionElement.innerHTML = html;
+
+        questionsContainer.appendChild(questionElement);
+
+    });
+
+}
+
+
+/* =============================================================
+   SHOW QUESTION
+============================================================= */
+
+function showQuestion(index) {
+
+    document.querySelectorAll(".question")
+        .forEach(element => {
+
+            element.classList.remove("active");
+
+        });
+
+
+    const question =
+        document.getElementById(`question-${index}`);
+
+    question.classList.add("active");
+
+
+    currentQuestion = index;
+
+
+    updateProgress();
+
+
+    previousButton.disabled =
+        currentQuestion === 0;
+
+
+    if (currentQuestion === questions.length - 1) {
+
+        nextButton.textContent =
+            "See My Results →";
+
+    } else {
+
+        nextButton.textContent =
+            "Next →";
+
+    }
+
+}
+
+
+/* =============================================================
+   SELECT ANSWER
+============================================================= */
+
+function selectAnswer(questionIndex, answerIndex) {
+
+    answers[questionIndex] = answerIndex;
+
+
+    const question =
+        document.getElementById(`question-${questionIndex}`);
+
+
+    question
+        .querySelectorAll(".answer-option")
+        .forEach(option => {
+
+            option.classList.remove("selected");
+
+        });
+
+
+    question
+        .querySelectorAll(".answer-option")[answerIndex]
+        .classList.add("selected");
+
+}
+
+
+/* =============================================================
+   NEXT QUESTION
+============================================================= */
+
+function nextQuestion() {
+
+    if (answers[currentQuestion] === null) {
+
+        alert("Please select an answer before continuing.");
+
+        return;
+
+    }
+
+
+    if (currentQuestion < questions.length - 1) {
+
+        showQuestion(currentQuestion + 1);
+
+    } else {
+
+        calculateResults();
+
+    }
+
+}
+
+
+/* =============================================================
+   PREVIOUS QUESTION
+============================================================= */
+
+function previousQuestion() {
+
+    if (currentQuestion > 0) {
+
+        showQuestion(currentQuestion - 1);
+
+    }
+
+}
+
+
+/* =============================================================
+   PROGRESS
+============================================================= */
+
+function updateProgress() {
+
+    const percent =
+        Math.round(
+            ((currentQuestion + 1) / questions.length) * 100
+        );
+
+
+    document.getElementById("currentQuestionNumber")
+        .textContent = currentQuestion + 1;
+
+
+    document.getElementById("totalQuestions")
+        .textContent = questions.length;
+
+
+    document.getElementById("progressPercent")
+        .textContent = percent;
+
+
+    document.getElementById("progressBar")
+        .style.width = `${percent}%`;
+
+}
+
+
+/* =============================================================
+   CALCULATE RESULTS
+============================================================= */
+
+function calculateResults() {
+
+    scores = {
+        website: 0,
+        automation: 0,
+        software: 0,
+        saas: 0,
+        consultation: 0
+    };
+
+
+    answers.forEach((answerIndex, questionIndex) => {
+
+        if (answerIndex === null) {
+            return;
+        }
+
+
+        const selectedAnswer =
+            questions[questionIndex]
+                .answers[answerIndex];
+
+
+        Object.entries(selectedAnswer.scores)
+            .forEach(([category, points]) => {
+
+                scores[category] += points;
+
+            });
+
+    });
+
+
+    assessmentResult =
+        determineResult();
+
+
+    displayResult();
+
+
+    document.getElementById("assessmentSection")
+        .classList.add("d-none");
+
+
+    document.getElementById("resultsSection")
+        .classList.remove("d-none");
+
+
+    document.getElementById("resultsSection")
+        .scrollIntoView({
+            behavior: "smooth"
+        });
+
+}
+
+
+/* =============================================================
+   DETERMINE RESULT
+============================================================= */
+
+function determineResult() {
+
+    const categories = [
+        {
+            key: "saas",
+            title: "SaaS Opportunity"
+        },
+        {
+            key: "software",
+            title: "Custom Software Opportunity"
+        },
+        {
+            key: "automation",
+            title: "Automation Opportunity"
+        },
+        {
+            key: "website",
+            title: "Website Opportunity"
+        },
+        {
+            key: "consultation",
+            title: "Technology Checkup"
+        }
+    ];
+
+
+    categories.sort((a, b) =>
+        scores[b.key] - scores[a.key]
+    );
+
+
+    const winner = categories[0];
+
+
+    return winner.key;
+
+}
+
+
+/* =============================================================
+   DISPLAY RESULT
+============================================================= */
+
+function displayResult() {
+
+    const resultData = {
+
+        website: {
+
+            icon: "🌐",
+
+            title:
+                "Your Website May Be Your Biggest Opportunity",
+
+            description:
+                "Based on your answers, improving your organization's online presence could have the biggest immediate impact.",
+
+            recommendation:
+                "<strong>Recommended next step:</strong> Build or improve your website. Professional websites start at $500.",
+
+            cta:
+                "Let's Talk About a Website"
+
+        },
+
+
+        automation: {
+
+            icon: "⚙️",
+
+            title:
+                "You May Be Spending Too Much Time Doing Things Manually",
+
+            description:
+                "Your answers suggest that repetitive tasks may be taking more time than they should.",
+
+            recommendation:
+                "<strong>Recommended next step:</strong> Identify the one process that consumes the most time and let's determine whether it can be automated.",
+
+            cta:
+                "Discuss My Process"
+
+        },
+
+
+        software: {
+
+            icon: "💻",
+
+            title:
+                "Your Business May Have Outgrown Off-the-Shelf Software",
+
+            description:
+                "Your answers suggest that your organization may benefit from software designed around the way you actually work.",
+
+            recommendation:
+                "<strong>Recommended next step:</strong> Tell me about the process that's giving you the most trouble and let's explore a custom solution.",
+
+            cta:
+                "Discuss Custom Software"
+
+        },
+
+
+        saas: {
+
+            icon: "🚀",
+
+            title:
+                "You May Have a Software Product Hiding Inside Your Business Problem",
+
+            description:
+                "Your answers suggest that the problem you're solving may not be unique to your organization.",
+
+            recommendation:
+                "<strong>Recommended next step:</strong> If other businesses have the same problem, there may be an opportunity to turn your solution into a software product.",
+
+            cta:
+                "Discuss the Idea"
+
+        },
+
+
+        consultation: {
+
+            icon: "💡",
+
+            title:
+                "You May Not Need a Major Technology Project Right Now",
+
+            description:
+                "Your answers don't indicate an obvious need for a major website, automation project, or custom application.",
+
+            recommendation:
+                "<strong>Recommended next step:</strong> Tell me what's frustrating you. Sometimes the best solution isn't more technology—it's simply finding a better way to use what you already have.",
+
+            cta:
+                "Talk Through the Problem"
+
+        }
+
+    };
+
+
+    const result =
+        resultData[assessmentResult];
+
+
+    document.getElementById("resultIcon")
+        .textContent = result.icon;
+
+
+    document.getElementById("resultTitle")
+        .textContent = result.title;
+
+
+    document.getElementById("resultDescription")
+        .textContent = result.description;
+
+
+    document.getElementById("resultRecommendation")
+        .innerHTML = result.recommendation;
+
+
+    document.getElementById("resultCta")
+        .textContent = result.cta;
+
+}
+
+
+/* =============================================================
+   SHOW LEAD FORM
+============================================================= */
+
+function showLeadForm() {
+
+    const leadSection =
+        document.getElementById("leadSection");
+
+
+    leadSection.classList.remove("d-none");
+
+
+    leadSection.scrollIntoView({
+        behavior: "smooth"
+    });
+
+}
+
+
+/* =============================================================
+   LEAD FORM SUBMISSION
+============================================================= */
+
+document.getElementById("leadForm")
+    .addEventListener("submit", async function(event) {
+
+        event.preventDefault();
+
+
+        const form =
+            event.target;
+
+
+        const formData =
+            new FormData(form);
+
+
+        const lead = {
+
+            name:
+                formData.get("name"),
+
+            email:
+                formData.get("email"),
+
+            organization:
+                formData.get("organization"),
+
+            timeline:
+                formData.get("timeline"),
+
+            message:
+                formData.get("message"),
+
+            result:
+                assessmentResult,
+
+            scores:
+                scores,
+
+            answers:
+                answers,
+
+            submittedAt:
+                new Date().toISOString()
+
+        };
+
+
+        console.log("Lead:", lead);
+
+
+        /*
+         * =====================================================
+         * REPLACE THIS SECTION WITH YOUR ACTUAL LEAD SUBMISSION
+         * =====================================================
+         *
+         * Example:
+         *
+         * await fetch("https://your-api.com/api/leads", {
+         *
+         *     method: "POST",
+         *
+         *     headers: {
+         *         "Content-Type": "application/json"
+         *     },
+         *
+         *     body: JSON.stringify(lead)
+         *
+         * });
+         *
+         * =====================================================
+         */
+
+
+        form.classList.add("d-none");
+
+        document.getElementById("formSuccess")
+            .classList.remove("d-none");
+
+    });
+
+
+/* =============================================================
+   YEAR
+============================================================= */
+
+document.getElementById("currentYear")
+    .textContent = new Date().getFullYear();
+
+</script>
+
+
+<!-- Bootstrap JS -->
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+</body>
+</html>

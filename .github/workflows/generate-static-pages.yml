@@ -32,35 +32,55 @@ jobs:
         website/scripts/generate_rss.sh
       name: Generating RSS files
 
-    - name: Deploy presentations
-      uses: appleboy/scp-action@v1
-      with:
-        host: ${{ secrets.HOSTNAME }}
-        username: ${{ secrets.USERNAME }}
-        password: ${{ secrets.PASSWORD }}
-        port: ${{ secrets.PORT_NUMBER }}
-        source: "build/presentations/*"
-        target: ${{ secrets.TALKS_DIRECTORY }}
-        key: ${{ secrets.PRIVATE_KEY }}
+    # - name: Deploy presentations
+    #   uses: appleboy/scp-action@v1
+    #   with:
+    #     host: ${{ secrets.HOSTNAME }}
+    #     username: ${{ secrets.USERNAME }}
+    #     password: ${{ secrets.PASSWORD }}
+    #     port: ${{ secrets.PORT_NUMBER }}
+    #     source: "build/presentations/*"
+    #     target: ${{ secrets.TALKS_DIRECTORY }}
+    #     key: ${{ secrets.PRIVATE_KEY }}
 
-    - name: Deploy website
-      uses: appleboy/scp-action@v1
-      with:
-        host: ${{ secrets.HOSTNAME }}
-        username: ${{ secrets.USERNAME }}
-        password: ${{ secrets.PASSWORD }}
-        port: ${{ secrets.PORT_NUMBER }}
-        source: "build/website/*"
-        target: ${{ secrets.WWW_DIRECTORY }}
-        key: ${{ secrets.PRIVATE_KEY }}
+    # - name: Deploy website
+    #   uses: appleboy/scp-action@v1
+    #   with:
+    #     host: ${{ secrets.HOSTNAME }}
+    #     username: ${{ secrets.USERNAME }}
+    #     password: ${{ secrets.PASSWORD }}
+    #     port: ${{ secrets.PORT_NUMBER }}
+    #     source: "build/website/*"
+    #     target: ${{ secrets.WWW_DIRECTORY }}
+    #     key: ${{ secrets.PRIVATE_KEY }}
 
-    - name: Deploy website RSS files
-      uses: appleboy/scp-action@v1
+    # - name: Deploy website RSS files
+    #   uses: appleboy/scp-action@v1
+    #   with:
+    #     host: ${{ secrets.HOSTNAME }}
+    #     username: ${{ secrets.USERNAME }}
+    #     password: ${{ secrets.PASSWORD }}
+    #     port: ${{ secrets.PORT_NUMBER }}
+    #     source: "dadlife.rss.xml,electronics.rss.xml,tech.rss.xml,webdevelopment.rss.xml"
+    #     target: ${{ secrets.WWW_DIRECTORY }}
+    #     key: ${{ secrets.PRIVATE_KEY }}
+        
+    - name: rsync talks
+      # You may pin to the exact commit or the version.
+      # uses: contention/rsync-deployments@10f98a8726e6760601d8818ea6ff812f87bf8a97
+      uses: contention/rsync-deployments@v2.0.0
       with:
-        host: ${{ secrets.HOSTNAME }}
-        username: ${{ secrets.USERNAME }}
-        password: ${{ secrets.PASSWORD }}
-        port: ${{ secrets.PORT_NUMBER }}
-        source: "dadlife.rss.xml,electronics.rss.xml,tech.rss.xml,webdevelopment.rss.xml"
-        target: ${{ secrets.WWW_DIRECTORY }}
-        key: ${{ secrets.PRIVATE_KEY }}
+        # Initial/required rsync flags
+        flags: 
+        # Exclude flags and directory pairs
+        excludes: 
+        # The server user
+        user:  ${{ secrets.USERNAME }}
+        # The deployment target
+        host:  ${{ secrets.HOSTNAME }}
+        # The local path to sync
+        localpath: build/presentations
+        # The remote path to sync
+        remotepath:  ${{ secrets.TALK_DIRECTORY }}
+        # The private key
+        deploy_key:  ${{ secrets.PRIVATE_KEY }}

@@ -1,10 +1,15 @@
-# Questions?
+---
+image: /a.-i.-for-small-business/tabcc2026.jpg
+---
+# Questions? Let’s Talk About Your Next Idea
 
-## Presentation
+## Presentation Resources
+## Request Consultation
+## Explore Offers
 
-* rhtservices.net/aibusiness
+* rhtservices.net/tabcc2026
 
-## Connect
+## Connect With Me
 
 * linkedin.com/in/krobinsontech
 * rhtservices.net

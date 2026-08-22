@@ -22,7 +22,7 @@ jobs:
 
     - run: git fetch -p
 
-    - run: /usr/bin/python3 -m mkdocs build -f presentations/mkdocs.yml -d ../build/presentations
+    - run: /usr/bin/python3 -m mkdocs build -f presentations/mkdocs.yml -d ../presentation_build
       name: Build presentations
 
     - run: /usr/bin/python3 -m mkdocs build -f website/mkdocs.yml -d ../build/website
@@ -89,13 +89,23 @@ jobs:
 
 
 
+    # - name: presentation deployment
+    #   uses: burnett01/rsync-deployments@5.2
+    #   with:
+    #     switches: -avzr --delete
+    #     path: build/presentations/
+    #     remote_path: ${{ secrets.TALK_DIRECTORY }}
+    #     remote_port: ${{ secrets.PORT_NUMBER }}
+    #     remote_host: ${{ secrets.HOSTNAME }}
+    #     remote_user: ${{ secrets.USERNAME }}
+    #     remote_key: ${{ secrets.PRIVATE_KEY }}
+
     - name: presentation deployment
-      uses: burnett01/rsync-deployments@5.2
+      uses: appleboy/scp-action@v1
       with:
-        switches: -avzr --delete
-        path: build/presentations/
-        remote_path: ${{ secrets.TALK_DIRECTORY }}
-        remote_port: ${{ secrets.PORT_NUMBER }}
-        remote_host: ${{ secrets.HOSTNAME }}
-        remote_user: ${{ secrets.USERNAME }}
-        remote_key: ${{ secrets.PRIVATE_KEY }}
+        host: ${{ secrets.HOSTNAME }}
+        username: ${{ secrets.USERNAME }}
+        port: ${{ secrets.PORT_NUMBER }}
+        key: ${{ secrets.PRIVATE_KEY }}
+        source: "presentation_build/*"
+        target: ${{ secrets.TALK_DIRECTORY }}

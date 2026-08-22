@@ -25,80 +25,32 @@ jobs:
     - run: /usr/bin/python3 -m mkdocs build -f presentations/mkdocs.yml -d ../presentation_build
       name: Build presentations
 
-    - run: /usr/bin/python3 -m mkdocs build -f website/mkdocs.yml -d ../build/website
+    - run: /usr/bin/python3 -m mkdocs build -f website/mkdocs.yml -d ../website_build
       name: Build website
 
     - run: |
         website/scripts/generate_rss.sh
       name: Generating RSS files
 
-    # - name: Deploy presentations
-    #   uses: appleboy/scp-action@v1
-    #   with:
-    #     host: ${{ secrets.HOSTNAME }}
-    #     username: ${{ secrets.USERNAME }}
-    #     password: ${{ secrets.PASSWORD }}
-    #     port: ${{ secrets.PORT_NUMBER }}
-    #     source: "build/presentations/*"
-    #     target: ${{ secrets.TALKS_DIRECTORY }}
-    #     key: ${{ secrets.PRIVATE_KEY }}
-
-    # - name: Deploy website
-    #   uses: appleboy/scp-action@v1
-    #   with:
-    #     host: ${{ secrets.HOSTNAME }}
-    #     username: ${{ secrets.USERNAME }}
-    #     password: ${{ secrets.PASSWORD }}
-    #     port: ${{ secrets.PORT_NUMBER }}
-    #     source: "build/website/*"
-    #     target: ${{ secrets.WWW_DIRECTORY }}
-    #     key: ${{ secrets.PRIVATE_KEY }}
+    - name: Deploy website
+      uses: appleboy/scp-action@v1
+      with:
+        host: ${{ secrets.HOSTNAME }}
+        username: ${{ secrets.USERNAME }}
+        port: ${{ secrets.PORT_NUMBER }}
+        key: ${{ secrets.PRIVATE_KEY }}
+        source: "website_build/*"
+        target: ${{ secrets.WWW_DIRECTORY }}
 
     # - name: Deploy website RSS files
     #   uses: appleboy/scp-action@v1
     #   with:
     #     host: ${{ secrets.HOSTNAME }}
     #     username: ${{ secrets.USERNAME }}
-    #     password: ${{ secrets.PASSWORD }}
     #     port: ${{ secrets.PORT_NUMBER }}
+    #     key: ${{ secrets.PRIVATE_KEY }}
     #     source: "dadlife.rss.xml,electronics.rss.xml,tech.rss.xml,webdevelopment.rss.xml"
     #     target: ${{ secrets.WWW_DIRECTORY }}
-    #     key: ${{ secrets.PRIVATE_KEY }}
-
-    # - run: rsync -avz -e "ssh -p ${{ secrets.PORT_NUMBER }}" build/presentations ${{ secrets.USERNAME }}@${{ secrets.HOSTNAME }}:${{ secrets.TALK_DIRECTORY }}
-        
-    # - name: rsync talks
-    #   # You may pin to the exact commit or the version.
-    #   # uses: contention/rsync-deployments@10f98a8726e6760601d8818ea6ff812f87bf8a97
-    #   uses: contention/rsync-deployments@v2.0.0
-    #   with:
-    #     # Initial/required rsync flags
-    #     flags: -rtu --delete
-    #     # Exclude flags and directory pairs
-    #     excludes: 
-    #     # The server user
-    #     user:  ${{ secrets.USERNAME }}
-    #     # The deployment target
-    #     host:  ${{ secrets.HOSTNAME }}
-    #     # The local path to sync
-    #     localpath: build/presentations
-    #     # The remote path to sync
-    #     remotepath:  ${{ secrets.TALK_DIRECTORY }}
-    #     # The private key
-    #     deploy_key:  ${{ secrets.PRIVATE_KEY }}
-
-
-
-    # - name: presentation deployment
-    #   uses: burnett01/rsync-deployments@5.2
-    #   with:
-    #     switches: -avzr --delete
-    #     path: build/presentations/
-    #     remote_path: ${{ secrets.TALK_DIRECTORY }}
-    #     remote_port: ${{ secrets.PORT_NUMBER }}
-    #     remote_host: ${{ secrets.HOSTNAME }}
-    #     remote_user: ${{ secrets.USERNAME }}
-    #     remote_key: ${{ secrets.PRIVATE_KEY }}
 
     - name: presentation deployment
       uses: appleboy/scp-action@v1

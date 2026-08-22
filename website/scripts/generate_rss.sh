@@ -2,13 +2,13 @@
 
 # set -x
 
-RSS_FILE="all.xml"
-RSS_LATEST_FILE="latest.xml"
-DAD_LIFE_FILE="dadlife.rss.xml"
-ELECTRONICS_FILE="electronics.rss.xml"
-JUNK_DRAWER_FILE="junkdrawer.rss.xml"
-TECH_FILE="tech.rss.xml"
-WEBDEV_FILE="webdevelopment.rss.xml"
+RSS_FILE="website_build/all.xml"
+RSS_LATEST_FILE="website_build/latest.xml"
+DAD_LIFE_FILE="website_build/dadlife.rss.xml"
+ELECTRONICS_FILE="website_build/electronics.rss.xml"
+JUNK_DRAWER_FILE="website_build/junkdrawer.rss.xml"
+TECH_FILE="website_build/tech.rss.xml"
+WEBDEV_FILE="website_build/webdevelopment.rss.xml"
 
 rm -f $RSS_FILE $RSS_LATEST_FILE
 rm -f $DAD_LIFE_FILE $ELECTRONICS_FILE $JUNK_DRAWER_FILE $TECH_FILE $WEBDEV_FILE
@@ -88,7 +88,6 @@ function writeFeedItems() {
 
     echo "</item>" >> $1
 }
-
 
 writeFeedHeader $DAD_LIFE_FILE "dad-life"
 for blogPost in $(ls -r website/docs/dad-life/*.md | head -11)

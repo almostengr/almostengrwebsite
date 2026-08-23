@@ -11,9 +11,6 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-}
-
-.presentation {
     font-size: 1.25rem;
 }
 
@@ -29,20 +26,14 @@
     line-height: 1.2;
 }
 
-/* .presentation p, */
 .presentation h3,
 .presentation li {
     font-size: clamp(1.5rem, 2.5vw, 2.25rem);
-    /* font-size: clamp(1.1rem, 1.75vw, 1.5rem) !important; */
     line-height: 1.5;
 }
-
-/* img {
-    max-height: 70vh;
-    object-fit: contain;
-} */
 
 img {
     max-width: 100%;
     height: auto;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }

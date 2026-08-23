@@ -1,5 +1,5 @@
 ---
-image: /a.-i.-for-small-business/tabcc2026.jpg
+image: /a.-i.-for-business-owners/tabcc2026.jpg
 ---
 # Questions? Let’s Talk About Your Next Idea
 

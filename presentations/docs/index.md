@@ -1,3 +1,3 @@
 # Presentations
 
-* [AI for Small Business](/a.-i.-for-small-business)
+* [AI for Business Owners](/a.-i.-for-business-owners)

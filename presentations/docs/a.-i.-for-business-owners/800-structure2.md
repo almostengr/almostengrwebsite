@@ -1,4 +1,8 @@
-# Prompt Structure
+# Prompt Structure Example
+
+## Persona
+
+You are a marketing manager for a business that sells widgets.
 
 ## Problem
 
@@ -8,10 +12,6 @@ Your boss says that sales need to increase by 3% between this and the next quart
 If they don't then you will be fired. Also employees will not be getting the yearly bonus check.
 Your target customer is homeowners who prefer to do DIY repairs rather than calling a repairman or handyman.
 Based on the information that you have, most are middle to high income homeowners.
-
-## Persona
-
-You are a marketing manager for a business that sells widgets.
 
 ## Request
 

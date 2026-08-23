@@ -67,7 +67,14 @@
                     {{ page.content }}
                 </div>
                 <div class="col-md-5 text-center mt-5">
-                    <img class="img-fluid" src="{{ page.meta.image }}" />
+                    <div class="row">
+                        <img class="img-fluid" src="{{ page.meta.image }}" />
+                    </div>
+                    {% if page and page.meta.image2 %}
+                    <div class="row">
+                        <img class="img-fluid" src="{{ page.meta.image2 }}" />
+                    </div>
+                    {% endif %}
                 </div>
             </div>
             {% else %}

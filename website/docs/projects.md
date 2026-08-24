@@ -14,6 +14,7 @@ Have a project that you need completed? You may request
 [my services](/services) by [contacting me](/contact) with details of work that you need completed.
 
 * [Christmas Light Show (2026, Electronics)](/electronics/2026.07.24-2026-christmas-light-show)
+* [Presentations Website (2026, Web Development)](/web-development/2026.01.25-slides-on-website)
 * [Sunshine Counseling Services website (2026, Web Development)](/web-development/2026.07.31-sunshine-counseling)
 * [thealmostengineer.com Bootstrap 5 Update (2026, Web Development)](/web-development/2026.01.02-updated-bootstrap-5)
 * [Mobile Christmas Light Show (2025, Electronics)](/electronics/2025.12.13-2025-portable-christmas-light-show)

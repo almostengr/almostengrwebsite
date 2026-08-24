@@ -9,14 +9,13 @@ Nobody has time for the spammers and scammers.
 
 ## Business Inquiries and Services
 
-Contact me via [RHT Services](https://rhtservices.net) for any web development, software, 
-or other services.
+Contact me using any of the social media platforms below.
 
 ## Connect on Social Media
 
 You may also connect and message me via the below social media platforms.
 
-* [BlueSky](https://bsky.app/profile/almostengr.bsky.social)
+* [Facebook](https://facebook.com/almostengr2)
 * [Github](https://github.com/almostengr)
 * [Instagram](https://instagram.com/almostengr)
 * [TikTok](https://tiktok.com/@almostengr)

@@ -22,9 +22,6 @@ jobs:
 
     - run: git fetch -p
 
-    - run: /usr/bin/python3 -m mkdocs build -f presentations/mkdocs.yml -d ../presentation_build
-      name: Build presentations
-
     - run: /usr/bin/python3 -m mkdocs build -f website/mkdocs.yml -d ../website_build
       name: Build website
 
@@ -51,13 +48,3 @@ jobs:
     #     key: ${{ secrets.PRIVATE_KEY }}
     #     source: "dadlife.rss.xml,electronics.rss.xml,tech.rss.xml,webdevelopment.rss.xml"
     #     target: ${{ secrets.WWW_DIRECTORY }}
-
-    - name: presentation deployment
-      uses: appleboy/scp-action@v1
-      with:
-        host: ${{ secrets.HOSTNAME }}
-        username: ${{ secrets.USERNAME }}
-        port: ${{ secrets.PORT_NUMBER }}
-        key: ${{ secrets.PRIVATE_KEY }}
-        source: "presentation_build/*"
-        target: ${{ secrets.TALK_DIRECTORY }}

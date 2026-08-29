@@ -1,5 +1,5 @@
 ---
-title: Tuscaloosa Area Black Chamber of Commerce Business & Leadership Conference
+title: 2026 Tuscaloosa Area Black Chamber of Commerce Business & Leadership Conference
 ---
 
 ## Thank You for Joining Me
@@ -17,7 +17,7 @@ This page includes the presentation as well as special opportunities available t
 ### Want to revisit the presentation?
 
 You can 
-<a href="https://talks.thealmostengineer.com/a.-i.-for-small-business/" target="_blank">View the Presentation</a>
+<a href="https://talks.thealmostengineer.com/a.-i.-for-business-owners/" target="_blank">View the Presentation</a>
 on the presentation website.
 
 Feel free to revisit the material, share it with your team, and use it as a starting point for conversations about how technology can benefit your organization.

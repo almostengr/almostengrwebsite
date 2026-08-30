@@ -38,6 +38,8 @@ jobs:
         key: ${{ secrets.PRIVATE_KEY }}
         source: "website_build/*"
         target: ${{ secrets.WWW_DIRECTORY }}
+        strip_components: 1
+        overwrite: true
 
     # - name: Deploy website RSS files
     #   uses: appleboy/scp-action@v1

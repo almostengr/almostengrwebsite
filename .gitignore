@@ -461,3 +461,4 @@ php.ini
 config.php
 website/site/*
 websitelights/site/*
+search_index.json

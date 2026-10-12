@@ -2,13 +2,14 @@
 
 # set -x
 
-RSS_FILE="website_build/all.xml"
-RSS_LATEST_FILE="website_build/latest.xml"
-DAD_LIFE_FILE="website_build/dadlife.rss.xml"
-ELECTRONICS_FILE="website_build/electronics.rss.xml"
-JUNK_DRAWER_FILE="website_build/junkdrawer.rss.xml"
-TECH_FILE="website_build/tech.rss.xml"
-WEBDEV_FILE="website_build/webdevelopment.rss.xml"
+BASE_DIRECTORY="../website_build"
+RSS_FILE="${BASE_DIRECTORY}/all.xml"
+RSS_LATEST_FILE="${BASE_DIRECTORY}/latest.xml"
+DAD_LIFE_FILE="${BASE_DIRECTORY}/dadlife.rss.xml"
+ELECTRONICS_FILE="${BASE_DIRECTORY}/electronics.rss.xml"
+JUNK_DRAWER_FILE="${BASE_DIRECTORY}/junkdrawer.rss.xml"
+TECH_FILE="${BASE_DIRECTORY}/tech.rss.xml"
+WEBDEV_FILE="${BASE_DIRECTORY}/webdevelopment.rss.xml"
 
 rm -f $RSS_FILE $RSS_LATEST_FILE
 rm -f $DAD_LIFE_FILE $ELECTRONICS_FILE $JUNK_DRAWER_FILE $TECH_FILE $WEBDEV_FILE
@@ -20,7 +21,7 @@ function writeFeedHeader() {
     DESCRIPTION=""
     case $2 in
         "dad-life")
-            TITLE="Dad Life Feed | The Almost Engineer"        
+            TITLE="Dad Life Feed | The Almost Engineer"
             ;;
 
         "electronics")

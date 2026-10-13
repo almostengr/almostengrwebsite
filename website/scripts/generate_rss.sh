@@ -2,13 +2,14 @@
 
 # set -x
 
-RSS_FILE="all.xml"
-RSS_LATEST_FILE="latest.xml"
-DAD_LIFE_FILE="dadlife.rss.xml"
-ELECTRONICS_FILE="electronics.rss.xml"
-JUNK_DRAWER_FILE="junkdrawer.rss.xml"
-TECH_FILE="tech.rss.xml"
-WEBDEV_FILE="webdevelopment.rss.xml"
+BASE_DIRECTORY="website/website_build"
+RSS_FILE="${BASE_DIRECTORY}/all.xml"
+RSS_LATEST_FILE="${BASE_DIRECTORY}/latest.xml"
+DAD_LIFE_FILE="${BASE_DIRECTORY}/dadlife.rss.xml"
+ELECTRONICS_FILE="${BASE_DIRECTORY}/electronics.rss.xml"
+JUNK_DRAWER_FILE="${BASE_DIRECTORY}/junkdrawer.rss.xml"
+TECH_FILE="${BASE_DIRECTORY}/tech.rss.xml"
+WEBDEV_FILE="${BASE_DIRECTORY}/webdevelopment.rss.xml"
 
 rm -f $RSS_FILE $RSS_LATEST_FILE
 rm -f $DAD_LIFE_FILE $ELECTRONICS_FILE $JUNK_DRAWER_FILE $TECH_FILE $WEBDEV_FILE
@@ -20,7 +21,7 @@ function writeFeedHeader() {
     DESCRIPTION=""
     case $2 in
         "dad-life")
-            TITLE="Dad Life Feed | The Almost Engineer"        
+            TITLE="Dad Life Feed | The Almost Engineer"
             ;;
 
         "electronics")
@@ -88,7 +89,6 @@ function writeFeedItems() {
 
     echo "</item>" >> $1
 }
-
 
 writeFeedHeader $DAD_LIFE_FILE "dad-life"
 for blogPost in $(ls -r website/docs/dad-life/*.md | head -11)

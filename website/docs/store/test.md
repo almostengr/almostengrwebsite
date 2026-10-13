@@ -4,7 +4,7 @@ subtitle: The exact code + wiring I use in my real traffic light project. Plug-a
 heroNote: Instant Github repo access after payment and lifetime updates
 price: 59.99
 squarelink: "#"
-image: /images/firewoodStand20200411_152742.jpg
+image: firewoodStand20200411_152742.jpg
 ---
 
 ## This is the first heading

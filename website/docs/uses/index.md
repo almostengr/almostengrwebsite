@@ -2,12 +2,10 @@
 title: Uses
 description: Page describes the tools used for various tasks.
 keywords: uses, uses page, tools used
-posted: 2020-02-01
-updated: 2026-08-23
-image: /images/2020.02.01-uses-entry.jpg
+image: 2020.02.01-uses-entry.jpg
 ---
 
-![My uses entry](/images/2020.02.01-uses-entry.jpg)
+![My uses entry](/uses/2020.02.01-uses-entry.jpg)
 
 ## Background
 

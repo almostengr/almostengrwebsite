@@ -20,7 +20,7 @@ do
 
     cp "${i}" "/var/tmp/${i}"
 
-    ffmpeg -y -hide_banner -loglevel error -i "/var/tmp/${i}" -vf "drawtext=fontfile=arial.ttf:text='thealmostengineer.com':fontcolor=black@0.2:fontsize=h/10:${CENTERED}" "/home/almostengineer/almostengrwebsite/website/docs/images/${i}"
+    ffmpeg -y -hide_banner -loglevel error -i "/var/tmp/${i}" -vf "drawtext=fontfile=arial.ttf:text='thealmostengineer.com':fontcolor=black@0.2:fontsize=h/10:${CENTERED}" "/home/almostengineer/almostengrwebsite/website/docs/${i}"
 
     rm "/var/tmp/${i}"
 done

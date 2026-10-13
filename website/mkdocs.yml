@@ -1,4 +1,4 @@
-site_name: The Almost Engineer
+site_name: The Almost Engineer | The Blog of Kenny Robinson
 site_url: https://thealmostengineer.com
 site_description: The blog of Kenny Robinson
 site_author: Kenny Robinson, @almostengr
@@ -20,9 +20,15 @@ theme:
   language: en
   static_templates:
     - 404.html
+    - thumbnail.html
 use_directory_urls: true
 strict: false
 
-plugins:
-  # - minify:
-  #     minify_html: true
+# plugins:
+#   - rss:  
+#     rss_feed_enabled: false
+#   - minify:
+#       minify_html: true
+
+# hooks:
+  # - hooks/json_export.py

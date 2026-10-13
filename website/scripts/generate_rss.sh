@@ -2,7 +2,7 @@
 
 # set -x
 
-BASE_DIRECTORY="../website_build"
+BASE_DIRECTORY="website/website_build"
 RSS_FILE="${BASE_DIRECTORY}/all.xml"
 RSS_LATEST_FILE="${BASE_DIRECTORY}/latest.xml"
 DAD_LIFE_FILE="${BASE_DIRECTORY}/dadlife.rss.xml"

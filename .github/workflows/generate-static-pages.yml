@@ -22,7 +22,7 @@ jobs:
 
     - run: git fetch -p
 
-    - run: /usr/bin/python3 -m mkdocs build -f website/mkdocs.yml -d ../website_build
+    - run: /usr/bin/python3 -m mkdocs build -f website/mkdocs.yml -d website_build
       name: Build website
 
     - run: |

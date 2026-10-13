@@ -36,7 +36,7 @@ jobs:
         username: ${{ secrets.USERNAME }}
         port: ${{ secrets.PORT_NUMBER }}
         key: ${{ secrets.PRIVATE_KEY }}
-        source: "website_build/*"
+        source: "website/website_build/*"
         target: ${{ secrets.WWW_DIRECTORY }}
         strip_components: 1
         overwrite: true
